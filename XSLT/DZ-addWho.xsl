@@ -30,6 +30,12 @@
                     <xsl:when test="starts-with(tei:speaker,'PODPREDSEDNIK')">
                         <xsl:value-of select="translate(substring-after(tei:speaker,'PODPREDSEDNIK '),':','')"/>
                     </xsl:when>
+                    <xsl:when test="starts-with(tei:speaker,'PREDSEDUJOČI')">
+                        <xsl:value-of select="translate(substring-after(tei:speaker,'PREDSEDUJOČI '),':','')"/>
+                    </xsl:when>
+                    <xsl:when test="starts-with(tei:speaker,'PREDSEDUJOČA')">
+                        <xsl:value-of select="translate(substring-after(tei:speaker,'PREDSEDUJOČA '),':','')"/>
+                    </xsl:when>
                     <xsl:when test="starts-with(tei:speaker,'DR. ')">
                         <xsl:value-of select="translate(substring-after(tei:speaker,'DR. '),':','')"/>
                     </xsl:when>
@@ -72,76 +78,11 @@
     
     <xsl:template match="tei:sp[not(tei:speaker)]" mode="pass2">
         <sp>
-           <xsl:choose>
-               <xsl:when test="preceding-sibling::tei:sp[1]/@who">
-                   <xsl:attribute name="who">
-                       <xsl:value-of select="preceding-sibling::tei:sp[1]/@who"/>
-                   </xsl:attribute>
-               </xsl:when>
-               <xsl:otherwise>
-                   <xsl:choose>
-                       <xsl:when test="preceding-sibling::tei:sp[2]/@who">
-                           <xsl:attribute name="who">
-                               <xsl:value-of select="preceding-sibling::tei:sp[2]/@who"/>
-                           </xsl:attribute>
-                       </xsl:when>
-                       <xsl:otherwise>
-                           <xsl:choose>
-                               <xsl:when test="preceding-sibling::tei:sp[3]/@who">
-                                   <xsl:attribute name="who">
-                                       <xsl:value-of select="preceding-sibling::tei:sp[3]/@who"/>
-                                   </xsl:attribute>
-                               </xsl:when>
-                               <xsl:otherwise>
-                                   <xsl:choose>
-                                       <xsl:when test="preceding-sibling::tei:sp[4]/@who">
-                                           <xsl:attribute name="who">
-                                               <xsl:value-of select="preceding-sibling::tei:sp[4]/@who"/>
-                                           </xsl:attribute>
-                                       </xsl:when>
-                                       <xsl:otherwise>
-                                           <xsl:choose>
-                                               <xsl:when test="preceding-sibling::tei:sp[5]/@who">
-                                                   <xsl:attribute name="who">
-                                                       <xsl:value-of select="preceding-sibling::tei:sp[5]/@who"/>
-                                                   </xsl:attribute>
-                                               </xsl:when>
-                                               <xsl:otherwise>
-                                                   <xsl:choose>
-                                                       <xsl:when test="preceding-sibling::tei:sp[6]/@who">
-                                                           <xsl:attribute name="who">
-                                                               <xsl:value-of select="preceding-sibling::tei:sp[6]/@who"/>
-                                                           </xsl:attribute>
-                                                       </xsl:when>
-                                                       <xsl:otherwise>
-                                                           <xsl:choose>
-                                                               <xsl:when test="preceding-sibling::tei:sp[7]/@who">
-                                                                   <xsl:attribute name="who">
-                                                                       <xsl:value-of select="preceding-sibling::tei:sp[7]/@who"/>
-                                                                   </xsl:attribute>
-                                                               </xsl:when>
-                                                               <xsl:otherwise>
-                                                                   <xsl:choose>
-                                                                       <xsl:when test="preceding-sibling::tei:sp[8]/@who">
-                                                                           <xsl:attribute name="who">
-                                                                               <xsl:value-of select="preceding-sibling::tei:sp[8]/@who"/>
-                                                                           </xsl:attribute>
-                                                                       </xsl:when>
-                                                                   </xsl:choose>
-                                                               </xsl:otherwise>
-                                                           </xsl:choose>
-                                                       </xsl:otherwise>
-                                                   </xsl:choose>
-                                               </xsl:otherwise>
-                                           </xsl:choose>
-                                       </xsl:otherwise>
-                                   </xsl:choose>
-                               </xsl:otherwise>
-                           </xsl:choose>
-                       </xsl:otherwise>
-                   </xsl:choose>
-               </xsl:otherwise>
-           </xsl:choose> 
+            <xsl:if test="preceding-sibling::tei:sp[@who][1]">
+                <xsl:attribute name="who">
+                    <xsl:value-of select="preceding-sibling::tei:sp[@who][1]/@who"/>
+                </xsl:attribute>
+            </xsl:if>
             <xsl:apply-templates mode="pass2"/>
         </sp>
     </xsl:template>
