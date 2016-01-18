@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="DZ-1990-ZbZdruDel-7">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -78,7 +78,8 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -89,6 +90,14 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2016-01-18+01:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>//stage[@type='time']</item>
+               <item>//p/stage</item>
+               <item>//docDate</item>
+               <item>//timeline</item>
+            </list>
+         </change>
          <change when="2015-12-02+01:00">
             <name>Andrej Pančur</name>: preveril, dopolnil in dokončal kodiranje<list>
                <item>//front//*</item>
@@ -232,6 +241,9 @@
                <castItem>
                   <actor xml:id="sp.ŽidanikAnton">Židanik dr. Anton</actor>
                   ......................................... 4</castItem>
+               <castItem>
+                  <actor xml:id="sp.unknown"/>
+               </castItem>
             </castList>
          </div>
       </front>
@@ -240,14 +252,27 @@
             <head>ZBOR ZDRUŽENEGA DELA</head>
             <div ana="#PAR.Seja" n="7">
                <head>7. seja</head>
-               <docDate>(12. oktobra 1990)</docDate>
+               <docDate when="1990-10-12">(12. oktobra 1990)</docDate>
+               <timeline origin="#TL.1" unit="s">
+                  <when synch="#stage.t.1" xml:id="TL.1" absolute="1990-10-12T10:10:00"/>
+                  <when synch="#stage.t.2" since="#TL.1" absolute="1990-10-12T10:20:00"
+                     interval="600"/>
+                  <when synch="#stage.t.3" xml:id="TL.2" absolute="1990-10-12T11:55:00"/>
+                  <when synch="#stage.t.4" since="#TL.2" absolute="1990-10-12T13:25:00"
+                     interval="5400"/>
+                  <when synch="#stage.t.5" xml:id="TL.3" absolute="1990-10-12T14:30:00"/>
+                  <when synch="#stage.t.6" since="#TL.3" absolute="1990-10-12T14:45:00"
+                     interval="900"/>
+               </timeline>
                <castList>
                   <castItem>
                      <roleDesc>Predsedoval</roleDesc>: <actor xml:id="sp.ZupančičJože">Jože
                         Zupančič</actor>, <role>predsednik Zbora združenega dela</role>
                   </castItem>
                </castList>
-               <stage>Seja se je začela ob 10.10 uri</stage>
+               <stage type="time">Seja se je <time from="1990-10-12T10:10:00" xml:id="stage.t.1"
+                     >začela ob 10.10 uri</time>
+               </stage>
                <div ana="#PAR.PredDnevRed">
                   <div ana="#PAR.Prisot">
                      <sp who="#sp.ZupančičJože">
@@ -304,8 +329,8 @@
                            Prosim, da jih dvignete, saj imate kartončke. Ugotavljam, da nas je 55 v
                            dvorani.</p>
                         <p>Kdo je za takšen dnevni red? Zeleni lističi so da, rdeči proti, rumeni
-                           vzdržani. Hvala. Je kdo proti? (Nihče.) Se je kdo vzdržal? (1
-                           delegat).</p>
+                           vzdržani. Hvala. Je kdo proti? <stage>(Nihče.)</stage> Se je kdo vzdržal?
+                              <stage>(1 delegat)</stage>.</p>
                         <p>54 za, 1 vzdržan, nihče proti.</p>
                         <p>Torej je dnevni red z večino glasov sprejet.</p>
                      </sp>
@@ -335,8 +360,10 @@
                            dobre pol ure čas za malico. Potem pridemo sem in bomo ločeno po zborih
                            razpravljali o osnutku. Hvala lepa.</p>
                      </sp>
-                     <stage>(Seja je bila prekinjena ob 10.20. uri in se je nadaljevala ob 11.55
-                        uri.)</stage>
+                     <stage type="time">(Seja je bila <time to="1990-10-12T10:20:00"
+                           xml:id="stage.t.2">prekinjena ob 10.20. uri</time> in se je <time
+                           from="1990-10-12T11:55:00" xml:id="stage.t.3">nadaljevala ob 11.55
+                           uri</time>.)</stage>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
                         <p>Nadaljujemo s sejo. Ker smo vsi ponovno zbrani, bi pričeli z delom.
@@ -1351,8 +1378,10 @@
                            Slovenije določa osnutek ustave Republike Slovenije. V javno razpravo
                            morajo sočasno tudi predlogi iz razprave Zbora združenega dela. Je
                            prav?</p>
-                        <p>Kdo je za takšen predlog? (55 delegatov.) Hvala. Je kdo proti? (Nihče.)
-                           Kdo se je vzdržal? (1 delegat.)</p>
+                        <p>Kdo je za takšen predlog? <stage>(55 delegatov.)</stage> Hvala. Je kdo
+                           proti? <stage>(Nihče.)</stage> Kdo se je vzdržal? <stage>(1
+                              delegat.)</stage>
+                        </p>
                         <p>Potem imamo tak predlog sedaj sprejet.</p>
                         <p>Predlagal bi še tudi sklep, ki sem vam ga prebral v 5. točkah. Malo
                            polemike je bilo ali je to dovolj časa ali ni. Tista dopolnitev je sedaj
@@ -1360,8 +1389,10 @@
                         <p>"Javna razprava o osnutku ustave Republike Slovenije raja do 30. novembra
                            1990 in se lahko podaljša ali v primeru spremenjenih okoliščin s posebnim
                            sklepom Skupščine Republike Slovenije tudi skrajša oz. prekine.</p>
-                        <p>Kdo je za teh 5 sklepov? (56 delegatov.) Kdo je proti? (Nihče.) Kolikor
-                           se vas je vzdržalo? (Nihče.)</p>
+                        <p>Kdo je za teh 5 sklepov? <stage>(56 delegatov.)</stage> Kdo je proti?
+                              <stage>(Nihče.)</stage> Kolikor se vas je vzdržalo?
+                              <stage>(Nihče.)</stage>
+                        </p>
                         <p>Soglasno sprejeto.</p>
                         <p>Zdaj pa naslednje. Mislim, da mi zdaj nimamo več kaj usklajevati. Ustavna
                            komisija ima svoje delo. Prosim vas samo dvoje:</p>
@@ -1390,8 +1421,10 @@
                            tam takoj videli kakšna je situacija. Jaz bom, tudi šel na sejo, ob pol
                            treh pa vsi tukaj, vidimo kaj in kako je. Velja.</p>
                      </sp>
-                     <stage>(Seja je bila prekinjena ob 13.25 uri in se je nadaljevala ob 14.30
-                        uri.)</stage>
+                     <stage type="time">(Seja je bila <time to="1990-10-12T13:25:00"
+                           xml:id="stage.t.4">prekinjena ob 13.25 uri</time> in se je <time
+                           from="1990-10-12T14:30:00" xml:id="stage.t.5">nadaljevala ob 14.30
+                           uri</time>.)</stage>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
                         <p>Najprej moramo ugotoviti koliko nas je. Vseh nas je 52. Dogovoriti se
@@ -1403,9 +1436,10 @@
                            mi zdi je tudi korektno.</p>
                         <p>Samo lepo vas prosim, vem, da vas velika večina zna delati sobote in
                            nedelje. Tisto kar imate, boste tudi napisali, ker morate v nedeljo
-                           oddati na pošto, da bo to v ponedeljek res tu. (Medklic: Gospod
-                           predsednik, kaj pa če se zmenimo, da v ponedeljek oddamo, pa da dobite v
-                           torek?) Ne, ker gre verjetno v torek, če bo vse posreči v tisk. Torej v
+                           oddati na pošto, da bo to v ponedeljek res tu. <stage who="#sp.unknown">
+                              <stage type="speaker">(Medklic:</stage> Gospod predsednik, kaj pa če
+                              se zmenimo, da v ponedeljek oddamo, pa da dobite v torek?)</stage> Ne,
+                           ker gre verjetno v torek, če bo vse posreči v tisk. Torej v
                            ponedeljek.</p>
                         <p>To je zdaj eno. Zato vas lepo prosim, ker ni druge možne variante je
                            najbolje, da zdaj sedete in zdaj naredite. Glede na to, da oba ostala
@@ -1448,9 +1482,11 @@
                            tako da bi bilo to seveda tudi v redu.</p>
                         <p>Ima še kdo kakšno vprašanje? Meni je po eni strani žal, po drugi pa sem
                            seveda vesel, da s tem zaključujem 7. sejo Zbora združenega dela.
-                           (Aplavz.)</p>
+                              <stage>(Aplavz.)</stage>
+                        </p>
                      </sp>
-                     <stage>(Seja je bila zaključena ob 14.45 uri.)</stage>
+                     <stage type="time">(Seja je bila <time to="1990-10-12T14:45:00"
+                           xml:id="stage.t.6">zaključena ob 14.45 uri</time>.)</stage>
                   </div>
                </div>
             </div>

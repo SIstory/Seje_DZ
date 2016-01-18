@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="DZ-1990-ZbZdruDel-6">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -78,7 +78,8 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -89,6 +90,14 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2016-01-18+01:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>//stage[@type='time']</item>
+               <item>//p/stage</item>
+               <item>//docDate</item>
+               <item>//timeline</item>
+            </list>
+         </change>
          <change when="2015-12-02+01:00">
             <name>Andrej Pančur</name>: preveril, dopolnil in dokončal kodiranje<list>
                <item>//front//*</item>
@@ -229,12 +238,18 @@
             <head>ZBOR ZDRUŽENEGA DELA SKUPŠČINE REPUBLIKE SLOVENIJE</head>
             <div ana="#PAR.Seja" n="6">
                <head>6. seja</head>
-               <docDate>(4. oktober 1990)</docDate>
+               <docDate when="1990-10-04">(4. oktober 1990)</docDate>
+               <timeline origin="#TL.1" unit="s">
+                  <when synch="#stage.t.1" xml:id="TL.1" absolute="1990-10-04T11:10:00"/>
+                  <when synch="#stage.t.2" since="#TL.1" absolute="1990-10-04T12:45:00"
+                     interval="5700"/>
+               </timeline>
                <castList>
                   <castItem>Sejo je vodil <actor xml:id="sp.ZupančičJože">Jože Zupančič</actor>
                      predsednik Zbora združenega dela </castItem>
                </castList>
-               <stage>Seja se je pričela ob 11.10 uri.</stage>
+               <stage type="time">Seja se je <time from="1990-10-04T11:10:00" xml:id="stage.t.1"
+                     >pričela ob 11.10 uri</time>.</stage>
                <div ana="#PAR.PredDnevRed">
                   <div ana="#PAR.Prisot">
                      <sp who="#sp.ZupančičJože">
@@ -265,10 +280,13 @@
                         <p>Pričenjam razpravo o <title>DNEVNEM REDU</title>.</p>
                         <p>Želi kdo razpravljati? Če ne želi nihče razpravljati, menim, da lahko
                            zaključim razpravo in moramo izvesti dvoje glasovanj. Najprej preveriti,
-                           koliko nas je prisotnih. Prosim vse, da se vključite. Ste vsi? (65
-                           prisotnih.)</p>
-                        <p>Kdo je za sprejem teh dveh točk dnevnega reda? (62 delegatov.) Je kdo
-                           proti? (Nihče.) Se je kdo vzdržal? (Nihče.)</p>
+                           koliko nas je prisotnih. Prosim vse, da se vključite. Ste vsi? <stage>(65
+                              prisotnih.)</stage>
+                        </p>
+                        <p>Kdo je za sprejem teh dveh točk dnevnega reda? <stage>(62
+                              delegatov.)</stage> Je kdo proti? <stage>(Nihče.)</stage> Se je kdo
+                           vzdržal? <stage>(Nihče.)</stage>
+                        </p>
                         <p>Torej soglasno sprejet dnevni red.</p>
                      </sp>
                   </div>
@@ -767,16 +785,20 @@
                      </sp>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
-                        <p>Hvala. Želi še kdo razpravljati? (Nihče.)</p>
+                        <p>Hvala. Želi še kdo razpravljati? <stage>(Nihče.)</stage>
+                        </p>
                         <p>Če ni razprave, bi skušali to razpravo zaključiti. Jaz bi predlagal en
                            tak, dokaj načelen sklep, in sicer:</p>
                         <p>"Zbor združenega dela po uvodu in razpravi ocenah stanja, nastalih zaradi
                            posledic nesprejetja ustavnega zakona, podpira sprejem predloga ustavnega
                            zakona za izvedbo ustavnega amandmaja 96. k ustavi Republike
                            Slovenije."</p>
-                        <p>Želi še kdo razpravljati o sklepu? (Nihče.)</p>
-                        <p>Kdo je za tak sklep, naj prosim glasuje. (63 delagatov.) Je kdo proti? (1
-                           delagat.) Se je kdo vzdržal? (Nihče.)</p>
+                        <p>Želi še kdo razpravljati o sklepu? <stage>(Nihče.)</stage>
+                        </p>
+                        <p>Kdo je za tak sklep, naj prosim glasuje. <stage>(63 delagatov.)</stage>
+                           Je kdo proti? <stage>(1 delagat.)</stage> Se je kdo vzdržal?
+                              <stage>(Nihče.)</stage>
+                        </p>
                         <p>Torej je ta sklep z večino glasov sprejet. In s tem smo mi zaključili 1.
                            točko dnevnega reda.</p>
                      </sp>
@@ -894,7 +916,9 @@
                            združenega dela niso preveč priljubljene in preveč odmevne.</p>
                         <p>Mislim pa da to je ena takih, ki bi vsakemu dobro mislečemu in ne
                            prenapetemu Slovencu zdaj kar prav prišla.</p>
-                        <p>(Aplavz.)</p>
+                        <p>
+                           <stage>(Aplavz.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.ZupančičJože">
                         <speaker>JOŽE ZUPANČIČ:</speaker>
@@ -1186,11 +1210,12 @@
                            skupnem zasedanju ali ne. Je prav tako, tisti ki ste iz obrti? Kdo je za
                            to, da naš zbor zahteva in s tem tudi izpelje nadaljevanje te procedure o
                            zmanjšanju prometnega davka na skupnem zasedanju vseh treh zborov.</p>
-                        <p>Kdo je za? (35 delagatov.) Je kdo proti? (17 delagatov.) Se je kdo
-                           vzdržal? (9 delagatov.)</p>
-                        <p>Koliko nas je vseh prisotnih? (65 prisotnih.) Z res majhno večino gremo
-                           na skupno zasedanje, to je skupno sejo. Kako pa bo potem potekalo
-                           glasovanje, bomo pa videli.</p>
+                        <p>Kdo je za? <stage>(35 delagatov.)</stage> Je kdo proti? <stage>(17
+                              delagatov.)</stage> Se je kdo vzdržal? <stage>(9 delagatov.)</stage>
+                        </p>
+                        <p>Koliko nas je vseh prisotnih? <stage>(65 prisotnih.)</stage> Z res majhno
+                           večino gremo na skupno zasedanje, to je skupno sejo. Kako pa bo potem
+                           potekalo glasovanje, bomo pa videli.</p>
                         <p>Besedo ima gospod Jakič.</p>
                      </sp>
                      <sp who="#sp.JakičRoman">
@@ -1329,7 +1354,8 @@
                            v kateri smo pričeli, tam na CK-ju.</p>
                         <p>In za danes bi zaključili. Najlepša hvala.</p>
                      </sp>
-                     <stage>(Seja je bila končana 4. oktobra 1990 ob 12.45 uri.)</stage>
+                     <stage type="time">(Seja je bila <time to="1990-10-04T12:45:00"
+                           xml:id="stage.t.2">končana 4. oktobra 1990 ob 12.45 uri</time>.)</stage>
                   </div>
                </div>
             </div>

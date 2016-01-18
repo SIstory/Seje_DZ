@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="DZ-1991-ZbZdruDel-25">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -77,7 +77,8 @@
             <p>XML na portalu Zgodovina Slovenije - SIstory narejen v okviru izvajanja
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -88,6 +89,14 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2016-01-18+01:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>//stage[@type='time']</item>
+               <item>//p/stage</item>
+               <item>//docDate</item>
+               <item>//timeline</item>
+            </list>
+         </change>
          <change when="2015-08-17">
             <name>Andrej Pančur</name>: preveril, dopolnil in dokončal kodiranje<list>
                <item>//front//*</item>
@@ -109,7 +118,8 @@
             <list type="simple">
                <head>ZBOR ZDRUŽENEGA DELA</head>
                <head>25. seja - 17. in 18. julij 1991</head>
-               <item><list type="ordered">
+               <item>
+                  <list type="ordered">
                      <head>PRED DNEVNIM REDOM:</head>
                      <item n="1">Ugotavljanje prisotnosti delegatov ......................  1</item>
                      <item n="2">Določitev dnevnega reda .................................  1<list
@@ -138,10 +148,12 @@
                            <item>mag. Angelca Žerovnik ................................... 17</item>
                            <item>Vilijem Sekereš ......................................... 18</item>
                            <item>Štefan Lebar ............................................ 18</item>
-                        </list></item>
+                        </list>
+                     </item>
                   </list>
                </item>
-               <item><list type="ordered">
+               <item>
+                  <list type="ordered">
                      <head>DNEVNI RED:</head>
                      <item n="1">Odobritev osnutkov zapisnikov 21. in 22. seje zbora
                         ....................................... 19</item>
@@ -151,7 +163,8 @@
                               osnutkom zakona ............... 19</item>
                            <item>- predlogom za izdajo zakona o gostinski dejavnosti, z osnutkom
                               zakona ......................... 19</item>
-                        </list><list type="simple">
+                        </list>
+                        <list type="simple">
                            <head>GOVORNIKI:</head>
                            <item>Vlado Puc ............................................... 20</item>
                            <item>Marko Podrekar .......................................... 20</item>
@@ -166,7 +179,8 @@
                            <item>Davorin Bizjak .......................................... 25</item>
                            <item>Leopold Drame ........................................... 25</item>
                            <item>Irena Dobrovc-Tatalović .................................25</item>
-                        </list></item>
+                        </list>
+                     </item>
                      <item n="3">Ukrepi na področju gospodarstva, splošne in skupne porabe po
                         agresiji na Republiko Slovenijo ............... 26<list type="simple">
                            <head>GOVORNIKI:</head>
@@ -184,7 +198,8 @@
                            <item>Igor Umek ............................................... 33</item>
                            <item>Izidor Rejc ............................................. 36</item>
                            <item>mag. Franc Perko ........................................ 38</item>
-                        </list></item>
+                        </list>
+                     </item>
                      <item n="4">Predlog za izdajo zakona o pokojninskem in invalidskem zavarovanju
                         ................................. 41<list type="simple">
                            <head>GOVORNIKI:</head>
@@ -196,7 +211,8 @@
                            <item>Jože Zupančič ........................................... 49</item>
                            <item>dr. Jože Arzenšek ....................................... 50</item>
                            <item>Zdravko Zabukovec ....................................... 51</item>
-                        </list></item>
+                        </list>
+                     </item>
                      <item n="5">Predlog za izdajo zakona o praznikih in dela prostih dnevih v
                         Republiki Sloveniji, z osnutkom  zakona
                         .................................................. 51<list type="simple">
@@ -216,7 +232,8 @@
                            <item>Andrej Šter ............................................. 58</item>
                            <item>mag. Franc Avberšek ..................................... 59</item>
                            <item>Davorin Bizjak .......................................... 60</item>
-                        </list></item>
+                        </list>
+                     </item>
                      <item n="6">Predlog za izdajo zakona o gospodarskih javnih službah, z osnutkom
                         zakona .............................. 60<list type="simple">
                            <head>GOVORNIKI:</head>
@@ -227,7 +244,8 @@
                            <item>Rudi Moge ............................................... 64</item>
                            <item>Miha Jazbinšek .......................................... 64</item>
                            <item>mag. Franc Perko ........................................ 66</item>
-                        </list></item>
+                        </list>
+                     </item>
                   </list>
                   <list type="ordered">
                      <head>Nadaljevanje 25. seje Zbora združenega dela dne 18. junija 1991:</head>
@@ -254,7 +272,8 @@
                            <item>dr. Janez Remškar ....................................... 84</item>
                            <item>dr. Jože Arzenšek ....................................... 84</item>
                            <item>dr. Anton Židanik ....................................... 86</item>
-                        </list></item>
+                        </list>
+                     </item>
                      <item n="10">Predlog za izdajo zakona o zdravstvenem varstvu in zdravstvenem
                         zavarovanju, z osnutkom zakona ............ 86<list type="simple">
                            <head>GOVORNIKI:</head>
@@ -267,12 +286,14 @@
                            <item>Andrej Muren .......................................... 95</item>
                            <item>Anka Osterman ......................................... 95</item>
                            <item>dr. Marija Mencej ..................................... 97</item>
-                        </list></item>
+                        </list>
+                     </item>
                      <item n="11">Predlog za izdajo zakona o lekarniški dejavnosti, z osnutkom
                         zakona ..................................... 98<list type="simple">
                            <head>GOVORNIK:</head>
                            <item>dr. Jože Arzenšek ..................................... 98</item>
-                        </list></item>
+                        </list>
+                     </item>
                      <item n="12">Soglasje k statutarnem sklepu Univerze v Mariboru .....  98</item>
                      <item n="13">Obravnava poročila Mandatno-imunitetne komisije Zbora združenega
                         dela ................................. 99<list type="simple">
@@ -292,13 +313,15 @@
                            <item>Rudi Moge ............................................. 106</item>
                            <item>mag. Franc Perko ...................................... 107</item>
                            <item>Andrej Šter ........................................... 107</item>
-                        </list></item>
+                        </list>
+                     </item>
                      <item n="14">Pobude, predlogi in vprašanja delegatov - nadaljevanje točke
                         .................................... 108<list type="simple">
                            <head>GOVORNIK:</head>
                            <item>Franc Avberšek ........................................ 108</item>
                            <item>Franc Avberšek ........................................ 111</item>
-                        </list></item>
+                        </list>
+                     </item>
                      <item n="15">Seznam govornikov .....................................
                         II/1</item>
                      <item n="16">Priloga: zapisnik seje ...............................
@@ -311,94 +334,141 @@
             <head>SEZNAM GOVORNIKOV</head>
             <head>ZBOR ZDRUŽENEGA DELA 25. seja - 17. in 18. julija 1991</head>
             <castList>
-               <castItem><actor xml:id="sp.ArzenšekJože">Arzenšek dr. Jože</actor> ............. 3,
-                  8, 29, 50, 58, 67, 84, 87, 98</castItem>
-               <castItem><actor xml:id="sp.AvberšekFranc">Avberšek mag. Franc</actor>
+               <castItem>
+                  <actor xml:id="sp.ArzenšekJože">Arzenšek dr. Jože</actor> ............. 3, 8, 29,
+                  50, 58, 67, 84, 87, 98</castItem>
+               <castItem>
+                  <actor xml:id="sp.AvberšekFranc">Avberšek mag. Franc</actor>
                   ........................... 59, 64, 108, 111</castItem>
-               <castItem><actor xml:id="sp.BanFranc">Ban Franc</actor>
+               <castItem>
+                  <actor xml:id="sp.BanFranc">Ban Franc</actor>
                   .......................................... 10, 28, 104</castItem>
-               <castItem><actor xml:id="sp.BizjakDavorin">Bizjak Davorin</actor>
+               <castItem>
+                  <actor xml:id="sp.BizjakDavorin">Bizjak Davorin</actor>
                   ................................... 6, 25, 60, 80</castItem>
-               <castItem><actor xml:id="sp.BrglezStanislav">Brglez Stanislav</actor>
+               <castItem>
+                  <actor xml:id="sp.BrglezStanislav">Brglez Stanislav</actor>
                   ............................................ 31</castItem>
-               <castItem><actor xml:id="sp.DaneuIvo">Daneu Ivo</actor>
+               <castItem>
+                  <actor xml:id="sp.DaneuIvo">Daneu Ivo</actor>
                   ............................................... 56, 82</castItem>
-               <castItem><actor xml:id="sp.Dobrovc-TatalovićIrena">Dobrovc-Tatalović Irena</actor>
+               <castItem>
+                  <actor xml:id="sp.Dobrovc-TatalovićIrena">Dobrovc-Tatalović Irena</actor>
                   ............................. 21, 22, 25</castItem>
-               <castItem><actor xml:id="sp.DrameLeopold">Drame Leopold</actor>
+               <castItem>
+                  <actor xml:id="sp.DrameLeopold">Drame Leopold</actor>
                   ........................................... 25, 55</castItem>
-               <castItem><actor xml:id="sp.DretnikIvan">Dretnik Ivan</actor>
+               <castItem>
+                  <actor xml:id="sp.DretnikIvan">Dretnik Ivan</actor>
                   ........................................ 32, 80, 93</castItem>
-               <castItem><actor xml:id="sp.HvaleStanko">Hvale Stanko</actor>
+               <castItem>
+                  <actor xml:id="sp.HvaleStanko">Hvale Stanko</actor>
                   ................................................ 45</castItem>
-               <castItem><actor xml:id="sp.JakičRoman">Jakič Roman</actor>
+               <castItem>
+                  <actor xml:id="sp.JakičRoman">Jakič Roman</actor>
                   .................................. 9, 23, 27, 46, 53</castItem>
-               <castItem><actor xml:id="sp.JazbinšekMiha">Jazbinšek Miha</actor>
+               <castItem>
+                  <actor xml:id="sp.JazbinšekMiha">Jazbinšek Miha</actor>
                   ...................................... 12, 61, 64</castItem>
-               <castItem><actor xml:id="sp.KeberIrena">Keber dr. Irena</actor>
+               <castItem>
+                  <actor xml:id="sp.KeberIrena">Keber dr. Irena</actor>
                   ............................................. 74</castItem>
-               <castItem><actor xml:id="sp.LebarŠtefan">Lebar Štefan</actor>
+               <castItem>
+                  <actor xml:id="sp.LebarŠtefan">Lebar Štefan</actor>
                   ............................................ 15, 18</castItem>
-               <castItem><actor xml:id="sp.LončarMarija">Lončar Marija</actor>
+               <castItem>
+                  <actor xml:id="sp.LončarMarija">Lončar Marija</actor>
                   ............................................ 7, 55</castItem>
-               <castItem><actor xml:id="sp.MakVilijem">Mak Vilijem</actor>
+               <castItem>
+                  <actor xml:id="sp.MakVilijem">Mak Vilijem</actor>
                   .................................................. 9</castItem>
-               <castItem><actor xml:id="sp.MencejMarija">Mencej dr. Marija</actor>
+               <castItem>
+                  <actor xml:id="sp.MencejMarija">Mencej dr. Marija</actor>
                   ....................................... 83, 97</castItem>
-               <castItem><actor xml:id="sp.MogeRudi">Moge Rudi</actor>
+               <castItem>
+                  <actor xml:id="sp.MogeRudi">Moge Rudi</actor>
                   ...................................... 13, 16, 64, 106</castItem>
-               <castItem><actor xml:id="sp.MurenAndrej">Muren Andrej</actor>
+               <castItem>
+                  <actor xml:id="sp.MurenAndrej">Muren Andrej</actor>
                   .................................... 11, 42, 53, 95</castItem>
-               <castItem><actor xml:id="sp.MurkoDejan">Murko Dejan</actor>
+               <castItem>
+                  <actor xml:id="sp.MurkoDejan">Murko Dejan</actor>
                   ................................................. 41</castItem>
-               <castItem><actor xml:id="sp.Neidentificiranigovornik">Neidentificirani
-                     govornik</actor></castItem>
-               <castItem><actor xml:id="sp.OblakMajda">Oblak Majda</actor>
+               <castItem>
+                  <actor xml:id="sp.Neidentificiranigovornik">Neidentificirani govornik</actor>
+               </castItem>
+               <castItem>
+                  <actor xml:id="sp.OblakMajda">Oblak Majda</actor>
                   ............................................. 78, 94</castItem>
-               <castItem><actor xml:id="sp.OstermanAnka">Osterman Anka</actor>
-                  ............................ 2, 24, 47, 63, 81, 95</castItem>
-               <castItem><actor xml:id="sp.PerkoFranc">Perko mag. Franc</actor>
-                  ........................... 11, 38, 63, 66, 107</castItem>
-               <castItem><actor xml:id="sp.PodrekarMarko">Podrekar Marko</actor>
+               <castItem>
+                  <actor xml:id="sp.OstermanAnka">Osterman Anka</actor> ............................
+                  2, 24, 47, 63, 81, 95</castItem>
+               <castItem>
+                  <actor xml:id="sp.PerkoFranc">Perko mag. Franc</actor> ...........................
+                  11, 38, 63, 66, 107</castItem>
+               <castItem>
+                  <actor xml:id="sp.PodrekarMarko">Podrekar Marko</actor>
                   .............................................. 20</castItem>
-               <castItem><actor xml:id="sp.PrelovecValentin">Prelovec Valentin</actor>
+               <castItem>
+                  <actor xml:id="sp.PrelovecValentin">Prelovec Valentin</actor>
                   .......................................... 76</castItem>
-               <castItem><actor xml:id="sp.PrešerenTatjana">Prešeren Tatjana</actor>
+               <castItem>
+                  <actor xml:id="sp.PrešerenTatjana">Prešeren Tatjana</actor>
                   .................................... 14, 17, 79</castItem>
-               <castItem><actor xml:id="sp.PucVlado">Puc Vlado</actor>
-                  .................................... 8, 20, 22, 24, 30</castItem>
-               <castItem><actor xml:id="sp.PuharJožica">Puhar Jožica</actor>
+               <castItem>
+                  <actor xml:id="sp.PucVlado">Puc Vlado</actor> ....................................
+                  8, 20, 22, 24, 30</castItem>
+               <castItem>
+                  <actor xml:id="sp.PuharJožica">Puhar Jožica</actor>
                   ............................................. 3, 28</castItem>
-               <castItem><actor xml:id="sp.RejcIzidor">Rejc Izidor</actor>
+               <castItem>
+                  <actor xml:id="sp.RejcIzidor">Rejc Izidor</actor>
                   ................................................. 36</castItem>
-               <castItem><actor xml:id="sp.RemškarJanez">Remškar dr. Janez</actor>
+               <castItem>
+                  <actor xml:id="sp.RemškarJanez">Remškar dr. Janez</actor>
                   ........................... 69, 78, 79, 84, 90</castItem>
-               <castItem><actor xml:id="sp.RodePrimož">Rode dr. Primož</actor>
+               <castItem>
+                  <actor xml:id="sp.RodePrimož">Rode dr. Primož</actor>
                   ............................................. 74</castItem>
-               <castItem><actor xml:id="sp.RoginaBogo">Rogina Bogo</actor>
-                  ............................... 23, 26, 30, 100, 105</castItem>
-               <castItem><actor xml:id="sp.SekerešVilijem">Sekereš Vilijem</actor>
+               <castItem>
+                  <actor xml:id="sp.RoginaBogo">Rogina Bogo</actor> ...............................
+                  23, 26, 30, 100, 105</castItem>
+               <castItem>
+                  <actor xml:id="sp.SekerešVilijem">Sekereš Vilijem</actor>
                   ............................................. 18</castItem>
-               <castItem><actor xml:id="sp.StarcMarjan">Starc Marjan</actor>
+               <castItem>
+                  <actor xml:id="sp.StarcMarjan">Starc Marjan</actor>
                   ................................................ 57</castItem>
-               <castItem><actor xml:id="sp.StarcPeter">Starc Peter</actor>
+               <castItem>
+                  <actor xml:id="sp.StarcPeter">Starc Peter</actor>
                   ........................................ 54, 94, 105</castItem>
-               <castItem><actor xml:id="sp.StudenčnikJože">Studenčnik Jože</actor>
+               <castItem>
+                  <actor xml:id="sp.StudenčnikJože">Studenčnik Jože</actor>
                   ........................................ 99, 103</castItem>
-               <castItem><actor xml:id="sp.ŠterAndrej">Šter Andrej</actor>
+               <castItem>
+                  <actor xml:id="sp.ŠterAndrej">Šter Andrej</actor>
                   ................................... 13, 58, 101, 107</castItem>
-               <castItem><actor xml:id="sp.UmekIgor">Umek Igor</actor>
+               <castItem>
+                  <actor xml:id="sp.UmekIgor">Umek Igor</actor>
                   ................................................... 33</castItem>
-               <castItem><actor xml:id="sp.ZabukovecZdravko">Zabukovec Zdravko</actor>
+               <castItem>
+                  <actor xml:id="sp.ZabukovecZdravko">Zabukovec Zdravko</actor>
                   ......................... 32, 51, 52, 100, 103</castItem>
-               <castItem><actor xml:id="sp.ZupancBarbara">Zupanc Barbara</actor>
+               <castItem>
+                  <actor xml:id="sp.ZupancBarbara">Zupanc Barbara</actor>
                   ............................................. 100</castItem>
-               <castItem><actor sameAs="sp.ZupančičJože">Zupančič Jože</actor>
+               <castItem>
+                  <actor sameAs="sp.ZupančičJože">Zupančič Jože</actor>
                   ...........................16, 24, 27, 49, 53, 102</castItem>
-               <castItem><actor xml:id="sp.ŽerovnikAngelca">Žerovnik mag. Angelca</actor>
+               <castItem>
+                  <actor xml:id="sp.ŽerovnikAngelca">Žerovnik mag. Angelca</actor>
                   ............................... 17, 52, 54</castItem>
-               <castItem><actor xml:id="sp.ŽidanikAnton">Židanik dr. Anton</actor>
+               <castItem>
+                  <actor xml:id="sp.ŽidanikAnton">Židanik dr. Anton</actor>
                   .............................. 72, 86, 91, 104</castItem>
+               <castItem>
+                  <actor xml:id="sp.unknown"/>
+               </castItem>
             </castList>
          </div>
       </front>
@@ -407,12 +477,34 @@
             <head>ZBOR ZDRUŽENEGA DELA</head>
             <div ana="#PAR.Seja" n="25">
                <head>25. seja</head>
-               <docDate>(17. in 18.7.1991)</docDate>
+               <docDate>(<date from="1991-07-17" to="1991-07-18">17. in 18. 7.
+                  1991</date>)</docDate>
+               <timeline origin="#TL.1" unit="s">
+                  <when synch="#stage.t.1" xml:id="TL.1" absolute="1991-07-17T10:20:00"/>
+                  <when synch="#stage.t.2" since="#TL.1" absolute="1991-07-17T10:22:00"
+                     interval="120"/>
+                  <when synch="#stage.t.3" xml:id="TL.2" absolute="1991-07-17T13:17:00"/>
+                  <when synch="#stage.t.4" since="#TL.2" absolute="1991-07-17T15:30:00"
+                     interval="7980"/>
+                  <when synch="#stage.t.5" xml:id="TL.3" absolute="1991-07-17T14:15:00"/>
+                  <when synch="#stage.t.6" since="#TL.3" absolute="1991-07-17T18:50:00"
+                     interval="16500"/>
+                  <when synch="#stage.t.7" xml:id="TL.4" absolute="1991-07-18T10:22:00"/>
+                  <when synch="#stage.t.8" since="#TL.4" absolute="1991-07-18T11:50:00"
+                     interval="5280"/>
+                  <when synch="#stage.t.9" xml:id="TL.5" absolute="1991-07-18T13:00:00"/>
+                  <when synch="#stage.t.10" since="#TL.5" absolute="1991-07-18T14:55:00"
+                     interval="6900"/>
+               </timeline>
                <castList>
-                  <castItem><roleDesc>Predsedoval</roleDesc>: <actor xml:id="sp.ZupančičJože">JOŽE
-                        ZUPANČIČ</actor>, <role>predsednik Zbora združenega dela</role></castItem>
+                  <castItem>
+                     <roleDesc>Predsedoval</roleDesc>: <actor xml:id="sp.ZupančičJože">JOŽE
+                        ZUPANČIČ</actor>, <role>predsednik Zbora združenega dela</role>
+                  </castItem>
                </castList>
-               <stage>Seja se je pričela ob 10.20. uri</stage>
+               <stage type="time">Seja se je <time from="1991-07-17T10:20:00" xml:id="stage.t.1"
+                     >pričela ob 10.20. uri</time>
+               </stage>
                <div ana="#PAR.PredDnevRed">
                   <div ana="#PAR.Prisot">
                      <sp who="#sp.ZupančičJože">
@@ -464,8 +556,10 @@
                            bo.  Toliko za uvod, sedaj pa bi počasi šli v veliko dvorano na dve seji,
                            potem pa prosim, da res pridete kmalu nazaj. Hvala.</p>
                      </sp>
-                     <stage>/Seja je bila prekinjena ob 10.22 uri in se je nadaljevala ob 13.17.
-                        uri/</stage>
+                     <stage type="time">/Seja je bila <time to="1991-07-17T10:22:00"
+                           xml:id="stage.t.2">prekinjena ob 10.22 uri</time> in se je <time
+                           from="1991-07-17T13:17:00" xml:id="stage.t.3">nadaljevala ob 13.17.
+                           uri</time>/</stage>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
                         <p>Prisotnih nas je 44. Skoraj neverjetno, da nas je bilo prej precej
@@ -552,10 +646,13 @@
                         <p>Hvala. Želi še kdo besedo?</p>
                         <p>Če ne želi, zaključujem razpravljanje in predlagam, da glasujemo o
                            združitvi faz tako kot je pač predlagano. Najprej bi ugotovili prisotnost
-                           vseh poslancev. Koliko nas je? (51 delegatov)</p>
+                           vseh poslancev. Koliko nas je? <stage>(51 delegatov)</stage>
+                        </p>
                         <p>Sprašujem, kdo je za ta predlog Izvršnega sveta o združitvi obravnave
-                           prve in druge faze? (17 delegatov) Kdo je proti? (21 delegatov) Kdo se je
-                           vzdržal? (13 delegatov)</p>
+                           prve in druge faze? <stage>(17 delegatov)</stage> Kdo je proti?
+                              <stage>(21 delegatov)</stage> Kdo se je vzdržal? <stage>(13
+                              delegatov)</stage>
+                        </p>
                         <p>Ugotavljam, da zbor ni sprejel predloga Izvršnega sveta o združitvi
                            faz.</p>
                         <p>Pri 4. točki gre za predlog za izdajo zakona o zdravstveni dejavnosti, z
@@ -651,8 +748,10 @@
                            teh treh zakonih razpravljali jutri.  </p>
                         <p>Velja tako? Potem bi to preskočili. Ali kdo drugače meni? Dobro.</p>
                         <p>Torej se dogovorimo: kdo je za to, da se o faznosti postopka pogovorimo,
-                           ko bo opravljena razprava? (49 poslancev)</p>
-                        <p>Kdo je proti? (Nihče) Se je kdo vzdržal? (1 poslanec)  Hvala.</p>
+                           ko bo opravljena razprava? <stage>(49 poslancev)</stage>
+                        </p>
+                        <p>Kdo je proti? <stage>(Nihče)</stage> Se je kdo vzdržal? <stage>(1
+                              poslanec)</stage>  Hvala.</p>
                         <p>Potem imamo tudi pri <title>7. TOČKI:</title> Izvršni svet Skupščine
                            Republike Slovenije predlaga, da Skupščina Republike Slovenije obravnava
                            na podlagi drugega odstavka 265. člena poslovnika Skupščine Republike
@@ -665,8 +764,9 @@
                         <p>Kdo je za predlog Izvršnega sveta o združitvi obravnave prve in druge
                            faze? Gre za predlog za izdajo zakona o praznikih in dela prostih dnevih
                            v Republiki Sloveniji, z osnutkom zakona.</p>
-                        <p>Kdo je za? (36 poslancev) Kdo je proti? (4 poslanci) Vzdržanih? (11
-                           poslancev)</p>
+                        <p>Kdo je za? <stage>(36 poslancev)</stage> Kdo je proti? <stage>(4
+                              poslanci)</stage> Vzdržanih? <stage>(11 poslancev)</stage>
+                        </p>
                         <p>Ugotavljam, da je zbor sprejel predlog Izvršnega sveta o združitvi faz z
                            večino glasov.</p>
                         <p>Tudi pri <title>8. TOČKI</title> gre za podobno zadevo - Predlog za
@@ -689,9 +789,11 @@
                            in predlogu za izdajo zakona o gostinski dejavnosti, z osnutkom
                            zakona.</p>
                         <p>Želi v zvezi s to razširitvijo kdo razpravljati? Tu gre sedaj za
-                           razširitev. (Ne želi)</p>
-                        <p>Kdo je za razširitev? (52 delegatov je za) Kdo je proti? (Nihče)
-                           Vzdržani? (Nihče)</p>
+                           razširitev. <stage>(Ne želi)</stage>
+                        </p>
+                        <p>Kdo je za razširitev? <stage>(52 delegatov je za)</stage> Kdo je proti?
+                              <stage>(Nihče)</stage> Vzdržani? <stage>(Nihče)</stage>
+                        </p>
                         <p>Ugotavljam, da smo soglasno sprejeli razširitev dnevnega reda. Predlog
                            ste prejeli danes na klop. Mi smo se sedaj tako pogovorili, da smo seveda
                            pri tem predlogu prečiščenega besedila spremenili, in sicer 3. točko, da
@@ -990,8 +1092,9 @@
                            pogovorili iz oči v oči. Kdo je za to točko dnevnega reda: ukrepi na
                            področju gospodarstva, splošne in skupne porabe po agresiji na Republiko
                            Slovenijo.</p>
-                        <p>Kdo je za? (48 poslancev za) Je kdo proti? (Nihče) Se je kdo vzdržal?
-                           (Nihče)</p>
+                        <p>Kdo je za? <stage>(48 poslancev za)</stage> Je kdo proti?
+                              <stage>(Nihče)</stage> Se je kdo vzdržal? <stage>(Nihče)</stage>
+                        </p>
                         <p>Ugotavljam, da smo to točko sprejeli soglasno.</p>
                         <p>Preden nadaljujemo predlagam, da uredimo to v zvezi z <title>8. TOČKO
                               DNEVNEGA REDA</title> in bi prosil gospoda Jazbinška. Naše stališče
@@ -1045,10 +1148,14 @@
                         <p>Hvala, gospod minister.</p>
                         <p>Ali želi sedaj kdo razpravljati? Ali je kakšno vprašanje? /Ni./  Če ni,
                            bi vseeno morali ugotoviti prisotnost nas poslancev.</p>
-                        <p>(50 prisotnih delegatov)</p>
+                        <p>
+                           <stage>(50 prisotnih delegatov)</stage>
+                        </p>
                         <p>Kdo je za predlog Izvršnega sveta o združitvi obravnave prve in druge
-                           faze? (35 delegatov za) Kdo je proti? (6 delegatov proti) Kdo se je
-                           vzdržal? (12 delegatov vzdržanih)</p>
+                           faze? <stage>(35 delegatov za)</stage> Kdo je proti? <stage>(6 delegatov
+                              proti)</stage> Kdo se je vzdržal? <stage>(12 delegatov
+                              vzdržanih)</stage>
+                        </p>
                         <p>Ugotavljam, da je zbor sprejel predlog Izvršnega sveta o zdrzužitvi faz z
                            večino glasov.</p>
                         <p>Sedaj bi vas prosil, da glasujete še v zvezi z dnevnim redom.  Prosim,
@@ -1075,8 +1182,10 @@
                               KOMISIJE.</title> Je prav tako? Ali želi v zvezi s tem kdo
                            razpravljati? /Ne želi./</p>
                         <p>Kdo je za to dodatno točko: obravnava poročila mandatno-imunitetne
-                           komisije? (43 delegatov za) Je kdo proti? (Nihče) Se je kdo vzdržal? (4
-                           delegati vzdržani)</p>
+                           komisije? <stage>(43 delegatov za)</stage> Je kdo proti?
+                              <stage>(Nihče)</stage> Se je kdo vzdržal? <stage>(4 delegati
+                              vzdržani)</stage>
+                        </p>
                         <p>Ugotavljam, da smo dnevni red naše seje razširili z obravnavo poročila
                            mandatno-imunitetne komisije.</p>
                         <p>Ima še kdo kaj v zvezi z dnevnim redom? Prosim, gospod Rudi Moge.</p>
@@ -1341,8 +1450,10 @@
                      </sp>
                      <sp who="#sp.LebarŠtefan">
                         <speaker>ŠTEFAN LEBAR:</speaker>
-                        <p>(govori iz klopi)  Mi imamo pripravljen ekspoze. Nismo ga prebrali, so pa
-                           v ekspozeju pripravljeni odgovori. Povejte, ali naj preberem?</p>
+                        <p>
+                           <stage>(govori iz klopi)</stage>  Mi imamo pripravljen ekspoze. Nismo ga
+                           prebrali, so pa v ekspozeju pripravljeni odgovori. Povejte, ali naj
+                           preberem?</p>
                      </sp>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
@@ -1351,11 +1462,14 @@
                            hoče nekdo iz nas narediti in tega jaz ne bom dopustil, žal. To bo eno
                            izmed gradiv, ki ga bomo pač lahko dali poleg temu, ko bomo prihodnjič
                            obravnavali. To mora biti pisno, da ne bom filozofiral.</p>
-                        <p>Prosim, da sedaj ugotovimo prisotnost, da ne bo kaj narobe. (50 poslancev
-                           prisotnih)</p>
+                        <p>Prosim, da sedaj ugotovimo prisotnost, da ne bo kaj narobe. <stage>(50
+                              poslancev prisotnih)</stage>
+                        </p>
                         <p>Vprašam vas, kdo je za predlog, ki ga je posredoval predsednik, da se
-                           preloži na naslednjo sejo? (49 poslancev za)  Kdo je proti? (Nihče)  Kdo
-                           se je vzdržal? (1 poslanec vzdržan)</p>
+                           preloži na naslednjo sejo? <stage>(49 poslancev za)</stage>  Kdo je
+                           proti? <stage>(Nihče)</stage>  Kdo se je vzdržal? <stage>(1 poslanec
+                              vzdržan)</stage>
+                        </p>
                         <p>Ugotavljam, da smo z večino glasov ta predlog sprejeli. Zadevo bomo pač
                            imeli na naslednji seji. Saj to ni tako daleč.</p>
                         <p>Želi še kdo razpravljali v zvezi z dnevnim redom?  Če ne, razpravo o
@@ -1377,32 +1491,40 @@
                            t.j. usklajevanje zakonskih faz, da lahko oni potem odidejo. Ali
                            sprejmete to? /Da./ Dobro.</p>
                         <p>Dajem dnevni red na glasovanje.</p>
-                        <p>Kdo je za ta dnevni red? (51 delegatov za) Kdo je proti? (Nihče) Ali je
-                           kdo vzdržan? (Nihče)</p>
+                        <p>Kdo je za ta dnevni red? <stage>(51 delegatov za)</stage> Kdo je proti?
+                              <stage>(Nihče)</stage> Ali je kdo vzdržan? <stage>(Nihče)</stage>
+                        </p>
                         <p>Soglasno smo sprejeli dnevni red.</p>
                         <p>Ker bo prišlo do usklajevanja dnevnega reda, prosim za usklajevalno
                            skupino za dnevni red: Franci Avberšek, Rudi Moge, Stanislav Eržen,
                            Marija Lončar, Anka Osterman.</p>
-                        <p>Kdo je za ta predlog skupine za usklajevanje dnevnega reda? (48 delegatov
-                           za)  Kdo je proti? (Eden proti) Kdo se je vzdržal? (3 vzdržani)</p>
+                        <p>Kdo je za ta predlog skupine za usklajevanje dnevnega reda? <stage>(48
+                              delegatov za)</stage>  Kdo je proti? <stage>(Eden proti)</stage> Kdo
+                           se je vzdržal? <stage>(3 vzdržani)</stage>
+                        </p>
                      </sp>
                   </div>
                </div>
                <div ana="#PAR.DnevRed">
                   <div ana="#PAR.TDR" n="1">
                      <sp who="#sp.ZupančičJože">
-                        <p><title>1. TOČKA DNEVNEGA REDA. ODOBRITEV OSNUTKOV ZAPISNIKOV 21. IN 23.
+                        <p>
+                           <title>1. TOČKA DNEVNEGA REDA. ODOBRITEV OSNUTKOV ZAPISNIKOV 21. IN 23.
                               SEJE</title>. Osnutka zapisnikov ste prejeli. Sami ste videli, da je
                            bil zapisnik 21. seje zelo kompliciran, težak. Upam tudi, da ste ga
                            prebrali, saj ima kar 76 strani in je za tak način res dobro delo obeh
                            naših dveh Marij, tako da sta bili res pridni. Ali ima kdo kakšno
-                           pripombo? (Nima)</p>
-                        <p>Kaj pa glede osnutka zapisnika 23. seje? Tu je pa 17 strani. (Nihče nima
-                           pripomb)</p>
+                           pripombo? <stage>(Nima)</stage>
+                        </p>
+                        <p>Kaj pa glede osnutka zapisnika 23. seje? Tu je pa 17 strani.
+                              <stage>(Nihče nima pripomb)</stage>
+                        </p>
                         <p>Če nihče nima pripomb, prehajamo na glasovanje. Ali lahko glasujemo o
-                           obeh zapisnikih skupaj? (Da)</p>
-                        <p>Kdo je za odobritev? (51 delegatov za) Kdo je proti? (Nihče) Ali se je
-                           kdo vzdržal? (Nihče)</p>
+                           obeh zapisnikih skupaj? <stage>(Da)</stage>
+                        </p>
+                        <p>Kdo je za odobritev? <stage>(51 delegatov za)</stage> Kdo je proti?
+                              <stage>(Nihče)</stage> Ali se je kdo vzdržal? <stage>(Nihče)</stage>
+                        </p>
                         <p>Ugotavljam, da sta zapisnika sprejeta soglasno.</p>
                      </sp>
                   </div>
@@ -1427,21 +1549,21 @@
                            bili vsi za, samo eden proti - smo oblikovali naslednji sporazumni
                            predlog:</p>
                         <p>Komisija predlaga Zboru združenega dela, da sprejme osnutek obrtnega
-                           zakona. (To je prva zadeva.) Drugo: Komisija predlaga Zboru združenega
-                           dela, da obravnava registracijski zakon kot predlog za izdajo zakona z
-                           zakonskim osnutkom ter ga sprejme. Tretjič: Komisija soglaša s pripombami
-                           iz razprave, ki se nanašajo na potrebno uskladitev in celovito pripravo
-                           zakonodaje za področja, ki jih je do sedaj urejal obrtni zakon. Zato
-                           predlaga zboru, da sprejme naslednji sklep: Za pripravo predloga zakona o
-                           registraciji dejavnosti zasebnikov in obrtnega zakona ter ostalih
-                           področnih zakonov, ki so bili do sedaj sestavina obrtnega zakona, se
-                           oblikuje skupna komisija v sestavi: predstavniki predlagatelja - to je
-                           Sekretariata za drobno gospodarstvo, dva predstavnika Odbora Skupščine
-                           Republike Slovenije za podjetništvo in obrt, predstavnika odborov
-                           Skupščine Republike Slovenije za splošne gospodarske zadeve in proračun
-                           in javne finance ter Obrtne zbornice. Zbor nalaga skupni komisiji, da
-                           pripravi predloge vseh omenjenih zakonov najpozneje do 1.oktobra
-                           1991.</p>
+                           zakona. <stage>(To je prva zadeva.)</stage> Drugo: Komisija predlaga
+                           Zboru združenega dela, da obravnava registracijski zakon kot predlog za
+                           izdajo zakona z zakonskim osnutkom ter ga sprejme. Tretjič: Komisija
+                           soglaša s pripombami iz razprave, ki se nanašajo na potrebno uskladitev
+                           in celovito pripravo zakonodaje za področja, ki jih je do sedaj urejal
+                           obrtni zakon. Zato predlaga zboru, da sprejme naslednji sklep: Za
+                           pripravo predloga zakona o registraciji dejavnosti zasebnikov in obrtnega
+                           zakona ter ostalih področnih zakonov, ki so bili do sedaj sestavina
+                           obrtnega zakona, se oblikuje skupna komisija v sestavi: predstavniki
+                           predlagatelja - to je Sekretariata za drobno gospodarstvo, dva
+                           predstavnika Odbora Skupščine Republike Slovenije za podjetništvo in
+                           obrt, predstavnika odborov Skupščine Republike Slovenije za splošne
+                           gospodarske zadeve in proračun in javne finance ter Obrtne zbornice. Zbor
+                           nalaga skupni komisiji, da pripravi predloge vseh omenjenih zakonov
+                           najpozneje do 1.oktobra 1991.</p>
                         <p>Tu moram povedati, da smo, ko smo se zadnjič pogovarjali, nekako
                            zahtevali, da bi to pripravili do konca avgusta, vendar smo danes
                            ugotovili, da to ni možno. S tem, da se, če danes to sprejmemo, kar tudi
@@ -1725,7 +1847,8 @@
                      </sp>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
-                        <p>Želi še kdo besedo? (Da.)</p>
+                        <p>Želi še kdo besedo? <stage>(Da.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.Dobrovc-TatalovićIrena">
                         <speaker>IRENA DOBRAVC-TATALOVIĆ:</speaker>
@@ -1771,12 +1894,13 @@
                            ministrstva - prav tako iz šolskega ministrstva - s konkretnimi predlogi,
                            kaj še menijo, da bo potrebno v teh zakonih spremeniti. Če tega pisnega
                            gradiva ne bo, tega na dnevnem redu tudi 31.7. ne bo.</p>
-                        <p>O tem stališču bomo glasovali. Najprej, koliko nas je prisotnih: (47) -
-                           Kot sem povedal, predlagam, da se prestavi na 31.7., če bodo tudi pisna
-                           gradiva v zvezi s temi tremi zakoni, kaj se bo spremenilo. Če pa tega ne
-                           bo, pa tudi takrat ne bomo obravnavali.</p>
-                        <p>Kdo je za tak predlog? (44 delegatov) Kdo je proti? (Nihče) Vzdržanih? (5
-                           delegatov)</p>
+                        <p>O tem stališču bomo glasovali. Najprej, koliko nas je prisotnih:
+                              <stage>(47)</stage> - Kot sem povedal, predlagam, da se prestavi na
+                           31.7., če bodo tudi pisna gradiva v zvezi s temi tremi zakoni, kaj se bo
+                           spremenilo. Če pa tega ne bo, pa tudi takrat ne bomo obravnavali.</p>
+                        <p>Kdo je za tak predlog? <stage>(44 delegatov)</stage> Kdo je proti?
+                              <stage>(Nihče)</stage> Vzdržanih? <stage>(5 delegatov)</stage>
+                        </p>
                         <p>Potem lahko nadaljujemo z dnevnim redom.</p>
                      </sp>
                   </div>
@@ -2031,8 +2155,10 @@
                            zunaj, ali pa tudi notri, že vsi taki. Sicer je pa lahko tudi odmor.</p>
                         <p>Do štirih je odmor.</p>
                      </sp>
-                     <stage>/Seja je bila prekinjena ob 15.30 uri in se je nadaljevala ob 14.15
-                        uri/</stage>
+                     <stage type="time">/Seja je bila <time to="1991-07-17T15:30:00"
+                           xml:id="stage.t.4">prekinjena ob 15.30 uri</time> in se je <time
+                           from="1991-07-17T14:15:00" xml:id="stage.t.5">nadaljevala ob 14.15
+                           uri</time>/</stage>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
                         <p>Uro in pol smo govorili o tem, ali naj razpravljamo ali ne.</p>
@@ -2496,10 +2622,12 @@
                            skupaj in da se tudi dogovorimo o stvareh, kot sem jaz in v bistvu tudi
                            vi predlagali.</p>
                         <p>Bi lahko s temi tremi sklepi sklenili to točko? Lahko. Potem pa najprej
-                           ugotovimo, koliko nas je in glasujemo o teh sklepih. (46 delegatov
-                           navzočih)</p>
-                        <p>Kdo je za te tri predlagane sklepe? (44 delegatov) Kdo je proti? (Nihče)
-                           Vzdržal? (3 delegati)</p>
+                           ugotovimo, koliko nas je in glasujemo o teh sklepih. <stage>(46 delegatov
+                              navzočih)</stage>
+                        </p>
+                        <p>Kdo je za te tri predlagane sklepe? <stage>(44 delegatov)</stage> Kdo je
+                           proti? <stage>(Nihče)</stage> Vzdržal? <stage>(3 delegati)</stage>
+                        </p>
                      </sp>
                   </div>
                   <div ana="#PAR.TDR" n="3">
@@ -2599,12 +2727,12 @@
                      </sp>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
-                        <p>Hvala lepa. Peter Starc, poslanec .... (iz klopi), prosim ja. Moram
-                           povedati, da smo vsi seznanjeni, da si pisno oddal pripombe na osnutek
-                           zakona; pa tudi Vili Sekereš je oddal pisne pripombe na ta osnutek zakona
-                           in še skupina poslancev: Bogo Rogina, Vlado Puc, Leopold Drame, Valentin
-                           Prelovec. Tako imamo sedaj teh pisnih pripomb že kar precej.  No
-                           nadaljujemo. Prosim, gospod Andrej Murn.</p>
+                        <p>Hvala lepa. Peter Starc, poslanec .... <stage>(iz klopi)</stage>, prosim
+                           ja. Moram povedati, da smo vsi seznanjeni, da si pisno oddal pripombe na
+                           osnutek zakona; pa tudi Vili Sekereš je oddal pisne pripombe na ta
+                           osnutek zakona in še skupina poslancev: Bogo Rogina, Vlado Puc, Leopold
+                           Drame, Valentin Prelovec. Tako imamo sedaj teh pisnih pripomb že kar
+                           precej.  No nadaljujemo. Prosim, gospod Andrej Murn.</p>
                      </sp>
                      <sp who="#sp.MurenAndrej">
                         <speaker>ANDREJ MURN:</speaker>
@@ -3044,9 +3172,11 @@
                            pripombe delegatov in inštitucij, ki so bile vabljene na sejo.</p>
                         <p>Mislim, da to sedaj poznate, tako da to ni bil problem. Želi v zvezi s
                            tem sklepom še kdo kaj dodati? Če ne, prosim, da ugotovimo koliko nas je,
-                           ker gre le za sklep. (44 prisotnih.)</p>
-                        <p>Kdo je za predlagani sklep? (42 delegatov) Kdo je proti? (Nihče.)
-                           Vzdržal? (Nihče.)</p>
+                           ker gre le za sklep. <stage>(44 prisotnih.)</stage>
+                        </p>
+                        <p>Kdo je za predlagani sklep? <stage>(42 delegatov)</stage> Kdo je proti?
+                              <stage>(Nihče.)</stage> Vzdržal? <stage>(Nihče.)</stage>
+                        </p>
                         <p>Ugotavljam, da smo sklepa soglasno sprejeli.</p>
                      </sp>
                   </div>
@@ -3054,7 +3184,8 @@
                      <sp who="#sp.ZupančičJože">
                         <p>Pričeli bi s 7. točko dnevnega reda, ker smo rekli, da bomo 4., 5. in 6.
                            točko - to je zdravstveni paket - obravnavali jutri ob 10.00 uri.</p>
-                        <p><title>7. TOČKA DNEVNEGA REDA, to je PREDLOG ZA IZDAJO ZAKONA O PRAZNIKIH
+                        <p>
+                           <title>7. TOČKA DNEVNEGA REDA, to je PREDLOG ZA IZDAJO ZAKONA O PRAZNIKIH
                               IN DELA PROSTIH DNEVIH V REPUBLIKI SLOVENIJI, Z OSNUTKOM
                               ZAKONA</title>.</p>
                         <p>Predlog za izdajo zakona, z osnutkom zakona, je v obravnavo predložil
@@ -3077,8 +3208,8 @@
                            osnutku zakona predlagala konkretne pripombe.</p>
                         <p>Predstavnica Izvršnega sveta je tudi tu, to je gospa Jožica Puhar,
                            ministrica za delo. Ali želi besedo? Ni potrebno. Želijo besedo
-                           poročevalci delovnih teles? (Ne.)  Odpiram razpravo. Želi kdo
-                           razpravljati o predlogu za izdajo zakona o praznikih in dela prostih
+                           poročevalci delovnih teles? <stage>(Ne.)</stage>  Odpiram razpravo. Želi
+                           kdo razpravljati o predlogu za izdajo zakona o praznikih in dela prostih
                            dnevih v Republiki Sloveniji, z osnutkom zakona?  Gospod Zabukovec.</p>
                      </sp>
                      <sp who="#sp.ZabukovecZdravko">
@@ -3512,10 +3643,12 @@
                            Skupščine Republike Slovenije. Pri pripravi predloga zakona naj
                            predlagatelj prouči in ustrezno upošteva stališča in pripombe pristojnih
                            delovnih teles skupščine in stališča ter pripombe delegatov.</p>
-                        <p>Želi v zvezi s tem kdo razpravljati? (Ne želi.) Koliko nas je trenutno v
-                           dvorani? (43.)</p>
-                        <p>Koliko nas je za ta dva sklepa? (42 je za.) Kdo je proti? (Nihče.)
-                           Vzdržani? (1 vzdržan.)</p>
+                        <p>Želi v zvezi s tem kdo razpravljati? <stage>(Ne želi.)</stage> Koliko nas
+                           je trenutno v dvorani? <stage>(43.)</stage>
+                        </p>
+                        <p>Koliko nas je za ta dva sklepa? <stage>(42 je za.)</stage> Kdo je proti?
+                              <stage>(Nihče.)</stage> Vzdržani? <stage>(1 vzdržan.)</stage>
+                        </p>
                         <p>To se pravi, da smo oba sklepa z večino glasov sprejeli. In sedaj glede
                            na bioritmične zmogljivosti in glede na to, da je gospod Jazbinšek tu, bi
                            predlagal, da še vseeno 8. točko damo skozi, tako da imamo jutri malo
@@ -3570,7 +3703,7 @@
                            podjetji bi bilo treba določiti razmerje do zakona o podjetjih, predlaga
                            pa tudi konkretne pripombe k osnutku zakona. Predstavnik Izvršnega sveta
                            je minister za varstvo okolja in urejanje prostora gospod Jazbinšek. Želi
-                           mogoče  besedo? (Da.) Prosim.</p>
+                           mogoče  besedo? <stage>(Da.)</stage> Prosim.</p>
                      </sp>
                      <sp who="#sp.JazbinšekMiha">
                         <speaker>MIHA JAZBINŠEK:</speaker>
@@ -3839,15 +3972,18 @@
                            Pri pripravi osnutka zakona naj predlagatelj preuči in ustrezno upošteva
                            stališča in pripombe pristojnih delovnih teles Skupščine in stališča ter
                            pripombe delegatov, ki so bili podani na seji.</p>
-                        <p>Želi v zvezi s tem kdo razpravljati? (Ne.) Preštel sem vas, 43 vas je
-                           prisotnih.</p>
-                        <p>Kdo je za ta sklep? (43.) Je kdo proti?  (Nihče.) Se je kdo  vzdržal?
-                           (Nihče.)</p>
+                        <p>Želi v zvezi s tem kdo razpravljati? <stage>(Ne.)</stage> Preštel sem
+                           vas, 43 vas je prisotnih.</p>
+                        <p>Kdo je za ta sklep? <stage>(43.)</stage> Je kdo proti?
+                               <stage>(Nihče.)</stage> Se je kdo  vzdržal? <stage>(Nihče.)</stage>
+                        </p>
                         <p>Potem bi zaključil za danes našo sejo in jutri ob 10.00 uri se ponovno
                            dobimo tukaj. Nasvidenje jutri.</p>
                      </sp>
-                     <stage>(SEJA JE BILA PREKINJENA OB 18.50 URI IN SE JE NADALJEVALA DNE 18.7.1991
-                        OB 10.22 URI.)</stage>
+                     <stage type="time">(SEJA JE BILA <time to="1991-07-17T18:50:00"
+                           xml:id="stage.t.6">PREKINJENA OB 18.50 URI</time> IN SE JE <time
+                           from="1991-07-18T10:22:00" xml:id="stage.t.7">NADALJEVALA DNE 18.7.1991
+                           OB 10.22 URI</time>.)</stage>
                   </div>
                   <div ana="#PAR.Prisot">
                      <sp who="#sp.ZupančičJože">
@@ -3887,7 +4023,8 @@
                   </div>
                   <div ana="#PAR.TDR" n="4">
                      <sp who="#sp.ZupančičJože">
-                        <p><title>4. TOČKA DNEVNEGA REDA: To je PREDLOG ZA IZDAJO ZAKONA O
+                        <p>
+                           <title>4. TOČKA DNEVNEGA REDA: To je PREDLOG ZA IZDAJO ZAKONA O
                               ZDRAVSTVENI DEJAVNOSTI Z OSNUTKOM ZAKONA</title>. Tako imamo še v
                            dnevnem redu zapisano. Predlog zakona z osnutkom zakona je v obravnavo
                            predložil Izvršni svet Skupščine Republike Slovenije, objavljen je bil v
@@ -4876,8 +5013,9 @@
                            dejavnosti", je gotovo, ne, in zato sem to tudi posebej izpostavil. Je v
                            redu?</p>
                         <p>Prisotnih nas je 45 in prosim, da glasujemo.</p>
-                        <p>Kdo je za ta dva sklepa? (45 za.) Je kdo proti? (Nihče.) Vzdržal?
-                           (Nihče.)</p>
+                        <p>Kdo je za ta dva sklepa? <stage>(45 za.)</stage> Je kdo proti?
+                              <stage>(Nihče.)</stage> Vzdržal? <stage>(Nihče.)</stage>
+                        </p>
                         <p>Ugotavljam, da je zbor predlagani sklep sprejel soglasno.</p>
                      </sp>
                   </div>
@@ -4890,8 +5028,10 @@
                            Predlagam, da se dogovorimo, da se dobimo ob 12.45 uri zopet vsi
                            tukaj.</p>
                      </sp>
-                     <stage>(Seja je bila prekinjena ob 11.50 uri in se je nadaljevala ob 13.
-                        uri)</stage>
+                     <stage type="time">(Seja je bila <time to="1991-07-18T11:50:00"
+                           xml:id="stage.t.8">prekinjena ob 11.50 uri</time> in se je <time
+                           from="1991-07-18T13:00:00" xml:id="stage.t.9">nadaljevala ob 13.
+                           uri</time>)</stage>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
                         <p>Prosim, da nadaljujemo. Obravnavamo <title>5. TOČKO DNEVNEGA REDA -
@@ -5410,9 +5550,9 @@
                      </sp>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
-                        <p>Hvala. Še želi kdo razpravljati? (Ne.) Bo treba kaj odgovoriti? Dobro,
-                           prosim, besedo ima dr. Marija Mencej, svetovalka v Ministrstvu za
-                           zdravstvo, družino in socialno varstvo.</p>
+                        <p>Hvala. Še želi kdo razpravljati? <stage>(Ne.)</stage> Bo treba kaj
+                           odgovoriti? Dobro, prosim, besedo ima dr. Marija Mencej, svetovalka v
+                           Ministrstvu za zdravstvo, družino in socialno varstvo.</p>
                      </sp>
                      <sp who="#sp.MencejMarija">
                         <speaker>Dr. MARIJA MENCEJ:</speaker>
@@ -5453,8 +5593,9 @@
                            Skupščine in stališča ter pripombe delegatov in inštitucij, ki so bile
                            vabljene na sejo.</p>
                         <p>Se strinjate s tema dvema sklepoma?</p>
-                        <p>Kdo je za ta dva sklepa? (43 delegatov.) Kdo je proti? (Nihče.) Kdo se je
-                           vzdržal? (Nihče.)</p>
+                        <p>Kdo je za ta dva sklepa? <stage>(43 delegatov.)</stage> Kdo je proti?
+                              <stage>(Nihče.)</stage> Kdo se je vzdržal? <stage>(Nihče.)</stage>
+                        </p>
                         <p>Ugotavljam, da smo soglasno sprejeli ta dva sklepa.</p>
                      </sp>
                   </div>
@@ -5490,26 +5631,30 @@
                            ustrezno upošteva stališča in pripombe pristojnih delovnih teles
                            Skupščine in stališča ter pripombe delegatov in inštitucij vabljenih na
                            sejo.</p>
-                        <p>Kdo je za ta predlog sklepa? (41 delegatov.) Se je kdo vzdržal? (Nihče.)
-                           Je kdo proti? (Nihče.)</p>
+                        <p>Kdo je za ta predlog sklepa? <stage>(41 delegatov.)</stage> Se je kdo
+                           vzdržal? <stage>(Nihče.)</stage> Je kdo proti? <stage>(Nihče.)</stage>
+                        </p>
                         <p>Ugotavljam, da smo soglasno sprejeli tudi ta predlog zakona.</p>
                      </sp>
                   </div>
                   <div ana="#PAR.TDR" n="9">
                      <sp who="#sp.ZupančičJože">
-                        <p><title>9. TOČKA DNEVNEGA REDA: SOGLASJE K STATUTARNEMU SKLEPU UNIVERZE V
+                        <p>
+                           <title>9. TOČKA DNEVNEGA REDA: SOGLASJE K STATUTARNEMU SKLEPU UNIVERZE V
                               MARIBORU</title>.</p>
                         <p>Statutarni sklep je predložila Univerza v Mariboru. Obravnavala sta ga:
                            Odbor za visoko šolstvo in Zakonodajno-pravna komisija. K statutarnemu
                            sklepu ste prejeli mnenje Izvršnega sveta Skupščine Republike Slovenije.
                            Danes pa ste prejeli odlok o soglasju k statutarnemu sklepu. Želi mogoče
                            tu kdo razpravljati? Predstavnik Univerze, predstavnik Izvršnega sveta?
-                           (Ne.) Morda poročevalci delovnih teles? Kdo želi razpravljati? (Nihče.)
-                           Če ne želi nihče razpravljati, zaključujem to in bi glasovali.</p>
+                              <stage>(Ne.)</stage> Morda poročevalci delovnih teles? Kdo želi
+                           razpravljati? <stage>(Nihče.)</stage> Če ne želi nihče razpravljati,
+                           zaključujem to in bi glasovali.</p>
                         <p>Na glasovanje dajem predlog odloka o soglasju k statutarnemu sklepu in
                            vas sprašujem:</p>
-                        <p>Kdo je za ta odlok? (42 delegatov.) Je kdo proti? (Nihče.) Se je kdo
-                           vzdržal? (Nihče.)</p>
+                        <p>Kdo je za ta odlok? <stage>(42 delegatov.)</stage> Je kdo proti?
+                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(Nihče.)</stage>
+                        </p>
                         <p>Ugotavljam, da smo odlok o soglasju sprejeli soglasno.</p>
                      </sp>
                   </div>
@@ -5571,8 +5716,8 @@
                      </sp>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
-                        <p>Hvala lepa. Želi kdo razpravljati? (Da.) Besedo ima Zdravko
-                           Zabukovec.</p>
+                        <p>Hvala lepa. Želi kdo razpravljati? <stage>(Da.)</stage> Besedo ima
+                           Zdravko Zabukovec.</p>
                      </sp>
                      <sp who="#sp.ZabukovecZdravko">
                         <speaker>ZDRAVKO ZABUKOVEC:</speaker>
@@ -6021,10 +6166,13 @@
                            Mandatno-imunitetne komisije in razpravi je sprejel ZZD   s k l e p:</p>
                         <p>O odvzemu mandata ponovno razpravlja na naslednji seji, ko bodo
                            pridobljena stališča ustreznih komisij (Republiška volilna komisija in
-                           Zakonodajno-pravna komisija) in poslanskih klubov. Ste res za to? (da.)
-                           Dobro. Koliko nas je zdaj tu?  45 nas je bilo.</p>
-                        <p>Kdo je za predlagani sklep? (45 delegatov glasuje za.) Kdo je proti?
-                           (Nihče.) Se je kdo vzdržal? (Nihče.)</p>
+                           Zakonodajno-pravna komisija) in poslanskih klubov. Ste res za to?
+                              <stage>(da.)</stage> Dobro. Koliko nas je zdaj tu?  45 nas je
+                           bilo.</p>
+                        <p>Kdo je za predlagani sklep? <stage>(45 delegatov glasuje za.)</stage> Kdo
+                           je proti? <stage>(Nihče.)</stage> Se je kdo vzdržal?
+                              <stage>(Nihče.)</stage>
+                        </p>
                         <p>Torej je sklep soglasno sprejet. Zbor bo zdaj posredoval to pisno na
                            ustrezne naslove in bomo počakali, ker moramo imeti tudi pisno njihova
                            mnenja.</p>
@@ -6039,8 +6187,8 @@
                            1991 glede na stanje 31.12.1990. Ti procenti se spreminjajo. Enkrat jih
                            je 5, drugič 10, sedaj pa si prišel na 15. Potem je tu pobuda.</p>
                         <p>Poslanci Zbora združenega dela dajemo pobudo - to je bilo danes že
-                           dvakrat omenjeno, da zbor sprejme naslednji sklep, zborovski sklep naj
-                           bi bil to: Zbor združenega dela Skupščine Republike Slovenije nalaga
+                           dvakrat omenjeno, da zbor sprejme naslednji sklep, zborovski sklep naj bi
+                           bil to: Zbor združenega dela Skupščine Republike Slovenije nalaga
                            Zakonodajno-pravni komisiji Skupščine Republike Slovenije, da prouči
                            postopke ustavitve imenovanja direktorja Univerzitetnega kliničnega
                            centra v Ljubljani. Obrazložitev: Postopek je bil speljan v skladu z
@@ -6049,12 +6197,13 @@
                            finančne situacije in nujne reorganizacije UKC,  kar ni v pristojnosti
                            vršilca dolžnosti. Tu se vas je podpisalo kar precej poslancev. Ali želi
                            kdo razpravljati o tej pobudi, ki naj postane sklep zbora, da bo tako
-                           bolj merodajno in hitreje opravljeno? Vas 5 zdravnikov tako točno ve,
-                           kaj to pomeni, če tako dolgo nimate direktorja. Ali želi v tej zvezi kdo
+                           bolj merodajno in hitreje opravljeno? Vas 5 zdravnikov tako točno ve, kaj
+                           to pomeni, če tako dolgo nimate direktorja. Ali želi v tej zvezi kdo
                            razpravljati?  Ali je kdo proti temu?</p>
                         <p>Kdo je za to, da sprejmemo to pobudo kot pobudo Zbora združenega dela?
-                           (41 delegatov.) Ali je kdo proti? (En delegat.) Ali se je kdo vzdržal?
-                           (Nihče.)  To je sprejeto.</p>
+                              <stage>(41 delegatov.)</stage> Ali je kdo proti? <stage>(En
+                              delegat.)</stage> Ali se je kdo vzdržal? <stage>(Nihče.)</stage>  To
+                           je sprejeto.</p>
                         <p>Gre za javno zahvalo. Skupščina Republike Slovenije je ob obravnavi
                            informacije in predloga za odpravo posledic  poplave v Sloveniji v
                            novembru 1990, ki jo je predložil Izvršni svet Skupščine Republike
@@ -6067,8 +6216,10 @@
                            v Sloveniji prispevali kakršnokoli pomoč za zavarovanje človeških
                            življenj in premoženja v prizadetih krajih ter za odpravo posledic teh
                            poplav, izreka javno zahvalo."</p>
-                        <p>Kdo je za to javno zahvalo? (42 delegatov.) Ali je kdo proti? (Nihče.)
-                           Ali se je kdo vzdržal? (Nihče.)</p>
+                        <p>Kdo je za to javno zahvalo? <stage>(42 delegatov.)</stage> Ali je kdo
+                           proti? <stage>(Nihče.)</stage> Ali se je kdo vzdržal?
+                              <stage>(Nihče.)</stage>
+                        </p>
                         <p>Zahvala je soglasno sprejeta.</p>
                         <p>PREDSEDNIK Komisije za informiranje Franček Rudolf je prosil, da bi
                            sprejeli naslednje: Komisija za informiranje je dne 16.7.1991
@@ -6087,8 +6238,10 @@
                            Sloveniji ustanavljamo četrti rajh. Povezovanje slovenske borbe za
                            samostojnost z nemškim vplivom, ki je prisoten v tej izjavi in v
                            poročanju nakaterih sredstev javnega obveščanja, je nedopustno."</p>
-                        <p>Kdo je za takšno izjavo in sklep? (44 delegatov. (Ali je kdo proti?
-                           (Nihče.) Ali se je kdo vzdržal? (Nihče.)</p>
+                        <p>Kdo je za takšno izjavo in sklep? <stage>(44 delegatov.)</stage> Ali je
+                           kdo proti? <stage>(Nihče.)</stage> Ali se je kdo vzdržal?
+                              <stage>(Nihče.)</stage>
+                        </p>
                         <p>Soglasno sprejeto.</p>
                         <p>Tu je še poslanska pobuda Slovenske kmečke zveze - ljudske stanke.
                            Predlog dopolnitve zakona za oprostitev plačila spremembe namembnosti
@@ -6100,26 +6253,30 @@
                            sprejel na pobudo Janeza Kocijančiča stališče, ki se glasi:
                            "Družbenopolitični  zbor predlaga Zboru občin in Zboru združenega dela,
                            da sprejmeta navedeno pobudo."</p>
-                        <p>Kdo je za to pobudo?  (44 za.) Je kdo proti? (Nihče.)</p>
-                        <p>Vzdržani? (Nihče.) Formalno! (Iz klopi: Za naslednjo sejo smo predlagali,
-                           naj pridejo na sejo,  pa samo enih pet od nas še pride.) Se moramo
-                           dogovoriti katerih pet. (Jaz bom tisti, recimo.) Glede tega se moramo
-                           takoj pogovoriti o dveh stvareh. Prvič,naslednja seja ima nov sveženj
-                           zakonov s področja gospodarstva. To se pravi, če bomo  zdaj ugotavljali,
-                           da ti ljudje niso zainteresirani, da bi sodelovali pri oblikovanju teh
-                           zakonov, se mi zdi, da je treba potem vprašati njihove volilce, kako je s
-                           to zadevo. Na ta način se mi zdi normalno, da bodo 31.7.1991 prišli in da
-                           bomo skupaj v veliko večjem številu, zlasti pe, ker bomov majhni dvorani
-                           in bo bolj hladno in se bomo bolj prijetno počutili. Potem pa še
-                           naslednje. Mi smo se dogovarjali za izredno sejo. Za to izredno sejo
-                           moram zopet dvoje povedati. Prvič, od ministrov so zopet danes tu samo
-                           tisti,ki so bili včeraj. Drugič, predlagam, da bi imeli to izredno sejo v
-                           torek 30.7.1991 ob 14.uri, do takrat bomo pa skušali  skupaj z
-                           gospodarskim ministrom dobiti dvoje: Prvič, nas ne zanimajo več ne  vem
-                           kakšne ocene, ampak nas zanimajo predvsem ukrepi, in to kratkoročni in
-                           dolgoročni; ker so pa bolj potrebni kratkoročni, je treba jasno tu
-                           opredeliti, s čim bodo prišli. Ne tako, kot včeraj nisem se hotel
-                           oglasiti, ko je gospod Umek govoril. Saj on je samo našteval
+                        <p>Kdo je za to pobudo?  <stage>(44 za.)</stage> Je kdo proti?
+                              <stage>(Nihče.)</stage>
+                        </p>
+                        <p>Vzdržani? <stage>(Nihče.)</stage> Formalno! <stage who="#sp.unknown">
+                              <stage type="speaker">(Iz klopi:</stage> Za naslednjo sejo smo
+                              predlagali, naj pridejo na sejo,  pa samo enih pet od nas še
+                              pride.)</stage> Se moramo dogovoriti katerih pet. <stage
+                              who="#sp.unknown">(Jaz bom tisti, recimo.)</stage> Glede tega se
+                           moramo takoj pogovoriti o dveh stvareh. Prvič,naslednja seja ima nov
+                           sveženj zakonov s področja gospodarstva. To se pravi, če bomo  zdaj
+                           ugotavljali, da ti ljudje niso zainteresirani, da bi sodelovali pri
+                           oblikovanju teh zakonov, se mi zdi, da je treba potem vprašati njihove
+                           volilce, kako je s to zadevo. Na ta način se mi zdi normalno, da bodo
+                           31.7.1991 prišli in da bomo skupaj v veliko večjem številu, zlasti pe,
+                           ker bomov majhni dvorani in bo bolj hladno in se bomo bolj prijetno
+                           počutili. Potem pa še naslednje. Mi smo se dogovarjali za izredno sejo.
+                           Za to izredno sejo moram zopet dvoje povedati. Prvič, od ministrov so
+                           zopet danes tu samo tisti,ki so bili včeraj. Drugič, predlagam, da bi
+                           imeli to izredno sejo v torek 30.7.1991 ob 14.uri, do takrat bomo pa
+                           skušali  skupaj z gospodarskim ministrom dobiti dvoje: Prvič, nas ne
+                           zanimajo več ne  vem kakšne ocene, ampak nas zanimajo predvsem ukrepi, in
+                           to kratkoročni in dolgoročni; ker so pa bolj potrebni kratkoročni, je
+                           treba jasno tu opredeliti, s čim bodo prišli. Ne tako, kot včeraj nisem
+                           se hotel oglasiti, ko je gospod Umek govoril. Saj on je samo našteval
                             restrikcije, kako bi zbirali denar, nikakor pa ne odlokov in zakonov, s
                            katerimi bi pospeševali določene gospodarske dejavnosti. In za mene je
                            seveda interesantno  pri tem, da dobimo motive za to, da bomo lahko
@@ -6135,18 +6292,18 @@
                            zdravstvenem zakonu povedal, če se nič ne upošteva, pa nič ne naredijo,
                            je pa res treba začeti drugače razmišljati in tudi govoriti v skupščino;
                            ne samo po "kuloarjih". Zdaj je res taka situacija, da ni več lahko. Ali
-                           bi za takšen delovni dan bili? Ali lahko še to, da bo ta zadeva čista? Tudi
-                           tam, ker imamo zdaj odprt zakon o organiziranju in financiranju šolstva.
-                           O tem smo se tudi tako dogovorili, da so zdaj vsi trije zbori pristali na
-                           to, tudi Družbenopolitični zbor je spremenil, da niso obravnavali
-                           osnutka, ampak tudi predlog; ampak o predlogu bomo razpravljali
-                           31.7.1991. Še prej se bo sestal Odbor za šolstvo in šport, obravnaval vse
-                           amandmaje, ki jih je kar velik paket,in na ta način dobil bolj čisto
-                           situacijo tudi za spremljanje. Upam, da bo do takrat vse v redu. Minister
-                           Vencelj se pa opravičuje zaradi nespretnosti, do katere je prišlo včeraj,
-                           ker nekaterih stvari niso opravili, ki bi jih morali po zadolžitvi, ne samo
-                           Odbora za šolstvo, ampak tudi našega Zbora združenega dela. Toliko da
-                           veste, da tudi njemu ni bilo vseeno. Prosim.</p>
+                           bi za takšen delovni dan bili? Ali lahko še to, da bo ta zadeva čista?
+                           Tudi tam, ker imamo zdaj odprt zakon o organiziranju in financiranju
+                           šolstva. O tem smo se tudi tako dogovorili, da so zdaj vsi trije zbori
+                           pristali na to, tudi Družbenopolitični zbor je spremenil, da niso
+                           obravnavali osnutka, ampak tudi predlog; ampak o predlogu bomo
+                           razpravljali 31.7.1991. Še prej se bo sestal Odbor za šolstvo in šport,
+                           obravnaval vse amandmaje, ki jih je kar velik paket,in na ta način dobil
+                           bolj čisto situacijo tudi za spremljanje. Upam, da bo do takrat vse v
+                           redu. Minister Vencelj se pa opravičuje zaradi nespretnosti, do katere je
+                           prišlo včeraj, ker nekaterih stvari niso opravili, ki bi jih morali po
+                           zadolžitvi, ne samo Odbora za šolstvo, ampak tudi našega Zbora združenega
+                           dela. Toliko da veste, da tudi njemu ni bilo vseeno. Prosim.</p>
                      </sp>
                      <sp who="#sp.Neidentificiranigovornik">
                         <speaker>Neidentificiran govornik (iz klopi):</speaker>
@@ -6187,7 +6344,8 @@
                         <p>Je še kakšna zelo pomembna pobuda?  Če ne, bi se vam zahvalil in
                            zaključil to 25. oziroma prvo zasedanje.</p>
                      </sp>
-                     <stage>/Seja je bila končana ob 14.55 uri/</stage>
+                     <stage type="time">/Seja je bila <time to="1991-07-18T14:55:00"
+                           xml:id="stage.t.10">končana ob 14.55 uri</time>/</stage>
                   </div>
                </div>
             </div>

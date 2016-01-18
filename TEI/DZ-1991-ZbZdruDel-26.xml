@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="DZ-1991-ZbZdruDel-26">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -77,7 +77,8 @@
             <p>XML na portalu Zgodovina Slovenije - SIstory narejen v okviru izvajanja
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -88,6 +89,14 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2016-01-18+01:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>//stage[@type='time']</item>
+               <item>//p/stage</item>
+               <item>//docDate</item>
+               <item>//timeline</item>
+            </list>
+         </change>
          <change when="2015-11-25">
             <name>Andrej Pančur</name>: preveril, dopolnil in dokončal kodiranje<list>
                <item>//front//*</item>
@@ -165,7 +174,8 @@
                            <item>Matija Malešič ......................................... 53</item>
                            <item>Bogo Rogina ............................................ 55</item>
                            <item>Izidor Rejc ............................................ 57</item>
-                        </list></item>
+                        </list>
+                     </item>
                      <item n="2">Nadaljevanje seje 31.7.1991 Nadaljevanje obravnave 1. točke
                         dnevnega reda .......... 60<list rend="simple">
                            <head>GOVORNIKI:</head>
@@ -174,7 +184,8 @@
                            <item>dr. Jože Arzenšek ...................................... 64</item>
                            <item>Franc Lovrenčič ........................................ 64</item>
                            <item>mag. Franc Perko ....................................... 65</item>
-                        </list></item>
+                        </list>
+                     </item>
                      <item n="3">Seznam govornikov .................................... II/1</item>
                      <item n="4">Priloga: zapisnik seje ................................ III</item>
                   </list>
@@ -270,6 +281,9 @@
                <castItem>
                   <actor xml:id="sp.ŽidanikAnton">Židanik dr. Anton</actor>
                   .......................................... 39</castItem>
+               <castItem>
+                  <actor xml:id="sp.unknown"/>
+               </castItem>
             </castList>
          </div>
       </front>
@@ -278,12 +292,28 @@
             <head>ZBOR ZDRUŽENEGA DELA</head>
             <div ana="#PAR.Seja" n="26">
                <head>26. seja</head>
-               <docDate>30. in 31. julij 1991</docDate>
+               <docDate>
+                  <date from="1991-07-30" to="1991-07-31">30. in 31. julij 1991</date>
+               </docDate>
+               <timeline origin="#TL.1" unit="s">
+                  <when synch="#stage.t.1" xml:id="TL.1" absolute="1991-07-30T14:14:00"/>
+                  <when synch="#stage.t.2" since="#TL.1" absolute="1991-07-30T18:30:00"
+                     interval="15360"/>
+                  <when synch="#stage.t.3" xml:id="TL.2" absolute="1991-07-31T10:21:00"/>
+                  <when synch="#stage.t.4" since="#TL.2" absolute="1991-07-31T10:30:00"
+                     interval="540"/>
+                  <when synch="#stage.t.5" xml:id="TL.3" absolute="1991-07-31T14:05:00"/>
+                  <when synch="#stage.t.6" since="#TL.3" absolute="1991-07-31T14:20:00"
+                     interval="900"/>
+               </timeline>
                <castList>
-                  <castItem><roleDesc>Predsedoval</roleDesc>: <actor xml:id="sp.ZupančičJože">JOŽE
+                  <castItem>
+                     <roleDesc>Predsedoval</roleDesc>: <actor xml:id="sp.ZupančičJože">JOŽE
                         ZUPANČIČ</actor>, <role>predsednik Zbora združenega dela</role>.</castItem>
                </castList>
-               <stage>Pričetek seje ob 14.14 uri.</stage>
+               <stage type="time">
+                  <time from="1991-07-30T14:14:00" xml:id="stage.t.1">Pričetek seje ob 14.14
+                     uri</time>.</stage>
                <div ana="#PAR.PredDnevRed">
                   <div ana="#PAR.Prisot">
                      <sp who="#sp.ZupančičJože">
@@ -314,9 +344,10 @@
                               GOSPODARSKEGA STANJA V REPUBLIKI SLOVENIJI</title>.</p>
                         <p>V zvezi s predlaganim dnevnim redom odpiram razpravo. Kdo želi
                            razpravljati ? Ne želi nihče. Glasujemo o dnevnem redu, in sicer bi
-                           najprej skušali ugotoviti, koliko nas je prisotnih. (42 prisotnih).</p>
-                        <p>Koliko vas je za dnevni red ? (38 poslancev). Proti ? (Nihče). Vzdržanih
-                           ? (Nihče).</p>
+                           najprej skušali ugotoviti, koliko nas je prisotnih. <stage>(42
+                              prisotnih)</stage>.</p>
+                        <p>Koliko vas je za dnevni red ? <stage>(38 poslancev)</stage>. Proti ?
+                              <stage>(Nihče)</stage>. Vzdržanih ? <stage>(Nihče)</stage>.</p>
                         <p>Ugotavljam, da smo soglasno sprejeli predlagani dnevni red.</p>
                      </sp>
                   </div>
@@ -1970,12 +2001,13 @@
                            Sloveniji, po slovneskem zakonu moramo dobiti soglasje Izvršnega sveta.
                            Izvršni svet tega soglasja ni dal in jih mi sami ne moremo dvigniti. Če
                            sem prav razumel podpredsednika, jih bomo jutri dvignili. Če lahko to
-                           tako razumem. (Iz klopi: Daj na ustrezen organ). Zato sem diskutiral, ker
-                           ta organ tega ne naredi, ni odgovora. Bi pa rad povedal še to, da ne bom
-                           oseben, lahko bi z imeni operiral, pa ne bom, da tistemu, ki ima na morju
-                           vikend, pa na Gorenjskem vikend in telefon v Ljubljani, je telefon
-                           predrag, to je pa res. Samo za tistega, ki ga pa čaka, je pa verjetno
-                           prepoceni. Hvala lepa.</p>
+                           tako razumem. <stage who="#sp.unknown">
+                              <stage>(Iz klopi:</stage> Daj na ustrezen organ)</stage>. Zato sem
+                           diskutiral, ker ta organ tega ne naredi, ni odgovora. Bi pa rad povedal
+                           še to, da ne bom oseben, lahko bi z imeni operiral, pa ne bom, da
+                           tistemu, ki ima na morju vikend, pa na Gorenjskem vikend in telefon v
+                           Ljubljani, je telefon predrag, to je pa res. Samo za tistega, ki ga pa
+                           čaka, je pa verjetno prepoceni. Hvala lepa.</p>
                      </sp>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
@@ -2203,7 +2235,8 @@
                      </sp>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PODREDSEDNIK JOŽE ZUPANČIČ:</speaker>
-                        <p>Hvala. Želi kdo v zvezi s tem ? (Ne.) Besedo ima Anton Židanik.</p>
+                        <p>Hvala. Želi kdo v zvezi s tem ? <stage>(Ne.)</stage> Besedo ima Anton
+                           Židanik.</p>
                      </sp>
                      <sp who="#sp.ŽidanikAnton">
                         <speaker>DR. ANTON ŽIDANIK:</speaker>
@@ -2473,11 +2506,12 @@
                            četrto, ali ne vem katero. Mislim, da je to srž naše bitke v naslednjih
                            treh mesecih. Ali mi res želimo,  hočemo in jaz mislim, da če želimo in
                            hočemo, da dejansko osamosvojimo slovensko državo in da pozabimo za vse
-                           večne čase na kakršnokoli Jugoslavijo. (S klopi: Kaj pa trg ?) Pusti trg
-                           na miru. Svetovni trg je zelo velik in tam je naše mesto in trg tudi
-                           Jugoslavije itn. tudi to bo ravno tako  kot v Afriki, Iranu in Ameriki,
-                           ravno tako bo trg tudi na Balkanu vedno bil. In ni treba, da mi sanjamo o
-                           kakršnikoli Jugoslaviji. Vsaj jaz tako menim.</p>
+                           večne čase na kakršnokoli Jugoslavijo. <stage who="#sp.unknown">
+                              <stage>(S klopi:</stage> Kaj pa trg ?)</stage> Pusti trg na miru.
+                           Svetovni trg je zelo velik in tam je naše mesto in trg tudi Jugoslavije
+                           itn. tudi to bo ravno tako  kot v Afriki, Iranu in Ameriki, ravno tako bo
+                           trg tudi na Balkanu vedno bil. In ni treba, da mi sanjamo o kakršnikoli
+                           Jugoslaviji. Vsaj jaz tako menim.</p>
                         <p>In tukaj mislim, da je ključno področje finančno področje, ker tukaj smo
                            enostavno blokirani. Mi smo tukaj blokirani na finančnem področju, vse
                            ostalo mislim, da niti Evropa, niti Marković z vsem svojimi balkanskim
@@ -2723,7 +2757,7 @@
                            trenutno sta dve delavki od tam prišli prositi denarno pomoč, ker ne
                            moreta poravnati računov. Skratka, ker tu pravzaprav ne deluje ta sistem,
                            da lahko nekdo pri nas ima stroške s tem, da  hodi na delo, vendar mu ne
-                           plačajo tistega, kar je zaslužil in konkretno bdo ti delavci zdaj čakali
+                           plačajo tistega, kar je zaslužil in konkretno bodo ti delavci zdaj čakali
                            v stečajnem postopku, da bodo uveljavili te štiri - mesečne osebne
                            dohodke, medtem so pa vse druge stvari - morali poravnati. In jasno je,
                            če nimajo denarja, da nekdo tu mora pomagati in tu je socialno varstvo
@@ -3262,8 +3296,10 @@
                            seje komisij, ki so sklicane, in to kar tri, bom preložil jutrišnjo sejo.
                            Vi nimate kam odhajati mimo mojega sklica.</p>
                      </sp>
-                     <stage>(SEJA JE BILA PREKINJENA OB 18,30 URI IN SE JE NADALJEVALA 31. JULIJA
-                        1991 OB 10.21 URI).</stage>
+                     <stage type="time">(SEJA JE BILA <time to="1991-07-30T18:30:00"
+                           xml:id="stage.t.2">PREKINJENA OB 18,30 URI</time> IN SE JE <time
+                           from="1991-07-31T10:21:00" xml:id="stage.t.3">NADALJEVALA 31. JULIJA 1991
+                           OB 10.21 URI</time>).</stage>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
                         <p>Spoštovane poslanke in poslanci, dragi gostje in novinarji ! Najprej bi
@@ -3384,8 +3420,10 @@
                            to delo potem opravili. Še enkrat bi to našo včerajšnjo sejo prekinil in
                            bi jo potem nadaljevali ko bo primeren čas.</p>
                      </sp>
-                     <stage>(26. seja je bila prekinjena  ob 10.30 uri in se je nadaljevala ob 14,05
-                        uri).</stage>
+                     <stage type="time">(26. seja je bila <time to="1991-07-31T10:30:00"
+                           xml:id="stage.t.4">prekinjena  ob 10.30 uri</time> in se je <time
+                           from="1991-07-31T14:05:00" xml:id="stage.t.5">nadaljevala ob 14,05
+                           uri</time>).</stage>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
                         <p>Nadaljujemo prekinjeno 26. sejo in vas sprašujem, kdo ima kakšne
@@ -3513,7 +3551,8 @@
                      </sp>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
-                        <p>Hvala. Franci, boš dal ti tudi napisati ? Prosim še kdo ? (Ne).</p>
+                        <p>Hvala. Franci, boš dal ti tudi napisati ? Prosim še kdo ?
+                              <stage>(Ne)</stage>.</p>
                         <p>Dobro. Mislim da bi lahko potem to razpravo zaključili, da bi toliko
                            počakali, da bi še dopolnili s temi dopolnitvami, ali se kdo ne strinja s
                            temi dopolnitvami ? Jaz mislim, da celo ni to tako strašno obremenjujoče,
@@ -3522,17 +3561,20 @@
                            cenjenenim novinarjem, ki naše delo spremljajo. S temi dopolnitvami jim
                            bomo dali čistopis. Jaz mislim, da toliko bi pa res lahko zaupali tudi
                            naši komisiji, da bo to korektno opravila. Je prav tako, ali je kdo
-                           nezaupljiv ? Dobro. Koliko nas je tu ? (41 poslancev prisotnih). Jaz bi
-                           vseeno predlagal, da glasujemo o sklepih s temi  dopolnitvami, ki so bile
-                           sedaj izražena. Nihče ni imel nič proti tem dopolnitvam in vsi ki ste
-                           razpravljali, ste sklepe tudi podprli.</p>
-                        <p>Kdo je za predlagane sklepe Zbora združenega dela ? (37 poslancev glasuje
-                           za.) Proti ? (1 poslanec.) Vzdržanih ? (3 poslanci.)</p>
+                           nezaupljiv ? Dobro. Koliko nas je tu ? <stage>(41 poslancev
+                              prisotnih)</stage>. Jaz bi vseeno predlagal, da glasujemo o sklepih s
+                           temi  dopolnitvami, ki so bile sedaj izražena. Nihče ni imel nič proti
+                           tem dopolnitvam in vsi ki ste razpravljali, ste sklepe tudi podprli.</p>
+                        <p>Kdo je za predlagane sklepe Zbora združenega dela ? <stage>(37 poslancev
+                              glasuje za.)</stage> Proti ? <stage>(1 poslanec.)</stage> Vzdržanih ?
+                              <stage>(3 poslanci.)</stage>
+                        </p>
                         <p>Ugotavljam, da smo z večino glasov sklepa z dopolnitvami, ki so bile
                            izražene v razpravi, sprejeli in smo na tak način zaključili delo
                            včerajšnje 26. seje Zbora združenega dela.</p>
                      </sp>
-                     <stage>(Seja je bila končana ob 14,20 uri.)</stage>
+                     <stage type="time">(Seja je bila <time to="1991-07-31T14:20:00"
+                           xml:id="stage.t.6">končana ob 14,20 uri</time>.)</stage>
                   </div>
                </div>
             </div>
