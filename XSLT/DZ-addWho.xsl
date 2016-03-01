@@ -27,8 +27,14 @@
                     <xsl:when test="starts-with(tei:speaker,'PREDSEDNIK')">
                         <xsl:value-of select="translate(substring-after(tei:speaker,'PREDSEDNIK '),':','')"/>
                     </xsl:when>
+                    <xsl:when test="starts-with(tei:speaker,'Predsednik')">
+                        <xsl:value-of select="translate(substring-after(tei:speaker,'Predsednik '),':','')"/>
+                    </xsl:when>
                     <xsl:when test="starts-with(tei:speaker,'PODPREDSEDNIK')">
                         <xsl:value-of select="translate(substring-after(tei:speaker,'PODPREDSEDNIK '),':','')"/>
+                    </xsl:when>
+                    <xsl:when test="starts-with(tei:speaker,'Podpredsednik')">
+                        <xsl:value-of select="translate(substring-after(tei:speaker,'Podpredsednik '),':','')"/>
                     </xsl:when>
                     <xsl:when test="starts-with(tei:speaker,'PREDSEDUJOČI')">
                         <xsl:value-of select="translate(substring-after(tei:speaker,'PREDSEDUJOČI '),':','')"/>

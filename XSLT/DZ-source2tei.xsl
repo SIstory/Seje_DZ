@@ -13,6 +13,7 @@
               - popravi <br> zapis v <br/>,
               - zamenjal &nbsp; z &#xA0;
               - če je fieldset element označen kot atribut div elementa, ta div spremeni v fieldset!!
+              - uredi oziroma odstrani ul
               - indent;
               - v elementu fieldset ustvari atribute (s vsebino):
                    - url
@@ -22,6 +23,7 @@
                    
          NAVODILA PO PRETVORBI s tem XSL stilom:
          - uredi do konca list s kazalom vsebine:
+              - dodaj xml:id dokumenta
               - združi razpršeni zapis točk kazala po različnih item;
               - seznam govornikov premakni v na novo narejeni list[@rend = 'simple'] zgornje točke;
          - popravi napačne actor/xml:id v seznamu govornikov;
