@@ -78,6 +78,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
          <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
@@ -89,6 +90,13 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2016-03-31+02:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
          <change when="2016-01-18+01:00">
             <name>Andrej Pančur</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -121,9 +129,10 @@
                <item>
                   <list type="ordered">
                      <head>PRED DNEVNIM REDOM:</head>
-                     <item n="1">Ugotavljanje prisotnosti delegatov ......................  1</item>
-                     <item n="2">Določitev dnevnega reda .................................  1<list
-                           type="simple">
+                     <item n="1" xml:id="toc.1.1">Ugotavljanje prisotnosti delegatov
+                        ......................  1</item>
+                     <item n="2" xml:id="toc.1.2">Določitev dnevnega reda
+                        .................................  1<list type="simple">
                            <head>GOVORNIKI:</head>
                            <item>Anka Osterman ........................................... 2</item>
                            <item>Jožica Puhar ............................................ 3</item>
@@ -155,14 +164,18 @@
                <item>
                   <list type="ordered">
                      <head>DNEVNI RED:</head>
-                     <item n="1">Odobritev osnutkov zapisnikov 21. in 22. seje zbora
-                        ....................................... 19</item>
-                     <item n="2">Usklajevanje zakonodajih faz v zvezi z:<list type="ordered">
-                           <item>- osnutkom obrtnega zakona .............................. 19</item>
-                           <item>- predlogom za izdajo zakona o registraciji dejavnosti zasebnikov z
-                              osnutkom zakona ............... 19</item>
-                           <item>- predlogom za izdajo zakona o gostinski dejavnosti, z osnutkom
-                              zakona ......................... 19</item>
+                     <item n="1" xml:id="toc.2.1">Odobritev osnutkov zapisnikov 21. in 22. seje
+                        zbora ....................................... 19</item>
+                     <item n="2" xml:id="toc.2.2">Usklajevanje zakonodajih faz v zvezi z:<list
+                           type="ordered">
+                           <item n="-" xml:id="toc.2.2.1">osnutkom obrtnega zakona
+                              .............................. 19</item>
+                           <item n="-" xml:id="toc.2.2.2">predlogom za izdajo zakona o
+                              registraciji dejavnosti zasebnikov z osnutkom zakona ...............
+                              19</item>
+                           <item n="-" xml:id="toc.2.2.3">predlogom za izdajo zakona o
+                              gostinski dejavnosti, z osnutkom zakona .........................
+                              19</item>
                         </list>
                         <list type="simple">
                            <head>GOVORNIKI:</head>
@@ -181,8 +194,9 @@
                            <item>Irena Dobrovc-Tatalović .................................25</item>
                         </list>
                      </item>
-                     <item n="3">Ukrepi na področju gospodarstva, splošne in skupne porabe po
-                        agresiji na Republiko Slovenijo ............... 26<list type="simple">
+                     <item n="3" xml:id="toc.2.3">Ukrepi na področju gospodarstva, splošne in
+                        skupne porabe po agresiji na Republiko Slovenijo ............... 26<list
+                           type="simple">
                            <head>GOVORNIKI:</head>
                            <item>Bogo Rogina ............................................ 26</item>
                            <item>Roman Jakič ............................................. 27</item>
@@ -200,8 +214,9 @@
                            <item>mag. Franc Perko ........................................ 38</item>
                         </list>
                      </item>
-                     <item n="4">Predlog za izdajo zakona o pokojninskem in invalidskem zavarovanju
-                        ................................. 41<list type="simple">
+                     <item n="4" xml:id="toc.2.4">Predlog za izdajo zakona o pokojninskem
+                        in invalidskem zavarovanju ................................. 41<list
+                           type="simple">
                            <head>GOVORNIKI:</head>
                            <item>Dejan Murko ............................................. 41</item>
                            <item>Andrej Muren ............................................ 42</item>
@@ -213,8 +228,8 @@
                            <item>Zdravko Zabukovec ....................................... 51</item>
                         </list>
                      </item>
-                     <item n="5">Predlog za izdajo zakona o praznikih in dela prostih dnevih v
-                        Republiki Sloveniji, z osnutkom  zakona
+                     <item n="5" xml:id="toc.2.5">Predlog za izdajo zakona o praznikih in
+                        dela prostih dnevih v Republiki Sloveniji, z osnutkom  zakona
                         .................................................. 51<list type="simple">
                            <head>GOVORNIKI:</head>
                            <item>Zdravko Zabukovec ....................................... 52</item>
@@ -234,8 +249,9 @@
                            <item>Davorin Bizjak .......................................... 60</item>
                         </list>
                      </item>
-                     <item n="6">Predlog za izdajo zakona o gospodarskih javnih službah, z osnutkom
-                        zakona .............................. 60<list type="simple">
+                     <item n="6" xml:id="toc.2.6">Predlog za izdajo zakona o gospodarskih
+                        javnih službah, z osnutkom zakona .............................. 60<list
+                           type="simple">
                            <head>GOVORNIKI:</head>
                            <item>Miha Jazbinšek .......................................... 61</item>
                            <item>Anka Osterman ........................................... 63</item>
@@ -246,13 +262,14 @@
                            <item>mag. Franc Perko ........................................ 66</item>
                         </list>
                      </item>
-                  </list>
-                  <list type="ordered">
-                     <head>Nadaljevanje 25. seje Zbora združenega dela dne 18. junija 1991:</head>
-                     <item n="7">Ugotavljanje prisotnosti delegatov ...................... 66</item>
-                     <item n="8">Pobude, predlogi in vprašanja delegatov ................. 66</item>
-                     <item n="9">Predlog za izdajo zakona o zdravstveni dejavnosti, z osnutkom
-                        zakona ....................................... 67<list type="simple">
+                     <note>Nadaljevanje 25. seje Zbora združenega dela dne 18. junija 1991:</note>
+                     <item n="7" xml:id="toc.2.7">Ugotavljanje prisotnosti delegatov
+                        ...................... 66</item>
+                     <item n="8" xml:id="toc.2.8">Pobude, predlogi in vprašanja delegatov
+                        ................. 66</item>
+                     <item n="9" xml:id="toc.2.9">Predlog za izdajo zakona o zdravstveni
+                        dejavnosti, z osnutkom zakona .......................................
+                           67<list type="simple">
                            <head>GOVORNIKI:</head>
                            <item>dr. Jože Arzenšek ....................................... 67</item>
                            <item>dr. Janez Remškar ....................................... 69</item>
@@ -274,8 +291,9 @@
                            <item>dr. Anton Židanik ....................................... 86</item>
                         </list>
                      </item>
-                     <item n="10">Predlog za izdajo zakona o zdravstvenem varstvu in zdravstvenem
-                        zavarovanju, z osnutkom zakona ............ 86<list type="simple">
+                     <item n="10" xml:id="toc.2.10">Predlog za izdajo zakona o zdravstvenem varstvu
+                        in zdravstvenem zavarovanju, z osnutkom zakona ............ 86<list
+                           type="simple">
                            <head>GOVORNIKI:</head>
                            <item>dr. Jože Arzenšek ..................................... 87</item>
                            <item>dr. Janez Remškar ..................................... 90</item>
@@ -288,15 +306,18 @@
                            <item>dr. Marija Mencej ..................................... 97</item>
                         </list>
                      </item>
-                     <item n="11">Predlog za izdajo zakona o lekarniški dejavnosti, z osnutkom
-                        zakona ..................................... 98<list type="simple">
+                     <item n="11" xml:id="toc.2.11">Predlog za izdajo zakona o lekarniški
+                        dejavnosti, z osnutkom zakona ..................................... 98<list
+                           type="simple">
                            <head>GOVORNIK:</head>
                            <item>dr. Jože Arzenšek ..................................... 98</item>
                         </list>
                      </item>
-                     <item n="12">Soglasje k statutarnem sklepu Univerze v Mariboru .....  98</item>
-                     <item n="13">Obravnava poročila Mandatno-imunitetne komisije Zbora združenega
-                        dela ................................. 99<list type="simple">
+                     <item n="12" xml:id="toc.2.12">Soglasje k statutarnem sklepu Univerze v
+                        Mariboru .....  98</item>
+                     <item n="13" xml:id="toc.2.13">Obravnava poročila Mandatno-imunitetne komisije
+                        Zbora združenega dela ................................. 99<list
+                           type="simple">
                            <head>GOVORNIKI:</head>
                            <item>Jože Studenčnik ....................................... 99</item>
                            <item>Zdravko Zabukovec ..................................... 100</item>
@@ -315,17 +336,18 @@
                            <item>Andrej Šter ........................................... 107</item>
                         </list>
                      </item>
-                     <item n="14">Pobude, predlogi in vprašanja delegatov - nadaljevanje točke
-                        .................................... 108<list type="simple">
+                     <item n="14" xml:id="toc.2.14">Pobude, predlogi in vprašanja delegatov -
+                        nadaljevanje točke .................................... 108<list
+                           type="simple">
                            <head>GOVORNIK:</head>
                            <item>Franc Avberšek ........................................ 108</item>
                            <item>Franc Avberšek ........................................ 111</item>
                         </list>
                      </item>
-                     <item n="15">Seznam govornikov .....................................
-                        II/1</item>
-                     <item n="16">Priloga: zapisnik seje ...............................
-                        III/1</item>
+                     <item n="15" xml:id="toc.2.15">Seznam govornikov
+                        ..................................... II/1</item>
+                     <item n="16" xml:id="toc.2.16">Priloga: zapisnik seje
+                        ............................... III/1</item>
                   </list>
                </item>
             </list>
@@ -473,9 +495,9 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.ZbZdruDel">
+         <div xml:id="div.1" ana="#PAR.ZbZdruDel">
             <head>ZBOR ZDRUŽENEGA DELA</head>
-            <div ana="#PAR.Seja" n="25">
+            <div xml:id="div.1.1" ana="#PAR.Seja" n="25">
                <head>25. seja</head>
                <docDate>(<date from="1991-07-17" to="1991-07-18">17. in 18. 7.
                   1991</date>)</docDate>
@@ -505,8 +527,8 @@
                <stage type="time">Seja se je <time from="1991-07-17T10:20:00" xml:id="stage.t.1"
                      >pričela ob 10.20. uri</time>
                </stage>
-               <div ana="#PAR.PredDnevRed">
-                  <div ana="#PAR.Prisot">
+               <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.Prisot" corresp="#toc.1.1">
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
                         <p>Spoštovane poslanke, poslanci, dragi gostje! Pričenjam 25. sejo Zbora
@@ -520,7 +542,7 @@
                            obvestil.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.Sporoc">
+                  <div xml:id="div.1.1.1.2" ana="#PAR.Sporoc">
                      <sp who="#sp.ZupančičJože">
                         <p>Prvo obvestilo. Na današnjo sejo smo glede na dnevni red, ki ga imamo in
                            ste ga prejeli z vabilom, vabili tudi predstavnike Izvršnega sveta,
@@ -544,7 +566,7 @@
                            prostorih, ker imamo veliko dela.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.DolDnevRed">
+                  <div xml:id="div.1.1.1.3" ana="#PAR.DolDnevRed" corresp="#toc.1.2">
                      <sp who="#sp.ZupančičJože">
                         <p>Prehajamo na sprejemanje dnevnega reda. Nekateri poslanci ste že
                            povedali, da bi radi imeli nekatere razširitve, to se pravi, da bomo
@@ -614,8 +636,8 @@
                      </sp>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
-                        <p>Hvala. Želi še kdo razpravljati? Gospa Puharjeva; po novem je zdaj
-                           uradno ministrica za delo.</p>
+                        <p>Hvala. Želi še kdo razpravljati? Gospa Puharjeva; po novem je zdaj uradno
+                           ministrica za delo.</p>
                      </sp>
                      <sp who="#sp.PuharJožica">
                         <speaker>JOŽICA PUHAR:</speaker>
@@ -632,12 +654,12 @@
                            zakon potem uveljaviti s 1.1. Je pa po vsej verjetnosti vprašljivo, ali
                            je smiselno tak zakon uvajati v prakso v sredini leta. Strinjam se s
                            tistimi pomisleki, da je težko amandmajsko popravljati tak obsežen zakon,
-                           vendar, če organiziramo razpravo relativno ustrezno, če se angažiramo
-                           pri vseh obravnavah tako preko Skupnosti pokojninsko invalidskega
-                           zavarovanja kot tudi prek izvršnih svetov, mislim, da smo stvari v stanju
-                           spraviti - rekla bi - po enem smiselnem načinu v teh dveh fazah skozi.
-                           Zato predlagam, da le ohranimo tak postopek, kot je bil predlagan s
-                           strani Izvršnega sveta.</p>
+                           vendar, če organiziramo razpravo relativno ustrezno, če se angažiramo pri
+                           vseh obravnavah tako preko Skupnosti pokojninsko invalidskega zavarovanja
+                           kot tudi prek izvršnih svetov, mislim, da smo stvari v stanju spraviti -
+                           rekla bi - po enem smiselnem načinu v teh dveh fazah skozi. Zato
+                           predlagam, da le ohranimo tak postopek, kot je bil predlagan s strani
+                           Izvršnega sveta.</p>
                         <p>Pričakujem celo večje težave, če bi šli zdaj v tri faze, kot če bomo ti
                            dve fazi res temeljito opravili. Hvala lepa.</p>
                      </sp>
@@ -1146,8 +1168,8 @@
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
                         <p>Hvala, gospod minister.</p>
-                        <p>Ali želi sedaj kdo razpravljati? Ali je kakšno vprašanje? /Ni./ Če ni,
-                           bi vseeno morali ugotoviti prisotnost nas poslancev.</p>
+                        <p>Ali želi sedaj kdo razpravljati? Ali je kakšno vprašanje? /Ni./ Če ni, bi
+                           vseeno morali ugotoviti prisotnost nas poslancev.</p>
                         <p>
                            <stage>(50 prisotnih delegatov)</stage>
                         </p>
@@ -1466,8 +1488,8 @@
                               poslancev prisotnih)</stage>
                         </p>
                         <p>Vprašam vas, kdo je za predlog, ki ga je posredoval predsednik, da se
-                           preloži na naslednjo sejo? <stage>(49 poslancev za)</stage> Kdo je
-                           proti? <stage>(Nihče)</stage> Kdo se je vzdržal? <stage>(1 poslanec
+                           preloži na naslednjo sejo? <stage>(49 poslancev za)</stage> Kdo je proti?
+                              <stage>(Nihče)</stage> Kdo se je vzdržal? <stage>(1 poslanec
                               vzdržan)</stage>
                         </p>
                         <p>Ugotavljam, da smo z večino glasov ta predlog sprejeli. Zadevo bomo pač
@@ -1499,14 +1521,14 @@
                            skupino za dnevni red: Franci Avberšek, Rudi Moge, Stanislav Eržen,
                            Marija Lončar, Anka Osterman.</p>
                         <p>Kdo je za ta predlog skupine za usklajevanje dnevnega reda? <stage>(48
-                              delegatov za)</stage> Kdo je proti? <stage>(Eden proti)</stage> Kdo
-                           se je vzdržal? <stage>(3 vzdržani)</stage>
+                              delegatov za)</stage> Kdo je proti? <stage>(Eden proti)</stage> Kdo se
+                           je vzdržal? <stage>(3 vzdržani)</stage>
                         </p>
                      </sp>
                   </div>
                </div>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR" n="1">
+               <div xml:id="div.1.1.2" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.2.1" ana="#PAR.TDR" n="1" corresp="#toc.2.1">
                      <sp who="#sp.ZupančičJože">
                         <p>
                            <title>1. TOČKA DNEVNEGA REDA. ODOBRITEV OSNUTKOV ZAPISNIKOV 21. IN 23.
@@ -1528,7 +1550,7 @@
                         <p>Ugotavljam, da sta zapisnika sprejeta soglasno.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="10">
+                  <div xml:id="div.1.1.2.2" ana="#PAR.TDR" n="10" corresp="#toc.2.2">
                      <sp who="#sp.ZupančičJože">
                         <p>Predlagal bi, da pridemo do te <title>10. TOČKE,</title> ki smo jo
                            ljubeznivo prestavili, to je <title>USKLAJEVANJE FAZ V ZVEZI Z OSNUTKOM
@@ -1793,7 +1815,7 @@
                            je bilo povedano iz strokovnih služb, da ta komisija - dokler ta osnutek
                            ni obravnavan in sprejet - ne more biti imenovana in se tudi potem ne
                            more delati naprej. Tako je bilo povedano. Sedaj ne vem, ali je res, ali
-                           ne.     </p>
+                           ne. </p>
                      </sp>
                      <sp who="#sp.OstermanAnka">
                         <speaker>ANKA OSTERMAN:</speaker>
@@ -1904,7 +1926,7 @@
                         <p>Potem lahko nadaljujemo z dnevnim redom.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="2">
+                  <div xml:id="div.1.1.2.3" ana="#PAR.TDR" n="2" corresp="#toc.2.3">
                      <sp who="#sp.ZupančičJože">
                         <p>Prehajamo na <title>2. TOČKO, to je UKREPI NA PODROČJU GOSPODARSTVA,
                               SPLOŠNE IN SKUPNE PORABE PO AGRESIJI NA REPUBLIKO SLOVENIJO.</title> -
@@ -2246,8 +2268,8 @@
                            ali maksimalno v sedmih minutah, globalno in konkretno, kaj je Izvršni
                            svet v tem tednu od naše skupne seje že pripravil in na ta način, kaj se
                            njima zdi najpomembnejše. Potem pa lahko vi vseeno tudi poveste, bomo
-                           vsaj vedeli za informacijo in se mi zdi, da je prav, da javnost to ve.
-                           Se strinjate?</p>
+                           vsaj vedeli za informacijo in se mi zdi, da je prav, da javnost to ve. Se
+                           strinjate?</p>
                         <p>Prosim, besedo ima gospod Igor Umek, minister za planiranje.</p>
                      </sp>
                      <sp who="#sp.UmekIgor">
@@ -2630,7 +2652,7 @@
                         </p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="3">
+                  <div xml:id="div.1.1.2.4" ana="#PAR.TDR" n="3" corresp="#toc.2.4">
                      <sp who="#sp.ZupančičJože">
                         <p>To se pravi, da smo z večino glasov to sprejeli in zdaj je seveda odvisno
                            od tega. Mi imamo sedaj rok prihodnji teden. Seveda je vprašanje, kako bo
@@ -2833,7 +2855,7 @@
                            organ, tako pomemben zavod, da naj bo to Skupščina.</p>
                         <p>In še v 289. členu, kjer se omenja, kaj vse se lahko prizna kot
                            zavarovalna doba za upravičence, mislim, da bi tu bilo tudi služenje
-                           vojaškega roka. Na ta račun so bile že pobude, ki pa so bile zavrnjene. 
+                           vojaškega roka. Na ta račun so bile že pobude, ki pa so bile zavrnjene.
                            To bi bilo vse. Hvala.</p>
                      </sp>
                      <sp who="#sp.ZupančičJože">
@@ -3180,7 +3202,7 @@
                         <p>Ugotavljam, da smo sklepa soglasno sprejeli.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="7">
+                  <div xml:id="div.1.1.2.5" ana="#PAR.TDR" n="7" corresp="#toc.2.5">
                      <sp who="#sp.ZupančičJože">
                         <p>Pričeli bi s 7. točko dnevnega reda, ker smo rekli, da bomo 4., 5. in 6.
                            točko - to je zdravstveni paket - obravnavali jutri ob 10.00 uri.</p>
@@ -3244,8 +3266,8 @@
                            tisti del, ko človek potrebuje oddih. Žal mi je, da je ravno tu
                            obravnavano to kot neka verska čustva, ampak vesela bi bila, če bi imela
                            s seboj, če bi računala na to, bi prinesla s sabo, da bi lahko bolj
-                           kompetentno razpravljala o teh podatkih moti, kako so te stare modrosti
-                           v redu vgrajene v religijo. Če to koga moti, menim, da bi lahko upošteval
+                           kompetentno razpravljala o teh podatkih moti, kako so te stare modrosti v
+                           redu vgrajene v religijo. Če to koga moti, menim, da bi lahko upošteval
                            vsaj tisti del, ko gre za bioritem človeka in uporabo človeka kot delovne
                            sile. Hvala.</p>
                      </sp>
@@ -3313,8 +3335,8 @@
                            ugotavljajo, da je to dobro, potem verjetno, če hočemo biti v Srednji
                            Evropi, je tudi za nas nekaj. /Roman Jakič govori nekaj iz klopi./ Saj ne
                            gre za Biblijo. Gre za čisto normalno razmišljanje in jaz v tej smeri ne
-                           bi šel v tisto eno in drugo. Bo replika? No prosim, gospa Žerovnikova.
-                           Je pa precej razpravljalcev.</p>
+                           bi šel v tisto eno in drugo. Bo replika? No prosim, gospa Žerovnikova. Je
+                           pa precej razpravljalcev.</p>
                      </sp>
                      <sp who="#sp.ŽerovnikAngelca">
                         <speaker>ANGELCA ŽEROVNIK:</speaker>
@@ -3655,7 +3677,7 @@
                            manj. Jaz mislim, da smo že to. Bomo videli, kaj bo.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="8">
+                  <div xml:id="div.1.1.2.6" ana="#PAR.TDR" n="8" corresp="#toc.2.6">
                      <sp who="#sp.ZupančičJože">
                         <p>Se pravi še <title>8. TOČKA DNEVNEGA REDA, to je PREDLOG ZA IZDAJO ZAKONA
                               O GOSPODARSKIH JAVNIH SLUŽBAH Z OSNUTKOM ZAKONA.</title> Če dovolite
@@ -3745,8 +3767,8 @@
                            gre za neko medobčinsko javno službo, se lahko ta zadeva sreča in združi,
                            po drugi strani pa se lahko neka generalna javna služba seveda tudi
                            razdeli skozi svoje izpostave navzdol.</p>
-                        <p>Naslednje načelo tu notri je obveznih in fakultativnih javnih služb.
-                           Samo kot primer, vzpenjača na Pohorju ali pa recimo vzpenjača na Veliko
+                        <p>Naslednje načelo tu notri je obveznih in fakultativnih javnih služb. Samo
+                           kot primer, vzpenjača na Pohorju ali pa recimo vzpenjača na Veliko
                            planino je vseskozi problem, ali je to komunalna dejavnost ali ni
                            komunalna dejavnost, ali je javna služba ali ni javna služba itn. Gre za
                            načelo, da se lahko tako republika kot lokalna skupnost odloči sama pri
@@ -3985,7 +4007,7 @@
                            from="1991-07-18T10:22:00" xml:id="stage.t.7">NADALJEVALA DNE 18.7.1991
                            OB 10.22 URI</time>.)</stage>
                   </div>
-                  <div ana="#PAR.Prisot">
+                  <div xml:id="div.1.1.2.7" ana="#PAR.Prisot" corresp="#toc.2.7">
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
                         <p>Drage poslanke, poslanci,dragi gostje! Nadaljujemo s 25. sejo Zbora
@@ -3999,29 +4021,30 @@
                            komisije ter pobude, predlogi in vprašanja delegatov.</p>
                      </sp>
                   </div>
-                  <div ana="#PQ.Vpr">
+                  <div xml:id="div.1.1.2.8" ana="#PAR.TDR" corresp="#toc.2.8">
                      <sp who="#sp.ZupančičJože">
-                        <p>Pričeli bi takoj S TOČKO POBUDE,, PREDLOGI IN VPRAŠANJA DELEGATOV. Predno
-                           pa pričnemo to točko, bi še pobudo delegata Alojza Metelka, da dajejo vsi
-                           delegati Skupščine Republike Slovenije po 500,00 din kot pomoč žrtvam
-                           vojne družini Kotar iz Velikega Gabra št. 20.</p>
+                        <p>Pričeli bi takoj <title>S TOČKO POBUDE, PREDLOGI IN VPRAŠANJA
+                              DELEGATOV</title>. Predno pa pričnemo to točko, bi še pobudo delegata
+                           Alojza Metelka, da dajejo vsi delegati Skupščine Republike Slovenije po
+                           500,00 din kot pomoč žrtvam vojne družini Kotar iz Velikega Gabra št.
+                           20.</p>
                         <p>Dne 28. 6. 1991 je ob bombnem napadu Klanca-Medvedjek bila bombandirana
                            in uničena kmetija Kotarja iz Velikega Gabra. Pri tem bombnem napadu je
                            bil ubit Kotar Anton, požgan in uničen hlev, požgan kozolec, pobita štiri
                            goveda, poškodovan traktor, poškodovana stanovanjska hiša in še druga
                            škoda. Celotna ocenjena škoda znaša 1,700.000,00 din. Največja tragedija
-                           pa je to, da je bil ubit oče šest-članske družine. Človeško življenje
-                           ni mogoče obuditi. Možno pa je materialno pomagati pri tej veliki
-                           tragediji. Hčerka pokojnega Antona, Kotar Jožica, je uslužbenka Skupščine
-                           Republike Slovenije. Ob vsakem zasedanju skupščine nam vestno prinaša
-                           pismene materiale na mizo. S to solidarnostno pomočjo se tudi delegati
+                           pa je to, da je bil ubit oče šest-članske družine. Človeško življenje ni
+                           mogoče obuditi. Možno pa je materialno pomagati pri tej veliki tragediji.
+                           Hčerka pokojnega Antona, Kotar Jožica, je uslužbenka Skupščine Republike
+                           Slovenije. Ob vsakem zasedanju skupščine nam vestno prinaša pismene
+                           materiale na mizo. S to solidarnostno pomočjo se tudi delegati
                            pridružujemo solidarni akciji - zbiranja pomoči. Z materialno pomočjo
                            bomo deloma zmanjšali veliko materialno škodo, čeprav se zavedamo, da s
                            to pomočjo ne moremo povrniti življenja njenega očeta.</p>
                         <p>Predlagam, da to pobudo sprejmemo brez glasovanja.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="4">
+                  <div xml:id="div.1.1.2.9" ana="#PAR.TDR" n="4" corresp="#toc.2.9">
                      <sp who="#sp.ZupančičJože">
                         <p>
                            <title>4. TOČKA DNEVNEGA REDA: To je PREDLOG ZA IZDAJO ZAKONA O
@@ -4108,8 +4131,7 @@
                            - ali z metodo javnomenjske raziskave ali pa recimo, skozi skupščinsko
                            razpravo po občinah ali kakorkoli drugače, po volilnih enotah - da se v
                            to vključijo tudi koristniki uslug, da dobimo tudi njihovo meritorno
-                           mnenje, kar bo glavna osnova, kako naprej.              
-                           </p>
+                           mnenje, kar bo glavna osnova, kako naprej. </p>
                         <p>Danes je bilo govora tudi o stvareh glede samih financ. Kako zagotoviti
                            normalno poslovanje z ničlo oziroma z začetnim kapitalom tega zavoda za
                            zdravstveno zavarovanje s tem, da z 31.12. po izjavi namestnika
@@ -4118,13 +4140,13 @@
                            delom 31.12. ob 24. uri in da bo zavod začel ob 00. uri 1.1.1991.
                            Opozorili smo, da je prehodno obdobje dejansko vprašljivo, ko naj bi se
                            plačevali tako prispevki kot drugi vidiki prostovoljnega zavarovanja.
-                           Veliko je bilo govora tudi o sami participaciji in funkciji le-te, ker
-                           je bil predlog, da s tem, ko deluje zavarovalnica, participacije več ne
-                           bi bilo, čeprav ta ni izključena.</p>
+                           Veliko je bilo govora tudi o sami participaciji in funkciji le-te, ker je
+                           bil predlog, da s tem, ko deluje zavarovalnica, participacije več ne bi
+                           bilo, čeprav ta ni izključena.</p>
                         <p>Drugo, ko se na novo oblikujejo zavod za zavarovanje, kot v skladu z
                            zakonom tudi zdravstveni zavodi, mora biti ne samo načelno opredeljeno,
-                           da začnejo poslovati s pozitivno ničlo brez zaostalih obveznosti, kar
-                           je obveznost proračuna oz. financerja. Vemo pa, da se financira iz
+                           da začnejo poslovati s pozitivno ničlo brez zaostalih obveznosti, kar je
+                           obveznost proračuna oz. financerja. Vemo pa, da se financira iz
                            proračuna, ker v nasprotnem primeru ni zagotovljeno niti najmanjše
                            začetno dobro na štartu poslovanja teh zdravstvenih zavodov. Tudi ni
                            posebej omenjeno, kako zagotoviti skozi obvezni program, ki je bistveno
@@ -4190,11 +4212,11 @@
                            vlogo tudi zavarovalniški nadzor, odgovorna zbornica, ki pa določene
                            segmente nadzora lahko poveri nekemu drugemu organu oz. osebi. Seveda pa
                            je upravni nadzor vsekakor prepuščen ministrstvu. Ob vsem tem, ob teh
-                           dveh nadzorih pa igra nič manj pomembno vlogo tudi zavarovalniški
-                           nadzor, ki pa že ne sodi v ta sklop zakonodaje. Vse omenjeno je zahodni
-                           model delovanja nadzdora, ki pa ga v našem zakonu ni, kajti vse, po moji
-                           oceni, hoče imeti v rokah v končni vrsti ministrstvo. Naj omenim, da kar
-                           se tiče zdravstvenih delavcev z Gorenjske na tak model ne pristajamo.</p>
+                           dveh nadzorih pa igra nič manj pomembno vlogo tudi zavarovalniški nadzor,
+                           ki pa že ne sodi v ta sklop zakonodaje. Vse omenjeno je zahodni model
+                           delovanja nadzdora, ki pa ga v našem zakonu ni, kajti vse, po moji oceni,
+                           hoče imeti v rokah v končni vrsti ministrstvo. Naj omenim, da kar se tiče
+                           zdravstvenih delavcev z Gorenjske na tak model ne pristajamo.</p>
                         <p>Dotaknil bi se drugega, zelo bistvenega problema, okoli katerega nismo v
                            dosedanjih diskusijah, predlogih uspeli doseči nekega kompromisa, kajti
                            večina zdravništva stoji na enem bregu, sekretariat pa na drugem. To je
@@ -4232,8 +4254,8 @@
                            dela ohranitev sedanjega obsega javne zdravstvene službe in bi zavirala
                            preoblikovanje javnih zavodov ter proces privatizacije. Mislim, da je to
                            popolnoma smešno. preoblikovanje zavodov bo šlo po zakonski poti in
-                           samoplačniška praksa bo predstavljala v teh naših, po drugi strani
-                           težkih finančnih časih, izjemno majhen del na tem področju.</p>
+                           samoplačniška praksa bo predstavljala v teh naših, po drugi strani težkih
+                           finančnih časih, izjemno majhen del na tem področju.</p>
                         <p>K 4. točki, da ni mogoče razmejiti rednega dela od popoldanskega. Mislim,
                            da imajo v Avstriji in Nemčiji te stvari zelo lepo vpeljane. Ali hoče
                            sekretariat reči, da tam te stvari nimajo razmejene. Obratno. Izjemno
@@ -4281,16 +4303,15 @@
                            izredno maniciozen do te skupnosti zdravnikov.</p>
                         <p>Na drugi strani si sami postavljamo spet dodatni otežilni pogoj,
                            preverjanje znanja na pet do sedem let. Povejte mi grupo ljudi, ki bo
-                           sama sebi postavljala take pogoje in na drugi strani spet ponovno
-                           izjemno netolerantnost in nazupanje sekretariata. Rad bi vam pokazal, če
-                           je možno, bomo tudi fotokopirali anketo, ki je bila opravljena med
-                           zdravniki in bo prišla v javnost. Zaenkrat imam odgovor 645 zdravnikov,
-                           kjer so se opredeljevali na eni strani do stališč tako, kot so
-                           postavljena v zakonu, na drugi strani tako, kot so bili napi predlogi
-                           predlogi zdravnvištva. Lahko vam zagotavljam - to so razultati, ki bodo
-                           prišli v javnost - da so se v veliki večini, in to od 85 % in navzgor
-                           zdravniki odločali za sedaj navedene moje argumente in ne za stališča
-                           sekretariata. Hvala lepa.</p>
+                           sama sebi postavljala take pogoje in na drugi strani spet ponovno izjemno
+                           netolerantnost in nazupanje sekretariata. Rad bi vam pokazal, če je
+                           možno, bomo tudi fotokopirali anketo, ki je bila opravljena med zdravniki
+                           in bo prišla v javnost. Zaenkrat imam odgovor 645 zdravnikov, kjer so se
+                           opredeljevali na eni strani do stališč tako, kot so postavljena v zakonu,
+                           na drugi strani tako, kot so bili napi predlogi predlogi zdravnvištva.
+                           Lahko vam zagotavljam - to so razultati, ki bodo prišli v javnost - da so
+                           se v veliki večini, in to od 85 % in navzgor zdravniki odločali za sedaj
+                           navedene moje argumente in ne za stališča sekretariata. Hvala lepa.</p>
                      </sp>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
@@ -4596,8 +4617,8 @@
                            prebrala njegov predlog popravkov tega zakona.</p>
                         <p>Predlaga, da se vsebina na strani 23. osnova zdravstvene dejavnosti v 7.
                            členu, kjer je našteta le zdravstvena nega, ki jo opravljajo socialni
-                           zavodi, četrti odstavek, ne pa tudi zdravljenje oskrbovancev. Potrebno
-                           bi bilo dodati novo alinejo za 9. alinejo, ki govori o patronažuu,
+                           zavodi, četrti odstavek, ne pa tudi zdravljenje oskrbovancev. Potrebno bi
+                           bilo dodati novo alinejo za 9. alinejo, ki govori o patronažuu,
                            zdravljenju in negi na domu, ki naj se glasi: "Zdravljenje in nega
                            oskrbovancev v socialnih zavodih kot to navaja pripravljalec v predlogu
                            za izdajo zakonov o zdravstvenem varstvu". stran 7. desni stolpec, drugi
@@ -4679,9 +4700,8 @@
                            in mladine z motnjami v razvoju potrebno celoviteje vključiti v vse
                            zakone s področja zdravstvenega varstva.</p>
                         <p>Pri svojem delu sem imela pogosto možnost pobliže spoznati težave in
-                           stiske teh otrok oz. njihovih družin, zato mislim da smo dolžni
-                           posvečati posebno skrb tem otrokom in družinam v okviru celotne
-                           zakonodaje.</p>
+                           stiske teh otrok oz. njihovih družin, zato mislim da smo dolžni posvečati
+                           posebno skrb tem otrokom in družinam v okviru celotne zakonodaje.</p>
                         <p>Obenem pa bi v imenu koristnikov zdravstvenih storitev oz. predvsem
                            koristnic rada izrazila tudi določeno bojazen nad določili osnutka zakona
                            o zdravstveni dejavnosti, ki odpirajo možnost ukinjanja dispanzerjev v
@@ -4801,8 +4821,8 @@
                            pridobiva zdravstveni dom tudi iz sredstev republiškega proračuna za
                            namene v skladu s 17. členom zakona o zdravstvenem varstvu in
                            zdravstvenem zavarovanju, to so otroci, študentje, dijaki itn.</p>
-                        <p>V 27. členu, kjer govori o usposabljanju mladih zdravnikov, menimo, da
-                           je usposabljanje pravzaprav najmanj, kar so zdravstveni zavodi dolžni
+                        <p>V 27. členu, kjer govori o usposabljanju mladih zdravnikov, menimo, da je
+                           usposabljanje pravzaprav najmanj, kar so zdravstveni zavodi dolžni
                            zagotoviti. Smo pa nekako bili mnenja, da bi naj besedilo nekako bolj
                            zavezovalo zavode, da bi iskali tudi možnosti zaposlitve. Mislim, da je
                            tudi o tem bilo že danes veliko govora, da gre torej po eni strani za res
@@ -4843,9 +4863,8 @@
                      </sp>
                      <sp who="#sp.MencejMarija">
                         <speaker>Dr. MARIJA MENCEJ:</speaker>
-                        <p>Gospod predsednik, spoštovani zbor. Mislim, da moram vendarle nekaj
-                           besed reči v pojasnilo nekaterih stvari, ki ste jih v razpravi
-                           omenili.</p>
+                        <p>Gospod predsednik, spoštovani zbor. Mislim, da moram vendarle nekaj besed
+                           reči v pojasnilo nekaterih stvari, ki ste jih v razpravi omenili.</p>
                         <p>Moramo povedati to, da so vse pisne pripombe, ki so bile v skupščino
                            poslane do danes, da jih je gospa Hartmanova, sekretarka Odbora za
                            zdravstvo zbrala, popisala in da smo že vse tudi dobili, tako da ste
@@ -4877,8 +4896,8 @@
                            zavodu, zavod mora pa potem to znotraj urediti tako, kot pač to
                            direktorji oz. odgovorni vodje znajo in vedo, da je treba opraviti.</p>
                         <p>Glede konkurenčne klavzule. Že gospod podpredsednik Malešič je včeraj v
-                           svojem ekspozeju pojasnil, zakaj je pravzaprav ministrstvo in z njim
-                           tudi Izvršni svet proti temu, da se kar apriori kombinira zdaj, ob uvedbi
+                           svojem ekspozeju pojasnil, zakaj je pravzaprav ministrstvo in z njim tudi
+                           Izvršni svet proti temu, da se kar apriori kombinira zdaj, ob uvedbi
                            zasebnega dela, tudi dopolnilno delo z rednim delovnim razmerjem. Zato,
                            ker menimo, da je ob uvedbi zasebnega dela potrebno stvari čisto in
                            pravilno postaviti in da ni nobenega nasprotovanja, da bi nekdo, ki bi
@@ -4921,8 +4940,8 @@
                            spet sklicujem na Avstrijo in Nemčijo; kar se te vaše teze tiče.</p>
                         <p>Omenili ste, da večina zdravnikov ni profesorjev. jaz sem vam pokazal
                            anketo, ki ni bila poslana profesorjem, v kateri se večina zdravnikov,
-                           bom pa kar konkreten: zasebni zdravstveni delavec lahko  opravlja
-                           zasebno zdravstveno dejavnost po naslednjimi pogoji: prva alinea v vašem
+                           bom pa kar konkreten: zasebni zdravstveni delavec lahko opravlja zasebno
+                           zdravstveno dejavnost po naslednjimi pogoji: prva alinea v vašem
                            predlogu, da ni v delovnem razmerju, 2 % neveljavnih odgovorov, 28 % za
                            ta vaš predlog in 70 % proti vašemu predlogu. Torej ne gre za stališče
                            večine zdravnikov, ki niso profesorji kot ste rekli, ampak gre za
@@ -4941,21 +4960,21 @@
                            sodelovanje in sokreiranje nadaljnje usode zakonodaje, da se trenutno
                            ogradi od teh stvari in da bo moralo začeti rešpektirati tudi mnenje
                            tistih, ki so nosilci teh stvari. Reči moram, da nisem danes govoril nič
-                           o tem, da je bil eden od očitkov odbora to, da se bojimo tega, recimo,
-                           da je izvajanje zdravstvene dejavnosti in storitev iz tega področja
-                           spet pod zelo veliko tako imenovano državno kontrolo, za kar pa moram
-                           reči, da je vprašljivo, če imamo funkcijo zdravniške zbornice in še kaj
-                           drugega in čeprav v stališčih piše, da temu ni tako. Ker to ni predmet
-                           današnje razprave, predlagam, da se ne pooblasti, ampak da odbor v
-                           nadaljnjih postopkih zavzame o tem stališča, po potrebi tudi on sam koga
-                           poprosi za mnenje in da se te stvari usklajuje z ministrstvom, vendar po
-                           načelu rešpektiranja drug drugega. Reči moram, da ta način, tudi to, da
-                           so bili upoštevani vsi pogoji ali pa že bistveno drugače spremenjene
-                           alinee pri funkciji zdravniške zbornice, to povsem ne drži. Bile so s
-                           posameznimi skupinami. Mi smo pa za to tu, da damo integralni tekst, da
-                           damo tako vsebino, ki bi nam zagotavljala nemoteno izvajanje
-                           zdravstvenega varstva, s čim manj težav in s čim manj podzakonskih aktov
-                           itd. Mora pa biti jasen in kratek.</p>
+                           o tem, da je bil eden od očitkov odbora to, da se bojimo tega, recimo, da
+                           je izvajanje zdravstvene dejavnosti in storitev iz tega področja spet pod
+                           zelo veliko tako imenovano državno kontrolo, za kar pa moram reči, da je
+                           vprašljivo, če imamo funkcijo zdravniške zbornice in še kaj drugega in
+                           čeprav v stališčih piše, da temu ni tako. Ker to ni predmet današnje
+                           razprave, predlagam, da se ne pooblasti, ampak da odbor v nadaljnjih
+                           postopkih zavzame o tem stališča, po potrebi tudi on sam koga poprosi za
+                           mnenje in da se te stvari usklajuje z ministrstvom, vendar po načelu
+                           rešpektiranja drug drugega. Reči moram, da ta način, tudi to, da so bili
+                           upoštevani vsi pogoji ali pa že bistveno drugače spremenjene alinee pri
+                           funkciji zdravniške zbornice, to povsem ne drži. Bile so s posameznimi
+                           skupinami. Mi smo pa za to tu, da damo integralni tekst, da damo tako
+                           vsebino, ki bi nam zagotavljala nemoteno izvajanje zdravstvenega varstva,
+                           s čim manj težav in s čim manj podzakonskih aktov itd. Mora pa biti jasen
+                           in kratek.</p>
                         <p>Predlagam, da tovrstne razprave tu ne bi bilo in mislim, da to lahko
                            zaključimo, ampak da se pa dejansko sprejme. To pa predlagam predsedniku:
                            predlog odbora je, kar je ponudil na seji odbora ministrstvu, da v fazi
@@ -5019,7 +5038,7 @@
                         <p>Ugotavljam, da je zbor predlagani sklep sprejel soglasno.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="5">
+                  <div xml:id="div.1.1.2.10" ana="#PAR.TDR" n="5" corresp="#toc.2.10">
                      <sp who="#sp.ZupančičJože">
                         <p>Sedaj imamo <title>5. TOČKO.</title> Jaz bi predlagal, da bi namesto 5.
                            točke - <title>PREDLOG ZA IZDAJO ZAKONA O ZDRAVSTVENEM VARSTVU IN
@@ -5099,9 +5118,9 @@
                            zavarovanje zaživela in dobila svojo obliko, da je treba priprave
                            izvršiti že v letošnjem letu. In spomnil bi na to, da tu, v teh tezah (če
                            je predlog za izdajo zakona) piše v "prehodnih določbah", da bi Skupščina
-                           Republike Slovenije imenovala - oziroma najprej bi morala sprejeti
-                           Statut delovanja tega Zavoda za zdravstveno zavarovanje - prvo skupščino,
-                           ki bi potem bila zadolžena po tripartitnem sistemu za to, da nadzoruje
+                           Republike Slovenije imenovala - oziroma najprej bi morala sprejeti Statut
+                           delovanja tega Zavoda za zdravstveno zavarovanje - prvo skupščino, ki bi
+                           potem bila zadolžena po tripartitnem sistemu za to, da nadzoruje
                            izvajanje teh stvari.</p>
                         <p>Tu moram reči, da je veliko novosti in da bi bilo treba precej
                            poglobljene razprave v tej fazi, ko se bomo pripravljali do osnutka zato,
@@ -5137,13 +5156,13 @@
                            tem pa še niso upoštevani vsi vidiki, ki so bili naknadno prisotni - od
                            devalvacije in vseh ostalih zadev. Recimo, danes je v časopisu, da se je
                            prvič zgodilo npr., v Celju, da pač še danes ne vedo, če bo jutri plača
-                           za Zdravstveni center Celje in podobno. Nekateri se s temi dogodki že
-                           kar rutinirano srečujejo že vrsto mesecev in podobno. Ne more biti prav,
-                           da se borimo v glavnem samo za osebne dohodke in za tiste redne
-                           materialne stroške, da lahko pokrijemo svojo dejavnost. Moram reči, to ni
-                           - ne me napačno razumeti -, izkoriščanje priložnosti, da smo pa v teh
-                           razmerah pred tremi tedni in doslej pokazali svojo pripravljenost na vse
-                           in se praktično dosledno pripravili kljub težavam, zato da lahko speljemo
+                           za Zdravstveni center Celje in podobno. Nekateri se s temi dogodki že kar
+                           rutinirano srečujejo že vrsto mesecev in podobno. Ne more biti prav, da
+                           se borimo v glavnem samo za osebne dohodke in za tiste redne materialne
+                           stroške, da lahko pokrijemo svojo dejavnost. Moram reči, to ni - ne me
+                           napačno razumeti -, izkoriščanje priložnosti, da smo pa v teh razmerah
+                           pred tremi tedni in doslej pokazali svojo pripravljenost na vse in se
+                           praktično dosledno pripravili kljub težavam, zato da lahko speljemo
                            vsakršno svojo lastno funkcijo, brez trenj in brez kakršnih koli ostalih
                            zadev. Recimo, to nikakor ne predstavlja kakršnih koli sistemskih
                            rešitev. Zato posebej to poudarjamo, da morajo te stvari biti dorečeno in
@@ -5183,8 +5202,8 @@
                         <p>Moram povedati tudi to, da je v razpravi na seji odbora bilo danih tudi
                            par drugih pripomb na to temo: ali to pomeni avtomatsko preoblikovanje
                            Republiškega odbora oziroma uprave za zdravstveni zavod za zdravstveno
-                           zavarovanje. Bil je dan predlog, naj bi bilo več zavarovalnic kot se
-                           temu reče in bi med seboj delale konkurenco, ker bi ponudile z ozirom na
+                           zavarovanje. Bil je dan predlog, naj bi bilo več zavarovalnic kot se temu
+                           reče in bi med seboj delale konkurenco, ker bi ponudile z ozirom na
                            pogoje. Eden od predlogov, ki sem ga dolžan povedati, ki ga je dal kolega
                            iz Družbenopolitičnega zbora dr. Jože Magdič, ko je pač rekel, da nikjer
                            ni zavedeno, ali je možno, da se pojavi kot v zavarovalniškem sistemu s
@@ -5323,15 +5342,15 @@
                            kje so izvirni prihodki občinskih proračunov za tistih 2 %, kot je,
                            recimo, tu predvideno. Prav tako mora republiški proračun vedeti.
                            Nakazuje se, da bo približno 15 % nakazoval sredstev, da bo za to uvedel
-                           davke, da so to davki na zdravju škodljive proizvode; ali bo to tobak
-                           ali bo to alkohol, ali bo to sladkor, ali je to končno tudi bencinski
-                           dinar. To je samo nekako nakazano, v zraku visi, vendar konkretno tu
-                           odgovorov nimamo, in mislim, da sedaj ko se o spremembi sistema
-                           pogovarjamo, bi morali tudi te stvari odpreti, predvsem pa glede na to,
-                           ker prehajamo iz proračunskega v popolnoma nov zavarovalniški sistem.
-                           Vsaj nekje v enem členu bi morali reči, da se zagotovi v naslednjem letu
-                           enak obseg sredstev, ali pa enak obseg družbenega proizvoda, kot je bilo
-                           to v letošnjem letu.</p>
+                           davke, da so to davki na zdravju škodljive proizvode; ali bo to tobak ali
+                           bo to alkohol, ali bo to sladkor, ali je to končno tudi bencinski dinar.
+                           To je samo nekako nakazano, v zraku visi, vendar konkretno tu odgovorov
+                           nimamo, in mislim, da sedaj ko se o spremembi sistema pogovarjamo, bi
+                           morali tudi te stvari odpreti, predvsem pa glede na to, ker prehajamo iz
+                           proračunskega v popolnoma nov zavarovalniški sistem. Vsaj nekje v enem
+                           členu bi morali reči, da se zagotovi v naslednjem letu enak obseg
+                           sredstev, ali pa enak obseg družbenega proizvoda, kot je bilo to v
+                           letošnjem letu.</p>
                         <p>Konkretno imam pa na 93. člen pripombo. Ostale pripombe sem, kot sem že
                            prej omenil, pisno posredoval prek ostalih inštitucij. V 93. členu jasno
                            piše: na zavod za zavarovanje Slovenije se ne prenesejo neporavnane
@@ -5384,10 +5403,10 @@
                            nepravilne oziroma sporne.</p>
                         <p>K 8. členu, ki govori, da občina in mesto uresničujeta svoje naloge
                            zdravstvenega varstva in da za ta segment tudi zagotavljata proračunska
-                           sredstva ni namreč jasno, v kakšni višini. Ali je mišljeno v celoti? V
-                           8. členu, v tretji alinei je tudi določba, da občina in mesto
-                           zagotavljata sredstva za razširjeno reprodukcijo zdravstvenih zavodov, ki
-                           sta jih ustanovila. Ta določba je sporna, saj s tem ustanoviteljem nalaga
+                           sredstva ni namreč jasno, v kakšni višini. Ali je mišljeno v celoti? V 8.
+                           členu, v tretji alinei je tudi določba, da občina in mesto zagotavljata
+                           sredstva za razširjeno reprodukcijo zdravstvenih zavodov, ki sta jih
+                           ustanovila. Ta določba je sporna, saj s tem ustanoviteljem nalaga
                            obveznosti, ki jih predvsem manjše občine ne bodo zmogle.</p>
                         <p>19. člen, ki govori o poškodbah pri delu in poklicni bolezni. Predlagamo,
                            da se zagovarja stališče, da se v 1. točko 19. člena uvrstijo tudi kmetje
@@ -5474,8 +5493,8 @@
                         <speaker>ANDREJ MURN:</speaker>
                         <p>Ministrstvu za zdravstvo bi postavil samo eno kratko vprašanje glede na
                            komentar tega zakona o zdravstvenem varstvu. V drugi točki, ki pravi:
-                           ocena zdravstvenega stanja prebivalcev. V sistem zdravstvenega varstva
-                           so v Sloveniji vključeni vsi prebivalci Slovenije ter vsi tisti, ki so v
+                           ocena zdravstvenega stanja prebivalcev. V sistem zdravstvenega varstva so
+                           v Sloveniji vključeni vsi prebivalci Slovenije ter vsi tisti, ki so v
                            Sloveniji zaposleni in njihovi družinski člani, ne glede na stalno
                            prebivališče. Število vseh uporabnikov je za 15,8 % večje od števila
                            prebivalcev Slovenije. Ali to pomeni, da obstaja na tem področju
@@ -5599,13 +5618,13 @@
                         <p>Ugotavljam, da smo soglasno sprejeli ta dva sklepa.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="6">
+                  <div xml:id="div.1.1.2.11" ana="#PAR.TDR" n="6" corresp="#toc.2.11">
                      <sp who="#sp.ZupančičJože">
                         <p>Sedaj imamo <title>6. TOČKO DNEVNEGA REDA</title> to je: <title>PREDLOG
                               ZA IZDAJO ZAKONA O LEKARNIŠKI DEJAVNOSTI Z OSNUTKOM ZAKONA.</title>
-                           Tudi ta zakon je pripravil Izvršni svet Skupščine Republike Slovenije
-                           in je tudi bil objavljen v Poročevalcu št. 16. Predlog so obravnavali že
-                           b delovnih telesih Skupščine, Odbor za zdravstvo, Zakonodajno-pravna
+                           Tudi ta zakon je pripravil Izvršni svet Skupščine Republike Slovenije in
+                           je tudi bil objavljen v Poročevalcu št. 16. Predlog so obravnavali že b
+                           delovnih telesih Skupščine, Odbor za zdravstvo, Zakonodajno-pravna
                            komisija in še nekateri. Tudi tu smo slišali uvod že včeraj in sprašujem
                            poročevalce delovnih teles, če želi kdo besedo? Jože Arzenšek,
                            prosim!</p>
@@ -5613,11 +5632,11 @@
                      <sp who="#sp.ArzenšekJože">
                         <speaker>Dr. JOŽE ARZENŠEK:</speaker>
                         <p>Odbor pač posebej ni obravnaval pri načelni obravnavi predloga za izdajo
-                           zakona o lekarniški dejavnosti z ozirom na dejstvo, da je bila že dana
-                           na predpretekli seji, da je praktično sama dejavnost pripravila vse
-                           okvire, katere je ministrstvo sprejelo za to dejavnost in kakšnih
-                           bistvenih pripomb tudi ni bilo posredovanih, razen v enih dveh lekarn. Te
-                           pa smo podali v pismeni obliki. Velja pa trifazni postopek.</p>
+                           zakona o lekarniški dejavnosti z ozirom na dejstvo, da je bila že dana na
+                           predpretekli seji, da je praktično sama dejavnost pripravila vse okvire,
+                           katere je ministrstvo sprejelo za to dejavnost in kakšnih bistvenih
+                           pripomb tudi ni bilo posredovanih, razen v enih dveh lekarn. Te pa smo
+                           podali v pismeni obliki. Velja pa trifazni postopek.</p>
                      </sp>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
@@ -5637,7 +5656,7 @@
                         <p>Ugotavljam, da smo soglasno sprejeli tudi ta predlog zakona.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="9">
+                  <div xml:id="div.1.1.2.12" ana="#PAR.TDR" n="9" corresp="#toc.2.12">
                      <sp who="#sp.ZupančičJože">
                         <p>
                            <title>9. TOČKA DNEVNEGA REDA: SOGLASJE K STATUTARNEMU SKLEPU UNIVERZE V
@@ -5658,7 +5677,7 @@
                         <p>Ugotavljam, da smo odlok o soglasju sprejeli soglasno.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="11">
+                  <div xml:id="div.1.1.2.13" ana="#PAR.TDR" n="11" corresp="#toc.2.13">
                      <sp who="#sp.ZupančičJože">
                         <p>Potem smo pri <title>11. TOČKI</title>, in sicer. <title>OBRAVNAVA
                               POROČILA MANDATNO-IMUNITETNE KOMISIJE ZBORA ZDRUŽENEGA DELA.</title> Z
@@ -5673,9 +5692,9 @@
                            spomnite, to je iz 29. na 30., pravzaprav že prvič pojavil ta problem, že
                            takrat je bil izdan predlog, da naj naša komisija to temo pač obravnava.
                            Glede na to je Komisija za mandatno-imunitetna vprašanja imela potem
-                           sestanek 5.7., kjer je tudi pripravila ta sklep. Tako, da je bil ta
-                           sklep že pripravljen, predno je bila v našem zboru podana pobuda, da se
-                           dnevni red razširi. Po razpravi je komisija sprejela naslednji sklep:</p>
+                           sestanek 5.7., kjer je tudi pripravila ta sklep. Tako, da je bil ta sklep
+                           že pripravljen, predno je bila v našem zboru podana pobuda, da se dnevni
+                           red razširi. Po razpravi je komisija sprejela naslednji sklep:</p>
                         <p>Mandatno-imunitetna komisija predlaga ZZD, da na podlagi 2. točke 29.
                            člena zakona o volitvah v skupščini ugotovi, da delegatu Milanu
                            Aksentijeviću preneha mandat delegata ZZD Skupščine Republike Slovenije,
@@ -5742,18 +5761,18 @@
                            tudi povedal. Opravil sem ta telefonski razgovor z gospodom
                            Aksentijevićem, iz katerega je bilo evidentno, da je on trmasto na
                            pozicijah JA in tudi celotnega njenega vodstva. Prepričeval me je celo o
-                           takšnih stvareh kot npr., da je popolnoma jasno, kdo je napadalec, saj
-                           se vidi, da ima TO samo štiri mrtve, medtem ko jih ima JA 40. To, da
-                           gospod Aksentijević ne bi imel možnosti opraviti tega prestopa, v to
-                           močno dvomim, saj vemo, da je bil prisoten zadnjič na seji vseh zborov.
-                           Vemo, da je bil včeraj tudi na skupni seji vseh zborov Skupščine, da je
-                           tudi govoril s predsednikom. Meni je zadnjič sicer navrgel, da ne ve, če
-                           bo lahko prišel v Skupščino, ker ne ve, kje ga bodo aretirali itd.
-                           Mislim, da je njegova dvakratna prisotnost sedaj v tem času v Skupščini
-                           dokazala, da slovenska oblast ne počenja takih stvari, da bi poslance kar
-                           na poti nekje aretirala in odpeljala neznano kam. Meni osebno je uspelo
-                           poslanca Aksentijevića prepričati, da ta armada res ne more več imeti
-                           poslanca v tem našem zboru.</p>
+                           takšnih stvareh kot npr., da je popolnoma jasno, kdo je napadalec, saj se
+                           vidi, da ima TO samo štiri mrtve, medtem ko jih ima JA 40. To, da gospod
+                           Aksentijević ne bi imel možnosti opraviti tega prestopa, v to močno
+                           dvomim, saj vemo, da je bil prisoten zadnjič na seji vseh zborov. Vemo,
+                           da je bil včeraj tudi na skupni seji vseh zborov Skupščine, da je tudi
+                           govoril s predsednikom. Meni je zadnjič sicer navrgel, da ne ve, če bo
+                           lahko prišel v Skupščino, ker ne ve, kje ga bodo aretirali itd. Mislim,
+                           da je njegova dvakratna prisotnost sedaj v tem času v Skupščini dokazala,
+                           da slovenska oblast ne počenja takih stvari, da bi poslance kar na poti
+                           nekje aretirala in odpeljala neznano kam. Meni osebno je uspelo poslanca
+                           Aksentijevića prepričati, da ta armada res ne more več imeti poslanca v
+                           tem našem zboru.</p>
                      </sp>
                      <sp who="#sp.ZupancBarbara">
                         <speaker>BARBARA ZUPANC:</speaker>
@@ -5792,9 +5811,9 @@
                            sklepanje o tem, ali bomo gospoda Aksentijevića izključili iz naše
                            skupščine ali ne tista točka, na kateri bomo preizkusili celotno
                            demokratičnost neša skupščine in naše volje v bistvu do tega, da je ta
-                           skupščina in naš celoten sistem demokratičen. Namreč, ali smo sposobni
-                           in pripravljeni v svojih vrstah gledati in tudi včasih poslušati človeka,
-                           ki drugače misli, kot misli večina. Mislim, da bo to ključen kamen in
+                           skupščina in naš celoten sistem demokratičen. Namreč, ali smo sposobni in
+                           pripravljeni v svojih vrstah gledati in tudi včasih poslušati človeka, ki
+                           drugače misli, kot misli večina. Mislim, da bo to ključen kamen in
                            opozarjam vas na zalo negativne posledice sprejema tega sklepa komisije.
                            Hvala.</p>
                      </sp>
@@ -5891,13 +5910,13 @@
                            trudili, da bi našli resnično formalno-pravno podlago, tisto tapravo;
                            iskali smo pomoč pri različnih pravnikih tu, tovarišica sekretarka je
                            pomagala pri tem, da je iskala te strokovnjake. Bil je tu Tomažič
-                           prisoten, predsednik Zakonodajno-pravne komisije in mislim da kaj
-                           posebno novega se verjetno ne bo dalo najti, tudi če bomo čakali do
-                           naslednjič. Dvomom, da imamo v zakonodaji možnosti, ker ti volilni
-                           zakoni, pa volilne enote, pa ta zakonodaja, ki smo jo nazadnje sprejeli,
-                           ta osamosvojitev in vse skupaj. Ni druge možnosti. Po drugi strani tudi
-                           po poslovniku, ki je bil samo delno dopolnjen, saj je tu neka stara
-                           zakonodaja in tu ni drugih.</p>
+                           prisoten, predsednik Zakonodajno-pravne komisije in mislim da kaj posebno
+                           novega se verjetno ne bo dalo najti, tudi če bomo čakali do naslednjič.
+                           Dvomom, da imamo v zakonodaji možnosti, ker ti volilni zakoni, pa volilne
+                           enote, pa ta zakonodaja, ki smo jo nazadnje sprejeli, ta osamosvojitev in
+                           vse skupaj. Ni druge možnosti. Po drugi strani tudi po poslovniku, ki je
+                           bil samo delno dopolnjen, saj je tu neka stara zakonodaja in tu ni
+                           drugih.</p>
                         <p>Mi ga osebno res nismo obveščali, mislim pa da kot predstavnik vojske je
                            to zelo dobro vedel, zato obvestilo, da se o tem spraševati, ali je on to
                            vedel ali ne, se mi zdi skoraj neumno.</p>
@@ -6019,8 +6038,8 @@
                            moram reči, da sem bil dolgo časa dober z njim, mislim, ko sem ga gledal
                            kot človeka in ko so se začeli Mariborski dogodki, sem mu enkrat ob
                            priliki rekel, da preneham, da prekinem ta odnos, ki sva ga imela in
-                           moram reči, da je bil nad tem zelo presenečen. Po očeh sem videl, kako
-                           je gledal, ker je mislil, da ima pač še vedno to zaslombo, ker sem se v
+                           moram reči, da je bil nad tem zelo presenečen. Po očeh sem videl, kako je
+                           gledal, ker je mislil, da ima pač še vedno to zaslombo, ker sem se v
                            tistih prejšnih časih z njegovimi pripombami strinjal, ne z vsemi ampak
                            bom rekel z večino. Najbolj pa me je zmotilo pred kakšnim mesecem, ko ne
                            vem ali smo sprejeli deklaracijo ali kaj je bilo, takrat ko je pač on sam
@@ -6041,8 +6060,8 @@
                         <p>Spoštovane poslanke in poslanci! Govorim o dveh rečeh. Eno je čustvo,
                            drugo je razum. Po čustveni plati sem sam bil za to in sem gospodu Šteri
                            to podpisal, ker enkrat moramo to stvar razčistiti, ampak da jo rešimo ne
-                           po čustveni plati, ampak po racionalni. Zakaj tako govorim? Poglejte,
-                           bil sem za talca takrat, ko so se Mariborski dogodki dogajali v Pekrah.
+                           po čustveni plati, ampak po racionalni. Zakaj tako govorim? Poglejte, bil
+                           sem za talca takrat, ko so se Mariborski dogodki dogajali v Pekrah.
                            Takrat sem vso noč prebil z našimi teritorialci, obkrožen z vojno
                            policijo, obkrožen s tanki, in obkrožen zadaj s pehoto. In ko so te tanke
                            naperjali in ko so potegnili zaklepe, smo mi tam gor čakali, da nas bodo
@@ -6066,12 +6085,12 @@
                            prijateljskih čustev, ampak ga osebno kot človek globoko, globoko
                            sovražim. Da si je upal priti v to našo deželo Slovenijo in vsem nam, ki
                            smo delali zakonito, grozil. Moral sem tudi zaradi tega posega iti po
-                           1000 mariborskih otrok, ki so letovali v Poreču, Punatu, Vrsarju in
-                           nismo mogli iti čez slovenska tla, ampak smo morali iti skozi neke
-                           prelaze skozi Avstrijo, čez Predil, Udine, čez Trst in po tuji zemlji
-                           vozit naše lastne otroke domov. Naša teritorialna obramba jim ne bi nič
-                           naredila. Bal sem se samo te vojske, ki smo ji rekli armada in za mene
-                           osebno ne bo nikoli več jugoslovanska armada, torej je ne maram.</p>
+                           1000 mariborskih otrok, ki so letovali v Poreču, Punatu, Vrsarju in nismo
+                           mogli iti čez slovenska tla, ampak smo morali iti skozi neke prelaze
+                           skozi Avstrijo, čez Predil, Udine, čez Trst in po tuji zemlji vozit naše
+                           lastne otroke domov. Naša teritorialna obramba jim ne bi nič naredila.
+                           Bal sem se samo te vojske, ki smo ji rekli armada in za mene osebno ne bo
+                           nikoli več jugoslovanska armada, torej je ne maram.</p>
                         <p>Zaradi vsega tega, ko mi je gospod Šter predlagal, da to podpišem, se to
                            tudi podpisal, ker ga kot osebnost zaradi groženj, ki nam jih je vsem
                            tukaj izrekel, ne maram, ampak mislim pa, da moramo biti bolj
@@ -6088,8 +6107,8 @@
                            saj nismo tako "zarukan" narod, da ne bi mogli v njegovem ravnanju oz.
                            vsem tem, kar se je zgodilo, najti ene vzrok, ki je zakonsko določen,
                            potem bom pa tudi jaz, Rudi Moge, obe roki dvignil za to, da ne sedi več
-                           z nami v klopeh. ne pustimo se mu pa zopet, kot prej, sprovocirati, da
-                           bi zdaj mi potegnili en korak, potem bi pa vsi več ali manj pisali. Malo
+                           z nami v klopeh. ne pustimo se mu pa zopet, kot prej, sprovocirati, da bi
+                           zdaj mi potegnili en korak, potem bi pa vsi več ali manj pisali. Malo
                            dvomljivo je. Že sam predsednik pravi, on tudi ni čist v to prepričan ali
                            je to v redu ali ne. Po čustveni plati, kot sem rekel, iz svojih izkušenj
                            vam pravim, sem za to, ampak kot varuhi zakonitosti, kot mi moramo biti
@@ -6163,12 +6182,11 @@
                            formulirati sklep, bomo pa imeli seveda tudi tega, ki ga je gospod
                            Studenčnik predlagal. Jaz bi tako predlagal: ZZD je razpravljal o
                            poslanskem mandatu Milana Aksentijevića v ZZD. Po poročilu predsednika
-                           Mandatno-imunitetne komisije in razpravi je sprejel ZZD  s k l e p:</p>
+                           Mandatno-imunitetne komisije in razpravi je sprejel ZZD s k l e p:</p>
                         <p>O odvzemu mandata ponovno razpravlja na naslednji seji, ko bodo
                            pridobljena stališča ustreznih komisij (Republiška volilna komisija in
                            Zakonodajno-pravna komisija) in poslanskih klubov. Ste res za to?
-                              <stage>(da.)</stage> Dobro. Koliko nas je zdaj tu? 45 nas je
-                           bilo.</p>
+                              <stage>(da.)</stage> Dobro. Koliko nas je zdaj tu? 45 nas je bilo.</p>
                         <p>Kdo je za predlagani sklep? <stage>(45 delegatov glasuje za.)</stage> Kdo
                            je proti? <stage>(Nihče.)</stage> Se je kdo vzdržal?
                               <stage>(Nihče.)</stage>
@@ -6178,7 +6196,7 @@
                            mnenja.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="12">
+                  <div xml:id="div.1.1.2.14" ana="#PAR.TDR" n="12" corresp="#toc.2.14">
                      <sp who="#sp.ZupančičJože">
                         <p>Potem imamo še zadnjo <title>12. TOČKO: POBUDE, PREDLOGI IN VPRAŠANJA
                               DELEGATOV.</title> Najprej imamo tu pobudo, ki so jo podpisali:
@@ -6202,8 +6220,8 @@
                            razpravljati? Ali je kdo proti temu?</p>
                         <p>Kdo je za to, da sprejmemo to pobudo kot pobudo Zbora združenega dela?
                               <stage>(41 delegatov.)</stage> Ali je kdo proti? <stage>(En
-                              delegat.)</stage> Ali se je kdo vzdržal? <stage>(Nihče.)</stage> To
-                           je sprejeto.</p>
+                              delegat.)</stage> Ali se je kdo vzdržal? <stage>(Nihče.)</stage> To je
+                           sprejeto.</p>
                         <p>Gre za javno zahvalo. Skupščina Republike Slovenije je ob obravnavi
                            informacije in predloga za odpravo posledic poplave v Sloveniji v
                            novembru 1990, ki jo je predložil Izvršni svet Skupščine Republike
@@ -6251,8 +6269,8 @@
                         <p>Od gospoda predsednika, dr. Ludvika Toplaka smo sprejeli še naslednje:
                            Obveščam vas, da je Družbenopolitični zbor na 22. seji dne 17.7.1991
                            sprejel na pobudo Janeza Kocijančiča stališče, ki se glasi:
-                           "Družbenopolitični zbor predlaga Zboru občin in Zboru združenega dela,
-                           da sprejmeta navedeno pobudo."</p>
+                           "Družbenopolitični zbor predlaga Zboru občin in Zboru združenega dela, da
+                           sprejmeta navedeno pobudo."</p>
                         <p>Kdo je za to pobudo? <stage>(44 za.)</stage> Je kdo proti?
                               <stage>(Nihče.)</stage>
                         </p>
@@ -6341,8 +6359,8 @@
                            je zato. To ne gre! Je čisto tehnično in ima prav. Zaradi tega, ker
                            dokler je tu zračni prostor zaprt, je vedno možnost agresije; saj to je
                            jasno mislim vsem.</p>
-                        <p>Je še kakšna zelo pomembna pobuda? Če ne, bi se vam zahvalil in
-                           zaključil to 25. oziroma prvo zasedanje.</p>
+                        <p>Je še kakšna zelo pomembna pobuda? Če ne, bi se vam zahvalil in zaključil
+                           to 25. oziroma prvo zasedanje.</p>
                      </sp>
                      <stage type="time">/Seja je bila <time to="1991-07-18T14:55:00"
                            xml:id="stage.t.10">končana ob 14.55 uri</time>/</stage>

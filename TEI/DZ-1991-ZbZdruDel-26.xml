@@ -78,6 +78,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
          <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
@@ -89,6 +90,13 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2016-03-31+02:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
          <change when="2016-01-18+01:00">
             <name>Andrej Pančur</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -122,15 +130,18 @@
                   <list rend="ordered">
                      <head>PRED DNEVNIM REDOM:                                                     
                               STRAN</head>
-                     <item n="1">Ugotavljanje prisotnosti delegatov ...................... 1</item>
-                     <item n="2">Določitev dnevnega reda ................................. 1</item>
+                     <item n="1" xml:id="toc.1.1">Ugotavljanje prisotnosti delegatov
+                        ...................... 1</item>
+                     <item n="2" xml:id="toc.1.2">Določitev dnevnega reda
+                        ................................. 1</item>
                   </list>
                </item>
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED:</head>
-                     <item n="1">Kratkoročni in dolgoročni ukrepi za izboljšanje gospodarskega
-                        stanja v Republiki Sloveniji .............. 1<list rend="simple">
+                     <item n="1" xml:id="toc.2.1">Kratkoročni in dolgoročni ukrepi za izboljšanje
+                        gospodarskega stanja v Republiki Sloveniji .............. 1<list
+                           rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>dr. Andrej Ocvirk ....................................... 2</item>
                            <item>Matija Malešič .......................................... 3</item>
@@ -176,8 +187,8 @@
                            <item>Izidor Rejc ............................................ 57</item>
                         </list>
                      </item>
-                     <item n="2">Nadaljevanje seje 31.7.1991 Nadaljevanje obravnave 1. točke
-                        dnevnega reda .......... 60<list rend="simple">
+                     <item n="2" xml:id="toc.2.2">Nadaljevanje seje 31.7.1991 Nadaljevanje obravnave
+                        1. točke dnevnega reda .......... 60<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Franc Grašič ........................................... 61</item>
                            <item>Franc Ban .............................................. 63</item>
@@ -186,8 +197,10 @@
                            <item>mag. Franc Perko ....................................... 65</item>
                         </list>
                      </item>
-                     <item n="3">Seznam govornikov .................................... II/1</item>
-                     <item n="4">Priloga: zapisnik seje ................................ III</item>
+                     <item n="3" xml:id="toc.2.3">Seznam govornikov
+                        .................................... II/1</item>
+                     <item n="4" xml:id="toc.2.4">Priloga: zapisnik seje
+                        ................................ III</item>
                   </list>
                </item>
             </list>
@@ -288,9 +301,9 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.ZbZdruDel">
+         <div xml:id="div.1" ana="#PAR.ZbZdruDel">
             <head>ZBOR ZDRUŽENEGA DELA</head>
-            <div ana="#PAR.Seja" n="26">
+            <div xml:id="div.1.1" ana="#PAR.Seja" n="26">
                <head>26. seja</head>
                <docDate>
                   <date from="1991-07-30" to="1991-07-31">30. in 31. julij 1991</date>
@@ -314,8 +327,8 @@
                <stage type="time">
                   <time from="1991-07-30T14:14:00" xml:id="stage.t.1">Pričetek seje ob 14.14
                      uri</time>.</stage>
-               <div ana="#PAR.PredDnevRed">
-                  <div ana="#PAR.Prisot">
+               <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.Prisot" corresp="#toc.1.1">
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
                         <p>Spoštovane poslanke, poslanci, dragi gostje in cenjeni novinarji!
@@ -337,7 +350,7 @@
                            področje.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.DolDnevRed">
+                  <div xml:id="div.1.1.1.2" ana="#PAR.DolDnevRed" corresp="#toc.1.2">
                      <sp who="#sp.ZupančičJože">
                         <p>Za današnjo sejo predlagam samo eno točko dnevnega reda, in
                               sicer <title>KRATKOROČNI IN DOLGOROČNI UKREPI ZA IZBOLJŠANJE
@@ -352,8 +365,8 @@
                      </sp>
                   </div>
                </div>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR" n="1">
+               <div xml:id="div.1.1.2" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.2.1" ana="#PAR.TDR" n="1" corresp="#toc.2.1 #toc.2.2">
                      <sp who="#sp.ZupančičJože">
                         <p>Za obravnavo današnje točke smo prejeli nekaj gradiv, nekaj gradiv pa bo
                            še sproti razmnoženih, tako da jih boste poslanci in poslanke tudi
@@ -440,10 +453,10 @@
                            odločiti za nekatere kratkoročne ukrepe in prioritete ter za oblikovanje
                            strategije preobrazbe nadaljnjega razvoja družbenih dejavnosti. O tem sem
                            govoril zadnjič na skupnem zasedanju vseh zborov. Upam, da se strinjate z
-                           mano, da imamo jasne strateške usmeritve za naprej in zaradi tega tega
-                           ne bi ponavljal. Zaradi spoznanja, da je naraščanje brezposelnosti in
-                           vedno večje število oseb, ki nimajo sredstev za preživljanje, trenutno
-                           glavni socialni problem, je bila že v proračunu dana visoka prioriteta
+                           mano, da imamo jasne strateške usmeritve za naprej in zaradi tega tega ne
+                           bi ponavljal. Zaradi spoznanja, da je naraščanje brezposelnosti in vedno
+                           večje število oseb, ki nimajo sredstev za preživljanje, trenutno glavni
+                           socialni problem, je bila že v proračunu dana visoka prioriteta
                            socialnemu programu, ki ste ga prav tako sprejemali. Naj omenim, da
                            socialni program zaenkrat še dokaj dosledno uresničujemo kljub izrednim
                            težavam proračuna. Jaz bom navedel podatek, da je priliv sredstev v
@@ -652,9 +665,8 @@
                         <p>Tretjič, Zbor združenega dela bo celotno problematijo obravnaval na
                            izredni seji, ki bo prihodnji teden. Izvršni svet Skupščine Republike
                            Slovenije pa naj pisno pripravi konkretne predloge za izboljšanje
-                           gospodarskeg stanja, ki bistveno vpliva tudi na splošno in skupno
-                           porabo. Odgovori naj tudi na pripombe, ki so bile posredovane v
-                           razpravi.</p>
+                           gospodarskeg stanja, ki bistveno vpliva tudi na splošno in skupno porabo.
+                           Odgovori naj tudi na pripombe, ki so bile posredovane v razpravi.</p>
                         <p>Toliko v opomin in spomin!</p>
                         <p>Preden bi pričeli z razpravo, bi bilo prav, da bi poslušali še gospoda
                            Franca Grašiča v imenu odbora. To bi bil hkrati tudi prvi razpravljalec.
@@ -702,13 +714,13 @@
                            povečali. Potem je potrebna aktivnost v zvezi z ustreznimi dovoljenji ali
                            soglasji tako na uvoznem kot izvoznem področju. In nenazadnje je z večjim
                            izvozom povezana nujna potreba tudi po ustrezni evropski ceni denarja,
-                           evropski ceni kreditov, seveda ne takšni kot je sedaj. To je pa že
-                           drugi sklop, ki je povezan z ukrepi na področju monetarne politike. Tukaj
-                           smo bili mnenja, da je potrebno še počakati in videti ali se bodo banke
-                           uspele dogovoriti in normalizirati - če lahko tako rečem - ceno
-                           kreditov. V kolikor temu ne bo tako, naj bi tudi na tem področju Izvršni
-                           svet posegel za ustreznim predpisom oz. zgornjo omejitvijo obrestnih mer,
-                           da bi te bile na evropski ravni. Prav tako se strinjamo tudi s tem, da je
+                           evropski ceni kreditov, seveda ne takšni kot je sedaj. To je pa že drugi
+                           sklop, ki je povezan z ukrepi na področju monetarne politike. Tukaj smo
+                           bili mnenja, da je potrebno še počakati in videti ali se bodo banke
+                           uspele dogovoriti in normalizirati - če lahko tako rečem - ceno kreditov.
+                           V kolikor temu ne bo tako, naj bi tudi na tem področju Izvršni svet
+                           posegel za ustreznim predpisom oz. zgornjo omejitvijo obrestnih mer, da
+                           bi te bile na evropski ravni. Prav tako se strinjamo tudi s tem, da je
                            potrebno v teh razmerah višino zamudnih obresti korigirati. Področje
                            obremenjevanje gospodarstva. Tukaj smo se seveda zavedali, da bo
                            nadaljnje zniževanje obremenitev izjemno težko, zato je bil v razpravi
@@ -762,8 +774,8 @@
                         <p>Naslednja stvar. Pripomb je bilo za 4 strani. V ciljih predlaganih
                            kratkoročnih ukrepov so bolj načelne opredelitve. Ko opredeljujemo potem
                            predloge, bi vsekakor morala biti vsebina nekoliko celovitejša za
-                           posamezen sklop, določeni nosilci, roki in načini reševanja glede na
-                           zelo kratek rok oziroma težave, ki nam iz dneva v dan bolj otežkočajo
+                           posamezen sklop, določeni nosilci, roki in načini reševanja glede na zelo
+                           kratek rok oziroma težave, ki nam iz dneva v dan bolj otežkočajo
                            poslovanje. Eno od načel je zagotovitev minimalne socialne varnosti
                            prebivalstva in pogojev za delovanje družbenih dejavnsoti v spremenjenih
                            razmerah. V soglasju z Ministrstvom za zdravstvo smo praktično ponovno
@@ -838,9 +850,9 @@
                            bo več moč izplačati v večini zdravstvenih zavodov osebnih dohodkov, s
                            tem da ni treba posebej razlagati, da se bo povečal tudi znesek
                            neplačanih računov. Z zdravstvom tonejo tudi dobavitelji, predvsem
-                           veledrogerije, ki zalagajo zdravstvo z zdravili in sanitetnim
-                           materialom. Razpolagamo s podatkom, da zdravstvo dolguje Kemofarmaciji že
-                           300 milijonov dinarjev za zdravila, sanitetni in dugi material. In se
+                           veledrogerije, ki zalagajo zdravstvo z zdravili in sanitetnim materialom.
+                           Razpolagamo s podatkom, da zdravstvo dolguje Kemofarmaciji že 300
+                           milijonov dinarjev za zdravila, sanitetni in dugi material. In se
                            praktično veledrogerije odločajo, da nekaterim zdravstvenim zavodom ne
                            mislijo več dobavljati potrebnega materiala. Oprema v zdravstvu je
                            iztrošena, kar smo že povedali; sredstev za vzdrževanje in obnavljanje
@@ -888,8 +900,8 @@
                            zapiranju tržišč iz drugih republik in tako naprej; likvidnostni položaj.
                            Te stvari sem si podčrtal in en podatek, ki je dejansko pomemben po
                            stanju 30.6. Iz podatkov o prijavljenih obveznostih in terjatvah do
-                           drugih republik in drugje, ki jih SDK zbira 10-dnevno, je razvidno, da
-                           je obseg zapadlih terjatev 10-krat večji od zapadlih obveznosti. Hvala
+                           drugih republik in drugje, ki jih SDK zbira 10-dnevno, je razvidno, da je
+                           obseg zapadlih terjatev 10-krat večji od zapadlih obveznosti. Hvala
                            lepa.</p>
                      </sp>
                      <sp who="#sp.ZupančičJože">
@@ -1241,24 +1253,23 @@
                            to; tudi ni potrebno, da bi zdaj vsi čakali samo na ukrepe vlade. Mislim,
                            da se že 45 let čaka in ves čas se neki programi v vladi pripravljajo.
                            Jaz mislim, da je treba marsikaj, tudi znotraj hiše, v posameznih
-                           podjetjih urediti, ker mi še vedno dobivamo papirje, kjer piše, danes
-                           sem dobil papir: zgubili smo trge v drugih republikah. Torej, tega ni
-                           izučila niti srbska blokada, ki je bila, vemo kdaj, in da pravzaprav
-                           stanje, ki se zdaj zaostruje z ostalimi republikami, traja že dve do tri
-                           leta. In mislim, da se je treba v marsikateri sredini vprašati, kaj je
-                           bilo v tisti sredini narejeno, ne pa samo čakati na vlado. Tu smo
-                           slišali, na eni strani naj ne bi nikakršnih prispevkov odlagali, drugi
-                           pravijo, v kolikor se prispevki ne bodo odlagali, smo v kolapsu. Te
-                           stvari enostavno ne gredo skupaj. Toliko kolikor imamo prihodkov v
-                           proračunu, seveda lahko tudi porabimo in nič drugače. Zato stojim na
-                           stališču, da bi vendarle morali 80, 90 % narediti v samih firmah in silno
-                           malo prepustiti zunanjim dejavnikom, ker tudi zunaj se države ne
-                           ukvarjajo z gospodarstvom tako, kot se mi, praktično s celimi regijami, z
-                           vsemi firmami zato, da bomo ta voz potegnili naprej. Sem za tiste, ki
-                           imajo potrjene programe prek inštitutov, predvsem ljubljanske banke in
-                           ostalih inštitucij, da dobijo ta sredstva takrat, ko jih bomo zagotovili,
-                           vendar potem pričakujemo, da bodo te tudi samostojno naprej
-                           funkcionirale.</p>
+                           podjetjih urediti, ker mi še vedno dobivamo papirje, kjer piše, danes sem
+                           dobil papir: zgubili smo trge v drugih republikah. Torej, tega ni izučila
+                           niti srbska blokada, ki je bila, vemo kdaj, in da pravzaprav stanje, ki
+                           se zdaj zaostruje z ostalimi republikami, traja že dve do tri leta. In
+                           mislim, da se je treba v marsikateri sredini vprašati, kaj je bilo v
+                           tisti sredini narejeno, ne pa samo čakati na vlado. Tu smo slišali, na
+                           eni strani naj ne bi nikakršnih prispevkov odlagali, drugi pravijo, v
+                           kolikor se prispevki ne bodo odlagali, smo v kolapsu. Te stvari enostavno
+                           ne gredo skupaj. Toliko kolikor imamo prihodkov v proračunu, seveda lahko
+                           tudi porabimo in nič drugače. Zato stojim na stališču, da bi vendarle
+                           morali 80, 90 % narediti v samih firmah in silno malo prepustiti zunanjim
+                           dejavnikom, ker tudi zunaj se države ne ukvarjajo z gospodarstvom tako,
+                           kot se mi, praktično s celimi regijami, z vsemi firmami zato, da bomo ta
+                           voz potegnili naprej. Sem za tiste, ki imajo potrjene programe prek
+                           inštitutov, predvsem ljubljanske banke in ostalih inštitucij, da dobijo
+                           ta sredstva takrat, ko jih bomo zagotovili, vendar potem pričakujemo, da
+                           bodo te tudi samostojno naprej funkcionirale.</p>
                         <p>Okrog kompenzacij še mogoče besedo. Mi bomo to pregledali, pripravili;
                            nekaj kompenzacij je bilo, nekaj kar uspešnih. Mogoče bomo to še
                            pogosteje delali in skušali čim več teh terjatev in obveznosti
@@ -1316,11 +1327,11 @@
                            naslednjih obdobjih, ker moram povedati, kot gospodarstvenik, da vsak
                            gleda tudi nekaj časa nazaj, da pozna sedanjo situacijo in da mora
                            prognozirati v naprej. Dejstvo je pa to, če bi Slovenci že pred leti
-                           imeli - takrat, ko je Markovićev program dejansko skozi določeno
-                           politiko po slovenskih izvoznikih močno planil, mislim, da je bilo
-                           ogromno panog, ki so takrat, to je bilo leta 1988 in posebno še 1989,
-                           doživele skoraj popoln kolaps, takrat tako znali tudi razmišljati naprej
-                           in zaščititi te programe, bi bila danes tudi situacija drugačna.</p>
+                           imeli - takrat, ko je Markovićev program dejansko skozi določeno politiko
+                           po slovenskih izvoznikih močno planil, mislim, da je bilo ogromno panog,
+                           ki so takrat, to je bilo leta 1988 in posebno še 1989, doživele skoraj
+                           popoln kolaps, takrat tako znali tudi razmišljati naprej in zaščititi te
+                           programe, bi bila danes tudi situacija drugačna.</p>
                         <p>S tem mislim opozoriti na to, da ne moremo danes v tem težkem trenutku v
                            gospodarstvu nekaj govoriti pavšalno oziroma ocenjevati približno, ampak
                            da je treba postaviti zadeve čisto konkretno, jasno. Meni se zdi, da mi
@@ -1494,14 +1505,14 @@
                            sistemom zmenili, da to ni treba, da pa to izvajajo. To bi moralo
                            funkcionirati. Okoli pasivne ali aktivne obrestne mere - to vse vemo. Mi
                            lahko rečemo: razlika med aktivno in pasivno obrestno mero bo taka in
-                           taka in potem vemo, da se nam sesuje bančni sistem. Glede na to, da
-                           sedaj kot Slovenija nimamo v odnosu do sveta nič drugega kot nekaj bank,
-                           mi teh bank ne smemo zrušiti. V primeru, če pa to naredimo in damo neke
-                           svetovne standarde, pa vemo, kaj bo. Ne zaradi bančnega sistema, ali pa
-                           tudi delno; zaradi gospodarstva, kakršno je. Splošna poraba. mislim, da
-                           bodo še veliki problemi okoli porabe in okoli zdravstva, šolstva itn.
-                           Zelo preprosto, ker smo že sedaj imeli glede na nivo družbenega proizvoda
-                           to dejavnost premočno. Prevelik del družbenega proizvoda je šel za to
+                           taka in potem vemo, da se nam sesuje bančni sistem. Glede na to, da sedaj
+                           kot Slovenija nimamo v odnosu do sveta nič drugega kot nekaj bank, mi teh
+                           bank ne smemo zrušiti. V primeru, če pa to naredimo in damo neke svetovne
+                           standarde, pa vemo, kaj bo. Ne zaradi bančnega sistema, ali pa tudi
+                           delno; zaradi gospodarstva, kakršno je. Splošna poraba. mislim, da bodo
+                           še veliki problemi okoli porabe in okoli zdravstva, šolstva itn. Zelo
+                           preprosto, ker smo že sedaj imeli glede na nivo družbenega proizvoda to
+                           dejavnost premočno. Prevelik del družbenega proizvoda je šel za to
                            potrošnjo. Sedaj bo družbeni proizvod padel. Lanko leto je padel za 9 %,
                            letos je bilo planirano za 12 % + 4 % = 16 %. Se pravi, če gledamo zadnji
                            dve leti, je to 25 % do 30 % padec družbenega proizvoda. Da bomo sedaj mi
@@ -1569,13 +1580,12 @@
                            točno vedo, kakšni problemi so in točno vedo, da ni samo srbski vdor
                            notri, da je tudi še marsikaj drugega zraven. To znajo. Samo to je treba
                            dobro prezentirati in potem se bo dalo marsikaj govoriti. Je pa seveda to
-                           odvisno od aktivnosti. Samo med tem časom, ko se bo to usklajevalo, je
-                           pa treba to vse požreti. Vse požreti zaradi tega, ker - saj pravim -
-                           Evropa se drži nazaj in lahko samo v gospodarstvu največ pomaga. Jaz sem,
-                           ko se je Gorenje pogovarjalo sedaj - kot eno izmed večjih stvari -
-                           forsiral, da se gre takoj v razgovore in še nekaj drugih organizacij, da
-                           se stvari čimbolj internacionalizirajo v vsem gospodarstvu. Hvala
-                           lepa.</p>
+                           odvisno od aktivnosti. Samo med tem časom, ko se bo to usklajevalo, je pa
+                           treba to vse požreti. Vse požreti zaradi tega, ker - saj pravim - Evropa
+                           se drži nazaj in lahko samo v gospodarstvu največ pomaga. Jaz sem, ko se
+                           je Gorenje pogovarjalo sedaj - kot eno izmed večjih stvari - forsiral, da
+                           se gre takoj v razgovore in še nekaj drugih organizacij, da se stvari
+                           čimbolj internacionalizirajo v vsem gospodarstvu. Hvala lepa.</p>
                      </sp>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
@@ -1720,9 +1730,9 @@
                            še obstajala ali ne. Na to ta program ne odgovarja, moral pa bi. Seveda
                            nisem iz proizvodnje, kjer bi pravzaprav danes moral biti poudarek vsega,
                            ker če bomo proizvajali, ustvarjali, ustvarjali novo vrednost, potem se
-                           lahko o razporejanju te vrednosti pogovarjamo. Če je pa ne bomo, potem
-                           pa je najbrž vsaka diskusija odveč. Sem iz infrastrukture, ki sicer ni
-                           čisto nepomembna. Žal pa moram reči, da je v gradivu, ki ga je zavod za
+                           lahko o razporejanju te vrednosti pogovarjamo. Če je pa ne bomo, potem pa
+                           je najbrž vsaka diskusija odveč. Sem iz infrastrukture, ki sicer ni čisto
+                           nepomembna. Žal pa moram reči, da je v gradivu, ki ga je zavod za
                            makroekonomske analize in razvoja Republike Slovenije pripravil, tudi
                            poglavje " promet in zveze " - samo naslov; sicer pa v tem poglavju ni
                            niti besede. Bojim se, da bomo spoznali, da rabimo tudi ta drugi del
@@ -1935,11 +1945,11 @@
                            ceno. Cene za nafto bomo dvignili, recimo.</p>
                         <p>Vprašanje moratorija na gozdove. Sigurno je to velik problem okrog
                            preskrbe lesne industrije. Naša lesna industrija je dobila ogromno,
-                           ogromno blaga s področja Like in iz tega dela. To sedaj ne funkcionira
-                           in grozi pač celi dejavnosti kot taki. Zato je tu samo ena stvar.
-                           Čimprej sprejmite Zakon o denacionaliziaciji, da bo tu mogoče en del
-                           rešen, in drugič, kar je pa vprašanje davčne zakonodaje, verjetno bo
-                           treba kompletno davčno upravo menjati povsod, ker ta ne funkcionira.</p>
+                           ogromno blaga s področja Like in iz tega dela. To sedaj ne funkcionira in
+                           grozi pač celi dejavnosti kot taki. Zato je tu samo ena stvar. Čimprej
+                           sprejmite Zakon o denacionaliziaciji, da bo tu mogoče en del rešen, in
+                           drugič, kar je pa vprašanje davčne zakonodaje, verjetno bo treba
+                           kompletno davčno upravo menjati povsod, ker ta ne funkcionira.</p>
                         <p>Bilo je še vprašanje programa, češ da ni programa. Tega jaz ne razumem.
                            Jaz sem to načrtno rekel, ker vem, da je bilo že dosti očitkov, da ni
                            programa. Februarja ste sprejeli ekonomski program, za letošnje leto in
@@ -2062,10 +2072,10 @@
                            gospodarskem delu, saj od ministrov, ki niso v enem letu potegnili
                            odločilnih potez, ne moremo v razmerah, ki bodo očitno še težje,
                            pričakovati, da bodo to storili sedaj. Upam seveda, da takšne zamenjave
-                           niso v nasprotju z brionsko deklaracijo. Razprava, ki teče te dni
-                           znotraj DEMOS-a, bi se morala premakniti v to dvorano, oziroma v
-                           skupščino, prav tako pa bi morala preseči strankarske interese, če
-                           hočemo, da bomo dobili gospodarsko vojno, ki je v teku.</p>
+                           niso v nasprotju z brionsko deklaracijo. Razprava, ki teče te dni znotraj
+                           DEMOS-a, bi se morala premakniti v to dvorano, oziroma v skupščino, prav
+                           tako pa bi morala preseči strankarske interese, če hočemo, da bomo dobili
+                           gospodarsko vojno, ki je v teku.</p>
                         <p>Naj povem, da nisem član DEMOSA, da ne bi kdo mislil. Čas vojne, tudi
                            gospodarske, ni čas za razprtije in tudi ta čas ni čas za medstrankarske
                            razprtije. Mislim, da bi tako, kot smo zadnjič na nočni seji in eni
@@ -2117,21 +2127,21 @@
                            vlada. Ob popolnem izpadu zunanjih kreditov je popolnoma jasno, da je ta
                            cilj mogoče doseči ali pa se mu vsaj približati le z povečanim izvozom.
                            Deklarativno pravzaprav nič novega. Saj ta cilj je bil prioriteta tudi že
-                           v prejšnjih obdobjih. Da ne bo sedaj kakšnega aplavza. Pregled
-                           rezultatov doseženega izvoza v zadnjih letih, pa tudi v prvem polletju
-                           letošnjega leta jasno pokaže, kateri so izdelki, ki jih uspevamo
-                           plasirati na zunanja tržišča in katera so tista podjetja, ki ustvarjajo
-                           presežek deviznega priliva. Trdim, da bo še lep čas največji del izvoza
-                           in neto deviznega priliva baziral prav na teh podjetjih in na teh
-                           proizvodih, ne pa na tovarnah sanj, s katerimi se ukvarjajo preštevilni
-                           idealisti jutrišnje Slovenije. Toda prav v imenu neke strokovno
-                           nepotrjene ideje o primernosti ali neprimernosti določenih proizvodov,
-                           deloma pa, verjetno te ideje bazirajo tudi na zvestem služenju dvomljivi
-                           strankarski pripadnosti, torej v imenu teh nepotrjenih idej, ki jih
-                           širijo posamezniki v vladi, se vlečejo enostranske poteze, ki bodo
-                           dolgoročno uničile še tiste preostale izvoznike, ki se na zapadnih trgih
-                           sploh še lahko pojavljajo. Ideja o izvozu slovenske pameti in znanja
-                           seveda godi vsakemu med nami.</p>
+                           v prejšnjih obdobjih. Da ne bo sedaj kakšnega aplavza. Pregled rezultatov
+                           doseženega izvoza v zadnjih letih, pa tudi v prvem polletju letošnjega
+                           leta jasno pokaže, kateri so izdelki, ki jih uspevamo plasirati na
+                           zunanja tržišča in katera so tista podjetja, ki ustvarjajo presežek
+                           deviznega priliva. Trdim, da bo še lep čas največji del izvoza in neto
+                           deviznega priliva baziral prav na teh podjetjih in na teh proizvodih, ne
+                           pa na tovarnah sanj, s katerimi se ukvarjajo preštevilni idealisti
+                           jutrišnje Slovenije. Toda prav v imenu neke strokovno nepotrjene ideje o
+                           primernosti ali neprimernosti določenih proizvodov, deloma pa, verjetno
+                           te ideje bazirajo tudi na zvestem služenju dvomljivi strankarski
+                           pripadnosti, torej v imenu teh nepotrjenih idej, ki jih širijo
+                           posamezniki v vladi, se vlečejo enostranske poteze, ki bodo dolgoročno
+                           uničile še tiste preostale izvoznike, ki se na zapadnih trgih sploh še
+                           lahko pojavljajo. Ideja o izvozu slovenske pameti in znanja seveda godi
+                           vsakemu med nami.</p>
                         <p>Vendar bodimo realni. Govorimo o preživetju, o našem delu in ravnanju v
                            prihodnjem obdobju, ne nekaj mesecev, temveč kar nekaj let. V tem času pa
                            bomo morali storiti vse, da ne izgubimo tega kar imamo. Oz. na žalost,
@@ -2166,8 +2176,8 @@
                            večkrat slišali, da govorimo o podjetju Slovenija. V podjetju ti nič ne
                            govoriš več, tisti je to kriv, ki pač govori, drugo pa dela. Gospod
                            Toplek, pri naslednji razpravi pričakujem kot poslanec od vas, da boste
-                           povedali, kateri ministri so tisti, ki eno govorijo, drugo pa delajo,
-                           ker drugače do sprememb ne bo prišlo. Kot replika.</p>
+                           povedali, kateri ministri so tisti, ki eno govorijo, drugo pa delajo, ker
+                           drugače do sprememb ne bo prišlo. Kot replika.</p>
                         <p>Ja, prosim ! Če boste takoj zdaj povedali, bom najbolj vesel.</p>
                      </sp>
                      <sp who="#sp.ToplekDanilo">
@@ -2195,12 +2205,12 @@
                            vlado in za to imamo ministre; to opozarjamo že nekaj časa prejšnji in
                            sedanji vladi in to je treba enkrat presekati. To so veliki problemi, ki
                            jih moramo rešiti in domine se bodo začele podirati. Bodo. Če bomo dobili
-                           mi plačano potem razliko za dva meseca na 15,5 DEM, bomo tej vladi
-                           večino tega denarja poslali v proračun, ker nam danes odlaga prispevke,
-                           zato da lahko sploh na nek način shajamo in živimo. Se bo napolnil
-                           proračun, eni bodo dobili subvencije in spet bomo dobili mi plačano.
-                           Boste videli, da se bodo začele domine podirati in to so problemi, ki jih
-                           na vsak način moramo rešiti.</p>
+                           mi plačano potem razliko za dva meseca na 15,5 DEM, bomo tej vladi večino
+                           tega denarja poslali v proračun, ker nam danes odlaga prispevke, zato da
+                           lahko sploh na nek način shajamo in živimo. Se bo napolnil proračun, eni
+                           bodo dobili subvencije in spet bomo dobili mi plačano. Boste videli, da
+                           se bodo začele domine podirati in to so problemi, ki jih na vsak način
+                           moramo rešiti.</p>
                      </sp>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
@@ -2218,8 +2228,8 @@
                            prestrukturirani, da je ne vem kako visok nivo tega gospodarstva, vendar
                            ko sem bil v Beogradu, sem videl - po direktnem odvzemu - da je samo še
                            Črna gora slabša od nas. Taka je naša struktura industrije. In če imamo
-                           tako strukturo industrije, pa Slovenija ostane samostojna, potem vemo,
-                           da bo v tej industriji tudi prestrukturacijo treba narediti in da je ta
+                           tako strukturo industrije, pa Slovenija ostane samostojna, potem vemo, da
+                           bo v tej industriji tudi prestrukturacijo treba narediti in da je ta
                            industrija predraga. Ne mislim tukaj na aluminij. Mislim na železarstvo.
                            Zadnjič sem gledal kalkulacije pa v tisti plejadi enega proizvoda nisem
                            videl, ki bi pokrival vse kar je. In zdaj bo treba v to narediti rez, s
@@ -2532,8 +2542,8 @@
                            vlada je tukaj, da pomaga, da ustvarja pogoje itn. In jaz mislim, pa ne
                            govorim kot poslanec Demosa, mislim, da imamo srečo in, da imamo dobro
                            vlado; da je ta vlada veliko naredila v enem letu in da, če je kaj
-                           dobrega, potrditev, da imamo dobro vlado, se pokaže v najbolj
-                           kritičnem trenutku. To, kar je vlada naredila v teh kritičnih dneh, to je
+                           dobrega, potrditev, da imamo dobro vlado, se pokaže v najbolj kritičnem
+                           trenutku. To, kar je vlada naredila v teh kritičnih dneh, to je
                            zgodovinska preizkušnja bila in vemo, kako je preživela. In tudi naš
                            zbor, se spomnim, sem takrat dal svojo opazko, ko smo razpravljali in ko
                            smo sprejemali proračun, sem že takrat rekel, da me je večina
@@ -2644,25 +2654,25 @@
                      </sp>
                      <sp who="#sp.AvberšekFranc">
                         <speaker>MAG. FRANC AVBERŠEK:</speaker>
-                        <p>Mislil sem, da se g. Starc šali, ko pa sem videl, ko je bil tako dolg,
-                           da misli resno. Jaz moram reči, da sem zadnjič g.Bizjaka vprašal, če je
-                           še kaj prostora v Rogaški malo po vojni, malo v šali, ampak on kot
-                           poslovni človek mi je zelo hitro poslal prospekt, na katerem je bil
-                           seveda tudi cenik. Če bi bil realsocialist, potem bi mi poslal brez
-                           cenika, tako se je, vsaj pravijo, včasih delalo. Ko pa je videl, kako je
-                           - tako kot so nas pohvalili v tej Evropi - je bilo navodilo, da naj
-                           nesemo v zaklonišča rezervno hrano oz. rezervno obleko, ne preveč in
-                           masko, pa denarnico, da si bomo lahko še kaj kupili, tudi v teh razmerah
-                           in to mislim, da g. Bizjak dovolj dobro ve in mislim, da g. Starc, da je
-                           zelo velik realsocializem, da bi dali enim velike plače, potem pa bi jih
-                           obdavčili, da jih niti ne bi dobili, pa bi imeli spet vsi enake. To ne bo
-                           šlo. Če pa gre slučajno za tiste, kot smo rekli, da imajo v bankah velike
-                           plače, takrat pa je seveda problem drugačen; torej v teh bankah, kjer nam
-                           niti lastnega denarja ne morejo izplačati, dali pa so si zelo dobre
-                           plače, če gre pa za te primere, tu pa je treba pošteno reči, ne preko
-                           bank nas obdavčiti, ampak reči, tako velik je davek pri tistih, ki imate
-                           denar v bankah, pa boste plačali za to večje obresti ali pa večje davke,
-                           pa bodo prave obresti. Hvala.</p>
+                        <p>Mislil sem, da se g. Starc šali, ko pa sem videl, ko je bil tako dolg, da
+                           misli resno. Jaz moram reči, da sem zadnjič g.Bizjaka vprašal, če je še
+                           kaj prostora v Rogaški malo po vojni, malo v šali, ampak on kot poslovni
+                           človek mi je zelo hitro poslal prospekt, na katerem je bil seveda tudi
+                           cenik. Če bi bil realsocialist, potem bi mi poslal brez cenika, tako se
+                           je, vsaj pravijo, včasih delalo. Ko pa je videl, kako je - tako kot so
+                           nas pohvalili v tej Evropi - je bilo navodilo, da naj nesemo v zaklonišča
+                           rezervno hrano oz. rezervno obleko, ne preveč in masko, pa denarnico, da
+                           si bomo lahko še kaj kupili, tudi v teh razmerah in to mislim, da g.
+                           Bizjak dovolj dobro ve in mislim, da g. Starc, da je zelo velik
+                           realsocializem, da bi dali enim velike plače, potem pa bi jih obdavčili,
+                           da jih niti ne bi dobili, pa bi imeli spet vsi enake. To ne bo šlo. Če pa
+                           gre slučajno za tiste, kot smo rekli, da imajo v bankah velike plače,
+                           takrat pa je seveda problem drugačen; torej v teh bankah, kjer nam niti
+                           lastnega denarja ne morejo izplačati, dali pa so si zelo dobre plače, če
+                           gre pa za te primere, tu pa je treba pošteno reči, ne preko bank nas
+                           obdavčiti, ampak reči, tako velik je davek pri tistih, ki imate denar v
+                           bankah, pa boste plačali za to večje obresti ali pa večje davke, pa bodo
+                           prave obresti. Hvala.</p>
                      </sp>
                      <sp who="#sp.LovrenčičFranc">
                         <speaker>FRANC LOVRENČIČ:</speaker>
@@ -2726,11 +2736,11 @@
                            število uživljalcev socialnih pomoči narašča in sigurno bo še naraščalo
                            do konca leta; zlasti narašča število enkratnih in začasnih pomoči in
                            različnih dodatnih pomoči in seveda, v situaciji v kakršni smo, bo to
-                           resnično naraščalo še naprej. Rada bi pri tem opozorila na nekaj
-                           drugega, kar ugotavljamo tudi na področju socialnega varstva, in sicer,
-                           da se pojavljajo ljudje, zaposleni delavci, ki iščejo socialno varstveno
-                           pomoč pa vendarle mislimo, da to ne bi bilo potrebno. Namreč, ne samo to,
-                           da zgubljajo zaposlitev, huje je tam, kjer delajo v podjetjih in nimajo
+                           resnično naraščalo še naprej. Rada bi pri tem opozorila na nekaj drugega,
+                           kar ugotavljamo tudi na področju socialnega varstva, in sicer, da se
+                           pojavljajo ljudje, zaposleni delavci, ki iščejo socialno varstveno pomoč
+                           pa vendarle mislimo, da to ne bi bilo potrebno. Namreč, ne samo to, da
+                           zgubljajo zaposlitev, huje je tam, kjer delajo v podjetjih in nimajo
                            rednih plač, ali jim dajejo le nekakšne dotacije na plače. Jasna stvar,
                            ob tem inflacija raste naprej, ljudje vse težje zmorejo življenske
                            stroške, toliko bolj, ker nekateri drugi segmenti naše družbe poslujejo,
@@ -2747,23 +2757,22 @@
                            praktično ne delajo, pravobranilstva prav tako ne, skratka, edini, ki to
                            delajo, so recimo, električarji, ki pridejo in če ne plačaš elektrike, jo
                            odklopijo. Enako ravnajo tudi vsi ostali. Namenoma govorim čisto tako,
-                           ker je to dejansko problem, ki ostaja. In najboljše, kar se tem
-                           delavcem lahko zgodi je, da gre firma v stečaj, kajti, čim je stečaj
-                           tukaj, potem gredo na zavod za zaposlovanje in tam imajo mesečno
-                           nadomestilo, skratka po tistem izračunu tako, kot pride. Dokler pa
-                           stečaja ni, so v negotovosti vsak mesec, kdaj bodo prišli na listo kot
-                           tehnološki presežek, ne vedo, ali bodo dobili plačo ali ne. Poznam tudi
-                           drugo firmo, kjer za junij še sploh niso obračunali osebnih dohodkov;
-                           trenutno sta dve delavki od tam prišli prositi denarno pomoč, ker ne
-                           moreta poravnati računov. Skratka, ker tu pravzaprav ne deluje ta sistem,
-                           da lahko nekdo pri nas ima stroške s tem, da hodi na delo, vendar mu ne
-                           plačajo tistega, kar je zaslužil in konkretno bodo ti delavci zdaj čakali
-                           v stečajnem postopku, da bodo uveljavili te štiri - mesečne osebne
-                           dohodke, medtem so pa vse druge stvari - morali poravnati. In jasno je,
-                           če nimajo denarja, da nekdo tu mora pomagati in tu je socialno varstvo
-                           tisto. Zato pravim, da se na področju socialnega varstva resnično
-                           odražajo vse te nepravilne stvari, oziroma vsi ti problemi, ki se
-                           dogajajo na drugih področjih.</p>
+                           ker je to dejansko problem, ki ostaja. In najboljše, kar se tem delavcem
+                           lahko zgodi je, da gre firma v stečaj, kajti, čim je stečaj tukaj, potem
+                           gredo na zavod za zaposlovanje in tam imajo mesečno nadomestilo, skratka
+                           po tistem izračunu tako, kot pride. Dokler pa stečaja ni, so v
+                           negotovosti vsak mesec, kdaj bodo prišli na listo kot tehnološki
+                           presežek, ne vedo, ali bodo dobili plačo ali ne. Poznam tudi drugo firmo,
+                           kjer za junij še sploh niso obračunali osebnih dohodkov; trenutno sta dve
+                           delavki od tam prišli prositi denarno pomoč, ker ne moreta poravnati
+                           računov. Skratka, ker tu pravzaprav ne deluje ta sistem, da lahko nekdo
+                           pri nas ima stroške s tem, da hodi na delo, vendar mu ne plačajo tistega,
+                           kar je zaslužil in konkretno bodo ti delavci zdaj čakali v stečajnem
+                           postopku, da bodo uveljavili te štiri - mesečne osebne dohodke, medtem so
+                           pa vse druge stvari - morali poravnati. In jasno je, če nimajo denarja,
+                           da nekdo tu mora pomagati in tu je socialno varstvo tisto. Zato pravim,
+                           da se na področju socialnega varstva resnično odražajo vse te nepravilne
+                           stvari, oziroma vsi ti problemi, ki se dogajajo na drugih področjih.</p>
                         <p>Dalje so se začeli pojavljati novi primeri. Zaenkrat to ni številčno,
                            poznam dva taka primera iz teritorialne obrambe. Nekdo, ki je obveznik,
                            je že dva meseca tam in nima denarja in mladi oficir z družino, ki je
@@ -2904,8 +2913,8 @@
                            podaljšati šolsko obveznost sedanjih osem let na devet ali pa na deset
                            let, kot imajo to povsod zunaj. Potem večati delež iste mladine na
                            popolne štiriletne šole, s sedanjih 61 % na 70 % visoke generacije. V
-                           Evropi 50 % študentov konča študij, pri nas jih konča študij 25 %, s
-                           tem, da se vpiše neprimerno manjše število učencev. Razširiti je potrebno
+                           Evropi 50 % študentov konča študij, pri nas jih konča študij 25 %, s tem,
+                           da se vpiše neprimerno manjše število učencev. Razširiti je potrebno
                            možnost za višji in visokošolski študij, da bo zajel 40 % generacije,
                            doseči delež prebivalstva s sedanjih 6 % na 8 % oz. na 10 % tistih,ki
                            bodo imeli visoko izobrazbo. V Evropi je tak delež od 12 % do 32 , to se
@@ -3018,14 +3027,14 @@
                            se strinjam, da je odgovornost večja, kot do gospodarskih subjektov, ne
                            pa do te mere, da je vsa odgovornost na Izvršnem svetu, ker vsi subjekti,
                            tudi v zavodih, seveda nosijo določeno odgovornost, čeprav pravim, da je
-                           ta merjena več kot 20 %, o katerih si ti govoril. Imamo mnogo
-                           inštitucij, ki so samoinciativno dosti napravile, mi pa žal imamo tudi
-                           dosti inštitucij, ki čakajo samo na ukrepe, čakajo na eno direktivno od
-                           zgoraj, predno se je lotijo. Če recimo nekdo reče, da nima na
-                           pediatričnem oddelku plače, ali pa na kateremkoli oddelku pa 54 %
-                           zasedbo, in to že vrsto let, potem je evidentno, da je treba ukrepati in
-                           ne čakati samo na to, da bo nekdo od zunaj namignil, ampak je treba tudi
-                           v sredinah nekaj reči, napraviti.</p>
+                           ta merjena več kot 20 %, o katerih si ti govoril. Imamo mnogo inštitucij,
+                           ki so samoinciativno dosti napravile, mi pa žal imamo tudi dosti
+                           inštitucij, ki čakajo samo na ukrepe, čakajo na eno direktivno od zgoraj,
+                           predno se je lotijo. Če recimo nekdo reče, da nima na pediatričnem
+                           oddelku plače, ali pa na kateremkoli oddelku pa 54 % zasedbo, in to že
+                           vrsto let, potem je evidentno, da je treba ukrepati in ne čakati samo na
+                           to, da bo nekdo od zunaj namignil, ampak je treba tudi v sredinah nekaj
+                           reči, napraviti.</p>
                         <p>Odgovornost glede imenovanja direktorja UKC. V kolikor sem informiran, bo
                            ta volitveni postopek menda jutri opravljen ! Moram reči, da ne zadeva
                            nikakršna krivda Izvršni svet. Ta parlament, ti zbori so mimo predloga
@@ -3155,8 +3164,8 @@
                            lahko, kot pravim, povedali vladi - kar zadeva področje industrije,
                            gradbeništva in seveda področje gospodarske zbornice - cele Srbije in
                            seveda mesta Beograd.</p>
-                        <p>Moram reči, da so lepo poslušali, bili prijazni in seveda na momente
-                           tudi kritični, vendar pa so nam tudi mnoge stvari povedali, ki so se nam
+                        <p>Moram reči, da so lepo poslušali, bili prijazni in seveda na momente tudi
+                           kritični, vendar pa so nam tudi mnoge stvari povedali, ki so se nam
                            zdele, da je prav da so nam jih povedali. Gotovo je res, da je
                            informativni sistem napravil svoje, da so bili povsem drugače obveščeni o
                            tem, kaj se tu dogaja, bodisi kaj bo osamosvojitev, ker neverjetno
@@ -3264,13 +3273,13 @@
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
                         <p>Hvala lepa. Predlagam, da glede na to, da intenzivno delamo štiri ure in
-                           pol, da prekinemo z razpravo. Predlagam naslednje, sedaj bo izgledalo
-                           res pragmatično, ampak jaz upam, da ne v tistem negativnem smislu. V
-                           skladu z 122. členom našega poslovnika prekinjamo sejo in zaprosimo naš
-                           odbor za splošne gospodarske zadeve - naš odbor našega zbora, da bi se
-                           sestal jutri ob 8.00 uri v sobi 212 in pripravil sklepe in stališča na
-                           podlagi teh že do sedaj izdelanih predlogov in razprave. Te bi jutri ob
-                           10.00 uri, če bi bilo po sreči, lahko tudi sprejeli. Verjetno si od vas
+                           pol, da prekinemo z razpravo. Predlagam naslednje, sedaj bo izgledalo res
+                           pragmatično, ampak jaz upam, da ne v tistem negativnem smislu. V skladu z
+                           122. členom našega poslovnika prekinjamo sejo in zaprosimo naš odbor za
+                           splošne gospodarske zadeve - naš odbor našega zbora, da bi se sestal
+                           jutri ob 8.00 uri v sobi 212 in pripravil sklepe in stališča na podlagi
+                           teh že do sedaj izdelanih predlogov in razprave. Te bi jutri ob 10.00
+                           uri, če bi bilo po sreči, lahko tudi sprejeli. Verjetno si od vas
                            verjetno nihče ne dela utvar, da bi sedaj predlagal eno uro odmora in po
                            eni uri, da se zopet dobimo. Menim, da bi bilo to Sizifovo delo. Ali se
                            strinjate s takšnim predlogom, da potem nadaljujemo s sejo jutri ob 10.00
@@ -3386,8 +3395,8 @@
                            zagotovi realni tečaj pri oblikah menjave s tujino in funkcioniranje
                            uredbe o evidenčnih deviznih pravicah podjetjem za izvršitev plačil v
                            tujino, če te razpolagajo z evidenčnimi deviznimi pravicami; ukine
-                           dodatnih 30 oziroma 40 % uvoznih obremenitev na blago široke potrošnje
-                           in stimulira odkup deviz od občanov; zagotovi ustrezne pogoje za
+                           dodatnih 30 oziroma 40 % uvoznih obremenitev na blago široke potrošnje in
+                           stimulira odkup deviz od občanov; zagotovi ustrezne pogoje za
                            kreditiranje izvoza ter nabave oziroma uvoza opreme (mišljeno je tudi za
                            nove izvozne programe), izvede program promocije slovenskega gospodarstva
                            kot predhodnico novih poslov, stimulira odpiranje novih delovnih mest
@@ -3416,9 +3425,9 @@
                            Potem bi bilo prav, da tisti, ki boste imeli dodatno stališče, tudi to
                            napišete, tako da imamo pisni predlog - dva, tri, mogoče štiri stavke, da
                            potem lahko hitro dopolnimo te sklepe oziroma morate pa tudi povedati, če
-                           se s čim ne strinjate, da bi pač tisti stavek črtali. Operativno boste
-                           to delo potem opravili. Še enkrat bi to našo včerajšnjo sejo prekinil in
-                           bi jo potem nadaljevali ko bo primeren čas.</p>
+                           se s čim ne strinjate, da bi pač tisti stavek črtali. Operativno boste to
+                           delo potem opravili. Še enkrat bi to našo včerajšnjo sejo prekinil in bi
+                           jo potem nadaljevali ko bo primeren čas.</p>
                      </sp>
                      <stage type="time">(26. seja je bila <time to="1991-07-31T10:30:00"
                            xml:id="stage.t.4">prekinjena  ob 10.30 uri</time> in se je <time
@@ -3434,37 +3443,37 @@
                         <p>Spoštovane poslanke in poslanci ! V bistvu sprejemam in se strinjam z
                            večino predlogov sklepov. Predlagam pa pri dveh, treh točkah, da
                            konkretno stvari dopolnimo. Pri 1. točki 1. sklepa predlagam, da bi se
-                           začetek besedila glasil takole: "Zbor združenega dela Skupščine
-                           Republike Slovenije sprejema predloge kratkoročnih ukrepov" in da tu
-                           vstavimo besede, ki jih je predložil Izvršni svet, Gospodarska zbornica
-                           in tiste, ki so bili oblikovani v razpravi, in nadaljevanje, " in nalaga
-                           Izvršnemu svetu itd.". Mislim, da ne gre za avtomatizem. Mi smo
-                           razpravljali o predloženih predlogih ukrepov Izvršnega sveta in jih
-                           dopolnjevali. Zato se mi zdi, da bi bilo to umestno. Enako se mi zdi -
-                           bilo bi dobro, da poveste drugi poslanci, da pri 3. sklepu iz razprave na
-                           seji zbora izhaja ugotovitev o zaskrbljujočem stanju s področja družbenih
-                           dejavnosti. Zbor podpira program ukrepov Izvršnega sveta. To ni točno. Mi
-                           podpiramo predlog programa, ki ga je dal, ampak je treba dodati;
-                           upoštevajoč vse pripombe v razpravi, dopolnila itd. Predlagam, da bi tu
-                           enako dopolnili ta 3. sklep. Pri 5. sklepu predlagam - da nas ne bi
-                           vodili žejne čez vodo - spremembo tega sklepa iz zelo preprostega
-                           razloga. Približno en mesec velja odlok SDK Slovenije. Ali se mu reče
-                           odlok ali ne, to ne vem. Vem, da so bili pred dobrim mesecem vsi SDK
-                           Slovenije obveščeni pismeno o začasnem moratoriju na stečaje. Torej,
-                           nekdo je to že naredil. Zato predlagam, da bi se glasil 5. člen takole:
-                           "Zbor združenega dela podpira začasni moratorij za stečajne postopke.
-                           "Operativni del je bil v tem odloku tudi napisan, ker mi tu predlagamo,
-                           da bi operacionaliziral Izvršni svet. Pri 6. sklepu, 2. alinei, predlagam
-                           naslednjo dopolnitev. 2. alinea pravi takole; "Izterjavo vseh davkov in
-                           prispevkov ter uvedbo davkov (le siva ekonomija) in odpravi
-                           pomanjkljivosti pri odvajanju prometnega davka."</p>
+                           začetek besedila glasil takole: "Zbor združenega dela Skupščine Republike
+                           Slovenije sprejema predloge kratkoročnih ukrepov" in da tu vstavimo
+                           besede, ki jih je predložil Izvršni svet, Gospodarska zbornica in tiste,
+                           ki so bili oblikovani v razpravi, in nadaljevanje, " in nalaga Izvršnemu
+                           svetu itd.". Mislim, da ne gre za avtomatizem. Mi smo razpravljali o
+                           predloženih predlogih ukrepov Izvršnega sveta in jih dopolnjevali. Zato
+                           se mi zdi, da bi bilo to umestno. Enako se mi zdi - bilo bi dobro, da
+                           poveste drugi poslanci, da pri 3. sklepu iz razprave na seji zbora izhaja
+                           ugotovitev o zaskrbljujočem stanju s področja družbenih dejavnosti. Zbor
+                           podpira program ukrepov Izvršnega sveta. To ni točno. Mi podpiramo
+                           predlog programa, ki ga je dal, ampak je treba dodati; upoštevajoč vse
+                           pripombe v razpravi, dopolnila itd. Predlagam, da bi tu enako dopolnili
+                           ta 3. sklep. Pri 5. sklepu predlagam - da nas ne bi vodili žejne čez vodo
+                           - spremembo tega sklepa iz zelo preprostega razloga. Približno en mesec
+                           velja odlok SDK Slovenije. Ali se mu reče odlok ali ne, to ne vem. Vem,
+                           da so bili pred dobrim mesecem vsi SDK Slovenije obveščeni pismeno o
+                           začasnem moratoriju na stečaje. Torej, nekdo je to že naredil. Zato
+                           predlagam, da bi se glasil 5. člen takole: "Zbor združenega dela podpira
+                           začasni moratorij za stečajne postopke. "Operativni del je bil v tem
+                           odloku tudi napisan, ker mi tu predlagamo, da bi operacionaliziral
+                           Izvršni svet. Pri 6. sklepu, 2. alinei, predlagam naslednjo dopolnitev.
+                           2. alinea pravi takole; "Izterjavo vseh davkov in prispevkov ter uvedbo
+                           davkov (le siva ekonomija) in odpravi pomanjkljivosti pri odvajanju
+                           prometnega davka."</p>
                         <p>Predlagam naslednjo spremembo, da se začne stavek; "Dosledno izterjavo
                            vseh davkov in prispevkov", da ne pišemo "ter uvedbo davkov". Mislim, da
                            ni logično, da pozivamo vlado, da nam predpiše davke in odpremo takšne
                            ali drugačne davke, ker nismo dosti pri tem dorečeni, da izpustimo tisto,
                            kar je v oklepaju "le siva ekonomija", ker pri izterjavi davkov in
-                           prispevkov gre za široko paleto stvari in se mi zdi nepotrebno, da ti
-                           dve stvari pišemo. Pri 9. sklepu predlagam naslednje: 2. stavek se začne
+                           prispevkov gre za široko paleto stvari in se mi zdi nepotrebno, da ti dve
+                           stvari pišemo. Pri 9. sklepu predlagam naslednje: 2. stavek se začne
                            takole: "Podpiramo vlaganja tujega kapitala v nekatere infrastrukturne
                            objekte v Republiki Sloveniji (ceste)." Predlagam, da se glasi stavek:
                            "Podpiramo vlaganja tujega kapitala v infrastrukturne objekte v Republiki
@@ -3563,8 +3572,8 @@
                            naši komisiji, da bo to korektno opravila. Je prav tako, ali je kdo
                            nezaupljiv ? Dobro. Koliko nas je tu ? <stage>(41 poslancev
                               prisotnih)</stage>. Jaz bi vseeno predlagal, da glasujemo o sklepih s
-                           temi dopolnitvami, ki so bile sedaj izražena. Nihče ni imel nič proti
-                           tem dopolnitvam in vsi ki ste razpravljali, ste sklepe tudi podprli.</p>
+                           temi dopolnitvami, ki so bile sedaj izražena. Nihče ni imel nič proti tem
+                           dopolnitvam in vsi ki ste razpravljali, ste sklepe tudi podprli.</p>
                         <p>Kdo je za predlagane sklepe Zbora združenega dela ? <stage>(37 poslancev
                               glasuje za.)</stage> Proti ? <stage>(1 poslanec.)</stage> Vzdržanih ?
                               <stage>(3 poslanci.)</stage>

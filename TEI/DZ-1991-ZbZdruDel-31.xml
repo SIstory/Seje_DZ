@@ -84,6 +84,7 @@
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
          <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
@@ -95,6 +96,13 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2016-03-31+02:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
          <change when="2016-02-26+01:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -127,9 +135,10 @@
                <item>
                   <list rend="ordered">
                      <head>PRED DNEVNIM REDOM:</head>
-                     <item n="1">Ugotavljanje prisotnosti delegatov ...................... 1</item>
-                     <item n="2">Določitev dnevnega reda ................................. 1<list
-                           rend="simple">
+                     <item n="1" xml:id="toc.1.1">Ugotavljanje prisotnosti delegatov
+                        ...................... 1</item>
+                     <item n="2" xml:id="toc.1.2">Določitev dnevnega reda
+                        ................................. 1<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Jaša L. Zlobec .......................................... 1</item>
                            <item>Jaša L. Zlobec .......................................... 2</item>
@@ -143,24 +152,25 @@
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED:</head>
-                     <item n="1">Predlog zakona o denarni enoti Republike Slovenije ...... 4<list
-                           rend="simple">
+                     <item n="1" xml:id="toc.2.1">Predlog zakona o denarni enoti Republike Slovenije
+                        ...... 4<list rend="simple">
                            <head>GOVORNIKA:</head>
                            <item>Roman Jakič ............................................. 5</item>
                            <item>Andrej Muren ............................................ 5</item>
                         </list>
                      </item>
-                     <item n="2">Predlog zakona o uporabi denarne enote Republike Slovenije
-                        ............................................... 5<list rend="simple">
+                     <item n="2" xml:id="toc.2.2">Predlog zakona o uporabi denarne enote Republike
+                        Slovenije ............................................... 5<list
+                           rend="simple">
                            <head>GOVORNIK:</head>
                            <item>Zdravko Zabukovec ....................................... 6</item>
                         </list>
                      </item>
-                     <item n="3">Predlog za izdajo zakona o spreminjanju deponiranih deviznih vlog
-                        občanov pri Narodni banki Jugoslavije v dolg Republike Slovenije in
-                        izdajanju obveznic na podlagi deviznih vlog občanov pri bankah v Republiki
-                        Sloveniji z osnutkom zakona ............................. 7<list
-                           rend="simple">
+                     <item n="3" xml:id="toc.2.3">Predlog za izdajo zakona o spreminjanju
+                        deponiranih deviznih vlog občanov pri Narodni banki Jugoslavije v dolg
+                        Republike Slovenije in izdajanju obveznic na podlagi deviznih vlog občanov
+                        pri bankah v Republiki Sloveniji z osnutkom zakona
+                        ............................. 7<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Mirko Krajec ............................................ 7</item>
                            <item>Valentin Prelovec ....................................... 8</item>
@@ -182,8 +192,9 @@
                            <item>dr. Andrej Ocvirk ...................................... 19</item>
                         </list>
                      </item>
-                     <item n="4">Nadaljevanje obravnave zakona o denarni enoti Republike Slovenije
-                        .................................... 20<list rend="simple">
+                     <item n="4" xml:id="toc.2.4">Nadaljevanje obravnave zakona o denarni enoti
+                        Republike Slovenije .................................... 20<list
+                           rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>dr. Franc Lovrenčič .................................... 20</item>
                            <item>dr. Franc Lovrenčič .................................... 21</item>
@@ -192,9 +203,9 @@
                            <item>Zdravko Zabukovec ...................................... 23</item>
                         </list>
                      </item>
-                     <item n="5">Nadaljevanje obravnave predloga zakona o denarni enoti Republike
-                        Slovenije in predloga zakona o uporabi denarne enote Republike Slovenije
-                        .............. 23<list rend="simple">
+                     <item n="5" xml:id="toc.2.5">Nadaljevanje obravnave predloga zakona o denarni
+                        enoti Republike Slovenije in predloga zakona o uporabi denarne enote
+                        Republike Slovenije .............. 23<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>dr. Franc Lovrenčič .................................... 23</item>
                            <item>Valentin Prelovec ...................................... 24</item>
@@ -208,8 +219,10 @@
                            <item>Franc Boštjančič ....................................... 29</item>
                         </list>
                      </item>
-                     <item n="6">Seznam govornikov ...................................... II</item>
-                     <item n="7">Priloga: zapisnik ..................................... III</item>
+                     <item n="6" xml:id="toc.2.6">Seznam govornikov
+                        ...................................... II</item>
+                     <item n="7" xml:id="toc.2.7">Priloga: zapisnik
+                        ..................................... III</item>
                   </list>
                </item>
             </list>
@@ -284,11 +297,11 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.ZbZdruDel">
-            <div>
+         <div xml:id="div.1" ana="#PAR.ZbZdruDel">
+            <div xml:id="div.1.1">
                <head>ZBOR ZDRUŽENEGA DELA</head>
-               <div ana="#PAR.Seja" n="31">
-                  <div>
+               <div xml:id="div.1.1.1" ana="#PAR.Seja" n="31">
+                  <div xml:id="div.1.1.1.1">
                      <head>31. seja</head>
                      <docDate>(<date when="1991-10-07">7.</date> in <date when="1991-10-08">8.
                            oktober 1991</date>)</docDate>
@@ -300,8 +313,8 @@
                      <stage type="time">
                         <time from="1991-10-07T15:15:00" xml:id="stage.t.1">Začetek seje ob 15. uri
                            in 15 minut</time>.</stage>
-                     <div ana="#PAR.PredDnevRed">
-                        <div ana="#PAR.Prisot">
+                     <div xml:id="div.1.1.1.1.1" ana="#PAR.PredDnevRed">
+                        <div xml:id="div.1.1.1.1.1.1" ana="#PAR.Prisot" corresp="#toc.1.1">
                            <sp who="#sp.ZupančičJože">
                               <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
                               <p>Pričenjam 31., danes izredno, sejo Zbora združenega dela Skupščine
@@ -312,7 +325,7 @@
                                  pričnemo z delom.</p>
                            </sp>
                         </div>
-                        <div ana="#PAR.DolDnevRed">
+                        <div xml:id="div.1.1.1.1.1.2" ana="#PAR.DolDnevRed" corresp="#toc.1.2">
                            <sp who="#sp.ZupančičJože">
                               <p>Za današnjo obravnavo imamo na dnevnem redu akte, ki nosijo oznako
                                  "Strogo zaupno" in bi jih obravnavali na podlagi 2. odstavka 435.
@@ -387,7 +400,8 @@
                            <sp who="#sp.ZupančičJože">
                               <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
                               <p>Na klopeh, malo poglejte, ker zakonov sedaj še nimate.
-                                    <stage>(Zopet pripombe iz klopi.)</stage></p>
+                                    <stage>(Zopet pripombe iz klopi.)</stage>
+                              </p>
                               <p>Zdaj imajo zaenkrat gradivo samo člani odbora, ki so kot matična
                                  delovna telesa to obravnavali. Zato imajo nekateri privilegij, kar
                                  je običajno, ne? Malo strpnosti. Všeč mi je ta živahnost. Kljub
@@ -408,8 +422,8 @@
                                  prisotnost. Prisotnost vseh: 63 nas je.</p>
                               <p>Kdo je zato, da zakon obravnavamo po hitrem postopku, naj prosim
                                  glasuje. Kdo je za? <stage>(53 delegatov.)</stage> Proti?
-                                    <stage>(Eden.)</stage> Vzdržani? <stage>(9
-                                 delegatov.)</stage></p>
+                                    <stage>(Eden.)</stage> Vzdržani? <stage>(9 delegatov.)</stage>
+                              </p>
                               <p>Ugotavljam, da je zbor sprejel predlog izvršnega sveta z večino
                                  glasov.</p>
                               <p>Izvršni svet je predlagal tudi predlog zakona o uporabi denarne
@@ -420,7 +434,8 @@
                               <p>Kdo je za to, da zakon obravnavamo po hitrem postopku, naj prosim
                                  glasuje! <stage>(54 delegatov.)</stage> Kdo je
                                     proti?<stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(6
-                                    delegatov.)</stage></p>
+                                    delegatov.)</stage>
+                              </p>
                               <p>Ugotavljam, da je zbor sprejel predlog Izvršnega sveta z večino
                                  glasov.</p>
                               <p>In Izvršni svet je predložil še predlog za izdajo zakona o
@@ -458,12 +473,13 @@
                               <p>Kdo je za združitev obravnave prve in druge faze? <stage>(20
                                     delegatov glasuje za.)</stage> Kdo je proti? <stage>(27
                                     delegatov.)</stage> Kdo se je vzdržal? <stage>(17
-                                    delegatov.)</stage></p>
+                                    delegatov.)</stage>
+                              </p>
                               <p>Ugotavljam, da združitev prve in druge faze v našem zboru nismo
                                  sprejeli. Začasno, saj sem ravno hotel zaključiti stavek: s tem da
                                  lahko mi v postopku obravnave ugotovimo, da naš zbor lahko spremeni
-                                 svoj sklep. Je tako prav, gospod poslanec? <stage>(V
-                                 redu.)</stage></p>
+                                 svoj sklep. Je tako prav, gospod poslanec? <stage>(V redu.)</stage>
+                              </p>
                               <p>Glede na to predlagam, da glasujemo o predlogu dnevnega reda s temi
                                  tremi točkami, tako kot sem zdaj že dvakrat povedal in mi verjetno
                                  ni treba še enkrat ponavljati. Želi o dnevnem redu kdo
@@ -478,7 +494,8 @@
                                  bi na skupnem zasedanju poslušali uvod v obravnavo vseh treh
                                  predlogov zakonov.</p>
                               <p>Kdo je za? <stage>(56 delegatov glasuje za.)</stage> Kdo je proti?
-                                    <stage>(Eden.)</stage> Vzdržani? <stage>(Eden.)</stage></p>
+                                    <stage>(Eden.)</stage> Vzdržani? <stage>(Eden.)</stage>
+                              </p>
                               <p>Ugotavljam, da smo se tudi dogovorili za skupno zasedanje, ki bo
                                  takoj in bi potem po tem skupnem zasedanju takoj nadaljevali s sejo
                                  zbora. Vsak zbor bo obravnavane zakone obravnaval posebej, v svojem
@@ -491,7 +508,8 @@
                                  javnosti? Dobro, če pa ni, oprostite, bomo glasovali.</p>
                               <p>Kdo je za to, da je seja zaprta? <stage>(41 delegatov glasuje
                                     za.)</stage> Kdo je proti? <stage>(7 delegatov.)</stage>
-                                 Vzdržanih? <stage>(15 delegatov.)</stage></p>
+                                 Vzdržanih? <stage>(15 delegatov.)</stage>
+                              </p>
                               <p>Torej smo tudi to sprejeli. Malo mogoče na nepošten način, ampak
                                  zdi se mi, da je bilo vseeno korektno izglasovano, to je eno; po
                                  drugi strani pa se mi zdi, da si zasluži Izvršni svet tudi opomin,
@@ -515,8 +533,8 @@
 
                         </div>
                      </div>
-                     <div ana="#PAR.DnevRed">
-                        <div ana="#PAR.TDR" n="1">
+                     <div xml:id="div.1.1.1.1.2" ana="#PAR.DnevRed">
+                        <div xml:id="div.1.1.1.1.2.1" ana="#PAR.TDR" n="1" corresp="#toc.2.1">
                            <sp who="#sp.ZupančičJože">
                               <p>Predlagam, da pričnemo s <title>1. TOČKO DNEVNEGA REDA. PREDLOG
                                     ZAKONA O DENARNI ENOTI REPUBLIKE SLOVENIJE</title>.</p>
@@ -602,7 +620,7 @@
                                  kot to prvo:</p>
                            </sp>
                         </div>
-                        <div ana="#PAR.TDR">
+                        <div xml:id="div.1.1.1.1.2.2" ana="#PAR.TDR" corresp="#toc.2.2">
                            <sp who="#sp.ZupančičJože">
                               <p>
                                  <title>PREDLOG ZAKONA O UPORABI DENARNE ENOTE REPUBLIKE
@@ -671,7 +689,7 @@
                               </p>
                            </sp>
                         </div>
-                        <div ana="#PAR.TDR" n="3">
+                        <div xml:id="div.1.1.1.1.2.3" ana="#PAR.TDR" n="3" corresp="#toc.2.3">
                            <sp who="#sp.ZupančičJože">
                               <p>Mogoče bi še vseeno to 3. točko, <title>PREDLOG ZA IZDAJO ZAKONA O
                                     SPREMINJANJU DEPONIRANIH DEVIZNIH VLOG OBČANOV PRI NARODNI BANKI
@@ -1392,7 +1410,8 @@
                                  da smo zelo dobro zastopani danes v skupščini. Kdo je za to, da
                                  združimo obravnavo 1. in 2. faze tega zakona? <stage>(38 delegatov
                                     je za.)</stage> Proti? <stage>(97 delegatov.)</stage> Vzdržani?
-                                    <stage>(10 delegatov.)</stage></p>
+                                    <stage>(10 delegatov.)</stage>
+                              </p>
                               <p>Ugotavljam, da smo sprejeli predlog izvršnega sveta z večino
                                  glasov.</p>
                               <p>In zdaj imamo še naslednji sklep: Predlog za izdajo zakona o
@@ -1404,10 +1423,11 @@
                                  Republike Slovenije. Pri pripravi predloga zakona naj predlagatelj
                                  prouči in ustrezno upošteva stališča in pripombe delovnih teles
                                  skupščine in pripombe ter stališča delegatov.</p>
-                              <p>Želi o tem sklepu kdo razpravljati? <stage>(Ne.)</stage></p>
+                              <p>Želi o tem sklepu kdo razpravljati? <stage>(Ne.)</stage>
+                              </p>
                               <p>Kdo je za predlagani sklep? <stage>(48 delegatov.)</stage> Proti?
-                                    <stage>(Eden.)</stage> Vzdržani? <stage>(8
-                                 delegatov.)</stage></p>
+                                    <stage>(Eden.)</stage> Vzdržani? <stage>(8 delegatov.)</stage>
+                              </p>
                               <p>Ugotavljam, da smo z večino glasov v zboru sprejeli predlagani
                                  sklep.</p>
                               <p>Predlagal bi še naslednje, ker se zdi, da se zadeva vsa zopet
@@ -1416,7 +1436,8 @@
                                  Brglez, Roman Jakič, Jože Pušnik, Franc Ban in Marjan Vilfan.</p>
                               <p>Kdo je za predlagano delovno skupino? <stage>(54
                                     delegatov.)</stage> Proti? <stage>(Nihče.)</stage> Vzdržal ?
-                                    <stage>(Dva delegata.)</stage></p>
+                                    <stage>(Dva delegata.)</stage>
+                              </p>
                               <p>Ugotavljam, da delovno skupino tudi imamo in glede na to, kar ste
                                  slišali, da zdaj še ta naš odbor zaseda in glede na to, da bo moral
                                  Izvršni svet še nekatere zadeve tudi doreči, predlagam, da se zopet
@@ -1445,7 +1466,7 @@
                               <p>Na koncu pa še o 4. točki.</p>
                            </sp>
                         </div>
-                        <div ana="#PAR.TDR">
+                        <div xml:id="div.1.1.1.1.2.4" ana="#PAR.TDR" corresp="#toc.2.4">
                            <sp who="#sp.LovrenčičFranc">
                               <speaker>DR. FRANC LOVRENČIČ:</speaker>
                               <p>Spoštovani predsednik, spoštovani kolegi, kolegice. Po kratki seji
@@ -1594,16 +1615,19 @@
                               <p>No in zdaj vas vprašam, kdo je za amandma, ki ga je Marjan Vilfan
                                  vložil v našem zboru - karant! <stage>(11 delegatov.)</stage>
                                  Proti? <stage>(26 delegatov.)</stage> Vzdržanih? <stage>(22
-                                    delegatov.)</stage></p>
+                                    delegatov.)</stage>
+                              </p>
                               <p>Torej karant ni sprejet.</p>
                               <p>Sedaj imamo še amandma , ki ga je predlagal Andrej Muren, in
                                  sicer:</p>
                               <p>Besedilo 1. člena se spremeni, tako da se glasi: denarna enota
                                  Republike Slovenija je krona! Krona se deli na 100 stotin. To je 1.
                                  člen zakona.</p>
-                              <p>Želi kdo kaj razpravljati? <stage>(Ne.)</stage></p>
+                              <p>Želi kdo kaj razpravljati? <stage>(Ne.)</stage>
+                              </p>
                               <p>Kdo je za? <stage>(8 delegatov.)</stage> Proti? <stage>(30
-                                    delegatov.)</stage> Vzdržani? <stage>(21 delegatov.)</stage></p>
+                                    delegatov.)</stage> Vzdržani? <stage>(21 delegatov.)</stage>
+                              </p>
                               <p>Ugotavljam, da tudi ta amandma nismo sprejeli.</p>
                               <p>Potem je pa še tu amandma gospoda Romana Jakiča.</p>
                               <p>V 1. odstavku se na koncu črta beseda klas in se jo nadomesti z
@@ -1611,9 +1635,11 @@
                                  stotin.</p>
                               <p>Kdo je za amandma, ki poimenuje denar tolar? <stage>(39 delegatov.
                                     )</stage> Proti? <stage>(11 delegatov.)</stage> Vzdržani?
-                                    <stage>(10 delegatov.)</stage></p>
+                                    <stage>(10 delegatov.)</stage>
+                              </p>
                               <p>Ugotavljam, da smo v našem zboru sprejeli amandma tolar.
-                                    <stage>(Aplavz.)</stage></p>
+                                    <stage>(Aplavz.)</stage>
+                              </p>
                               <p>2. člen. Amandma k 2. členu istega zakona , kot ga predlaga Roman
                                  Jakič: V zadnjem odstavku se kratica KLS nadomesti z kratico STR,
                                  to je verjetno jasno. Seveda slovenski. Gospod Debeljak, zakaj
@@ -1635,25 +1661,29 @@
                                  zadnjem odstavku se kratica KLS nadomesti s kratico SLT. Prav?</p>
                               <p>Kdo je za ta amandma SLT, da bom tako izgovarjal. Za? <stage>(45
                                     delegatov.)</stage> Proti? <stage>(9 delegatov.)</stage>
-                                 Vzdržani? <stage>(3 delegati.)</stage></p>
+                                 Vzdržani? <stage>(3 delegati.)</stage>
+                              </p>
                               <p>Ugotavljam, da smo z večino glasov ta drugi amandma sprejeli.</p>
                               <p>In prosim še naslednje, da sprejmemo amandma Odbora za
                                  kreditnomonetarni sistem in politiko, da amandma stopi takoj v
                                  veljavo, da zakon začne veljati takoj. Zakon začne veljati
                                  takoj.</p>
                               <p>Kdo je za ta amandma? <stage>(59 delegatov.)</stage> Proti?
-                                    <stage>(Nihče.)</stage></p>
-                              <p>Vzdržal? <stage>(Nihče.)</stage></p>
+                                    <stage>(Nihče.)</stage>
+                              </p>
+                              <p>Vzdržal? <stage>(Nihče.)</stage>
+                              </p>
                               <p>Ugotavljam, da smo to sprejeli soglasno in to je tudi nekaj.</p>
                               <p>Še glasujemo o zakonu v celoti s temi tremi amandmaji!</p>
                               <p>Kdo je za zakon v celoti? <stage>(56 delegatov.)</stage> Proti?
                                     <stage>(2 delegata.)</stage> Vzdržani? <stage>(2
-                                    delegata.)</stage></p>
+                                    delegata.)</stage>
+                              </p>
                               <p>Ugotavljam, da je zakon o denarni enoti Republike Slovenije v ZZD z
                                  veliko večino sprejet.</p>
                            </sp>
                         </div>
-                        <div ana="#PAR.TDR" n="2">
+                        <div xml:id="div.1.1.1.1.2.5" ana="#PAR.TDR" n="2" corresp="#toc.2.5">
                            <sp who="#sp.ZupančičJože">
 
                               <p>Še <title>2. TOČKA DNEVNEGA REDA, PREDLOG ZAKONA O UPORABI DENARNE
@@ -1748,27 +1778,31 @@
                                  amandma:</p>
                               <p>Na koncu 3. odstavka se namesto menjalnega razmerja 1:1 vnese
                                  menjalno razmerje 1 bon je 3 din. moramo ugotoviti prisotnost.
-                                 Prisotnost! <stage>(60 delegatov.)</stage></p>
+                                 Prisotnost! <stage>(60 delegatov.)</stage>
+                              </p>
                               <p>Kdo je za amandma gospoda Prelovca? <stage>(7 delegatov.)</stage>
                                  Proti? <stage>(34 delegatov.)</stage> Vzdržani? <stage>(18
-                                    delegatov.)</stage></p>
+                                    delegatov.)</stage>
+                              </p>
                               <p>Ugotavljam, da amandma k 5. členu gospoda Prelovca ni sprejet.</p>
                               <p>Potem je tu amandma, ki ga ima Zakonodajno-pravna komisija k 9.
                                  členu predloga zakona o uporabi denarne enote Republike Slovenije.
                                  Komisija predlaga amandma k 9. členu, in sicer: za besedo
                                  "postopek" se dodata besedi "in rok."</p>
                               <p>Kdo je za ta amandma? <stage>(51 delegatov.)</stage> Proti?
-                                    <stage>(Nihče.)</stage> Vzdržani? <stage>(7
-                                 delegatov.)</stage></p>
+                                    <stage>(Nihče.)</stage> Vzdržani? <stage>(7 delegatov.)</stage>
+                              </p>
                               <p>Ugotavljam, da je amandma Zakonodajno-pravne komisije z večino
                                  glasov sprejet.</p>
                               <p>In enako tudi glede veljavnosti zakona.</p>
                               <p>Kdo je za enako veljavnost? <stage>(60 delegatov.)</stage> Proti?
-                                    <stage>(Nihče.)</stage> Vzdržani? <stage>(Nihče.)</stage></p>
+                                    <stage>(Nihče.)</stage> Vzdržani? <stage>(Nihče.)</stage>
+                              </p>
                               <p>Tudi to smo sprejeli soglasno. In sedaj predlagam, da glasujemo o
                                  zakonu v celoti s sprejetimi amandmaji.</p>
                               <p>Kdo je za? <stage>(59 delegatov.)</stage> Proti?
-                                    <stage>(Nihče.)</stage> Vzdržal? <stage>(Nihče.)</stage></p>
+                                    <stage>(Nihče.)</stage> Vzdržal? <stage>(Nihče.)</stage>
+                              </p>
                               <p>Tudi to smo sprejeli soglasno.</p>
                               <p>Predlagam še naslednji sklep v zvezi z obema zakonoma: Zbor
                                  združenega dela pooblašča redakcijsko skupino, naj uskladi tekst,
@@ -1780,7 +1814,8 @@
                                  opravi. Je prav?</p>
                               <p>Kdo je za ta dodatni sklep, ki velja za oba zakona? <stage>(59
                                     delegatov.)</stage> Proti? <stage>(Nihče.)</stage> Vzdržani?
-                                    <stage>(Nihče.)</stage></p>
+                                    <stage>(Nihče.)</stage>
+                              </p>
                               <p>Ugotavljam, da smo tudi to soglasno sprejeli.</p>
                               <p>Zdaj bi pa predlagal naslednje. Naši člani usklajevalne delovne
                                  skupine bi lahko šli: Brglez, Jakič, Pušnik, Ban, Vilfan - ja zakaj
@@ -1883,7 +1918,8 @@
                                  celotnega zbora in ne vem, od kje si jemljejo to pravico. To ni
                                  bilo usklajevanje, ampak je bilo glasovanje v našem imenu. Nekaj
                                  takega naša skupščina še ni doživela in jaz upam, da tudi ne bo.
-                                    <stage>(Aplavz.)</stage></p>
+                                    <stage>(Aplavz.)</stage>
+                              </p>
                            </sp>
                            <sp who="#sp.ZupančičJože">
                               <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
@@ -1978,7 +2014,8 @@
                                  predlaga, da je ime naše denarne enote karant.</p>
                               <p>Kdo je za predlog delovne skupine? <stage>(14 delegatov.)</stage>
                                  Proti? <stage>(38 delegatov.)</stage> In vzdržani? <stage>(5
-                                    delegatov.)</stage></p>
+                                    delegatov.)</stage>
+                              </p>
                               <p>Ugotavljam, da predlog usklajevalne komisije v našem zboru ni bil
                                  sprejet.</p>
                               <p>Potem 2. sklep. Gre za dodatni sklep, ki se glasi tako, kot ga je
@@ -1989,27 +2026,30 @@
                               <p>Kdo je za umik obeh amandmajev k obema zakonoma, tako kot je
                                  predlagala usklajevalna delovna skupina? <stage>(49
                                     delegatov.)</stage> Proti? <stage>(3 delegati.)</stage>
-                                 Vzdržani? <stage>(5 delegatov.)</stage></p>
+                                 Vzdržani? <stage>(5 delegatov.)</stage>
+                              </p>
                               <p>Ugotavljam, da smo umik opravili.</p>
                               <p>Zdaj pa še moramo sprejeti ta dodatni sklep, potem predlagam, da
                                  glasujemo o <title>PRVEM ZAKONU, PREDLOG ZAKONA O DENARNI ENOTI
                                     REPUBLIKE SLOVENIJE V CELOTI Z TEM SPREMENJENIM
                                     AMANDMAJEM</title>.</p>
                               <p>Kdo je za? <stage>(52 delegatov.)</stage> Proti? <stage>(2
-                                    delegata.)</stage> Vzdržani? <stage>(2 delegata.)</stage></p>
+                                    delegata.)</stage> Vzdržani? <stage>(2 delegata.)</stage>
+                              </p>
                               <p>Ugotavljam, da smo z večino glasov sprejeli.</p>
                               <p>Potem imamo pa še drugi zakon, <title>ZAKON O UPORABI DENARNE ENOTE
                                     REPUBLIKE SLOVENIJE, TUDI Z UMAKNJENIM AMANDMAJEM</title>.</p>
                               <p>Kdo je za ta zakon? <stage>(54 delegatov.)</stage> Proti? <stage>(2
-                                    delegata.)</stage> Vzdržani? <stage>(2 delegata.)</stage></p>
+                                    delegata.)</stage> Vzdržani? <stage>(2 delegata.)</stage>
+                              </p>
                               <p>Ugotavljam, da smo z večino glasov tudi to sprejeli.</p>
                               <p>Sedaj pa sta še dva sklepa.</p>
                               <p>Prvi sklep je: zakon o denarni enoti Republike Slovenije se objavi
                                  skupaj z zakonom o uporabi denarne enote Republike Slovenije v
                                  Uradnem listu Republike Slovenije, ki izide 8.10.1991.</p>
                               <p>Kdo je za predlagani sklep? <stage>(53 delegatov.)</stage> Proti?
-                                    <stage>(Nihče.)</stage> Vzdržani? <stage>(3
-                                 delegati.)</stage></p>
+                                    <stage>(Nihče.)</stage> Vzdržani? <stage>(3 delegati.)</stage>
+                              </p>
                               <p>Ugotavljam, da je z večino glasov prvi sklep sprejet.</p>
                               <p>Potem je pa še en sklep in sicer: Skupščina Republike Slovenija
                                  pooblašča Banko Slovenije, da zaradi izvedbe nalog iz zakona o
@@ -2017,7 +2057,8 @@
                                  Republike Slovenije lahko odloči, da bodo vse banke na območju
                                  Republike Slovenije dne 8.10.19991 zaprte.</p>
                               <p>Kdo je za ta sklep? <stage>(47 delegatov.)</stage> Proti? <stage>(5
-                                    delegatov.)</stage> Vzdržani? <stage>(Nihče.)</stage></p>
+                                    delegatov.)</stage> Vzdržani? <stage>(Nihče.)</stage>
+                              </p>
                               <p>Ugotavljam, da smo ta sklep sprejeli z večino glasov, tako kot je
                                  bilo tudi uvodoma obrazloženo.</p>
                               <p>Če vas nekaj poslancev prej ni bilo tu in niste tega slušali, ste

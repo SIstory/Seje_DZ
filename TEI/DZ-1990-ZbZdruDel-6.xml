@@ -79,6 +79,7 @@
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
          <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
@@ -90,6 +91,13 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2016-03-29+02:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
          <change when="2016-01-18+01:00">
             <name>Andrej Pančur</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -122,16 +130,19 @@
                <item>
                   <list rend="ordered">
                      <head>PRED DNEVNIM REDOM:                                      STRAN</head>
-                     <item n="1">Ugotavljanje prisotnosti delegatov .................... 1</item>
-                     <item n="2">Določitev dnevnega reda ............................... 1</item>
+                     <item n="1" xml:id="toc.1.1">Ugotavljanje prisotnosti delegatov
+                        .................... 1</item>
+                     <item n="2" xml:id="toc.1.2">Določitev dnevnega reda
+                        ............................... 1</item>
                   </list>
                </item>
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED:</head>
-                     <item n="1">Ocena stanja, nastalega zaradi nesprejetja ustavnega zakona za
-                        izvedbo ustavnega amandmaja XCVI k ustavi Republike Slovenije (1. točka
-                        dnevnega reda) .............................. 1<list rend="simple">
+                     <item n="1" xml:id="toc.2.1">Ocena stanja, nastalega zaradi nesprejetja
+                        ustavnega zakona za izvedbo ustavnega amandmaja XCVI k ustavi Republike
+                        Slovenije (1. točka dnevnega reda) .............................. 1<list
+                           rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Lojze Janko ........................................... 2</item>
                            <item>Davorin Bizjak ........................................ 5 </item>
@@ -144,8 +155,8 @@
                            <item>Lojze Janko .......................................... 10</item>
                         </list>
                      </item>
-                     <item n="2">Pobude, predlogi in vprašanja delegatov (2. točka dnevnega reda)
-                        ............................. 11<list rend="simple">
+                     <item n="2" xml:id="toc.2.2">Pobude, predlogi in vprašanja delegatov (2. točka
+                        dnevnega reda) ............................. 11<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Ivo Daneu ............................................ 11</item>
                            <item>Zdravko Zabukovec .................................... 13</item>
@@ -165,7 +176,8 @@
                            <item>Vlado Puc ............................................ 21</item>
                         </list>
                      </item>
-                     <item n="3">Seznam govornikov .................................. II/1</item>
+                     <item n="3" xml:id="toc.2.3">Seznam govornikov
+                        .................................. II/1</item>
                   </list>
                </item>
             </list>
@@ -234,9 +246,9 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.ZbZdruDel">
+         <div xml:id="div.1" ana="#PAR.ZbZdruDel">
             <head>ZBOR ZDRUŽENEGA DELA SKUPŠČINE REPUBLIKE SLOVENIJE</head>
-            <div ana="#PAR.Seja" n="6">
+            <div xml:id="div.1.1" ana="#PAR.Seja" n="6">
                <head>6. seja</head>
                <docDate when="1990-10-04">(4. oktober 1990)</docDate>
                <timeline origin="#TL.1" unit="s">
@@ -250,8 +262,8 @@
                </castList>
                <stage type="time">Seja se je <time from="1990-10-04T11:10:00" xml:id="stage.t.1"
                      >pričela ob 11.10 uri</time>.</stage>
-               <div ana="#PAR.PredDnevRed">
-                  <div ana="#PAR.Prisot">
+               <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.Prisot" corresp="#toc.1.1">
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
                         <p>Dragi gostje, cenjeni novinarji. Pričenjam s 6. sejo Zbora združenega
@@ -269,7 +281,7 @@
                            legitimno.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.DolDnevRed">
+                  <div xml:id="div.1.1.1.2" ana="#PAR.DolDnevRed" corresp="#toc.1.2">
                      <sp who="#sp.ZupančičJože">
                         <p>Za današnjo sejo ste videli, da sem z vabilom predlagal samo dve točki
                            dnevnega reda, in sicer: oceno stanja, nastalega zaradi nesprejetja
@@ -291,8 +303,8 @@
                      </sp>
                   </div>
                </div>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR" n="1">
+               <div xml:id="div.1.1.2" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.2.1" ana="#PAR.TDR" n="1" corresp="#toc.2.1">
                      <sp who="#sp.ZupančičJože">
                         <p>
                            <title>1. TOČKA DNEVNEGA REDA - OCENA STANJA, NASTALEGA ZARADI
@@ -803,7 +815,7 @@
                            točko dnevnega reda.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="2">
+                  <div xml:id="div.1.1.2.2" ana="#PAR.TDR" n="2" corresp="#toc.2.2">
                      <sp who="#sp.ZupančičJože">
                         <p>
                            <title>2. TOČKA DNEVNEGA REDA - POBUDE, PREDLOGI IN VPRAŠANJA
@@ -890,9 +902,9 @@
                            pozna ura pa na hitro je prišlo in se niso člani ustavne komisije
                            izjasnili o tej pobudi. So rekli, naj jo posredujem kar direktno in jo
                            tukaj ponavljam. Preden pa bi jo podal pa bi povedal, da je v zvezi z
-                           razmeroma zahtevno situacijo in s položajem Slovenije v Jugoslaviji in
-                           da ko se pogovarjam z ljudmi, pravijo, dajte biti no malo bolj enotni tam
-                           v skupščini. Drugo vse pa mislim, da je iz razmeroma kratke pobude
+                           razmeroma zahtevno situacijo in s položajem Slovenije v Jugoslaviji in da
+                           ko se pogovarjam z ljudmi, pravijo, dajte biti no malo bolj enotni tam v
+                           skupščini. Drugo vse pa mislim, da je iz razmeroma kratke pobude
                            razvidno.</p>
                         <p>Takole se glasi. Glede na težak položaj Slovenije v jugoslovanski
                            sedanjosti in glede na zahtevne naloge, ki so pred nami, predlagam, da
@@ -1078,14 +1090,14 @@
                            obrtniku, kako začeti odpirati novo zaposlovanje, kajti to je izredno
                            pereč problem v danem trenutku.</p>
                         <p>Slišali smo že podatke, da je bilo tam nekje okoli novega leta menda 14
-                           ali 15 tisoč novih podjetnikov v Sloveniji in da ta velika količina
-                           novih podjetnikov ni zaposlila niti 1000 novih delavcev. Ta podatek pove,
-                           da nekje je neka zavora proti zaposlovanju. Da obstoji eno določeno
-                           stanje, katerega se ti mali podjetniki ali obrtniki, ker zdaj govorimo o
-                           enem in istem, pravzaprav o tistem elementu, ki bi lahko odpiral nova
-                           delovna mesta, da nekje je ta zavora zaposlovanja, da zato res tako, kot
-                           je gospod predsednik rekel, v preteklosti nismo naredili nič, oziroma
-                           zelo malo.</p>
+                           ali 15 tisoč novih podjetnikov v Sloveniji in da ta velika količina novih
+                           podjetnikov ni zaposlila niti 1000 novih delavcev. Ta podatek pove, da
+                           nekje je neka zavora proti zaposlovanju. Da obstoji eno določeno stanje,
+                           katerega se ti mali podjetniki ali obrtniki, ker zdaj govorimo o enem in
+                           istem, pravzaprav o tistem elementu, ki bi lahko odpiral nova delovna
+                           mesta, da nekje je ta zavora zaposlovanja, da zato res tako, kot je
+                           gospod predsednik rekel, v preteklosti nismo naredili nič, oziroma zelo
+                           malo.</p>
                      </sp>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
@@ -1164,11 +1176,11 @@
                            pripravniškem ali preizkusnem obdobju, da si zelo prizadevajo, da jih
                            potem delodajalci obdržijo naprej kot redno zaposlene.</p>
                         <p>Zato podpiram to pobudo, lahko je tudi formuliramo zelo konkretno, da v
-                           tem času, v sklopu teh stvari, ko se pogovarjamo o olajšavah za
-                           obrtnike in nove podjetnike in vse te zadeve, da to uredimo, ker osebno
-                           tudi spoznamo, da teh, ne vem, koliko,m ki se jih je zdaj v zadnjih
-                           šestih mesecih v Sloveniji odprlo, teh individualnih podjetij, da je to v
-                           veliki meri špekulativnega značaja, da so to ljudje, ki so zaposleni v
+                           tem času, v sklopu teh stvari, ko se pogovarjamo o olajšavah za obrtnike
+                           in nove podjetnike in vse te zadeve, da to uredimo, ker osebno tudi
+                           spoznamo, da teh, ne vem, koliko,m ki se jih je zdaj v zadnjih šestih
+                           mesecih v Sloveniji odprlo, teh individualnih podjetij, da je to v veliki
+                           meri špekulativnega značaja, da so to ljudje, ki so zaposleni v
                            podjetjih, paralelno pa si odpirajo svoje firme, pa da ne bi spet koga
                            obdolžil vemo, da se tukaj tudi dokaj nekontrolirano preliva premoženje,
                            da se pa dejansko ne ustvarja novih delovnih mest. In to je zelo akuten
@@ -1323,7 +1335,7 @@
                            zaposlenimi v kulturi.</p>
                         <p>V časniku Delo smo danes, 4.10. prebrali novico o tem, da je sekretar
                            Jugoslovanske selekcije mednarodnega združenja za sodobno glasbo Lojze
-                           Lebič na generalni skupščini v Oslu  odpovedal kandidaturo Ljubljane kot
+                           Lebič na generalni skupščini v Oslu odpovedal kandidaturo Ljubljane kot
                            organizatorke svetovnih glasbenih dnevov oktobra 1993 v Cankarjevem domu.
                            Poleg razumljivih problemov v zvezi z aktualnimi razmerami v Jugoslaviji
                            pa časnikar omenja tudi, citiram: "Sklep slovenskega Republiškega

@@ -79,6 +79,7 @@
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
          <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
@@ -90,6 +91,13 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2016-03-30+02:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
          <change when="2016-01-18+01:00">
             <name>Andrej Pančur</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -122,9 +130,10 @@
                <item>
                   <list rend="ordered">
                      <head>PRED DNEVNIM REDOM:                                      STRAN</head>
-                     <item n="1"> Ugotavljanje prisotnosti delegatov zbora .............. 1</item>
-                     <item n="2"> Določanje dnevnega reda ...............................<list
-                           rend="simple">
+                     <item n="1" xml:id="toc.1.1"> Ugotavljanje prisotnosti delegatov zbora
+                        .............. 1</item>
+                     <item n="2" xml:id="toc.1.2"> Določanje dnevnega reda
+                           ...............................<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Bogo Rogina ........................................... 4</item>
                            <item>Roman Jakič ........................................... 4</item>
@@ -152,25 +161,25 @@
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED:</head>
-                     <item n="1">Odobritev zapisnika 8. seje (1. točka dnevnega reda)
-                        ............................. 14<list rend="simple">
+                     <item n="1" xml:id="toc.2.1">Odobritev zapisnika 8. seje (1. točka dnevnega
+                        reda) ............................. 14<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>Franc Grašič ......................................... 14</item>
                         </list>
                      </item>
-                     <item n="2">Problematika reševanja posledic katastrofalnih poplav v Sloveniji
-                        (2. točka dnevnega reda -  prekinjena) ............... 14</item>
-                     <item n="3">Predlog odloka o spremembah in dopolnitvah odloka o ustanovitvi,
-                        nalogah, sestavi in številu članov Komisije Skupščine Republike Slovenije za
-                        spremljanje preobrazbe družbene lastnine (4. točka dnevnega reda)
-                        ............................. 14<list rend="simple">
+                     <item n="2" xml:id="toc.2.2">Problematika reševanja posledic katastrofalnih
+                        poplav v Sloveniji (2. točka dnevnega reda -  prekinjena) ...............
+                        14</item>
+                     <item n="3" xml:id="toc.2.3">Predlog odloka o spremembah in dopolnitvah odloka
+                        o ustanovitvi, nalogah, sestavi in številu članov Komisije Skupščine
+                        Republike Slovenije za spremljanje preobrazbe družbene lastnine (4. točka
+                        dnevnega reda) ............................. 14<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>Andrej Šter .......................................... 14</item>
                         </list>
                      </item>
-                     <item n="4">Predlog za izdajo zakona o zadrugah z osnutkom zakona (9. točka
-                        dnevnega reda - glej še usklajevanje) ...... 15</item>
-                     <item n="5">Ugotavljanje prisotnosti delegatov ................... 22<list
+                     <item n="4" xml:id="toc.2.4">Predlog za izdajo zakona o zadrugah z osnutkom
+                        zakona (9. točka dnevnega reda - glej še usklajevanje) ...... 15<list
                            rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Martina Lippai ....................................... 16</item>
@@ -178,11 +187,14 @@
                            <item>Franc Ban ............................................ 20</item>
                         </list>
                      </item>
-                     <item n="6">Predlog za izdajo zakona o zadrugah z osnutkom zakona (9. točka
-                        dnevnega reda - nadaljevanje) .............. 22</item>
-                     <item n="7">Sporazumni predlog usklajevalne komisije glede predloga odloka o
-                        spremembi odloka o sestavi in številu članov Zakonodajno-pravne komisije
-                        Skupščine Republike Slovenije ........................ 22<list rend="simple">
+                     <item n="5" xml:id="toc.2.5">Ugotavljanje prisotnosti delegatov
+                        ................... 22</item>
+                     <item n="6" xml:id="toc.2.6">Predlog za izdajo zakona o zadrugah z osnutkom
+                        zakona (9. točka dnevnega reda - nadaljevanje) .............. 22</item>
+                     <item n="7" xml:id="toc.2.7">Sporazumni predlog usklajevalne komisije glede
+                        predloga odloka o spremembi odloka o sestavi in številu članov
+                        Zakonodajno-pravne komisije Skupščine Republike Slovenije
+                        ........................ 22<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Dejan Murko .......................................... 22</item>
                            <item>Jaša L. Zlobec ....................................... 23</item>
@@ -190,18 +202,18 @@
                            <item>Dejan Murko .......................................... 23</item>
                         </list>
                      </item>
-                     <item n="8">Zahteva Zbora združenega dela, da se o zakonu o RTV ponovno glasuje
-                        ....................... 24<list rend="simple">
+                     <item n="8" xml:id="toc.2.8">Zahteva Zbora združenega dela, da se o zakonu o
+                        RTV ponovno glasuje ....................... 24<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>Andrej Šter .......................................... 24</item>
                         </list>
                      </item>
-                     <item n="9">Predlog za izdajo zakona o preoblikovanju POZD (10. točka dnevnega
-                        reda - prekinjena) ............... 25</item>
-                     <item n="10">Predlog za izdajo zakona o zavodih z osnutkom zakona (11. točka
-                        dnevnega reda - še usklajevanje) ter uvodna beseda predstavnice Izvršnega
-                        sveta k 12. točki dnevnega reda ............................ 25<list
-                           rend="simple">
+                     <item n="9" xml:id="toc.2.9">Predlog za izdajo zakona o preoblikovanju POZD
+                        (10. točka dnevnega reda - prekinjena) ............... 25</item>
+                     <item n="10" xml:id="toc.2.10">Predlog za izdajo zakona o zavodih z osnutkom
+                        zakona (11. točka dnevnega reda - še usklajevanje) ter uvodna beseda
+                        predstavnice Izvršnega sveta k 12. točki dnevnega reda
+                        ............................ 25<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Ksenija Mihovar-Globokar ............................. 26</item>
                            <item>dr. Jože Arzenšek .................................... 27</item>
@@ -215,9 +227,11 @@
                            <item>Anka Osterman ........................................ 36</item>
                         </list>
                      </item>
-                     <item n="11">Ugotavljanje prisotnosti delegatov ................... 38</item>
-                     <item n="12">Predlog za izdajo zakona o zavodih z osnutkom zakona (nadaljevanje
-                        11. točke dnevnega reda) ............... 38<list rend="simple">
+                     <item n="11" xml:id="toc.2.11">Ugotavljanje prisotnosti delegatov
+                        ................... 38</item>
+                     <item n="12" xml:id="toc.2.12">Predlog za izdajo zakona o zavodih z osnutkom
+                        zakona (nadaljevanje 11. točke dnevnega reda) ............... 38<list
+                           rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>mag. Boštjan Kovačič ................................. 39</item>
                            <item>mag. Franc Perko ..................................... 39</item>
@@ -234,9 +248,10 @@
                         </list>
                      </item>
                      <note>NADALJEVANJE 10. SEJE ZBORA ZDRUŽENEGA DELA 21. NOVEMBRA 1990</note>
-                     <item n="13">Ugotavljanje prisotnosti delegatov ................... 51</item>
-                     <item n="14">Vprašanje zaupnice predsedniku Zbora združenega dela
-                        ...................................... 51 <list rend="simple">
+                     <item n="13" xml:id="toc.2.13">Ugotavljanje prisotnosti delegatov
+                        ................... 51</item>
+                     <item n="14" xml:id="toc.2.14">Vprašanje zaupnice predsedniku Zbora združenega
+                        dela ...................................... 51 <list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Jože Zupančič ........................................ 51</item>
                            <item>dr. Anton Židanik .................................... 52</item>
@@ -251,11 +266,11 @@
                            <item>Vlado Puc ............................................ 55</item>
                         </list>
                      </item>
-                     <item n="15">Predlog za izdajo zakona o imenovanju in razrešitvi poslovodnih
-                        organov ter o imenovanju delegatov družbene skupnosti v organe upravljanja
-                        podjetij in organizacij, ki opravljajo dejavnosti posebnega pomena z
-                        osnutkom zakona (12. točka dnevnega reda) ............................
-                           55<list rend=" simple">
+                     <item n="15" xml:id="toc.2.15">Predlog za izdajo zakona o imenovanju in
+                        razrešitvi poslovodnih organov ter o imenovanju delegatov družbene skupnosti
+                        v organe upravljanja podjetij in organizacij, ki opravljajo dejavnosti
+                        posebnega pomena z osnutkom zakona (12. točka dnevnega reda)
+                        ............................ 55<list rend=" simple">
                            <head>GOVORNIKI:</head>
                            <item>dr. Anton Židanik .................................... 55</item>
                            <item>Roman Jakič .......................................... 55</item>
@@ -279,9 +294,9 @@
                            <item>dr. Jože Arzenšek .................................... 67</item>
                         </list>
                      </item>
-                     <item n="16">Predlog za izdajo zakona o spremembi zakona o pokojninskem in
-                        invalidskem zavarovanju s predlogom zakona (3. točka dnevnega reda - še
-                        usklajevanje) ........... 68<list rend="simple">
+                     <item n="16" xml:id="toc.2.16">Predlog za izdajo zakona o spremembi zakona o
+                        pokojninskem in invalidskem zavarovanju s predlogom zakona (3. točka
+                        dnevnega reda - še usklajevanje) ........... 68<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Jožica Puhar ......................................... 68</item>
                            <item>Majda Oblak .......................................... 70</item>
@@ -292,11 +307,12 @@
                            <item>Andrej Muren ......................................... 71</item>
                         </list>
                      </item>
-                     <item n="17">Predlog za izdajo zakona o privatizaciji podjetij z osnutkom
-                        zakona (6. točka dnevnega reda), Predlog za izdajo zakona o Agenciji
-                        Republike Slovenije z osnutkom zakona (7. točka dnevnega reda) in Predlog za
-                        izdajo zakona o Skladu Republike Slovenije za razvoj z osnutkom zakona (8.
-                        točka dnevnega reda) ............................. 72<list rend="simple">
+                     <item n="17" xml:id="toc.2.17">Predlog za izdajo zakona o privatizaciji
+                        podjetij z osnutkom zakona (6. točka dnevnega reda), Predlog za izdajo
+                        zakona o Agenciji Republike Slovenije z osnutkom zakona (7. točka dnevnega
+                        reda) in Predlog za izdajo zakona o Skladu Republike Slovenije za razvoj z
+                        osnutkom zakona (8. točka dnevnega reda) .............................
+                           72<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Franc Grašič ......................................... 73</item>
                            <item>Franc Ban ............................................ 76</item>
@@ -312,10 +328,12 @@
                         </list>
                      </item>
                      <note>NADALJEVANJE 10. SEJE ZBORA ZDRUŽENEGA DELA 27. NOVEMBRA 1990</note>
-                     <item n="18">Ugotavljanje prisotnosti delegatov ................... 99</item>
-                     <item n="19">Pobuda, da Zbor združenega dela uvrsti na dnevni red nadaljevanje
-                        10. seje predlog zakona o začasni ureditvi ugovora vesti v vojaški službi
-                        (24. točka dnevnega reda) ........................... 100<list rend="simple">
+                     <item n="18" xml:id="toc.2.18">Ugotavljanje prisotnosti delegatov
+                        ................... 99</item>
+                     <item n="19" xml:id="toc.2.19">Pobuda, da Zbor združenega dela uvrsti na dnevni
+                        red nadaljevanje 10. seje predlog zakona o začasni ureditvi ugovora vesti v
+                        vojaški službi (24. točka dnevnega reda) ...........................
+                           100<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>dr. Primož Rode ..................................... 100</item>
                            <item>Roman Jakič ......................................... 100</item>
@@ -323,8 +341,8 @@
                            <item>Franc Boštjančič .................................... 101</item>
                         </list>
                      </item>
-                     <item n="20">Informacija Odbora za varstvo potrošnikov v zvezi z leasing
-                        pogodbami podjetja Trend (5. točka dnevnega reda)
+                     <item n="20" xml:id="toc.2.20">Informacija Odbora za varstvo potrošnikov v
+                        zvezi z leasing pogodbami podjetja Trend (5. točka dnevnega reda)
                         ............................ 102<list rend="simple">
                            <head>GOVORNIKA:</head>
                            <item>Valentin Prelovec ................................... 102</item>
@@ -332,24 +350,25 @@
                            <item>Milan Aksentijević .................................. 103</item>
                         </list>
                      </item>
-                     <item n="21">Predlog za izdajo zakona o preoblikovanju POZD (10. točka dnevnega
-                        reda - nadaljevanje) ............ 103<list rend="simple">
+                     <item n="21" xml:id="toc.2.21">Predlog za izdajo zakona o preoblikovanju POZD
+                        (10. točka dnevnega reda - nadaljevanje) ............ 103<list rend="simple">
                            <head>GOVORNIKA:</head>
                            <item>mag. Viktor Brezar .................................. 103</item>
                            <item>Bogo Rogina ......................................... 104</item>
                         </list>
                      </item>
-                     <item n="22">Predlog za izdajo zakona o civilnih invalidih vojne z osnutkom
-                        zakona (13. točka dnevnega reda) ........................... 105<list
-                           rend="simple">
+                     <item n="22" xml:id="toc.2.22">Predlog za izdajo zakona o civilnih invalidih
+                        vojne z osnutkom zakona (13. točka dnevnega reda)
+                        ........................... 105<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Dejan Vladimir ...................................... 105</item>
                            <item>Nevenka Ahčan ....................................... 106</item>
                            <item>Roman Jakič ......................................... 107</item>
                         </list>
                      </item>
-                     <item n="23">Predlog zakona o spremembah in dopolnitvah zakona o orožju (14.
-                        točka dnevnega reda) ........................... 107<list rend="simple">
+                     <item n="23" xml:id="toc.2.23">Predlog zakona o spremembah in dopolnitvah
+                        zakona o orožju (14. točka dnevnega reda) ...........................
+                           107<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Branko Bračko ....................................... 108</item>
                            <item>Leopold Drame ....................................... 108</item>
@@ -360,16 +379,16 @@
                            <item>Dejan Murko ......................................... 111</item>
                         </list>
                      </item>
-                     <item n="24">Predlog za izdajo zakona o spremembah in dopolnitvah zakona o
-                        varnosti na žičnicah in vlečnicah z osnutkom zakona (15. točka dnevnega
-                        reda) ........................... 112<list rend="simple">
+                     <item n="24" xml:id="toc.2.24">Predlog za izdajo zakona o spremembah in
+                        dopolnitvah zakona o varnosti na žičnicah in vlečnicah z osnutkom zakona
+                        (15. točka dnevnega reda) ........................... 112<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>Peter Marn .......................................... 112</item>
                         </list>
                      </item>
-                     <item n="25">Predlog zakona o spremembah in dopolnitvah zakona o posebnem
-                        prometnem davku (16. točka dnevnega reda) ...........................
-                           113<list rend="simple">
+                     <item n="25" xml:id="toc.2.25">Predlog zakona o spremembah in dopolnitvah
+                        zakona o posebnem prometnem davku (16. točka dnevnega reda)
+                        ........................... 113<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Ivan Dretnik ........................................ 113</item>
                            <item>Leopold Drame ....................................... 114</item>
@@ -381,20 +400,20 @@
                            <item>Bogo Rogina ......................................... 118</item>
                         </list>
                      </item>
-                     <item n="26">Poročilo delegacije Skupščine Republike v Zboru republik in
-                        pokrajin Skupščine SFRJ o poteku usklajevanja nekaterih aktov iz
+                     <item n="26" xml:id="toc.2.26">Poročilo delegacije Skupščine Republike v Zboru
+                        republik in pokrajin Skupščine SFRJ o poteku usklajevanja nekaterih aktov iz
                         pristojnosti Zbora republik in pokrajin Skupščine SFRJ (17. točka dnevnega
                         reda) ........................... 119</item>
-                     <item n="27">Predlog zakona o ratifikaciji Sporazuma o določitvi višine nove
-                        tranše posojil med ZIS, Skupščino SFRJ in Skladom za reintegracijo
-                        Evropskega sveta (18. točka dnevnega reda) ...........................
-                        119</item>
-                     <item n="28">Predlog zakona o ratifikaciji Evropske konvencije o mednarodnih
-                        posledicah odvzema pravice do vožnje motornega vozila (19. točka dnevnega
-                        reda) ........................... 120</item>
-                     <item n="29">Predlog zakona o ratifikaciji konvencije Združenih narodov o
-                        otrokovih pravicah (20. točka dnevnega reda) ...........................
-                           120<list rend="simple">
+                     <item n="27" xml:id="toc.2.27">Predlog zakona o ratifikaciji Sporazuma o
+                        določitvi višine nove tranše posojil med ZIS, Skupščino SFRJ in Skladom za
+                        reintegracijo Evropskega sveta (18. točka dnevnega reda)
+                        ........................... 119</item>
+                     <item n="28" xml:id="toc.2.28">Predlog zakona o ratifikaciji Evropske
+                        konvencije o mednarodnih posledicah odvzema pravice do vožnje motornega
+                        vozila (19. točka dnevnega reda) ........................... 120</item>
+                     <item n="29" xml:id="toc.2.29">Predlog zakona o ratifikaciji konvencije
+                        Združenih narodov o otrokovih pravicah (20. točka dnevnega reda)
+                        ........................... 120<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Roman Jakič ......................................... 120</item>
                            <item>mag. Angelca Žerovnik ................................ 121</item>
@@ -402,31 +421,33 @@
                            <item>Roman Jakič ......................................... 121</item>
                         </list>
                      </item>
-                     <item n="30">Predlog zakona o ratifikaciji protokola o pravni sposobnosti ter
-                        privilegijih in imunitetah Evropske skupnosti za svobodno trgovino (21.
-                        točka dnevnega reda) ........................... 122</item>
-                     <item n="31">Predlog zakona o ratifikaciji sklepa sveta EFTE št. 2 o
-                        oblikovanju razvojnega sklada EFTE za Jugoslavijo s statutom sklada (22.
-                        točka dnevnega reda) ........................... 122</item>
-                     <item n="32">Stališča Skupščine Republike Slovenije k zakonom iz pristojnosti
-                        Zveznega zbora Skupščine SFRJ (23. točka dnevnega reda)
+                     <item n="30" xml:id="toc.2.30">Predlog zakona o ratifikaciji protokola o pravni
+                        sposobnosti ter privilegijih in imunitetah Evropske skupnosti za svobodno
+                        trgovino (21. točka dnevnega reda) ........................... 122</item>
+                     <item n="31" xml:id="toc.2.31">Predlog zakona o ratifikaciji sklepa sveta EFTE
+                        št. 2 o oblikovanju razvojnega sklada EFTE za Jugoslavijo s statutom sklada
+                        (22. točka dnevnega reda) ........................... 122</item>
+                     <item n="32" xml:id="toc.2.32">Stališča Skupščine Republike Slovenije k zakonom
+                        iz pristojnosti Zveznega zbora Skupščine SFRJ (23. točka dnevnega reda)
                         ........................... 123<list>
-                           <item n="a)">predlog zakona o spremembah in dopolnitvah  zakona o
-                              potrjevanju novih sort, dovolitvi  intradukcije tujih sort in o
-                              varstvu sort kmetijskih in gozdnih rastlin; ...................
-                              123</item>
-                           <item n="b)">zahteva Skupščine SR Srbije, da se preizkusijo  sedanje
-                              rešitve o dejanski nastanitvi (prebivališču) glede na središče
-                              življenjskih interesov bivališč) .....................................
-                              .. 123</item>
-                           <item n="c)">predlog zakona o ratifikaciji Evropske konvencije o
-                              obvestilih o tujem pravu ............ 123</item>
-                           <item n="d)">predlog odloka v zvezi z objavljenimi zveznimi zakoni
-                              .................................. 124</item>
+                           <item n="a)" xml:id="toc.2.32a">predlog zakona o spremembah in
+                              dopolnitvah  zakona o potrjevanju novih sort, dovolitvi  intradukcije
+                              tujih sort in o varstvu sort kmetijskih in gozdnih rastlin;
+                              ................... 123</item>
+                           <item n="b)" xml:id="toc.2.32b">zahteva Skupščine SR Srbije, da se
+                              preizkusijo  sedanje rešitve o dejanski nastanitvi (prebivališču)
+                              glede na središče življenjskih interesov bivališč)
+                              ..................................... .. 123</item>
+                           <item n="c)" xml:id="toc.2.32c">predlog zakona o ratifikaciji
+                              Evropske konvencije o obvestilih o tujem pravu ............ 123</item>
+                           <item n="d)" xml:id="toc.2.32d">predlog odloka v zvezi z
+                              objavljenimi zveznimi zakoni ..................................
+                              124</item>
                         </list>
                      </item>
-                     <item n="33">Predlog zakona o začasni ureditvi ugovora vesti v vojaški službi
-                        (24. točka dnevnega reda) ........................... 124<list rend="simple">
+                     <item n="33" xml:id="toc.2.33">Predlog zakona o začasni ureditvi ugovora vesti
+                        v vojaški službi (24. točka dnevnega reda) ...........................
+                           124<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Roman Jakič ......................................... 124</item>
                            <item>Andrej Šter ......................................... 125</item>
@@ -441,8 +462,8 @@
                            <item>Roman Jakič ......................................... 130</item>
                         </list>
                      </item>
-                     <item n="34">Pobude, vprašanja in predlogi delegatov (25. točka dnevnega reda)
-                        ........................... 131<list rend="simple">
+                     <item n="34" xml:id="toc.2.34">Pobude, vprašanja in predlogi delegatov (25.
+                        točka dnevnega reda) ........................... 131<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Milan Aksentijević .................................. 132</item>
                            <item>Roman Jakič ......................................... 134</item>
@@ -451,10 +472,12 @@
                            <item>Ivan Dretnik ........................................ 136</item>
                         </list>
                      </item>
-                     <item n="35">Medzborovsko usklajevanje: .......................... 136<list>
-                           <item n="-">Predlog za izdajo zakona o spremembi zakona o pokojninskem in
-                              invalidskem zavarovanju s predlogom zakona (3. točka dnevnega reda)
-                              ............................ 136<list rend="simple">
+                     <item n="35" xml:id="toc.2.35">Medzborovsko usklajevanje:
+                        .......................... 136<list>
+                           <item n="-" xml:id="toc.2.35.1">Predlog za izdajo zakona o spremembi
+                              zakona o pokojninskem in invalidskem zavarovanju s predlogom zakona
+                              (3. točka dnevnega reda) ............................ 136<list
+                                 rend="simple">
                                  <head>GOVORNIKI:</head>
                                  <item>Jožica Puhar ........................................
                                     137</item>
@@ -466,9 +489,9 @@
                                     138</item>
                               </list>
                            </item>
-                           <item n="-">Predlog za izdajo zakona o zavodih z osnutkom zakona (11.
-                              točka dnevnega reda) ........................... 139<list
-                                 rend="simple">
+                           <item n="-" xml:id="toc.2.35.2">Predlog za izdajo zakona o zavodih z
+                              osnutkom zakona (11. točka dnevnega reda) ...........................
+                                 139<list rend="simple">
                                  <head>GOVORNIKI:</head>
                                  <item>Pavle Svete .........................................
                                     139</item>
@@ -500,12 +523,12 @@
                                     146</item>
                               </list>
                            </item>
-                           <item n="-">Predlog zakona o spremembah in dopolnitvah zakona o posebnem
-                              prometnem davku (16. točka dnevnega reda) ...........................
-                              147</item>
-                           <item n="-">Predlog zakona o spremembi in dopolnitvi zakona o orožju (14.
-                              točka dnevnega reda) ........................... 147<list
-                                 rend="simple">
+                           <item n="-" xml:id="toc.2.35.3">Predlog zakona o spremembah in
+                              dopolnitvah zakona o posebnem prometnem davku (16. točka dnevnega
+                              reda) ........................... 147</item>
+                           <item n="-" xml:id="toc.2.35.4">Predlog zakona o spremembi in dopolnitvi
+                              zakona o orožju (14. točka dnevnega reda) ...........................
+                                 147<list rend="simple">
                                  <head>GOVORNIKA:</head>
                                  <item>Bogo Rogina .........................................
                                     148</item>
@@ -517,8 +540,10 @@
                            </item>
                         </list>
                      </item>
-                     <item n="36">Seznam govornikov .................................. II/1</item>
-                     <item n="37">Priloga: Zapisnik seje ............................ III/1</item>
+                     <item n="36" xml:id="toc.2.36">Seznam govornikov
+                        .................................. II/1</item>
+                     <item n="37" xml:id="toc.2.37">Priloga: Zapisnik seje
+                        ............................ III/1</item>
                   </list>
                </item>
             </list>
@@ -714,9 +739,9 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.ZbZdruDel">
+         <div xml:id="div.1" ana="#PAR.ZbZdruDel">
             <head>ZBOR ZDRUŽENEGA DELA SKUPŠČINE REPUBLIKE SLOVENIJE</head>
-            <div ana="#PAR.Seja" n="10">
+            <div xml:id="div.1.1" ana="#PAR.Seja" n="10">
                <head>10. seja</head>
                <docDate>(<date when="1990-11-20">20.</date>, <date when="1990-11-21">21.</date> in
                      <date when="1990-11-27">27. november 1990</date>)</docDate>
@@ -754,8 +779,8 @@
                </castList>
                <stage type="time">Seja se je <time from="1990-11-20T10:15:00" xml:id="stage.t.1"
                      >pričela ob 10.15 uri</time>.</stage>
-               <div ana="#PAR.PredDnevRed">
-                  <div ana="#PAR.Prisot">
+               <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.Prisot" corresp="#toc.1.1">
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
                         <p>Poslanke in poslanci, dragi gostje, cenjeni novinarji. Pričenjam 10. sejo
@@ -766,7 +791,7 @@
                            delamo.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.DolDnevRed">
+                  <div xml:id="div.1.1.1.2" ana="#PAR.DolDnevRed" corresp="#toc.1.2">
                      <sp who="#sp.ZupančičJože">
                         <p>Najprej nekaj obvestil in pojasnil. Dovolite mi, da vas uvodoma obvestim,
                            kako bo potekalo delo v teh, najprej dveh, dneh na sejah zborov
@@ -815,7 +840,7 @@
                            odločali o spornem vprašanju, t.j. o amandmajih k 1., 2., 3., 4. in 8.
                            členu predloga za izdajo zakona o RTV Slovenije s predlogom zakona. To bi
                            mi obravnavali. Torej, skupno zasedanje in delovna seja v veliki dvorani
-                           danes od 14.00 dalje.     </p>
+                           danes od 14.00 dalje. </p>
                         <p>Torej, začnemo s skupnim zasedanjem, na katerem bi poslušali najprej
                            Mencingerja in Jazbinška z razpravo, po tem, ko bi bili ti dve točki
                            zaključeni, pa bi imeli nadaljevanje delovne seje, ki bi jo vodil potem
@@ -1483,8 +1508,8 @@
                      </sp>
                   </div>
                </div>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR" n="1">
+               <div xml:id="div.1.1.2" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.2.1" ana="#PAR.TDR" n="1" corresp="#toc.2.1">
                      <sp who="#sp.RoginaBogo">
                         <speaker>PODPREDSEDNIK BOGO ROGINA:</speaker>
                         <p>Prehajamo na <title>1. TOČKO DNEVNEGA REDA</title>, to je
@@ -1514,7 +1539,7 @@
                         <p>Se pravi, da je zapisnik 8. seje sprejet soglasno.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="2">
+                  <div xml:id="div.1.1.2.2" ana="#PAR.TDR" n="2" corresp="#toc.2.2">
                      <sp who="#sp.RoginaBogo">
                         <p>Prehajamo na <title>2. TOČKO DNEVNEGA REDA</title>, to je
                               <title>PROBLEMATIKA REŠEVANJA POSLEDIC KATASTROFALNIH POPLAV V
@@ -1527,7 +1552,7 @@
                            preskočili.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="4">
+                  <div xml:id="div.1.1.2.3" ana="#PAR.TDR" n="4" corresp="#toc.2.3">
                      <sp who="#sp.RoginaBogo">
                         <p>Prehajamo na <title>4. TOČKO DNEVNEGA REDA</title>, to je na
                               <title>PREDLOG ODLOKA O SPREMEMBAH IN DOPOLNITVAH ODLOKA O
@@ -1566,7 +1591,7 @@
                         <p>Se pravi, da je predlog odloka sprejet z večino glasov.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="5">
+                  <div xml:id="div.1.1.2.4" ana="#PAR.TDR" n="5">
                      <sp who="#sp.RoginaBogo">
                         <p>Prehajamo na <title>5. TOČKO DNEVNEGA REDA</title>, to je Informacija
                            odbora za varstvo potrošnikov v zvezi z leasing pogodbami podjetja
@@ -1580,7 +1605,7 @@
                            strinjate s tem, da opravimo to obravnavo potem? Očitno da.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="9">
+                  <div xml:id="div.1.1.2.5" ana="#PAR.TDR" n="9" corresp="#toc.2.4">
                      <sp who="#sp.RoginaBogo">
                         <p>Prehajamo torej na <title>9. TOČKO DNEVNEGA REDA</title>, to je na
                               <title>PREDLOG ZA IZDAJO ZAKONA O ZADRUGAH Z OSNUTKOM
@@ -1711,9 +1736,9 @@
                            morala Skupščina Slovenije posebej opredeliti.</p>
                         <p>Poseben problem pri poglavju vračanja je tudi to, da rešitve pri vračanju
                            zadružne lastnine prehitevajo reševanje na drugih področjih, na katerih
-                           naj bi se tudi vračalo krivično oziroma nezakonito odvzeto premoženje.
-                           Te rešitve Izvršni svet Skupščine Republike Slovenije pripravlja, tako da
-                           bi se dalo v naslednji fazi zakonodajnega postopka v zakonu o zadrugah že
+                           naj bi se tudi vračalo krivično oziroma nezakonito odvzeto premoženje. Te
+                           rešitve Izvršni svet Skupščine Republike Slovenije pripravlja, tako da bi
+                           se dalo v naslednji fazi zakonodajnega postopka v zakonu o zadrugah že
                            upoštevati tudi te rešitve in obravnavati tudi ustrezne rešitve v drugih
                            zakonih, kjer bo vračanje tega drugega premoženja urejeno. Problem
                            vračanja zadružnega premoženja in tudi drugega premoženja, ki naj bi se
@@ -1896,13 +1921,20 @@
                            xml:id="stage.t.2">prekinjena ob 11.15 uri</time> in se je <time
                            from="1990-11-20T12:30:00" xml:id="stage.t.3">nadaljevala ob 12.30
                            uri</time>.)</stage>
+                  </div>
+                  <div xml:id="div.1.1.2.5a" corresp="#toc.2.5">
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
                         <p>Prisotnost prosim. Nismo za delo še zbrani. Saj sta sedaj prišla še dva,
                            ampak to je vseeno šele 42. Sedaj nas je že 43 in lahko nadaljujemo z
-                           delom. Mi smo še vedno pri tej naši 9. točki dnevnega reda, kjer gre za
-                           predlog za izdajo zakona o zadrugah z osnutkom zakona. Do sedaj sta bili
-                           dve razpravi. Pisno razpravo je oddal gospod Horvat in pisno razpravo še
+                           delom.</p>
+                     </sp>
+                  </div>
+                  <div xml:id="div.1.1.2.5b" ana="#PAR.TDR" n="9" corresp="#toc.2.6">
+                     <sp who="#sp.ZupančičJože">
+                        <p>Mi smo še vedno pri tej naši 9. točki dnevnega reda, kjer gre za predlog
+                           za izdajo zakona o zadrugah z osnutkom zakona. Do sedaj sta bili dve
+                           razpravi. Pisno razpravo je oddal gospod Horvat in pisno razpravo še
                            gospod Boštjančič. Na tak način, da so te pisne priloge tudi sestavni del
                            našega magnetograma, s tem seveda tudi naše razprave.</p>
                         <p>Želi še kdo v zvezi s to točko razpravljati? Jaz bi vas rad opozoril še
@@ -1923,7 +1955,7 @@
                         <p>Torej sta oba sklepa z večino glasov sprejeta.</p>
                      </sp>
                   </div>
-                  <div>
+                  <div xml:id="div.1.1.2.6" corresp="#toc.2.7">
                      <sp who="#sp.ZupančičJože">
                         <p>Preden bi prešli k 10. točki dnevnega reda. Mi imamo sedaj že od te
                            skupne usklajevalne komisije <title>PREDLOG SPORAZUMA GLEDE PREDLOGA
@@ -2036,7 +2068,7 @@
                         <p>Torej je sporazumni predlog z večino glasov sprejet.</p>
                      </sp>
                   </div>
-                  <div>
+                  <div xml:id="div.1.1.2.7" corresp="#toc.2.8">
                      <sp who="#sp.ZupančičJože">
                         <p>To je eno usklajevanje, medtem ko ostala usklajevanja pa žal še niso na
                            takšni stopnji, da bi lahko o njih tudi že razpravljali. Ker pa že
@@ -2107,7 +2139,7 @@
                            o amandmajih zakona o RTV. To smo mi zahtevali.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="10">
+                  <div xml:id="div.1.1.2.8" ana="#PAR.TDR" n="10" corresp="#toc.2.9">
                      <sp who="#sp.ZupančičJože">
                         <p>Zdaj je <title>10. TOČKA</title>.</p>
                         <p>Mi smo se o 10. točki glede <title>PREDLOGA ZA IZDAJO ZAKONA O
@@ -2119,7 +2151,7 @@
                            strinjate tako? Tako je bilo sprejeto, da ne bi bilo nesporazuma.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="11">
+                  <div xml:id="div.1.1.2.9" ana="#PAR.TDR" n="11" corresp="#toc.2.10">
                      <sp who="#sp.ZupančičJože">
                         <p>
                            <title>11. TOČKA PREDLOG ZA IZDAJO ZAKONA O ZAVODIH Z OSNUTKOM
@@ -2515,8 +2547,8 @@
                            opravi šele po poteku mandata vsakega posameznega ravnatelja. Menimo, da
                            je izbira predstojnika zavoda v veliki meri odvisna tudi od določil akta
                            o ustanovitvi, ločeni ali združeni funkciji poslovodstva in vodenja
-                           strokovnega dela zavoda, priprava oziroma uskladitev tega dokumenta pa
-                           je vezana na področno zakonodajo.</p>
+                           strokovnega dela zavoda, priprava oziroma uskladitev tega dokumenta pa je
+                           vezana na področno zakonodajo.</p>
                         <p>Pri reorganizaciji obstoječe organizacije vzgoje in izobraževanja je
                            nujno upoštevati mnenje delavcev šol in vzgojnovarstvenih organizacij.
                            Osnutek zakona o zavodih in osnutek zakona o organizaciji in financiranju
@@ -2797,18 +2829,25 @@
                            xml:id="stage.t.4">prekinjena ob 14.00 uri</time> in se je <time
                            from="1990-11-20T18:40:00" xml:id="stage.t.5">nadaljevala ob 18.40
                            uri</time>)</stage>
+                  </div>
+                  <div xml:id="div.1.1.2.9a" ana="#PAR.Prisot" corresp="#toc.2.11">
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
                         <p>Koliko nas je prisotnih, prosim? Prisotnost, no pritisnita še vidva!
-                              <stage>(48 nas je prisotnih)</stage>. Prosim, no pa saj je vseeno, saj
-                           lahko nadaljujemo, samo gre za to, da nadaljujemo. Glede na to, da je ura
-                           18.40, dogovorili smo se pa tudi o tem, da bi naj okrog 19 ure
-                           zaključili, niti približno si tudi vi ostali niste predstavljali, da bo
-                           ta skupna seja, ta delovna seja trajala tako dolgo, vseeno predlagam, da
-                           bi mi skupaj obdelali vsaj to točko, da bi zavode še dali skozi, potem bi
-                           pa nadaljevali jutri. Ampak, bi res potem vztrajali vsi, razen tisti, ki
-                           ima dejansko objektiven razlog, ker mora nas pa biti toliko, da bomo
-                           sprejeli ta stališča. Boštjan, bi kaj rad povedal? Prosim.</p>
+                              <stage>(48 nas je prisotnih)</stage>.</p>
+                     </sp>
+                  </div>
+                  <div xml:id="div.1.1.2.9b" ana="#PAR.TDR" n="11" corresp="#toc.2.12">
+                     <sp who="#sp.ZupančičJože">
+                        <p>Prosim, no pa saj je vseeno, saj lahko nadaljujemo, samo gre za to, da
+                           nadaljujemo. Glede na to, da je ura 18.40, dogovorili smo se pa tudi o
+                           tem, da bi naj okrog 19 ure zaključili, niti približno si tudi vi ostali
+                           niste predstavljali, da bo ta skupna seja, ta delovna seja trajala tako
+                           dolgo, vseeno predlagam, da bi mi skupaj obdelali vsaj to točko, da bi
+                           zavode še dali skozi, potem bi pa nadaljevali jutri. Ampak, bi res potem
+                           vztrajali vsi, razen tisti, ki ima dejansko objektiven razlog, ker mora
+                           nas pa biti toliko, da bomo sprejeli ta stališča. Boštjan, bi kaj rad
+                           povedal? Prosim.</p>
                      </sp>
                      <sp who="#sp.KovačičBoštjan">
                         <speaker>MAG. BOŠTJAN KOVAČIČ:</speaker>
@@ -3045,8 +3084,8 @@
                            raziskovalnih organizacij ter nesprejemljivo stanje, da je le še zakon o
                            združenem delu, ki ne velja več za gospodarske organizacije oziroma
                            podjetja, edina pravna podlaga urejanja razmer v družbenih dejavnostih
-                           oziroma javnih službah. S tega vidika je zakon o zavodih več kot
-                           potreben in sindikat njegov sprejem podpira.</p>
+                           oziroma javnih službah. S tega vidika je zakon o zavodih več kot potreben
+                           in sindikat njegov sprejem podpira.</p>
                         <p>Kot drugič. Osnutek zakona zelo na splošno ureja ustanovitev, dejavnosti,
                            organizacijo, financiranje in nadzor nad zavodi, ki bodo opravljali t.i.
                            družbene dejavnosti. V tem oziru je podoben zveznemu zakonu o ustanovah,
@@ -3418,6 +3457,8 @@
                            xml:id="stage.t.6">PREKINJENA 20. NOVEMBRA 1990 OB 19.40 URI</time> IN SE
                         JE <time from="1990-11-21T10:25:00" xml:id="stage.t.7">NADALJEVALA 21.
                            NOVEMBRA 1990 OB 10.25 URI</time>.)</stage>
+                  </div>
+                  <div xml:id="div.1.1.2.9c" ana="#PAR.Prisot" corresp="#toc.2.13">
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
                         <p>Nadaljujemo z 10. sejo ZZD Skupščine Republike Slovenije, ki smo jo
@@ -3426,6 +3467,10 @@
                               <stage>(54 prisotnih.)</stage>
                         </p>
                         <p>Torej smo sklepčni in lahko nadaljujemo po predlogu dnevnega reda.</p>
+                     </sp>
+                  </div>
+                  <div xml:id="div.1.1.2.9d" corresp="#toc.2.14">
+                     <sp who="#sp.ZupančičJože">
                         <p>Za danes nam je ostalo še kar precej točk dnevnega reda. Včeraj smo
                            zaključili obravnavo 1., 2., 4., 9. in 11. točke dnevnega reda, točke 17
                            nismo sprejeli v dnevni red, točko 18 pa smo preložili. Tako so za
@@ -3673,7 +3718,7 @@
                            delo.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="12">
+                  <div xml:id="div.1.1.2.10" ana="#PAR.TDR" n="12" corresp="#toc.2.15">
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
                         <p>Hvala.</p>
@@ -4369,7 +4414,7 @@
                            from="1990-11-21T12:35:00" xml:id="stage.t.9">nadaljevala ob 12.35
                            uri</time>.)</stage>
                   </div>
-                  <div ana="#PAR.TDR" n="3">
+                  <div xml:id="div.1.1.2.11" ana="#PAR.TDR" n="3" corresp="#toc.2.16">
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
                         <p>Prisotnost. Ste vsi? <stage>(42 delegatov, 43.)</stage> Dobro, lahko
@@ -4605,22 +4650,16 @@
                         <p>S tem smo zaključili 3. točko dnevnega reda.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="5">
+                  <div xml:id="div.1.1.2.12" ana="#PAR.TDR" n="6, 7, 8" corresp="#toc.2.17">
                      <sp who="#sp.ZupančičJože">
                         <p>4. točko dnevnega reda smo že obravnavali in prehajamo na <title>5. TOČKO
                               DNEVNEGA REDA</title>.</p>
-                     </sp>
-                  </div>
-                  <div ana="#PAR.TDR" n="6, 7, 8">
-                     <sp who="#sp.ZupančičJože">
                         <p>To točko bi preložili in prehajamo na <title>6., 7. in 8. TOČKO DNEVNEGA
                               REDA SKUPAJ</title>.</p>
                         <p>Po tem ko smo poslušali uvodno obrazložitev dr. Jožeta Mencingerja na
                            skupnem zasedanju, predlagam, da opravimo razpravo k 6., 7. in 8. točki
                            skupaj. Se s tem strinjate? <stage>(Da.)</stage>
                         </p>
-                     </sp>
-                     <sp who="#sp.ZupančičJože">
                         <p>Prehajamo torej na obravnavo <title>PREDLOGA ZA IZDAJO ZAKONA O
                               PRIVATIZACIJI PODJETIJ Z OSNUTKOM ZAKONA, PREDLOGA ZA IZDAJO ZAKONA O
                               AGENCIJI REPUBLIKE SLOVENIJE ZA PRIVATIZACIJO Z OSNUTKOM ZAKONA,
@@ -5958,6 +5997,8 @@
                            xml:id="stage.t.10">PREKINJENA 21. NOVEMBRA 1990 OB 14.50 URI</time> IN
                         SE JE <time from="1990-11-27T10:15:00" xml:id="stage.t.11">NADALJEVALA 27.
                            NOVEMBRA 1990 OB 10.15 URI</time>.)</stage>
+                  </div>
+                  <div xml:id="div.1.1.2.13" ana="#PAR.Prisot" corresp="#toc.2.18">
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
                         <p>Spoštovani poslanci, dragi gostje, cenjeni novinarji! Nadaljujemo z 10.
@@ -5997,6 +6038,10 @@
                         <p>Pred veliko dvorano so razstavljene nove slike poplavljenih cest ob
                            katastrofalnih poplavah v Sloveniji in si jih boste lahko ogledali pred
                            začetkom skupne seje. In še naslednje:</p>
+                     </sp>
+                  </div>
+                  <div xml:id="div.1.1.2.13a" ana="#PAR.TDR" n="24" corresp="#toc.2.19">
+                     <sp who="#sp.ZupančičJože">
                         <p>Dovolite mi, da vas obvestim, da mi je naš delegat, dr. Primož Rode,
                            poslal <title>POBUDO, DA ZBOR ZDRUŽENEGA DELA UVRSTI NA DNEVNI RED
                               NADALJEVANJA 10. SEJE PREDLOG ZAKONA O ZAČASNI UREDITVI UGOVORA VESTI
@@ -6114,7 +6159,7 @@
                         <p>Dnevni red je soglasno sprejet.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="5">
+                  <div xml:id="div.1.1.2.14" ana="#PAR.TDR" n="5" corresp="#toc.2.20">
                      <sp who="#sp.ZupančičJože">
                         <p>In tako lahko pričnemo po našem s 1., po preteklem pa <title>5. TOČKO
                               DNEVNEGA REDA, INFORMACIJA ODBORA ZA VARSTVO POTROŠNIKOV V ZVEZI Z
@@ -6197,7 +6242,7 @@
                         <p>S tem smo zaključili, in sprejeli ta sklep, 5. točko dnevnega reda.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="10">
+                  <div xml:id="div.1.1.2.15" ana="#PAR.TDR" n="10" corresp="#toc.2.21">
                      <sp who="#sp.ZupančičJože">
                         <p>
                            <title>10. TOČKA DNEVNEGA REDA - PREDLOG ZA IZDAJO ZAKONA O
@@ -6298,7 +6343,7 @@
                            10. oziroma 2. točko današnjega dnevnega reda.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="13">
+                  <div xml:id="div.1.1.2.16" ana="#PAR.TDR" n="13" corresp="#toc.2.22">
                      <sp who="#sp.ZupančičJože">
                         <p>
                            <title>13. TOČKA DNEVNEGA REDA</title> to je, <title>PREDLOG ZA IZDAJO
@@ -6387,9 +6432,9 @@
                            vojaškimi invalidi, pa še na zdraviliško-klimatsko zdravljenje bi lahko
                            šli. Torej, ne glede na naštete spremembe, civilni invalidi vojne s tem
                            še niso v celoti izenačeni z obsegom varstva, ki je zagotovljen za
-                           vojaške invalide, čeprav je pri obojih izvor invalidnosti vojna. Glede
-                           na to, da seveda je treba upoštevati sedanje ekonomske možnosti,
-                           predlagamo poslancem, da ta predlog sprejmemo. Hvala lepa.</p>
+                           vojaške invalide, čeprav je pri obojih izvor invalidnosti vojna. Glede na
+                           to, da seveda je treba upoštevati sedanje ekonomske možnosti, predlagamo
+                           poslancem, da ta predlog sprejmemo. Hvala lepa.</p>
                      </sp>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
@@ -6443,7 +6488,7 @@
                            reda.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="14">
+                  <div xml:id="div.1.1.2.17" ana="#PAR.TDR" n="14" corresp="#toc.2.23">
                      <sp who="#sp.ZupančičJože">
                         <p>Pričenjamo sedaj po rednem postopku s <title>14. TOČKO DNEVNEGA
                               REDA</title>, to je <title>PREDLOG ZAKONA O SPREMEMBAH IN DOPOLNITVAH
@@ -6622,14 +6667,14 @@
                      <sp who="#sp.ArzenšekJože">
                         <speaker>DR. JOŽE ARZENŠEK:</speaker>
                         <p>Spoštovano predsedstvo, spoštovani zbor! Jaz mogoče ne bi direktno
-                           diskutiral v zvezi s samimi spremembami zakona. Sprašujem pa le, glede
-                           na to, da imamo vse več teh zakonov z določenimi "kozmetičnimi"
-                           spremembami, mogoče so pomembne spremembe, ali ne bi kazalo - če je v
-                           planu, da bo kompletno obnovljen ali pa kompletno nov zakon - te stvari,
-                           ki so takega značaja, reševati z odloki in bi na ta način praktično
-                           stvari premostili, razen če je to osnova za razpravo o takih spremembah,
-                           torej tistih, ki so potem že avtomatsko gradivo za obravnavo oziroma
-                           pripravo novega zakona določenega področja. Hvala.</p>
+                           diskutiral v zvezi s samimi spremembami zakona. Sprašujem pa le, glede na
+                           to, da imamo vse več teh zakonov z določenimi "kozmetičnimi" spremembami,
+                           mogoče so pomembne spremembe, ali ne bi kazalo - če je v planu, da bo
+                           kompletno obnovljen ali pa kompletno nov zakon - te stvari, ki so takega
+                           značaja, reševati z odloki in bi na ta način praktično stvari premostili,
+                           razen če je to osnova za razpravo o takih spremembah, torej tistih, ki so
+                           potem že avtomatsko gradivo za obravnavo oziroma pripravo novega zakona
+                           določenega področja. Hvala.</p>
                      </sp>
                      <sp who="#sp.MurkoDejan">
                         <speaker>DEJAN MURKO:</speaker>
@@ -6717,7 +6762,7 @@
                         <p>Čas za malico in kosilo imamo tričetrt na dvanajst.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="15">
+                  <div xml:id="div.1.1.2.18" ana="#PAR.TDR" n="15" corresp="#toc.2.24">
                      <sp who="#sp.ZupančičJože">
                         <p>
                            <title>15. TOČKA DNEVNEGA REDA</title>, to je <title>PREDLOG ZA IZDAJO
@@ -6764,7 +6809,7 @@
                            reda.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="16">
+                  <div xml:id="div.1.1.2.19" ana="#PAR.TDR" n="16" corresp="#toc.2.25">
                      <sp who="#sp.ZupančičJože">
                         <p>
                            <title>16. TOČKA DNEVNEGA REDA</title>, to je <title>PREDLOG ZAKONA O
@@ -6920,7 +6965,7 @@
                            potem prekvalificirali v odstavek, kar imate tudi v našem predlogu
                            amandmaja navedeno in tudi znižali kazni tam za približno 5-krat. Toliko,
                            predlagam pa, da gre ta zakon skozi z malo manj nagajanja, bi jaz celo
-                           rekel, kot je šel prejšnji. Hvala.            </p>
+                           rekel, kot je šel prejšnji. Hvala. </p>
                      </sp>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
@@ -7030,7 +7075,7 @@
                         <p>Tovariš predsednik, korektura. Ta tekst ni popolnoma točen. Tam je
                            tipkarska napaka, "ter priložiti potrdilo pristojnega organa, da ti
                            odmerja davek iz dejavnosti po dejanskem dohodku." Beseda "oziroma" pa
-                           ostaja v tekstu ... se nanaša na kmete.            </p>
+                           ostaja v tekstu ... se nanaša na kmete. </p>
                      </sp>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
@@ -7089,7 +7134,7 @@
                         </p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="17">
+                  <div xml:id="div.1.1.2.20" ana="#PAR.TDR" n="17" corresp="#toc.2.26">
                      <sp who="#sp.ZupančičJože">
                         <p>Bi pričeli z našo <title>17. TOČKO DNEVNEGA REDA</title>, to je
                               <title>POROČILO DELEGACIJE SKUPŠČINE REPUBLIKE SLOVENIJE V ZBORU
@@ -7117,7 +7162,7 @@
                         <p>Ugotavljam, da je zbor predlagani sklep sprejel z večino glasov.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="18">
+                  <div xml:id="div.1.1.2.21" ana="#PAR.TDR" n="18" corresp="#toc.2.27">
                      <sp who="#sp.ZupančičJože">
                         <p>
                            <title>18. TOČKA DNEVNEGA REDA - PREDLOG ZAKONA O RATIFIKACIJI SPORAZUMA
@@ -7145,7 +7190,7 @@
                         <p>Ugotavljam, da je predlagani odlok sprejet z večino glasov.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="19">
+                  <div xml:id="div.1.1.2.22" ana="#PAR.TDR" n="19" corresp="#toc.2.28">
                      <sp who="#sp.ZupančičJože">
                         <p>Imam občutek, da gremo prehitro.</p>
                         <p>
@@ -7171,7 +7216,7 @@
                         <p>Ugotavljam, da je zbor predlagani odlok sprejel soglasno.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="20">
+                  <div xml:id="div.1.1.2.23" ana="#PAR.TDR" n="20" corresp="#toc.2.29">
                      <sp who="#sp.ZupančičJože">
                         <p>
                            <title>20. TOČKA DNEVNEGA REDA - PREDLOG ZAKONA O RATIFIKACIJI KONVENCIJE
@@ -7270,7 +7315,7 @@
                         <p>Ugotavljam, da je zbor predlagani odlok sprejel soglasno.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="21">
+                  <div xml:id="div.1.1.2.24" ana="#PAR.TDR" n="21" corresp="#toc.2.30">
                      <sp who="#sp.ZupančičJože">
                         <p>Naslednja, <title>21. TOČKA DNEVNEGA REDA - PREDLOG ZAKONA O RATIFIKACIJI
                               PROTOKOLA O PRAVNI SPOSOBNOSTI TER PRIVILEGIJIH IN IMUNITETAH EVROPSKE
@@ -7291,7 +7336,7 @@
                         <p>Ugotavljam, da je zbor predlagani odlok sprejel soglasno.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="22">
+                  <div xml:id="div.1.1.2.25" ana="#PAR.TDR" n="22" corresp="#toc.2.31">
                      <sp who="#sp.ZupančičJože">
                         <p>
                            <title>22. TOČKA DNEVNEGA REDA - PREDLOG ZAKONA O RATIFIKACIJI SKLEPA
@@ -7324,7 +7369,7 @@
                            glasov.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="23">
+                  <div xml:id="div.1.1.2.26" ana="#PAR.TDR" n="23" corresp="#toc.2.32">
                      <sp who="#sp.ZupančičJože">
                         <p>
                            <title>23. TOČKA DNEVNEGA REDA - STALIŠČA SKUPŠČINE REPUBLIKE SLOVENIJE K
@@ -7417,7 +7462,7 @@
                            glasov.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="24">
+                  <div xml:id="div.1.1.2.27" ana="#PAR.TDR" n="24" corresp="#toc.2.33">
                      <sp who="#sp.ZupančičJože">
                         <p>In zdaj smo pri <title>24. TOČKI DNEVNEGA REDA - PREDLOG ZAKONA O ZAČASNI
                               UREDITVI UGOVORA VESTI V VOJAŠKI SLUŽBI</title>.</p>
@@ -7827,7 +7872,7 @@
                      </sp>
                      <stage type="time">(Seja je bila za kratek čas prekinjena.)</stage>
                   </div>
-                  <div ana="#PAR.TDR" n="5">
+                  <div xml:id="div.1.1.2.28" ana="#PAR.TDR" n="5" corresp="#toc.2.34">
                      <sp who="#sp.ZupančičJože">
                         <p>2<title>5. TOČKA DNEVNEGA REDA - POBUDE, VPRAŠANJA IN PREDLOGI
                               DELEGATOV</title>.</p>
@@ -7899,7 +7944,7 @@
                            Slovenije novačijo posamezne starešina JLA. O tem je pred kratkim pisal
                            tudi mariborski "Večer". Novačenje poteka s ciljem, da bi zbrali podatke
                            po poveljstvih, enotah, ustanovah JLA in pripadnikih armade ter da bi
-                           pridobili starešine za službo v t.i. republiški vojski.       </p>
+                           pridobili starešine za službo v t.i. republiški vojski. </p>
                         <p>Vse to lahko, če je treba, dokumentiram s konkretnimi podatki.</p>
                         <p>Postavljam vprašanje republiškemu sekretarju za ljudsko obrambo in
                            notranje zadeve: kdo to počne in s katerim ciljem?</p>
@@ -8083,7 +8128,7 @@
                            zaključili. Zdaj imamo samo še vprašanja medzborovskega usklajevanja.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="3">
+                  <div xml:id="div.1.1.2.29" ana="#PAR.TDR" n="3" corresp="#toc.2.35.1">
                      <sp who="#sp.ZupančičJože">
                         <p>Najprej bi pričeli s <title>3. TOČKO DNEVNEGA REDA, to je z IZDAJO ZAKONA
                               O SPREMEMBI ZAKONA O POKOJNINSKEM IN INVALIDSKEM ZAVAROVANJU S
@@ -8219,7 +8264,7 @@
                            naj on to tudi naprej pove.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="11">
+                  <div xml:id="div.1.1.2.30" ana="#PAR.TDR" n="11" corresp="#toc.2.35.2">
                      <sp who="#sp.RoginaBogo">
                         <speaker>BOGO ROGINA:</speaker>
                         <p>Mene so določili, da vodim to skupino za usklajevanje, s tem da že v tem
@@ -8394,8 +8439,8 @@
                            rekel, da ne poznam in verjetno nihče izmed nas ne pozna zakona oziroma
                            nekega akta, ki bi v potankosti opredelil vsako najmanjšo stvar. Vendar v
                            tem prehodnem obdobju kot smo, moramo nek krovni zakon imeti. Iz
-                           zdravstva lahko zagotovim, da se področni ali obrobni zakoni
-                           pripravljajo in bodo v najkrajšem času sprejeti.</p>
+                           zdravstva lahko zagotovim, da se področni ali obrobni zakoni pripravljajo
+                           in bodo v najkrajšem času sprejeti.</p>
                         <p>Jaz bi na koncu še tole vprašal: ne razumem, zakaj - in prosim, da mi
                            nekdo od tistih, ki so proti sprejemu tega zakona, v jasnem stavku pove
                            glavni razlog, zakaj so proti? Zakaj so proti? Glavni razlog, v enem
@@ -8429,9 +8474,9 @@
                            Sloveniji, ki bazira na teh prispevnih stopnjah, ki so za gospodarstvo
                            prevelike. In zaradi tega je treba nekaj narediti, da se ta nadgradnja
                            absolutno poceni. In jaz s tega aspekta gledam, ne okrniti dejavnost, ne
-                           atakirati nekakšno ustanovo, ampak razbremeniti in da se dejavnosti
-                           čisti denar nalije in da se tem dejavnostim nalije strokovnost in da
-                           poudarka strokovnosti.</p>
+                           atakirati nekakšno ustanovo, ampak razbremeniti in da se dejavnosti čisti
+                           denar nalije in da se tem dejavnostim nalije strokovnost in da poudarka
+                           strokovnosti.</p>
                         <p>Spet začenjamo debato kot zadnjič in se bojim, da bo ta točka najdaljša.
                            Hvala.</p>
                      </sp>
@@ -8685,7 +8730,7 @@
                         <p>Naslednja točka usklajevanja: več jih je in moramo počakati.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="16">
+                  <div xml:id="div.1.1.2.31" ana="#PAR.TDR" n="16" corresp="#toc.2.35.3">
                      <sp who="#sp.RoginaBogo">
                         <speaker>BOGO ROGINA:</speaker>
                         <p>Pri <title>16. TOČKI - PREDLOGU ZAKONA O SPREMEMBAH IN DOPOLNITVAH ZAKONA
@@ -8694,7 +8739,7 @@
                            drugi in tretji amandma. Upajmo, da bo šlo skozi.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="14">
+                  <div xml:id="div.1.1.2.32" ana="#PAR.TDR" n="14" corresp="#toc.2.35.4">
                      <sp who="#sp.RoginaBogo">
                         <p>
                            <title>14. TOČKA - PREDLOG ZAKONA O SPREMEMBI IN DOPOLNITVI ZAKONA O

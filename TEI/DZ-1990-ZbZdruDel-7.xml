@@ -79,6 +79,7 @@
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
          <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
@@ -90,6 +91,13 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2016-03-29+02:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
          <change when="2016-01-18+01:00">
             <name>Andrej Pančur</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -122,9 +130,10 @@
                <item>
                   <list rend="ordered">
                      <head>PRED DNEVNIM REDOM:                                      STRAN</head>
-                     <item n="1">Ugotavljanje prisotnosti delegatov .................... 1</item>
-                     <item n="2">Določitev dnevnega reda ............................... 1<list
-                           rend="simple">
+                     <item n="1" xml:id="toc.1.1">Ugotavljanje prisotnosti delegatov
+                        .................... 1</item>
+                     <item n="2" xml:id="toc.1.2">Določitev dnevnega reda
+                        ............................... 1<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>Marjan Starc .......................................... 1</item>
                         </list>
@@ -134,8 +143,8 @@
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED:</head>
-                     <item n="1">Določitev osnutka ustave Republike Slovenije .......... 2<list
-                           rend="simple">
+                     <item n="1" xml:id="toc.2.1">Določitev osnutka ustave Republike Slovenije
+                        .......... 2<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>dr. Jože Arzenšek ..................................... 3</item>
                            <item>Marino Domio .......................................... 3</item>
@@ -167,8 +176,10 @@
                            <item>dr. Matija Škof ...................................... 22</item>
                         </list>
                      </item>
-                     <item n="2">Seznam govornikov .................................... II</item>
-                     <item n="3">Priloga: zapisnik seje .............................. III</item>
+                     <item n="2" xml:id="toc.2.2">Seznam govornikov
+                        .................................... II</item>
+                     <item n="3" xml:id="toc.2.3">Priloga: zapisnik seje
+                        .............................. III</item>
                   </list>
                </item>
             </list>
@@ -248,9 +259,9 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.ZbZdruDel">
+         <div xml:id="div.1" ana="#PAR.ZbZdruDel">
             <head>ZBOR ZDRUŽENEGA DELA</head>
-            <div ana="#PAR.Seja" n="7">
+            <div xml:id="div.1.1" ana="#PAR.Seja" n="7">
                <head>7. seja</head>
                <docDate when="1990-10-12">(12. oktobra 1990)</docDate>
                <timeline origin="#TL.1" unit="s">
@@ -273,8 +284,8 @@
                <stage type="time">Seja se je <time from="1990-10-12T10:10:00" xml:id="stage.t.1"
                      >začela ob 10.10 uri</time>
                </stage>
-               <div ana="#PAR.PredDnevRed">
-                  <div ana="#PAR.Prisot">
+               <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.Prisot" corresp="#toc.1.1">
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
                         <p>Spoštovane poslanke in poslanci, dragi sodelavci in novinarji. Pričenjam
@@ -287,7 +298,7 @@
                            odsotnih.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.DolDnevRed">
+                  <div xml:id="div.1.1.1.2" ana="#PAR.DolDnevRed" corresp="#toc.1.2">
                      <sp who="#sp.ZupančičJože">
                         <p>Za današnjo sejo bi predlagal naslednji delovni red. Najprej bi tu delali
                            do 10.30. Potem se bomo zbrali v veliki dvorani Skupščine Republike
@@ -334,10 +345,6 @@
                         <p>54 za, 1 vzdržan, nihče proti.</p>
                         <p>Torej je dnevni red z večino glasov sprejet.</p>
                      </sp>
-                  </div>
-               </div>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR" n="1">
                      <sp who="#sp.ZupančičJože">
                         <p>Moram vam povedati še naslednje, mislim tam, ko ste se vi pogovarjali v
                            klubih in doma, ko ste pregledovali gradivo in seveda sami pri sebi in
@@ -360,6 +367,10 @@
                            dobre pol ure čas za malico. Potem pridemo sem in bomo ločeno po zborih
                            razpravljali o osnutku. Hvala lepa.</p>
                      </sp>
+                  </div>
+               </div>
+               <div xml:id="div.1.1.2" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.2.1" ana="#PAR.TDR" n="1" corresp="#toc.2.1">
                      <stage type="time">(Seja je bila <time to="1990-10-12T10:20:00"
                            xml:id="stage.t.2">prekinjena ob 10.20. uri</time> in se je <time
                            from="1990-10-12T11:55:00" xml:id="stage.t.3">nadaljevala ob 11.55

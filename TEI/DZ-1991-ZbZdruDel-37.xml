@@ -84,6 +84,7 @@
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
          <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
@@ -95,6 +96,13 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2016-04-01+02:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
          <change when="2016-02-25+01:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -127,14 +135,16 @@
                <item>
                   <list rend="ordered">
                      <head>PRED DNEVNIM REDOM:                                      STRAN</head>
-                     <item n="1">Ugotavljanje prisotnosti delegatov .................... 1</item>
-                     <item n="2">Določitev dnevnega reda ............................... 1</item>
+                     <item n="1" xml:id="toc.1.1">Ugotavljanje prisotnosti delegatov
+                        .................... 1</item>
+                     <item n="2" xml:id="toc.1.2">Določitev dnevnega reda
+                        ............................... 1</item>
                   </list>
                </item>
                <item>
                   <list rend="ordered">
-                     <item n="3">Obravnava predloga Ustave Republike Slovenije ......... 1<list
-                           rend="simple">
+                     <item n="3" xml:id="toc.2.3">Obravnava predloga Ustave Republike Slovenije
+                        ......... 1<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Andrej Muren .......................................... 2</item>
                            <item>Marko Jaklič .......................................... 3</item>
@@ -164,17 +174,18 @@
                            <item>Roman Jaklič ......................................... 17</item>
                         </list>
                      </item>
-                     <item n="4">Predlog ustavnega zakona za izvedbo Ustave Republike Slovenije
-                        .................................. 18</item>
-                     <item n="5">Nadaljevanje obravnave o predlogu Ustave Republike Slovenije
-                        .................................. 19<list rend="simple">
+                     <item n="4" xml:id="toc.2.4">Predlog ustavnega zakona za izvedbo Ustave
+                        Republike Slovenije .................................. 18</item>
+                     <item n="5" xml:id="toc.2.5">Nadaljevanje obravnave o predlogu Ustave Republike
+                        Slovenije .................................. 19<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>Zdravko Zabukovec .................................... 19</item>
                         </list>
                      </item>
-                     <item n="6">Nadaljevanje obravnave predloga ustavnega zakona za izvedbo Ustave
-                        Republike Slovenije ................ 20</item>
-                     <item n="7">Seznam govornikov .................................. II/1</item>
+                     <item n="6" xml:id="toc.2.6">Nadaljevanje obravnave predloga ustavnega zakona
+                        za izvedbo Ustave Republike Slovenije ................ 20</item>
+                     <item n="7" xml:id="toc.2.7">Seznam govornikov
+                        .................................. II/1</item>
                   </list>
                </item>
             </list>
@@ -257,9 +268,9 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.ZbZdruDel">
+         <div xml:id="div.1" ana="#PAR.ZbZdruDel">
             <head>ZBOR ZDRUŽENEGA DELA</head>
-            <div ana="#PAR.Seja" n="37">
+            <div xml:id="div.1.1" ana="#PAR.Seja" n="37">
                <head>37. seja</head>
                <docDate>(<date when="1991-12-23">23. december 1991</date>)</docDate>
                <timeline origin="#TL.1" unit="s">
@@ -281,8 +292,8 @@
                </castList>
                <stage type="time">Seja se je <time from="1991-12-23T10:12:00" xml:id="stage.t.1"
                      >pričela ob 10.12 uri</time>.</stage>
-               <div ana="#PAR.PredDnevRed">
-                  <div ana="#PAR.Prisot">
+               <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.Prisot" corresp="#toc.1.1">
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
                         <p>Poslanci, dragi gostje ter novinarji. Pričenjam 37. sejo Zbora združenega
@@ -295,7 +306,7 @@
                            lahko pravno-veljavno razpravlja in sklepa.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.DolDnevRed">
+                  <div xml:id="div.1.1.1.2" ana="#PAR.DolDnevRed" corresp="#toc.1.2">
                      <sp who="#sp.ZupančičJože">
                         <p>Najprej odločitev o dnevnem redu. Predlog dnevnega reda ste prejeli s
                            sklicem. Predlagani sta le dve točki dnevnega reda: predlog ustave
@@ -303,9 +314,10 @@
                            Republike Slovenije. Ali želi o predlogu dnevnega reda kdo razpravljati?
                            Ne želi. Če ne želi, bi zaključil razpravo in dajem predlog dnevnega reda
                            na glasovanje.</p>
-                        <p>Kdo je za predlog dnevnega reda? <stage>(53 delegatov za.)</stage></p>
-                        <p>Je kdo proti? <stage>(Nihče.)</stage> Vzdržani?
-                           <stage>(Nihče.)</stage></p>
+                        <p>Kdo je za predlog dnevnega reda? <stage>(53 delegatov za.)</stage>
+                        </p>
+                        <p>Je kdo proti? <stage>(Nihče.)</stage> Vzdržani? <stage>(Nihče.)</stage>
+                        </p>
                         <p>Ugotavljam, da je bil dnevni red sprejet soglasno.</p>
                         <p>In sedaj samo eno obvestilo. Takoj zdaj naj bi se zbori zbrali na skupnem
                            zasedanju, na katerem bomo poslušali uvodno besedo predsednika Komisije
@@ -330,7 +342,9 @@
                            danes tu, upam tudi do konca izpeljali.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="1">
+               </div>
+               <div xml:id="div.1.1.2" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.2.1" ana="#PAR.TDR" n="1" corresp="#toc.2.3">
                      <sp who="#sp.ZupančičJože">
                         <p>Pričenjam s <title> 1. TOČKO DNEVNEGA REDA</title>, to je z obravnavo
                               <title>PREDLOGA USTAVE REPUBLIKE SLOVENIJE</title>.</p>
@@ -410,13 +424,13 @@
                      <sp who="#sp.JakličMarko">
                         <speaker>MARKO JAKLIČ:</speaker>
                         <p>Spoštovani, imam samo proceduralno vprašanje, če ga lahko postavim.
-                              <stage who="#sp.ZupančičJože"><stage type="speaker">(Vmes
-                                 PREDSEDNIK:</stage> Prosim.)</stage> Danes je gospod PREDSEDNIK
-                           Skupščine gospod France Bučar govoril, povedal, da bo nastala velika
-                           havarija, če ustava ne bo sprejeta. Pa tudi sicer se govori, da če ustava
-                           ne bi bila sprejeta, da eno leto ne bi smela priti na dnevni red
-                           Skupščine. Zato sprašujem Komisijo za poslovnik, naj uradno da razlago za
-                           primer, če ustava danes ne bi bila sprejeta. Hvala.</p>
+                              <stage who="#sp.ZupančičJože">
+                              <stage type="speaker">(Vmes PREDSEDNIK:</stage> Prosim.)</stage> Danes
+                           je gospod PREDSEDNIK Skupščine gospod France Bučar govoril, povedal, da
+                           bo nastala velika havarija, če ustava ne bo sprejeta. Pa tudi sicer se
+                           govori, da če ustava ne bi bila sprejeta, da eno leto ne bi smela priti
+                           na dnevni red Skupščine. Zato sprašujem Komisijo za poslovnik, naj uradno
+                           da razlago za primer, če ustava danes ne bi bila sprejeta. Hvala.</p>
                      </sp>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
@@ -511,7 +525,8 @@
                      </sp>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
-                        <p>Hvala. Kdo želi še naprej razpravljati? <stage>(Aplavz.)</stage></p>
+                        <p>Hvala. Kdo želi še naprej razpravljati? <stage>(Aplavz.)</stage>
+                        </p>
                         <p>Ne vem, ali greš ti zdaj ven, ali greš na oder na tak čuden način? Gospod
                            Jože Arzenšek.</p>
                      </sp>
@@ -678,7 +693,8 @@
                            tem ženskem zaračunavajo mandatne kazni kadarkoli se pojavijo na cesti
                            brez feredže.</p>
                         <p>Stvar izgleda smešna, ampak tudi ta amandma je smešen, žaljiv in ogaben!
-                           Hvala. <stage>(Ploskanje.)</stage></p>
+                           Hvala. <stage>(Ploskanje.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
@@ -761,7 +777,8 @@
                            moški in ženske in mislim, da ne bo naš parlament tisti, jaz ne bi bila
                            rada vmes, ki bo znova spravil ženske na cesto, ker so imele edino na
                            cesti možnost povedati svoje mnenje, nas nekaj pa imamo možnost že tukaj.
-                           Hvala lepa.<stage>(Aplavz.)</stage></p>
+                           Hvala lepa.<stage>(Aplavz.)</stage>
+                        </p>
 
                      </sp>
                      <sp who="#sp.ZupančičJože">
@@ -1006,7 +1023,8 @@
                         <speaker>MARJAN STARC:</speaker>
                         <p>Imam še en predlog, verjetno ga boste še dobili na klop, bom pa prebral.
                               <stage>(Iz dvorane, da so že dobili na klop v zvezi z narodno
-                              manjšino.)</stage></p>
+                              manjšino.)</stage>
+                        </p>
                         <p>Ker živim na dvojezičnem območju in imam to srečo in prednost, da živimo
                            skupaj - mislim, da v Evropi nima vsakdo te sreče, čeprav je to značilno
                            za celoten evropski prostor in za sodobno Evropo, da bo vsak sodobni
@@ -1114,8 +1132,9 @@
                      <sp who="#sp.BizjakDarko">
                         <speaker>DARKO BIZJAK:</speaker>
                         <p>Hvala lepa. Mislim, da imamo čas, da razpravljamo. <stage
-                              who="#sp.ZupančičJože"><stage type="speaker">(ZUPANČIČ:</stage> Da,
-                              absolutno.)</stage></p>
+                              who="#sp.ZupančičJože">
+                              <stage type="speaker">(ZUPANČIČ:</stage> Da, absolutno.)</stage>
+                        </p>
                         <p>Najprej bi glede na razpravo gospe Žerovnikove samo nekaj pojasnil, ker
                            mi čisto profesionalna vest ne da miru. Mislim, da je velika razlika med
                            ustavo in zakonom. Ustava se sprejema kot osnovni akt - kot magna karta,
@@ -1150,7 +1169,8 @@
                            strokovnjaki in Ustavna komisija, je za mene toliko vredno, da si
                            zaslužijo posebno priznanje tega parlamenta in našega naroda. In jaz
                            predlagam, da mi ob današnjih zaključkih to priznanje tudi izglasujemo.
-                           Hvala lepa. <stage>(Ploskanje.)</stage></p>
+                           Hvala lepa. <stage>(Ploskanje.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
@@ -1213,7 +1233,7 @@
                            našemu zboru v nadaljevanju te seje.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="2">
+                  <div xml:id="div.1.1.2.2" ana="#PAR.TDR" n="2" corresp="#toc.2.4">
                      <sp who="#sp.ZupančičJože">
                         <p>S tem prekinjam to točko dnevnega reda in bi lahko pričeli z <title>2.
                               TOČKO DNEVNEGA REDA</title> še, ker moramo opraviti oboje, to je
@@ -1248,16 +1268,14 @@
                            xml:id="stage.t.4">prekinjena ob 12.38 uri</time> in se je <time
                            from="1991-12-23T16:16:00" xml:id="stage.t.5">nadaljevala ob 16.16
                            uri</time>.)</stage>
+                  </div>
+                  <div xml:id="div.1.1.2.3" ana="#PAR.TDR" n="1" corresp="#toc.2.5">
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
                         <p>Moramo nadaljevati z današnjo sejo. Sedaj je nekaj manj obiskovalcev ali
                            pa prisotnih, kot je bilo prijavljenih in imamo seveda dve možnosti: Ali
                            pridemo takoj k ustavi, ali pa še nekoliko počakamo in vidimo, kje so.
                            Ali je še mogoče danes kje kakšna seja ali ni? Še nismo sklepčni.</p>
-                     </sp>
-                  </div>
-                  <div ana="#PAR.TDR" n="1">
-                     <sp who="#sp.ZupančičJože">
                         <p>Mi bi nadaljevali s <title>1. TOČKO DANAŠNJEGA DNEVNEGA REDA</title>, to
                            je S <title>SPREJEMOM USTAVE REPUBLIKE SLOVENIJE V CELOTI</title>.</p>
                         <p>Najprej bi prisluhnili poročilu Komisije za ustavna vprašanja, ki bi ga
@@ -1348,7 +1366,7 @@
                            glasovanje, in sicer bi predlagal:</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.4" ana="#PAR.TDR" corresp="#toc.2.6">
                      <sp who="#sp.ZupančičJože">
                         <p>Uradni predlog ustave, o katerem odločamo, je torej besedilo, objavljeno
                            v 30. številki Poročevalca, skupaj z danes predloženima obema poročiloma
@@ -1356,19 +1374,22 @@
                         <p>Prisotnost: 72 delegatov.</p>
                         <p>Vprašam vas: Kdo je za predlog nove ustave Republike Slovenije v celoti?
                            Kdo je za? <stage>(62 delegatov.)</stage>
-                           <stage>(Ploskanje.)</stage> Kdo je proti? <stage>((4 delegati.)</stage>
+                           <stage>(Ploskanje.)</stage> Kdo je proti? <stage>(4 delegati.)</stage>
                            Vzdržani? (5 delegatov.)</p>
                         <p>Ugotavljam, da smo z veliko večino sprejeli predlog Ustave Republike
-                           Slovenije v celoti. <stage>(Ploskanje.)</stage></p>
+                           Slovenije v celoti. <stage>(Ploskanje.)</stage>
+                        </p>
                         <p>Predlagam, da še enkrat ugotovimo prisotnost in da tudi glasujemo o
                            predlogu ustavnega zakona o izvedbi ustave Republike Slovenije, in sicer
                            enako, kot sem že prej dejal, o besedilu, objavljenem v Poročevalcu št.
                            30, skupaj z danes predloženim poročilom Komisije za ustavna
                            vprašanja.</p>
-                        <p>Prisotnost: <stage>(72 delegatov.)</stage></p>
+                        <p>Prisotnost: <stage>(72 delegatov.)</stage>
+                        </p>
                         <p>Kdo je za predlog ustavnega zakona o izvedbi ustave Republike Slovenije.
                            Kdo je za? <stage>(69 delegatov.)</stage> Proti? <stage>(1
-                              delegat.)</stage> Vzdržani? <stage>(2 delegata.)</stage></p>
+                              delegat.)</stage> Vzdržani? <stage>(2 delegata.)</stage>
+                        </p>
                         <p>Ugotavljam, da smo tudi z veliko večino sprejeli predlog ustavnega zakona
                            o izvedbi Ustave Republike Slovenije.</p>
                         <p>S tem smo sedaj ta prvi del opravili in menim, da moramo seveda še

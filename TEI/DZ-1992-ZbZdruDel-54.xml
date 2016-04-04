@@ -78,6 +78,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
          <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
@@ -89,6 +90,13 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2016-04-01+02:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
          <change when="2016-01-18+01:00">
             <name>Andrej Pančur</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -121,9 +129,10 @@
                <item>
                   <list rend="ordered">
                      <head>PRED DNEVNIM REDOM:                                         STRAN</head>
-                     <item n="1">Ugotavljanje prisotnosti poslancev ....................... 1</item>
-                     <item n="2">Določitev dnevnega reda .................................. 1<list
-                           rend="simple">
+                     <item n="1" xml:id="toc.1.1">Ugotavljanje prisotnosti poslancev
+                        ....................... 1</item>
+                     <item n="2" xml:id="toc.1.2">Določitev dnevnega reda
+                        .................................. 1<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>Ivan Dretnik ............................................  1</item>
                         </list>
@@ -133,25 +142,27 @@
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED:</head>
-                     <item n="1">Predlog zakona o izvajanju resolucije Varnostnega sveta OZN
-                        št.757/92 ........................... 2<list rend="simple">
+                     <item n="1" xml:id="toc.2.1">Predlog zakona o izvajanju resolucije Varnostnega
+                        sveta OZN št.757/92 ........................... 2<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>Franc Erce ................................................
                               2</item>
                         </list>
                      </item>
-                     <item n="2">Predlog akta o potrditvi nasledstva glede konvencij, statutov in
-                        drugih mednarodnih sporazumov, ki predstavljajo akt o ustanovitvi
-                        mednarodnih organizacij ................................... 3</item>
-                     <item n="3">Predlog akta o notifikaciji nasledstva glede konvencij UNESCO,
-                        mednarodnih večstranskih pogodb o zračnem prometu, konvencij mednarodne
-                        organizacije dela, konvencij mednarodne pomorske organizacije, carinskih
-                        konvencij in nekaterih drugih mednarodnih večstranskih pogodb
-                         ..................................... 3</item>
-                     <item n="4">Predlog sprememb in dopolnitev poslovnika Skupščine Republike
-                        Slovenije ............................  4</item>
-                     <item n="5">Informacija o informaciji in varnostnem sistemu v Skupščini
-                        Republiki Slovenije ..........................  4<list rend="simple">
+                     <item n="2" xml:id="toc.2.2">Predlog akta o potrditvi nasledstva glede
+                        konvencij, statutov in drugih mednarodnih sporazumov, ki predstavljajo akt o
+                        ustanovitvi mednarodnih organizacij ...................................
+                        3</item>
+                     <item n="3" xml:id="toc.2.3">Predlog akta o notifikaciji nasledstva glede
+                        konvencij UNESCO, mednarodnih večstranskih pogodb o zračnem prometu,
+                        konvencij mednarodne organizacije dela, konvencij mednarodne pomorske
+                        organizacije, carinskih konvencij in nekaterih drugih mednarodnih
+                        večstranskih pogodb  ..................................... 3</item>
+                     <item n="4" xml:id="toc.2.4">Predlog sprememb in dopolnitev poslovnika
+                        Skupščine Republike Slovenije ............................  4</item>
+                     <item n="5" xml:id="toc.2.5">Informacija o informaciji in varnostnem sistemu v
+                        Skupščini Republiki Slovenije ..........................  4<list
+                           rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Ivan Dretnik ..............................................
                               4</item>
@@ -161,7 +172,7 @@
                               6</item>
                            <item>Davorin Bizjak ............................................
                               7</item>
-                           <item>dr.Janez Remškar ..........................................
+                           <item>dr. Janez Remškar ..........................................
                               8</item>
                            <item>dr. Primož Rode ...........................................
                               9</item>
@@ -195,10 +206,10 @@
                               16</item>
                         </list>
                      </item>
-                     <item n="6">Seznam govornikov .........................................
-                        II</item>
-                     <item n="7">Priloga : zapisnik seje ..................................
-                        III</item>
+                     <item n="6" xml:id="toc.2.6">Seznam govornikov
+                        ......................................... II</item>
+                     <item n="7" xml:id="toc.2.7">Priloga : zapisnik seje
+                        .................................. III</item>
                   </list>
                </item>
             </list>
@@ -257,9 +268,9 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.ZbZdruDel">
+         <div xml:id="div.1" ana="#PAR.ZbZdruDel">
             <head>ZBOR ZDRUŽENEGA DELA</head>
-            <div ana="#PAR.Seja" n="54">
+            <div xml:id="div.1.1" ana="#PAR.Seja" n="54">
                <head>54. seja</head>
                <docDate when="1992-10-14">(14. oktober 1992)</docDate>
                <timeline origin="#TL.1" unit="s">
@@ -275,8 +286,8 @@
                </castList>
                <stage type="time">Seja se je <time from="1992-10-14T11:40:00" xml:id="stage.t.1"
                      >pričela ob 11.40 uri</time>.</stage>
-               <div ana="#PAR.PredDnevRed">
-                  <div ana="#PAR.Prisot">
+               <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.Prisot" corresp="#toc.1.1">
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDNIK JOŽE ZUPANČIČ:</speaker>
                         <p>54. seja Zbora združenega dela Skupščine Republike Slovenije je bila
@@ -286,7 +297,7 @@
                            sklepamo.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.DolDnevRed">
+                  <div xml:id="div.1.1.1.2" ana="#PAR.DolDnevRed" corresp="#toc.1.2">
                      <sp who="#sp.ZupančičJože">
                         <p>Najprej dvoje: osnutek zapisnika 46. in 51. seje ste prejeli že za 53.
                            sejo zbora 7. oktobra in smo jo tudi sprejeli. Zato prvo točko umikam z
@@ -352,8 +363,8 @@
                      </sp>
                   </div>
                </div>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR" n="1">
+               <div xml:id="div.1.1.2" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.2.1" ana="#PAR.TDR" n="1" corresp="#toc.2.1">
                      <sp who="#sp.ZupančičJože">
                         <p>
                            <title>1. TOČKA DNEVNEGA REDA: PREDLOG ZAKONA O IZVAJANJU RESOLUCIJE
@@ -397,7 +408,7 @@
                         <p>Ugotavljam, da smo sprejeli zakon soglasno.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="2">
+                  <div xml:id="div.1.1.2.2" ana="#PAR.TDR" n="2" corresp="#toc.2.2">
                      <sp who="#sp.ZupančičJože">
                         <p>
                            <title>2. TOČKA DNEVNEGA REDA: PREDLOG AKTA O POTRDITVI NASLEDSTVA GLEDE
@@ -430,7 +441,7 @@
                         <p>Ugotavljam, da je predlog akta sprejet soglasno.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="3">
+                  <div xml:id="div.1.1.2.3" ana="#PAR.TDR" n="3" corresp="#toc.2.3">
                      <sp who="#sp.ZupančičJože">
                         <p>
                            <title>3. TOČKA DNEVNEGA REDA: PREDLOG AKTA O NOTIFIKACIJI NASLEDSTVA
@@ -456,7 +467,7 @@
                         <p>Ugotavljam, da je predlog akta sprejet soglasno.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="4">
+                  <div xml:id="div.1.1.2.4" ana="#PAR.TDR" n="4" corresp="#toc.2.4">
                      <sp who="#sp.ZupančičJože">
                         <p>
                            <title>4. TOČKA: PREDLOG SPREMEMB IN DOPOLNITEV POSLOVNIKA SKUPŠČINE
@@ -494,7 +505,7 @@
                            Velja?</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="5">
+                  <div xml:id="div.1.1.2.5" ana="#PAR.TDR" n="5" corresp="#toc.2.5">
                      <sp who="#sp.ZupančičJože">
                         <p>
                            <title>5. TOČKA DNEVNEGA REDA</title>, ki jo je predlagal gospod Dretnik,
