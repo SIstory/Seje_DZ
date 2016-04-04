@@ -25,7 +25,14 @@
             <xsl:variable name="govornikovo-ime">
                 <xsl:choose>
                     <xsl:when test="starts-with(tei:speaker,'PREDSEDNIK')">
-                        <xsl:value-of select="translate(substring-after(tei:speaker,'PREDSEDNIK '),':','')"/>
+                        <xsl:choose>
+                            <xsl:when test="contains(tei:speaker,' DR. ')">
+                                <xsl:value-of select="translate(substring-after(tei:speaker,'PREDSEDNIK DR. '),':','')"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="translate(substring-after(tei:speaker,'PREDSEDNIK '),':','')"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
                     </xsl:when>
                     <xsl:when test="starts-with(tei:speaker,'Predsednik')">
                         <xsl:value-of select="translate(substring-after(tei:speaker,'Predsednik '),':','')"/>
