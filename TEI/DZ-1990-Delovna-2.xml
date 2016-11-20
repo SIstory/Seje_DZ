@@ -93,6 +93,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2016-08-01+02:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2016-08-01+02:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-07-19+02:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -125,9 +137,9 @@
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED:                                               STRAN</head>
-                     <item n="1">Zahteva za uvrstitev zakona o spremembi in dopolnitvah zakona o posebnem
-                        prometnem davku na dnevni red skupne seje zborov ................................
-                        1<list rend="simple">
+                     <item n="1" xml:id="toc.1.1">Zahteva za uvrstitev zakona o spremembi in
+                        dopolnitvah zakona o posebnem prometnem davku na dnevni red skupne seje
+                        zborov ................................ 1<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Bogo Rogina ........................................... 1</item>
                            <item>mag. Rudi Šeligo ...................................... 2</item>
@@ -138,8 +150,9 @@
                      </item>
                      <note>NADALJEVANJE 2. DELOVNE SEJE SKUPŠČINE REPUBLIKE SLOVENIJE 4. OKTOBRA
                         1990</note>
-                     <item n="2">Nadaljevanje obravnave predloga zakona o spremembah in dopolnitvah zakona
-                        o posebnem prometnem davku ...... 5<list rend="simple">
+                     <item n="2" xml:id="toc.1.2">Nadaljevanje obravnave predloga zakona o
+                        spremembah in dopolnitvah zakona o posebnem prometnem davku ...... 5<list
+                           rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Bogo Rogina ........................................... 6</item>
                            <item>Viktor Brezar ......................................... 6</item>
@@ -155,7 +168,8 @@
                            <item>Leopold Frelih ....................................... 11 </item>
                         </list>
                      </item>
-                     <item n="3">Seznam govornikov .................................. II/1</item>
+                     <item n="3" xml:id="toc.1.3">Seznam govornikov
+                        .................................. II/1</item>
                   </list>
                </item>
             </list>
@@ -215,9 +229,9 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.VsiZbor">
+         <div xml:id="div.1" ana="#PAR.VsiZbor">
             <head>DELOVNA SKUPNA SEJA VSEH ZBOROV SKUPŠČINE REPUBLIKE SLOVENIJE</head>
-            <div ana="#PAR.Delovna" n="2">
+            <div xml:id="div.1.1" ana="#PAR.Delovna" n="2">
                <head>(2. seja - </head>
                <docDate>
                   <date when="1990-09-28">28. september</date> in <date when="1990-10-04">4. oktober
@@ -239,14 +253,14 @@
                </castList>
                <stage type="time">Seja se je <time from="1990-09-28T19:20:00" xml:id="stage.t.1"
                      >začela ob 19.2o uri</time>.</stage>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR">
+               <div xml:id="div.1.1.1" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.TDR" corresp="#toc.1.1">
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDUJOČI JOŽE ZUPANČIČ:</speaker>
                         <p>Na osnovi 62. člena ustave Republike Slovenije, je Zbor združenega dela
-                           Skupščine Republike Slovenije zahteval uvrstitev zakona o spremembi in
-                           dopolnitvah zakona o posebnem prometnem davku na <title>dnevni
-                              red</title> skupne seje Skupščine Republike Slovenije.</p>
+                           Skupščine Republike Slovenije zahteval uvrstitev <title>zakona o
+                              spremembi in dopolnitvah zakona o posebnem prometnem davku</title> na
+                           dnevni red skupne seje Skupščine Republike Slovenije.</p>
                         <p>S predsednikom Skupščine Republike Slovenije dr. Bučarjem smo se
                            odgovorili, da ta del skupne seje, ko gre za odločanje o spornem
                            vprašanju, vodimo predsedniki zborov.</p>
@@ -460,10 +474,12 @@
                         <p>Tu me oba predsedujoča opozarjata, da bi bilo najbolj pošteno, da pred
                            nadaljevanjem razprave ugotovimo, če smo sploh lahko sklepčni. Bi šli po
                            zborih?</p>
-                        <p>Prisotni: Družbenopolitični zbor? <stage>(39 prisotnih.)</stage> Lahko
-                           ponovimo? Koliko je prisotnih poslancev in poslank iz Družbenopolitičnega
-                           zbora? Dobro. Koliko iz Zbora občin? <stage>(30 prisotnih.)</stage> Iz
-                           Zbora združenega dela? <stage>(35 prisotnih.)</stage></p>
+                        <p>Prisotni: Družbenopolitični zbor? <stage type="quorum">(39
+                              prisotnih.)</stage> Lahko ponovimo? Koliko je prisotnih poslancev in
+                           poslank iz Družbenopolitičnega zbora? Dobro. Koliko iz Zbora občin?
+                              <stage type="quorum">(30 prisotnih.)</stage> Iz Zbora združenega dela?
+                              <stage type="quorum">(35 prisotnih.)</stage>
+                        </p>
                         <p>S tem prekinjamo naše zasedanje in se bi prihodnjič pač tudi o teh
                            stvareh naprej pogovarjali. Hvala.</p>
                      </sp>
@@ -485,7 +501,7 @@
                         <p/>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.1.2" ana="#PAR.TDR" corresp="#toc.1.2">
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDUJOČI JOŽE ZUPANČIČ:</speaker>
                         <p>Spoštovane poslanke, poslanci, gostje in novinarji. Nadaljujemo s skupno
@@ -886,36 +902,43 @@
                            rečem, ta majhen sloj ljudi, sedaj ni imel nihče nič proti. Predlagal bi,
                            da ugotovimo našo navzočnost, potem pa štirikrat glasujemo. Baje je treba
                            po zborih. Ali je lahko skupaj? Ne! Družbenopolitični zbor, lepo vas
-                           prostim, dajte pritisniti gumb! Družbenopolitični. Ste? <stage>(52
-                              delegatov.)</stage> Hvala. Zbor občin? Imam malo manj izkušenj.
-                              <stage>(50 delegatov.)</stage> In še Zbor Združenega dela! <stage>(59
-                              delegatov.)</stage></p>
+                           prostim, dajte pritisniti gumb! Družbenopolitični. Ste? <stage
+                              type="vote">(52 delegatov.)</stage> Hvala. Zbor občin? Imam malo manj
+                           izkušenj. <stage type="vote">(50 delegatov.)</stage> In še Zbor
+                           Združenega dela! <stage type="vote">(59 delegatov.)</stage>
+                        </p>
                         <p>Torej smo sklepčni. Sedaj ste videli, to proceduro moramo pripeljati do
                            kraja. Prvo glasovanje je: prva alinea 2. in 3. točke se spremeni tako,
                            da se glasi: "Občani, ki opravljajo gospodarsko dejavnost kot stalni
                            poklic in vodijo poslovne knjige oziroma evidence v skladu z zakonom o
                            davkih občanov."</p>
                         <p>Tu smo to opredelili na obrtnike. Kdo je za to, da to sprejmemo?</p>
-                        <p>Kdo je za? Ste? <stage>(149 delegatov.)</stage> Kdo je proti? <stage>(3
-                              delegati.)</stage> Koliko vas je vzdržanih? <stage>(4
-                              delegati.)</stage></p>
+                        <p>Kdo je za? Ste? <stage type="vote">(149 delegatov.)</stage> Kdo je proti?
+                              <stage type="vote">(3 delegati.)</stage> Koliko vas je vzdržanih?
+                              <stage type="vote">(4 delegati.)</stage>
+                        </p>
                         <p>Torej je prvi amandma z veliko večino glasov sprejet.</p>
                         <p>Na glasovanje dajem amandma; da se v prvem členu predloga zakona črtajo
                            druga alinea nove druge in nove tretje točke. Tu gre za kmete. Kdo je za
                            to, da se ta amandma, tako kot je predložen, sprejme?</p>
-                        <p>Kdo je za? <stage>(141 delegatov.)</stage> Koliko vas je proti? <stage>(6
-                              delegatov.)</stage> Vzdržanih? <stage>(8 delegatov.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(141 delegatov.)</stage> Koliko vas je
+                           proti? <stage type="vote">(6 delegatov.)</stage> Vzdržanih? <stage
+                              type="vote">(8 delegatov.)</stage>
+                        </p>
                         <p>Tudi drugi amandma je z veliko večino sprejet.</p>
                         <p>Tretji amandma ima redakcijski značaj in bi lahko o vseh treh amandmajih
                            a, b, in pa c glasovali istočasno, ker gre samo za spremembo teksta. Kdo
                            nasprotuje temu? Nihče. Kdo je za sprejem tega amandmaja?</p>
-                        <p>Kdo je za? <stage>(151 delegatov.)</stage> Koliko vas je proti? <stage>(3
-                              delegati.)</stage> Vzdržanih? <stage>(7 delegatov.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(151 delegatov.)</stage> Koliko vas je
+                           proti? <stage type="vote">(3 delegati.)</stage> Vzdržanih? <stage
+                              type="vote">(7 delegatov.)</stage>
+                        </p>
                         <p>Torej so amandmaji sprejeti.</p>
                         <p>Na glasovanje dajem še zakon z amandmaji v celoti.</p>
-                        <p>Kdo je za? <stage>(149 delegatov.)</stage> Kdo je proti? <stage>(6
-                              delegatov.)</stage> Koliko je vzdržanih? <stage>(5
-                           delegatov.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(149 delegatov.)</stage> Kdo je proti?
+                              <stage type="vote">(6 delegatov.)</stage> Koliko je vzdržanih? <stage
+                              type="vote">(5 delegatov.)</stage>
+                        </p>
                         <p>Torej je z veliko večino zakon z amandmaji sprejet.</p>
                         <p>In s tem zaključujem to skupno sejo. Hvala lepa.</p>
                      </sp>

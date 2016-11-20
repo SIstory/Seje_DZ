@@ -31,8 +31,7 @@
             <pubPlace>https://github.com/SIstory/Seje_DZ/tree/master/</pubPlace>
             <availability status="free">
                <licence>http://creativecommons.org/licenses/by/4.0/</licence>
-               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/"
-                     >Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
+               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
                </p>
             </availability>
             <date when="2016-07-20+02:00"/>
@@ -53,9 +52,7 @@
                      <date>(6. marec 1991)</date>
                   </imprint>
                </monogr>
-               <ref
-                  target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=9DEF09211CD851D5C1257CA00037F35C"
-                     >(<date>2016-04-12</date>)</ref>
+               <ref target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=9DEF09211CD851D5C1257CA00037F35C">(<date>2016-04-12</date>)</ref>
             </biblStruct>
             <biblFull>
                <titleStmt>
@@ -67,10 +64,10 @@
                   <publisher>Državni zbor Republike Slovenije</publisher>
                   <availability status="free">
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="slv">Avtorske pravice so potekle, delo je v javni
+                              xml:lang="slv">Avtorske pravice so potekle, delo je v javni
                         domeni.</licence>
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="eng">Public Domain Mark 1.0</licence>
+                              xml:lang="eng">Public Domain Mark 1.0</licence>
                   </availability>
                </publicationStmt>
             </biblFull>
@@ -82,7 +79,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -93,6 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2016-11-19+01:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2016-11-19+01:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-07-20+02:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -125,15 +134,14 @@
                <item>
                   <list rend="ordered">
                      <head>PRED DNEVNIM REDOM:                                         STRAN</head>
-                     <item n="1">Ugotavljanje prisotnosti delegatov ..................... 1</item>
-                     <item n="2">Določitev dnevnega reda ................................ 1</item>
+                     <item n="1" xml:id="toc.1.1">Ugotavljanje prisotnosti delegatov ..................... 1</item>
+                     <item n="2" xml:id="toc.1.2">Določitev dnevnega reda ................................ 1</item>
                   </list>
                </item>
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED:</head>
-                     <item n="1">Predlog zakona o zasebnem delu ......................... 2<list
-                           rend="simple">
+                     <item n="1" xml:id="toc.2.1">Predlog zakona o zasebnem delu ......................... 2<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Bogo Rogina ............................................ 3</item>
                            <item>Janez Kopač ............................................ 3</item>
@@ -158,11 +166,11 @@
                            <item>Leopold Frelih ........................................ 16</item>
                         </list>
                      </item>
-                     <item n="2">Predlog odloka o spremembi odloka o sestavi in številu članov
+                     <item n="2" xml:id="toc.2.2">Predlog odloka o spremembi odloka o sestavi in številu članov
                         Zakonodajno-pravne komisije Skupščine Republike Slovenije
                         ......................... 16</item>
-                     <item n="3">Seznam govornikov ..................................... II</item>
-                     <item n="4">Priloga: zapisnik seje ............................... III</item>
+                     <item n="3" xml:id="toc.2.3">Seznam govornikov ..................................... II</item>
+                     <item n="4" xml:id="toc.2.4">Priloga: zapisnik seje ............................... III</item>
                   </list>
                </item>
             </list>
@@ -239,9 +247,9 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.VsiZbor">
+         <div xml:id="div.1" ana="#PAR.VsiZbor">
             <head>DELOVNA SKUPNA SEJA</head>
-            <div ana="#PAR.Delovna" n="4">
+            <div xml:id="div.1.1" ana="#PAR.Delovna" n="4">
                <head>4. SEJA</head>
                <docDate>(<date when="1991-03-06">6. marec 1991</date>)</docDate>
                <timeline origin="#TL.1" unit="s">
@@ -252,10 +260,9 @@
                      <roleDesc>Predsedoval</roleDesc>: <actor xml:id="sp.BizjakIvan">Ivan
                         Bizjak</actor>, <role>predsednik Zbora občin</role>.</castItem>
                </castList>
-               <stage type="time">Seja se je <time from="1991-03-06T10:15:00" xml:id="stage.t.1"
-                     >pričela ob 10.15 uri</time>.</stage>
-               <div ana="#PAR.PredDnevRed">
-                  <div ana="#PAR.DolDnevRed">
+               <stage type="time">Seja se je <time from="1991-03-06T10:15:00" xml:id="stage.t.1">pričela ob 10.15 uri</time>.</stage>
+               <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.DolDnevRed" corresp="#toc.1.2">
                      <sp who="#sp.BizjakIvan">
                         <speaker>PREDSEDUJOČI IVAN BIZJAK:</speaker>
                         <p>Spoštovane poslanke, spoštovani poslanci, gospe in gospodje, pričenjamo
@@ -284,18 +291,20 @@
                            seji ob pogoju sklepčnosti, kakor sem prej povedal.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.Prisot">
+                  <div xml:id="div.1.1.1.2" ana="#PAR.Prisot" corresp="#toc.1.1">
                      <sp who="#sp.BizjakIvan">
                         <p>Zato ugotovimo torej, koliko je <title>prisotnih</title> najprej poslank
                            in poslancev iz Družbenopolitičnega zbora. Prosim Družbenopolitični zbor,
-                           da pritisnete na tipke! <stage>(36 delegatov prisotnih.)</stage>
+                           da pritisnete na tipke! <stage type="quorum">(36 delegatov prisotnih.)</stage>
                            Predlagam, da to ponovimo, ker naj bi bil po podatkih službe zbor
                            sklepčen in morda niste vsi tukaj. Družbenopolitični zbor, lepo prosim,
-                           da pritisnete vsi na tipko! <stage>(37 delegatov prisotnih.)</stage> Vse
+                           da pritisnete vsi na tipko! <stage type="quorum">(37 delegatov prisotnih.)</stage> Vse
                            tako kaže, da Družbenopolitični zbor za zdaj ni sklepčen.</p>
-                        <p>Poglejmo med tem druga zbora. Prisotnost Zbora občin, prosim! <stage>(57
-                              delegatov.)</stage></p>
-                        <p>Poglejmo še Zbor združenega dela! <stage>(61 delegatov.)</stage></p>
+                        <p>Poglejmo med tem druga zbora. Prisotnost Zbora občin, prosim! <stage type="vote">(57
+                              delegatov.)</stage>
+                        </p>
+                        <p>Poglejmo še Zbor združenega dela! <stage type="vote">(61 delegatov.)</stage>
+                        </p>
                         <p>Druga zbora sta torej sklepčna.</p>
                         <p>Iz Družbenopolitičnega zbora je prišla še ena delegatka, medtem še
                            štirje, pa bo tudi ta zbor sklepčen. Za ta čas pa počakajmo tukaj.
@@ -303,7 +312,7 @@
                            samo druga zbora.</p>
                         <p>Če dovolite, preverimo ponovno prisotnost Družbenopolitičnega zbora. Samo
                            trenutek, da izbrišem. Prisotnost Družbenopolitičnega zbora, prosim vse,
-                           da pritisnete tipko! <stage>(45 prisotnih.)</stage> Dobro. Se pravi, tudi
+                           da pritisnete tipko! <stage type="quorum">(45 prisotnih.)</stage> Dobro. Se pravi, tudi
                            Družbenopolitični zbor je sklepčen, ostala dva sta bila že prej
                            sklepčna.</p>
                         <p>Ugotavljam, da je navzoča večina vseh delegatov vsakega zbora in je s tem
@@ -311,12 +320,10 @@
                      </sp>
                   </div>
                </div>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR">
+               <div xml:id="div.1.1.2" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.2.1" ana="#PAR.TDR" corresp="#toc.2.1">
                      <sp who="#sp.BizjakIvan">
-                        <p>Prehajamo na odločanje</p>
-                        <p>
-                           <title>O SPORNIH VPRAŠANJIH PRI PREDLOGU ZAKONA O ZASEBNEM
+                        <p>Prehajamo na odločanje <title>O SPORNIH VPRAŠANJIH PRI PREDLOGU ZAKONA O ZASEBNEM
                            DELU</title>.</p>
                         <p>Vsi trije zbori so v enakem besedilu sprejeli naslednje amandmaje.
                            Amandmaje Zakonodajno-pravne komisije k 1., 3., 4., 6. členu, k temu
@@ -1080,31 +1087,32 @@
                            popravke v 13. in 21. členu, v katerih se v vsakem črta zadnja
                            alinea.</p>
                         <p>Preden glasujemo, ugotovimo prisotnost v zborih. Najprej
-                           Družbenopolitični zbor, prosim! <stage>(60 prisotnih.)</stage> Zbor
-                           občin? <stage>(71 prisotnih.)</stage> Zbor združenega dela? <stage>(66
-                              prisotnih.)</stage></p>
+                           Družbenopolitični zbor, prosim! <stage type="quorum">(60 prisotnih.)</stage> Zbor
+                           občin? <stage type="quorum">(71 prisotnih.)</stage> Zbor združenega dela? <stage type="quorum">(66
+                              prisotnih.)</stage>
+                        </p>
                         <p>Ugotavljam, da so vsi trije zbori sklepčni.</p>
                         <p>Glasujemo o amandmaju Zbora združenega dela k drugemu odstavku 3. člena z
                            redakcijskimi popravki v 13. in 21. členu, kot ste slišali se amandma
                            glasi: drugi odstavek 3. člena se črta.</p>
                         <p>Kdor je za ta amandma, glasujemo seveda vsi, ker je to skupna seja. Kdor
-                           je za, naj glasuje! <stage>(82 delegatov za.)</stage> Kdo je proti?
-                              <stage>(70 delegatov proti.)</stage> Se je kdo vzdržal? <stage>(49
-                              delegatov vzdržanih.)</stage></p>
+                           je za, naj glasuje! <stage type="vote">(82 delegatov za.)</stage> Kdo je proti?
+                              <stage type="vote">(70 delegatov proti.)</stage> Se je kdo vzdržal? <stage type="vote">(49
+                              delegatov vzdržanih.)</stage>
+                        </p>
                         <p>Ugotavljam, da amandma ni sprejet.</p>
                         <p>Glasovati moramo še o predlogu zakona o zasebnem delu v celoti?
                            Prisotnost se medtem ni spreminjala, zato lahko kar glasujemo.</p>
-                        <p>Kdor je za predlog zakona, naj glasuje! <stage>(79 delegatov za.)</stage>
-                           Kdo je proti? <stage>(85 delegatov proti.)</stage> Se je kdo vzdržal?
-                              <stage>(35 delegatov vzdržanih.)</stage></p>
+                        <p>Kdor je za predlog zakona, naj glasuje! <stage type="vote">(79 delegatov za.)</stage>
+                           Kdo je proti? <stage type="vote">(85 delegatov proti.)</stage> Se je kdo vzdržal?
+                              <stage type="vote">(35 delegatov vzdržanih.)</stage>
+                        </p>
                         <p>Ugotavljam, da predlog zakona o zasebnem delu ni sprejet.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.2" ana="#PAR.TDR" corresp="#toc.2.2">
                      <sp who="#sp.BizjakIvan">
-                        <p>Prehajamo na odločanje</p>
-                        <p>
-                           <title>O SPORNIH VPRAŠANJIH PRI PREDLOGU ODLOKA O SPREMEMBI ODLOKA O
+                        <p>Prehajamo na odločanje <title>O SPORNIH VPRAŠANJIH PRI PREDLOGU ODLOKA O SPREMEMBI ODLOKA O
                               SESTAVI  IN ŠTEVILU ČLANOV ZAKONODAJNO-PRAVNE KOMISIJE SKUPŠČINE
                               REPUBLIKE SLOVENIJE</title>.</p>
                         <p>Komisija Skupščine Republike Slovenije za volitve, imenovanja in
@@ -1171,16 +1179,18 @@
                            Zakonodajno-pravne komisije ter se usklajen predlog ponovno predloži
                            Komisiji za volitve, imenovanja in administrativne zadeve.</p>
                         <p>Glasovali bomo o tem predlogu. Želi kdo tukaj obrazložiti svoj glas?
-                              <stage>(Ne želi.)</stage> Prehajamo na glasovanje.</p>
-                        <p>Najprej ugotovimo prisotnost po zborih. Družbenopolitični zbor <stage>(58
-                              delegatov prisotnih.)</stage>, Zbor občin <stage>(58 delegatov
-                              prisotnih.)</stage>, Zbor združenega dela <stage>(58 delegatov
-                              prisotnih.)</stage></p>
+                              <stage type="debate">(Ne želi.)</stage> Prehajamo na glasovanje.</p>
+                        <p>Najprej ugotovimo prisotnost po zborih. Družbenopolitični zbor <stage type="quorum">(58
+                              delegatov prisotnih.)</stage>, Zbor občin <stage type="quorum">(58 delegatov
+                              prisotnih.)</stage>, Zbor združenega dela <stage type="quorum">(58 delegatov
+                              prisotnih.)</stage>
+                        </p>
                         <p>Ugotavljam, da je skupna seja sklepčna. Glasujemo o pravkar prebranem
                            predlogu.</p>
-                        <p>Kdo je za predlog, naj prosim, glasuje. <stage>(110 delegatov
-                              za.)</stage> Je kdo proti? <stage>(48 delegatov proti.)</stage> Se je
-                           kdo vzdržal? <stage>(20 delegatov vzdržanih.)</stage></p>
+                        <p>Kdo je za predlog, naj prosim, glasuje. <stage type="vote">(110 delegatov
+                              za.)</stage> Je kdo proti? <stage type="vote">(48 delegatov proti.)</stage> Se je
+                           kdo vzdržal? <stage type="vote">(20 delegatov vzdržanih.)</stage>
+                        </p>
                         <p>Ugotavljam, da je sporazumni predlog skupne komisije k predlogu odloka o
                            spremembi odloka o sestavi in številu članov Zakonodajno-pravne komisije
                            sprejet z večino glasov vseh delegatov vseh zborov na seji.</p>
@@ -1197,8 +1207,7 @@
                            obravnavala stanovanjski zakon.</p>
                         <p>Po tej skupni seji pa bomo nadaljevali po zborih.</p>
                      </sp>
-                     <stage type="time">(Delovna skupna seja je bila <time to="1991-03-06T11:35:00"
-                           xml:id="stage.t.2">končana ob 11.35 uri</time>.)</stage>
+                     <stage type="time">(Delovna skupna seja je bila <time to="1991-03-06T11:35:00" xml:id="stage.t.2">končana ob 11.35 uri</time>.)</stage>
                   </div>
                </div>
             </div>

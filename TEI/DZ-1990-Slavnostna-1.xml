@@ -31,8 +31,7 @@
             <pubPlace>https://github.com/SIstory/Seje_DZ/tree/master/</pubPlace>
             <availability status="free">
                <licence>http://creativecommons.org/licenses/by/4.0/</licence>
-               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/"
-                     >Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
+               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
                </p>
             </availability>
             <date when="2016-07-19+02:00"/>
@@ -53,9 +52,7 @@
                      <date>(26. december 1990)</date>
                   </imprint>
                </monogr>
-               <ref
-                  target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=BB0F30C66E9869FFC1257C8D003852DC"
-                     >(<date>2016-04-12</date>)</ref>
+               <ref target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=BB0F30C66E9869FFC1257C8D003852DC">(<date>2016-04-12</date>)</ref>
             </biblStruct>
             <biblFull>
                <titleStmt>
@@ -67,10 +64,10 @@
                   <publisher>Državni zbor Republike Slovenije</publisher>
                   <availability status="free">
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="slv">Avtorske pravice so potekle, delo je v javni
+                              xml:lang="slv">Avtorske pravice so potekle, delo je v javni
                         domeni.</licence>
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="eng">Public Domain Mark 1.0</licence>
+                              xml:lang="eng">Public Domain Mark 1.0</licence>
                   </availability>
                </publicationStmt>
             </biblFull>
@@ -93,6 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2016-11-19+01:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2016-11-19+01:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-07-19+02:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -125,21 +134,21 @@
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED:                                            STRAN</head>
-                     <item n="1">Uvodni pozdravni nagovor predsednika Skupščine Republike Slovenije
+                     <item n="1" xml:id="toc.1.1">Uvodni pozdravni nagovor predsednika Skupščine Republike Slovenije
                         ob razglasitvi rezultatov plebiscita
                         ............................................ 1<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>dr. France Bučar ...................................... 1</item>
                         </list>
                      </item>
-                     <item n="2">Govor predsednika Predsedstva Republike Slovenije ob razglasitvi
+                     <item n="2" xml:id="toc.1.2">Govor predsednika Predsedstva Republike Slovenije ob razglasitvi
                         rezultatov plebiscita o samostojnosti in neodvisnosti Republike Slovenije
                         .......................... 3<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>Milan Kučan ........................................... 3</item>
                         </list>
                      </item>
-                     <item n="3">Seznam govornikov .................................. II/1</item>
+                     <item n="3" xml:id="toc.1.3">Seznam govornikov .................................. II/1</item>
 
                   </list>
                </item>
@@ -161,9 +170,9 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.VsiZbor">
+         <div xml:id="div.1" ana="#PAR.VsiZbor">
             <head>SLAVNOSTNA SKUPNA SEJA VSEH ZBOROV SKUPŠČINE REPUBLIKE SLOVENIJE</head>
-            <div ana="#PAR.Slavnostna" n="1">
+            <div xml:id="div.1.1" ana="#PAR.Slavnostna" n="1">
                <head>1. seja</head>
                <docDate>(<date when="1990-12-26">26. december 1990</date>)</docDate>
                <timeline origin="#TL.1" unit="s">
@@ -176,139 +185,143 @@
                         Skupščine Republike Slovenije</role>
                   </castItem>
                </castList>
-               <stage type="time">Seja se je <time from="1990-12-26T18:00:00" xml:id="stage.t.1"
-                     >pričela ob 18.00 uri</time>.</stage>
-            </div>
-            <div ana="#PAR.DnevRed">
-               <div ana="#PAR.TDR">
-                  <sp who="#sp.BučarFrance">
-                     <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
-                     <p>Spoštovane poslanke, spoštovani poslanci, cenjeni gostje! Začenjam skupno
-                        sejo vseh zborov Skupščine Republike Slovenije, ki sem jo sklical v skladu z
-                        določbami 10. člena zakona o plebiscitu o samostojnosti in neodvisnosti
-                        Republike Slovenije. Poleg poslancev vseh zborov so na seji navzoči tudi
-                        gostje, ki jih ob tej priliki prisrčno pozdravljam. Posebej pozdravljam g.
-                        Milana Kučana, predsednika Predsedstva Republike Slovenije skupaj s člani
-                        Predsedstva Republike Slovenije, gospoda dr. Janeza Drnovška, člana
-                        predsedstva SFRJ iz Republike Slovenije. Naj velja v naprej tudi moj pozdrav
-                        tudi gospodu Lojzetu Peterletu, predsedniku Izvršnega sveta, ki je zaenkrat
-                        še zadržan, še ni mogel iz Beograda, ker nekoliko zamuja letalo. Torej
-                        pozdravljam vse skupaj s podpredsednikom in člani Izvršnega sveta Skupščine
-                        Republike Slovenije. Dr. Alojzija Šuštarja, nadškofa in metropolita
-                        ljubljanskega. V posebno veselje mi je, da se je te naše seje udeležilo
-                        lahko tudi nekaj članov Slovenskega narodno-osvobodilnega sveta Matija
-                        Maležič, Jože Penca, Bogdan Osolnik, Mara Ropena-Osolnik, ki jih lepo
-                        pozdravljam. V posebno čast mi je, da lahko pozdravim tudi delegacijo Sabora
-                        Republike Hrvatske, ki jo vodi dr. Žarko Domljan, predsednik Sabora. Nadalje
-                        pozdravljam predstavnike parlamentarnih političnih strank oz. zvez,
-                        predstavnike pravosodnih ustanov republike, predstavnike SAZU, Univerze v
-                        Ljubljani in Univerze v Mariboru, člane Zveznega izvršnega sveta in druge
-                        funkcionarje v zveznih organih iz Republike Slovenije, g. Gaborja Boghia,
-                        generalnega konzula Republike Madžarske in predstavnike slovenskih
-                        organizacij iz Avstrije in Italije. Na današnjo sejo smo povabili tudi
-                        predsednika Republike Hrvatske, dr. Franja Tu|mana, ki pa se povabilu ni
-                        mogel odzvati, pač pa se je predsedniku Predsedstva Republike Slovenije
-                        Milanu Kučanu odzval in poslal pozdravno pismo naslednje vsebine: "Z
-                        zadovoljstvom sem prejel vaše vabilo za sejo vseh zborov Skupščine Republike
-                        Slovenije. Z obžalovanjem vas moram obvestiti, da kljub veliki želji, zaradi
-                        prej načrtovanih in neodložljivih obveznosti ne morem prisostvovati
-                        slavnostni seji, sklicani za 26. december 1990. Ob tej priložnosti iskreno
-                        čestitam prebivalcem Slovenije in vam osebno za rezultat plebiscita o
-                        samostojnosti Slovenije. Velika udeležba prebivalcev in rezultati plebiscita
-                        kažejo visoko politično zavest in odgovornost Slovencev, ki so s tem
-                        dejanjem jasno pokazali, da želijo o svoji bodočnosti in sožitju narodov na
-                        jugoslovanskem prostoru odločati kot prebivalci suverene in svobodne
-                        Republike Slovenije."</p>
-                     <p>Visoki zbor, spoštovani gostje! Zakon o plebiscitu o samostojnosti in
-                        neodvisnosti Republike Slovenije določa, da je odločitev, da Republika
-                        Slovenija postane samostojna in neodvisna država sprejeta, če se je zanjo
-                        izrekla večina vseh glasovalnih upravičencev. Na temelju poročila republiške
-                        volilne komisije, ki je vsem poslancem pisno predložen, ugotavljam, da je za
-                        samostojnost in neodvisnost Republike Slovenije glasovalo 88,5% vseh
-                        glasovalnih upravičencev. S tem je izpolnjen pogoj, ki ga postavlja 3. člen
-                        tega zakona. Ta glasovalni izid mi omogoča, da na temelju 10. člena tega
-                        zakona slovesno razglasim pred tem visokim zborom slovensko in jugoslovansko
-                        ter vso svetovano javnostjo, da se je slovenski narod na temelju trajne in
-                        neodtujljive pravice do samoodločbe odločil, da Republika Slovenija postane
-                        samostojna in neodvisna država.</p>
-                     <p><stage>(Aplavz)</stage>
-                        <stage>(Himna - Prešernova - aplavz)</stage></p>
-                     <p>Visoki zbor, spoštovani gostje!</p>
-                     <p>Slovenski narod se je s prepričljivo večino, skoraj soglasno izrekel za
-                        samostojno državo. To je dejanje njegove volje, za katero ni nikomur
-                        odgovoren, razen samemu sebi. In sam seveda prevzema tudi vse posledice te
-                        svoje odločitve. To je akt, ki je nasledek njegovega pojmovanja in
-                        razumevanja svojega položaja v danem družbenem okolju in zgodovinskem
-                        trenutku. Je akt, ki ga lahko sprejme samo zrel narod, ki se v polnosti
-                        zaveda svoje lastne individualnosti, ki ima odločno voljo do življenja v
-                        zavesti svojih življenjskih zmogljivosti, narod, ki je sposoben in
-                        pripravljen soočiti se z izzivi časa in okolja, v katerem živi. To
-                        sposobnost so nam v preteklosti nemalokrat zanikali, tudi v imenu nekaterih
-                        večjih narodov, s katerimi smo živeli v sosedstvu. Dokazovali so nam, da
-                        nismo zgodovinski narod, da torej nimamo ne možnosti ne pravice do
-                        samostojnega narodnega življenja, do samostojne države. To zanikovanje so
-                        nekateri celo poskušali kvazi znanstveno utemeljevati in so s prezirom
-                        kazali na nas, češ da smo nesposobni živeti enakovredno v vrsti z drugimi
-                        civilizacijsko in gospodarsko razvitimi narodi.</p>
-                     <p>Res smo kot ljudstvo s svojimi značilnostmi zgodovinsko preživeli od
-                        naselitve prek vsega srednjega veka do novejše dobe, kar dokazuje našo
-                        življenjsko moč. Vendar je bilo to le preživetje, ne pa zavestno življenje
-                        nacije. Te so se oblikovale šele po znanstveni revoluciji v 17. in
-                        naslednjih stoletjih ob ideologiji nacionalne države.</p>
-                     <p>V avstrijskem cesarstvu, v okviru katerega smo bili kot ljudstvo vključeni,
-                        se je ta proces začel šele s koncem 18. in dosegel vrhunec v sredini
-                        preteklega stoletja. Vendar je bil za nas to čas, ki nam s svojimi tokovi,
-                        družbenimi odnosi in vse obvladujočem pogledu na svet ni bil naklonjen,
-                        oziroma se je obračal neposredno proti našim narodnim stremljenjem. Prišlo
-                        je sicer do vznika narodne samozavesti in kulturnega vzpona, dosti več od
-                        tega pa ne. Odnosi med narodi in državami so se namreč oblikovali na temelju
-                        kvantitativnega pojmovanja sveta. Na pozitivistični filozofiji izkustvenega,
-                        kar je dajalo večji količini nujno tudi vrednostni predznak višje kakovosti.
-                        Na takem pojmovanju ne temelji samo kvantitativna demokracija, ki je
-                        prevladujoča oblika urejanja odnosov v družbi vse do današnjega dne. Na
-                        takem pojmovanju so utemeljeni zlasti odnosi med narodi in državami. Ne
-                        samo, da se ji zaradi večje teže mora podrejati manjšina, večje ima pravico
-                        do dominacije. Večina dobiva tudi vrednostno opravičilo in utemeljitev.
-                        Zanikanje možnosti malim narodom, da bi izoblikovali svoje lastne države in
-                        se vzpostavili kot nacije, je v takih okoliščinah preraslo tako rekoč v
-                        moralno opravičilo. Nacionalizem kot izraz napadalnosti nasproti drugim,
-                        zlasti manjšim narodom, je pripeljal ne samo do stalnih vojn, celo do dveh
-                        svetovnih, pač pa je dobil celo visok etični predznak kot "sacro egoismo
-                        della patria". V takih razmerah oblikovanja nacionalnih držav se pojavi tudi
-                        nesmiselni pojem in stvarnost narodnih manjšin, predvsem pa izginja cela
-                        vrsta malih narodov, med njimi dosti tudi takih, ki so bili večji kot
-                        slovenski. Srečno naključje za Slovence kot narod je bilo pač le v tem, da
-                        je tudi Avstrija, kot nosilec in hkrati tudi sama plen germanizacije, ostala
-                        v tem pogledu zgodovinski zamudnik in je prej razpadla, kot pa je mogla
-                        izvesti ponemčenje svojih podložnih narodov.</p>
-                     <p>Da take okolnosti niso bile posebej naklonjene slovenskemu narodu, je več
-                        kot razumljivo.</p>
-                     <p><stage>(Aplavz.)</stage></p>
-                     <p>Po 4. členu zakona o plebiscitu o samostojnosti in neodvisnosti Republike
-                        Slovenije na plebiscitu sprejeta odločitev, da Republika Slovenija postane
-                        samostojna in neodvisna država, zavezuje Skupščino Republike Slovenije, da
-                        sprejme v 6 mesecih od dneva razglasitve odločitve ustavne in druge akte,
-                        ter ukrepe, ki so potrebi, da Republika Slovenija prevzame izvrševanje
-                        suverenih pravic, ki jih je prenesla na organe SFRJ, ter začne pogajanja z
-                        drugimi republikami SFRJ o pravnem nasledstvu SFRJ in o bodoči ureditvi
-                        medsebojnih odnosov po načelih mednarodnega prava, vključno s ponudbo
-                        konfederalne pogodbe.</p>
-                     <p>Po 10. členu istega zakona je po slovesni razglasitvi odločitve o rezultatu
-                        skupščina dolžna, da hkrati sprejme program dela za uresničevanje te
-                        odločitve. Izpolnjujoč to zahtevo, bo predsednik Predsedstva Skupščine
-                        Republike Slovenije, gospod Milan Kučan, podal glavne obrise te usmeritve,
-                        prosim, gospod Kučan!</p>
-                     <p><stage>(Aplavz.)</stage></p>
-                  </sp>
-               </div>
-               <div ana="#PAR.TDR">
+               <stage type="time">Seja se je <time from="1990-12-26T18:00:00" xml:id="stage.t.1">pričela ob 18.00 uri</time>.</stage>
+               <div xml:id="div.1.2" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.2.1" ana="#PAR.TDR" corresp="#toc.1.1">
+                     <sp who="#sp.BučarFrance">
+                        <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
+                        <p>Spoštovane poslanke, spoštovani poslanci, cenjeni gostje! Začenjam skupno
+                           sejo vseh zborov Skupščine Republike Slovenije, ki sem jo sklical v skladu z
+                           določbami 10. člena zakona o plebiscitu o samostojnosti in neodvisnosti
+                           Republike Slovenije. Poleg poslancev vseh zborov so na seji navzoči tudi
+                           gostje, ki jih ob tej priliki prisrčno pozdravljam. Posebej pozdravljam g.
+                           Milana Kučana, predsednika Predsedstva Republike Slovenije skupaj s člani
+                           Predsedstva Republike Slovenije, gospoda dr. Janeza Drnovška, člana
+                           predsedstva SFRJ iz Republike Slovenije. Naj velja v naprej tudi moj pozdrav
+                           tudi gospodu Lojzetu Peterletu, predsedniku Izvršnega sveta, ki je zaenkrat
+                           še zadržan, še ni mogel iz Beograda, ker nekoliko zamuja letalo. Torej
+                           pozdravljam vse skupaj s podpredsednikom in člani Izvršnega sveta Skupščine
+                           Republike Slovenije. Dr. Alojzija Šuštarja, nadškofa in metropolita
+                           ljubljanskega. V posebno veselje mi je, da se je te naše seje udeležilo
+                           lahko tudi nekaj članov Slovenskega narodno-osvobodilnega sveta Matija
+                           Maležič, Jože Penca, Bogdan Osolnik, Mara Ropena-Osolnik, ki jih lepo
+                           pozdravljam. V posebno čast mi je, da lahko pozdravim tudi delegacijo Sabora
+                           Republike Hrvatske, ki jo vodi dr. Žarko Domljan, predsednik Sabora. Nadalje
+                           pozdravljam predstavnike parlamentarnih političnih strank oz. zvez,
+                           predstavnike pravosodnih ustanov republike, predstavnike SAZU, Univerze v
+                           Ljubljani in Univerze v Mariboru, člane Zveznega izvršnega sveta in druge
+                           funkcionarje v zveznih organih iz Republike Slovenije, g. Gaborja Boghia,
+                           generalnega konzula Republike Madžarske in predstavnike slovenskih
+                           organizacij iz Avstrije in Italije. Na današnjo sejo smo povabili tudi
+                           predsednika Republike Hrvatske, dr. Franja Tu|mana, ki pa se povabilu ni
+                           mogel odzvati, pač pa se je predsedniku Predsedstva Republike Slovenije
+                           Milanu Kučanu odzval in poslal pozdravno pismo naslednje vsebine: "Z
+                           zadovoljstvom sem prejel vaše vabilo za sejo vseh zborov Skupščine Republike
+                           Slovenije. Z obžalovanjem vas moram obvestiti, da kljub veliki želji, zaradi
+                           prej načrtovanih in neodložljivih obveznosti ne morem prisostvovati
+                           slavnostni seji, sklicani za 26. december 1990. Ob tej priložnosti iskreno
+                           čestitam prebivalcem Slovenije in vam osebno za rezultat plebiscita o
+                           samostojnosti Slovenije. Velika udeležba prebivalcev in rezultati plebiscita
+                           kažejo visoko politično zavest in odgovornost Slovencev, ki so s tem
+                           dejanjem jasno pokazali, da želijo o svoji bodočnosti in sožitju narodov na
+                           jugoslovanskem prostoru odločati kot prebivalci suverene in svobodne
+                           Republike Slovenije."</p>
+                        <p>Visoki zbor, spoštovani gostje! Zakon o plebiscitu o samostojnosti in
+                           neodvisnosti Republike Slovenije določa, da je odločitev, da Republika
+                           Slovenija postane samostojna in neodvisna država sprejeta, če se je zanjo
+                           izrekla večina vseh glasovalnih upravičencev. Na temelju poročila republiške
+                           volilne komisije, ki je vsem poslancem pisno predložen, ugotavljam, da je za
+                           samostojnost in neodvisnost Republike Slovenije glasovalo 88,5% vseh
+                           glasovalnih upravičencev. S tem je izpolnjen pogoj, ki ga postavlja 3. člen
+                           tega zakona. Ta glasovalni izid mi omogoča, da na temelju 10. člena tega
+                           zakona slovesno razglasim pred tem visokim zborom slovensko in jugoslovansko
+                           ter vso svetovano javnostjo, da se je slovenski narod na temelju trajne in
+                           neodtujljive pravice do samoodločbe odločil, da Republika Slovenija postane
+                           samostojna in neodvisna država.</p>
+                        <p>
+                           <stage type="vocal">(Aplavz)</stage>
+                           <stage type="vocal">(Himna - Prešernova - aplavz)</stage>
+                        </p>
+                        <p>Visoki zbor, spoštovani gostje!</p>
+                        <p>Slovenski narod se je s prepričljivo večino, skoraj soglasno izrekel za
+                           samostojno državo. To je dejanje njegove volje, za katero ni nikomur
+                           odgovoren, razen samemu sebi. In sam seveda prevzema tudi vse posledice te
+                           svoje odločitve. To je akt, ki je nasledek njegovega pojmovanja in
+                           razumevanja svojega položaja v danem družbenem okolju in zgodovinskem
+                           trenutku. Je akt, ki ga lahko sprejme samo zrel narod, ki se v polnosti
+                           zaveda svoje lastne individualnosti, ki ima odločno voljo do življenja v
+                           zavesti svojih življenjskih zmogljivosti, narod, ki je sposoben in
+                           pripravljen soočiti se z izzivi časa in okolja, v katerem živi. To
+                           sposobnost so nam v preteklosti nemalokrat zanikali, tudi v imenu nekaterih
+                           večjih narodov, s katerimi smo živeli v sosedstvu. Dokazovali so nam, da
+                           nismo zgodovinski narod, da torej nimamo ne možnosti ne pravice do
+                           samostojnega narodnega življenja, do samostojne države. To zanikovanje so
+                           nekateri celo poskušali kvazi znanstveno utemeljevati in so s prezirom
+                           kazali na nas, češ da smo nesposobni živeti enakovredno v vrsti z drugimi
+                           civilizacijsko in gospodarsko razvitimi narodi.</p>
+                        <p>Res smo kot ljudstvo s svojimi značilnostmi zgodovinsko preživeli od
+                           naselitve prek vsega srednjega veka do novejše dobe, kar dokazuje našo
+                           življenjsko moč. Vendar je bilo to le preživetje, ne pa zavestno življenje
+                           nacije. Te so se oblikovale šele po znanstveni revoluciji v 17. in
+                           naslednjih stoletjih ob ideologiji nacionalne države.</p>
+                        <p>V avstrijskem cesarstvu, v okviru katerega smo bili kot ljudstvo vključeni,
+                           se je ta proces začel šele s koncem 18. in dosegel vrhunec v sredini
+                           preteklega stoletja. Vendar je bil za nas to čas, ki nam s svojimi tokovi,
+                           družbenimi odnosi in vse obvladujočem pogledu na svet ni bil naklonjen,
+                           oziroma se je obračal neposredno proti našim narodnim stremljenjem. Prišlo
+                           je sicer do vznika narodne samozavesti in kulturnega vzpona, dosti več od
+                           tega pa ne. Odnosi med narodi in državami so se namreč oblikovali na temelju
+                           kvantitativnega pojmovanja sveta. Na pozitivistični filozofiji izkustvenega,
+                           kar je dajalo večji količini nujno tudi vrednostni predznak višje kakovosti.
+                           Na takem pojmovanju ne temelji samo kvantitativna demokracija, ki je
+                           prevladujoča oblika urejanja odnosov v družbi vse do današnjega dne. Na
+                           takem pojmovanju so utemeljeni zlasti odnosi med narodi in državami. Ne
+                           samo, da se ji zaradi večje teže mora podrejati manjšina, večje ima pravico
+                           do dominacije. Večina dobiva tudi vrednostno opravičilo in utemeljitev.
+                           Zanikanje možnosti malim narodom, da bi izoblikovali svoje lastne države in
+                           se vzpostavili kot nacije, je v takih okoliščinah preraslo tako rekoč v
+                           moralno opravičilo. Nacionalizem kot izraz napadalnosti nasproti drugim,
+                           zlasti manjšim narodom, je pripeljal ne samo do stalnih vojn, celo do dveh
+                           svetovnih, pač pa je dobil celo visok etični predznak kot "sacro egoismo
+                           della patria". V takih razmerah oblikovanja nacionalnih držav se pojavi tudi
+                           nesmiselni pojem in stvarnost narodnih manjšin, predvsem pa izginja cela
+                           vrsta malih narodov, med njimi dosti tudi takih, ki so bili večji kot
+                           slovenski. Srečno naključje za Slovence kot narod je bilo pač le v tem, da
+                           je tudi Avstrija, kot nosilec in hkrati tudi sama plen germanizacije, ostala
+                           v tem pogledu zgodovinski zamudnik in je prej razpadla, kot pa je mogla
+                           izvesti ponemčenje svojih podložnih narodov.</p>
+                        <p>Da take okolnosti niso bile posebej naklonjene slovenskemu narodu, je več
+                           kot razumljivo.</p>
+                        <p>
+                           <stage type="vocal">(Aplavz.)</stage>
+                        </p>
+                        <p>Po 4. členu zakona o plebiscitu o samostojnosti in neodvisnosti Republike
+                           Slovenije na plebiscitu sprejeta odločitev, da Republika Slovenija postane
+                           samostojna in neodvisna država, zavezuje Skupščino Republike Slovenije, da
+                           sprejme v 6 mesecih od dneva razglasitve odločitve ustavne in druge akte,
+                           ter ukrepe, ki so potrebi, da Republika Slovenija prevzame izvrševanje
+                           suverenih pravic, ki jih je prenesla na organe SFRJ, ter začne pogajanja z
+                           drugimi republikami SFRJ o pravnem nasledstvu SFRJ in o bodoči ureditvi
+                           medsebojnih odnosov po načelih mednarodnega prava, vključno s ponudbo
+                           konfederalne pogodbe.</p>
+                        <p>Po 10. členu istega zakona je po slovesni razglasitvi odločitve o rezultatu
+                           skupščina dolžna, da hkrati sprejme program dela za uresničevanje te
+                           odločitve. Izpolnjujoč to zahtevo, bo predsednik Predsedstva Skupščine
+                           Republike Slovenije, gospod Milan Kučan, podal glavne obrise te usmeritve,
+                           prosim, gospod Kučan!</p>
+                        <p>
+                           <stage type="vocal">(Aplavz.)</stage>
+                        </p>
+                     </sp>
+                  </div>
+                  <div xml:id="div.1.2.2" ana="#PAR.TDR" corresp="#toc.1.2">
                   <sp who="#sp.KučanMilan">
                      <speaker>MILAN KUČAN:</speaker>
                      <p>Spoštovani predsednik, spoštovane poslanke in poslanci!</p>
                      <p>Izid plebiscitarnega ugotavljanja volje Slovencev, državljanov naše
                         Republike in vseh njenih stalnih prebivalcev glede prihodnosti Slovenije je
                         poznan in uradno sporočen. Slovenija je zdaj samostojna in neodvisna država.
-                           <stage>(Aplavz.)</stage> Tretjič je bilo nam Slovencem v novejši
+                           <stage type="vocal">(Aplavz.)</stage> Tretjič je bilo nam Slovencem v novejši
                         zgodovini dano, da odločamo o tem vprašanju; prvič tudi večini sedaj živečih
                         rodov. Odločitev, ki nam jo je naložil splet zgodovinskih okoliščin, smo
                         sprejeli razsodno in pogumno, s častjo in dostojanstvom. Izid glasovanja nam
@@ -825,7 +838,8 @@
                         in za prihodnost nove slovenske države. Verjamem, da bo tako tudi v
                         prihodnje.</p>
                      <p>Predsedstvo Slovenije in tudi jaz sam smo pri tem pripravljeni prevzeti svoj
-                        del odgovornosti. Hvala. <stage>(Aplavz.)</stage></p>
+                        del odgovornosti. Hvala. <stage type="vocal">(Aplavz.)</stage>
+                     </p>
                   </sp>
                   <sp who="#sp.BučarFrance">
                      <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
@@ -834,9 +848,9 @@
                         nadaljnjo izdelavo programa za izvajanje naročila mandata, ki ga nam je dal
                         plebiscit in zato to sejo zaključujem. Hvala lepa.</p>
                   </sp>
-                  <stage type="time">(Seja je bila <time to="1990-12-26T19:15:00" xml:id="stage.t.2"
-                        >končana 26. decembra 1990 ob 19.15 uri</time>.)</stage>
+                  <stage type="time">(Seja je bila <time to="1990-12-26T19:15:00" xml:id="stage.t.2">končana 26. decembra 1990 ob 19.15 uri</time>.)</stage>
                </div>
+             </div>
             </div>
          </div>
       </body>

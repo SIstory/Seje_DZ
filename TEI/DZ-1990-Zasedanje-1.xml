@@ -31,8 +31,7 @@
             <pubPlace>https://github.com/SIstory/Seje_DZ/tree/master/</pubPlace>
             <availability status="free">
                <licence>http://creativecommons.org/licenses/by/4.0/</licence>
-               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/"
-                     >Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
+               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
                </p>
             </availability>
             <date when="2016-07-22+02:00"/>
@@ -53,9 +52,7 @@
                      <date>(13. in 14. julij 1990)</date>
                   </imprint>
                </monogr>
-               <ref
-                  target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=16771F0964FCFD10C1257C8A002471E8"
-                     >(<date>2016-04-12</date>)</ref>
+               <ref target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=16771F0964FCFD10C1257C8A002471E8">(<date>2016-04-12</date>)</ref>
             </biblStruct>
             <biblFull>
                <titleStmt>
@@ -67,10 +64,10 @@
                   <publisher>Državni zbor Republike Slovenije</publisher>
                   <availability status="free">
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="slv">Avtorske pravice so potekle, delo je v javni
+                              xml:lang="slv">Avtorske pravice so potekle, delo je v javni
                         domeni.</licence>
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="eng">Public Domain Mark 1.0</licence>
+                              xml:lang="eng">Public Domain Mark 1.0</licence>
                   </availability>
                </publicationStmt>
             </biblFull>
@@ -82,7 +79,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -93,6 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2016-11-19+01:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2016-11-19+01:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-07-22+02:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -125,10 +134,9 @@
                <item>
                   <list rend="ordered">
                      <head>PRED DNEVNIM REDOM:</head>
-                     <item n="1">Uvodna beseda Izvršnega sveta Skupščine Republike Slovenije v zvezi
+                     <item n="1" xml:id="toc.1.1">Uvodna beseda Izvršnega sveta Skupščine Republike Slovenije v zvezi
                         s predlogi za obremenitev gospodarstva in izpolnjevanje obveznosti Republike
-                        Slovenije do federacije ......................................... 1<list
-                           rend="simple">
+                        Slovenije do federacije ......................................... 1<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>dr. Jože Mencinger .................................... 1</item>
                         </list>
@@ -139,14 +147,14 @@
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED:</head>
-                     <item n="1">Informacija Predsedstva Republike Slovenije o ukrepih in aktivnosti
+                     <item n="1" xml:id="toc.2.1">Informacija Predsedstva Republike Slovenije o ukrepih in aktivnosti
                         v zvezi s premeščanjem orožja Teritorialne obrambe
                         .................................. 4<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>dr. Dušan Plut ........................................ 5</item>
                         </list>
                      </item>
-                     <item n="2">Informacija o aktivnostih Izvršnega sveta Skupščine Republike
+                     <item n="2" xml:id="toc.2.2">Informacija o aktivnostih Izvršnega sveta Skupščine Republike
                         Slovenije v zvezi s premeščanjem orožja Teritorialne obrambe
                         .................................. 6<list rend="simple">
                            <head>GOVORNIKI:</head>
@@ -156,7 +164,7 @@
                            <item>Milan Aksentijević .................................... 9</item>
                         </list>
                      </item>
-                     <item n="3">Seznam govornikov .................................. II/1</item>
+                     <item n="3" xml:id="toc.2.3">Seznam govornikov .................................. II/1</item>
                   </list>
                </item>
             </list>
@@ -186,42 +194,41 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.VsiZbor">
+         <div xml:id="div.1" ana="#PAR.VsiZbor">
             <head>SKUPNO ZASEDANJE VSEH ZBOROV SKUPŠČINE REPUBLIKE SLOVENIJE</head>
-            <div ana="#PAR.Zasedanje" n="1">
+            <div xml:id="div.1.1" ana="#PAR.Zasedanje" n="1">
                <head>1. zasedanje</head>
                <docDate>(<date when="1990-07-13">13.</date> in <date when="1990-07-14">14. julij
                      1990</date>)</docDate>
                <timeline origin="#TL.1" unit="s">
                   <when synch="#stage.t.1" xml:id="TL.1" absolute="1990-07-13T14:15:00"/>
-                  <when synch="#stage.t.2" since="#TL.1" absolute="1990-07-13T14:30:00"
-                     interval="900"/>
+                  <when synch="#stage.t.2"
+                        since="#TL.1"
+                        absolute="1990-07-13T14:30:00"
+                        interval="900"/>
                   <when synch="#stage.t.3" xml:id="TL.2" absolute="1990-07-14T13:20:00"/>
-                  <when synch="#stage.t.4" since="#TL.2" absolute="1990-07-14T13:40:00"
-                     interval="1200"/>
+                  <when synch="#stage.t.4"
+                        since="#TL.2"
+                        absolute="1990-07-14T13:40:00"
+                        interval="1200"/>
                </timeline>
                <castList>
                   <castItem>
                      <roleDesc>Sejo sta vodila</roleDesc>: <actor xml:id="sp.Zupančič.Jože">Jože
-                        Zupančič</actor>, <role>predsednik Zbora združenega dela</role> in <actor
-                        xml:id="sp.Bizjak.Ivan">Ivan Bizjak</actor>, <role>predsednik Zbora
+                        Zupančič</actor>, <role>predsednik Zbora združenega dela</role> in <actor xml:id="sp.Bizjak.Ivan">Ivan Bizjak</actor>, <role>predsednik Zbora
                         občin</role>.</castItem>
                </castList>
-               <stage type="time">Seja se je <time from="1990-07-13T14:15:00" xml:id="stage.t.1"
-                     >pričela ob 14. 15 uri</time>.</stage>
-               <div ana="#PAR.PredDnevRed">
-                  <div ana="#PAR.TDR">
+               <stage type="time">Seja se je <time from="1990-07-13T14:15:00" xml:id="stage.t.1">pričela ob 14. 15 uri</time>.</stage>
+               <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.TDR" corresp="#toc.1.1">
                      <sp who="#sp.Zupančič.Jože">
                         <speaker>PREDSEDUJOČI JOŽE ZUPANČIČ:</speaker>
                         <p>Poslanke in poslanci, cenjeni člani Izvršnega sveta in vsi gostje, dragi
                            novinarji. Pričenjamo prvo skupno zasedanje Zbora združenega dela, Zbora
                            občin in Družbenopolitičnega zbora, na katerem bomo samo poslušali uvodno
-                           besedo oziroma</p>
-                        <p>
-                           <title>EKSPOZE O GOSPODARSKI SITUACIJI V SLOVENIJI IN INFORMACIJO O
+                           besedo oziroma <title>EKSPOZE O GOSPODARSKI SITUACIJI V SLOVENIJI IN INFORMACIJO O
                               NEKATERIH PROBLEMIH IZVAJANJA FINANČNIH OBVEZNOSTI REPUBLIKE SLOVENIJE
-                              DO FEDERACIJE</title>,</p>
-                        <p>ki jo bo podal podpredsednik Izvršnega sveta Skupščine Republike
+                              DO FEDERACIJE</title>, ki jo bo podal podpredsednik Izvršnega sveta Skupščine Republike
                            Slovenije gospod dr. Jože Mencinger. Skupna uvodna beseda je nujna, saj
                            smo poslanci danes in verjetno jutri pred izjemno odgovornimi
                            odločitvami. Občutek imam, da se bomo pomena teh težkih in odgovornih
@@ -373,7 +380,8 @@
                            skladnejšega regionalnega razvoja v republiki Sloveniji, ki bi na novo
                            določil tudi kriterije za pospeševanje hitrejšega razvoja oziroma za
                            oceno razvitosti posameznih področij Slovenije.
-                           <stage>(Aplavz.)</stage></p>
+                           <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.Zupančič.Jože">
                         <speaker>PREDSEDUJOČI JOŽE ZUPANČIČ:</speaker>
@@ -388,20 +396,18 @@
                            zborih.</p>
                         <p>S tem bi skupno zasedanje zaključil. Hvala.</p>
                      </sp>
-                     <stage type="time">(SEJA JE BILA <time to="1990-07-13T14:30:00"
-                           xml:id="stage.t.2">PREKINJENA 13. JUNIJA 1990 OB 14.30 URI</time> IN SE
+                     <stage type="time">(SEJA JE BILA <time to="1990-07-13T14:30:00" xml:id="stage.t.2">PREKINJENA 13. JUNIJA 1990 OB 14.30 URI</time> IN SE
                         JE <time from="1990-07-14T13:20:00" xml:id="stage.t.3">NADALJEVALA 14.
                            JUNIJA 1990 OB 13.20 URI</time>.)</stage>
                   </div>
                </div>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR">
+               <div xml:id="div.1.1.2" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.2.1" ana="#PAR.TDR" corresp="#toc.2.1">
                      <sp who="#sp.Bizjak.Ivan">
                         <speaker>PREDSEDUJOČI IVAN BIZJAK:</speaker>
                         <p>Začenjam Skupno zasedanje Družbenopolitičnega zbora, Zbora združenega
                            dela in Zbora občin Skupščine Republike Slovenije, na katerem bo član
-                           Predsedstva Republike Slovenije dr. Dušan Plut predstavil</p>
-                        <p>
+                           Predsedstva Republike Slovenije dr. Dušan Plut predstavil
                            <title>INFORMACIJO PREDSEDSTVA REPUBLIKE SLOVENIJE O UKREPIH IN
                               AKTIVNOSTIH V ZVEZI S PREMEŠČANJEM OROŽJA TERITORIALNE
                            OBRAMBE</title>.</p>
@@ -460,7 +466,7 @@
                            ravnanja ter političnih in drugih posledic, ki so nastale zaradi
                            premeščanja orožja Teritorialne obrambe, predlagalo Predsedstvu SFRJ, da
                            generalpodpolkovnika Ivana Hočevarja razreši dolžnosti komandanta
-                           Teritorialne obrambe Slovenije. <stage>(Aplavz.)</stage>
+                           Teritorialne obrambe Slovenije. <stage type="vocal">(Aplavz.)</stage>
                            Generalpodpolkovnik Ivan Hočevar, je po mnenju Predsedstva odgovoren za
                            poslabšanje političnih in varnostnih razmer v republiki, do katerega je
                            prišlo zaradi premeščanja orožja štabov in enot Teritorialne obrambe brez
@@ -495,24 +501,23 @@
                            Slovenije, da se v tem trenutku ukvarja s tem vprašanjem. Očitno je
                            interes za to drugje. Upam, da bom lahko pred vas prišel za drugačno
                            pobudo, ki je sedaj na Predsedstvu, s pobudo o ustanovitvi ekološkega in
-                           predvsem mirovnega inštituta <stage>(aplavz)</stage>, ki naj postane
+                           predvsem mirovnega inštituta <stage type="vocal">(aplavz)</stage>, ki naj postane
                            generator znanja na področju nenasilnega reševanja konfliktov, aktivne
                            mirovne politike in preusmeritve vojaške industrije v civilno in bo
                            predstavljal svetovalno telo za Skupščino, Izvršni svet in Predsedstvo.
                            To naj bi bil eden izmed prvih korakov k demilitarizaciji Slovenije, k
                            Sloveniji brez bajonetov in brez pušk. Hvala za
-                              pozornost.<stage>(Aplavz.)</stage></p>
+                              pozornost.<stage type="vocal">(Aplavz.)</stage>
+                        </p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.2" ana="#PAR.TDR" corresp="#toc.2.2">
                      <sp who="#sp.Bizjak.Ivan">
                         <speaker>PREDSEDUJOČI IVAN BIZJAK:</speaker>
-                        <p>Zahvaljujem se dr. Plutu za njegovo izvajanje. V nadaljevanju bo</p>
-                        <p>
+                        <p>Zahvaljujem se dr. Plutu za njegovo izvajanje. V nadaljevanju bo
                            <title>INFORMACIJO O AKTIVNOSTIH IZVRŠNEGA SVETA SKUPŠČINE REPUBLIKE
                               SLOVENIJE V ZVEZI S PREMEŠČANJEM OROŽJA TERITORIALNE OBRAMBE</title>
-                        </p>
-                        <p>predstavil republiški sekretar za ljudsko obrambo, gospod Janez Janša.
+                           predstavil republiški sekretar za ljudsko obrambo, gospod Janez Janša.
                            Prosim.</p>
                      </sp>
                      <sp who="#sp.JanšaJanez">
@@ -579,7 +584,8 @@
                            sprejeti odločne ukrepe, da se stanje v teritorialni obrambi normalizira.
                            Republika ima v nasprotju z nekaterim precej razširjenim razmišljanjem,
                            tudi na podlagi 109. člena zakona o ljudski obrambi, v rokah vse
-                           instrumente, da take ukrepe uveljavi. Hvala. <stage>(Aplavz.)</stage></p>
+                           instrumente, da take ukrepe uveljavi. Hvala. <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.Bizjak.Ivan">
                         <speaker>PREDSEDUJOČI IVAN BIZJAK:</speaker>
@@ -602,7 +608,8 @@
                      </sp>
                      <sp who="#sp.PirnatRajko">
                         <speaker>DR. RAJKO PIRNAT:</speaker>
-                        <p><stage>(Glas iz klopi)</stage>. Protestiram proti uporabi tujega jezika v
+                        <p>
+                           <stage>(Glas iz klopi)</stage>. Protestiram proti uporabi tujega jezika v
                            skupščini in ga ne bomo več poslušali.</p>
                      </sp>
                      <sp who="#sp.Bizjak.Ivan">
@@ -626,7 +633,8 @@
                      </sp>
                      <sp who="#sp.Bizjak.Ivan">
                         <speaker>PREDSEDUJOČI IVAN BIZJAK:</speaker>
-                        <p>Tako je. <stage>(Aplavz.)</stage></p>
+                        <p>Tako je. <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.AksentijevićMilan">
                         <speaker>MILAN AKSENTIJEVIĆ:</speaker>
@@ -647,8 +655,7 @@
                            nadaljuje z delom ob 14.30 uri, v Zboru občin in v Družbenopolitičnem
                            zboru pa čez 15 minut.</p>
                      </sp>
-                     <stage type="time">(Seja je bila <time to="1990-07-14T13:40:00"
-                           xml:id="stage.t.4">končana 14. junija 1990 ob 13.40 uri</time>.)</stage>
+                     <stage type="time">(Seja je bila <time to="1990-07-14T13:40:00" xml:id="stage.t.4">končana 14. junija 1990 ob 13.40 uri</time>.)</stage>
                   </div>
                </div>
             </div>

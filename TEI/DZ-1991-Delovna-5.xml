@@ -31,8 +31,7 @@
             <pubPlace>https://github.com/SIstory/Seje_DZ/tree/master/</pubPlace>
             <availability status="free">
                <licence>http://creativecommons.org/licenses/by/4.0/</licence>
-               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/"
-                     >Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
+               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
                </p>
             </availability>
             <date when="2016-07-20+02:00"/>
@@ -53,9 +52,7 @@
                      <date>(29. marec 1991)</date>
                   </imprint>
                </monogr>
-               <ref
-                  target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=F0008AC20B37D7D0C1257CA00039056D"
-                     >(<date>2016-04-12</date>)</ref>
+               <ref target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=F0008AC20B37D7D0C1257CA00039056D">(<date>2016-04-12</date>)</ref>
             </biblStruct>
             <biblFull>
                <titleStmt>
@@ -67,10 +64,10 @@
                   <publisher>Državni zbor Republike Slovenije</publisher>
                   <availability status="free">
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="slv">Avtorske pravice so potekle, delo je v javni
+                              xml:lang="slv">Avtorske pravice so potekle, delo je v javni
                         domeni.</licence>
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="eng">Public Domain Mark 1.0</licence>
+                              xml:lang="eng">Public Domain Mark 1.0</licence>
                   </availability>
                </publicationStmt>
             </biblFull>
@@ -82,7 +79,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -93,6 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2016-11-19+01:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2016-11-19+01:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-07-20+02:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -125,8 +134,7 @@
                <item>
                   <list rend="ordered">
                      <head>PRED DNEVNIM REDOM:                                      STRAN</head>
-                     <item n="1">Ugotavljanje prisotnosti delegatov .................... 1<list
-                           rend="simple">
+                     <item n="1" xml:id="toc.1.1">Ugotavljanje prisotnosti delegatov .................... 1<list rend="simple">
                            <head>GOVORNIKA:</head>
                            <item>Vitomir Gros .......................................... 1</item>
                            <item>Andrej Verlič ......................................... 2</item>
@@ -136,7 +144,7 @@
                </item>
                <item>
                   <list rend="ordered">
-                     <item n="2">Predlog zakona o proračunu Republike Slovenije za leto 1991
+                     <item n="2" xml:id="toc.2.2">Predlog zakona o proračunu Republike Slovenije za leto 1991
                         ................................ 3<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Janez Kopač ........................................... 3</item>
@@ -153,7 +161,7 @@
                            <item>dr. Stanko Buser ..................................... 11</item>
                         </list>
                      </item>
-                     <item n="3">Seznam govornikov .................................. II/1</item>
+                     <item n="3" xml:id="toc.2.3">Seznam govornikov .................................. II/1</item>
                   </list>
                </item>
             </list>
@@ -207,15 +215,17 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.VsiZbor">
+         <div xml:id="div.1" ana="#PAR.VsiZbor">
             <head>DELOVNA SKUPNA SEJA SKUPŠČINE REPUBLIKE SLOVENIJE</head>
-            <div ana="#PAR.Delovna" n="5">
+            <div xml:id="div.1.1" ana="#PAR.Delovna" n="5">
                <head>5. seja</head>
                <docDate>(<date when="1991-03-29">29. marec 1991</date>)</docDate>
                <timeline origin="#TL.1" unit="s">
                   <when synch="#stage.t.1" xml:id="TL.1" absolute="1991-03-29T15:00:00"/>
-                  <when synch="#stage.t.2" since="#TL.1" absolute="1991-03-29T15:50:00"
-                     interval="3000"/>
+                  <when synch="#stage.t.2"
+                        since="#TL.1"
+                        absolute="1991-03-29T15:50:00"
+                        interval="3000"/>
                </timeline>
                <castList>
                   <castItem>
@@ -223,35 +233,37 @@
                         Zupančič</actor>, <role>predsednik Zbora združenega dela</role>
                   </castItem>
                </castList>
-               <stage type="time">Seja se je <time from="1991-03-29T15:00:00" xml:id="stage.t.1"
-                     >začela ob 15. uri</time>.</stage>
-               <div ana="#PAR.PredDnevRed">
-                  <sp who="#sp.ZupančičJože">
-                     <speaker>PREDSEDUJOČI JOŽE ZUPANČIČ:</speaker>
-                     <p>Spoštovane delegatke, spoštovani delegati, cenjeni gostje, dragi novinarji -
-                        pričenjamo 5. delovno skupno sejo vseh treh zborov Skupščine Republike
-                        Slovenije, kjer bomo obravnavali samo</p>
-                     <p>PREDLOG ZAKONA O PRORAČUNU REPUBLIKE SLOVENIJE ZA LETO 1991.</p>
-                     <p>Glede na to, da se skupna komisija ni poenotila pri oblikovanju sporazumnega
-                        predloga pri predlogu zakona o proračunu, pri predlogu zakona o obrambi in
-                        zaščiti pa smo se poenotili, bomo odločali samo o prvem predlogu, in sicer
-                        na podlagi četrtega odstavka LXXIII. amandmaja k Ustavi Republike Slovenije.
-                        O predlogu zakona odločamo na skupni seji vseh treh zborov Skupščine
-                        Republike Slovenije. Tako bi danes obravnavali samo to. Predlog zakona o
-                        proračunu smo uvrstili na dnevni red skupne seje na zahtevo Izvršnega sveta
-                        Skupščine Republike Slovenije.</p>
-                  </sp>
-                  <div ana="#PAR.Prisot">
+               <stage type="time">Seja se je <time from="1991-03-29T15:00:00" xml:id="stage.t.1">začela ob 15. uri</time>.</stage>
+               <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.DolDnevRed">
+                     <sp who="#sp.ZupančičJože">
+                        <speaker>PREDSEDUJOČI JOŽE ZUPANČIČ:</speaker>
+                        <p>Spoštovane delegatke, spoštovani delegati, cenjeni gostje, dragi novinarji -
+                           pričenjamo 5. delovno skupno sejo vseh treh zborov Skupščine Republike
+                           Slovenije, <title>kjer bomo obravnavali</title> samo PREDLOG ZAKONA O PRORAČUNU REPUBLIKE SLOVENIJE ZA LETO 1991.</p>
+                        <p>Glede na to, da se skupna komisija ni poenotila pri oblikovanju sporazumnega
+                           predloga pri predlogu zakona o proračunu, pri predlogu zakona o obrambi in
+                           zaščiti pa smo se poenotili, bomo odločali samo o prvem predlogu, in sicer
+                           na podlagi četrtega odstavka LXXIII. amandmaja k Ustavi Republike Slovenije.
+                           O predlogu zakona odločamo na skupni seji vseh treh zborov Skupščine
+                           Republike Slovenije. Tako bi danes obravnavali samo to. Predlog zakona o
+                           proračunu smo uvrstili na dnevni red skupne seje na zahtevo Izvršnega sveta
+                           Skupščine Republike Slovenije.</p>
+                     </sp>
+                  </div>
+                  <div xml:id="div.1.1.1.2" ana="#PAR.Prisot" corresp="#toc.1.1">
                      <sp who="#sp.ZupančičJože">
                         <p>Predno preidemo na odločanje o spornih vprašanjih pri predlogu o
                            proračunu, moramo ugotoviti <title>sklepčnost</title>, kako je z našo
-                           prisotnostjo. Najprej prosim Družbenopolitični zbor: <stage>(47
-                              prisotnih.)</stage> Zbor občin: <stage>(45 prisotnih.)</stage> Zbor
-                           združenega dela: <stage>(45 prisotnih.)</stage></p>
+                           prisotnostjo. Najprej prosim Družbenopolitični zbor: <stage type="quorum">(47
+                              prisotnih.)</stage> Zbor občin: <stage type="quorum">(45 prisotnih.)</stage> Zbor
+                           združenega dela: <stage type="quorum">(45 prisotnih.)</stage>
+                        </p>
                         <p>Ugotavljam, da smo sklepčni in lahko delamo v skladu z našim poslovnikom
                            in LXXIII. amandmajem k Ustavi Republike Slovenije.</p>
                         <p>Gospod Gros želi besedo. Boste govorili o proceduralnih vprašanjih?
-                              <stage>(Da.)</stage></p>
+                              <stage type="debate">(Da.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.GrosVitomir">
                         <speaker>VITOMIR GROS:</speaker>
@@ -319,8 +331,8 @@
                      </sp>
                   </div>
                </div>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR">
+               <div xml:id="div.1.1.2" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.2.1" ana="#PAR.TDR" corresp="#toc.2.2">
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDUJOČI JOŽE ZUPANČIČ:</speaker>
                         <p>Izvršni svet je poslal to pismo: Skupščina Republike Slovenije,
@@ -387,15 +399,17 @@
                         <p>Ker samo poslanci Zbora združenega dela niso sprejeli prvega amandmaja v
                            okviru sporazumnega predloga. Da bi poslanci Zbora združenega dela o njem
                            glasovali in izoblikovali svoje mnenje. Prosim samo poslance Zbora
-                           združenega dela; najprej ugotovimo prisotnost. <stage>(48
-                              delegatov.)</stage></p>
+                           združenega dela; najprej ugotovimo prisotnost. <stage type="vote">(48
+                              delegatov.)</stage>
+                        </p>
                         <p>Kdo je za? <stage>(Bogo Rogina: Si ga prebral?)</stage> Vedo, točno vedo.
                            Saj je gospod Kopač točno povedal. Drugače je pa usklajeno v
                            Družbenpolitičnem zboru in Zboru občin. Tam je bilo sprejeto, samo mi ga
                            nismo sprejeli.</p>
-                        <p>Kdo je za? <stage>(32 delegatov.)</stage> Je kdo proti? <stage>(8
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(5
-                           delegatov.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(32 delegatov.)</stage> Je kdo proti? <stage type="vote">(8
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(5
+                           delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je prvi amandma sprejet s strani Zbora združenega dela in
                            tako smo pod točko A usklajeni vsi trije zbori.</p>
                         <p>Sedaj pa točka B. Skupna komisija je glede ostalih različno sprejetih
@@ -405,17 +419,18 @@
                            pod številko 17. To je Sekretariati Izvršnega sveta Skupščine Republike
                            Slovenije. Črta se postavka 2.4.17 "Pluralizacija medijev".</p>
                         <p>Amandma je sprejel samo Zbor združenega dela. Želi kdo razpravljati,
-                           povedati svoje mnenje? <stage>(Ne želi.)</stage> Glasujemo vsi skupaj.
+                           povedati svoje mnenje? <stage type="debate">(Ne želi.)</stage> Glasujemo vsi skupaj.
                            Vseeno bi ugotavljal prisotnost vseh. Družbenopolitični zbor, naj
-                           ugotovimo sklepčnost. <stage>(49 prisotnih.)</stage> Zbor občin - 47
+                           ugotovimo sklepčnost. <stage type="quorum">(49 prisotnih.)</stage> Zbor občin - 47
                            prisotnih in še Zbor združenega dela - 47 prisotnih. Sklepčni smo. In
                            zdaj vas sprašujem. Kdo je za amandma? Črta se postavka, tako kot sem že
                            prej navedel v zvezi z pluralizacijo medijev. Obravnavajo se naslednji
                            amandmaji in prvi amandma je bil sprejet samo v Zboru združenega dela,
                            črta se postavka pluralizacija medijev.</p>
-                        <p>Kdo je za ta amandma? <stage>(57 delegatov.)</stage> Je kdo proti?
-                              <stage>(81 delegatov.)</stage> Se je kdo vzdržal? <stage>(8
-                              delegatov.)</stage></p>
+                        <p>Kdo je za ta amandma? <stage type="vote">(57 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(81 delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(8
+                              delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da amandma ni sprejet.</p>
                         <p>Drugi amandma. Pod zaporedno številko 18 - Sekretariati Izvršnega sveta
                            Skupščine Republike Slovenije in tudi tu: črta se postavka 2.4.17
@@ -423,24 +438,27 @@
                            nameni tiskovni agenciji in promociji v okviru točke 3.2.6 pri
                            Republiškem sekretariatu za informiranje, tako da ta sredstva skupaj
                            znašajo 32 milijonov. Amandma je sprejel Družbenopolitični zbor.</p>
-                        <p>Kdo je za amandma? <stage>(52 delegatov.)</stage> Je kdo proti?
-                              <stage>(79 delegatov.)</stage> Se je kdo vzdržal? <stage>(14
-                              delegatov.)</stage></p>
+                        <p>Kdo je za amandma? <stage type="vote">(52 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(79 delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(14
+                              delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da amandma ni sprejet.</p>
                         <p>Tretji amandma. Pod zaporedno točko 21, pri Republiškem sekretariatu za
                            ljudsko obrambo, se postavka 4.5.23 spremeni, tako da se glasi: 4.5.23.
                            Nabava OVO in stroškov usposabljanja ter urjenja 20.000,00 din. Amandma
                            je sprejel Zbor združenega dela.</p>
-                        <p>Kdo je za amandma? <stage>(53 delegatov.)</stage> Je kdo proti?
-                              <stage>(84 delegatov.)</stage> Se je kdo vzdržal? <stage>(7
-                              delegatov.)</stage></p>
+                        <p>Kdo je za amandma? <stage type="vote">(53 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(84 delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(7
+                              delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da tudi ta amandma ni sprejet.</p>
                         <p>Četrti amandma pod zaporedno številko 22. Republiški sekretariat za
                            ljudsko obrambo - tudi tu je amandma, tako da se  glasi: "Redno
                            usposabljanje vojakov 1 milijarda 319 milijonov 194,6 tisoč din."</p>
-                        <p>Kdo je za amandma? <stage>(54 delegatov.)</stage> Je kdo proti?
-                              <stage>(84 delegatov.)</stage> Se je kdo vzdržal? <stage>(6
-                              delegatov.)</stage></p>
+                        <p>Kdo je za amandma? <stage type="vote">(54 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(84 delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(6
+                              delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da tudi četrti amandma ni bil sprejet.</p>
                         <p>Peti amandma pri Republiškem sekretariatu za družbeno planiranje. To je
                            zaporedna številka 34: "Sredstva za hitrejši razvoj demografsko ogroženih
@@ -509,14 +527,15 @@
                      </sp>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDUJOČI JOŽE ZUPANČIČ:</speaker>
-                        <p>Hvala gospod Klavora. Želi še kdo razpravljati? <stage>(Ne.)</stage>
-                           Lahko tudi o tem amandmaju glasujemo? <stage>(Da.)</stage> Gre za peti
+                        <p>Hvala gospod Klavora. Želi še kdo razpravljati? <stage type="debate">(Ne.)</stage>
+                           Lahko tudi o tem amandmaju glasujemo? <stage type="debate">(Da.)</stage> Gre za peti
                            amandma pri Republiškem sekretariatu za družbeno planiranje in za
                            postavko 2.4.6. Amandma, tako kot sem povedal, je bil sprejet v Zboru
                            občin.</p>
-                        <p>Kdo je za amandma? <stage>(100 delegatov.)</stage> Je kdo proti?
-                              <stage>(11 delegatov.)</stage> Se je kdo vzdržal? <stage>(28
-                              delegatov.)</stage></p>
+                        <p>Kdo je za amandma? <stage type="vote">(100 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(11 delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(28
+                              delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da smo prvi amandma sprejeli.</p>
                         <p>6. amandma: Republiški sekretariat za borce in vojne invalide. Postavka
                            2.4.1.4: sofinanciranje glasila TV-15. Vi imate to v postavki, zaporedna
@@ -524,9 +543,10 @@
                            800 tisoč se črtajo, tako da se prenesejo v točke 4 (Sekretariat
                            Izvršnega sveta Skupščine Republike Slovenije) ter se dodajo postavki
                            2.4.17 - pluralizaciji medijev. Amandma je bil sprejet Zboru občin.</p>
-                        <p>Kdo je za amandma? <stage>(75 delegatov.)</stage> Je kdo proti?
-                              <stage>(51 delegatov.)</stage> Se je kdo vzdržal? <stage>(13
-                              delegatov.)</stage></p>
+                        <p>Kdo je za amandma? <stage type="vote">(75 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(51 delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(13
+                              delegatov.)</stage>
+                        </p>
                         <p>Amandma je sprejet.</p>
                         <p>In sedaj že zadnji amandma. Pri Republiškem sekretariatu za kulturo.
                            Postavka 4.2.4: kultura, to je pod zaporedno številko 76, kultura -
@@ -563,9 +583,10 @@
                         <speaker>PREDSEDUJOČI JOŽE ZUPANČIČ:</speaker>
                         <p>Lahko končam? Glasujemo o 7. amandmaju, ki ste ga prebrali pod številko
                            76. Amandma je bil sprejet samo v našem zboru.</p>
-                        <p>Kdo je za ta amandma? <stage>(78 delegatov.)</stage> Je kdo proti?
-                              <stage>(43 delegatov.)</stage> Se je kdo vzdržal? <stage>(22
-                              delegatov.)</stage></p>
+                        <p>Kdo je za ta amandma? <stage type="vote">(78 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(43 delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(22
+                              delegatov.)</stage>
+                        </p>
                         <p>Tudi ta amandma je sprejet.</p>
                         <p>Ugotavljam, da smo tri amandmaje sprejeli, štiri zavrnili in sedaj
                            glasujemo še o zakonu v celoti, z usklajenimi amandmaji, ki smo jih
@@ -659,9 +680,10 @@
                         <p>Ali bi mogoče to zadoščalo, ker gre za vsebinsko enaka. Slišali ste
                            amandma, ki je posledica sprejetega našega amandmaja. Saj je logično, ne?
                            Glasujemo.</p>
-                        <p>Kdo je za predlagani amandma gospoda Kranjca? <stage>(131
-                              delegatov.)</stage> Je kdo proti? <stage>(4 delegati.)</stage> Se je
-                           kdo vzdržal? <stage>(9 delegatov.)</stage></p>
+                        <p>Kdo je za predlagani amandma gospoda Kranjca? <stage type="vote">(131
+                              delegatov.)</stage> Je kdo proti? <stage type="vote">(4 delegati.)</stage> Se je
+                           kdo vzdržal? <stage type="vote">(9 delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je amandma gospoda ministra sprejet.</p>
                         <p>Želi kdo besedo? Gospod Smole.</p>
                      </sp>
@@ -789,24 +811,26 @@
                         <speaker>PREDSEDUJOČI JOŽE ZUPANČIČ:</speaker>
                         <p>Predlagam, da glasujemo. Na glasovanje dajem predlog zakona o proračunu
                            Republike Slovenije za leto 1991 s sprejetimi amandmaji v celoti.</p>
-                        <p> Kdo je za? <stage>(96 delegatov.)</stage> Je kdo proti? <stage>(45
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(5
-                           delegatov.)</stage></p>
+                        <p> Kdo je za? <stage type="vote">(96 delegatov.)</stage> Je kdo proti? <stage type="vote">(45
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(5
+                           delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je proračun Republike Slovenije za leto 1991 sprejet.
-                              <stage>(ploskanje)</stage></p>
+                              <stage type="vocal">(ploskanje)</stage>
+                        </p>
                         <p>Predlagam še naslednji sklep: Skupna komisija predlaga zborom Skupščine
                            Republike Slovenije, da pooblastijo strokovno službo v Republiškem
                            sekretariatu za finance, da izvede ustrezne spremembe v bilanci prihodkov
                            in odhodkov ter v Posebnem delu proračuna Republike Slovenije za leto
                            1991 na podlagi sprejetega usklajevalnega predloga zborov.</p>
-                        <p>Kdo je za ta sklep skupne komisije? <stage>(113 delegatov.)</stage> Je
-                           kdo proti? <stage>(8 delegatov.)</stage> Se je kdo vzdržal? <stage>(13
-                              delegatov.)</stage></p>
+                        <p>Kdo je za ta sklep skupne komisije? <stage type="vote">(113 delegatov.)</stage> Je
+                           kdo proti? <stage type="vote">(8 delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(13
+                              delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je sklep sprejet.</p>
                         <p>Zahvaljujem se vam in na svidenje.</p>
                      </sp>
-                     <stage type="time">(Seja je bila <time to="1991-03-29T15:50:00"
-                           xml:id="stage.t.2">končana 29. marca 1991 ob 15.50 uri</time>.)</stage>
+                     <stage type="time">(Seja je bila <time to="1991-03-29T15:50:00" xml:id="stage.t.2">končana 29. marca 1991 ob 15.50 uri</time>.)</stage>
                   </div>
                </div>
             </div>

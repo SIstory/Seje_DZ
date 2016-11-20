@@ -31,8 +31,7 @@
             <pubPlace>https://github.com/SIstory/Seje_DZ/tree/master/</pubPlace>
             <availability status="free">
                <licence>http://creativecommons.org/licenses/by/4.0/</licence>
-               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/"
-                     >Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
+               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
                </p>
             </availability>
             <date when="2016-07-20+02:00"/>
@@ -53,9 +52,7 @@
                      <date>(18. april 1991)</date>
                   </imprint>
                </monogr>
-               <ref
-                  target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=E96D842E37FD23C2C1257CA00039697B"
-                     >(<date>2016-04-12</date>)</ref>
+               <ref target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=E96D842E37FD23C2C1257CA00039697B">(<date>2016-04-12</date>)</ref>
             </biblStruct>
             <biblFull>
                <titleStmt>
@@ -67,10 +64,10 @@
                   <publisher>Državni zbor Republike Slovenije</publisher>
                   <availability status="free">
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="slv">Avtorske pravice so potekle, delo je v javni
+                              xml:lang="slv">Avtorske pravice so potekle, delo je v javni
                         domeni.</licence>
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="eng">Public Domain Mark 1.0</licence>
+                              xml:lang="eng">Public Domain Mark 1.0</licence>
                   </availability>
                </publicationStmt>
             </biblFull>
@@ -82,7 +79,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -93,6 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2016-11-19+01:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2016-11-19+01:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-07-20+02:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -125,20 +134,19 @@
                <item>
                   <list rend="ordered">
                      <head>PRED DNEVNIM REDOM:                                      STRAN</head>
-                     <item n="1">Ugotavljanje prisotnosti delegatov .................... 1</item>
-                     <item n="2">Določitev dnevnega reda ............................... 1</item>
+                     <item n="1" xml:id="toc.1.1">Ugotavljanje prisotnosti delegatov .................... 1</item>
+                     <item n="2" xml:id="toc.1.2">Določitev dnevnega reda ............................... 1</item>
                   </list>
                </item>
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED:</head>
-                     <item n="1">Predlog zakona o vojaški dolžnosti .................... 1<list
-                           rend="simple">
+                     <item n="1" xml:id="toc.2.1">Predlog zakona o vojaški dolžnosti .................... 1<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>Tomaž Pavšič .......................................... 2</item>
                         </list>
                      </item>
-                     <item n="2">Seznam govornikov .................................. II/1</item>
+                     <item n="2" xml:id="toc.2.2">Seznam govornikov .................................. II/1</item>
                   </list>
                </item>
             </list>
@@ -156,25 +164,26 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.VsiZbor">
+         <div xml:id="div.1" ana="#PAR.VsiZbor">
             <head>DELOVNA SKUPNA SEJA VSEH ZBOROV SKUPŠČINE REPUBLIKE SLOVENIJE</head>
-            <div ana="#PAR.Delovna" n="7">
+            <div xml:id="div.1.1" ana="#PAR.Delovna" n="7">
                <head>7. seja</head>
                <docDate>(<date when="1991-04-18">18. april 1991</date>)</docDate>
                <timeline origin="#TL.1" unit="s">
                   <when synch="#stage.t.1" xml:id="TL.1" absolute="1991-04-18T17:20:00"/>
-                  <when synch="#stage.t.2" since="#TL.1" absolute="1991-04-18T17:30:00"
-                     interval="600"/>
+                  <when synch="#stage.t.2"
+                        since="#TL.1"
+                        absolute="1991-04-18T17:30:00"
+                        interval="600"/>
                </timeline>
                <castList>
                   <castItem>
                      <roleDesc>Sejo je vodil</roleDesc>: <actor xml:id="sp.BizjakIvan">Ivan
                         Bizjak</actor>, <role>predsednik Zbora občin</role>.</castItem>
                </castList>
-               <stage type="time">Seja se je <time from="1991-04-18T17:20:00" xml:id="stage.t.1"
-                     >začela ob 17.20 uri</time>.</stage>
-               <div ana="#PAR.PredDnevRed">
-                  <div ana="#PAR.Prisot">
+               <stage type="time">Seja se je <time from="1991-04-18T17:20:00" xml:id="stage.t.1">začela ob 17.20 uri</time>.</stage>
+               <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.Prisot" corresp="#toc.1.1">
                      <sp who="#sp.BizjakIvan">
                         <speaker>PREDSEDUJOČI IVAN BIZJAK:</speaker>
                         <p>Poslanke in poslanci, gospe in gospodje, pričenjam s 7. delovno skupno
@@ -184,14 +193,15 @@
                            sporazumnega predloga glede spornih amandmajev, je Zbor občin sprejel
                            sklep, da se te zadeve razčistijo na delovni skupni seji. Predlagam, da
                            najprej ugotovimo <title>prisotnost</title>, po zborih seveda.</p>
-                        <p>Najprej Družbenopolitični zbor. <stage>(46 prisotnih.)</stage>
-                           Ugotavljamo prisotnost pri Zboru občin. <stage>(47 prisotnih.)</stage>
-                           Prisotnost v Zboru združenega dela: <stage>(45 prisotnih.)</stage></p>
+                        <p>Najprej Družbenopolitični zbor. <stage type="quorum">(46 prisotnih.)</stage>
+                           Ugotavljamo prisotnost pri Zboru občin. <stage type="quorum">(47 prisotnih.)</stage>
+                           Prisotnost v Zboru združenega dela: <stage type="quorum">(45 prisotnih.)</stage>
+                        </p>
                         <p>Ugotavljam, da je prisotnih več kot polovica delegatk in delegatov v
                            vsakem zboru. S tem je 7. delovna skupna seja sklepčna.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.DolDnevRed">
+                  <div xml:id="div.1.1.1.2" ana="#PAR.DolDnevRed" corresp="#toc.1.2">
                      <sp who="#sp.BizjakIvan">
                         <p>
                            <title>V zvezi s predlogom</title> zakona o vojaški dolžnosti, ki je
@@ -208,8 +218,8 @@
                      </sp>
                   </div>
                </div>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR">
+               <div xml:id="div.1.1.2" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.2.1" ana="#PAR.TDR" corresp="#toc.2.1">
                      <sp who="#sp.BizjakIvan">
                         <p>Prehajamo na odločanje o spornih vprašanjih pri <title>predlogu zakona o
                               vojaški dolžnosti</title>. Najprej bomo glasovali o amandmajih, in
@@ -219,30 +229,34 @@
                            izvrševanju te službe lahko na osnovi svoje prostovoljne odločitve v
                            skladu s tem zakonom sodelujejo tudi ženske.""</p>
                         <p>Predlagam, da ponovno ugotovimo prisotnost, ker se je nekoliko
-                           spremenila. Najprej v Družbenopolitičnem zboru. <stage>(55
-                              prisotnih.)</stage> Zbor občin: <stage>(49 prisotnih.)</stage> Zbor
-                           združenega dela: <stage>(50 prisotnih.)</stage></p>
+                           spremenila. Najprej v Družbenopolitičnem zboru. <stage type="quorum">(55
+                              prisotnih.)</stage> Zbor občin: <stage type="quorum">(49 prisotnih.)</stage> Zbor
+                           združenega dela: <stage type="quorum">(50 prisotnih.)</stage>
+                        </p>
                         <p>Glasujemo torej o pravkar prebranem amandmaju k 1. členu. To je amandma
                            Družbenopolitičnega zbora.</p>
-                        <p>Kdo je za ta amandma? <stage>(58 delegatov.)</stage> Je kdo proti?
-                              <stage>(84 delegatov.)</stage> Se je kdo vzdržal? <stage>(10
-                              delegatov.)</stage></p>
+                        <p>Kdo je za ta amandma? <stage type="vote">(58 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(84 delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(10
+                              delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da amandma ni sprejet.</p>
                         <p>Prehajamo na amandma Družbenopolitičnega zbora k 8. členu, ki se glasi:
                            Drugi stavek 1. odstavka tega člena se spremeni tako, da se glasi:
                            "Podatki iz kazenske evidence se uničijo, ko vojaški obveznik odsluži
                            vojaški rok. Vsi ostali osebni podatki o vojaškem obvezniku o vojaški
                            evidenci se uničijo, ko mu preneha vojaška dolžnost."</p>
-                        <p>Kdo je za predlagani amandma? <stage>(64 delegatov.)</stage> Je kdo
-                           proti? <stage>(77 delegatov.)</stage> Se je kdo vzdržal? <stage>(9
-                              delegatov.)</stage></p>
+                        <p>Kdo je za predlagani amandma? <stage type="vote">(64 delegatov.)</stage> Je kdo
+                           proti? <stage type="vote">(77 delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(9
+                              delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da amandmaja nismo sprejeli.</p>
                         <p>Prehajamo na odločanje o amandmaju k 33. členu, ki se glasi: V prvem
                            odstavku se za besedo "razlogi" vejica nadomesti s piko, ostalo besedilo
                            pa se črta. To je amandma Zbora združenega dela.</p>
-                        <p>Kdo je za ta amandma? <stage>(60 delegatov.)</stage> Je kdo proti?
-                              <stage>(80 delegatov.)</stage> Se je kdo vzdržal? <stage>(12
-                              delegatov.)</stage></p>
+                        <p>Kdo je za ta amandma? <stage type="vote">(60 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(80 delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(12
+                              delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da amandma ni sprejet.</p>
                         <p>Prehajamo na glasovanje o amandmaju Zbora združenega dela, po katerem se
                            doda nov 47.a člen, ki se glasi: "Državljani, ki so odslužili vojaški rok
@@ -251,18 +265,20 @@
                         <p>Državljane iz prejšnjega odstavka, ki so uveljavili pravico do ugovora
                            vesti, se iz rezervnega sestava prerazporedi na opravljanje dolžnosti v
                            civilno zaščito ali na druge dolžnosti v obrambi in zaščiti."</p>
-                        <p>Kdo je za ta amandma? <stage>(60 delegatov.)</stage> Je kdo proti?
-                              <stage>(81 delegatov.)</stage> Se je kdo vzdržal? <stage>(12
-                              delegatov.)</stage></p>
+                        <p>Kdo je za ta amandma? <stage type="vote">(60 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(81 delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(12
+                              delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da amandma ni sprejet.</p>
                         <p>Glasujemo o amandmaju Zbora združenega dela k 51. členu, ki se glasi: V
                            tretjem odstavku se v drugi vrsti za besedilom "največ do" doda "14 dni"
                            in za besedilom "do dveh mesecev" se pika spremeni v vejico in doda
                            besedilo: "pa samo za rezervne starešine v primerih došolanja ali
                            prešolanja, in to z njegovim soglasjem".</p>
-                        <p>Kdo je za ta amandma? <stage>(61 delegatov.)</stage> Je kdo proti?
-                              <stage>(80 delegatov.)</stage> Se je kdo vzdržal? <stage>(13
-                              delegatov.)</stage></p>
+                        <p>Kdo je za ta amandma? <stage type="vote">(61 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(80 delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(13
+                              delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da amandma ni sprejet.</p>
                         <p>Prehajamo še na glasovanje o amandmaju Zbora občin, po katerem naj se v
                            celotnem besedilu predloga zakona besedi "oficir" in "podoficir"
@@ -283,22 +299,23 @@
                      <sp who="#sp.BizjakIvan">
                         <speaker>PREDSEDUJOČI IVAN BIZJAK:</speaker>
                         <p>Hvala lepa. Prehajamo na glasovanje.</p>
-                        <p>Kdo je za ta amandma? <stage>(123 delegatov.)</stage>
-                           <stage>(Ploskanje.)</stage> Je  kdo proti? <stage>(3 delegati.)</stage>
-                           Se je kdo vzdržal? <stage>(19 delegatov.)</stage></p>
+                        <p>Kdo je za ta amandma? <stage type="vote">(123 delegatov.)</stage>
+                           <stage type="vocal">(Ploskanje.)</stage> Je  kdo proti? <stage type="vote">(3 delegati.)</stage>
+                           Se je kdo vzdržal? <stage type="vote">(19 delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je amandma sprejet.</p>
                         <p>Prehajamo na glasovanje o predlogu zakona o vojaški dolžnosti v
                            celoti.</p>
-                        <p>Kdo je za predlog zakona? <stage>(115 delegatov.)</stage> Je kdo proti?
-                              <stage>(25 delegatov.)</stage> Se je kdo vzdržal? <stage>(12
-                              delegatov.)</stage></p>
+                        <p>Kdo je za predlog zakona? <stage type="vote">(115 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(25 delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(12
+                              delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlog zakona o vojaški dolžnosti z večino glasov
                            sprejet.</p>
                         <p>S tem zaključujem delovno skupno sejo vseh treh zborov Skupščine
                            Republike Slovenije. Hvala.</p>
                      </sp>
-                     <stage type="time">(Seja je bila <time to="1991-04-18T17:30:00"
-                           xml:id="stage.t.2">končana 18. aprila 1991 ob 17.30 uri</time>.)</stage>
+                     <stage type="time">(Seja je bila <time to="1991-04-18T17:30:00" xml:id="stage.t.2">končana 18. aprila 1991 ob 17.30 uri</time>.)</stage>
                   </div>
                </div>
             </div>

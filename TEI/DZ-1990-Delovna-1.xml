@@ -93,6 +93,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2016-08-01+02:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2016-08-01+02:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-07-19+02:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -125,14 +137,14 @@
                <item>
                   <list rend="ordered">
                      <head>PRED DNEVNIM REDOM:                                      STRAN</head>
-                     <item n="1">Otvoritev seje ........................................ 1<list
-                           rend="simple">
+                     <item n="1" xml:id="toc.1.1">Otvoritev seje
+                        ........................................ 1<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>Karel Franko .......................................... 1</item>
                         </list>
                      </item>
-                     <item n="2">Ugotavljanje prisotnosti delegatov .................... 1<list
-                           rend="simple">
+                     <item n="2" xml:id="toc.1.2">Ugotavljanje prisotnosti delegatov
+                        .................... 1<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>dr. Rajko Pirnat ...................................... 1</item>
                            <item>Marjan Podobnik ....................................... 1</item>
@@ -148,10 +160,10 @@
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED:</head>
-                     <item n="1">Odločanje o predlogu usklajevalne komisije za uskladitev amandmajev
-                        k 10., 11., 26. in 29. členu začasnega poslovnika (1. točka dnevnega reda -
-                        sprejem amandmajev in začasnega poslovnika) ................... 3<list
-                           rend="simple">
+                     <item n="1" xml:id="toc.2.1">Odločanje o predlogu usklajevalne komisije za
+                        uskladitev amandmajev k 10., 11., 26. in 29. členu začasnega poslovnika (1.
+                        točka dnevnega reda - sprejem amandmajev in začasnega poslovnika)
+                        ................... 3<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Roman Jakič ........................................... 3</item>
                            <item>dr. Rajko Pirnat ...................................... 3</item>
@@ -162,9 +174,10 @@
                            <item>Franco Juri ........................................... 6</item>
                         </list>
                      </item>
-                     <item n="2">Odločanje o skupni seji vseh zborov Skupščine Republike Slovenije
-                        za volitve predsednika Skupščine (2. točka dnevnega reda - brez odločitve,
-                        prekinitev seje) ............................... 6<list rend="simple">
+                     <item n="2" xml:id="toc.2.2">Odločanje o skupni seji vseh zborov Skupščine
+                        Republike Slovenije za volitve predsednika Skupščine (2. točka dnevnega reda
+                        - brez odločitve, prekinitev seje) ............................... 6<list
+                           rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>dr. Rajko Pirnat ...................................... 6</item>
                            <item>Jaša L. Zlobec ........................................ 7</item>
@@ -178,7 +191,8 @@
                            <item>mag. Ervin Anton Schwarzbartl ........................ 10</item>
                         </list>
                      </item>
-                     <item n="3">Seznam govornikov .................................. II/1</item>
+                     <item n="3" xml:id="toc.2.3">Seznam govornikov
+                        .................................. II/1</item>
                   </list>
                </item>
             </list>
@@ -232,6 +246,9 @@
                   <actor xml:id="sp.ŠkolčJožef">Školč Jožef</actor>
                   ............................................... 9</castItem>
                <castItem>
+                  <actor xml:id="sp.unknown"/>
+               </castItem>
+               <castItem>
                   <actor xml:id="sp.VerličAndrej">Verlič Andrej</actor>
                   ............................................. 2</castItem>
                <castItem>
@@ -244,9 +261,9 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.VsiZbor">
+         <div xml:id="div.1" ana="#PAR.VsiZbor">
             <head>DELOVNA SKUPNA SEJA VSEH ZBOROV SKUPŠČINE REPUBLIKE SLOVENIJE</head>
-            <div ana="#PAR.Delovna" n="1">
+            <div xml:id="div.1.1" ana="#PAR.Delovna" n="1">
                <head>1. seja</head>
                <docDate>(<date when="1990-05-08">8. maj 1990</date>)</docDate>
                <timeline origin="#TL.1" unit="s">
@@ -262,8 +279,8 @@
                </castList>
                <stage type="time">Seja se je <time from="1990-05-08T01:05:00" xml:id="stage.t.1"
                      >pričela ob 01.05 uri</time>.</stage>
-               <div ana="#PAR.PredDnevRed">
-                  <div ana="#PAR.TDR">
+               <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.TDR" corresp="#toc.1.1">
                      <sp who="#sp.FrankoKarel">
                         <speaker>PREDSEDUJOČI KAREL FRANKO:</speaker>
                         <p>
@@ -274,13 +291,14 @@
                            namesto mene.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.Prisot">
+                  <div xml:id="div.1.1.1.2" ana="#PAR.Prisot" corresp="#toc.1.2">
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDUJOČI DR. FRANCE BUČAR:</speaker>
                         <p>Ker so proceduralno zadeve jasne, moramo najprej ugotoviti
                               <title>sklepčnost</title> vsakega zbora posebej. Zato bi najprej
-                           ugotovili sklepčnost Družbenopolitičnega zbora. <stage>(77
-                              prisotnih.)</stage></p>
+                           ugotovili sklepčnost Družbenopolitičnega zbora. <stage type="quorum">(77
+                              prisotnih.)</stage>
+                        </p>
                         <p>Ugotavljam navzočnost Zbora občin. Torej, še enkrat poskusimo. Torej,
                            pritisnite sivo tipko, potem ko povem, da ugotavljamo navzočnost. Torej,
                            prosim delegate Zbora občin, da pritisnejo na sivo tipko. Rezultat ni
@@ -298,22 +316,23 @@
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDUJOČI DR. FRANCE BUČAR:</speaker>
                         <p>Torej, poskusimo še enkrat. Pritisnite na sivo tipko - Zbor občin, se
-                           razume. <stage>(Ni pravega rezultata.)</stage> Sedaj pa predlagam, če se
-                           strinjate, Zbor občin, da ugotovimo navzočnost z dviganjem rok.
-                           Sekretarje prosim, da gredo v dvorano in preštejejo dvignjene roke.
-                           Zaenkrat ne, ker bo prekomplicirano. Medtem naredimo še eno vajo. Torej,
-                           člani Zbora občin, pritisnite na sivo tipko. <stage>(81
-                              prisotnih.)</stage> Sedaj je eden preveč.</p>
+                           razume. <stage type="comment">(Ni pravega rezultata.)</stage> Sedaj pa
+                           predlagam, če se strinjate, Zbor občin, da ugotovimo navzočnost z
+                           dviganjem rok. Sekretarje prosim, da gredo v dvorano in preštejejo
+                           dvignjene roke. Zaenkrat ne, ker bo prekomplicirano. Medtem naredimo še
+                           eno vajo. Torej, člani Zbora občin, pritisnite na sivo tipko. <stage
+                              type="quorum">(81 prisotnih.)</stage> Sedaj je eden preveč.</p>
                      </sp>
-                     <sp who="#sp.PirnatRajko">
-                        <p>...<stage>(Med klic: Preveč jih glasujem, tudi iz drugih
-                           zborov.)</stage>...</p>
+                     <sp who="#sp.unknown">
+                        <stage type="incident">Med klic:</stage>
+                        <ab>...( Preveč jih glasuje, tudi iz drugih zborov.)...</ab>
                      </sp>
                      <sp who="#sp.PodobnikMarjan">
                         <speaker>MARJAN PODOBNIK:</speaker>
                         <p>Oprostite, imam intervencijo. Gospoda Verliča sem videl, da je pritisnil
-                           na tipko, kar se mi zdi skrajno nesramno. <stage>(Aplavz in žvižgi v
-                              dvorani. Pripombe prisotnih: "Ven ga vrzi. Fuj!)</stage></p>
+                           na tipko, kar se mi zdi skrajno nesramno. <stage type="incident">(Aplavz
+                              in žvižgi v dvorani. Pripombe prisotnih: "Ven ga vrzi. Fuj!)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.ZagoženFranc">
                         <speaker>DR. FRANC ZAGOŽEN:</speaker>
@@ -321,13 +340,16 @@
                            da ponovimo in poskusimo še enkrat glasovati. Mislim, da ta aparatura
                            omogoča ugotoviti, kdo manipulira, ker gori rdeča lučka pred vsakim, ki
                            je nanjo pritisnil. Ponovite še enkrat, potem naj gorijo lučke in če bo
-                           več kot 80 lučk bomo pregledali vse. ...<stage>(Aplavz.)</stage>...</p>
+                           več kot 80 lučk bomo pregledali vse. ...<stage type="incident"
+                              >(Aplavz.)</stage>...</p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDUJOČI DR. FRANCE BUČAR:</speaker>
-                        <p>Zopet glasujemo, pred tem bomo ugotovili prisotnost. ...<stage>(Glas iz
-                              dvorane: Če je bil človek napaden, ima pravico takoj
-                              odgovoriti.)</stage>...</p>
+                        <p>Zopet glasujemo, pred tem bomo ugotovili prisotnost. ...</p>
+                     </sp>
+                     <sp who="#sp.unknown">
+                        <stage type="incident">(Glas iz dvorane:</stage>
+                        <ab>Če je bil človek napaden, ima pravico takoj odgovoriti.)...</ab>
                      </sp>
                      <sp who="#sp.VerličAndrej">
                         <speaker>ANDREJ VERLIČ:</speaker>
@@ -336,13 +358,14 @@
                            mogel videti, kaj jaz počnem z rokami. Te obtožbe ne more potrditi nihče
                            od teh, ki so bližje in bi v vsakem primeru moje obnašanje, ki mi ga
                            očita Podobnik, opazili. Gospod Podobnik, prosim, da se za svoj izpad
-                           opravičite. ...<stage>(Aplavz.)</stage>...</p>
+                           opravičite. ...<stage type="incident">(Aplavz.)</stage>...</p>
                      </sp>
                      <sp who="#sp.PodobnikMarjan">
                         <speaker>MARJAN PODOBNIK:</speaker>
                         <p>Predlagam, da se nekdo usede na moje mesto in pogleda ali se vidi, če se
                            pritisne na rdečo lučko. Jaz sem to jasno videl in ko sem videl, sem šel
-                           sem in sem to povedal. ...<stage>(Gromovit aplavz.)</stage>...</p>
+                           sem in sem to povedal. ...<stage type="incident">(Gromovit
+                              aplavz.)</stage>...</p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDUJOČI DR. FRANCE BUČAR:</speaker>
@@ -357,60 +380,79 @@
                         <speaker>TINA BITENC-PENGOV:</speaker>
                         <p>Predlagam, da kličemo poimensko, ker se nam številke, ne vem zakaj, ne
                            ujemajo.</p>
-                        <p>Žampa Janez. <stage>(Da.)</stage> Železnik Andrej. <stage>(Da.)</stage>
-                           Žižek Vili. <stage>(Da.)</stage> Žunter Anton. <stage>(Da.)</stage>
-                           Atelšek Ivan. <stage>(Ni več prisoten.)</stage> Bevc Stanislav.
-                              <stage>(Da.)</stage> Bizjak Ivan. <stage>(Da.)</stage> Božič Danijel.
-                              <stage>(Da.)</stage> Bukovec Janoš. <stage>(Da.)</stage>  Dragovan
-                           Slavko. <stage>(Da.)</stage> Dvornik Marjan. <stage>(Da.)</stage> Feltrin
-                           Franci. <stage>(Da.)</stage> Flego Isabella. <stage>(Ni več
-                              prisotna.)</stage> Franko Karel. <stage>(Da.)</stage> Frelih Leopold.
-                              <stage>(Da.)</stage> Gale Janez. <stage>(Da.)</stage> Glavič Peter.
-                              <stage>(Odsoten.)</stage> Gradišar Cvetko. <stage>(Da.)</stage>
-                           Grdadolnik Jože. <stage>(Da.)</stage> Gregurec dr. Slavko
-                              <stage>(Da.)</stage> Gros Vitomir. <stage>(Da.)</stage> Grošelj
-                           Leopold. <stage>(Da.)</stage> Ivanušič Zvonko. <stage>(Da.)</stage>
-                           Jakelj Ljubo. <stage>(Da.)</stage> Jaklin Jože. <stage>(Da.)</stage>
-                           Jamnik Alojz. <stage>(Da.)</stage> Jamnikar Peter. <stage>(Da.)</stage>
-                           Jež Boris. <stage>(Da.)</stage> Jež Matjaž. <stage>(Da.)</stage> Jerina
-                           Janez. <stage>(Da.)</stage> Jug Janez. <stage>(Da.)</stage> Juri Aurelio.
-                              <stage>(Da.)</stage> Kac Albin. <stage>(Odšel.)</stage> Klavora Fedja.
-                              <stage>(Da.)</stage> Kokošinek Ervin. <stage>(Da.)</stage> Kocbek
-                           Ludvik. <stage>(Da.)</stage> Kovač Franc. <stage>(Da.)</stage> Kramarič
-                           Tone. <stage>(Da.)</stage> Kramberger Janez. <stage>(Da.)</stage> Kramar
-                           Jože. <stage>(Da.)</stage> Kuhar Ivan. <stage>(Da.)</stage> Kuzman Anton.
-                              <stage>(Da.)</stage> Lovec Aleksander. <stage>(Da.)</stage> Lovšin
-                           Franc. <stage>(Da.)</stage> Lukač Janez. <stage>(Da.)</stage> Mencinger
-                           Avguštin Alojzij. <stage>(Da.)</stage> Mesiček Ivan. <stage>(Da.)</stage>
-                           Metelko Alojz. <stage>(Da.)</stage> Mlakar Marjan. <stage>(Da.)</stage>
-                           Novak Branko. <stage>(Da.)</stage> Ogris Franc. <stage>(Da.)</stage> Oven
-                           Edvard. <stage>(Da.)</stage> Partljič Anton. <stage>(Da.)</stage> Pavšič
-                           Tomaž. <stage>(Da.)</stage> Peskar Matjaž. <stage>(Da.)</stage> Planinšek
-                           Franc. <stage>(Da.)</stage> Podveršič Bruno. <stage>(Da.)</stage>
-                           Potočnik Viktorija. <stage>(Odsotna.)</stage> Protner Jože.
-                              <stage>(Da.)</stage> Rainer Niko. <stage>(Da.)</stage> Razdevšek
-                           Borut. <stage>(Da.)</stage> Režun Janez. <stage>(Da.)</stage> Rojec
-                           Anton. <stage>(Da.)</stage> Schwarzbartl Ervin-Anton.
-                              <stage>(Da.)</stage> Senčur Miloš. <stage>(Da.)</stage> Slejko
-                           Vladimir. <stage>(Da.)</stage> Stadler Marko. <stage>(Da.)</stage>
-                           Stariha Janez. <stage>(Da.)</stage> Starman Danijel. <stage>(Da.)</stage>
-                           Urbančič Miloš. <stage>(Da.)</stage> Vivod dr. Ivan. <stage>(Da.)</stage>
-                           Vodopivec Ivan. <stage>(Da.)</stage> Volk Milan. <stage>(Da.)</stage>
-                           Zakonjšek Jože. <stage>(Da.)</stage> Šonc Metod. <stage>(Da.)</stage>
-                           Štefančič Marcel. <stage>(Da.)</stage> Štrumbelj Tomaž.
-                              <stage>(Da.)</stage> Štular Vojka. <stage>(Da.)</stage> Černe Ivan.
-                              <stage>(Da.)</stage></p>
+                        <p>Žampa Janez. <stage type="quorum">(Da.)</stage> Železnik Andrej. <stage
+                              type="quorum">(Da.)</stage> Žižek Vili. <stage type="quorum"
+                              >(Da.)</stage> Žunter Anton. <stage type="quorum">(Da.)</stage>
+                           Atelšek Ivan. <stage type="quorum">(Ni več prisoten.)</stage> Bevc
+                           Stanislav. <stage type="quorum">(Da.)</stage> Bizjak Ivan. <stage
+                              type="quorum">(Da.)</stage> Božič Danijel. <stage type="quorum"
+                              >(Da.)</stage> Bukovec Janoš. <stage type="quorum">(Da.)</stage>
+                            Dragovan Slavko. <stage type="quorum">(Da.)</stage> Dvornik Marjan.
+                              <stage type="quorum">(Da.)</stage> Feltrin Franci. <stage
+                              type="quorum">(Da.)</stage> Flego Isabella. <stage type="quorum">(Ni
+                              več prisotna.)</stage> Franko Karel. <stage type="quorum"
+                              >(Da.)</stage> Frelih Leopold. <stage type="quorum">(Da.)</stage> Gale
+                           Janez. <stage type="quorum">(Da.)</stage> Glavič Peter. <stage
+                              type="quorum">(Odsoten.)</stage> Gradišar Cvetko. <stage type="quorum"
+                              >(Da.)</stage> Grdadolnik Jože. <stage type="quorum">(Da.)</stage>
+                           Gregurec dr. Slavko <stage type="quorum">(Da.)</stage> Gros Vitomir.
+                              <stage type="quorum">(Da.)</stage> Grošelj Leopold. <stage
+                              type="quorum">(Da.)</stage> Ivanušič Zvonko. <stage type="quorum"
+                              >(Da.)</stage> Jakelj Ljubo. <stage type="quorum">(Da.)</stage> Jaklin
+                           Jože. <stage type="quorum">(Da.)</stage> Jamnik Alojz. <stage
+                              type="quorum">(Da.)</stage> Jamnikar Peter. <stage type="quorum"
+                              >(Da.)</stage> Jež Boris. <stage type="quorum">(Da.)</stage> Jež
+                           Matjaž. <stage type="quorum">(Da.)</stage> Jerina Janez. <stage
+                              type="quorum">(Da.)</stage> Jug Janez. <stage type="quorum"
+                              >(Da.)</stage> Juri Aurelio. <stage type="quorum">(Da.)</stage> Kac
+                           Albin. <stage type="quorum">(Odšel.)</stage> Klavora Fedja. <stage
+                              type="quorum">(Da.)</stage> Kokošinek Ervin. <stage type="quorum"
+                              >(Da.)</stage> Kocbek Ludvik. <stage type="quorum">(Da.)</stage> Kovač
+                           Franc. <stage type="quorum">(Da.)</stage> Kramarič Tone. <stage
+                              type="quorum">(Da.)</stage> Kramberger Janez. <stage type="quorum"
+                              >(Da.)</stage> Kramar Jože. <stage type="quorum">(Da.)</stage> Kuhar
+                           Ivan. <stage type="quorum">(Da.)</stage> Kuzman Anton. <stage
+                              type="quorum">(Da.)</stage> Lovec Aleksander. <stage type="quorum"
+                              >(Da.)</stage> Lovšin Franc. <stage type="quorum">(Da.)</stage> Lukač
+                           Janez. <stage type="quorum">(Da.)</stage> Mencinger Avguštin Alojzij.
+                              <stage type="quorum">(Da.)</stage> Mesiček Ivan. <stage type="quorum"
+                              >(Da.)</stage> Metelko Alojz. <stage type="quorum">(Da.)</stage>
+                           Mlakar Marjan. <stage type="quorum">(Da.)</stage> Novak Branko. <stage
+                              type="debate">(Da.)</stage> Ogris Franc. <stage type="quorum"
+                              >(Da.)</stage> Oven Edvard. <stage type="quorum">(Da.)</stage>
+                           Partljič Anton. <stage type="quorum">(Da.)</stage> Pavšič Tomaž. <stage
+                              type="quorum">(Da.)</stage> Peskar Matjaž. <stage type="quorum"
+                              >(Da.)</stage> Planinšek Franc. <stage type="quorum">(Da.)</stage>
+                           Podveršič Bruno. <stage type="quorum">(Da.)</stage> Potočnik Viktorija.
+                              <stage type="quorum">(Odsotna.)</stage> Protner Jože. <stage
+                              type="quorum">(Da.)</stage> Rainer Niko. <stage type="quorum"
+                              >(Da.)</stage> Razdevšek Borut. <stage type="quorum">(Da.)</stage>
+                           Režun Janez. <stage type="quorum">(Da.)</stage> Rojec Anton. <stage
+                              type="quorum">(Da.)</stage> Schwarzbartl Ervin-Anton. <stage
+                              type="quorum">(Da.)</stage> Senčur Miloš. <stage type="quorum"
+                              >(Da.)</stage> Slejko Vladimir. <stage type="debate">(Da.)</stage>
+                           Stadler Marko. <stage type="quorum">(Da.)</stage> Stariha Janez. <stage
+                              type="quorum">(Da.)</stage> Starman Danijel. <stage type="quorum"
+                              >(Da.)</stage> Urbančič Miloš. <stage type="debate">(Da.)</stage>
+                           Vivod dr. Ivan. <stage type="quorum">(Da.)</stage> Vodopivec Ivan. <stage
+                              type="quorum">(Da.)</stage> Volk Milan. <stage type="quorum"
+                              >(Da.)</stage> Zakonjšek Jože. <stage type="quorum">(Da.)</stage> Šonc
+                           Metod. <stage type="quorum">(Da.)</stage> Štefančič Marcel. <stage
+                              type="quorum">(Da.)</stage> Štrumbelj Tomaž. <stage type="quorum"
+                              >(Da.)</stage> Štular Vojka. <stage type="quorum">(Da.)</stage> Černe
+                           Ivan. <stage type="quorum">(Da.)</stage>
+                        </p>
                         <p>5 delegatov je odsotnih, torej je 75 delegatov.</p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDUJOČI DR. FRANCE BUČAR:</speaker>
                         <p>Poskusimo glasovati, mogoče bo več sreče pri Zboru združenega dela.
                            Torej, prosim, ugotavljamo navzočnost članov Zbora združenega dela.
-                           Navzoči naj pritisnejo na sivo tipko. <stage>(77 navzočih.)</stage>
-                           Torej, Zbor združenega dela se očitno na tehniko bolje spozna. Naj še
-                           enkrat ponovim. Ugotavljam navzočnost vsakega zbora posebej, razprava in
-                           tudi glasovanje pa skupno. Najprej bi prosil poročevalca Zbora združenega
-                           dela, da pove, v čem je</p>
+                           Navzoči naj pritisnejo na sivo tipko. <stage type="quorum">(77
+                              navzočih.)</stage> Torej, Zbor združenega dela se očitno na tehniko
+                           bolje spozna. Naj še enkrat ponovim. Ugotavljam navzočnost vsakega zbora
+                           posebej, razprava in tudi glasovanje pa skupno. Najprej bi prosil
+                           poročevalca Zbora združenega dela, da pove, v čem je</p>
                         <p>bistvo novih amandmajev.</p>
                         <p>Prosim.</p>
                      </sp>
@@ -424,8 +466,8 @@
                      </sp>
                   </div>
                </div>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR" n="1">
+               <div xml:id="div.1.1.2" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.2.1" ana="#PAR.TDR" n="1" corresp="#toc.2.1">
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDUJOČI DR. FRANCE BUČAR:</speaker>
                         <p>Sklepčni smo. to je nesporno. prosim gospoda Rajka Pirnata, da pojasni, v
@@ -506,7 +548,7 @@
                            DEMOS-a, ki so eno govorili pred volitvami, zdaj, že na prvem zasedanju
                            skupščine pa govorijo in izglasujejo nekaj popolnoma drugega. Naj končam
                            s parafrazo svetopisemskega izreka: "Sodite jih po njih dejanjih." Hvala.
-                              ...<stage>(Aplavz.)</stage>...</p>
+                              ...<stage type="incident">(Aplavz.)</stage>...</p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDUJOČI DR. FRANCE BUČAR:</speaker>
@@ -530,10 +572,11 @@
                            plačali iz svojega žepa. Pustite me  na miru, da povem. Zlati se ne
                            strinjam s takimi svetopisemskimi izreki, ker vidimo, da se zadnje čase,
                            vsi nekaj "kitijo" s svetim pismom, pa ga niti v nekaj "členih" ne
-                           razumejo. <stage>(Smeh v dvorani.)</stage> In zato predlagam delovnemu
-                           predsedstvu, da izpelje to razpravo strogo proceduralno, da na glasovanje
-                           in da to izglasujemo in nehajmo s to tragikomedijo. Hvala lepa.
-                              ...<stage>(Aplavz.)</stage>...</p>
+                           razumejo. <stage type="incident">(Smeh v dvorani.)</stage> In zato
+                           predlagam delovnemu predsedstvu, da izpelje to razpravo strogo
+                           proceduralno, da na glasovanje in da to izglasujemo in nehajmo s to
+                           tragikomedijo. Hvala lepa. ...<stage type="incident"
+                           >(Aplavz.)</stage>...</p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDUJOČI DR. FRANCE BUČAR:</speaker>
@@ -566,8 +609,8 @@
                            danes prvič tukaj, delati norca, češ da ne znajo na gumbe pritiskati in
                            se s tem v bistvu igrati. Zato sem tudi prišel, so potrpežljivi, tako kot
                            tudi vsi drugi in mislim, da je pošteno, da se vsi tudi pošteno obnašamo.
-                           Če bi se pa nekaj izmislil, pa bi se sedaj tudi opravičil.
-                              ...<stage>(Klic iz dvorane: Bravo. Aplavz.)</stage>...</p>
+                           Če bi se pa nekaj izmislil, pa bi se sedaj tudi opravičil. ...<stage
+                              type="incident">(Klic iz dvorane: Bravo. Aplavz.)</stage>...</p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDUJOČI DR. FRANCE BUČAR:</speaker>
@@ -586,7 +629,7 @@
                            izpadi.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="2">
+                  <div xml:id="div.1.1.2.2" ana="#PAR.TDR" n="2" corresp="#toc.2.2">
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDUJOČI DR. FRANCE BUČAR:</speaker>
                         <p>Lahko predlagam, da prekinemo razpravo v tej smeri. Gre za možnost, da še
@@ -597,20 +640,22 @@
                            kakor so bili usklajeni. Zato predlagam, da tudi tukaj na enak način
                            glasujemo.</p>
                         <p>Najprej ugotovimo navzočnost. Prosim vse, da pritisnejo na sivo tipko.
-                              <stage>(216 navzočih.)</stage> Torej smo sklepčni.</p>
-                        <p>Kdo je za? <stage>(140 delegatov.)</stage> Je kdo proti? <stage>(77
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(5
-                           delegatov.)</stage></p>
+                              <stage type="quorum">(216 navzočih.)</stage> Torej smo sklepčni.</p>
+                        <p>Kdo je za? <stage type="vote">(140 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(77 delegatov.)</stage> Se je kdo vzdržal? <stage
+                              type="vote">(5 delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je usklajevalni predlog  v celoti sprejet. Sedaj moramo,
                            glede na proceduro, glasovati še o poslovniku kot celoti. Torej ponovimo
                            še enkrat glasovanje.</p>
-                        <p>Kdo je za? <stage>(136 delegatov.)</stage> Je kdo proti? <stage>(77
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(3
-                           delegatov.)</stage></p>
-                        <p>Ugotavljam, da je začasni poslovnik sprejet. Hvala lepa.
-                              <stage>(Aplavz.)</stage> S tem <title>končujem skupno sej</title>o.
-                           Družbenopolitični zbor v teh prostorih nadaljuje sejo po predlaganem
-                           dnevnem redu.</p>
+                        <p>Kdo je za? <stage type="vote">(136 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(77 delegatov.)</stage> Se je kdo vzdržal? <stage
+                              type="vote">(3 delegatov.)</stage>
+                        </p>
+                        <p>Ugotavljam, da je začasni poslovnik sprejet. Hvala lepa. <stage
+                              type="incident">(Aplavz.)</stage> S tem <title>končujem skupno
+                              sej</title>o. Družbenopolitični zbor v teh prostorih nadaljuje sejo po
+                           predlaganem dnevnem redu.</p>
                      </sp>
                      <sp who="#sp.PirnatRajko">
                         <speaker>DR. RAJKO PIRNAT:</speaker>
@@ -628,8 +673,13 @@
                            da ugotovimo prisotnost delegatov, tudi o tem glasuje.</p>
                         <p>To se pravi, Zbor združenega dela naj glasuje o tem, ali je za
                            nadaljevanje seje in dnevnega reda v neposrednem nadaljevanju.</p>
-                        <p>...<stage>(Glas iz klopi: Če imamo garancijo, da danes končamo. Ne pa, da
-                              bomo eno uro čakali, potem pa šli domov.)</stage>...</p>
+                     </sp>
+                     <sp who="#sp.unknown">
+                        <stage type="incident">(Glas iz klopi: </stage>
+                        <ab>...Če imamo garancijo, da danes končamo. Ne pa, da bomo eno uro čakali,
+                           potem pa šli domov.)...</ab>
+                     </sp>
+                     <sp who="#sp.BučarFrance">
                         <p>Tega jamstva ne morem dati. Glede na to, da smo te glavne ovire
                            premagali, menim, d bo stvar lahko stekla brez dolgoveznega usklajevanja,
                            kot smo ga imeli do sedaj. Torej je možnost in tudi upanje, da bi to v
@@ -695,7 +745,7 @@
                            smislu dati opomin. Zato prosim, bodimo konstruktivni in v smislu
                            materialnih obveznosti, ki jih imamo do naših ljudi, sprejmemo in
                            izpeljemo dnevni red do konca in tudi 5. in 6. točko dnevnega reda. Hvala
-                           lepa. ...<stage>(Buren aplavz.)</stage>...</p>
+                           lepa. ...<stage type="incident">(Buren aplavz.)</stage>...</p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDUJOČI DR. FRANCE BUČAR:</speaker>
@@ -817,7 +867,8 @@
                            hočete. Samo, zdi se mi malo neumno to. Predlagal bi našim delegatom iz
                            Zbora občin, da zapustimo to sejo in nadaljujemo svoje delo, tako kot smo
                            si ga zastavili. V tem času, ko se boste vi še pogajali, bomo mi že
-                           prišli do zaključkov. Hvala lepa. ...<stage>(Aplavz.)</stage>...</p>
+                           prišli do zaključkov. Hvala lepa. ...<stage type="incident"
+                              >(Aplavz.)</stage>...</p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDUJOČI DR. FRANCE BUČAR:</speaker>

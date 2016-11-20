@@ -31,8 +31,7 @@
             <pubPlace>https://github.com/SIstory/Seje_DZ/tree/master/</pubPlace>
             <availability status="free">
                <licence>http://creativecommons.org/licenses/by/4.0/</licence>
-               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/"
-                     >Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
+               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
                </p>
             </availability>
             <date when="2016-07-25+02:00"/>
@@ -53,9 +52,7 @@
                      <date>(18. in 31. julija 1990)</date>
                   </imprint>
                </monogr>
-               <ref
-                  target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=258FA1B9ECEB3AB9C1257C8A002507C5"
-                  >(<date/>)</ref>
+               <ref target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=258FA1B9ECEB3AB9C1257C8A002507C5">(<date/>)</ref>
             </biblStruct>
             <biblFull>
                <titleStmt>
@@ -67,10 +64,10 @@
                   <publisher>Državni zbor Republike Slovenije</publisher>
                   <availability status="free">
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="slv">Avtorske pravice so potekle, delo je v javni
+                              xml:lang="slv">Avtorske pravice so potekle, delo je v javni
                         domeni.</licence>
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="eng">Public Domain Mark 1.0</licence>
+                              xml:lang="eng">Public Domain Mark 1.0</licence>
                   </availability>
                </publicationStmt>
             </biblFull>
@@ -82,7 +79,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -93,6 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2016-11-19+01:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2016-11-19+01:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-07-25+02:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -125,32 +134,32 @@
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED:                                              STRAN</head>
-                     <item n="1">Uvodna obrazložitev k predlogu, da se začne postopek za sprejem
+                     <item n="1" xml:id="toc.1.1">Uvodna obrazložitev k predlogu, da se začne postopek za sprejem
                         ustave Republike Slovenije .............................................
                            1<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>Milan Kučan ........................................... 1</item>
                         </list>
                      </item>
-                     <item n="2">Ekspoze k programskim usmeritvam Izvršnega sveta Skupščine
+                     <item n="2" xml:id="toc.1.2">Ekspoze k programskim usmeritvam Izvršnega sveta Skupščine
                         Republike Slovenije ................... 9<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>Alojz Peterle ......................................... 9 </item>
                         </list>
                      </item>
-                     <item n="3">Predlog, da se začne postopek za spremembo Ustave Republike
+                     <item n="3" xml:id="toc.1.3">Predlog, da se začne postopek za spremembo Ustave Republike
                         Slovenije ................. 17<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>Alojz Peterle ........................................ 17</item>
                         </list>
                      </item>
-                     <item n="4">Informacija o stanju v kazensko poboljševalnih zavodih ter o
+                     <item n="4" xml:id="toc.1.4">Informacija o stanju v kazensko poboljševalnih zavodih ter o
                         zahtevi obsojencev .............. 21<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>dr. Rajko Pirnat ..................................... 21</item>
                         </list>
                      </item>
-                     <item n="5">Seznam govornikov .................................. II/1</item>
+                     <item n="5" xml:id="toc.1.5">Seznam govornikov .................................. II/1</item>
                   </list>
                </item>
             </list>
@@ -174,31 +183,33 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.VsiZbor">
+         <div xml:id="div.1" ana="#PAR.VsiZbor">
             <head>SKUPNO ZASEDANJE VSEH ZBOROV SKUPŠČINE REPUBLIKE SLOVENIJE</head>
-            <div ana="#PAR.Zasedanje" n="3">
+            <div xml:id="div.1.1" ana="#PAR.Zasedanje" n="3">
                <head>3. zasedanje</head>
                <docDate>(<date when="1990-07-18">18.</date> in <date when="1990-07-31">31. julija
                      1990</date>)</docDate>
                <timeline origin="#TL.1" unit="s">
                   <when synch="#stage.t.1" xml:id="TL.1" absolute="1990-07-18T11:25:00"/>
-                  <when synch="#stage.t.2" since="#TL.1" absolute="1990-07-18T12:30:00"
-                     interval="3900"/>
+                  <when synch="#stage.t.2"
+                        since="#TL.1"
+                        absolute="1990-07-18T12:30:00"
+                        interval="3900"/>
                   <when synch="#stage.t.3" xml:id="TL.2" absolute="1990-07-31T12:00:00"/>
-                  <when synch="#stage.t.4" since="#TL.2" absolute="1990-07-31T12:55:00"
-                     interval="3300"/>
+                  <when synch="#stage.t.4"
+                        since="#TL.2"
+                        absolute="1990-07-31T12:55:00"
+                        interval="3300"/>
                </timeline>
                <castList>
                   <castItem>
                      <roleDesc>Sejo sta vodila</roleDesc>: <actor xml:id="sp.ZupančičJože">Jože
-                        Zupančič</actor>, <role>predsednik Zbora združenega dela</role> in <actor
-                        xml:id="sp.ToplakLudvik">dr. Ludvik Toplak</actor>, <role>predsednik
+                        Zupančič</actor>, <role>predsednik Zbora združenega dela</role> in <actor xml:id="sp.ToplakLudvik">dr. Ludvik Toplak</actor>, <role>predsednik
                         Družbenopolitičnega zbora</role>.</castItem>
                </castList>
-               <stage type="time">Seja se je <time from="1990-07-18T11:25:00" xml:id="stage.t.1"
-                     >pričela ob 11.25 uri</time>.</stage>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR">
+               <stage type="time">Seja se je <time from="1990-07-18T11:25:00" xml:id="stage.t.1">pričela ob 11.25 uri</time>.</stage>
+               <div xml:id="div.1.1.1" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.TDR" corresp="#toc.1.1">
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDUJOČI JOŽE ZUPANČIČ:</speaker>
                         <p>Gospod predsednik predsedstva Republike Slovenije, g. predsednik
@@ -208,8 +219,7 @@
                            Republike Slovenije.</p>
                         <p>Na skupnem zasedanju bomo najprej poslušali <title>UVODNO OBRAZLOŽITEV K
                               PREDLOGU, DA SE ZAČNE POSTOPEK ZA SPREJEM USTAVE REPUBLIKE
-                              SLOVENIJE</title>,</p>
-                        <p>ki jo bo podal g. Milan Kučan, predsednik Predsedstva Republike
+                              SLOVENIJE</title>, ki jo bo podal g. Milan Kučan, predsednik Predsedstva Republike
                            Slovenije. V nadaljevanju, takoj po tej uvodni obrazložitvi, bo imel
                            ekspoze k programskim usmeritvam Izvršnega sveta Skupščine Republike
                            Slovenije g. Lojze Peterle, predsednik Izvršnega sveta Skupščine
@@ -610,21 +620,19 @@
                            Sloveniji.</p>
                         <p>V imenu Predsedstva Republike Slovenije predlagam, da po opravljeni
                            razpravi, sprejmete predlog, da se začne postopek za sprejetje ustave
-                           Republike Slovenije. Hvala lepa. <stage>(Aplavz.)</stage></p>
+                           Republike Slovenije. Hvala lepa. <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.1.2" ana="#PAR.TDR" corresp="#toc.1.2">
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDUJOČI JOŽE ZUPANČIČ:</speaker>
                         <p>Gospodu Milanu Kučanu, predsedniku Predsedstva Republike Slovenije se za
                            uvodno obrazložitev, da se začne postopek za sprejem naše nove slovenske
                            ustave, iskreno zahvaljujem.</p>
-                        <p>Sedaj bi poslušali</p>
-                        <p>
-                           <title>EKSPOZE K PROGRAMSKIM USMERITVAM IZVRŠNEGA SVETA SKUPŠČINE
-                              REPUBLIKE SLOVENIJE</title>,</p>
-                        <p>ki ga bo podal gospod Alojz Peterle, predsednik Izvršnega sveta Skupščine
-                           Republike Slovenije. Prosim, gospod Peterle.</p>
+                        <p>Sedaj bi poslušali <title>EKSPOZE K PROGRAMSKIM USMERITVAM IZVRŠNEGA SVETA SKUPŠČINE
+                              REPUBLIKE SLOVENIJE</title>, ki ga bo podal gospod Alojz Peterle, predsednik
+                           Izvršnega sveta Skupščine Republike Slovenije. Prosim, gospod Peterle.</p>
                      </sp>
                      <sp who="#sp.PeterleAlojz">
                         <speaker>ALOJZ PETERLE:</speaker>
@@ -980,7 +988,8 @@
                            z lastnimi močmi, šele v drugem planu so potem pomoči in sodelovanja, ki
                            pa so seveda na povsem poslovni podlagi. Ali če hočemo, profitni podlagi,
                            z našimi sosedi ali z našimi bolj oddaljenimi možnimi pomočniki. Hvala
-                           lepa. <stage>(Aplavz.)</stage></p>
+                           lepa. <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDUJOČI JOŽE ZUPANČIČ:</speaker>
@@ -992,8 +1001,7 @@
                         <p>Zbor občin in Zbor združenega dela pa čez 10 minut.</p>
                         <p>S tem se vsem zahvaljujem. Hvala.</p>
                      </sp>
-                     <stage type="time">(SKUPNA SEJA JE BILA <time to="1990-07-18T12:30:00"
-                           xml:id="stage.t.2">PREKINJENA 18. JULIJA 1990 OB 12.30 URI</time> IN SE
+                     <stage type="time">(SKUPNA SEJA JE BILA <time to="1990-07-18T12:30:00" xml:id="stage.t.2">PREKINJENA 18. JULIJA 1990 OB 12.30 URI</time> IN SE
                         JE <time from="1990-07-31T12:00:00" xml:id="stage.t.3">NADALJEVALA 31.
                            JULIJA 1990 OB 12.00 URI</time>.)</stage>
                      <sp who="#sp.ToplakLudvik">
@@ -1008,11 +1016,11 @@
                            Sekretariata za pravosodje in upravo.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.1.3" ana="#PAR.TDR" corresp="#toc.1.3">
                      <sp who="#sp.ToplakLudvik">
                         <p>K <title>1. TOČKI: PREDSTAVITEV PREDLOGA, DA SE ZAČNE POSTOPEK ZA
-                              SPREMEMBO USTAVE REPUBLIKE SLOVENIJE</title>,</p>
-                        <p>ima besedo gospod predsednik Izvršnega sveta Lojze Peterle.</p>
+                              SPREMEMBO USTAVE REPUBLIKE SLOVENIJE</title>,
+                           ima besedo gospod predsednik Izvršnega sveta Lojze Peterle.</p>
                      </sp>
                      <sp who="#sp.PeterleAlojz">
                         <speaker>ALOJZ PETERLE:</speaker>
@@ -1204,11 +1212,11 @@
                            uveljavljanja konfederalnega položaja Slovenije. Hvala lepa.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="2">
+                  <div xml:id="div.1.1.1.4" ana="#PAR.TDR" n="2" corresp="#toc.1.4">
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDUJOČI DR. LUDVIK TOPLAK:</speaker>
                         <p>Hvala lepa gospodu Peterletu.</p>
-                        <p>(PREIDEMO NA 2. TOČKO, <title>INFORMACIJE O STANJU V KAZENSKO
+                        <p>(<title>PREIDEMO NA 2. TOČKO, INFORMACIJE O STANJU V KAZENSKO
                               POBOLJŠEVALNIH ZAVODIH TER O ZAHTEVAH OBSOJENCEV</title>.)</p>
                         <p>Besedo ima gospod Rajko Pirnat, Republiški sekretar za pravosodje in
                            upravo.</p>
@@ -1396,8 +1404,7 @@
                         <p>Razprava je ločena po zborih.</p>
                         <p>Hvala.</p>
                      </sp>
-                     <stage type="time">(Seja je bila <time to="1990-07-31T12:55:00"
-                           xml:id="stage.t.4">končana 31. julija 1990 ob 12.55 uri</time>.)</stage>
+                     <stage type="time">(Seja je bila <time to="1990-07-31T12:55:00" xml:id="stage.t.4">končana 31. julija 1990 ob 12.55 uri</time>.)</stage>
                   </div>
                </div>
             </div>
