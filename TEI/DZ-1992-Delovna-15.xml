@@ -31,8 +31,7 @@
             <pubPlace>https://github.com/SIstory/Seje_DZ/tree/master/</pubPlace>
             <availability status="free">
                <licence>http://creativecommons.org/licenses/by/4.0/</licence>
-               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/"
-                     >Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
+               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
                </p>
             </availability>
             <date when="2016-07-21+02:00"/>
@@ -53,9 +52,7 @@
                      <date>(7., 8. in 14. oktober 1992)</date>
                   </imprint>
                </monogr>
-               <ref
-                  target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=88FC791241FC7B9AC1257CA0003EAFE4"
-                     >(<date>2016-04-12</date>)</ref>
+               <ref target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=88FC791241FC7B9AC1257CA0003EAFE4">(<date>2016-04-12</date>)</ref>
             </biblStruct>
             <biblFull>
                <titleStmt>
@@ -67,10 +64,10 @@
                   <publisher>Državni zbor Republike Slovenije</publisher>
                   <availability status="free">
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="slv">Avtorske pravice so potekle, delo je v javni
+                              xml:lang="slv">Avtorske pravice so potekle, delo je v javni
                         domeni.</licence>
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="eng">Public Domain Mark 1.0</licence>
+                              xml:lang="eng">Public Domain Mark 1.0</licence>
                   </availability>
                </publicationStmt>
             </biblFull>
@@ -82,7 +79,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -93,6 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2017-01-16+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2017-01-16+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-07-21+02:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -125,13 +134,13 @@
                <item>
                   <list rend="ordered">
                      <head>PRED DNEVNIM REDOM:                                      STRAN</head>
-                     <item n="1">Ugotavljanje prisotnosti poslancev .................... 1</item>
+                     <item n="1" xml:id="toc.1.1">Ugotavljanje prisotnosti poslancev .................... 1</item>
                   </list>
                </item>
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED:</head>
-                     <item n="1">Odločanje o spornih vprašanjih v zvezi s predlogom zakona o
+                     <item n="1" xml:id="toc.2.1">Odločanje o spornih vprašanjih v zvezi s predlogom zakona o
                         političnih strankah .............. 2 <list rend="ordered">
                            <head>GOVORNIKI:</head>
                            <item>Danijel Starman ....................................... 2</item>
@@ -175,19 +184,19 @@
                         </list>
                      </item>
                      <note>NADALJEVANJE 15. DELOVNE SKUPNE SEJE 8. OKTOBRA 1992</note>
-                     <item n="2">Ugotavljanje prisotnosti poslancev (prekinitev seje zaradi
+                     <item n="2" xml:id="toc.2.2">Ugotavljanje prisotnosti poslancev (prekinitev seje zaradi
                         nesklepčnosti) ............... 17</item>
                      <note>NADALJEVANJE 15. DELOVNE SKUPNE SEJE 14. OKTOBRA 1992</note>
-                     <item n="3">Ugotavljanje prisotnosti poslancev prekinitev seje zaradi
+                     <item n="3" xml:id="toc.2.3">Ugotavljanje prisotnosti poslancev prekinitev seje zaradi
                         nesklepčnosti) ............... 17 <list rend="ordered">
                            <head>GOVORNIK:</head>
                            <item>Jože Zupančič ........................................ 18</item>
                         </list>
                      </item>
-                     <item n="4">V skladu s tretjim odstavkom 122. člena Poslovnika Skupščine
+                     <item n="4" xml:id="toc.2.4">V skladu s tretjim odstavkom 122. člena Poslovnika Skupščine
                         Republike Slovenije se 15.DSS šteje za zaključeno ........................
                         18</item>
-                     <item n="5">Seznam govornikov .................................. II/1</item>
+                     <item n="5" xml:id="toc.2.5">Seznam govornikov .................................. II/1</item>
                   </list>
                </item>
             </list>
@@ -277,31 +286,43 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.VsiZbor">
+         <div xml:id="div.1" ana="#PAR.VsiZbor">
             <head>DELOVNA SKUPNA SEJA SKUPŠČINE REPUBLIKE SLOVENIJE</head>
-            <div ana="#PAR.Delovna" n="15">
+            <div xml:id="div.1.1" ana="#PAR.Delovna" n="15">
                <head>15. seja</head>
                <docDate>(<date when="1992-10-07">7.</date>, <date when="1992-10-08">8.</date> in
                      <date when="1992-10-14">14. oktober 1992</date>)</docDate>
                <timeline origin="#TL.1" unit="s">
                   <when synch="#stage.t.1" xml:id="TL.1" absolute="1992-10-07T16:15:00"/>
-                  <when synch="#stage.t.2" since="#TL.1" absolute="1992-10-07T16:50:00"
-                     interval="2100"/>
+                  <when synch="#stage.t.2"
+                        since="#TL.1"
+                        absolute="1992-10-07T16:50:00"
+                        interval="2100"/>
                   <when synch="#stage.t.3" xml:id="TL.2" absolute="1992-10-07T17:20:00"/>
-                  <when synch="#stage.t.4" since="#TL.2" absolute="1992-10-07T17:50:00"
-                     interval="1800"/>
+                  <when synch="#stage.t.4"
+                        since="#TL.2"
+                        absolute="1992-10-07T17:50:00"
+                        interval="1800"/>
                   <when synch="#stage.t.5" xml:id="TL.3" absolute="1992-10-07T17:55:00"/>
-                  <when synch="#stage.t.6" since="#TL.3" absolute="1992-10-07T18:05:00"
-                     interval="600"/>
+                  <when synch="#stage.t.6"
+                        since="#TL.3"
+                        absolute="1992-10-07T18:05:00"
+                        interval="600"/>
                   <when synch="#stage.t.7" xml:id="TL.4" absolute="1992-10-07T18:55:00"/>
-                  <when synch="#stage.t.8" since="#TL.4" absolute="1992-10-07T18:57:00"
-                     interval="120"/>
+                  <when synch="#stage.t.8"
+                        since="#TL.4"
+                        absolute="1992-10-07T18:57:00"
+                        interval="120"/>
                   <when synch="#stage.t.9" xml:id="TL.5" absolute="1992-10-08T10:40:00"/>
-                  <when synch="#stage.t.10" since="#TL.5" absolute="1992-10-08T10:47:00"
-                     interval="420"/>
+                  <when synch="#stage.t.10"
+                        since="#TL.5"
+                        absolute="1992-10-08T10:47:00"
+                        interval="420"/>
                   <when synch="#stage.t.11" xml:id="TL.6" absolute="1992-10-14T15:40:00"/>
-                  <when synch="#stage.t.12" since="#TL.6" absolute="1992-10-14T15:55:00"
-                     interval="900"/>
+                  <when synch="#stage.t.12"
+                        since="#TL.6"
+                        absolute="1992-10-14T15:55:00"
+                        interval="900"/>
                </timeline>
                <castList>
                   <castItem>
@@ -309,10 +330,9 @@
                      <actor xml:id="sp.ToplakLudvik">dr. Ludvik Toplak</actor>, <role>predsednik
                         Družbenopolitičnega zbora</role>.</castItem>
                </castList>
-               <stage type="time">Seja se je <time from="1992-10-07T16:15:00" xml:id="stage.t.1"
-                     >pričela ob 16.15 uri</time>.</stage>
-               <div ana="#PAR.PredDnevRed">
-                  <div ana="#PAR.DolDnevRed">
+               <stage type="time">Seja se je <time from="1992-10-07T16:15:00" xml:id="stage.t.1">pričela ob 16.15 uri</time>.</stage>
+               <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.DolDnevRed">
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDUJOČI DR. LUDVIK TOPLAK:</speaker>
                         <p>Spoštovane poslanke in spoštovani poslanci! Pričenjamo  15. delovno sejo
@@ -339,38 +359,41 @@
                            sklepajo z večino vseh poslancev vseh zborov."</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.Prisot">
+                  <div xml:id="div.1.1.1.2" ana="#PAR.Prisot" corresp="#toc.1.1">
                      <sp who="#sp.ToplakLudvik">
                         <p>Ugotovimo najprej <title>navzočnost</title> poslank in poslancev
-                           Družbenopolitičnega zbora. <stage>(47 prisotnih.)</stage> Prosim poslanke
-                           in poslance Zbora občin, da potrdijo navzočnost. <stage>(39
+                           Družbenopolitičnega zbora. <stage type="quorum">(47 prisotnih.)</stage> Prosim poslanke
+                           in poslance Zbora občin, da potrdijo navzočnost. <stage type="quorum">(39
                               prisotnih.)</stage> Vidim, da sta 2 še prišla. In prosim še poslanke
-                           in poslance Zbora združenega dela, da potrdijo navzočnost! <stage>(50
-                              prisotnih.)</stage></p>
+                           in poslance Zbora združenega dela, da potrdijo navzočnost! <stage type="quorum">(50
+                              prisotnih.)</stage>
+                        </p>
                         <p>Prosim, da še enkrat ponovimo ugotavljanje navzočnosti! Družbenopolitični
-                           zbor <stage>(53 prisotnih.)</stage> Zbor občin <stage>(Ni
-                              navedeno.)</stage> in še Zbor združenega dela <stage>(49
+                           zbor <stage type="quorum">(53 prisotnih.)</stage> Zbor občin <stage type="quorum">(Ni
+                              navedeno.)</stage> in še Zbor združenega dela <stage type="quorum">(49
                               prisotnih.)</stage>
-                           <stage>(Kratka prekinitev za klicanje poslancev, da pridejo v
-                              dvorano.)</stage></p>
+                           <stage type="comment">(Kratka prekinitev za klicanje poslancev, da pridejo v
+                              dvorano.)</stage>
+                        </p>
                         <p>Ponovno prosim, da ugotovimo navzočnost! Družbenopolitični zbor
-                              <stage>(54 prisotnih.)</stage> Zbor občin <stage>(40
-                              prisotnih.)</stage> Zbor združenega dela <stage>(48
+                              <stage type="quorum">(54 prisotnih.)</stage> Zbor občin <stage type="quorum">(40
+                              prisotnih.)</stage> Zbor združenega dela <stage type="quorum">(48
                               prisotnih.)</stage>
-                           <stage>(Ponovna kratka prekinitev)</stage></p>
-                        <p>Sedaj pa zares! Ugotavljamo navzočnost! Družbenopolitični zbor <stage>(54
-                              prisotnih.)</stage> Zbor občin <stage>(41 prisotnih.)</stage> Zbor
-                           združenega dela <stage>(49 prisotnih.)</stage></p>
+                           <stage type="comment">(Ponovna kratka prekinitev)</stage>
+                        </p>
+                        <p>Sedaj pa zares! Ugotavljamo navzočnost! Družbenopolitični zbor <stage type="quorum">(54
+                              prisotnih.)</stage> Zbor občin <stage type="quorum">(41 prisotnih.)</stage> Zbor
+                           združenega dela <stage type="quorum">(49 prisotnih.)</stage>
+                        </p>
                         <p>Ugotavljam, da je navzoča večina vseh poslancev vsakega zbora in da je
                            podana sklepčnost skupne seje.</p>
                      </sp>
                   </div>
                </div>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR">
+               <div xml:id="div.1.1.2" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.2.1" ana="#PAR.TDR" corresp="#toc.2.1">
                      <sp who="#sp.ToplakLudvik">
-                        <p>Prehajamo na odločanje</p>
-                        <p>
+                        <p>Prehajamo na odločanje
                            <title>o spornih vprašanjih pri predlogu zakona o političnih
                               strankah</title>.</p>
                         <p>Kot sporno vprašanje so ostali amandmaji Zbora občin k 37. členu - za
@@ -622,26 +645,30 @@
                         <p>Predlog poslanca gospoda Potočnika smo dobili. Predlog bom dal na
                            glasovanje.</p>
                         <p>Preden preidemo na glasovanje, prosim, da ugotovimo navzočnost! Poslanci
-                           Družbenopolitičnega zbora <stage>(51 prisotnih.)</stage> poslanci Zbora
-                           občin <stage>(48 prisotnih.)</stage> In poslanci Zbora združenega dela
-                              <stage>(53 prisotnih.)</stage> Ugotavljam, da je skupaj navzočih
-                              <stage>(152 poslank in poslancev.)</stage></p>
+                           Družbenopolitičnega zbora <stage type="quorum">(51 prisotnih.)</stage> poslanci Zbora
+                           občin <stage type="quorum">(48 prisotnih.)</stage> In poslanci Zbora združenega dela
+                              <stage type="quorum">(53 prisotnih.)</stage> Ugotavljam, da je skupaj navzočih
+                              <stage type="vote">(152 poslank in poslancev.)</stage>
+                        </p>
                         <p>In sedaj glasujemo! Kdo je za poimensko glasovanje po predlogu gospoda
                            Potočnika? Kdo je za poimensko glasovanje?</p>
-                        <p>Kdo je za? <stage>(67 poslancev.)</stage> Je kdo proti? <stage>(74
-                              poslancev.)</stage> Se je kdo vzdržal? <stage>(15
-                           poslancev.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(67 poslancev.)</stage> Je kdo proti? <stage type="vote">(74
+                              poslancev.)</stage> Se je kdo vzdržal? <stage type="vote">(15
+                           poslancev.)</stage>
+                        </p>
                         <p>Ugotavljam, da predlog ni izglasovan.</p>
                         <p>Sedaj prehajamo na glasovanje o amandmaju Zbora občin. Navzočnost se ni
-                           spremenila! <stage>(Govorjenje v dvorani.)</stage></p>
-                        <p>Ponovno ugotavljamo navzočnost! Družbenopolitični zbor <stage>(50
-                              prisotnih.)</stage> Zbor občin <stage>(42 prisotnih.)</stage> Zbor
-                           združenega dela  <stage>(52 prisotnih.)</stage> Skupaj je navzočih 144
+                           spremenila! <stage type="gap">(Govorjenje v dvorani.)</stage>
+                        </p>
+                        <p>Ponovno ugotavljamo navzočnost! Družbenopolitični zbor <stage type="quorum">(50
+                              prisotnih.)</stage> Zbor občin <stage type="quorum">(42 prisotnih.)</stage> Zbor
+                           združenega dela  <stage type="quorum">(52 prisotnih.)</stage> Skupaj je navzočih 144
                            poslancev.</p>
                         <p>In sedaj glasujemo o amandmaju.</p>
-                        <p>Kdo je za amandma Zbora občin? <stage>(77 poslancev.)</stage> Je kdo
-                           proti? <stage>(61 poslancev.)</stage> Se je kdo vzdržal? <stage>(22
-                              poslancev.)</stage></p>
+                        <p>Kdo je za amandma Zbora občin? <stage type="vote">(77 poslancev.)</stage> Je kdo
+                           proti? <stage type="vote">(61 poslancev.)</stage> Se je kdo vzdržal? <stage type="vote">(22
+                              poslancev.)</stage>
+                        </p>
                         <p>Ugotavljam, da s 77 glasovi za, 61 proti in 22 vzdržanimi...</p>
                         <p>Gospod Potočnik želi besedo. Prosim.</p>
                      </sp>
@@ -649,8 +676,9 @@
                         <speaker>FRANC POTOČNIK:</speaker>
                         <p>Izid glasovanja je nejasen: 144 ob preverjanju navzočnosti in 77 glasov
                            za ta amandma - potemtakem bi ta amandma moral biti sprejet. Koliko je pa
-                           sedaj glasov? Kaj v takem primeru storiti? <stage>(Posvetovanje in
-                              dogovarjanje v delovnem predsedstvu.)</stage></p>
+                           sedaj glasov? Kaj v takem primeru storiti? <stage type="gap">(Posvetovanje in
+                              dogovarjanje v delovnem predsedstvu.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDUJOČI DR. LUDVIK TOPLAK:</speaker>
@@ -794,9 +822,7 @@
                         <p>Za 15 minut prekinjam sejo. Prosim poslovniško komisijo, da se v tem času
                            tudi sestane.</p>
                      </sp>
-                     <stage type="time">(Seja je bila <time to="1992-10-07T16:50:00"
-                           xml:id="stage.t.2">prekinjena ob 16.50 uri</time> in se je <time
-                           from="1992-10-07T17:20:00" xml:id="stage.t.3">nadaljevala ob 17.20
+                     <stage type="time">(Seja je bila <time to="1992-10-07T16:50:00" xml:id="stage.t.2">prekinjena ob 16.50 uri</time> in se je <time from="1992-10-07T17:20:00" xml:id="stage.t.3">nadaljevala ob 17.20
                            uri</time>.)</stage>
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDUJOČI DR. LUDVIK TOPLAK:</speaker>
@@ -838,13 +864,15 @@
                            tudi na ta način, da  ne uporabijo glasovalne naprave. Zato, da je
                            odločitev v zboru sprejeta je potrebno, da je zbor sklepčen in, da za njo
                            glasuje več kot polovica navzočih delegatov.</p>
-                        <p><stage>(Posvetovanje in dogovarjanje v delovnem predsedstvu.)</stage></p>
+                        <p>
+                           <stage type="gap">(Posvetovanje in dogovarjanje v delovnem predsedstvu.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDUJOČI DR. LUDVIK TOPLAK:</speaker>
                         <p>Predsedstvo soglasno ugotavlja: na podlagi stališča Komisije za pripravo
                            in sprejemanje izvajanja poslovnika skupščine, je amandma izglasovan.
-                              <stage>(Aplavz.)</stage> Navzočih po tej obrazložitvi je bilo 144
+                              <stage type="vocal">(Aplavz.)</stage> Navzočih po tej obrazložitvi je bilo 144
                            poslancev; "za" je glasovalo 77 poslancev, kar je nad polovico, "proti"
                            je bilo 61 poslancev, "vzdržanih" smo našteli še 22. Po obrazložitvi je
                            nad polovica navzočih bila "za". Tako je stališče poslovniške komisije in
@@ -1140,9 +1168,7 @@
                            prekinemo sorazpravo, za tri minute se predsedstvo umakne in bo odločilo
                            glede nadaljnje procedure. Prosim, ostanite na mestu. Hvala.</p>
                      </sp>
-                     <stage type="time">(Seja je bila <time to="1992-10-07T17:50:00"
-                           xml:id="stage.t.4">prekinjena ob 17.50 uri</time> in se je <time
-                           from="1992-10-07T17:55:00" xml:id="stage.t.5">nadaljevala ob 17.55
+                     <stage type="time">(Seja je bila <time to="1992-10-07T17:50:00" xml:id="stage.t.4">prekinjena ob 17.50 uri</time> in se je <time from="1992-10-07T17:55:00" xml:id="stage.t.5">nadaljevala ob 17.55
                            uri</time>.)</stage>
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDUJOČI DR. LUDVIK TOPLAK:</speaker>
@@ -1152,9 +1178,10 @@
                            poslovniške komisije z dne 23.10.1991, da je amandma  izglasovan in da
                            brez nadaljnje razprave preidemo na glasovanje o zakonu v celoti.</p>
                         <p>Ugotovimo navzočnost. Prosim, poslanci Družbenopolitičnega zbora.
-                              <stage>(50 prisotnih.)</stage> Poslanci Zbora občin, ugotavljamo
-                           navzočnost. <stage>(42 prisotnih.)</stage> Poslanci Zbora združenega
-                           dela, ugotavljamo navzočnost. <stage>(50 prisotnih.)</stage></p>
+                              <stage type="quorum">(50 prisotnih.)</stage> Poslanci Zbora občin, ugotavljamo
+                           navzočnost. <stage type="quorum">(42 prisotnih.)</stage> Poslanci Zbora združenega
+                           dela, ugotavljamo navzočnost. <stage type="quorum">(50 prisotnih.)</stage>
+                        </p>
                         <p>Ugotavljam, da je zbor sklepčen za nadaljevanje dela in glasujemo o
                            zakonu z amandmaji v celoti. Prosim. Gospod Miran Potrč.</p>
                      </sp>
@@ -1193,21 +1220,26 @@
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDUJOČI DR. LUDVIK TOPLAK:</speaker>
                         <p>Hvala lepa. Prosim.</p>
-                        <p>Kdo je za? <stage>(75 poslancev.)</stage> Je kdo proti? <stage>(49
-                              poslancev.)</stage> Se je kdo vzdržal? <stage>(34
-                           poslancev.)</stage></p>
-                        <p><stage>(Smeh v dvorani.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(75 poslancev.)</stage> Je kdo proti? <stage type="vote">(49
+                              poslancev.)</stage> Se je kdo vzdržal? <stage type="vote">(34
+                           poslancev.)</stage>
+                        </p>
+                        <p>
+                           <stage type="vocal">(Smeh v dvorani.)</stage>
+                        </p>
                         <p>Predlog. Dosledno dosedanjemu tolmačenju. 142 je bilo navzočih.</p>
-                        <p><stage>(Pregovarjanje v delovnem predsedstvu.)</stage></p>
+                        <p>
+                           <stage type="gap">(Pregovarjanje v delovnem predsedstvu.)</stage>
+                        </p>
                         <p>Prosim. Ponovno ugotovimo navzočnost. Ponovno ugotovimo navzočnost na
                            predlog sopredsedujočega Zupančiča, ste videli. Samo malo. Mi smo
                            ugotovili navzočnost. Vmes je gospod Podobnik obrazložil svoj glas in
                            nato smo glasovali. Pri glasovanju se je pokazalo isto. Mi bi morali
                            konsistentno ugotoviti isto kot je bilo prej. S tem, da gospod Zupančič
                            želi, da ponovno ugotovimo navzočnost. Prosim poslance
-                           Družbenopolitičnega zbora, ugotavljamo navzočnost. <stage>(35
+                           Družbenopolitičnega zbora, ugotavljamo navzočnost. <stage type="quorum">(35
                               prisotnih.)</stage> To ni res. Prosim poslance Družbenopolitičnega
-                           zbora, ugotavljamo navzočnost <stage>(29 poslancev.)</stage> Prosim,
+                           zbora, ugotavljamo navzočnost <stage type="vote">(29 poslancev.)</stage> Prosim,
                            gospod Kreft.</p>
                      </sp>
                      <sp who="#sp.KreftLev">
@@ -1232,69 +1264,68 @@
                         <p>Kreftu ne moremo ustreči. Predlagam najprej petnajst minut na željo
                            gospoda Potrča, 15-minutno pavzo.</p>
                      </sp>
-                     <stage type="time">(Seja je bila <time to="1992-10-07T18:05:00"
-                           xml:id="stage.t.6">prekinjena ob 18.05 uri</time> in se je <time
-                           from="1992-10-07T18:55:00" xml:id="stage.t.7">nadaljevala ob 18.55
+                     <stage type="time">(Seja je bila <time to="1992-10-07T18:05:00" xml:id="stage.t.6">prekinjena ob 18.05 uri</time> in se je <time from="1992-10-07T18:55:00" xml:id="stage.t.7">nadaljevala ob 18.55
                            uri</time>).</stage>
                   </div>
-                  <div ana="#PAR.Prisot">
+                  <div xml:id="div.1.1.2.2" ana="#PAR.Prisot" corresp="#toc.2.2">
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDUJOČI DR. LUDVIK TOPLAK:</speaker>
-                        <p>Ugotovimo <title>navzočnost</title>. Družbenopolitični zbor <stage>(45
-                              prisotnih.)</stage> Zbor občin <stage>(30 prisotnih.)</stage> Zbor
-                           združenega dela <stage>(5 prisotnih.)</stage> Mislim, da Zbor združenega
-                           dela še zaseda. Družbenopolitični zbor <stage>(49 prisotnih.)</stage>
-                           Zbor občin <stage>(39 prisotnih.)</stage> Zbor združenega dela:
+                        <p>Ugotovimo <title>navzočnost</title>. Družbenopolitični zbor <stage type="quorum">(45
+                              prisotnih.)</stage> Zbor občin <stage type="quorum">(30 prisotnih.)</stage> Zbor
+                           združenega dela <stage type="quorum">(5 prisotnih.)</stage> Mislim, da Zbor združenega
+                           dela še zaseda. Družbenopolitični zbor <stage type="quorum">(49 prisotnih.)</stage>
+                           Zbor občin <stage type="quorum">(39 prisotnih.)</stage> Zbor združenega dela:
                            prihajajo, predlagam, da prekinemo za 5 minut. Bomo nadaljevali.</p>
-                        <p>Družbenopolitični zbor <stage>(37 prisotnih.)</stage> Ponovno prosim,
-                           poslanci Družbenopolitičnega zbora <stage>(37 prisotnih.)</stage>
-                           Poslanci Zbora občin <stage>(35 prisotnih.)</stage> Poslanci Zbora
-                           združenega dela <stage>(21 prisotnih.)</stage> Še enkrat, in to za danes
+                        <p>Družbenopolitični zbor <stage type="quorum">(37 prisotnih.)</stage> Ponovno prosim,
+                           poslanci Družbenopolitičnega zbora <stage type="quorum">(37 prisotnih.)</stage>
+                           Poslanci Zbora občin <stage type="quorum">(35 prisotnih.)</stage> Poslanci Zbora
+                           združenega dela <stage type="quorum">(21 prisotnih.)</stage> Še enkrat, in to za danes
                            poslednjič, ugotavljamo navzočnost, da se tehnika ohladi, počakajmo malo,
-                           zdajle. Družbenopolitični zbor <stage>(45 prisotnih.)</stage> Zbor občin
-                              <stage>(35 prisotnih.)</stage> Zbor združenega dela <stage>(33
+                           zdajle. Družbenopolitični zbor <stage type="quorum">(45 prisotnih.)</stage> Zbor občin
+                              <stage type="quorum">(35 prisotnih.)</stage> Zbor združenega dela <stage type="quorum">(33
                               prisotnih.)</stage> Po posvetu delovnega predsedstva bi naj še enkrat
-                           vseeno ugotovili navzočnost. Družbenopolitični zbor <stage>(42
-                              prisotnih.)</stage> Zbor občin <stage>(39 prisotnih.)</stage> Zbor
-                           združenega dela <stage>(37 prisotnih.)</stage></p>
+                           vseeno ugotovili navzočnost. Družbenopolitični zbor <stage type="quorum">(42
+                              prisotnih.)</stage> Zbor občin <stage type="quorum">(39 prisotnih.)</stage> Zbor
+                           združenega dela <stage type="quorum">(37 prisotnih.)</stage>
+                        </p>
                         <p>Prekinjamo to sejo za danes, nadaljujemo jutri ob 10.00 uri. Hvala.</p>
                      </sp>
-                     <stage type="time">(SEJA JE BILA <time to="1992-10-07T18:57:00"
-                           xml:id="stage.t.8">PREKINJENA 7. OKTOBRA 1992 OB 18.57 URI</time> IN SE
+                     <stage type="time">(SEJA JE BILA <time to="1992-10-07T18:57:00" xml:id="stage.t.8">PREKINJENA 7. OKTOBRA 1992 OB 18.57 URI</time> IN SE
                         JE <time from="1992-10-08T10:40:00" xml:id="stage.t.9">NADALJEVALA 8.
                            OKTOBRA 1992 OB 10.40 URI</time>.)</stage>
                   </div>
-                  <div ana="#PAR.Prisot">
+                  <div xml:id="div.1.1.2.3" ana="#PAR.Prisot" corresp="#toc.2.3">
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDUJOČI DR. LUDVIK TOPLAK:</speaker>
                         <p>Poslanci, cenjeni gostje, spoštovani predstavniki sredstev javnega
                            obveščanja! Nadaljujemo  15. skupno delovno sejo vseh treh zborov
                            Skupščine Republike Slovenije. Po podatkih službe je
-                              <title>navzočih</title> v Zboru občin <stage>(48 prisotnih.)</stage>
-                           Družbenopolitičnem zboru <stage>(50 prisotnih.)</stage> Zbor združenega
-                           dela <stage>(36 prisotnih.)</stage> Pred nadaljevanjem ugotovimo
+                              <title>navzočih</title> v Zboru občin <stage type="quorum">(48 prisotnih.)</stage>
+                           Družbenopolitičnem zboru <stage type="quorum">(50 prisotnih.)</stage> Zbor združenega
+                           dela <stage type="quorum">(36 prisotnih.)</stage> Pred nadaljevanjem ugotovimo
                            navzočnost. Prosim poslance Družbenopolitičnega zbora, da ugotovimo
-                           navzočnost. <stage>(Navzočih je 47 poslank in poslancev.)</stage> Zbor
-                           občin <stage>(31 prisotnih.)</stage> In Zbor združenega dela <stage>(32
-                              prisotnih.)</stage></p>
+                           navzočnost. <stage type="vote">(Navzočih je 47 poslank in poslancev.)</stage> Zbor
+                           občin <stage type="quorum">(31 prisotnih.)</stage> In Zbor združenega dela <stage type="quorum">(32
+                              prisotnih.)</stage>
+                        </p>
                         <p>Glede na to, da začenjamo s 40-minutno zamudo, predlagam samo še 5
                            minutno podaljšanje in prosim vodje poslanskih klubov, da zagotovijo
                            potrebno navzočnost.</p>
                         <p>Ponovno ugotovimo navzočnost. Prosim poslance Družbenopolitičnega zbora,
-                           da se prijavijo <stage>(51 prisotnih.)</stage> poslanci Zbora občin
-                              <stage>(31 prisotnih.)</stage> in Zbora združenega dela <stage>(34
-                              prisotnih.)</stage></p>
+                           da se prijavijo <stage type="quorum">(51 prisotnih.)</stage> poslanci Zbora občin
+                              <stage type="quorum">(31 prisotnih.)</stage> in Zbora združenega dela <stage type="quorum">(34
+                              prisotnih.)</stage>
+                        </p>
                         <p>Ugotavljamo, da za skupno delovno sejo nismo sklepčni, zato najavljam, da
                            bomo - po dogovoru predsednikov zborov - razglasili, kdaj bo nadaljevanje
                            15. skupne delovne seje. Poslanci Družbenopolitičnega zbora ostanite v
                            dvorani, nadaljujemo delo.</p>
                      </sp>
-                     <stage type="time">(SEJA JE BILA <time to="1992-10-08T10:47:00"
-                           xml:id="stage.t.10">PREKINJENA 8. OKTOBRA 1992 OB 10.47 URI</time> IN SE
+                     <stage type="time">(SEJA JE BILA <time to="1992-10-08T10:47:00" xml:id="stage.t.10">PREKINJENA 8. OKTOBRA 1992 OB 10.47 URI</time> IN SE
                         JE <time from="1992-10-14T15:40:00" xml:id="stage.t.11">NADALJEVALA 14.
                            OKTOBRA 1992 OB 15.40 URI</time>.)</stage>
                   </div>
-                  <div ana="#PAR.Prisot">
+                  <div xml:id="div.1.1.2.4" ana="#PAR.Prisot" corresp="#toc.2.4">
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDUJOČI DR. LUDVIK TOPLAK:</speaker>
                         <p>Spoštovani poslanci, cenjeni gostje! Nadaljujemo 15. delovno sejo vseh
@@ -1307,33 +1338,39 @@
                            odločajo na skupni seji, veljavno sklepajo z večino vseh poslancev vseh
                            zborov na seji.</p>
                         <p>Ugotovimo najprej <title>navzočnost</title> Družbenopolitičnega zbora
-                              <stage>(43 prisotnih.)</stage> Ugotavljamo navzočnost Zbora občin
-                              <stage>(30 prisotnih.)</stage> Ugotavljamo navzočnost Zbora združenega
-                           dela <stage>(41 prisotnih.)</stage>.</p>
+                              <stage type="quorum">(43 prisotnih.)</stage> Ugotavljamo navzočnost Zbora občin
+                              <stage type="quorum">(30 prisotnih.)</stage> Ugotavljamo navzočnost Zbora združenega
+                           dela <stage type="quorum">(41 prisotnih.)</stage>.</p>
                         <p>Ugotavljam, da Zbor občin ni sklepčen. Predlagam 5 minutno preložitev
                            začetka dela.</p>
-                        <p><stage>(Kratek odmor.)</stage></p>
+                        <p>
+                           <stage type="comment">(Kratek odmor.)</stage>
+                        </p>
                         <p>Spoštovani poslanci! Ponovno prosim, da po 7-minutnem odmoru ugotovimo
                            navzočnost!</p>
-                        <p>Prosim poslance Družbenopolitičnega zbora <stage>(46 prisotnih.)</stage>
-                           Poslanci Zbora občin <stage>(39 prisotnih.)</stage> Poslanci Zbora
-                           združenega dela <stage>(34 prisotnih.)</stage></p>
+                        <p>Prosim poslance Družbenopolitičnega zbora <stage type="quorum">(46 prisotnih.)</stage>
+                           Poslanci Zbora občin <stage type="quorum">(39 prisotnih.)</stage> Poslanci Zbora
+                           združenega dela <stage type="quorum">(34 prisotnih.)</stage>
+                        </p>
                         <p>Ponovno prosim, da ugotovimo prisotnost! Najprej Družbenopolitični zbor
-                              <stage>(50 prisotnih.)</stage> Zbor občin <stage>(34
-                              prisotnih.)</stage> Zbor združenega dela <stage>(40
-                              prisotnih.)</stage></p>
+                              <stage type="quorum">(50 prisotnih.)</stage> Zbor občin <stage type="quorum">(34
+                              prisotnih.)</stage> Zbor združenega dela <stage type="quorum">(40
+                              prisotnih.)</stage>
+                        </p>
                         <p>Po dogovoru s sopredsedujočimi za 2 minuti podaljšamo začetek dela.</p>
                         <p>Spoštovani poslanci! Potekle so 3 minute. Ponovno ugotavljamo
                            navzočnost!</p>
-                        <p>Prosim poslance Družbenopolitičnega zbora: <stage>(50 prisotnih.)</stage>
-                           prosim poslance Zbora občin <stage>(Ni navedeno.)</stage> in prosim še
-                           poslance Zbora združenega dela <stage>(Ni navedeno.)</stage></p>
+                        <p>Prosim poslance Družbenopolitičnega zbora: <stage type="quorum">(50 prisotnih.)</stage>
+                           prosim poslance Zbora občin <stage type="quorum">(Ni navedeno.)</stage> in prosim še
+                           poslance Zbora združenega dela <stage type="quorum">(Ni navedeno.)</stage>
+                        </p>
                         <p>Na željo Aurelia Juria pri vsakem glasovanju preštejem do 10 zato, da
                            tisti, ki so počasni in dolgo rabijo, lahko odreagirajo in lahko tudi to
                            ponovimo.</p>
-                        <p>Prosim Družbenopolitični zbor, ugotovimo navzočnost! <stage>(49
-                              prisotnih.)</stage> Prosim, Zbor občin! <stage>(39 prisotnih.)</stage>
-                           In prosim, še Zbor združenega dela! <stage>(41 prisotnih.)</stage></p>
+                        <p>Prosim Družbenopolitični zbor, ugotovimo navzočnost! <stage type="quorum">(49
+                              prisotnih.)</stage> Prosim, Zbor občin! <stage type="quorum">(39 prisotnih.)</stage>
+                           In prosim, še Zbor združenega dela! <stage type="quorum">(41 prisotnih.)</stage>
+                        </p>
                         <p>(Naj povem, da sem sedaj pri vsakem štel do 12 in ne do 10, kot je želel
                            Aurelio Juri.)</p>
                         <p>Predsedujoči ugotavljamo, da zbor za skupno delovno sejo ni sklepčen,
@@ -1352,8 +1389,7 @@
                         <p>Družbenopolitični zbor v vsakem primeru nadaljuje delo takoj tukaj!
                            Prosim poslance Družbenopolitičnega zbora, ostanite na mestu!</p>
                      </sp>
-                     <stage type="time">(SKUPNA DELOVNA SEJA JE BILA <time to="1992-10-14T15:55:00"
-                           xml:id="stage.t.12">PREKINJENA 14. OKTOBRA 1992 OB 15.55
+                     <stage type="time">(SKUPNA DELOVNA SEJA JE BILA <time to="1992-10-14T15:55:00" xml:id="stage.t.12">PREKINJENA 14. OKTOBRA 1992 OB 15.55
                         URI</time>.)</stage>
                      <note>op.: Glede zaključenosti 15. SDS glej zapisnik seje str.
                         11 zgoraj!</note>

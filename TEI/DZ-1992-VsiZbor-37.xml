@@ -31,8 +31,7 @@
             <pubPlace>https://github.com/SIstory/Seje_DZ/tree/master/</pubPlace>
             <availability status="free">
                <licence>http://creativecommons.org/licenses/by/4.0/</licence>
-               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/"
-                     >Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
+               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
                </p>
             </availability>
             <date when="2016-03-30+02:00"/>
@@ -53,9 +52,7 @@
                      <date>(29. september 1992)</date>
                   </imprint>
                </monogr>
-               <ref
-                  target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=EE0B1224D3932EC4C1257C9F0024C3CE"
-                     >(<date>2016-03-09</date>)</ref>
+               <ref target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=EE0B1224D3932EC4C1257C9F0024C3CE">(<date>2016-03-09</date>)</ref>
             </biblStruct>
             <biblFull>
                <titleStmt>
@@ -67,10 +64,10 @@
                   <publisher>Državni zbor Republike Slovenije</publisher>
                   <availability status="free">
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="slv">Avtorske pravice so potekle, delo je v javni
+                              xml:lang="slv">Avtorske pravice so potekle, delo je v javni
                         domeni.</licence>
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="eng">Public Domain Mark 1.0</licence>
+                              xml:lang="eng">Public Domain Mark 1.0</licence>
                   </availability>
                </publicationStmt>
             </biblFull>
@@ -82,7 +79,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -93,6 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2017-01-17+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2017-01-17+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-03-30+02:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -117,15 +126,17 @@
    </teiHeader>
    <text>
       <body>
-         <div ana="#PAR.VsiZbor">
+         <div xml:id="div.1" ana="#PAR.VsiZbor">
             <head>SKUPNA SEJA VSEH ZBOROV SKUPŠČINE REPUBLIKE SLOVENIJE</head>
-            <div ana="#PAR.Seja" n="37">
+            <div xml:id="div.1.1" ana="#PAR.Seja" n="37">
                <head>37. seja</head>
                <docDate>(<date when="1992-09-29">29. september 1992</date>)</docDate>
                <timeline origin="#TL.1" unit="s">
                   <when synch="#stage.t.1" xml:id="TL.1" absolute="1992-09-29T13:40:00"/>
-                  <when synch="#stage.t.2" since="#TL.1" absolute="1992-09-29T13:50:00"
-                     interval="600"/>
+                  <when synch="#stage.t.2"
+                        since="#TL.1"
+                        absolute="1992-09-29T13:50:00"
+                        interval="600"/>
                </timeline>
                <castList>
                   <castItem>
@@ -133,36 +144,37 @@
                         Gošnik</actor>, <role>podpredsednik Skupščine Republike Slovenije</role>
                   </castItem>
                </castList>
-               <stage type="time">Seja se je <time from="1992-09-29T13:40:00" xml:id="stage.t.1"
-                     >pričela ob 13.40 uri</time>.</stage>
-               <div ana="#PAR.PredDnevRed">
-                  <div ana="#PAR.Prisot">
+               <stage type="time">Seja se je <time from="1992-09-29T13:40:00" xml:id="stage.t.1">pričela ob 13.40 uri</time>.</stage>
+               <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.Prisot" corresp="#div.1.1.1.1">
                      <sp who="#sp.GošnikVano">
                         <speaker>PREDSEDUJOČI VANO GOŠNIK:</speaker>
                         <p>Začenjam 37. skupno sejo vseh zborov Skupščine Republike Slovenije, ki jo
                            je predsednik dr. Bučar sklical na podlagi 134. člena in 99. člena
                            Poslovnika Skupščine Republike Slovenije.</p>
                         <p>Dovolite, da najprej ugotovimo sklepčnost. Prosim poslance
-                           Družbenopolitičnega zbora, <stage>(36 prisotnih.)</stage>; Poslanci Zbora
-                           občin <stage>(39 prisotnih.)</stage> in Zbor združenega dela <stage>(50
-                              prisotnih.)</stage></p>
-                        <p>Prosim, ponovimo še enkrat; Družbenopolitični zbor <stage>(36
-                              prisotnih.)</stage>; Zbor občin <stage>(40 prisotnih.)</stage> Še
-                           enkrat Zbor združenega dela <stage>(47 prisotnih.)</stage> Prosim
+                           Družbenopolitičnega zbora, <stage type="quorum">(36 prisotnih.)</stage>; Poslanci Zbora
+                           občin <stage type="quorum">(39 prisotnih.)</stage> in Zbor združenega dela <stage type="quorum">(50
+                              prisotnih.)</stage>
+                        </p>
+                        <p>Prosim, ponovimo še enkrat; Družbenopolitični zbor <stage type="quorum">(36
+                              prisotnih.)</stage>; Zbor občin <stage type="quorum">(40 prisotnih.)</stage> Še
+                           enkrat Zbor združenega dela <stage type="quorum">(47 prisotnih.)</stage> Prosim
                            poslance, ki niste pritiskali na gumb in tiste, ki so morebiti zunaj, da
                            pridejo v dvorano. Družbenopolitični zbor in Zbor občin nista sklepčna.
                            Lahko poskusimo še v tretje. Prosim, vsi poslanci Družbenopolitičnega
-                           zbora, pritisnite na gumb! <stage>(34 prisotnih.)</stage> Še enkrat.
-                           Dobro prosim, še enkrat vsi poslanci Družbenopolitičnega zbora <stage>(39
-                              prisotnih.)</stage>; Zbor občin <stage>(46 prisotnih.)</stage>; Zbor
-                           združenega dela <stage>(49 prisotnih.)</stage> Prosim vodje poslanskih
+                           zbora, pritisnite na gumb! <stage type="quorum">(34 prisotnih.)</stage> Še enkrat.
+                           Dobro prosim, še enkrat vsi poslanci Družbenopolitičnega zbora <stage type="quorum">(39
+                              prisotnih.)</stage>; Zbor občin <stage type="quorum">(46 prisotnih.)</stage>; Zbor
+                           združenega dela <stage type="quorum">(49 prisotnih.)</stage> Prosim vodje poslanskih
                            skupin, da zagotovijo še dva manjkajoča glasova v Družbenopolitičnem
                            zboru. No, sedaj lahko poizkusimo še enkrat. Prosim poslance
                            Družbenopolitičnega zbora, prisotnost. Prosim, vsi poslanci
-                           Družbenopolitičnega zbora za prisotnost. <stage>(42 prisotnih.)</stage>
-                           Prosim poslanke in poslance Zbora občin za prisotnost. <stage>(45
+                           Družbenopolitičnega zbora za prisotnost. <stage type="quorum">(42 prisotnih.)</stage>
+                           Prosim poslanke in poslance Zbora občin za prisotnost. <stage type="quorum">(45
                               prisotnih.)</stage> In poslanke in poslance Zbora združenega dela
-                              <stage>(49 prisotnih.)</stage></p>
+                              <stage type="quorum">(49 prisotnih.)</stage>
+                        </p>
                         <p>Na podlagi tega rezultata ugotavljam, da je na skupni seji navzoča večina
                            poslancev vsakega zbora. To pomeni, da je skupna seja na podlagi drugega
                            odstavka 6. točke, 72. ustavnega amandmaja k Ustavi Republike Slovenije
@@ -170,22 +182,23 @@
                            Republike Slovenije, sklepčna.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.DolDnevRed">
+                  <div xml:id="div.1.1.1.2" ana="#PAR.DolDnevRed" corresp="#div.1.1.1.2">
                      <sp who="#sp.GošnikVano">
                         <p>Na mizo ste prejeli predlog dnevnega reda danes. In sicer <title>PREDLOG
                               ZA UGOTOVITEV ODSTOPA ČLANA REPUBLIŠKE VOLILNE KOMISIJE IN IMENOVANJE
                               NOVEGA ČLANA TE KOMISIJE</title>.</p>
                         <p>Želi o predlogu dnevnega reda kdo razpravljati? Očitno ne želi nihče.
                            Dajem predlog tega dnevnega reda na glasovanje.</p>
-                        <p>Kdo je za? <stage>(131 poslancev.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(4
-                              poslanci.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(131 poslancev.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(4
+                              poslanci.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlog dnevnega reda z večino glasov sprejet.</p>
                      </sp>
                   </div>
                </div>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR">
+               <div xml:id="div.1.1.2" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.2.1" ana="#PAR.TDR" corresp="#div.1.1.2.1">
                      <sp who="#sp.GošnikVano">
                         <p>Prehajamo torej na prvo in edino točko dnevnega reda. Komisija za
                            volitve, imenovanja in administrativne zadeve obvešča skupščino, da je
@@ -198,9 +211,10 @@
                            dnem razrešuje vseh dolžnosti, povezanih s to funkcijo."</p>
                         <p>To je predlog sklepa. Ali želi kdo razpravljati o tem predlogu? Če ne
                            želi nihče razpravljati, dajem predlog tega sklepa na glasovanje.</p>
-                        <p>Kdo je za? <stage>(127 poslancev.)</stage> Je kdo proti? <stage>(5
-                              poslancev.)</stage> Se je kdo vzdržal? <stage>(8
-                           poslancev.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(127 poslancev.)</stage> Je kdo proti? <stage type="vote">(5
+                              poslancev.)</stage> Se je kdo vzdržal? <stage type="vote">(8
+                           poslancev.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlagani sklep z večino glasov sprejet.</p>
                         <p>Komisija za volitve, imenovanja in administrativne zadeve predlaga, da
                            skupščina imenuje za člana Republiške volilne komisije dr. Rafaela
@@ -209,9 +223,10 @@
                            poslanska skupina Slovenske ljudske stranke. Ali želi o predlogu kdo
                            razpravljati? Ker ne želi nihče razpravljati, dajem predlog na
                            glasovanje.</p>
-                        <p>Kdo je za? <stage>(135 poslancev.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(4
-                              poslanci.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(135 poslancev.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(4
+                              poslanci.)</stage>
+                        </p>
                         <p>Ugotavljam, da je dr. Rafael Cijan imenovan za člana Republiške volilne
                            komisije.</p>
                         <p>Ugotovim lahko, da je Skupščina odločila o vseh zadevah dnevnega reda,
@@ -228,8 +243,7 @@
                            času, pa sprejemam sugestijo gospoda Zupančiča, da bi to lahko opravili
                            že kar ob 14.00 uri, torej takoj po tej skupni seji. Hvala lepa.</p>
                      </sp>
-                     <stage type="time">(Seja je bila <time to="1992-09-29T13:50:00"
-                           xml:id="stage.t.2">končana 29. septembra 1992 ob 13.50
+                     <stage type="time">(Seja je bila <time to="1992-09-29T13:50:00" xml:id="stage.t.2">končana 29. septembra 1992 ob 13.50
                         uri</time>.)</stage>
                   </div>
                </div>

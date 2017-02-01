@@ -31,8 +31,7 @@
             <pubPlace>https://github.com/SIstory/Seje_DZ/tree/master/</pubPlace>
             <availability status="free">
                <licence>http://creativecommons.org/licenses/by/4.0/</licence>
-               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/"
-                     >Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
+               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
                </p>
             </availability>
             <date when="2016-03-29+02:00"/>
@@ -53,9 +52,7 @@
                      <date>(29. in 30. junij 1991)</date>
                   </imprint>
                </monogr>
-               <ref
-                  target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=586DE5559A0F32F6C1257CBD001E1418"
-                     >(<date>2016-03-14</date>)</ref>
+               <ref target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=586DE5559A0F32F6C1257CBD001E1418">(<date>2016-03-14</date>)</ref>
             </biblStruct>
             <biblFull>
                <titleStmt>
@@ -67,10 +64,10 @@
                   <publisher>Državni zbor Republike Slovenije</publisher>
                   <availability status="free">
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="slv">Avtorske pravice so potekle, delo je v javni
+                              xml:lang="slv">Avtorske pravice so potekle, delo je v javni
                         domeni.</licence>
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="eng">Public Domain Mark 1.0</licence>
+                              xml:lang="eng">Public Domain Mark 1.0</licence>
                   </availability>
                </publicationStmt>
             </biblFull>
@@ -82,7 +79,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -93,6 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2017-01-16+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2017-01-16+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-03-29+02:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -125,8 +134,8 @@
                <item>
                   <list rend="orderes">
                      <head>DNEVNI RED: STRAN</head>
-                     <item n="1">Ugotavljanje …………………………………………………………………………………………………………………. 1</item>
-                     <item n="2">Ocena razvoja dogodkov in prognoza razvoja dogodkov na obrambnem
+                     <item n="1" xml:id="toc.1.1">Ugotavljanje …………………………………………………………………………………………………………………. 1</item>
+                     <item n="2" xml:id="toc.1.2">Ocena razvoja dogodkov in prognoza razvoja dogodkov na obrambnem
                         področju ob agresiji oboroženih sil SFRJ na Republiko Slovenijo
                         ………………………………………………………………………………………………… 1<list rend="simple">
                            <head>GOVORNIK:</head>
@@ -134,7 +143,7 @@
                               1</item>
                         </list>
                      </item>
-                     <item n="3">Opis dejavnosti slovenske policije, kriminalistične službe in
+                     <item n="3" xml:id="toc.1.3">Opis dejavnosti slovenske policije, kriminalistične službe in
                         varnostne službe v dneh agresije ter sodelovanje teh služb z enotami in
                         štabi TO ………………………………………………………………. 7<list rend="simple">
                            <head>GOVORNIK:</head>
@@ -142,7 +151,7 @@
                               7</item>
                         </list>
                      </item>
-                     <item n="4">Razčlenitev dejavnosti Predsedstva Republike Slovenije, njegove
+                     <item n="4" xml:id="toc.1.4">Razčlenitev dejavnosti Predsedstva Republike Slovenije, njegove
                         aktivnosti v okviru Republike Slovenije, SFRJ in Evrope ter širine
                         …………………………………………………. 9<list rend="simple">
                            <head>GOVORNIK:</head>
@@ -150,7 +159,7 @@
                               9</item>
                         </list>
                      </item>
-                     <item n="5">Razčlenitev prizadevanj ministrstva v stikih z evropskimi in
+                     <item n="5" xml:id="toc.1.5">Razčlenitev prizadevanj ministrstva v stikih z evropskimi in
                         drugimi državami ter rezultati ter prizadevanj ………………………………………………………………….
                            14<list rend="simple">
                            <head>GOVORNIK:</head>
@@ -158,16 +167,14 @@
                               14</item>
                         </list>
                      </item>
-                     <item n="6">Splošen pregled dejavnosti Izvršnega sveta na posameznih področjih
-                        in opis stanja ter razmer v Republiki Sloveniji ………………………………………. 18<list
-                           rend="simple">
+                     <item n="6" xml:id="toc.1.6">Splošen pregled dejavnosti Izvršnega sveta na posameznih področjih
+                        in opis stanja ter razmer v Republiki Sloveniji ………………………………………. 18<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>Alojz Peterle …………………………………………………………………………………………………………………….
                               18</item>
                         </list>
                      </item>
-                     <item n="7">Razprava s točkam 2 do 6 dnevnega reda …………………………………………. 20<list
-                           rend="simple">
+                     <item n="7" xml:id="toc.1.7">Razprava s točkam 2 do 6 dnevnega reda …………………………………………. 20<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>mag. Ervin Anton Schwarzbartl ………………………………………………………………………….
                               21</item>
@@ -192,9 +199,9 @@
                               30</item>
                         </list>
                      </item>
-                     <item n="8">Imenovanje skupine delegatov za pripravo osnutka dokumenta, ki bi
+                     <item n="8" xml:id="toc.1.8">Imenovanje skupine delegatov za pripravo osnutka dokumenta, ki bi
                         ga sprejela skupščina ………………………………………………………………………………………. 31</item>
-                     <item n="9">Nadaljevanje razprave k točkam od 2 do 6 dnevnega reda
+                     <item n="9" xml:id="toc.1.9">Nadaljevanje razprave k točkam od 2 do 6 dnevnega reda
                         …………………………………………………………………………………. 31<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>dr. Ludvik Toplak ……………………………………………………………………………………………………………
@@ -216,7 +223,7 @@
                               36</item>
                         </list>
                      </item>
-                     <item n="10">Predlog stališč, ki jih bo sprejela skupščina
+                     <item n="10" xml:id="toc.1.10">Predlog stališč, ki jih bo sprejela skupščina
                         ……………………………………………………………………………………………. 36<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>mag. Ervin Anton Schwarzbartl ………………………………………………………………………….
@@ -267,8 +274,8 @@
                               49</item>
                         </list>
                      </item>
-                     <item n="11">Seznam govornikov …………………………………………………………………………………………. II/1</item>
-                     <item n="12">Priloga: zapisnik 22. izredne skupne seje ………………………….. III</item>
+                     <item n="11" xml:id="toc.1.11">Seznam govornikov …………………………………………………………………………………………. II/1</item>
+                     <item n="12" xml:id="toc.1.12">Priloga: zapisnik 22. izredne skupne seje ………………………….. III</item>
                   </list>
                </item>
             </list>
@@ -385,19 +392,23 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.VsiZbor">
+         <div xml:id="div.1" ana="#PAR.VsiZbor">
             <head>SKUPNA SEJA VSEH ZBOROV SKUPŠČINE REPUBLIKE SLOVENIJE</head>
-            <div ana="#PAR.Seja" n="22">
+            <div xml:id="div.1.1" ana="#PAR.Seja" n="22">
                <head>22. izredna seja</head>
                <docDate>(<date when="1991-07-29">29.</date> in <date when="1991-07-30">30. junij
                      1991</date>)</docDate>
                <timeline origin="#TL.1" unit="s">
                   <when synch="#stage.t.1" xml:id="TL.1" absolute="1991-07-29T22:20:00"/>
-                  <when synch="#stage.t.2" since="#TL.1" absolute="1991-07-30T01:03:00"
-                     interval="9780"/>
+                  <when synch="#stage.t.2"
+                        since="#TL.1"
+                        absolute="1991-07-30T01:03:00"
+                        interval="9780"/>
                   <when synch="#stage.t.3" xml:id="TL.2" absolute="1991-07-30T02:50:00"/>
-                  <when synch="#stage.t.4" since="#TL.2" absolute="1991-07-30T04:25:00"
-                     interval="5700"/>
+                  <when synch="#stage.t.4"
+                        since="#TL.2"
+                        absolute="1991-07-30T04:25:00"
+                        interval="5700"/>
                </timeline>
                <castList>
                   <castItem>
@@ -405,10 +416,9 @@
                      <actor xml:id="sp.BučarFrance">dr. France Bučar</actor>, <role>predsednik
                         Skupščine Republike Slovenije</role>.</castItem>
                </castList>
-               <stage type="time">Seja se je <time from="1991-07-29T22:20:00" xml:id="stage.t.1"
-                     >pričela ob 22.20 uri</time>. </stage>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.Prisot">
+               <stage type="time">Seja se je <time from="1991-07-29T22:20:00" xml:id="stage.t.1">pričela ob 22.20 uri</time>. </stage>
+               <div xml:id="div.1.1.1" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.Prisot" corresp="#toc.1.1">
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
                         <p>Začenjam izredno sejo vseh zborov Skupščine Republike Slovenije, ki sem
@@ -430,17 +440,18 @@
                            sklepe: tako glede ugotovitve naših stališ kot tudi glede adresantov,
                            adresiranje namembnikov, za katere bi se pač odločili in dogovorili.</p>
                         <p>Ali se strinjate s tako predlaganim dnevnim redom?
-                           <stage>(Da.)</stage></p>
+                           <stage type="debate">(Da.)</stage>
+                        </p>
                         <p>Najprej bi ugotovili <title>navzočnost</title>. Družbenopolitični zbor
-                              <stage>(70 delegatov)</stage>, Zbor občin <stage>(63
-                              delegatov)</stage>, Zbor združenega dela <stage>(74
+                              <stage type="vote">(70 delegatov)</stage>, Zbor občin <stage type="vote">(63
+                              delegatov)</stage>, Zbor združenega dela <stage type="vote">(74
                            delegatov)</stage>.</p>
                         <p>Ugotavljam, da je potrebni kvorum dan tudi za odločanje o stvareh, ki
                            zahtevajo dvotretjinsko večino, čeprav danes ni nobenega vprašanja, ki bi
                            zahtevalo tako kvalificirano odločanje.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.1.2" ana="#PAR.TDR" corresp="#toc.1.2"> 
                      <sp who="#sp.BučarFrance">
                         <p>S tega stališča mislim, da bi bilo, če se strinjate, umestno, da
                            presodimo <title>stanje na obrambnem področju</title> prav zaradi tega,
@@ -691,7 +702,7 @@
                         <p>Hvala lepa.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.1.3" ana="#PAR.TDR" corresp="#toc.1.3">
                      <sp who="#sp.BučarFrance">
                         <p>Predlagal bi, da bi to poročilo dopolnili še z vidika notranje varnosti
                            in dejavnosti organov za <title>notranje zadeve</title>. Mogoče bi še
@@ -788,7 +799,7 @@
                            uspehu našega dela, ki seveda še ni končano. Hvala lepa. /Ploskanje./</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.1.4" ana="#PAR.TDR" corresp="#toc.1.4">
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
                         <p>Hvala lepa.</p>
@@ -1028,7 +1039,7 @@
                            lepa.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.1.5" ana="#PAR.TDR" corresp="#toc.1.5">
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
                         <p>Glede na vsebino tega vprašanja mislim, da lahko v nadaljevanju
@@ -1227,7 +1238,7 @@
                            Ministrski svet Evropske skupnosti. Prav lepa hvala. /Ploskanje./</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.1.6" ana="#PAR.TDR" corresp="#toc.1.6">
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
                         <p>Prosim še predsednika Izvršnega sveta, gospoda Peterleta, da mogoče poda
@@ -1336,7 +1347,7 @@
                            zahvaljujem s tega mesta. /Ploskanje./</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.1.7" ana="#PAR.TDR" corresp="#toc.1.7">
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
                         <p>Hvala lepa.</p>
@@ -1902,7 +1913,7 @@
                            predsedstvom.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.1.8" ana="#PAR.TDR" corresp="#toc.1.8">
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
                         <p>Hvala lepa. To je sugestija, s katero se popolnoma strinjam in sem jo že
@@ -1912,12 +1923,12 @@
                         <p>Če se s tem strinjate, bi predlagal naslednje poslance: Toneta Peršaka,
                            Dareta Voljča, Jožefa Školča in dr. Leona Krefta. Ali se strinjate s tem?
                            Še Starman. Mislim, da ni treba dati na glasovanje sklepa, razen če vi
-                           zahtevate. <stage>(Ne.)</stage> Hvala lepa. To skupino prosim, da si
+                           zahtevate. <stage type="debate">(Ne.)</stage> Hvala lepa. To skupino prosim, da si
                            pozorno beleži stvari.</p>
                         <p>Besedo ima dr. Toplak.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.1.9" ana="#PAR.TDR" corresp="#toc.1.9">
                      <sp who="#sp.ToplakLudvik">
                         <speaker>DR. LUDVIK TOPLAK:</speaker>
                         <p>Hvala lepa, gospod predsednik.</p>
@@ -2155,7 +2166,7 @@
                         <p>Se še kdo prijavlja za besedo? Če ne, potem bi jaz, preden komisija
                            predloži osnutek teksta, ki naj bi ga sprejeli, še vprašal, ali ta zbor
                            meni, da mora Mandatno-imunitetna komisija že danes razpravljati o
-                           mandatu poslanca Aksentijevića. Dajmo to na glasovanje. <stage>(Ni
+                           mandatu poslanca Aksentijevića. Dajmo to na glasovanje. <stage type="debate">(Ni
                               treba.)</stage> Hvala lepa.</p>
                      </sp>
                      <sp who="#sp.SmoleJože">
@@ -2175,9 +2186,7 @@
                         <p>Odrejam desetminutni odmor.</p>
                      </sp>
 
-                     <stage type="time">(Seja je bila <time to="1991-07-30T01:03:00"
-                           xml:id="stage.t.2">prekinjena ob 01.03</time> in se je <time
-                           from="1991-07-30T02:50:00" xml:id="stage.t.3">nadaljevala ob
+                     <stage type="time">(Seja je bila <time to="1991-07-30T01:03:00" xml:id="stage.t.2">prekinjena ob 01.03</time> in se je <time from="1991-07-30T02:50:00" xml:id="stage.t.3">nadaljevala ob
                         02.50</time>.)</stage>
 
                      <sp who="#sp.BučarFrance">
@@ -2185,7 +2194,7 @@
                         <p>Spoštovani poslanci! Nadaljujemo sejo.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.1.10" ana="#PAR.TDR" corresp="#toc.1.10">
                      <sp who="#sp.BučarFrance">
                         <p>Komisija, ki smo jo imenovali, je pripravila <title>predlog
                               stališč</title>, ki ste jih vsi pismeno dobili. Lahko jih
@@ -2858,7 +2867,8 @@
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
                         <p>Hvala lepa.</p>
-                        <p>Želi še kdo razpravljati? <stage>(Ne.)</stage></p>
+                        <p>Želi še kdo razpravljati? <stage type="debate">(Ne.)</stage>
+                        </p>
                         <p>To razpravo moram prekiniti in prosim komisijo kot predlagatelja, da se
                            do teh amandmajev opredeli. Sam nimam te pravice, da bi jaz izbira zdaj
                            tu pred vami.</p>
@@ -2934,15 +2944,16 @@
                         <p>Prosim poročevalca komisije, da ta končni izvod odda pri nas, da ga bomo
                            lahko objavili.</p>
                         <p>Zdaj moram vprašati predlagatelje amandmajev, ali se strinjajo s
-                           predlaganim tekstom ali vztrajajo pri svojih amandmajih? <stage>(Se
+                           predlaganim tekstom ali vztrajajo pri svojih amandmajih? <stage type="debate">(Se
                               strinjajo.)</stage> Dobro, če ni pripomb, dajem predlog stališč na
                            glasovanje.</p>
                         <p>Ugotovimo prisotnost! Družbenopolitični zbor: prisotnih 64 delegatov.
                            Zbor občin: prisotnih 62 delegatov. Zbor združenega dela: prisotnih 69
                            delegatov. Torej, sklepčnost je podana.</p>
-                        <p>Kdor je za predlog stališč, naj, prosim, glasuje. <stage>(197
-                              delegatov.)</stage> Je kdo proti? <stage>(Nihče.)</stage> Se je kdo
-                           vzdržal? <stage>(2 delegata.)</stage></p>
+                        <p>Kdor je za predlog stališč, naj, prosim, glasuje. <stage type="vote">(197
+                              delegatov.)</stage> Je kdo proti? <stage type="vote">(Nihče.)</stage> Se je kdo
+                           vzdržal? <stage type="vote">(2 delegata.)</stage>
+                        </p>
                         <p>Ugotavljam, da so stališča sprejeta. /Ploskanje./</p>
                         <p>Preden bi to sejo zaključili, bi predlagal še naslednje. V ponedeljek so
                            sklicane redne seje. Menim, da zaenkrat ni pogojev, da bi lahko začeli in
@@ -2956,8 +2967,7 @@
                            sami, ker je položaj dovolj varen.</p>
                         <p>S tem zaključujem to izredno sejo Skupščine Republike Slovenije.</p>
                      </sp>
-                     <stage type="time">(Skupna seja je bila <time to="1991-07-30T04:25:00"
-                           xml:id="stage.t.4">končana 30. junija 1991 ob 04.25 uri</time>.)</stage>
+                     <stage type="time">(Skupna seja je bila <time to="1991-07-30T04:25:00" xml:id="stage.t.4">končana 30. junija 1991 ob 04.25 uri</time>.)</stage>
                   </div>
                </div>
             </div>

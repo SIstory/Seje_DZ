@@ -31,8 +31,7 @@
             <pubPlace>https://github.com/SIstory/Seje_DZ/tree/master/</pubPlace>
             <availability status="free">
                <licence>http://creativecommons.org/licenses/by/4.0/</licence>
-               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/"
-                     >Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
+               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
                </p>
             </availability>
             <date when="2016-07-26+02:00"/>
@@ -53,9 +52,7 @@
                      <date>(17. julij 1991)</date>
                   </imprint>
                </monogr>
-               <ref
-                  target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=0238FC4EFCAB2E5EC1257C8D0025A0AD"
-                     >(<date>2016-04-12</date>)</ref>
+               <ref target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=0238FC4EFCAB2E5EC1257C8D0025A0AD">(<date>2016-04-12</date>)</ref>
             </biblStruct>
             <biblFull>
                <titleStmt>
@@ -67,10 +64,10 @@
                   <publisher>Državni zbor Republike Slovenije</publisher>
                   <availability status="free">
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="slv">Avtorske pravice so potekle, delo je v javni
+                              xml:lang="slv">Avtorske pravice so potekle, delo je v javni
                         domeni.</licence>
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="eng">Public Domain Mark 1.0</licence>
+                              xml:lang="eng">Public Domain Mark 1.0</licence>
                   </availability>
                </publicationStmt>
             </biblFull>
@@ -82,7 +79,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -93,6 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2017-01-16+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2017-01-16+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-07-26+02:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -125,18 +134,18 @@
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED:                                              STRAN</head>
-                     <item n="1">Obravnava predlogov za izdajo zakonov:<list>
-                           <item n="-">o pokojninskem in invalidskem zavarovanju z osnutkom zakona </item>
-                           <item n="-">o zdravstveni dejavnosti z osnutkom zakona</item>
-                           <item n="-">o zdravstvenem varstvu in zdravstvenem zavarovanju,</item>
-                           <item n="-">o lekarniški dejavnosti z osnutkom zakona ........... 1<list
-                                 rend="simple">
+                     <item n="1" xml:id="toc.1.1">Obravnava predlogov za izdajo zakonov:<list>
+                           <item n="-" xml:id="toc.1.a">o pokojninskem in invalidskem zavarovanju z osnutkom zakona </item>
+                           <item n="-" xml:id="toc.1.b">o zdravstveni dejavnosti z osnutkom zakona</item>
+                           <item n="-" xml:id="toc.1.c">o zdravstvenem varstvu in zdravstvenem zavarovanju,</item>
+                           <item n="-" xml:id="toc.1.č">o lekarniški dejavnosti z osnutkom zakona ........... 1<list rend="simple">
                                  <head>GOVORNIK:</head>
                                  <item>Matija Malešič ........................................ 1
                                  </item>
                               </list>
                            </item>
-                        </list></item>
+                        </list>
+                     </item>
                   </list>
                </item>
             </list>
@@ -151,15 +160,17 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.VsiZbor">
+         <div xml:id="div.1" ana="#PAR.VsiZbor">
             <head>SKUPNO ZASEDANJE VSEH ZBOROV SKUPŠČINE REPUBLIKE SLOVENIJE</head>
-            <div ana="#PAR.Zasedanje" n="16">
+            <div xml:id="div.1.1" ana="#PAR.Zasedanje" n="16">
                <head>16. zasedanje</head>
                <docDate>(<date when="1991-07-17">17. julij 1991</date>)</docDate>
                <timeline origin="#TL.1" unit="s">
                   <when synch="#stage.t.1" xml:id="TL.1" absolute="1991-07-17T10:33:00"/>
-                  <when synch="#stage.t.2" since="#TL.1" absolute="1991-07-17T10:55:00"
-                     interval="1320"/>
+                  <when synch="#stage.t.2"
+                        since="#TL.1"
+                        absolute="1991-07-17T10:55:00"
+                        interval="1320"/>
                </timeline>
                <castList>
                   <castItem>
@@ -167,17 +178,16 @@
                      <actor xml:id="sp.BizjakIvan">Ivan Bizjak</actor>, <role>predsednik Zbora
                         občin</role>.</castItem>
                </castList>
-               <stage type="time">Seja se je <time from="1991-07-17T10:33:00" xml:id="stage.t.1"
-                     >pričela ob 10.33 uri</time>.</stage>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR">
+               <stage type="time">Seja se je <time from="1991-07-17T10:33:00" xml:id="stage.t.1">pričela ob 10.33 uri</time>.</stage>
+               <div xml:id="div.1.1.1" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.TDR" corresp="#toc.1.1">
                      <sp who="#sp.BizjakIvan">
                         <speaker>PREDSEDUJOČI IVAN BIZJAK:</speaker>
                         <p>Spoštovane delegatke in delegati, gospe in gospodje! Pričenjam skupno
                            zasedanje vseh  treh zborov Skupščine Republike Slovenije, na katerem
                            bomo poslušali uvodno <title>BESEDO IZVRŠNEGA SVETA SKUPŠČINE REPUBLIKE
                               SLOVENIJE K NASLEDNJIM AKTOM: PREDLOGU ZAKONA O ORGANIZACIJI,
-                              FINANCIRANJU VZGOJE IN IZOBRAžEVANJA; PREDLOGU ZA IZDAJO ZAKONA O
+                              FINANCIRANJU VZGOJE IN IZOBRAŽVANJA; PREDLOGU ZA IZDAJO ZAKONA O
                               POKOJNINSKEM IN INVALIDSKEM ZAVAROVANJU Z OSNUTKOM ZAKONA, PREDLOGU ZA
                               IZDAJO ZAKONA O ZDRAVSTVENI DEJAVNOSTI Z OSNUTKOM ZAKONA, PREDLOGU ZA
                               IZDAJO ZAKONA O ZDRAVSTVENEM VARSTVU IN ZDRAVSTVENEM ZAVAROVANJU TER K
@@ -512,8 +522,7 @@
                            zasedanju, se pravi, takoj se začenja skupna seja vseh zborov. Hvala
                            lepa.  </p>
                      </sp>
-                     <stage type="time">(Seja je bila <time to="1991-07-17T10:55:00"
-                           xml:id="stage.t.2">končana 17. julija 1991 ob 10.55 uri</time>.)</stage>
+                     <stage type="time">(Seja je bila <time to="1991-07-17T10:55:00" xml:id="stage.t.2">končana 17. julija 1991 ob 10.55 uri</time>.)</stage>
                   </div>
                </div>
             </div>

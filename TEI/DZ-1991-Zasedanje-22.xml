@@ -31,8 +31,7 @@
             <pubPlace>https://github.com/SIstory/Seje_DZ/tree/master/</pubPlace>
             <availability status="free">
                <licence>http://creativecommons.org/licenses/by/4.0/</licence>
-               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/"
-                     >Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
+               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
                </p>
             </availability>
             <date when="2016-07-26+02:00"/>
@@ -53,9 +52,7 @@
                      <date>(23. december 1991)</date>
                   </imprint>
                </monogr>
-               <ref
-                  target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=132A33256995E1D8C1257C8D002774AE"
-                     >(<date>2016-04-12</date>)</ref>
+               <ref target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=132A33256995E1D8C1257C8D002774AE">(<date>2016-04-12</date>)</ref>
             </biblStruct>
             <biblFull>
                <titleStmt>
@@ -67,10 +64,10 @@
                   <publisher>Državni zbor Republike Slovenije</publisher>
                   <availability status="free">
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="slv">Avtorske pravice so potekle, delo je v javni
+                              xml:lang="slv">Avtorske pravice so potekle, delo je v javni
                         domeni.</licence>
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="eng">Public Domain Mark 1.0</licence>
+                              xml:lang="eng">Public Domain Mark 1.0</licence>
                   </availability>
                </publicationStmt>
             </biblFull>
@@ -82,7 +79,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -93,6 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2017-01-16+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2017-01-16+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-07-26+02:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -125,7 +134,7 @@
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED: STRAN</head>
-                     <item n="1">Uvodna beseda k predlogu Ustave Republike Slovenije in predlogu
+                     <item n="1" xml:id="toc.1.1">Uvodna beseda k predlogu Ustave Republike Slovenije in predlogu
                         ustavnega zakona za izvedbo Ustave RS ................. 1<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>dr. France Bučar ...................................... 1</item>
@@ -145,15 +154,17 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.VsiZbor">
+         <div xml:id="div.1" ana="#PAR.VsiZbor">
             <head>SKUPNO ZASEDANJE VSEH ZBOROV SKUPŠČINE REPUBLIKE SLOVENIJE</head>
-            <div ana="#PAR.Zasedanje" n="22">
+            <div xml:id="div.1.1" ana="#PAR.Zasedanje" n="22">
                <head>22. zasedanje</head>
                <docDate>(<date when="1991-12-23">23. december 1991</date>)</docDate>
                <timeline origin="#TL.1" unit="s">
                   <when synch="#stage.t.1" xml:id="TL.1" absolute="1991-12-23T10:32:00"/>
-                  <when synch="#stage.t.2" since="#TL.1" absolute="1991-12-23T11:15:00"
-                     interval="2580"/>
+                  <when synch="#stage.t.2"
+                        since="#TL.1"
+                        absolute="1991-12-23T11:15:00"
+                        interval="2580"/>
                </timeline>
                <castList>
                   <castItem>
@@ -162,10 +173,9 @@
                         občin</role>
                   </castItem>
                </castList>
-               <stage type="time">Seja se je <time from="1991-12-23T10:32:00" xml:id="stage.t.1"
-                     >pričela ob 10.32 uri</time>.</stage>
-               <div ana="#PAR.PredDnevRed">
-                  <div ana="#PAR.TDR">
+               <stage type="time">Seja se je <time from="1991-12-23T10:32:00" xml:id="stage.t.1">pričela ob 10.32 uri</time>.</stage>
+               <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.TDR" corresp="#toc.1.1">
                      <sp who="#sp.BizjakIvan">
                         <speaker>PREDSEDUJOČI IVAN BIZJAK:</speaker>
                         <p>Spoštovane delegatke in delegati, gospe in gospodje, spoštovani gostje!
@@ -584,7 +594,8 @@
                            civilizacijsko razvitih držav. In to je predlog, ki vam ga ustavna
                            komisija ponuja v sprejetje. Naša odgovornost je izjemno velika. Polagamo
                            temelje ne samo za jutri, ampak tudi za veliko prihodnost. Hvala lepa.
-                              <stage>(Aplavz.)</stage></p>
+                              <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                         <p>Spoštovani zbor! Naj mi bo dovoljeno še nekaj besed o predlogu ustavnega
                            zakona za izvedbo te ustave. Čeprav je njegova usoda odvisna od sprejema
                            ustave same, ki pa je še ni, je organsko del ustavne materije. Gre za
@@ -644,8 +655,7 @@
                            zaključujem Skupno zasedanje vseh zborov Skupščine Republike Slovenije.
                            Zbori takoj nadaljujejo delo v svojih dvoranah. Hvala lepa.</p>
                      </sp>
-                     <stage type="time">(Seja je bila <time to="1991-12-23T11:15:00"
-                           xml:id="stage.t.2">končana 23. decembra 1991 ob 11.15
+                     <stage type="time">(Seja je bila <time to="1991-12-23T11:15:00" xml:id="stage.t.2">končana 23. decembra 1991 ob 11.15
                         uri</time>.)</stage>
                   </div>
                </div>

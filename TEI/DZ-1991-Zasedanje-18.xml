@@ -31,8 +31,7 @@
             <pubPlace>https://github.com/SIstory/Seje_DZ/tree/master/</pubPlace>
             <availability status="free">
                <licence>http://creativecommons.org/licenses/by/4.0/</licence>
-               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/"
-                     >Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
+               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
                </p>
             </availability>
             <date when="2016-07-26+02:00"/>
@@ -53,9 +52,7 @@
                      <date>(11. september 1991)</date>
                   </imprint>
                </monogr>
-               <ref
-                  target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=AE0B91F772DDD39EC1257C8D00261445"
-                     >(<date>2016-04-12</date>)</ref>
+               <ref target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=AE0B91F772DDD39EC1257C8D00261445">(<date>2016-04-12</date>)</ref>
             </biblStruct>
             <biblFull>
                <titleStmt>
@@ -67,10 +64,10 @@
                   <publisher>Državni zbor Republike Slovenije</publisher>
                   <availability status="free">
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="slv">Avtorske pravice so potekle, delo je v javni
+                              xml:lang="slv">Avtorske pravice so potekle, delo je v javni
                         domeni.</licence>
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="eng">Public Domain Mark 1.0</licence>
+                              xml:lang="eng">Public Domain Mark 1.0</licence>
                   </availability>
                </publicationStmt>
             </biblFull>
@@ -82,7 +79,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -93,6 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2017-01-16+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2017-01-16+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-07-26+02:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -125,8 +134,7 @@
                <item>
                   <list rend="ordered">
                      <head>PRED DNEVNIM REDOM:                                      STRAN</head>
-                     <item n="1">Določanje dnevnega reda ............................... 1<list
-                           rend="simple">
+                     <item n="1" xml:id="toc.1.1">Določanje dnevnega reda ............................... 1<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Miran Potrč ........................................... 1</item>
                            <item>Emil Milan Pintar ..................................... 2</item>
@@ -139,19 +147,19 @@
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED:</head>
-                     <item n="1">Uvodna beseda k:<list>
-                           <item n="-">zakonu o lastninskem preoblikovanju podjetij,</item>
-                           <item n="-">zakonu o Agenciji Republike Slovenije za
+                     <item n="1" xml:id="toc.2.1">Uvodna beseda k:<list>
+                           <item n="-" xml:id="toc.2.1a">zakonu o lastninskem preoblikovanju podjetij,</item>
+                           <item n="-" xml:id="toc.2.1b">zakonu o Agenciji Republike Slovenije za
                               privatizacijo,</item>
-                           <item n="-">zakon o Skladu Republike Slovenije za razvoj.<list
-                                 rend="simple">
+                           <item n="-" xml:id="toc.2.1c">zakon o Skladu Republike Slovenije za razvoj.<list rend="simple">
                                  <head>GOVORNIK:</head>
                                  <item>Alojz Peterle .........................................
                                     3</item>
                               </list>
                            </item>
-                        </list></item>
-                     <item n="2">Seznam govornikov .................................. II/1</item>
+                        </list>
+                     </item>
+                     <item n="2" xml:id="toc.2.2">Seznam govornikov .................................. II/1</item>
                   </list>
                </item>
             </list>
@@ -181,15 +189,17 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.VsiZbor">
+         <div xml:id="div.1" ana="#PAR.VsiZbor">
             <head>SKUPNO ZASEDANJE VSEH ZBOROV SKUPŠČINE REPUBLIKE SLOVENIJE</head>
-            <div ana="#PAR.Zasedanje" n="18">
+            <div xml:id="div.1.1" ana="#PAR.Zasedanje" n="18">
                <head>18. zasedanje</head>
                <docDate>(<date when="1991-09-11">11. september 1991</date>)</docDate>
                <timeline origin="#TL.1" unit="s">
                   <when synch="#stage.t.1" xml:id="TL.1" absolute="1991-09-11T10:18:00"/>
-                  <when synch="#stage.t.2" since="#TL.1" absolute="1991-09-11T10:40:00"
-                     interval="1320"/>
+                  <when synch="#stage.t.2"
+                        since="#TL.1"
+                        absolute="1991-09-11T10:40:00"
+                        interval="1320"/>
                </timeline>
                <castList>
                   <castItem>
@@ -198,11 +208,10 @@
                         Družbenopolitičnega zbora</role>
                   </castItem>
                </castList>
-               <stage type="time">Seja se je <time from="1991-09-11T10:18:00" xml:id="stage.t.1"
-                     >pričela ob 10.18 uri</time>
+               <stage type="time">Seja se je <time from="1991-09-11T10:18:00" xml:id="stage.t.1">pričela ob 10.18 uri</time>
                </stage>
-               <div ana="#PAR.PredDnevRed">
-                  <div ana="#PAR.DolDnevRed">
+               <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.DolDnevRed" corresp="#toc.1.1">
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDUJOČI DR. LUDVIK TOPLAK:</speaker>
                         <p>Drage poslanke, spoštovani poslanci, gospe in gospodje, cenjeni gostje,
@@ -302,8 +311,8 @@
                      </sp>
                   </div>
                </div>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR">
+               <div xml:id="div.1.1.2" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.2.1" ana="#PAR.TDR" corresp="#toc.2.1">
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDUJOČI DR. LUDVIK TOPLAK:</speaker>
                         <p>Hvala lepa. Soglasno stališče predsednikov vseh treh zborov je tako, kot
@@ -453,7 +462,9 @@
                            je tako pripravljen zakon primerna osnova za sklepanje o njem kot o
                            predlogu zakona in potem vsemu temu kar iz tega sledi. Hvala lepa za
                            pozornost.</p>
-                        <p><stage>(Ploskanje)</stage></p>
+                        <p>
+                           <stage type="vocal">(Ploskanje)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDUJOČI DR. LUDVIK TOPLAK:</speaker>
@@ -461,8 +472,7 @@
                            združenega dela, Zbora občin in Družbenopolitičnega zbora. Razprava bo v
                            zborih.</p>
                      </sp>
-                     <stage type="time">(Seja je bila <time to="1991-09-11T10:40:00"
-                           xml:id="stage.t.2">končana 11. septembra 1991 ob 10.40
+                     <stage type="time">(Seja je bila <time to="1991-09-11T10:40:00" xml:id="stage.t.2">končana 11. septembra 1991 ob 10.40
                         uri</time>.)</stage>
                   </div>
                </div>

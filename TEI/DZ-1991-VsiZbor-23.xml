@@ -31,8 +31,7 @@
             <pubPlace>https://github.com/SIstory/Seje_DZ/tree/master/</pubPlace>
             <availability status="free">
                <licence>http://creativecommons.org/licenses/by/4.0/</licence>
-               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/"
-                     >Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
+               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
                </p>
             </availability>
             <date when="2016-03-29+02:00"/>
@@ -53,9 +52,7 @@
                      <date> - 10. julij 1991)</date>
                   </imprint>
                </monogr>
-               <ref
-                  target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=F9DEDF55EA57C4D5C1257C9B0024DD99"
-                     >(<date>2016-03-10</date>)</ref>
+               <ref target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=F9DEDF55EA57C4D5C1257C9B0024DD99">(<date>2016-03-10</date>)</ref>
             </biblStruct>
             <biblFull>
                <titleStmt>
@@ -67,10 +64,10 @@
                   <publisher>Državni zbor Republike Slovenije</publisher>
                   <availability status="free">
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="slv">Avtorske pravice so potekle, delo je v javni
+                              xml:lang="slv">Avtorske pravice so potekle, delo je v javni
                         domeni.</licence>
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="eng">Public Domain Mark 1.0</licence>
+                              xml:lang="eng">Public Domain Mark 1.0</licence>
                   </availability>
                </publicationStmt>
             </biblFull>
@@ -82,7 +79,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -93,6 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2017-01-16+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2017-01-16+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-03-30+02:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -126,15 +135,15 @@
                   <list rend="ordered">
                      <head>PRED DNEVNIM REDOM:</head>
                      <head>STRAN</head>
-                     <item n="1">Ugotavljanje prisotnosti ..............................  1</item>
-                     <item n="2">Določitev dnevnega reda ...............................  1</item>
+                     <item n="1" xml:id="toc.1.1">Ugotavljanje prisotnosti ..............................  1</item>
+                     <item n="2" xml:id="toc.1.2">Določitev dnevnega reda ...............................  1</item>
                   </list>
                </item>
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED:</head>
-                     <item n="1">Odobritev zapisnika 21. in 22. seje ...................  1</item>
-                     <item n="2">Skupna deklaracija, sprejeta 7. julij 1991 na Brionih, s prilogama
+                     <item n="1" xml:id="toc.2.1">Odobritev zapisnika 21. in 22. seje ...................  1</item>
+                     <item n="2" xml:id="toc.2.2">Skupna deklaracija, sprejeta 7. julij 1991 na Brionih, s prilogama
                         ..........................  2<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Milan Kučan ...........................................  2</item>
@@ -175,10 +184,10 @@
                            <item>Miloš Urbančič ........................................ 34</item>
                         </list>
                      </item>
-                     <item n="3">Izvolitev delegacije Skupščine Republike Slovenije za sodelovanje v
+                     <item n="3" xml:id="toc.2.3">Izvolitev delegacije Skupščine Republike Slovenije za sodelovanje v
                         Skupščini SFRJ v pogajanjih za izvedbo postopka razdružitve dosedanje SFRJ
                         ........... 35</item>
-                     <item n="4">Pismo Skupščine Republike Slovenije vsem republikam v SFRJ o
+                     <item n="4" xml:id="toc.2.4">Pismo Skupščine Republike Slovenije vsem republikam v SFRJ o
                         priznanju samostojnosti in neodvisnosti Republike Slovenije
                         ................................... 35<list rend="simple">
                            <head>GOVORNIKI:</head>
@@ -213,8 +222,8 @@
                            <item>Jože Zupančič ......................................... 47</item>
                         </list>
                      </item>
-                     <item n="5">Seznam govornikov ................................... II/1</item>
-                     <item n="6">Priloga: Zapisnik 23. seje ........................... III</item>
+                     <item n="5" xml:id="toc.2.5">Seznam govornikov ................................... II/1</item>
+                     <item n="6" xml:id="toc.2.6">Priloga: Zapisnik 23. seje ........................... III</item>
                   </list>
                </item>
             </list>
@@ -384,15 +393,17 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.VsiZbor">
+         <div xml:id="div.1" ana="#PAR.VsiZbor">
             <head>SKUPNA SEJA VSEH ZBOROV SKUPŠČINE REUBLIKE SLOVENIJE</head>
-            <div ana="#PAR.Seja" n="23">
+            <div xml:id="div.1.1" ana="#PAR.Seja" n="23">
                <head>(23. seja</head>
                <docDate> (<date when="1991-07-10">10. julij 1991</date>)</docDate>
                <timeline origin="#TL.1" unit="s">
                   <when synch="#stage.t.1" xml:id="TL.1" absolute="1991-07-10T12:05:00"/>
-                  <when synch="#stage.t.2" since="#TL.1" absolute="1991-07-10T15:35:00"
-                     interval="12600"/>
+                  <when synch="#stage.t.2"
+                        since="#TL.1"
+                        absolute="1991-07-10T15:35:00"
+                        interval="12600"/>
                </timeline>
                <castList>
                   <castItem>
@@ -400,10 +411,9 @@
                         Bučar</actor>, <role>predsednik SRS</role>
                   </castItem>
                </castList>
-               <stage type="time">Seja se je <time from="1991-07-10T12:05:00" xml:id="stage.t.1"
-                     >pričela ob 12.05 uri</time>.</stage>
-               <div ana="#PAR.PredDnevRed">
-                  <div ana="#PAR.Prisot">
+               <stage type="time">Seja se je <time from="1991-07-10T12:05:00" xml:id="stage.t.1">pričela ob 12.05 uri</time>.</stage>
+               <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.Prisot" corresp="#toc.1.1">
                      <sp who="#sp.BučarFrance">
                         <speaker>Predsednik dr. FRANCE BUČAR:</speaker>
                         <p>Spoštovani poslanci začenjam 23. skupno sejo vseh zborov Skupščine
@@ -419,9 +429,9 @@
                            sredstev javnega obveščanja pa sejo spremljajo v tiskovnem središču v
                            Cankarjevem domu.</p>
                         <p>Najprej bi prosim ugotovili prisotnost in prosim delegatke in delegate
-                           Družbenopolitičnega  zbora, da preverimo prisotnost <stage>(56 je
-                              prisotnih)</stage>, Zbora občin <stage>(53 prisotnih)</stage> in Zbor
-                           združenega dela <stage>(57 prisotnih)</stage>. Torej, na podlagi tega
+                           Družbenopolitičnega  zbora, da preverimo prisotnost <stage type="quorum">(56 je
+                              prisotnih)</stage>, Zbora občin <stage type="quorum">(53 prisotnih)</stage> in Zbor
+                           združenega dela <stage type="quorum">(57 prisotnih)</stage>. Torej, na podlagi tega
                            rezultata ugotavljam, da je skupna seja sklepčna.</p>
                         <p>Predlog dnevnega reda ste prejeli, danes ste prejeli na klop še dva
                            zapisnika, in sicer zapisnik 21. skupne seje z dne 24. in 25. junija in
@@ -435,32 +445,32 @@
                            neodvisnosti Republike Slovenije.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.DolDnevRed">
+                  <div xml:id="div.1.1.1.2" ana="#PAR.DolDnevRed" corresp="#toc.1.2">
                      <sp who="#sp.BučarFrance">
                         <p>Želi o predlogu dnevnega reda in teh predlogih za razširitev kdo
-                           razpravljati, vključno s predlogom za odobritev zapisnikov? <stage>(Ne
+                           razpravljati, vključno s predlogom za odobritev zapisnikov? <stage type="debate">(Ne
                               želi.)</stage> Če ne želi nihče razpravljati, dajem predlog dnevnega
                            reda na glasovanje.</p>
-                        <p>Kdo je, prosim, za tak dnevni red? <stage>(173 delegatov glasuje
-                              za.)</stage> Kdo je proti? <stage>(Nihče.)</stage> Vzdržani?
-                              <stage>(Nihče.)</stage> Torej, ugotavljam, da je dnevni red soglasno
+                        <p>Kdo je, prosim, za tak dnevni red? <stage type="vote">(173 delegatov glasuje
+                              za.)</stage> Kdo je proti? <stage type="vote">(Nihče.)</stage> Vzdržani?
+                              <stage type="vote">(Nihče.)</stage> Torej, ugotavljam, da je dnevni red soglasno
                            sprejet.</p>
                      </sp>
                   </div>
                </div>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR">
+               <div xml:id="div.1.1.2" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.2.1" ana="#PAR.TDR" corresp="#toc.2.1">
                      <sp who="#sp.BučarFrance">
                         <p>Ker ni bilo odziva, menim, da lahko o zapisnikih glasujemo, če ni kakšna
                            pripomba. Če ni pripomb, bi dal oba zapisnika v odobritev. Se
                            strinjate?</p>
-                        <p>Prosim, če svojo voljo izkažete. <stage>(152 delegatov glasuje
-                              za.)</stage> Proti? <stage>(2 delegata glasujeta proti.)</stage>
-                           Vzdržani? <stage>(2 delegata vzdržana.)</stage> Hvala lepa. Ugotavljam,
+                        <p>Prosim, če svojo voljo izkažete. <stage type="vote">(152 delegatov glasuje
+                              za.)</stage> Proti? <stage type="vote">(2 delegata glasujeta proti.)</stage>
+                           Vzdržani? <stage type="vote">(2 delegata vzdržana.)</stage> Hvala lepa. Ugotavljam,
                            da sta zapisnika sprejeta.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.2" ana="#PAR.TDR" corresp="#toc.2.2">
                      <sp who="#sp.BučarFrance">
                         <p>Glavna tema današnjega zasedanja je vsekakor 'brionska deklaracija', če
                            jo smem kar tako na kratko imenovati, ki je vprašanje političnega značaja
@@ -479,7 +489,8 @@
                            vidijo nobenega smisla v prihodu oziroma njegovem načrtovanju skupine
                            opazovalcev v Slovenijo. To je samo opozorilo, ki sem ga dolžan prebrati.
                            Še enkrat pravim brez kakršnegakoli vpliva na vaše odločanje. Prosim, g.
-                           predsednik. <stage>(Aplavz)</stage></p>
+                           predsednik. <stage type="vocal">(Aplavz)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.KučanMilan">
                         <speaker>MILAN KUČAN (predsednik Predsedstva):</speaker>
@@ -621,7 +632,8 @@
                            bilo danes te deklaracije in mir bi bil veliko dalje od nas, kot je
                            sedaj. Zato gre vsem pripadnikom Teritorialne obrambe in Organom za
                            notranje zadeve Republike Slovenije, pa tudi vsem našim ljudem velika
-                           zahvala in priznanje. <stage>(Aplavz.)</stage></p>
+                           zahvala in priznanje. <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                         <p>Borili so se odločno in hrabro, na očeh vsega sveta. Storili so, kar je
                            od njih zahtevala domovina in več. Zdaj je na tem, kar so iztrgali vojni,
                            mogoče preizkusiti mir. In ohraniti sposobnost Slovenije, da v teh
@@ -630,7 +642,7 @@
                            izdajalci tiste, ki v vojni zoper slovenski narod niso hoteli sodelovati,
                            ki niso hoteli streljati v svoje lastne ljudi. Dolžni smo te svoje ljudi,
                            slovenske rodoljube zavarovati z avtoriteto slovenske države.
-                              <stage>(Aplavz)</stage>. In dolžni smo postaviti vprašanje, kdo je
+                              <stage type="vocal">(Aplavz)</stage>. In dolžni smo postaviti vprašanje, kdo je
                            kriv za izkop nepremostljivega propada med vestjo in zapovedanostjo pri
                            pripadnikih JA, usposobljenih za boj zoper zunanjega napadalca, za
                            njihovo zlorabo v vojni intervenciji zoper lastne ljudi in ves narod. S
@@ -677,14 +689,15 @@
                            takšni dilemi vsi slovenski pogajalci na Brionih. Razlomili smo jo pod
                            težo skupne evropske realnosti in z mislijo, da mir odtehta negotovo
                            bližnjico do svobode. Naj bo, spoštovane poslanke in poslanci, petnajsti
-                           dan vojne, prvi dan miru. Hvala lepa. <stage>(Aplavz.)</stage></p>
+                           dan vojne, prvi dan miru. Hvala lepa. <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
 
                         <speaker>Dr. FRANCE BUČAR:</speaker>
                         <p>Spoštovani poslanci, preden bi nadaljevali z uvodnimi ekspozeji, bi
                            predlagal, da počastimo spomin padlih za našo svobodo z enominutnim
-                           molkom. <stage>(Enominutni molk)</stage>.</p>
+                           molkom. <stage type="time">(Enominutni molk)</stage>.</p>
                         <p>Prosim predsednika Izvršnega sveta gospoda Peterleta, če bi on povedal
                            stališče Izvršnega sveta k temu vprašanju.</p>
                      </sp>
@@ -779,7 +792,8 @@
                            sklepali še oziroma sprejemali izjavo ob deklaraciji zato, da bi lahko
                            zasedanje dvanajsterice prej obvestili o tem, da smo do tega sklepa
                            prišli. Mislim, daje to v interesu tega, kar želimo doseči. Hvala lepa.
-                              <stage>(Aplavz.)</stage></p>
+                              <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>Predsednik dr. FRANCE BUČAR:</speaker>
@@ -795,7 +809,8 @@
                            ves civiliziran in demokratični svet. Mislim, da je bilo že dovolj
                            rečenega v zadnjih dveh dneh in v teh dveh govorih. Prepričan sem, da
                            boste poslanci in poslanke odgovorno odločali. Hvala lepa.
-                              <stage>(Aplavz.)</stage></p>
+                              <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>Predsednik dr. FRANCE BUČAR:</speaker>
@@ -887,7 +902,7 @@
                            organizatorjev. Teh pa v Sloveniji in v tujini ni malo. Srčno si želimo
                            delati in ustvarjati za blagostanje slovenskega naroda. Zato v celoti
                            podpiramo vodstvo Slovenije, ki sodeluje v pogajanjih in pri umirjanju
-                           stanja in jim izrekamo vse priznanje. <stage>(Ploskanje)</stage>.</p>
+                           stanja in jim izrekamo vse priznanje. <stage type="vocal">(Ploskanje)</stage>.</p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>Predsednik dr. FRANCE BUČAR:</speaker>
@@ -1110,7 +1125,8 @@
                            da prepreči nov napad Jugoslovanske armade na Slovenijo, ker če tega ne
                            bo, bomo morali vojni obvezniki in prostovoljci Teritorialne obrambe
                            Slovenije še enkrat med krogle in seveda bomo šli, ker bomo pripravljeni
-                           za svobodno in neodvisno Slovenijo. <stage>(Aplavz.)</stage></p>
+                           za svobodno in neodvisno Slovenijo. <stage type="vocal">(Aplavz.)</stage>
+                        </p>
 
                      </sp>
                      <sp who="#sp.BučarFrance">
@@ -1181,7 +1197,8 @@
                      </sp>
                      <sp who="#sp.BattelliRoberto">
                         <speaker>ROBERTO BATTELLI:</speaker>
-                        <p><stage>(govori v italijanščini)</stage> Gospod predsednik, spoštovani
+                        <p>
+                           <stage type="comment">(govori v italijanščini)</stage> Gospod predsednik, spoštovani
                            gostje, spoštovane kolegice in kolegi! Ob tem, ko Klub delegatov
                            italijanske in madžarske narodnosti daje polno podporo 'brionski
                            deklaraciji' in obema prilogama, želi hkrati poudariti temeljne
@@ -1199,7 +1216,8 @@
                            tistim, ki v tem trenutku nosijo olivno zeleno ali maskirno uniformo.
                            Tisti, ki bo hotel uresničiti ta cilj, bo imel v nas in v vseh
                            prebivalcih Slovenije, v naši skupni, demokratično izraženi volji v tem
-                           parlamentu trdno oporno točko. Hvala. <stage>(Ploskanje)</stage></p>
+                           parlamentu trdno oporno točko. Hvala. <stage type="vocal">(Ploskanje)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>Predsednik dr. FRANCE BUČAR:</speaker>
@@ -1537,7 +1555,8 @@
                            politiko nasilja spremenimo v politiko miru, sožitja in povezovanja vseh
                            ljudi dobre volje v nekdanji SFRJ in pozivam vas k skupnemu prizadevanju
                            za te vrednote. Krvavo nam bo potrebno. Hvala.
-                           <stage>(Aplavz.)</stage></p>
+                           <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>Predsednik dr. FRANCE BUČAR:</speaker>
@@ -1840,7 +1859,8 @@
                            deklaraciji sem želel samo argumentirati, da ne vidim v tem aneksu vsaj v
                            celoti vzeto, ničesar, kar bi bistveno posegalo v življenjske interese
                            Republike Slovenije in njenih državljanov. Hvala.
-                              <stage>(Aplavz.)</stage></p>
+                              <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>Predsedujoči dr. FRANCE BUČAR:</speaker>
@@ -1874,7 +1894,7 @@
                            Moramo se pač odločiti ali se opredeljujemo do tega predloženega
                            dokumenta, ali želimo imeti neko splošno razpravo, ki pa ni predmet
                            današnje seje, ampak lahko se sklene, da bomo lahko temu namenili posebno
-                           sejo, a po zborih. <stage>(Aplavz.)</stage> Če se bomo odločili za to,
+                           sejo, a po zborih. <stage type="vocal">(Aplavz.)</stage> Če se bomo odločili za to,
                            potem seveda bi posamezni diskutanti lahko v svojem imenu ali v imenu
                            kluba, katerega predstavljajo samo povedali, če imajo posebej za
                            potrebno, da povedo, zakaj se odločajo za ali pa proti. Če pa želite
@@ -1890,7 +1910,7 @@
                            strani nismo slišali posebnih argumentov proti. Zato ocenjujem, da smo že
                            zreli za to, da bi ta prvi sklep sprejel in da bi potem nadaljevali z
                            razpravo o spremnem dokumentu k temu sklepu. Bi prosil, da se to..
-                               <stage>(Aplavz.)</stage> ...</p>
+                               <stage type="vocal">(Aplavz.)</stage> ...</p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>Predsednik dr. FRANCE BUČAR:</speaker>
@@ -1899,13 +1919,14 @@
                            potem poslanci splošno razpravo, je to njihova pravica, kolikor časa
                            hočejo diskutirati, morajo se pa odločiti o dokumentu kot celoti. In če
                            se strinjate, da odločamo o dokumentu kot celoti, dam na glasovanje.
-                           Prosim, kdo je za ta predlog prosim? <stage>(iz dvorane  se ne
+                           Prosim, kdo je za ta predlog prosim? <stage type="gap">(iz dvorane  se ne
                               razloči)</stage> Kdo je prosim za to? Kdo je prosim za to, da zdaj kot
                            o celoti, glasujemo o predlogu sklepa, kot je predložen: SKLEP IN
                            IZJAVO.</p>
-                        <p>Dajem najprej na glasovanje ta predlog, kdor je prosim za ? <stage>(164
-                              za.)</stage> Kdo je proti? <stage>(2 proti)</stage>. Vzdržanih?
-                              <stage>(l3 vzdržanih)</stage></p>
+                        <p>Dajem najprej na glasovanje ta predlog, kdor je prosim za ? <stage type="vote">(164
+                           za.)</stage> Kdo je proti? <stage type="vote">(2 proti)</stage>. Vzdržanih?
+                           <stage type="vote">(l3 vzdržanih)</stage>
+                        </p>
                         <p>Torej sprejeti predlog je, da preidemo na glsasovanje o</p>
                         <p>tem celotnem dokumentu, ima pa seveda vsakdo pravico, da obrazloži zakaj
                            bo tako glasoval.</p>
@@ -1947,7 +1968,8 @@
                         <p>Jaz sem za to deklaracijo, ker sem prepričan, da s tem, ko Evropa prihaja
                            k nam in ko s to deklaracijo tudi mi prihajamo Evropi naproti, si
                            omogočamo, da bomo čimprej morali vreči te izkaznice za gibanje ob
-                           maloobmejnem pasu stran. <stage>(Aplavz.)</stage></p>
+                           maloobmejnem pasu stran. <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>Predsednik dr. FRANCE BUČAR:</speaker>
@@ -1959,7 +1981,8 @@
                            tako kot je predlagana, služi svojemu namenu. To je, razložiti, kako
                            razumemo to deklaracijo in kaj iz nje sledi. Vse tisto, kar pa ob tem še
                            mislimo pa lahko s posebnimi sklepi sprejmemo potem, ko bomo to sprejeli.
-                           Hvala. <stage>(Aplavz.)</stage></p>
+                           Hvala. <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>Predsednik dr. FRANCE BUČAR:</speaker>
@@ -2015,7 +2038,7 @@
                      <sp who="#sp.BučarFrance">
                         <speaker>Predsednik dr. FRANCE BUČAR:</speaker>
                         <p>Poslušajte. Jaz vam bom vzel besedo, če me mislite žaliti.
-                              <stage>(Aplavz.)</stage> Vi ste prišli gor, imate pravico obrazložiti
+                              <stage type="vocal">(Aplavz.)</stage> Vi ste prišli gor, imate pravico obrazložiti
                            svoj glas. Samo to in nič drugega.</p>
                      </sp>
                      <sp who="#sp.ŽagarZvone">
@@ -2029,7 +2052,7 @@
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>Predsednik dr. FRANCE BUČAR:</speaker>
-                        <p>Hvala lepa. Še kdo želi besedo? <stage>(Da.)</stage> Aksentijević.</p>
+                        <p>Hvala lepa. Še kdo želi besedo? <stage type="debate">(Da.)</stage> Aksentijević.</p>
                      </sp>
                      <sp who="#sp.AksentijevićMilan">
                         <speaker>MILAN AKSENTIJEVIĆ:</speaker>
@@ -2053,7 +2076,7 @@
                            starešin, njihov seznam imamo in ga vam bom dal. Torej, ni prišlo do
                            uresničitev 5. odstavka deklaracije. Zato prosim, da prekinemo medsebojno
                            propagandno vojno. Da se "okrenemo" bodočnosti, da se "okrenemo" miru.
-                              <stage>(predsednik ga prekinja ...)</stage> Prosim vas v imenu svojih
+                              <stage type="gap">(predsednik ga prekinja ...)</stage> Prosim vas v imenu svojih
                            tovarišev sem dolžan, da vam povem, da smo mi v JLA čvrsto za mir in
                            čvrsto za deklaracijo in tako bom glasoval. Hvala, ker ste mi dali
                            besedo.</p>
@@ -2161,9 +2184,9 @@
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>Predsednik dr. FRANCE BUČAR:</speaker>
-                        <p>Hvala lepa. Želi še kdo objasniti svoje glasovanje? <stage>(Ne)</stage>.
+                        <p>Hvala lepa. Želi še kdo objasniti svoje glasovanje? <stage type="debate">(Ne)</stage>.
                            Nihče tega ne želi, potem prehajamo na glasovanje. Najprej ugotovimo
-                           navzočnost. <stage>(DPZ 76 navzočih, ZO 67, ZZD 69)</stage>. Torej
+                           navzočnost. <stage type="quorum">(DPZ 76 navzočih, ZO 67, ZZD 69)</stage>. Torej
                            potreben kvorum je podan. Prosim s potrebnim razmislekom, kdor je za ta
                            sklep, ki ga bom še enkrat prebral zaradi jasnosti in pomembnosti:
                            Skupščina Republike Slovenije v celoti sprejema skupno deklaracijo
@@ -2171,8 +2194,8 @@
                         <p>Mislim, da je to bistvo vprašanja, o katerem se moramo odločati. Apeliram
                            na vse poslance, da dejansko s polno odgovornostjo glasujejo tako ali
                            drugače.</p>
-                        <p>Kdo je prosim za? <stage>(189 poslancev glasuje za)</stage>. Kdo je
-                           proti? <stage>(11 poslancev)</stage>. Vzdržanih? <stage>(7
+                        <p>Kdo je prosim za? <stage type="vote">(189 poslancev glasuje za)</stage>. Kdo je
+                           proti? <stage type="vote">(11 poslancev)</stage>. Vzdržanih? <stage type="vote">(7
                               poslancev)</stage>.</p>
                         <p>Na podlagi tega izida ugotavljam, da je sklep o soglasju k tej skupni
                            deklaraciji z Brionov sprejet in bomo o tem takoj neposredno obvestili
@@ -2180,11 +2203,11 @@
                         <p>Dajem na glasovanje predlog, če poslanci želijo tudi splošno razpravo o
                            razmerah pri nas v zvezi s tem, ki bodo nastale. Če ste za to, da se
                            nadaljuje še splošna razprava danes ali kdaj drugič?</p>
-                        <p>Kdo je za? <stage>(6 poslancev glasuje za)</stage>.</p>
+                        <p>Kdo je za? <stage type="vote">(6 poslancev glasuje za)</stage>.</p>
                         <p>Mislim, da je brezpredmetno nadaljnje glasovanje. Hvala lepa.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.3" ana="#PAR.TDR" corresp="#toc.2.3">
                      <sp who="#sp.BučarFrance">
                         <p>Prehajamo potem na naslednjo točko dnevnega reda. Tega  nismo sprejeli
                            danes kot točko dnevnega reda - '<title>izvolitev delegacije Skupščine
@@ -2199,7 +2222,7 @@
                            predloga.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.4" ana="#PAR.TDR" corresp="#toc.2.4">
                      <sp who="#sp.BučarFrance">
                         <p>Prehajamo na naslednjo točko dnevnega reda, in sicer <title>Pismo vsem
                               republikam SFRJ o priznanju samostojnosti in neodvisnosti Republike
@@ -2255,7 +2278,7 @@
                            nikomur,da ne bi prihajalo do novih nesmiselnih in tragičnih izgub
                             človeških življenj in do ogroženja miru in varnosti.</p>
                         <p>Kolikor se s tem strinjate, želi najprej kdo o tem razpravljati?
-                              <stage>(Da.)</stage> Prosim, gospod Kopač.</p>
+                              <stage type="debate">(Da.)</stage> Prosim, gospod Kopač.</p>
                      </sp>
                      <sp who="#sp.KopačJanez">
                         <speaker>JANEZ KOPAČ:</speaker>
@@ -2278,7 +2301,7 @@
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>Predsednik dr. FRANCE BUČAR:</speaker>
-                        <p>Hvala lepa. Se strinjamo s tem predlogom? <stage>(Da.)</stage> Hvala
+                        <p>Hvala lepa. Se strinjamo s tem predlogom? <stage type="debate">(Da.)</stage> Hvala
                            lepa. Pardon, gospod Smole se je že prijavil.</p>
                      </sp>
                      <sp who="#sp.SmoleJože">
@@ -2382,9 +2405,10 @@
                            s tem predlogom, da se sprejme vsebino in intencijo tega, da kratko malo
                            pooblastimo predlagatelja predsedstvo, da dikcijo tega še izpopolni, tako
                            da bo usklajena s to vsebino, ki jo želimo. Ali se s tem strinjate? Na
-                           glasovanje dajem tak predlog. Kdo je, prosim, za? <stage>(148 delegatov
-                              je za)</stage>. Kdo je proti? <stage>(Nihče ni proti)</stage>.
-                           Vzdržani? <stage>(8 vzdržanih.)</stage></p>
+                           glasovanje dajem tak predlog. Kdo je, prosim, za? <stage type="vote">(148 delegatov
+                              je za)</stage>. Kdo je proti? <stage type="vote">(Nihče ni proti)</stage>.
+                           Vzdržani? <stage type="vote">(8 vzdržanih.)</stage>
+                        </p>
                         <p>Ugotavljam, da je sklep sprejet.</p>
                         <p>Zdaj imam še dva predloga. Enega ste dobili že na klop. To se pravi, to
                            je predlog Liberalno-demokratske stranke, za katerega, če sem pravilno
@@ -2447,7 +2471,7 @@
                         <speaker>Predsednik dr. FRANCE BUČAR:</speaker>
                         <p>Predlagate, da sprejmemo sklep Liberalno-demokratske stranke. Potem moram
                            dati oba sklepa na glasovanje. Najprej, pardon, razen če želi še kdo
-                           razpravljati. <stage>(Da.)</stage> Prosim, Ribičič, potem pa Peršak,
+                           razpravljati. <stage type="debate">(Da.)</stage> Prosim, Ribičič, potem pa Peršak,
                            Starman.</p>
                      </sp>
                      <sp who="#sp.RibičičCiril">
@@ -2536,7 +2560,7 @@
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>Predsednik dr. FRANCE BUČAR:</speaker>
-                        <p>Hvala lepa. Želi še kdo razpravljati? <stage>(Da.)</stage> Gospod
+                        <p>Hvala lepa. Želi še kdo razpravljati? <stage type="debate">(Da.)</stage> Gospod
                            Bučar.</p>
                      </sp>
                      <sp who="#sp.BuserStanko">
@@ -2802,15 +2826,17 @@
                            je najbolj oddaljen od predloga, predlagam, da glasujemo najprej o
                            predlogu, da o tem danes ne razpravljamo in da se razprava preloži na
                            drug termin.</p>
-                        <p>Kdo je prosim za ta predlog? <stage>(60 poslancev.)</stage> Kdo je proti?
-                              <stage>(76 poslancev.)</stage> Se je kdo vzdržal? <stage>(20
-                              poslancev.)</stage></p>
+                        <p>Kdo je prosim za ta predlog? <stage type="vote">(60 poslancev.)</stage> Kdo je proti?
+                              <stage type="vote">(76 poslancev.)</stage> Se je kdo vzdržal? <stage type="vote">(20
+                              poslancev.)</stage>
+                        </p>
                         <p>Predlog ni dobil potrebne podpore.</p>
                         <p>Zato dajem na glasovanje predlog, da sprejmemo predlog
                            Liberalno-demokratske stranke, ki ste ga dobili na klop.</p>
-                        <p>Kdo je za ta predlog? <stage>(78 poslancev.)</stage> Kdo je proti?
-                              <stage>(45 poslancev.)</stage> Se je kdo vzdržal? <stage>(34
-                              poslancev.)</stage></p>
+                        <p>Kdo je za ta predlog? <stage type="vote">(78 poslancev.)</stage> Kdo je proti?
+                              <stage type="vote">(45 poslancev.)</stage> Se je kdo vzdržal? <stage type="vote">(34
+                              poslancev.)</stage>
+                        </p>
                         <p>Tudi ta predlog ni dobil potrebne podpore.</p>
                         <p>S tem avtomatično prehajamo na glasovanje o predlogu prenoviteljev, ki ga
                            bom še enkrat prebral. Prosim, besedo ima gospod Potrč.</p>
@@ -2875,7 +2901,8 @@
                            pravice, da zaradi tega stokam, četudi se mi zdi, da ni smiselno, da se
                            zdaj tu strankarsko opredeljujemo, če vemo, da te stvari zdaj
                            potrebujemo. Zato upam, da bo šel vsaj skozi ta predlog. Hvala lepa za
-                           potrpežljivost. <stage>(Aplavz.)</stage></p>
+                           potrpežljivost. <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>Predsednik dr. FRANCE BUČAR:</speaker>
@@ -2917,19 +2944,20 @@
                      <sp who="#sp.BučarFrance">
                         <speaker>Predsednik dr. FRANCE BUČAR:</speaker>
                         <p>Hvala lepa. Dajem ta predlog na glasovanje. Najprej moramo ugotoviti
-                           sklepčnost Družbenopolitični zbor! <stage>(55 prisotnih
-                              delegatov.)</stage> Zbor občin <stage>(46 prisotnih
-                              delegatov.)</stage> Zbor združenega dela! <stage>(52 prisotnih
-                              delegatov.)</stage></p>
-                        <p>Kdor je za ta predlog, naj prosim glasuje! <stage>(143 delegatov glasuje
-                              za.)</stage> Je kdo proti? <stage>(6 delegatov glasuje proti.)</stage>
-                           Se je kdo vzdržal? <stage>(15 delegatov.)</stage></p>
+                           sklepčnost Družbenopolitični zbor! <stage type="quorum">(55 prisotnih
+                              delegatov.)</stage> Zbor občin <stage type="quorum">(46 prisotnih
+                              delegatov.)</stage> Zbor združenega dela! <stage type="quorum">(52 prisotnih
+                              delegatov.)</stage>
+                        </p>
+                        <p>Kdor je za ta predlog, naj prosim glasuje! <stage type="vote">(143 delegatov glasuje
+                              za.)</stage> Je kdo proti? <stage type="vote">(6 delegatov glasuje proti.)</stage>
+                           Se je kdo vzdržal? <stage type="vote">(15 delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlog tega sklepa sprejet.</p>
                         <p>Mislim, da je s tem dnevni red seje izčrpan in jo zaključujem. Hvala
                            lepa.</p>
                      </sp>
-                     <stage type="time">(Seja je bila <time to="1991-07-10T15:35:00"
-                           xml:id="stage.t.2">končana 10. julija 1991 ob 15.35 uri</time>.)</stage>
+                     <stage type="time">(Seja je bila <time to="1991-07-10T15:35:00" xml:id="stage.t.2">končana 10. julija 1991 ob 15.35 uri</time>.)</stage>
                   </div>
                </div>
             </div>

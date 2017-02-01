@@ -82,6 +82,8 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
          <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
@@ -93,6 +95,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2017-01-19+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2017-01-19+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-03-30+02:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -125,22 +139,24 @@
                <item>
                   <list rend="ordered">
                      <head>PRED DNEVNIM REDOM:                                      STRAN</head>
-                     <item n="1">Ugotavljanje prisotnosti poslancev .................... 1</item>
-                     <item n="2">Določanje dnevnega reda ............................... 1<list
-                           rend="simple">
+                     <item n="1" xml:id="toc.1.1">Ugotavljanje prisotnosti poslancev
+                        .................... 1</item>
+                     <item n="2" xml:id="toc.1.2">Določanje dnevnega reda
+                        ............................... 1<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>Franc Golija .......................................... 1</item>
                         </list>
                      </item>
-                     <item n="3">Sprejem dnevnega reda ................................. 2</item>
+                     <item n="3" xml:id="toc.1.3">Sprejem dnevnega reda
+                        ................................. 2</item>
                   </list>
                </item>
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED:</head>
-                     <item n="1">Razprava o konstruktivni nezaupnici vladi oziroma o predlogu, da se
-                        za novega predsednika vlade izvoli dr. Janeza Drnovška (1. točka dnevnega
-                        reda) .............................. 2<list rend="simple">
+                     <item n="1" xml:id="toc.2.1">Razprava o konstruktivni nezaupnici vladi oziroma
+                        o predlogu, da se za novega predsednika vlade izvoli dr. Janeza Drnovška (1.
+                        točka dnevnega reda) .............................. 2<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Jožef Školč ........................................... 3</item>
                            <item>dr. Janez Drnovšek .................................... 3</item>
@@ -199,19 +215,21 @@
                            <item>dr. Janez Drnovšek ................................... 66</item>
                         </list>
                      </item>
-                     <item n="2">Predlog, da Slovenska skupščina naslovi najostrejši apel na
-                        Republiko Srbijo, Miloševića in bivšo JLA, da nemudoma ustavijo absurdno
-                        uničevanje na tleh suverene države Bosne in Hercegovine<list rend="simple">
+                     <item n="2" xml:id="toc.2.2">Predlog, da Slovenska skupščina naslovi
+                        najostrejši apel na Republiko Srbijo, Miloševića in bivšo JLA, da nemudoma
+                        ustavijo absurdno uničevanje na tleh suverene države Bosne in
+                           Hercegovine<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>Rudi Šeligo .......................................... 69</item>
                         </list>
                      </item>
-                     <item n="3">Odobritev zapisnika 32. skupne seje vseh zborov (2. točka dnevnega
-                        reda) ............................. 69</item>
-                     <item n="4">Razprava o interpelaciji o delu in odgovornosti ministra za zunanje
-                        zadeve dr. Dimitrija Rupla (3. točka dnevnega reda)
+                     <item n="3" xml:id="toc.2.3">Odobritev zapisnika 32. skupne seje vseh zborov
+                        (2. točka dnevnega reda) ............................. 69</item>
+                     <item n="4" xml:id="toc.2.4">Razprava o interpelaciji o delu in odgovornosti
+                        ministra za zunanje zadeve dr. Dimitrija Rupla (3. točka dnevnega reda)
                         ............................. 70 </item>
-                     <item n="5">Seznam govornikov .................................. II/1</item>
+                     <item n="5" xml:id="toc.2.5">Seznam govornikov
+                        .................................. II/1</item>
                   </list>
                </item>
             </list>
@@ -365,6 +383,8 @@
                   <actor xml:id="sp.VodopivecIvan">Vodopivec Ivan</actor>
                   ........................................... 45</castItem>
                <castItem>
+                  <actor xml:id="sp.unknown"/></castItem>
+               <castItem>
                   <actor xml:id="sp.UrbančičMiloš">Urbančič Miloš</actor>
                   ........................................... 27</castItem>
                <castItem>
@@ -392,9 +412,9 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.VsiZbor">
+         <div xml:id="div.1" ana="#PAR.VsiZbor">
             <head>SKUPNA SEJA VSEH ZBOROV SKUPŠČINE REPUBLIKE SLOVENIJE</head>
-            <div ana="#PAR.Seja" n="33">
+            <div xml:id="div.1.1" ana="#PAR.Seja" n="33">
                <head>33. seja</head>
                <docDate>(<date when="1992-04-22">22. aprila 1992</date>)</docDate>
                <timeline origin="#TL.1" unit="s">
@@ -413,8 +433,8 @@
                </castList>
                <stage type="time">Seja se je <time from="1992-04-22T15:05:00" xml:id="stage.t.1"
                      >začela ob 15.05 uri</time>.</stage>
-               <div ana="#PAR.PredDnevRed">
-                  <div ana="#PAR.Prisot">
+               <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.Prisot" corresp="#toc.1.1">
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
                         <p>Spoštovane poslanke in poslanci! Začenjam 33. skupno sejo vseh zborov
@@ -430,7 +450,7 @@
                            navzoča večina poslancev iz vsakega zbora.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.DolDnevRed">
+                  <div xml:id="div.1.1.1.2" ana="#PAR.DolDnevRed" corresp="#toc.1.2">
                      <sp who="#sp.BučarFrance">
                         <p>Predlog dnevnega reda ste prejeli. Poslance vseh zborov sem s sklicem
                            seje z dne 13.4.1992 obvestil, da bomo na današnji skupni seji glasovali
@@ -489,19 +509,21 @@
                            proceduralnega vprašanja o tem, da danes vendarle razpravljamo o tej
                            točki, to se pravi, da razpravljamo in glasujemo o novem mandatarju. Ta
                            predlog dajem na glasovanje.</p>
-                        <p>Kdo je za? <stage>(106 poslancev.)</stage> Je kdo proti? <stage>(51
-                              poslancev.)</stage> Se je kdo vzdržal? <stage>(25
-                           poslancev.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(106 poslancev.)</stage> Je kdo proti?
+                              <stage type="vote">(51 poslancev.)</stage> Se je kdo vzdržal? <stage
+                              type="vote">(25 poslancev.)</stage>
+                        </p>
                         <p>Ugotavljam, da je zbor pripravljen danes razpravljati in glasovati o tej
                            točki.</p>
                         <p>Je še kakšno vprašanje glede dnevnega reda? Če ni, dajem ta predlog
                            dnevnega reda na glasovanje.</p>
-                        <p>Kdo je za? <stage>(128 poslancev.)</stage> Je kdo proti? <stage>(19
-                              poslancev.)</stage> Se je kdo vzdržal? <stage>(24
-                           poslancev.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(128 poslancev.)</stage> Je kdo proti?
+                              <stage type="vote">(19 poslancev.)</stage> Se je kdo vzdržal? <stage
+                              type="vote">(24 poslancev.)</stage>
+                        </p>
                      </sp>
                   </div>
-                  <div ana="#PAR.DolDnevRed">
+                  <div xml:id="div.1.1.1.3" ana="#PAR.DolDnevRed" corresp="#toc.1.3">
                      <sp who="#sp.BučarFrance">
                         <p>Ugotavljam, da je predlog dnevnega reda sprejet, in sicer po naslednjem
                            vrstnem redu. Najprej razpravljamo in glasujemo o konstruktivni
@@ -515,14 +537,12 @@
                      </sp>
                   </div>
                </div>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR" n="1">
+               <div xml:id="div.1.1.2" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.2.1" ana="#PAR.TDR" n="1" corresp="#toc.2.1">
                      <sp who="#sp.BučarFrance">
-                        <p>Prehajamo na</p>
-                        <p>
-                           <title>1. TOČKO DNEVNEGA REDA - RAZPRAVA O KONSTRUKTIVNI NEZAUPNICI VLADI
-                              OZIROMA PREDLOGU, DA SE ZA NOVEGA PREDSEDNIKA VLADE IZVOLI DR. JANEZA
-                              DRNOVŠKA</title>.</p>
+                        <p>Prehajamo na <title>1. TOČKO DNEVNEGA REDA - RAZPRAVA O KONSTRUKTIVNI
+                              NEZAUPNICI VLADI OZIROMA PREDLOGU, DA SE ZA NOVEGA PREDSEDNIKA VLADE
+                              IZVOLI DR. JANEZA DRNOVŠKA</title>.</p>
                         <p>Sprašujem predstavnika predlagateljev, skupino poslancev, ali želi v
                            njihovem imenu še kdo posebej obrazložiti predlog. Prosim, gospod
                            Školč.</p>
@@ -764,7 +784,8 @@
                            skupne poteze, ki bodo Slovenijo potegnile iz brezna hude gospodarske in
                            socialne krize. Če pa bo vaše glasovanje negativno in ne boste podprli
                            moje kandidature, potem nam preostaja upanje, da se čimprej srečamo na
-                           volitvah. Hvala. <stage>(Aplavz.)</stage></p>
+                           volitvah. Hvala. <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
@@ -776,13 +797,13 @@
                         <speaker>JANEZ KOPAČ</speaker>
                         <p>: Hvala za besedo. Vsa ta gneča pred predsedujočim me je spomnila na to,
                            da bi predlagal proceduralni sklep, da se omejijo razprave na 5 minut in
-                           predsedujoči, <stage>(aplavz)</stage> upam, da boste, preden bi bil
-                           kakšen konkreten problem s kakšnim imenom in priimkom. No želel sem samo
-                           podati še nekaj poudarkov v zvezi s smislom prehodne Vlade, kajti vsi
-                           pravijo, da bi Vlada bila prehodna, in pri tem se bom strogo poskušal
-                           omejiti od kritike delovanja obstoječe Vlade, kajti mislim, da to ni
-                           konstruktivno in apeliram na vse govorce, ki bodo še prišli za ta oder
-                           danes, da se žolčnih podrobnosti vzdržijo. Upam, da bo ta moj poziv
+                           predsedujoči, <stage type="vocal">(aplavz)</stage> upam, da boste, preden
+                           bi bil kakšen konkreten problem s kakšnim imenom in priimkom. No želel
+                           sem samo podati še nekaj poudarkov v zvezi s smislom prehodne Vlade,
+                           kajti vsi pravijo, da bi Vlada bila prehodna, in pri tem se bom strogo
+                           poskušal omejiti od kritike delovanja obstoječe Vlade, kajti mislim, da
+                           to ni konstruktivno in apeliram na vse govorce, ki bodo še prišli za ta
+                           oder danes, da se žolčnih podrobnosti vzdržijo. Upam, da bo ta moj poziv
                            naletel na odprta ušesa. Enkrat, ko smo - lahko rečem z mojo veliko
                            pomočjo sprejeli republiški proračun, smo ga sprejeli ravno na podlagi
                            strpnosti, ki upam, da bo tudi danes tukaj prisotna.</p>
@@ -883,9 +904,10 @@
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
                         <p>Moram ugotoviti, da je govornik točno za sto procentov prekoračil svoj
-                           lastni predlog. <stage>(Smeh.)</stage> Jaz pa vendarle sprejemam njegov
-                           predlog, glede na to, da je prijavljenih 38 razpravljalcev, da bi omejili
-                           na 5 minut, če ste za to. Dajem ta predlog na glasovanje. Prosim!</p>
+                           lastni predlog. <stage type="vocal">(Smeh.)</stage> Jaz pa vendarle
+                           sprejemam njegov predlog, glede na to, da je prijavljenih 38
+                           razpravljalcev, da bi omejili na 5 minut, če ste za to. Dajem ta predlog
+                           na glasovanje. Prosim!</p>
                      </sp>
                      <sp who="#sp.neidentificirangovornik">
                         <speaker>NEIDENTIFICIRAN GOVORNIK:</speaker>
@@ -901,9 +923,10 @@
                         <p>Torej v vsakem primeru dam jaz predlog na glasovanje. Najprej dajem na
                            glasovanje predlog, da omejimo razpravo na pet minut za posameznega
                            razpravljalca.</p>
-                        <p>Kdo je za? <stage>(110 poslancev.)</stage> Je kdo proti? <stage>(20
-                              poslancev.)</stage>  Se je kdo vzdržal? <stage>( 17
-                              poslancev.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(110 poslancev.)</stage> Je kdo proti?
+                              <stage type="vote">(20 poslancev.)</stage>  Se je kdo vzdržal? <stage
+                              type="vote">( 17 poslancev.)</stage>
+                        </p>
                         <p>Ugotavljam, da je ta predlog sprejet s komentarjem, da je pač volja tega
                            zbora odločilna, kako se bomo ravnali in obnašali.</p>
                         <p>Moram še to povedati, če smo se sedaj odločili za pet minut, dosledno bom
@@ -928,9 +951,10 @@
                         <p>Hvala lepa. Predlog je bil alternativno podan 10 ali 15 minut. Torej,
                            dajem predlog na glasovanje, da vodje strank oziroma tisti, ki govori v
                            imenu stranke, ima na voljo 10 minut. Dajem ta predlog na glasovanje.</p>
-                        <p>Kdo je za? <stage>(124 poslancev.)</stage> Je kdo proti? <stage>(5
-                              poslancev.)</stage> Se je kdo vzdržal? <stage>(8
-                           poslancev.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(124 poslancev.)</stage> Je kdo proti?
+                              <stage type="vote">(5 poslancev.)</stage> Se je kdo vzdržal? <stage
+                              type="vote">(8 poslancev.)</stage>
+                        </p>
                         <p>Ugotavljam, da je ta predlog sprejet.</p>
                         <p>Nadaljujemo razpravo. Besedo ima Ivan Dretnik.</p>
                      </sp>
@@ -1045,24 +1069,23 @@
                            konsenz, strnili znanje in moči ter iskali optimalne rešitve ali tretjo
                            alternativo, se parlament izgublja v neproduktivnih polemikah. Ravno za
                            kompromise in tretjo alternativo v teh razdeljevanjih, ni prostora.
-                              <stage>(Porabili ste pet minut.)</stage> Za tako kontrastno
-                           polirizacijo pri nas tudi ni prave zgodovinske osnove. Družbena prenova
-                           se ni začela z Demosom in z njim je le sodu izbila dno. S svojimi
-                           koreninami sega daleč nazaj. Prenova je potekala tudi znotraj partije.
-                           Dostikrat se sliši v naši Skupščini: "S komunisti pa že ne bomo
-                           sodelovali." Ali pa: "Pri skupni vladi se ognimo levega in desnega
-                           ekstrema." Torej SDP-ja in krščanskih demokratov. Kdo so danes komunisti?
-                           Kdo je levi in desni ekstrem? Takšna delitev je kontraproduktivna. Pelje
-                           stran od narodnega sporazuma, poleg tega pa ima v sebi tudi veliko
-                           licemerstva. Koliko bivših članov partije je pristalo v Demosu. To vsi
-                           vemo. Nekateri so pustili vrste v času razsvetljenstva, lastnega
-                           razsvetljenstva, nekateri pa šele, ko so se razmere obrnile in ko so
-                           zaslutili, da bo treba hitro preskočiti drugam. Pravzaprav bi morali biti
-                           prenovitelji Demosu hvaležni, saj se je skozi Demos partija kar ustrezno
-                           prečistila, mislim, znebila se je številnih aparatčikov in karieristov.
-                           Tako da se lahko upravičeno vprašamo, kje je danes več tovrstnih
-                           komunistov, pri Ribičičevi SDP ali na primer v Pučnikovi
-                           socialdemokratski stranki. Zaključujem.</p>
+                           (Porabili ste pet minut.) Za tako kontrastno polirizacijo pri nas tudi ni
+                           prave zgodovinske osnove. Družbena prenova se ni začela z Demosom in z
+                           njim je le sodu izbila dno. S svojimi koreninami sega daleč nazaj.
+                           Prenova je potekala tudi znotraj partije. Dostikrat se sliši v naši
+                           Skupščini: "S komunisti pa že ne bomo sodelovali." Ali pa: "Pri skupni
+                           vladi se ognimo levega in desnega ekstrema." Torej SDP-ja in krščanskih
+                           demokratov. Kdo so danes komunisti? Kdo je levi in desni ekstrem? Takšna
+                           delitev je kontraproduktivna. Pelje stran od narodnega sporazuma, poleg
+                           tega pa ima v sebi tudi veliko licemerstva. Koliko bivših članov partije
+                           je pristalo v Demosu. To vsi vemo. Nekateri so pustili vrste v času
+                           razsvetljenstva, lastnega razsvetljenstva, nekateri pa šele, ko so se
+                           razmere obrnile in ko so zaslutili, da bo treba hitro preskočiti drugam.
+                           Pravzaprav bi morali biti prenovitelji Demosu hvaležni, saj se je skozi
+                           Demos partija kar ustrezno prečistila, mislim, znebila se je številnih
+                           aparatčikov in karieristov. Tako da se lahko upravičeno vprašamo, kje je
+                           danes več tovrstnih komunistov, pri Ribičičevi SDP ali na primer v
+                           Pučnikovi socialdemokratski stranki. Zaključujem.</p>
                         <p>Torej, namesto da bi polarizacijo v teh kriznih razmerah presegli, jo
                            nekateri z izključevanji še stopnjujejo. Mandatar kot najodgovornejša
                            oseba bi se moral zavedati škodljivosti takšnih izvajanj in ubrati pot
@@ -1357,12 +1380,13 @@
                            ji je bilo odvzeto; se zgraža, ker (citiram) "gledamo vsako nedeljo
                            Obzorja duha, vidimo pa le religiozne oddaje". (Konec citata.) Vse
                            naokrog vidi (citat) "gledanje v pamet, dušo in pod kovter" (konec
-                           citata); boji se zopet malovredne razdelitve dela delnic..
-                               ...<stage>(Predsednik ga opozori, da mu je čas potekel.)</stage>...
-                           Samo še stavek: Takšen frontalni napad na desnico seveda ne more biti
-                           razrešen z zamenjavo Vlade. Ponavljam: za to so volitve; do tedaj pa
-                           pustimo, naj ta vlada normalno dela in zaključi številne začete projekte.
-                           Hvala. ...<stage>(Ploskanje.)</stage>...</p>
+                           citata); boji se zopet malovredne razdelitve dela delnic..  ...<stage
+                              type="comment">(Predsednik ga opozori, da mu je čas
+                           potekel.)</stage>... Samo še stavek: Takšen frontalni napad na desnico
+                           seveda ne more biti razrešen z zamenjavo Vlade. Ponavljam: za to so
+                           volitve; do tedaj pa pustimo, naj ta vlada normalno dela in zaključi
+                           številne začete projekte. Hvala. ...<stage type="vocal"
+                              >(Ploskanje.)</stage>...</p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
@@ -1476,15 +1500,21 @@
                            parlamenta. Pridobiti zaupanje ljudstva s kratkotrajnimi učinki je
                            nemoralno (zame). Vendar se vedno obnese, vsaki oblasti. Posebno še, če
                            ni zavezana nekim volilnim obljubam, kot je to veljalo za Demosove
-                           poslance vsaj nekatere, zame sigurno. <stage>(vmes dr. Bučar: pet minut
-                              je minilo)</stage> Ljudje imajo kratek spomin in se dajo vedno
-                           naplahtati, predvsem pa raje živijo od obljub kot od realnosti. Če je to
-                           pet minut, jaz imam še nekaj za povedati. (Sklep velja za vse enako.)
-                           Potem ste me pač sredi razprave prekinili.(Na žalost.) Bi zaključil samo
-                           s tamle. Nekdo je rekel (to sem hotel na koncu povedati). Življenje je
-                           prekratko, da bi pil slabo vino; mi ga bomo, če skrenemo na to pot, ki
-                           nam je nakazana in dovolimo takšen vladni "puč". Jaz temu ne bom
-                           nazdravljal in me na tej restavracijski zabavi ne bo.</p>
+                           poslance vsaj nekatere, zame sigurno. </p>
+                     </sp>
+                     <sp who="#sp.BučarFrance">
+                        <speaker>(vmes dr. Bučar:</speaker>
+                        <ab>pet minut je minilo)</ab>
+                     </sp>
+                     <sp who="#sp.SchwarzbartlAntonErvin">
+                        <p> Ljudje imajo kratek spomin in se dajo vedno naplahtati, predvsem pa raje
+                           živijo od obljub kot od realnosti. Če je to pet minut, jaz imam še nekaj
+                           za povedati. (Sklep velja za vse enako.) Potem ste me pač sredi razprave
+                           prekinili.(Na žalost.) Bi zaključil samo s tamle. Nekdo je rekel (to sem
+                           hotel na koncu povedati). Življenje je prekratko, da bi pil slabo vino;
+                           mi ga bomo, če skrenemo na to pot, ki nam je nakazana in dovolimo takšen
+                           vladni "puč". Jaz temu ne bom nazdravljal in me na tej restavracijski
+                           zabavi ne bo.</p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
@@ -1608,9 +1638,19 @@
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
-                        <p>Pet minut, prosim, je minilo. <stage>(Predstavnik sem.)</stage> Potem
-                           morate pa povedati! <stage>(Sem povedal.)</stage> Potem se pa
-                           oproščam.</p>
+                        <p>Pet minut, prosim, je minilo. </p>
+                     </sp>
+                     <sp who="#sp.unknown">
+                        <ab>(Predstavnik sem.)</ab>
+                     </sp>
+                     <sp who="#sp.BučarFrance">
+                        <p> Potem morate pa povedati! </p>
+                     </sp>
+                     <sp who="#sp.unknown">
+                        <ab>(Sem povedal.)</ab>
+                     </sp>
+                     <sp who="#sp.BučarFrance">
+                        <p> Potem se pa oproščam.</p>
                      </sp>
                      <sp who="#sp.PolajnarIgnac">
                         <speaker>IGNAC POLAJNAR:</speaker>
@@ -1977,7 +2017,10 @@
                            bomo osvobodili spon starega režima, za katerega je bilo značilno, da so
                            posamezniki gradili državo na sebi samih. Zato je ta njihova država
                            trajala natanko toliko časa, kot oni sami. Ne ponovimo te napake.
-                              <stage>(Pet minut je minilo prosim.)</stage> Končujem z dvema mislima:
+                           </p></sp><sp who="#sp.unknown">
+                              <ab>(Pet minut je minilo prosim.)</ab> 
+                              </sp><sp who="#sp.PintarEmilMilan"><p>
+                              Končujem z dvema mislima:
                            razklenimo povratno zvezo med človekom in funkcijo, med imenom
                            posameznika in mandatarsko ali predsedniško funkcijo, kadar nas
                            vztrajanje na tej zvezi zapira v začarani krog razvojne neuspešnosti.
@@ -2036,10 +2079,10 @@
                            ni mogoče ustaviti, lahko pa je v nekaj mesecih ne restavrirati
                            komunizem, ampak vrniti družbo kot družbeni sistem za stoletje nazaj. To
                            je mogoče storiti samo z lastninsko zakonodajo. Vrniti družbo v stanje
-                           divjega kapitalizma <stage>(opozorilo predsednika - 5 min!)</stage>
-                           primarne kapitalistične akumulacije in s tem v nov predvolucijski čas.
-                           Zato vas prosim, spoštovane poslanke in poslanci, zaustavimo
-                           protireformacijo, glasujmo za normalizacijo. Hvala.</p>
+                           divjega kapitalizma <stage type="comment">(opozorilo predsednika - 5
+                              min!)</stage> primarne kapitalistične akumulacije in s tem v nov
+                           predvolucijski čas. Zato vas prosim, spoštovane poslanke in poslanci,
+                           zaustavimo protireformacijo, glasujmo za normalizacijo. Hvala.</p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
@@ -2047,16 +2090,16 @@
                      </sp>
                      <sp who="#sp.FeltrinFranci">
                         <speaker>FRANCI FELTRIN:</speaker>
-                        <p>Spoštovani! <stage>(Tudi mene, slišal sem smeh, to bo lep govor,
-                              ja.)</stage> Zelo sem razočaran in moram povedati slovenski javnosti,
-                           da sem razočaran, da ravno tiste stranke, ki govorijo o tem, kako
-                           podpirajo delavca, v tem programu ni besede o njih. Mislim da, če gledamo
-                           ta program, bo še zmeraj delavec tisti, ki ga bodo metali na cesto,
-                           posebno Liberalno demokratska stranka se je do sedaj odrezala povsod, da
-                           je šla trdo na to, da so si privatizirali, organizirali po vseh občinah,
-                           po celem slovenskem prostoru, da jim ni bilo mar za nezaposlene, da ni
-                           bilo mar za tiste delavce, ki delajo za 30% več denarja kot tiste, ki
-                           čakajo doma ali so na čakanju ali brezposelni.</p>
+                        <p>Spoštovani! <stage type="vocal">(Tudi mene, slišal sem smeh, to bo lep
+                              govor, ja.)</stage> Zelo sem razočaran in moram povedati slovenski
+                           javnosti, da sem razočaran, da ravno tiste stranke, ki govorijo o tem,
+                           kako podpirajo delavca, v tem programu ni besede o njih. Mislim da, če
+                           gledamo ta program, bo še zmeraj delavec tisti, ki ga bodo metali na
+                           cesto, posebno Liberalno demokratska stranka se je do sedaj odrezala
+                           povsod, da je šla trdo na to, da so si privatizirali, organizirali po
+                           vseh občinah, po celem slovenskem prostoru, da jim ni bilo mar za
+                           nezaposlene, da ni bilo mar za tiste delavce, ki delajo za 30% več
+                           denarja kot tiste, ki čakajo doma ali so na čakanju ali brezposelni.</p>
                         <p>In ravno to, gospod mandatar dr. Drnovšek, pogrešam v vašem programu. Jaz
                            sem pričakoval tako kot so ostali in moram reči, da so tudi moji volivci
                            rekli, da ste vi edina rešitev. Zelo, res zelo sem razočaran, da tega v
@@ -2303,7 +2346,12 @@
                            in zlasti tistih strank, ki bodo od tega dne naprej v opoziciji. Vse bi
                            vas naprosil, da se obnašamo razumno, kajti niso zaman rekli že stari
                            Rimljani "quos Jupiter vult perdere primus demente...". Hvala.
-                              ...<stage>(Klici iz klopi: Prevod.)</stage>... Kogar hoče Bog
+                              ...
+                           </p></sp><sp who="#sp.unknown">
+                              <stage type="location">(Klici iz klopi:</stage>
+                                 <ab>Prevod.)... </ab>
+                              </sp><sp who="#sp.ZlobecJašaL"><p>
+                              Kogar hoče Bog
                            pogubiti, mu najprej vzame razum.</p>
                      </sp>
                      <sp who="#sp.BučarFrance">
@@ -2405,9 +2453,9 @@
                            mogel odločiti, kateri bi naklonil svojo naklonjenost. Tudi pri Liberalni
                            stranki je bil, pa smo sodelovanje z njim zavrnili. Drugim strankam je
                            najbrž obljubljal isto kot Liberalni stranki, kaj od tega pa je, ali bo
-                           storil, vedo njegovi sogovorniki. ...<stage>(Opozorilo predsednika na
-                              določen čas, vendar ga zavrne, da ima 10 minut - in še eno minuto, ker
-                              je bil prekinjen.)</stage>...</p>
+                           storil, vedo njegovi sogovorniki. ...<stage type="comment">(Opozorilo
+                              predsednika na določen čas, vendar ga zavrne, da ima 10 minut - in še
+                              eno minuto, ker je bil prekinjen.)</stage>...</p>
                         <p>Gospod Drnovšek je tudi dolgo izbiral med možnimi funkcijami, dokler se
                            ni odločil za današnjo kandidaturo. Doslej je kandidiral za direktorja
                            Triglavskega narodnega parka, Slovenskega olimpijskega komiteja in že
@@ -2457,16 +2505,19 @@
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
-                        <p>Ja, jaz mislim, da ni več v veljavi. <stage>(Smeh.)</stage></p>
+                        <p>Ja, jaz mislim, da ni več v veljavi. <stage type="vocal">(Smeh.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.GrosVitomir">
                         <speaker>VITOMIR GROS:</speaker>
                         <p>Torej, gospod predsednik me je odrešil kakršnekoli odgovornosti. Sedaj
                            karkoli govorim, govorim na njegovo odgovornost in če bo kaj narobe, bo
                            on odgovarjal.</p>
-                        <p><stage>(Predsednik Bučar ga ponovno opozori na čas, toda Vitomis Gros
+                        <p>
+                           <stage type="comment">(Predsednik Bučar ga ponovno opozori na čas, toda Vitomis Gros
                               odgovori, da ima še eno minuto in dodatno še eno minuto, ker ga je
-                              prekinil.)</stage></p>
+                              prekinil.)</stage>
+                        </p>
                         <p>1. točka: Predsedništvo SFRJ utvrdjuje postojanje vanrednih prilika ako
                            oceni, da je ugrožena... in tako naprej. Prevod si dobite. To bo gospod
                            predsednik zrihtal. Ustavom SFRJ utvr|ujemo društveno ure|enje. To se
@@ -2486,8 +2537,8 @@
                            području, u kome se nastale vanredne prilike. Skratka, vrši represijo
                            proti novinarjem. V 7. točki predvideva kontrolo telefonov, v 8. točki,
                            podtočke naslednje točke predvideva omejeno gibanje in pa koncentracijska
-                           taborišča, v 8. točki prisilno delo, v 1. točki nadaljevanja.
-                              ...<stage>(Klic iz klopi.)</stage>... Nimam časa gospod, si boste sam
+                           taborišča, v 8. točki prisilno delo, v 1. točki nadaljevanja. ...<stage
+                              type="gap">(Klic iz klopi.)</stage>... Nimam časa gospod, si boste sam
                            prebral, vam bom dal, pa piše takole: "Poveravanje gotovosti oružanih
                            snaga za borbu protiv neprijateljskih oružanih i drugih
                            kontrarevolucionarnih snaga..." Skratka, še vedno se bori proti
@@ -2499,7 +2550,8 @@
                            in ga razdelite poslancem, da bodo videli, kaj je gospod Drnovšek pred
                            slabimi tremi leti podpisal. Moram pa še replicirati na gospoda Školjča,
                            nič, razen osebnih podatkov, kar je govoril o gospodu Drnovšku, namreč ne
-                           drži, če upoštevamo tole. Hvala lepa. ...<stage>(Aplavz.)</stage>...</p>
+                           drži, če upoštevamo tole. Hvala lepa. ...<stage type="vocal"
+                              >(Aplavz.)</stage>...</p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
@@ -3281,8 +3333,12 @@
                            nekateri bojite, bo pač pol leta hitro minilo in ne bo kakšne večje
                            škode. Na volitvah bomo lahko postavili ali pa boste lahko postavili
                            drugo vlado. Sedanja politika "le se pase", ki jo izvaja sedanja vlada,
-                           ne bo napravila tudi nič kaj revolucionarnega <stage>(Vmes predsednik:
-                              Pet minut je minilo.)</stage> Če bo pa delala dobro, bo pač delala
+                           ne bo napravila tudi nič kaj revolucionarnega 
+                           </p></sp><sp who="#sp.BučarFrance">
+                              <speaker>(Vmes predsednik:</speaker>
+                              <ab>Pet minut je minilo.)</ab>
+                              </sp><sp who="#sp.GlavičPeter"><p>
+                              Če bo pa delala dobro, bo pač delala
                            štiri in pol leta in bo odpadlo vse, kar ji sedaj očitamo ali pa očitate.
                            Še tole. Če bo dr. Drnovšek izvoljen, računam, da mu boste nasprotniki
                            nudili enako podporo, kot smo jo nudili mi Demosovi vladi leto in pol,
@@ -3351,8 +3407,12 @@
                            regije. Nezaupanje v pravilnost odločitev se čedalje močneje kaže v
                            vrstah predavateljskega kadra. Ravnatelji osnovnih šol so preko časopisa
                            opozorili širšo javnost o aktualnih problemih prenove šolstva. Prihaja do
-                           vedno večjih organizacijskih, upravnih in finančnih prvin <stage>(vmes
-                              opozorilo predsednika: Čas se vam je iztekel.)</stage>, ki so
+                           vedno večjih organizacijskih, upravnih in finančnih prvin 
+                           </p></sp><sp who="#sp.BučarFrance">
+                           <speaker>(vmes opozorilo predsednika:</speaker> 
+                              <ab>Čas se vam je iztekel.), </ab>
+                              </sp><sp who="#sp.KramaričTone"><p>
+                              ki so
                            posledica slabega projekta. Izobraževalni sistem, ki se sistemsko ne
                            posodablja in ne prilagaja potrebam države, se bo lahko sesul. Da je
                            problem res kritičen, je dokaz ta, da pedagoški delavci  zahtevajo nazaj
@@ -3783,8 +3843,8 @@
                            posebej v veselje. Počutim se v tej funkciji kot lokostrelec, ki bi moral
                            zadevati v sredo tarče, pa mu nekdo stalno spodmika komolec. Če ste kdaj
                            streljali z lokom, lahko veste, kako to izgleda. Hvala, ker ste me
-                           poslušali in prelagam čim prej glasovanje.
-                           ...<stage>(Aplavz.)</stage>...</p>
+                           poslušali in prelagam čim prej glasovanje. ...<stage type="vocal"
+                              >(Aplavz.)</stage>...</p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
@@ -3909,7 +3969,9 @@
                            razreševanje nastale situacije, če pa ne, pa resnično upam, da se bomo
                            kmalu srečali na volitvah, da se ne boste več tako sklicevali na tiste
                            volitve v povsem drugačnih okoliščinah in na tisto voljo ljudi. Mislim,
-                           da je čas, da jo tudi vi preverite. Hvala. <stage>(Aplavz.)</stage></p>
+                           da je čas, da jo tudi vi preverite. Hvala. <stage type="vocal"
+                              >(Aplavz.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
@@ -3920,22 +3982,25 @@
                            generalni sekretar Skupščine in trije poslanci, ki jih bomo izvolili v ta
                            namen. Predlagani so naslednji poslanci, in sicer: Slavko Kmetič, Marjan
                            Dvornik in Roman Jakič. Ali so imenovani poslanci tukaj, da jih ne bi
-                           volili, če jih ni. Prosim? <stage>(glas bi rad pojasnil - nekdo iz
-                              klopi)</stage>. Ja, ne vem o čem, tu gre samo za vprašanje, ja ali ne.
-                           Dobro, torej, mislim, da lahko preidemo na glasovanje o tem, torej Slavko
-                           Kmetič, Marjan Dvornik in Roman Jakič so.</p>
-                        <p>Prosim, ugotovimo najprej navzočnost. Družbenopolitični zbor? <stage>(43
-                              prisotnih.)</stage> Zbor občin? <stage>(66 prisotnih.)</stage> In Zbor
-                           združenega dela? <stage>(62 prisotnih.)</stage></p>
+                           volili, če jih ni. Prosim? <stage type="gap">(glas bi rad pojasnil -
+                              nekdo iz klopi)</stage>. Ja, ne vem o čem, tu gre samo za vprašanje,
+                           ja ali ne. Dobro, torej, mislim, da lahko preidemo na glasovanje o tem,
+                           torej Slavko Kmetič, Marjan Dvornik in Roman Jakič so.</p>
+                        <p>Prosim, ugotovimo najprej navzočnost. Družbenopolitični zbor? <stage
+                              type="quorum">(43 prisotnih.)</stage> Zbor občin? <stage type="quorum"
+                              >(66 prisotnih.)</stage> In Zbor združenega dela? <stage type="quorum"
+                              >(62 prisotnih.)</stage>
+                        </p>
                         <p>Ugotavljam, da je na podlagi teh izidov seja sklepčna in torej prosim za
                            ta predlog članov volilne komisije.</p>
-                        <p>Kdor je za? <stage>(82 poslancev.)</stage> Je kdo proti? <stage>(5
-                              poslancev.)</stage> Se je kdo vzdržal? Glasujemo o izvolitvi
-                           tričlanske volilne komisije, za katero so predlagani Slavko Kmetič,
-                           Marjan Dvornik in Roman Jakič. Dobro, torej.</p>
-                        <p>Kdo je za? <stage>(196 poslancev.)</stage> Precejšnja razlika res.  Je
-                           kdo proti? <stage>(1 poslanec.)</stage> Se je kdo vzdržal? <stage>(2
-                              poslanca.)</stage></p>
+                        <p>Kdor je za? <stage type="vote">(82 poslancev.)</stage> Je kdo proti?
+                              <stage type="vote">(5 poslancev.)</stage> Se je kdo vzdržal? Glasujemo
+                           o izvolitvi tričlanske volilne komisije, za katero so predlagani Slavko
+                           Kmetič, Marjan Dvornik in Roman Jakič. Dobro, torej.</p>
+                        <p>Kdo je za? <stage type="vote">(196 poslancev.)</stage> Precejšnja razlika
+                           res.  Je kdo proti? <stage type="vote">(1 poslanec.)</stage> Se je kdo
+                           vzdržal? <stage type="vote">(2 poslanca.)</stage>
+                        </p>
                         <p>Ugotavljam, da je volilna komisija v sestavi Slavko Kmetič, Marjan
                            Dvornik in Roman Jakič izvoljena.</p>
                         <p>Torej glasujemo na običajen način, ki smo ga pravzaprav že vajeni, kar je
@@ -3952,7 +4017,7 @@
                         <p>Glasovanje je potekalo 22. aprila 1992 v Skupščini Republike Slovenije.
                            Glasovanja se je udeležilo 210 poslancev. Oddanih je bilo 208 glasovnic,
                            neveljavnih glasovnic ni bilo. za kandidata Janeza Drnovška je glasovalo
-                           126 poslancev. <stage>(Aplavz.)</stage>  </p>
+                           126 poslancev. <stage type="vocal">(Aplavz.)</stage>  </p>
                         <p>Komisija v sestavi France Bučar, Marko Herman, Slavko Kmetič, Marjan
                            Dvornik in Roman Jakič ugotavlja, da je bil dr. Janez Drnovšek izvoljen
                            za predsednika vlade, ker je dobil večino glasov vseh poslancev, kot to
@@ -3963,7 +4028,7 @@
                            Šeligo, ki bi rad dal neko izjavo v zvezi z vojno v Bosni.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.2" ana="#PAR.TDR" corresp="#toc.2.2">
                      <sp who="#sp.ŠeligoRudi">
                         <speaker>MAG. RUDI ŠELIGO:</speaker>
                         <p>Spoštovani! Po podatkih, ki prihajajo v zadnjih urah iz Bosne in
@@ -3979,7 +4044,8 @@
                            UNIČEVANJE NA TLEH SUVERENE DRŽAVE,</p>
                         <p>ki smo jo priznali tudi mi, to je na tleh</p>
                         <p>BOSNE IN HERCEGOVINE.</p>
-                        <p>Hvala. <stage>(Aplavz.)</stage></p>
+                        <p>Hvala. <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
@@ -3987,29 +4053,25 @@
                            sprejet.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="2">
+                  <div xml:id="div.1.1.2.3" ana="#PAR.TDR" n="2" corresp="#toc.2.3">
                      <sp who="#sp.BučarFrance">
-                        <p>Prehajamo na</p>
-                        <p>
-                           <title>2. TOČKO DNEVNEGA REDA - ODOBRITEV ZAPISNIKA 32. SKUPNE
-                              SEJE</title>.</p>
+                        <p>Prehajamo na <title>2. TOČKO DNEVNEGA REDA - ODOBRITEV ZAPISNIKA 32.
+                              SKUPNE SEJE</title>.</p>
                         <p>Želi kdo o tem razpravljati? V kolikor ne, dajem zapisnik na
                            glasovanje.</p>
-                        <p>Kdo je za? <stage>(106 poslancev.)</stage> Je kdo proti? <stage>(1
-                              poslanec.)</stage> Se je kdo vzdržal? <stage>(8
-                           poslancev.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(106 poslancev.)</stage> Je kdo proti?
+                              <stage type="vote">(1 poslanec.)</stage> Se je kdo vzdržal? <stage
+                              type="vote">(8 poslancev.)</stage>
+                        </p>
                         <p>Ugotavljam, da je zapisnik zadnje seje sprejet.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="3">
+                  <div xml:id="div.1.1.2.4" ana="#PAR.TDR" n="3" corresp="#toc.2.4">
                      <sp who="#sp.BučarFrance">
-                        <p>Glede na izid glasovanja o konstruktivni nezaupnici sledi, da je
-                           postala</p>
-                        <p>
-                           <title>3. TOČKA DNEVNEGA REDA RAZPRAVA O INTERPELACIJI O DELU IN
+                        <p>Glede na izid glasovanja o konstruktivni nezaupnici sledi, da je postala
+                              <title>3. TOČKA DNEVNEGA REDA RAZPRAVA O INTERPELACIJI O DELU IN
                               ODGOVORNOSTI MINISTRA ZA ZUNANJE ZADEVE DR. DIMITRIJA RUPLA</title>
-                        </p>
-                        <p>brezpredmetna glede na to, da je glede na tak volilni izid o novem
+                           brezpredmetna glede na to, da je glede na tak volilni izid o novem
                            mandatarju vsa vlada avtomatično v razrešnici.</p>
                         <p>Hvala lepa. In s tem je dnevni red  seje izčrpan. Zaključujem sejo.      
                               </p>

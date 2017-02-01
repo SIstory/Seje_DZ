@@ -33,8 +33,7 @@
             <pubPlace>https://github.com/SIstory/Seje_DZ/tree/master/</pubPlace>
             <availability status="free">
                <licence>http://creativecommons.org/licenses/by/4.0/</licence>
-               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/"
-                     >Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
+               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
                </p>
             </availability>
             <date when="2016-07-27+02:00"/>
@@ -57,9 +56,7 @@
                      <date>(10. september 1992)</date>
                   </imprint>
                </monogr>
-               <ref
-                  target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=D05761CC0796C527C1257C8D00281849"
-                  >(<date/>)</ref>
+               <ref target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=D05761CC0796C527C1257C8D00281849">(<date/>)</ref>
             </biblStruct>
             <biblFull>
                <titleStmt>
@@ -71,10 +68,10 @@
                   <publisher>Državni zbor Republike Slovenije</publisher>
                   <availability status="free">
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="slv">Avtorske pravice so potekle, delo je v javni
+                              xml:lang="slv">Avtorske pravice so potekle, delo je v javni
                         domeni.</licence>
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="eng">Public Domain Mark 1.0</licence>
+                              xml:lang="eng">Public Domain Mark 1.0</licence>
                   </availability>
                </publicationStmt>
             </biblFull>
@@ -86,7 +83,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -97,6 +94,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2017-01-19+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2017-01-19+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-07-27+02:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -131,15 +140,14 @@
                <item>
                   <list rend="ordered">
                      <head>PRED DNEVNIM REDOM:                                      STRAN</head>
-                     <item n="1">Ugotavljanje prisotnosti delegatov .................... 1</item>
-                     <item n="2">Določitev dnevnega reda ............................... 2</item>
+                     <item n="1" xml:id="toc.1.1">Ugotavljanje prisotnosti delegatov .................... 1</item>
+                     <item n="2" xml:id="toc.1.2">Določitev dnevnega reda ............................... 2</item>
                   </list>
                </item>
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED:</head>
-                     <item n="1">Predlog zakona o Državnem svetu ....................... 3<list
-                           rend="simple">
+                     <item n="1" xml:id="toc.2.1">Predlog zakona o Državnem svetu ....................... 3<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Anton Peršak .......................................... 3</item>
                            <item>Franc Golija .......................................... 3</item>
@@ -157,7 +165,7 @@
                            <item>mag. Ervin Anton Schwarzbartl ........................ 10</item>
                         </list>
                      </item>
-                     <item n="2">Seznam govornikov .................................. II/1</item>
+                     <item n="2" xml:id="toc.2.2">Seznam govornikov .................................. II/1</item>
                   </list>
                </item>
             </list>
@@ -206,17 +214,19 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.VsiZbor">
+         <div xml:id="div.1" ana="#PAR.VsiZbor">
             <head>SKUPNO ZASEDANJE VSEH ZBOROV SKUPŠČINE REPUBLIKE SLOVENIJE KOT 45. SEJA
                DRUŽBENOPOLITIČNEGA ZBORA, 51. SEJA ZBORA ZDRUŽENEGA DELA IN 45. SEJA ZBORA
                OBČIN</head>
-            <div ana="#PAR.Zasedanje" n="24">
+            <div xml:id="div.1.1" ana="#PAR.Zasedanje" n="24">
                <head>24. zasedanje</head>
                <docDate>(<date when="1992-09-10">10. september 1992</date>)</docDate>
                <timeline origin="#TL.1" unit="s">
                   <when synch="#stage.t.1" xml:id="TL.1" absolute="1992-09-10T11:10:00"/>
-                  <when synch="#stage.t.2" since="#TL.1" absolute="1992-09-10T12:25:00"
-                     interval="4500"/>
+                  <when synch="#stage.t.2"
+                        since="#TL.1"
+                        absolute="1992-09-10T12:25:00"
+                        interval="4500"/>
                </timeline>
                <castList>
                   <castItem>
@@ -224,10 +234,9 @@
                      <actor xml:id="sp.BizjakIvan">Ivan Bizjak</actor>, <role>predsednik Zbora
                         občin</role>.</castItem>
                </castList>
-               <stage type="time">Seja se je <time from="1992-09-10T11:10:00" xml:id="stage.t.1"
-                     >začela ob 11.10 uri</time>.</stage>
-               <div ana="#PAR.PredDnevRed">
-                  <div ana="#PAR.DolDnevRed">
+               <stage type="time">Seja se je <time from="1992-09-10T11:10:00" xml:id="stage.t.1">začela ob 11.10 uri</time>.</stage>
+               <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.DolDnevRed" corresp="#toc.1.2">
                      <sp who="#sp.BizjakIvan">
                         <speaker>PREDSEDUJOČI IVAN BIZJAK:</speaker>
                         <p>Spoštovane poslanke in poslanci, gospe in gospodje, cenjeni gostje!
@@ -265,28 +274,32 @@
                            svetu obravnaval in tudi sprejemal na skupnem zasedanju, dne
                            10.9.1992."</p>
                         <p>Tak sklep je podlaga za skupno zasedanje. Želi o predlogu sklepa
-                           razpravljati? <stage>(Ne želi.)</stage> Potem gremo na glasovanje ločeno
+                           razpravljati? <stage type="debate">(Ne želi.)</stage> Potem gremo na glasovanje ločeno
                            po zborih. Najprej za vse zbore ugotovimo prisotnost. Najprej
-                           Družbenopolitični zbor <stage>(71 prisotnih.)</stage>, Zbor občin
-                              <stage>(64 prisotnih.)</stage> in Zbor združenega dela <stage>(59
-                              prisotnih.)</stage></p>
+                           Družbenopolitični zbor <stage type="quorum">(71 prisotnih.)</stage>, Zbor občin
+                              <stage type="quorum">(64 prisotnih.)</stage> in Zbor združenega dela <stage type="quorum">(59
+                              prisotnih.)</stage>
+                        </p>
                         <p>Ugotavljam, da so vsi trije zbori sklepčni.</p>
                         <p>Predlagam, da najprej o predlogu sklepa, ki sem ga prej prebral, glasuje
                            Družbenopolitični zbor.</p>
-                        <p>Kdo je za predlagani sklep? <stage>(66 poslancev.)</stage> Je kdo proti?
-                              <stage>(1 poslanec.)</stage> Se je kdo vzdržal? <stage>(3
-                              poslanci.)</stage></p>
+                        <p>Kdo je za predlagani sklep? <stage type="vote">(66 poslancev.)</stage> Je kdo proti?
+                           <stage type="vote">(1 poslanec.)</stage> Se je kdo vzdržal? <stage type="vote">(3
+                              poslanci.)</stage>
+                        </p>
                         <p>Predlagani sklep je Družbenopolitični zbor z večino glasov sprejel.</p>
                         <p>Isti predlog dajem na glasovanje Zboru občin.</p>
-                        <p>Kdo je za? <stage>(68 poslancev.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(3
-                              poslanci.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(68 poslancev.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(3
+                              poslanci.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Zbor občin z večino glasov sprejel predlagani
                            sklep.</p>
                         <p>Isti predlog sklepa dajem na glasovanje Zboru združenega dela.</p>
-                        <p>Kdo je za? <stage>(60 poslancev.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(1
-                              poslanec.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(60 poslancev.)</stage> Je kdo proti?
+                           <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(1
+                              poslanec.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Zbor združenega dela z večino glasov sprejel predlagani
                            sklep in s tem tudi ugotavljam, da na podlagi sprejetih sklepov zbori
                            lahko o dnevnem redu in predlogu zakona o Državnem svetu razpravljajo in
@@ -301,38 +314,43 @@
                            obravnavamo po hitrem postopku, v skladu s 314. členom Poslovnika
                            Skupščine Republike Slovenije. Glasovali bomo po zborih. Najprej
                            Družbenopolitični zbor.</p>
-                        <p>Kdo je za ta predlog? <stage>(68 poslancev.)</stage> Je kdo proti?
-                              <stage>(1 poslanec.)</stage> Se je kdo vzdržal? <stage>(2
+                        <p>Kdo je za ta predlog? <stage type="vote">(68 poslancev.)</stage> Je kdo proti?
+                           <stage type="vote">(1 poslanec.)</stage> Se je kdo vzdržal? <stage type="vote">(2
                               poslanca)</stage>.</p>
                         <p>Ugotavljam, da je Družbenopolitični zbor predlog za obravnavo po hitrem
                            postopku sprejel z večino glasov.</p>
                         <p>Isti predlog dajem na glasovanje Zboru občin.</p>
-                        <p>Kdo je za? <stage>(66 poslancev.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(2
-                              poslanca.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(66 poslancev.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(2
+                              poslanca.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlog z večino glasov sprejet.</p>
                         <p>O hitrem postopku odloča še Zbor združenega dela.</p>
-                        <p>Kdo je za? <stage>(57 poslancev.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(Nihče.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(57 poslancev.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(Nihče.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Zbor združenega dela ta predlog soglasno sprejel.</p>
                         <p>Sedaj lahko dam na glasovanje predlog dnevnega reda, ki obsega eno samo
                            točko. To je predlog zakona o Državnem svetu. Spet glasujemo po zborih.
                            Najprej Družbenopolitični zbor.</p>
-                        <p>Kdo je za predlagani dnevni red? <stage>(69 poslancev.)</stage> Je kdo
-                           proti? <stage>(1 poslanec.)</stage> Se je kdo vzdržal? <stage>(1
-                              poslanec.)</stage></p>
+                        <p>Kdo je za predlagani dnevni red? <stage type="vote">(69 poslancev.)</stage> Je kdo
+                           proti? <stage type="vote">(1 poslanec.)</stage> Se je kdo vzdržal? <stage type="vote">(1
+                              poslanec.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Družbenopolitični zbor z večino glasov predlog dnevnega
                            reda sprejel.</p>
                         <p>O predlogu dnevnega reda glasuje Zbor občin.</p>
-                        <p>Kdo je za predlog dnevnega reda? <stage>(70 poslancev.)</stage> Je kdo
-                           proti? <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(2
-                              poslanca.)</stage></p>
+                        <p>Kdo je za predlog dnevnega reda? <stage type="vote">(70 poslancev.)</stage> Je kdo
+                           proti? <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(2
+                              poslanca.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Zbor občin z večino glasov sprejel predlog dnevnega
                            reda.</p>
                         <p>Glasuje še Zbor združenega dela.</p>
-                        <p>Kdo je za? <stage>(59 poslancev.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(2
-                              poslanca.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(59 poslancev.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(2
+                              poslanca.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Zbor združenega dela soglasno sprejel predlog dnevnega
                            reda.</p>
                         <p>S tem ugotavljam, da so vsi trije zbori sprejeli predlog, da bodo
@@ -341,8 +359,8 @@
                      </sp>
                   </div>
                </div>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR" n="1">
+               <div xml:id="div.1.1.2" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.2.1" ana="#PAR.TDR" n="1" corresp="#toc.2.1">
                      <sp who="#sp.BizjakIvan">
                         <p>Prehajamo na <title>1. TOČKO DNEVNEGA REDA - PREDLOG ZAKONA O DRŽAVNEM
                               SVETU</title>.</p>
@@ -385,7 +403,7 @@
                         <p>Hvala lepa. Svoje mnenje v zvezi s predlogom zakona o Državnem svetu je
                            posredovala tudi Vlada Republike Slovenije. To mnenje ste dobili. Vlada
                            se s predlogom zakona strinja. Ali želi besedo predstavnik vlade?
-                              <stage>(Ne želi.)</stage> Potem odpiram razpravo. K razpravi se je
+                              <stage type="debate">(Ne želi.)</stage> Potem odpiram razpravo. K razpravi se je
                            prijavil gospod Golija - Družbenopolitični zbor.</p>
                      </sp>
                      <sp who="#sp.GolijaFranc">
@@ -620,7 +638,8 @@
                            amandmaju, bi morda le predlagal, da si mi, ki smo sedaj poslanci,
                            podpišemo, da ne bomo več kandidirali, ker se bo to slovenskemu narodu
                            zdelo najboljše - bolj kot to, kdo je bil udbovec.
-                              <stage>(Ploskanje.)</stage></p>
+                              <stage type="vocal">(Ploskanje.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.BizjakIvan">
                         <speaker>PREDSEDUJOČI IVAN BIZJAK:</speaker>
@@ -701,42 +720,50 @@
                            64 poslancev; Zbor združenega dela - 57 poslancev.</p>
                         <p>Ugotavljam, da so vsi zbori sklepčni. Najprej glasuje o amandmaju
                            poimensko Družbenopolitični zbor.</p>
-                        <p>Kdo je za? <stage>(10 poslancev.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(10 poslancev.)</stage>
+                        </p>
                         <p>Ugotavljam, da v Družbenopolitičnem zboru predlog ni dobil zadostne
                            podpore.</p>
                         <p>O istem predlogu glasuje Zbor občin.</p>
-                        <p>Kdo je za predlog? <stage>(7 poslancev.)</stage></p>
+                        <p>Kdo je za predlog? <stage type="vote">(7 poslancev.)</stage>
+                        </p>
                         <p>Tudi tu predlog ni dobil zadostne podpore.</p>
                         <p>Še Zbor združenega dela.</p>
-                        <p>Kdo je za? <stage>(11 poslancev.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(11 poslancev.)</stage>
+                        </p>
                         <p>Tudi v Zboru združenega dela predlog ni dobil zadostne podpore.</p>
                         <p>Glasujmo zdaj o drugem predlogu, da o predlogu zakona o Državnem svetu
                            glasujemo poimensko. Najprej glasuje o tem predlogu Družbenopolitični
                            zbor.</p>
-                        <p>Kdo je za? <stage>(42 poslancev.)</stage> Kdo je proti? <stage>(6
-                              poslancev.)</stage> Se je kdo vzdržal? <stage>(15
-                           poslancev.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(42 poslancev.)</stage> Kdo je proti? <stage type="vote">(6
+                              poslancev.)</stage> Se je kdo vzdržal? <stage type="vote">(15
+                           poslancev.)</stage>
+                        </p>
                         <p>Družbenopolitični zbor je predlog z večino glasov sprejel.</p>
                         <p>Sedaj glasuje Zbor občin.</p>
-                        <p>Kdo je za ta predlog? <stage>(44 poslancev.)</stage> Je kdo proti?
-                              <stage>(16 poslancev.)</stage> Se je kdo vzdržal? <stage>(10
-                              poslancev.)</stage></p>
+                        <p>Kdo je za ta predlog? <stage type="vote">(44 poslancev.)</stage> Je kdo proti?
+                              <stage type="vote">(16 poslancev.)</stage> Se je kdo vzdržal? <stage type="vote">(10
+                              poslancev.)</stage>
+                        </p>
                         <p>Tudi Zbor občin je z večino glasov predlog sprejel.</p>
                         <p>Sedaj pa glasuje še Zbor združenega dela.</p>
-                        <p>Kdo je za predlog? <stage>(49 poslancev.)</stage> Je kdo proti? <stage>(4
-                              poslanci.)</stage> Se je kdo vzdržal? <stage>(7
-                           poslancev.)</stage></p>
+                        <p>Kdo je za predlog? <stage type="vote">(49 poslancev.)</stage> Je kdo proti? <stage type="vote">(4
+                              poslanci.)</stage> Se je kdo vzdržal? <stage type="vote">(7
+                           poslancev.)</stage>
+                        </p>
                         <p>Ugotavljam, da je tudi Zbor združenega dela ta predlog sprejel.</p>
                         <p>Se pravi: vsi trije zbori bodo glasovali o amandmaju na običajen način, o
                            predlogu zakona pa s poimenskim izjavljanjem.</p>
                         <p>Gremo na glasovanje. Najprej v Družbenopolitičnem zboru. Tako bi tudi
                            obrazložili glasove. Gremo na glasovanje o amandmaju, ki ga je vložil
                            gospod Golija in drugi navedeni poslanci. Nihče ne želi obrazložiti
-                           glasu. Poglejmo prisotnost Družbenopolitičnega zbora. <stage>(70
-                              poslancev.)</stage></p>
-                        <p>Kdo je za? <stage>(30 poslancev.)</stage> Je kdo proti? <stage>(33
-                              poslancev.)</stage> Se je kdo vzdržal? <stage>(8
-                           poslancev.)</stage></p>
+                           glasu. Poglejmo prisotnost Družbenopolitičnega zbora. <stage type="vote">(70
+                              poslancev.)</stage>
+                        </p>
+                        <p>Kdo je za? <stage type="vote">(30 poslancev.)</stage> Je kdo proti? <stage type="vote">(33
+                              poslancev.)</stage> Se je kdo vzdržal? <stage type="vote">(8
+                           poslancev.)</stage>
+                        </p>
                         <p>Ugotavljam, da amandma v Družbenopolitičnem zboru ni dobil zadostne
                            dvotretjinske podpore.</p>
                         <p>O amandmaju gospoda Golije glasuje Zbor občin. Če sem prav videl gospod
@@ -770,18 +797,21 @@
                            onega.</p>
                         <p>Mislim, da ne grešimo, če delamo tako kot delamo. Glasujemo o amandmaju,
                            ki ga je v Zboru občin vložil gospod Gros. Prisotnost Zbora občin,
-                           prosim. <stage>(74 prisotnih.)</stage> Gospod iz Zbora občin, po zborih
+                           prosim. <stage type="quorum">(74 prisotnih.)</stage> Gospod iz Zbora občin, po zborih
                            glasujemo.</p>
-                        <p>Kdo je za? <stage>(30 poslancev.)</stage> Je kdo proti? <stage>(27
-                              poslancev.)</stage> Se je kdo vzdržal? <stage>(17
-                           poslancev.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(30 poslancev.)</stage> Je kdo proti? <stage type="vote">(27
+                              poslancev.)</stage> Se je kdo vzdržal? <stage type="vote">(17
+                           poslancev.)</stage>
+                        </p>
                         <p>Ugotavljam, da amandma tudi v Zboru občin ni dobil potrebne dvotretjinske
                            večine.</p>
                         <p>O amandmaju glasuje še Zbor združenega dela. V tem zboru je ta amandma
                            vložil gospod Marjan Vilfan. Poglejmo prisotnost Zbora združenega dela.
-                              <stage>(60 prisotnih.)</stage></p>
-                        <p>Kdo je za? <stage>(16 poslancev.)</stage> Je kdo proti? <stage>(42
-                              poslancev. Se je kdo vzdržal? (2 poslanca.)</stage></p>
+                              <stage type="quorum">(60 prisotnih.)</stage>
+                        </p>
+                        <p>Kdo je za? <stage type="vote">(16 poslancev.)</stage> Je kdo proti? <stage type="vote">(42
+                              poslancev. Se je kdo vzdržal? (2 poslanca.)</stage>
+                        </p>
                         <p>Ugotavljam, da tudi v Zboru združenega dela amandma ni dobil potrebne
                            podpore.</p>
                         <p>Prehajamo na glasovanje o predlogu zakona o Državnem svetu. Najprej bo o
@@ -924,8 +954,7 @@
                            bo, glede na delo kakor bo teklo, morda po tej naslednji delovni skupni
                            seji. Odločili se bomo odvisno od časa.</p>
                      </sp>
-                     <stage type="time">(Seja je bila <time to="1992-09-10T12:25:00"
-                           xml:id="stage.t.2">končana 10. septembra 1992 ob 12.25
+                     <stage type="time">(Seja je bila <time to="1992-09-10T12:25:00" xml:id="stage.t.2">končana 10. septembra 1992 ob 12.25
                         uri</time>.)</stage>
                   </div>
                </div>

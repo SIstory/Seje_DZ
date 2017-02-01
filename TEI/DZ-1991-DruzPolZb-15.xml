@@ -82,6 +82,8 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
          <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
@@ -93,6 +95,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2017-01-11+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2017-01-11+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-05-30+02:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -126,9 +140,10 @@
                   <list rend="ordered">
                      <head>PRED DNEVNIM REDOM:                                        </head>
                      <head>STRAN</head>
-                     <item n="1">Ugotavljanje prisotnosti delegatov ...................... 1</item>
-                     <item n="2">Določitev dnevnega reda ................................. 1<list
-                           rend="simple">
+                     <item n="1" xml:id="toc.1.1">Ugotavljanje prisotnosti delegatov
+                        ...................... 1</item>
+                     <item n="2" xml:id="toc.1.2">Določitev dnevnega reda
+                        ................................. 1<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Miran Potrč ............................................. 1</item>
                            <item>France Tomšič ...........................................2</item>
@@ -142,8 +157,8 @@
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED:</head>
-                     <item n="1">Nujne pobude, predlogi in vprašanja delegatov ........... 5<list
-                           rend="simple">
+                     <item n="1" xml:id="toc.2.1">Nujne pobude, predlogi in vprašanja delegatov
+                        ........... 5<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Metka Mencin ............................................ 5</item>
                            <item>Gregor Golobič .......................................... 5</item>
@@ -158,8 +173,8 @@
                            <item>Sonja Lokar ............................................. 9</item>
                         </list>
                      </item>
-                     <item n="2">Osnutek zakona o privatizaciji podjetij ................. 9<list
-                           rend="simple">
+                     <item n="2" xml:id="toc.2.2">Osnutek zakona o privatizaciji podjetij
+                        ................. 9<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>mag. Dušan Semolič ..................................... 10</item>
                            <item>Mile Šetinc ............................................ 14</item>
@@ -179,10 +194,10 @@
                            <item>Emil Milan Pintar ...................................... 37</item>
                         </list>
                      </item>
-                     <item n="3">USKLAJEVANJE TOČK DNEVNEGA REDA S 14. SEJE DRUŽBENOPOLITIČNEGA
-                        ZBORA Z DNE 14. MARCA 1991 ......... 37<list>
-                           <item n="-">usklajevanje glede predloga zakona o zavodih .........
-                                 37<list rend="simple">
+                     <item n="3" xml:id="toc.2.3">USKLAJEVANJE TOČK DNEVNEGA REDA S 14. SEJE
+                        DRUŽBENOPOLITIČNEGA ZBORA Z DNE 14. MARCA 1991 ......... 37<list>
+                           <item n="-" xml:id="toc.2.3.1.">usklajevanje glede predloga zakona o
+                              zavodih ......... 37<list rend="simple">
                                  <head>GOVORNIKI:</head>
                                  <item>Andrej Magajna .......................................
                                     37</item>
@@ -191,33 +206,37 @@
                                     39</item>
                               </list>
                            </item>
-                           <item n="-">usklajevanje glede predloga zakona o spremembah in
-                              dopolnitvah zakona o sodnih taksah ................... 40</item>
-                           <item n="-">usklajevanje glede predloga za izdajo zakona o pospeševanju
-                              razvoja malih in srednjih podjetij ter zasebnikov
-                              ....................................... 40</item>
-                           <item n="-">usklajevanje glede predloga za izdajo zakona o cenah
-                              ............................ 41</item>
-                        </list></item>
-                     <item n="4">Usklajevanje dnevnega reda 15. seje zbora glede predloga zakona o
-                        zadrugah  ........................... 41<list rend="simple">
+                           <item n="-" xml:id="toc.2.3.2.">usklajevanje glede predloga zakona o
+                              spremembah in dopolnitvah zakona o sodnih taksah ...................
+                              40</item>
+                           <item n="-" xml:id="toc.2.3.3.">usklajevanje glede predloga za izdajo
+                              zakona o pospeševanju razvoja malih in srednjih podjetij ter
+                              zasebnikov ....................................... 40</item>
+                           <item n="-" xml:id="toc.2.3.4.">usklajevanje glede predloga za izdajo
+                              zakona o cenah ............................ 41</item>
+                        </list>
+                     </item>
+                     <item n="4" xml:id="toc.2.4">Usklajevanje dnevnega reda 15. seje zbora glede
+                        predloga zakona o zadrugah  ........................... 41<list
+                           rend="simple">
                            <head>GOVORNIKA:</head>
                            <item>Janez Kopač ........................................... 41</item>
                            <item>Franc Potočnik ........................................ 41</item>
                         </list>
                      </item>
-                     <item n="5">USKLAJEVANJE TOČK S 14.SEJE DRUŽBENOPOLITIČNEGA ZBORA Z DNE 14.
-                        MARCA 1991 .................................. 42</item>
-                     <item n="6">Osnutek zakona o Agenciji Republike Slovenije za privatizacijo
-                        ............................ 42</item>
-                     <item n="7">Osnutek zakona o Skladu Republike Slovenije za razvoj
-                        ................................... 43<list rend="simple">
+                     <item n="5" xml:id="toc.2.5">USKLAJEVANJE TOČK S 14.SEJE DRUŽBENOPOLITIČNEGA
+                        ZBORA Z DNE 14. MARCA 1991 .................................. 42</item>
+                     <item n="6" xml:id="toc.2.6">Osnutek zakona o Agenciji Republike Slovenije za
+                        privatizacijo ............................ 42</item>
+                     <item n="7" xml:id="toc.2.7">Osnutek zakona o Skladu Republike Slovenije za
+                        razvoj ................................... 43<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>Anton Peršak .......................................... 43</item>
                         </list>
                      </item>
-                     <item n="8">Predlog za izdajo zakona o denacionalizaciji, z osnutkom zakon
-                        ........................................ 44<list rend="simple">
+                     <item n="8" xml:id="toc.2.8">Predlog za izdajo zakona o denacionalizaciji, z
+                        osnutkom zakon ........................................ 44<list
+                           rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Janez Lampret ......................................... 44</item>
                            <item>Miran Potrč ........................................... 45</item>
@@ -225,18 +244,19 @@
                            <item>Mile Šetinc ........................................... 47</item>
                         </list>
                      </item>
-                     <item n="9">USKLAJEVANJE TOČK DNEVNEGA REDA S 14. SEJE ZBORA, DNE 14. MARCA
-                        1991 .................................... 50<list>
-                           <item n="-">nadaljevanje obravnave zakona o zavodih ............. 50<list
-                                 rend="simple">
+                     <item n="9" xml:id="toc.2.9">USKLAJEVANJE TOČK DNEVNEGA REDA S 14. SEJE ZBORA,
+                        DNE 14. MARCA 1991 .................................... 50<list>
+                           <item n="-" xml:id="toc.2.-">nadaljevanje obravnave zakona o zavodih
+                              ............. 50<list rend="simple">
                                  <head>GOVORNIK:</head>
                                  <item>Andrej Magajna .........................................
                                     50</item>
                               </list>
                            </item>
-                        </list></item>
-                     <item n="10">Nadaljevanje obravnave predloga za izdajo zakona o
-                        denacionalizaciji, z osnutkom zakona ................... 51<list
+                        </list>
+                     </item>
+                     <item n="10" xml:id="toc.2.10">Nadaljevanje obravnave predloga za izdajo zakona
+                        o denacionalizaciji, z osnutkom zakona ................... 51<list
                            rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>mag. Viktor Žakelj ..................................... 52</item>
@@ -268,14 +288,14 @@
                            <item>Jože Smole ............................................. 71</item>
                         </list>
                      </item>
-                     <item n="11">Usklajevanje dnevnega reda 15. seje .................... 71<list
-                           rend="simple">
+                     <item n="11" xml:id="toc.2.11">Usklajevanje dnevnega reda 15. seje
+                        .................... 71<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>Miran Potrč ............................................ 72</item>
                         </list>
                      </item>
-                     <item n="12">Predlog za izdajo zakona o javnih glasilih ............. 72<list
-                           rend="simple">
+                     <item n="12" xml:id="toc.2.12">Predlog za izdajo zakona o javnih glasilih
+                        ............. 72<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Stane Stanič ........................................... 72</item>
                            <item>Milan Balažic .......................................... 73</item>
@@ -284,20 +304,24 @@
                         </list>
                      </item>
                      <note>NADALJEVANJE 15. SEJE DRUŽBENOPOLITIČNEGA ZBORA 20. MARCA 1991</note>
-                     <item n="13">Ugotavljanje prisotnosti delegatov ..................... 79</item>
-                     <item n="14">NADALJEVANJE USKLAJEVANJA TOČK DNEVNEGA REDA S 14. SEJE
-                        DRUŽBENOPOLITIČNEGA ZBORA Z DNE 14.MARCA IN 19. MARCA 1991
+                     <item n="13" xml:id="toc.2.13">Ugotavljanje prisotnosti delegatov
+                        ..................... 79</item>
+                     <item n="14" xml:id="toc.2.14">NADALJEVANJE USKLAJEVANJA TOČK DNEVNEGA REDA S
+                        14. SEJE DRUŽBENOPOLITIČNEGA ZBORA Z DNE 14.MARCA IN 19. MARCA 1991
                         ...................................... 80<list>
-                           <item n="-">usklajevanje k predlogu zakona o spremembah in dopolnitvah
-                              zakona o sodnih taksah .................. 80<list rend="simple">
+                           <item n="-" xml:id="toc.2.14.1.">usklajevanje k predlogu zakona o
+                              spremembah in dopolnitvah zakona o sodnih taksah ..................
+                                 80<list rend="simple">
                                  <head>GOVORNIK:</head>
                                  <item>Janez Kopač ............................................
                                     80</item>
                               </list>
                            </item>
-                        </list></item>
-                     <item n="15">Nadaljevanje obravnave predloga za izdajo zakona o javnih glasilih
-                        ........................................ 80<list rend="simple">
+                        </list>
+                     </item>
+                     <item n="15" xml:id="toc.2.15">Nadaljevanje obravnave predloga za izdajo zakona
+                        o javnih glasilih ........................................ 80<list
+                           rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Stane Stanič ........................................... 80</item>
                            <item>Borut Šuklje ........................................... 81</item>
@@ -312,8 +336,8 @@
                            <item>Ignac Polajnar ......................................... 93</item>
                         </list>
                      </item>
-                     <item n="16">Predlog zakona o zadrugah .............................. 93<list
-                           rend="simple">
+                     <item n="16" xml:id="toc.2.16">Predlog zakona o zadrugah
+                        .............................. 93<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>dr. Jože Osterc ........................................ 94</item>
                            <item>Anton Peršak ........................................... 95</item>
@@ -329,8 +353,9 @@
                            <item>Franc Potočnik ........................................ 108</item>
                         </list>
                      </item>
-                     <item n="17">Nadaljevanje točke pobude, predlogi in vprašanja delegatov
-                        ............................................. 109<list rend="simple">
+                     <item n="17" xml:id="toc.2.17">Nadaljevanje točke pobude, predlogi in vprašanja
+                        delegatov ............................................. 109<list
+                           rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Darja Lavtižar Bebler ................................. 110</item>
                            <item>Franc Pipan ........................................... 110</item>
@@ -344,8 +369,10 @@
                            <item>Sonja Lokar ........................................... 113</item>
                         </list>
                      </item>
-                     <item n="18">Seznam govornikov .................................... II/1</item>
-                     <item n="19">Priloga in zapisnik seje ............................ III/1</item>
+                     <item n="18" xml:id="toc.2.18">Seznam govornikov
+                        .................................... II/1</item>
+                     <item n="19" xml:id="toc.2.19">Priloga in zapisnik seje
+                        ............................ III/1</item>
                   </list>
                </item>
             </list>
@@ -509,9 +536,9 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.DruzPolZb">
+         <div xml:id="div.1" ana="#PAR.DruzPolZb">
             <head>DRUŽBENOPOLITIČNI ZBOR</head>
-            <div ana="#PAR.Seja" n="15">
+            <div xml:id="div.1.1" ana="#PAR.Seja" n="15">
                <head>15. seja</head>
                <docDate>(<date when="1991-03-19">19.</date> in <date when="1991-03-20">20. marec
                      1991</date>)</docDate>
@@ -544,8 +571,8 @@
                <stage type="time">
                   <time from="1991-03-19T10:20:00" xml:id="stage.t.1">Začetek seje ob 10.20
                      uri</time>.</stage>
-               <div ana="#PAR.PredDnevRed">
-                  <div ana="#PAR.Prisot">
+               <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.Prisot" corresp="#toc.1.1">
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDNIK DR. LUDVIK TOPLAK:</speaker>
                         <p>Poslanke in poslanci, gospe in gospodje, pričenjam 15. sejo
@@ -555,12 +582,12 @@
                            Vitodrag Pukl, Nada Bolcar, Jože Magdič, Mihaela Logar, dr. Lev Šešerko,
                            Matjaž Šinkovec, Tone Anderlič, Zdenka Vidovič in Franco Juri. Po
                            podatkih službe je na seji prisotnih 48 poslancev. Prosim delegate, da
-                           pritisnete na sivi gumb, da ugotovimo prisotnost. <stage>(46 poslancev je
-                              prisotnih.)</stage> Hvala. Ugotavljam, da smo sklepčni in začenjamo z
-                           delom.</p>
+                           pritisnete na sivi gumb, da ugotovimo prisotnost. <stage type="quorum"
+                              >(46 poslancev je prisotnih.)</stage> Hvala. Ugotavljam, da smo
+                           sklepčni in začenjamo z delom.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.DolDnevRed">
+                  <div xml:id="div.1.1.1.2" ana="#PAR.DolDnevRed" corresp="#toc.1.2">
                      <sp who="#sp.ToplakLudvik">
                         <p>Zboru predlagam, da najprej opravimo <title>proceduralna
                               vprašanja</title>. IS predlaga, da se v skladu z drugim odstavkom 265.
@@ -571,9 +598,9 @@
                            Skupščini R Slovenije naj se zakon o denacionalizaciji obravnava skupaj z
                            zakonom o privatizaciji podjetij, IS Skupščine R Slovenije predlaga
                            Skupščini R Slovenije, da hkrati obravnava in sprejme predlog za izdajo
-                           zakona z osnutkom zakona. Želi predlagatelj podati obrazložitev?
-                              <stage>(Ne.)</stage> Če ne, pričenjam razpravo. Prosim, g. Potrč ima
-                           besedo.</p>
+                           zakona z osnutkom zakona. Želi predlagatelj podati obrazložitev? <stage
+                              type="debate">(Ne.)</stage> Če ne, pričenjam razpravo. Prosim, g.
+                           Potrč ima besedo.</p>
                      </sp>
                      <sp who="#sp.PotrčMiran">
                         <speaker>MIRAN POTRČ:</speaker>
@@ -673,10 +700,11 @@
                            gre za ločen postopek. Če ni več razpravljalcev, prehajamo na glasovanje
                            o predlogu združitve dveh faz, kakor je bilo predlagano. Prosim, da
                            ugotovimo prisotnost: 54 prisotnih delegatov. Kdo je za predlog združitve
-                           dveh faz? <stage>(33 delegatov za)</stage> Kdo je proti? <stage>(18
-                              delegatov proti)</stage> Kdo se vzdrži? <stage>(2 delegata
-                              vzdržana)</stage>. Ugotavljam, da je s 33 glasovi za, 18 proti in 2
-                           vzdržanima predlog o združitvi dveh faz izglasovan.</p>
+                           dveh faz? <stage type="vote">(33 delegatov za)</stage> Kdo je proti?
+                              <stage type="vote">(18 delegatov proti)</stage> Kdo se vzdrži? <stage
+                              type="vote">(2 delegata vzdržana)</stage>. Ugotavljam, da je s 33
+                           glasovi za, 18 proti in 2 vzdržanima predlog o združitvi dveh faz
+                           izglasovan.</p>
                         <p>V zvezi z zakonom o zadrugah vas obveščam, da smo dobili obvestilo
                            Izvršnega sveta, v katerem se strinja s predlogom Zakonodajnopravne
                            komisije, da zbori Skupščine Republike Slovenije na seji 19. in 20. 3.
@@ -715,9 +743,9 @@
                            ureditve; zvezni zakon smo namreč z ustavnimi amandmaji stavili izven
                            veljave v Republiki Sloveniji. - Dobro, na glasovanje dajem predlog o
                            razdružitvi postopkov. Da ugotovimo ponovno prisotnost:</p>
-                        <p>54 prisotnih delegatov. Kdo je za predlog razdružitve? <stage>(20
-                              delegatov za)</stage> Kdo je proti? <stage>(16 delegatov
-                              proti)</stage> Kdo se vzdrži?</p>
+                        <p>54 prisotnih delegatov. Kdo je za predlog razdružitve? <stage type="vote"
+                              >(20 delegatov za)</stage> Kdo je proti? <stage type="vote">(16
+                              delegatov proti)</stage> Kdo se vzdrži?</p>
                         <p>12 vzdržanih. Ugotavljam, da je od 54 navzočih delegatov 20 za, 16 proti
                            in 12 vzdržanih; predlog razdružitve ni sprejet, ni izglasovan. Ostanemo
                            pri predlogu. - Prosim.</p>
@@ -740,10 +768,11 @@
                         <p>Hvala lepa. Glede usklajevanja dnevnega reda se bomo morali usklajevati.
                            Z ozirom na odprto vprašanje pa obravnavo te točke lahko preložimo na
                            kasnejšo uro danes. - Predlagam, da zbor izglasuje tako predlagani oz.
-                           spremenjeni dnevni red. Kdo je za? <stage>(41 delegatov za)</stage> Kdo
-                           je proti? <stage>(9 delegatov proti)</stage> Vzdrži? <stage>(2
-                              vzdržana)</stage> - Ugotavljam: z 41 glasovi za, 9 proti in 2
-                           vzdržanima je tako določen dnevni red.</p>
+                           spremenjeni dnevni red. Kdo je za? <stage type="vote">(41 delegatov
+                              za)</stage> Kdo je proti? <stage type="vote">(9 delegatov
+                              proti)</stage> Vzdrži? <stage type="vote">(2 vzdržana)</stage> -
+                           Ugotavljam: z 41 glasovi za, 9 proti in 2 vzdržanima je tako določen
+                           dnevni red.</p>
                         <p>In še nekaj obvestil: skupno zasedanje vseh zborov Skupščine Republike
                            Slovenije bo danes ob 11. uri v veliki dvorani Skupščine RS, to je tukaj.
                            Na skupnem zasedanju bomo poslušali uvodno besedo k osnutku zakona o
@@ -762,16 +791,23 @@
                            delegati: Metka Mencin, Sonja Lokar, Tone Peršak, Vane Gošnik in Štefan
                            Kociper. Na predlog Zbora združenega dela in Zbora občin bi 5-člansko
                            komisijo preoblikovali v 3-člansko - z drugimi besedami, prosim za tri
-                           predloge od naštetih petih. <stage>(Peršak: "Mene črtaj".)</stage>
-                           Prosim: Metka Mencin, Sonja Lokar, Vane Gošnik, Štefan Kociper? Ta
+                           predloge od naštetih petih. </p>
+                     </sp>
+                     <sp who="#sp.PeršakAnton">
+                        <speaker>(Peršak:</speaker>
+                        <ab> "Mene črtaj".)</ab>                      
+                     </sp>
+                     <sp who="#sp.ToplakLudvik">
+                        <p>Prosim: Metka Mencin, Sonja Lokar, Vane Gošnik, Štefan Kociper? Ta
                            3-članska delovna skupina bi tudi usklajevala dnevni red.</p>
                         <p>Ali pa jo imenujemo na novo? Ostanejo Metka Mencin, Sonja Lokar in Vane
                            Gošnik.</p>
                         <p>Na glasovanje dajem tako predlagano delovno usklajevalno skupino v
                            sestavi: Metka Mencin, Sonja Lokar in Vane Gošnik.</p>
-                        <p>Prosim, kdo je za, pritisnite na sivo tipko. <stage>(51
-                              delegatov.)</stage> Kdo je proti? <stage>(Nihče.)</stage> Vzdržan?
-                              <stage>(2 delegata.)</stage></p>
+                        <p>Prosim, kdo je za, pritisnite na sivo tipko. <stage type="vote">(51
+                              delegatov.)</stage> Kdo je proti? <stage type="vote">(Nihče.)</stage>
+                           Vzdržan? <stage type="vote">(2 delegata.)</stage>
+                        </p>
                         <p>Ugotavljam, z 51 delegati za in 2 vzdržanimi je z večino tako sprejet,
                            potrjen tudi ta predlog delovne skupine.</p>
                         <p>Predlagam, da bi danes delali do 19. ure. Usklajevalna komisija bo začela
@@ -780,8 +816,8 @@
                      </sp>
                   </div>
                </div>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR">
+               <div xml:id="div.1.1.2" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.2.1" ana="#PAR.TDR" corresp="#toc.2.1">
                      <sp who="#sp.ToplakLudvik">
                         <p>In sedaj prehajamo na začetno fazo, <title>NUJNE POBUDE IN VPRAŠANJA
                               DELEGATOV</title>, na katere delegati pričakujejo odgovore. Prosim, če
@@ -1006,20 +1042,18 @@
                      </sp>
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDNIK DR. LUDVIK TOPLAK:</speaker>
-                        <p>Hvala. Še kdo želi besedo? <stage>(Ne.)</stage> Če nihče nima pobud ali
-                           vprašanj zaključujemo to točko. Verjamem, da ste oddali pisno, samo
-                           dosedaj nisem dobil drugih pisnih pobud. Pisne pobude oddajte.</p>
+                        <p>Hvala. Še kdo želi besedo? <stage type="debate">(Ne.)</stage> Če nihče
+                           nima pobud ali vprašanj zaključujemo to točko. Verjamem, da ste oddali
+                           pisno, samo dosedaj nisem dobil drugih pisnih pobud. Pisne pobude
+                           oddajte.</p>
                         <p>1. točko dnevnega reda bomo zaradi usklajevanja z dnevnim redom z
                            ostalimi zbori preskočili.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="2">
+                  <div xml:id="div.1.1.2.2" ana="#PAR.TDR" n="2" corresp="#toc.2.2">
                      <sp who="#sp.ToplakLudvik">
-                        <p>Tako prehajamo na</p>
-                        <p>
-                           <title>2. TOČKO DNEVNEGA REDA</title>,</p>
-                        <p>tj.</p>
-                        <p>OSNUTEK ZAKONA O PRIVATIZACIJI PODJETIJ.</p>
+                        <p>Tako prehajamo na <title>2. TOČKO DNEVNEGA REDA</title>, tj.
+                              <title>OSNUTEK ZAKONA O PRIVATIZACIJI PODJETIJ</title>.</p>
                         <p>Uvodno besedo bomo smo poslušali na skupnem zasedanju, ki se bo sedaj
                            začelo.</p>
                         <p>Zato prekinjamo  sejo in začenjamo s skupnim zasedanjem, napovedanim ob
@@ -1032,7 +1066,8 @@
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDNIK DR. LUDVIK TOPLAK:</speaker>
                         <p>Ponovno prosim vse navzoče, da pritisnete na sivo tipko, da ugotovimo
-                           navzočnost. <stage>(42 navzočih.)</stage></p>
+                           navzočnost. <stage type="quorum">(42 navzočih.)</stage>
+                        </p>
                         <p>Uvodno besedo k 2. točki dnevnega reda smo poslušali. Osnutek zakona o
                            privatizaciji podjetij je predložil v obravnavo Izvršni svet Skupščine
                            RS, objavljen je bil v Poročevalcu 8/91; pri objavi je prišlo do napake,
@@ -1042,9 +1077,10 @@
                         <p>Osnutek zakona so obravnavale: Komisija za preobrazbo družbene lastnine
                            kot matično delovno telo, Komisija za denacionalizacijo, Odbor za splošno
                            gospodarske zadeve na ravni Skupščine RS in Zakonodajno-pravna komisija.
-                           Želi besedo predstavnik Izvršnega sveta? <stage>(Ne.)</stage> Želijo
-                           besedo poročevalci delovnih teles? <stage>(Ne.)</stage> Če ne, odpiram
-                           razpravo. Prosim, gospod Semolič.</p>
+                           Želi besedo predstavnik Izvršnega sveta? <stage type="debate"
+                              >(Ne.)</stage> Želijo besedo poročevalci delovnih teles? <stage
+                              type="debate">(Ne.)</stage> Če ne, odpiram razpravo. Prosim, gospod
+                           Semolič.</p>
                      </sp>
                      <sp who="#sp.SemoličDušan">
                         <speaker>DUŠAN SEMOLIČ:</speaker>
@@ -2274,9 +2310,9 @@
                      </sp>
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDNIK DR. LUDVIK TOPLAK:</speaker>
-                        <p>Želi še kdo razpravljati? <stage>(Ne.)</stage> Če ni več razprave k tej
-                           točki, zaključujem razpravo. Zboru predlagam, da sprejme naslednji
-                           sklep.</p>
+                        <p>Želi še kdo razpravljati? <stage type="debate">(Ne.)</stage> Če ni več
+                           razprave k tej točki, zaključujem razpravo. Zboru predlagam, da sprejme
+                           naslednji sklep.</p>
                         <p>Zbor sprejema osnutek zakona o privatizaciji podjetij. Zbor nalaga
                            predlagatelju, da ob upoštevanju razprave na zboru in delovnih telesih
                            pripravi predlog zakona.</p>
@@ -2332,8 +2368,8 @@
                            predlog sklepa, kot smo ga prebrali in drugi je predlog sklepa, kot ga
                            predlaga gospod Miran Potrč. Torej, če razumem, v svojem imenu ali v
                            imenu stranke? Dobro. Želi kdo razpravljati o predlogih teh dveh sklepov?
-                              <stage>(Ne.)</stage> Če ne, imamo proceduralno dva sklepa, ki jo dajem
-                           na glasovanje.</p>
+                              <stage type="debate">(Ne.)</stage> Če ne, imamo proceduralno dva
+                           sklepa, ki jo dajem na glasovanje.</p>
                         <p>Prvo, sedaj ni razvidno samo eno vprašanje. Ali je razvidno, da
                            sprejemamo osnutek. Gospod Potrč, prosim lepo.</p>
                      </sp>
@@ -2381,17 +2417,19 @@
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDNIK DR. LUDVIK TOPLAK:</speaker>
                         <p>Hvala. Predlog sklepa Mirana Potrča dajem na glasovanje.</p>
-                        <p>Najprej ugotovimo prisotnost! <stage>(50 delegatov.)</stage></p>
-                        <p>Kdo je za predlog Mirana Potrča, naj prosim glasuje! <stage>(17
-                              delegatov)</stage>. Je kdo proti? <stage>(27 delegatov)</stage>. Se je
-                           kdo vzdržal? <stage>(5 delegatov)</stage>.</p>
+                        <p>Najprej ugotovimo prisotnost! <stage type="vote">(50 delegatov.)</stage>
+                        </p>
+                        <p>Kdo je za predlog Mirana Potrča, naj prosim glasuje! <stage type="vote"
+                              >(17 delegatov)</stage>. Je kdo proti? <stage type="vote">(27
+                              delegatov)</stage>. Se je kdo vzdržal? <stage type="vote">(5
+                              delegatov)</stage>.</p>
                         <p>Ugotavljam, da predlog tega sklepa ni sprejet.</p>
                         <p>Sedaj dajem na glasovanje predlog drugega sklepa: Zbor sprejema osnutek
                            zakona o privatizaciji podjetij. Zbor nalaga predlagatelju, da ob
                            upoštevanju razprave na zboru in v delovnih telesih, pripravi predlog
                            zakona.</p>
-                        <p>Ali želi o predlogu tega sklepa kdo razpravljati? <stage>(Da.)</stage>
-                           Prosim, Emil Milan Pintar.</p>
+                        <p>Ali želi o predlogu tega sklepa kdo razpravljati? <stage type="debate"
+                              >(Da.)</stage> Prosim, Emil Milan Pintar.</p>
                      </sp>
                      <sp who="#sp.PintarEmilMilan">
                         <speaker>EMIL MILAN PINTAR:</speaker>
@@ -2413,12 +2451,15 @@
                      </sp>
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDNIK DR. LUDVIK TOPLAK:</speaker>
-                        <p>Hvala. Ali želi še kdo razpravljati? <stage>(Ne želi nihče.)</stage></p>
+                        <p>Hvala. Ali želi še kdo razpravljati? <stage type="debate">(Ne želi
+                              nihče.)</stage>
+                        </p>
                         <p>Dajem na glasovanje predlog sklepa. Najprej ugotavljamo prisotnost!
-                              <stage>(52 delegatov)</stage>.</p>
-                        <p>Kdo je za predlog sklepa, naj prosim glasuje! <stage>(34
-                              delegatov)</stage>. Je kdo proti? <stage>(11 delegatov)</stage>. Se je
-                           kdo vzdržal? <stage>(5 delegatov)</stage>.</p>
+                              <stage type="vote">(52 delegatov)</stage>.</p>
+                        <p>Kdo je za predlog sklepa, naj prosim glasuje! <stage type="vote">(34
+                              delegatov)</stage>. Je kdo proti? <stage type="vote">(11
+                              delegatov)</stage>. Se je kdo vzdržal? <stage type="vote">(5
+                              delegatov)</stage>.</p>
                         <p>Ugotavljam, da je predlog sklepa sprejet.</p>
                         <p>Na ponovno intervencijo Zbora združenega dela, ki sporoča, da je zbor
                            sprejel vse predloge usklajevalne komisije s 14. seje zbora, razen pri
@@ -2426,14 +2467,13 @@
                            razpravljamo o zadevah, ker praktično zaključujem sejo.)</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.3" ana="#PAR.TDR" corresp="#toc.2.3">
                      <sp who="#sp.ToplakLudvik">
-                        <p>Zato prekinjam sejo. Opravili bomo usklajevanje s točkami s</p>
-                        <p>
-                           <title>14. SEJE ZBORA</title>.</p>
+                        <p>Zato prekinjam sejo. Opravili bomo <title>usklajevanje s točkami s 14.
+                              SEJE ZBORA</title>.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.4" ana="#PAR.TDR" corresp="#toc.2.3.1.">
                      <sp who="#sp.ToplakLudvik">
                         <p>Ali se strinjate? Če ne bomo dosegli soglasje, se skliče usklajevalna
                            seja. Usklajevalna komisija za zakon o zavodih je dala svoje poročilo.
@@ -2445,14 +2485,14 @@
                         <p>Spoštovani. Usklajevalna komisija je precej časa namenila usklajevanju in
                            večinoma so sprejemali s preglasovanjem te amandmaje. Vi ste jih sedaj
                            dobili vsi na klop. Vprašal bi, ali naj jaz preberem celoten tekst?
-                              <stage>(Ne.)</stage> Tudi sam mislim, da ni potrebno, ker ste dobili
-                           gradivo napisano in bomo šli od amandmaja do amandmaja ter se
-                           odločili.</p>
+                              <stage type="debate">(Ne.)</stage> Tudi sam mislim, da ni potrebno,
+                           ker ste dobili gradivo napisano in bomo šli od amandmaja do amandmaja ter
+                           se odločili.</p>
                      </sp>
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDNIK DR. LUDVIK TOPLAK</speaker>
                         <p>: Hvala lepa. Ali želi kdo razpravljati o predlogu usklajevalne komisije?
-                              <stage>(Ne.)</stage> Če ne, preidemo na glasovanje.</p>
+                              <stage type="debate">(Ne.)</stage> Če ne, preidemo na glasovanje.</p>
                         <p>Prvi predlog usklajevalne komisije: Družbenopolitičnemu zboru predlaga,
                            da se umakne že sprejeti amandma k 3. členu Kluba delegatov italijanske
                            in madžarske narodnosti in ga nadomesti z novim, ki naj bi se glasil
@@ -2460,36 +2500,42 @@
                            narodna skupnost ima pravico soustanoviti ali tudi sama ustanoviti javni
                            zavod, ki opravlja dejavnost, pomembno za uresničevanje pravic
                            narodnosti.</p>
-                        <p>Se predlagatelji narodnosti strinjajo? <stage>(Da.)</stage> Hvala.
-                           Preidimo na glasovanje. Najprej, da ugotovimo prisotnost, pritisnite na
-                           sivo tipko: <stage>(47 prisotnih.)</stage></p>
-                        <p>Kdo je za predlog takega amandmaja? <stage>(44 delegatov za)</stage> Kdo
-                           je proti? <stage>(Eden proti)</stage> Se je kdo vzdržal?
-                              <stage>(Dva)</stage>.</p>
+                        <p>Se predlagatelji narodnosti strinjajo? <stage type="debate">(Da.)</stage>
+                           Hvala. Preidimo na glasovanje. Najprej, da ugotovimo prisotnost,
+                           pritisnite na sivo tipko: <stage type="quorum">(47 prisotnih.)</stage>
+                        </p>
+                        <p>Kdo je za predlog takega amandmaja? <stage type="vote">(44 delegatov
+                              za)</stage> Kdo je proti? <stage type="vote">(Eden proti)</stage> Se je kdo
+                           vzdržal? <stage type="vote">(Dva)</stage>.</p>
                         <p>Ugotavljam, da je s 44 glasovi za, enim proti in dvema vzdržanima predlog
                            usklajevalne komisije o umika tega amandmaja sprejet.</p>
                         <p>In naslednji predlog: sprejme naj se amandma k 36. členu, ki se glasi: V
                            prvem odstavku se besede "v osmih dneh" nadomesti z besedami "v 15
                            dneh".</p>
-                        <p>Želi kdo razpravljati? <stage>(Ne.)</stage> Kdo je za tak predlog
-                           amandmaja? <stage>(47 delegatov je za)</stage> Kdo je proti?
-                              <stage>(Nihče)</stage> Vzdržan? <stage>(Eden.)</stage></p>
+                        <p>Želi kdo razpravljati? <stage type="debate">(Ne.)</stage> Kdo je za tak
+                           predlog amandmaja? <stage type="vote">(47 delegatov je za)</stage> Kdo je
+                           proti? <stage type="vote">(Nihče)</stage> Vzdržan? <stage type="vote">(Eden.)</stage>
+                        </p>
                         <p>Ugotavljam, da je s 47 glasovi za in enim vzdržanim predlog tudi tega
                            amandmaja sprejet.</p>
                         <p>- Predlaga se Družbenopolitičnemu zboru tudi, da sprejme amandma k 38.
                            členu, ki se glasi: Črta se druga alineja drugega odstavka. - Želi kdo
-                           razpravljati? <stage>(Ne.)</stage> Prosim, kdo je za? <stage>(43
-                              delegatov je za.)</stage> Kdo je proti? <stage>(Eden.)</stage>
-                           Vzdržan? <stage>(Trije.)</stage></p>
+                           razpravljati? <stage type="debate">(Ne.)</stage> Prosim, kdo je za?
+                              <stage type="vote">(43 delegatov je za.)</stage> Kdo je proti?
+                              <stage type="vote">(Eden.)</stage> Vzdržan? <stage type="vote">(Trije.)</stage>
+                        </p>
                         <p>Ugotavljam, da je s 43 glasovi za, enim proti in tremi vzdržanimi predlog
                            tega amandmaja izglasovan.</p>
                         <p>- Nadalje se predlaga, da Družbenopolitični zbor umakne amandma k 41.
                            členu, ki se glasi: Strokovnega vodjo imenuje in razrešuje strokovni svet
                            zavoda, če ni z zakonom ali aktom o ustanovitvi drugače določeno.</p>
-                        <p>Obrazložitev je podana: Želi kdo razpravljati? <stage>(Ne.)</stage></p>
-                        <p>Kdo je za tak predlog usklajevalne komisije? <stage>(28 delegatov
-                              za.)</stage> Kdo je proti? <stage>(20 proti.)</stage> Kdo se vzdrži?
-                              <stage>(Dva.)</stage></p>
+                        <p>Obrazložitev je podana: Želi kdo razpravljati? <stage type="debate"
+                              >(Ne.)</stage>
+                        </p>
+                        <p>Kdo je za tak predlog usklajevalne komisije? <stage type="vote">(28
+                              delegatov za.)</stage> Kdo je proti? <stage type="vote">(20 proti.)</stage> Kdo se
+                           vzdrži? <stage type="vote">(Dva.)</stage>
+                        </p>
                         <p>Ugotavljam, da z 28 glasovi za, 20 proti in dvema vzdržanima je predlog
                            tudi tega amandmaja sprejet.</p>
                         <p>Nadalje se predlaga Družbenopolitičnemu zboru, da naj umakne amandmaja k
@@ -2498,8 +2544,10 @@
                            besedilom: "določa strokovne programe dela in razvoja zavoda z
                            opredelitvijo prioritet izvajanja". Družbenopolitičnemu zboru se
                            predlaga, da umakne svoj sicer izglasovan amandma.</p>
-                        <p>Kdo je za? <stage>(29 delegatov za.)</stage> Kdo je proti?</p>
-                        <p><stage>(8 proti.)</stage> Kdo se vzdrži? <stage>(10)</stage>.</p>
+                        <p>Kdo je za? <stage type="vote">(29 delegatov za.)</stage> Kdo je
+                           proti?</p>
+                        <p>
+                           <stage type="vote">(8 proti.)</stage> Kdo se vzdrži? <stage type="vote">(10)</stage>.</p>
                         <p>Ugotavljam, da je z 29 glasovi za, 8 proti in 10 vzdržanimi tudi ta
                            predlog izglasovan.</p>
                         <p>Nadalje se predlaga Družbenopolitičnemu zboru, da umakne amandma k 44.
@@ -2508,8 +2556,11 @@
                            zahteva, da o spornem strokovnem vprašanju sprejme stališče pristojni
                            strokovni organ na ravni republike.</p>
                         <p>Predlaga se umik tega, v našem zboru izglasovanega amandmaja.</p>
-                        <p>Prosim, kdo je za? <stage>(23 delegatov za)</stage> Kdo je proti?</p>
-                        <p><stage>(20 proti)</stage> Kdo se vzdrži? <stage>(4.)</stage></p>
+                        <p>Prosim, kdo je za? <stage type="vote">(23 delegatov za)</stage> Kdo je
+                           proti?</p>
+                        <p>
+                           <stage type="vote">(20 proti)</stage> Kdo se vzdrži? <stage type="vote">(4.)</stage>
+                        </p>
                         <p>Ugotavljam, da s 23 glasovi za, 20 proti in 4 vzdržanimi predlog
                            usklajevalne komisije ni sprejet.</p>
                         <p>Dalje. Preidemo na 6. predlog, da se naj umakne amandma k 62. členu, ki
@@ -2556,11 +2607,14 @@
                            DPZ umakne svoj amandma k 62. členu, ki se glasi, da se v 2. odstavku
                            datum 1. 4. 1991 nadomesti z novim, in sicer 1. 9. 1991. Predlog delovne
                            skupine z drugimi besedami je,da se vrnemo na prvotni predlog.</p>
-                        <p>Prosim, da ugotovimo navzočnost. Pritisnite na sivo tipko. <stage>(51
-                              poslancev.)</stage></p>
-                        <p>Kdo je za tak predlog delovne skupine? <stage>(31 poslancev.)</stage> Kdo
-                           je proti? <stage>(17 poslancev.)</stage> Kdo se vzdrži? <stage>(2
-                              poslanca.)</stage></p>
+                        <p>Prosim, da ugotovimo navzočnost. Pritisnite na sivo tipko. <stage
+                              type="vote">(51 poslancev.)</stage>
+                        </p>
+                        <p>Kdo je za tak predlog delovne skupine? <stage type="vote">(31
+                              poslancev.)</stage> Kdo je proti? <stage type="vote">(17
+                              poslancev.)</stage> Kdo se vzdrži? <stage type="vote">(2
+                              poslanca.)</stage>
+                        </p>
                         <p>Ugotavljam; z 31 glasovi za in 17 proti in dvema vzdržanima je predlog
                            delovne skupine sprejet.</p>
                         <p>Nadalje se DPZ-ju predlaga, da naj umakne amandma k 63. členu, ki se
@@ -2569,8 +2623,10 @@
                            kot podjetje, če je pretežni del celotnega prihodka pridobiva s prodajo
                            blaga ali storitev na trgu.</p>
                         <p>Predlaga se našemu zboru, da umakne tudi ta amandma.</p>
-                        <p>Kdo je za? <stage>(28 poslancev.)</stage> Kdo je proti? <stage>(11
-                              poslancev.)</stage> Kdo se vzdrži? <stage>(12 poslancev.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(28 poslancev.)</stage> Kdo je proti?
+                              <stage type="vote">(11 poslancev.)</stage> Kdo se vzdrži? <stage
+                              type="vote">(12 poslancev.)</stage>
+                        </p>
                         <p>Ugotavljam, z 28 za, 11 proti in 12 vzdržanimi je ta predlog
                            izglasovan.</p>
                         <p>Nadalje se predlaga DPZ, da naj umakne amandma k 70. členu, ki se naj
@@ -2584,40 +2640,39 @@
                            razrešitvi.</p>
                         <p>Gre za enotno glasovanje, z ene strani, da umaknemo svoj izglasovani
                            amandma in da sprejmemo nov odstavek. Kdor je za tak predlog, naj
-                           pritisne na sivo tipko. 29 poslancev. Kdo je proti? <stage>(21
-                              poslancev.)</stage> Kdo se vzdrži? <stage>(1 poslancev.)</stage></p>
+                           pritisne na sivo tipko. 29 poslancev. Kdo je proti? <stage type="vote"
+                              >(21 poslancev.)</stage> Kdo se vzdrži? <stage type="vote">(1
+                              poslancev.)</stage>
+                        </p>
                         <p>Ugotavljam, z 29 glasovi za, 21 proti in enim vzdržanim je tudi ta
                            amandma sprejet.</p>
                         <p>In sedaj dajem na glasovanje zakon v celoti z amandmaji, kakor smo jih
-                           izglasovali. Še enkrat, da ugotovimo navzočnost, prosim. <stage>(5l
-                              navzočih.)</stage></p>
-                        <p>Kdo je za zakon v celoti z amandmaji, kakor ste jih izglasovali?
-                              <stage>(27 delegatov za)</stage> Kdo je proti? <stage>(17
-                              proti)</stage> Kdo se vzdrži? <stage>(7)</stage>.</p>
+                           izglasovali. Še enkrat, da ugotovimo navzočnost, prosim. <stage type="quorum">(5l
+                              navzočih.)</stage>
+                        </p>
+                        <p>Kdo je za zakon v celoti z amandmaji, kakor ste jih izglasovali? <stage
+                              type="vote">(27 delegatov za)</stage> Kdo je proti? <stage type="vote">(17
+                              proti)</stage> Kdo se vzdrži? <stage type="vote">(7)</stage>.</p>
                         <p>Ugotavljam: s 27 glasovi za, 17 proti in 7 vzdržanimi ali je zakon z
                            amandmaji izglasovan.</p>
                         <p>- Samo v informacijo, moramo ugotoviti, da smo ostali neusklajeni pri 44.
                            členu, glede drugega odstavka. Hvala.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.5" ana="#PAR.TDR" corresp="#toc.2.3.2.">
                      <sp who="#sp.ToplakLudvik">
-                        <p>Prehajamo na usklajevanje k</p>
-                        <p>
-                           <title>PREDLOGU ZAKONA O SPREMEMBAH IN DOPOLNITVAH ZAKONA O SODNIH
-                              TAKSAH</title>.</p>
+                        <p>Prehajamo na usklajevanje k <title>PREDLOGU ZAKONA O SPREMEMBAH IN
+                              DOPOLNITVAH ZAKONA O SODNIH TAKSAH</title>.</p>
                         <p>Za naš zbor k temu zakonu usklajevalna komisija ni predlagala
                            sprememb.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.6" ana="#PAR.TDR" corresp="#toc.2.3.3.">
                      <sp who="#sp.ToplakLudvik">
-                        <p>Prehajamo na usklajevanje k</p>
-                        <p>PREDLOGU ZA IZDAJO ZAKONA</p>
-                        <p>
-                           <title>O POSPEŠEVANJU RAZVOJA MALIH IN SREDNJIH PODJETIJ TER
-                              ZASEBNIKOV</title>.</p>
-                        <p>Poročevalec bi bil gospod Vane Gošnik. Ali je tukaj? <stage>(Ga
+                        <p>Prehajamo na usklajevanje k <title>PREDLOGU ZA IZDAJO ZAKONA O
+                              POSPEŠEVANJU RAZVOJA MALIH IN SREDNJIH PODJETIJ TER
+                           ZASEBNIKOV</title>.</p>
+                        <p>Poročevalec bi bil gospod Vane Gošnik. Ali je tukaj? <stage type="comment">(Ga
                               ni.)</stage> Ob predstavitvi te problematike o posameznih poročilih
                            ter razlogih za čimprejšnjo dodelitev oziroma razdelitev dodatnih
                            sredstev za pospeševanje razvoja podjetij je komisija po glasovanju
@@ -2625,47 +2680,49 @@
                            da obravnavata in sprejmeta predlog za izdajo zakona o pospeševanju
                            razvoja malih in srednjih podjetij ter zasebnikov, z osnutkom zakona.
                            Tako naj bi se glasil predlog sklepa.</p>
-                        <p>Želi kdo razpravljati o predlogu sklepa? <stage>(Ne.)</stage> Če ne,
-                           preidimo na glasovanje. Ugotovimo najprej navzočnost. <stage>(50
-                              prisotnih.)</stage> Dajem na glasovanje predlog usklajevalne komisije,
-                           da sprejmemo predlog za izdajo zakona z osnutkom in da Izvršni svet
-                           pripravi predlog zakona.</p>
-                        <p>Kdo je za? <stage>(28 delegatov za)</stage> Kdo je proti? <stage>(19
-                              proti)</stage></p>
-                        <p>Kdo se vzdrži? <stage>(3 delegat.)</stage></p>
+                        <p>Želi kdo razpravljati o predlogu sklepa? <stage type="debate"
+                              >(Ne.)</stage> Če ne, preidimo na glasovanje. Ugotovimo najprej
+                           navzočnost. <stage type="quorum">(50 prisotnih.)</stage> Dajem na
+                           glasovanje predlog usklajevalne komisije, da sprejmemo predlog za izdajo
+                           zakona z osnutkom in da Izvršni svet pripravi predlog zakona.</p>
+                        <p>Kdo je za? <stage type="vote">(28 delegatov za)</stage> Kdo je proti?
+                              <stage type="vote">(19 proti)</stage>
+                        </p>
+                        <p>Kdo se vzdrži? <stage type="vote">(3 delegat.)</stage>
+                        </p>
                         <p>Ugotavljam: z 28 glasovi za, 19 proti in 3 vzdržanimi je tak sklep
                            sprejet.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.7" ana="#PAR.TDR" corresp="#toc.2.3.4.">
                      <sp who="#sp.ToplakLudvik">
-                        <p>Prehajamo na</p>
-                        <p>
-                           <title>PREDLOG ZA IZDAJO ZAKONA O CENAH, Z OSNUTKOM ZAKONA</title>.</p>
+                        <p>Prehajamo na <title>PREDLOG ZA IZDAJO ZAKONA O CENAH, Z OSNUTKOM
+                              ZAKONA</title>.</p>
                         <p>Iz poročila usklajevalne komisije sledi, da glede na to, da sta Zbor
                            združenega dela in Zbor občin sprejela predlog za izdajo zakona o cenah
                            in s tem trifaznost zakonodajnega postopka, usklajevalna komisija
                            predlaga, da tudi Družbenopolitični zbor uvrsti na dnevni red predlog
                            zakona o cenah in ga sprejme oz. obravnava po trifaznem postopku.</p>
-                        <p>Želi kdo razpravljati o predlogu? <stage>(Ne.)</stage> Če ne, glasujemo.
-                           Na glasovanje dajem predlog usklajevalne komisije, da sprejmemo le
-                           predlog za izdajo zakona in da Izvršni svet pripravi osnutek zakona.</p>
-                        <p>Kdo je za tak predlog? <stage>(46 delegatov za.)</stage> Kdo je proti?
-                              <stage>(Nihče.)</stage> Vzdržan? <stage>(3)</stage>.</p>
+                        <p>Želi kdo razpravljati o predlogu? <stage type="debate">(Ne.)</stage> Če
+                           ne, glasujemo. Na glasovanje dajem predlog usklajevalne komisije, da
+                           sprejmemo le predlog za izdajo zakona in da Izvršni svet pripravi osnutek
+                           zakona.</p>
+                        <p>Kdo je za tak predlog? <stage type="vote">(46 delegatov za.)</stage> Kdo
+                           je proti? <stage type="vote">(Nihče.)</stage> Vzdržan?
+                           <stage type="vote">(3)</stage>.</p>
                         <p>Ugotavljam: s 46 glasovi za in 3 vzdržanimi je predlog sprejet.</p>
                         <p>In sedaj še usklajevanje glede dnevnega reda. Mi smo ostali danes
                            neusklajeni glede dnevnega reda glede zakona o zadrugah; druga dva zbora
                            sta sprejela predlog, da se predlog zakona vrne v fazo osnutka in se
                            razpravlja danes o osnutku.</p>
                      </sp>
+                  </div>
+                  <div xml:id="div.1.1.2.7a" ana="#PAR.TDR" corresp="#toc.2.4">
                      <sp who="#sp.ToplakLudvik">
                         <p>Zato komisija delegatov vseh treh zborov predlaga Družbenopolitičnemu
-                           zboru, da obravnava le</p>
-                        <p>
-                           <title>OSNUTEK ZAKONA O ZADRUGAH</title> TER</p>
-                        <p>da se</p>
-                        <p>ZAKONSKI PREDLOG PONOVNO OBRAVNAVA</p>
-                        <p>kot osnutek. Prosim, gospod Kopač ima besedo.</p>
+                           zboru, da obravnava le <title>OSNUTEK ZAKONA O ZADRUGAH</title> TER da se
+                              <title>ZAKONSKI PREDLOG PONOVNO OBRAVNAVA</title> kot osnutek. Prosim,
+                           gospod Kopač ima besedo.</p>
                      </sp>
                      <sp who="#sp.KopačJanez">
                         <speaker>JANEZ KOPAČ:</speaker>
@@ -2689,16 +2746,18 @@
                      </sp>
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDNIK DR. LUDVIK TOPLAK:</speaker>
-                        <p>Hvala lepa. Da ugotovimo prisotnost. <stage>(50 delegatov.)</stage>
-                           Predlog usklajevalne komisije je,</p>
+                        <p>Hvala lepa. Da ugotovimo prisotnost. <stage type="vote">(50
+                              delegatov.)</stage> Predlog usklajevalne komisije je,</p>
                         <p>da se postopek vrne v fazo osnutka.</p>
-                        <p>Kdor je za, naj prosim glasuje! <stage>(25 delegatov glasuje za.)</stage>
-                           Je kdo proti? <stage>(18 delegatov glasuje proti.)</stage> Se je kdo
-                           vzdržal? <stage>(7 delegatov.)</stage></p>
+                        <p>Kdor je za, naj prosim glasuje! <stage type="vote">(25 delegatov glasuje
+                              za.)</stage> Je kdo proti? <stage type="vote">(18 delegatov glasuje
+                              proti.)</stage> Se je kdo vzdržal? <stage type="vote">(7
+                              delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da predlog ni izglasovan.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.8" ana="#PAR.TDR" corresp="#toc.2.5">
                      <sp who="#sp.ToplakLudvik">
                         <p>Vračamo se k temam <title>14. seje zbora</title>.</p>
                         <p>Predlagam, da takoj imenujemo petčlansko komisijo za zakon o zavodih,
@@ -2707,11 +2766,13 @@
                            sodne takse. Andrej Magajna, Ciril Kolešnik, prosim? Mile Šetinc, Ivan
                            Tomše, ter Janez Kopač. Magajna, Kolešnik, Šetinc, Tomše in Kopač so
                            člani usklajevalne komisije za zakon o zavodih. Želi kdo razpravljati o
-                           predlogu? <stage>(Ne.)</stage> Če ne, prosim da izglasujemo predlog.</p>
-                        <p>Kdor je za tako usklajevalno komisijo, naj prosim glasuje! <stage>(40
-                              delegatov glasuje za.)</stage> Je kdo proti? <stage>(3 delegati
-                              glasujejo proti.)</stage> Se je kdo vzdržal? <stage>(2
-                              delegata.)</stage></p>
+                           predlogu? <stage type="debate">(Ne.)</stage> Če ne, prosim da izglasujemo
+                           predlog.</p>
+                        <p>Kdor je za tako usklajevalno komisijo, naj prosim glasuje! <stage
+                              type="vote">(40 delegatov glasuje za.)</stage> Je kdo proti? <stage
+                              type="vote">(3 delegati glasujejo proti.)</stage> Se je kdo vzdržal?
+                              <stage type="vote">(2 delegata.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlog petčlanske usklajevalne komisije izglasovan.
                            Hvala.</p>
                         <p>Usklajevalna komisija za zavode bo v sobi 217, takoj ko konča Zbor občin.
@@ -2724,7 +2785,7 @@
                            15. seje. Torej.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.9" ana="#PAR.TDR" corresp="#toc.2.6">
                      <sp who="#sp.ToplakLudvik">
                         <p>
                            <title>OSNUTEK ZAKONA O AGENCIJI REPUBLIKE SLOVENIJE ZA
@@ -2735,43 +2796,45 @@
                            lastnine-kot matično delovno telo, Odbor za podjetništvo in obrt,
                            Komisija za celovito proučevanje okoliščin, posledic in oškodovanja
                            družbenega premoženja in Zakonodajno-pravna komisija. Predstavnik
-                           Izvršnega sveta na seji k tej točki je. Gospod Rojc. Želi besedo?
-                              <stage>(Ne želi.)</stage>  Želijo besedo poročevalci delovnih teles?
-                              <stage>(Ne.)</stage> Poročila ste prejeli na klop. Odpiram razpravo.
-                           Prosim, prejeli ste gradivo, prejeli ste poročila, razprava je bila delno
-                           že opravljena. Želi še kdo razpravljati? <stage>(Ne.)</stage> Če ne,
-                           predlagam zboru, da sprejme naslednji sklep:</p>
+                           Izvršnega sveta na seji k tej točki je. Gospod Rojc. Želi besedo? <stage
+                              type="debate">(Ne želi.)</stage>  Želijo besedo poročevalci delovnih
+                           teles? <stage type="debate">(Ne.)</stage> Poročila ste prejeli na klop.
+                           Odpiram razpravo. Prosim, prejeli ste gradivo, prejeli ste poročila,
+                           razprava je bila delno že opravljena. Želi še kdo razpravljati? <stage
+                              type="debate">(Ne.)</stage> Če ne, predlagam zboru, da sprejme
+                           naslednji sklep:</p>
                         <p>"Zbor sprejema osnutek zakona o Agenciji Republike Slovenije za
                            privatizacijo. Zbor nalaga predlagatelju, da ob upoštevanju razprave v
                            delovnih telesih in v zborih pripravi predlog zakona."</p>
-                        <p>Želi še kdo razpravljati o predlogu sklepa? <stage>(Ne.)</stage> Če ne,
-                           dajem na glasovanje predlog sklepa. D</p>
-                        <p>Ugotovimo prisotnost. <stage>(35 delegatov je prisotnih)</stage>. To pa
-                           ni mogoče. Prosim, ponovno da ugotovimo navzočnost. Prosim prisotnost,
-                           pritisnimo na sivo topko! <stage>(41 delegatov je prisotnih.)</stage></p>
-                        <p>Kdor je za tak predlog sklepa, naj prosim glasuje! <stage>(28 delegatov
-                              glasuje za.)</stage> Je kdo proti? <stage>(7 delegatov glasuje
-                              proti.)</stage> Se je kdo vzdržal? <stage>(7 delegatov.)</stage></p>
+                        <p>Želi še kdo razpravljati o predlogu sklepa? <stage type="debate"
+                              >(Ne.)</stage> Če ne, dajem na glasovanje predlog sklepa. D</p>
+                        <p>Ugotovimo prisotnost. <stage type="quorum">(35 delegatov je
+                              prisotnih)</stage>. To pa ni mogoče. Prosim, ponovno da ugotovimo
+                           navzočnost. Prosim prisotnost, pritisnimo na sivo topko! <stage
+                              type="quorum">(41 delegatov je prisotnih.)</stage>
+                        </p>
+                        <p>Kdor je za tak predlog sklepa, naj prosim glasuje! <stage type="vote">(28
+                              delegatov glasuje za.)</stage> Je kdo proti? <stage type="vote">(7
+                              delegatov glasuje proti.)</stage> Se je kdo vzdržal? <stage
+                              type="vote">(7 delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlog sklepa sprejet.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="4">
+                  <div xml:id="div.1.1.2.10" ana="#PAR.TDR" n="4" corresp="#toc.2.7">
                      <sp who="#sp.ToplakLudvik">
-                        <p>In sedaj prehajam na</p>
-                        <p>4. TOČKO DNEVNEGA REDA,</p>
-                        <p>to je</p>
-                        <p>
-                           <title>OSNUTEK ZAKONA O SKLADU REPUBLIKE SLOVENIJE ZA RAZVOJ</title>.</p>
+                        <p>In sedaj prehajam na 4. TOČKO DNEVNEGA REDA, to je <title>OSNUTEK ZAKONA
+                              O SKLADU REPUBLIKE SLOVENIJE ZA RAZVOJ</title>.</p>
                         <p>Osnutek zakona je predložil v obravnavo Izvršni svet Skupščine Republike
                            Slovenije. Osnutek zakona so obravnavali: Komisija za preobrazbo družbene
                            in zadružne lastnine kot matično delovno telo, Odbor za podjetništvo in
                            obrt na ravni Skupščine Republike Slovenije, Komisija za celovito
                            proučitev okoliščin, posledic in pojavov oškodovanja družbenega
                            premoženja in Zakonodajno-pravna komisija.</p>
-                        <p>Želijo poročevalci delovnih teles besedo? <stage>(Ne.)</stage> Želi
-                           predstavnik Izvršnega sveta besedo? <stage>(Ne.)</stage> Če ne, odpiram
-                           razpravo. Prosim, gospod Tone Peršak. Prosim poslance, da ostanejo v
-                           dvorani, ker smo na meji!</p>
+                        <p>Želijo poročevalci delovnih teles besedo? <stage type="debate"
+                              >(Ne.)</stage> Želi predstavnik Izvršnega sveta besedo? <stage
+                              type="debate">(Ne.)</stage> Če ne, odpiram razpravo. Prosim, gospod
+                           Tone Peršak. Prosim poslance, da ostanejo v dvorani, ker smo na meji!</p>
                      </sp>
                      <sp who="#sp.PeršakAnton">
                         <speaker>PODPREDSEDNIK TONE PERŠAK:</speaker>
@@ -2804,42 +2867,44 @@
                            pojavov oškodovanja družbene lastnine posebej opozorile na nezadostno
                            vgrajenost sistema odgovornosti in kontrolnega inštrumentarija pri
                            citiranem zakonu. Podobno, kot je predlagal gospod Peršak.</p>
-                        <p>Želi še kdo razpravljati k tej točki? <stage>(Ne.)</stage> Če ne,
-                           zaključujem razpravo in prehajamo na glasovanje.</p>
+                        <p>Želi še kdo razpravljati k tej točki? <stage type="debate">(Ne.)</stage>
+                           Če ne, zaključujem razpravo in prehajamo na glasovanje.</p>
                         <p>Zboru predlagam naslednji sklep:</p>
                         <p>Zbor sprejme osnutek zakona o Skladu Republike Slovenije za razvoj.</p>
                         <p>Drugič. Zbor nalaga predlagatelju, da ob upoštevanju razprave na zboru in
                            v delovnih telesih pripravi predlog zakona.</p>
-                        <p>Najprej ugotovimo navzočnost. Prosim, pritisnite na sivo tipko.
-                              <stage>(45 delegatov.)</stage> Želi kdo razpravljati o predlaganem
-                           sklepu? <stage>(Ne.)</stage> Če ne, dajem sklep na glasovanje.</p>
-                        <p>Kdor je za, naj prosim glasuje! <stage>(30 delegatov glasuje za.)</stage>
-                           Je kdo proti? <stage>(7 delegatov glasuje proti.)</stage> Se je kdo
-                           vzdržal? <stage>(5 delegatov.)</stage></p>
+                        <p>Najprej ugotovimo navzočnost. Prosim, pritisnite na sivo tipko. <stage
+                              type="vote">(45 delegatov.)</stage> Želi kdo razpravljati o
+                           predlaganem sklepu? <stage type="debate">(Ne.)</stage> Če ne, dajem sklep
+                           na glasovanje.</p>
+                        <p>Kdor je za, naj prosim glasuje! <stage type="vote">(30 delegatov glasuje
+                              za.)</stage> Je kdo proti? <stage type="vote">(7 delegatov glasuje
+                              proti.)</stage> Se je kdo vzdržal? <stage type="vote">(5
+                              delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlog sklepa sprejet.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="5">
+                  <div xml:id="div.1.1.2.11" ana="#PAR.TDR" n="5" corresp="#toc.2.8">
                      <sp who="#sp.ToplakLudvik">
-                        <p>Sedaj prehajamo na 5. točko dnevnega reda</p>
-                        <p>- <title>PREDLOG ZA IZDAJO ZAKONA O DENACIONALIZACIJI</title>,</p>
-                        <p>z osnutkom zakona. Samo na kratko povem, da smo uvodno besedo sicer
-                           poslušali na skupnem zasedanju. Predlog zakona z osnutkom zakona je
-                           predložil v obravnavo Izvršni svet Skupščine Republike Slovenije.
-                           Obravnavali so ga: Komisija za denacionalizacijo - kot matično delovno
-                           telo, Odbor za podjetništvo in obrt na ravni Skupščine RS, Komisija za
-                           celovito proučitev okoliščin, posledic in pojavov oškodovanja družbenega
-                           premoženja, Odbor za lokalno samoupravo na ravni Skupščine RS in
-                           Zakonodajno-pravna komisija. Komisija za denacionalizacijo predlaga
-                           zborom Skupščine RS, da predlog za izdajo zakona o denacionalizaciji z
-                           osnutkom zakona sprejmejo. Ob tem opozarja na nekatera odprta vprašanja.
-                           Obveščam vas tudi, da je združenje lastnikov razlaščenega premoženja
-                           posredovalo delovnim telesom njihove pripombe na zakon o
-                           denacionalizaciji; gradivo je na voljo pri referentki zbora in ga lahko
-                           tudi poslanci prejmejo. Predstavnik Izvršnega sveta k tej točki je gospod
-                           Pirnat, ki je poročilo dal. Želijo besedo poročevalci delovnih teles?
-                              <stage>(Ne.)</stage> Če ne - poročilo ste prejeli na klop - odpiram
-                           razpravo.</p>
+                        <p>Sedaj prehajamo na 5. točko dnevnega reda - <title>PREDLOG ZA IZDAJO
+                              ZAKONA O DENACIONALIZACIJI</title>, z osnutkom zakona. Samo na kratko
+                           povem, da smo uvodno besedo sicer poslušali na skupnem zasedanju. Predlog
+                           zakona z osnutkom zakona je predložil v obravnavo Izvršni svet Skupščine
+                           Republike Slovenije. Obravnavali so ga: Komisija za denacionalizacijo -
+                           kot matično delovno telo, Odbor za podjetništvo in obrt na ravni
+                           Skupščine RS, Komisija za celovito proučitev okoliščin, posledic in
+                           pojavov oškodovanja družbenega premoženja, Odbor za lokalno samoupravo na
+                           ravni Skupščine RS in Zakonodajno-pravna komisija. Komisija za
+                           denacionalizacijo predlaga zborom Skupščine RS, da predlog za izdajo
+                           zakona o denacionalizaciji z osnutkom zakona sprejmejo. Ob tem opozarja
+                           na nekatera odprta vprašanja. Obveščam vas tudi, da je združenje
+                           lastnikov razlaščenega premoženja posredovalo delovnim telesom njihove
+                           pripombe na zakon o denacionalizaciji; gradivo je na voljo pri referentki
+                           zbora in ga lahko tudi poslanci prejmejo. Predstavnik Izvršnega sveta k
+                           tej točki je gospod Pirnat, ki je poročilo dal. Želijo besedo poročevalci
+                           delovnih teles? <stage type="debate">(Ne.)</stage> Če ne - poročilo ste
+                           prejeli na klop - odpiram razpravo.</p>
                         <p>Za razpravo so sedaj prijavljeni - zaradi vrstnega reda, da se
                            pripravijo: Mile Šetinc (je trenutno na usklajevanju), Janez Lampret,
                            Miran Potrč, Hubert Požarnik in Viktor Žakelj. Besedo ima gospod
@@ -3145,7 +3210,7 @@
                            za vse upravičence. Hvala.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.12" ana="#PAR.TDR" corresp="#toc.2.9">
                      <sp who="#sp.PeršakAnton">
                         <speaker>PODPREDSEDNIK ANTON PERŠAK:</speaker>
                         <p>Za diskusijo so prijavljeni še trije delegati in gost. Predlagam, da za
@@ -3190,23 +3255,27 @@
                            zahteva, da o spornem strokovnem vprašanju sprejme stališče pristojni
                            strokovni organ na ravni republike." Predlog je, da zdaj glasujemo o
                            umiku tega amandmaja.</p>
-                        <p>Želi kdo v zvezi s tem razpravljati? <stage>(Ne.)</stage> Če ne želi,
-                           dajem predlog na glasovanje. Najprej prosim, da ugotovimo prisotnost.
-                              <stage>(45 prisotnih.)</stage></p>
-                        <p>Kdor je za umik tega amandmaja, naj prosim pritisne na sivo tipko.
-                              <stage>(25 delegatov je za.)</stage> Kdo je proti? <stage>(16
-                              delegatov je proti.)</stage> Kdor se je vzdržal, naj prosim pritisne
-                           na sivo tipko. <stage>(Pet delegatov.)</stage></p>
+                        <p>Želi kdo v zvezi s tem razpravljati? <stage type="debate">(Ne.)</stage>
+                           Če ne želi, dajem predlog na glasovanje. Najprej prosim, da ugotovimo
+                           prisotnost. <stage type="quorum">(45 prisotnih.)</stage>
+                        </p>
+                        <p>Kdor je za umik tega amandmaja, naj prosim pritisne na sivo tipko. <stage
+                              type="vote">(25 delegatov je za.)</stage> Kdo je proti? <stage
+                              type="vote">(16 delegatov je proti.)</stage> Kdor se je vzdržal, naj
+                           prosim pritisne na sivo tipko. <stage type="vote">(Pet delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlog, da se amandma umakne, z večino glasov, to je s
                            petindvajsetimi za, šestnajstinami proti in petimi vzdržanimi glasovi,
-                           sprejet. <stage>(vmes govorijo drugi: ne more biti)</stage>.</p>
+                           sprejet. <stage type="comment">(vmes govorijo drugi: ne more biti)</stage>.</p>
                         <p>Zdaj glasujemo še o zakonu z amandmaji tako, kot so bili izglasovani v
                            celoti.</p>
                         <p>Kdo je za zakon, tak kot je bil s tem amandmajem oziroma umikom
-                           amandmajev, naj prosim pritisne na sivo tipko. <stage>(26 delegatov
-                              za.)</stage> Kdor je proti, naj prosim pritisne na sivo tipko.
-                              <stage>(18 delegatov proti.)</stage> Kdor se je vzdržal, naj prosim
-                           pritisne na sivo tipko. <stage>(Dva delegata.)</stage></p>
+                           amandmajev, naj prosim pritisne na sivo tipko. <stage type="vote">(26
+                              delegatov za.)</stage> Kdor je proti, naj prosim pritisne na sivo
+                           tipko. <stage type="vote">(18 delegatov proti.)</stage> Kdor se je
+                           vzdržal, naj prosim pritisne na sivo tipko. <stage type="vote">(Dva
+                              delegata.)</stage>
+                        </p>
                         <p>Ugotavljam, da je zakon z večino glasov, se pravi s šestindvajsetimi
                            glasovi za, osemnajstimi glasovi proti in dvema vzdržanima glasoma,
                            sprejet.</p>
@@ -3214,12 +3283,11 @@
                            več potrebno.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.13" ana="#PAR.TDR" corresp="#toc.2.10">
                      <sp who="#sp.PeršakAnton">
-                        <p>Predlagam, da se vrnemo k</p>
-                        <p>
-                           <title>15. SEJI ZBORA NAZAJ NA OBRAVNAVO PREDLOGA ZA IZDAJO ZAKONA IN
-                              OSNUTKA ZAKONA O DENACIONALIZACIJI</title>.</p>
+                        <p>Predlagam, da se vrnemo k <title>15. SEJI ZBORA NAZAJ NA OBRAVNAVO
+                              PREDLOGA ZA IZDAJO ZAKONA IN OSNUTKA ZAKONA O
+                              DENACIONALIZACIJI</title>.</p>
                         <p>Na vrsti za diskusijo je gospod Viktor Žakelj.</p>
                      </sp>
                      <sp who="#sp.ŽakeljViktor">
@@ -3937,9 +4005,9 @@
                      </sp>
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDNIK DR. LUDVIK TOPLAK:</speaker>
-                        <p>Hvala lepa gospodu Kopaču. Še kdo želi razpravljati? <stage>(Ne.)</stage>
-                           Če ni več razpravljalcev, prosim predlagatelja, dr. Rajka Pirnata, da
-                           odgovori na postavljena vprašanja.</p>
+                        <p>Hvala lepa gospodu Kopaču. Še kdo želi razpravljati? <stage type="debate"
+                              >(Ne.)</stage> Če ni več razpravljalcev, prosim predlagatelja, dr.
+                           Rajka Pirnata, da odgovori na postavljena vprašanja.</p>
                      </sp>
                      <sp who="#sp.PirnatRajko">
                         <speaker>DR. RAJKO PIRNAT:</speaker>
@@ -3991,9 +4059,9 @@
                      </sp>
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDNIK DR. LUDVIK TOPLAK:</speaker>
-                        <p>Hvala lepa dr. Pirnatu. Želi še kdo razpravljati? <stage>(Ne.)</stage> Če
-                           ni več razpravljalcev, razpravo sklepam in zboru predlagam naslednji
-                           sklep:</p>
+                        <p>Hvala lepa dr. Pirnatu. Želi še kdo razpravljati? <stage type="debate"
+                              >(Ne.)</stage> Če ni več razpravljalcev, razpravo sklepam in zboru
+                           predlagam naslednji sklep:</p>
                         <p>"Zbor sprejema predlog za izdajo zakona o denacionalizaciji, z osnutkom
                            zakona. Materialno-pravna vprašanja denacionalizacije zadružnega
                            premoženja naj ureja zakon o zadrugah, subsidiarno procesno-pravna
@@ -4004,8 +4072,8 @@
                            sprejema zakona o denacionalizaciji, temveč naj to uredijo posebni
                            predpisi.  Zbor nalaga predlagatelju, da ob upoštevanju razprave na zboru
                            in v delovnih telesih  pripravi predlog zakona."</p>
-                        <p>Želi kdo razpravljati o predlogu. <stage>(Da.)</stage> Prosim, gospod
-                           Školč.</p>
+                        <p>Želi kdo razpravljati o predlogu. <stage type="debate">(Da.)</stage>
+                           Prosim, gospod Školč.</p>
                      </sp>
                      <sp who="#sp.ŠkolčJožef">
                         <speaker>JOŽEF ŠKOLČ:</speaker>
@@ -4073,19 +4141,23 @@
                            zadeva čista in zdaj imamo predlog dveh sklepov.</p>
                         <p>Prvi predlog sklepa, je kakor smo prebrali, drugi predlog sklepa pa je,
                            kakor ga je predlagal gospod Školč.</p>
-                        <p>Bi bil to dodatni sklep ali alternativni sklep? <stage>(iz klopi:
-                              Dodatni.)</stage> Prav, dodatni sklep. Prosim? <stage>(Iz klopi:
-                              Posebej.)</stage></p>
+                        <p>Bi bil to dodatni sklep ali alternativni sklep? <stage type="comment">(iz klopi:
+                              Dodatni.)</stage> Prav, dodatni sklep. Prosim? <stage type="comment">(Iz klopi:
+                              Posebej.)</stage>
+                        </p>
                         <p>Razumem posebej. Zdaj gre samo za vprašanje, ali gre za alternativen
                            sklep ali gre za dodaten sklep? Nisem razumel dobro. Želi še kdo
-                           razpravljati o predloženem sklepu? <stage>(Ne.)</stage> Če ne, dajem na
-                           glasovanje.</p>
+                           razpravljati o predloženem sklepu? <stage type="debate">(Ne.)</stage> Če
+                           ne, dajem na glasovanje.</p>
                         <p>Prvo, predlog sklepa v petih točkah kakor sem ga prebral. Za ugotovitev
-                           prisotnosti prosim, da pritisnete na sivo tipko. <stage>(51
-                              prisotnih.)</stage></p>
-                        <p>Kdo je za tako predložen predlog sklepa? <stage>(31 poslancev je
-                              za.)</stage> Kdo je proti? <stage>(9 poslancev je proti.)</stage> Kdo
-                           se vzdrži? <stage>(Enajst poslancev je vzdržanih.)</stage></p>
+                           prisotnosti prosim, da pritisnete na sivo tipko. <stage type="quorum">(51
+                              prisotnih.)</stage>
+                        </p>
+                        <p>Kdo je za tako predložen predlog sklepa? <stage type="vote">(31 poslancev
+                              je za.)</stage> Kdo je proti? <stage type="vote">(9 poslancev je
+                              proti.)</stage> Kdo se vzdrži? <stage type="vote">(Enajst poslancev je
+                              vzdržanih.)</stage>
+                        </p>
                         <p>Ugotavljam: z enaintridesetimi glasovi za, devetimi proti, enajstimi
                            vzdržanimi je predlog tako predloženega sklepa sprejet.</p>
                         <p>Nadalje dajem na glasovanje predlog dodatnega sklepa kakor ga je
@@ -4254,22 +4326,22 @@
                         <speaker>PREDSEDNIK DR. LUDVIK TOPLAK:</speaker>
                         <p>Hvala lepa. Še kdo? Če ni več razprave zaključujem razpravo tudi k tej
                            točki. Preidemo na glasovanje o predlogu sklepa,ki ga je podal g. Jožef
-                           Školč. Preverimo prisotnost prosim. <stage>(51 delegatov
+                           Školč. Preverimo prisotnost prosim. <stage type="quorum">(51 delegatov
                               prisotnih.)</stage> Glasujemo skupaj o obeh sklepih g. Jožeta
                            Školča.</p>
-                        <p>Kdo je za prosim? <stage>(19 delegatov glasuje za.)</stage> Kdo je proti?
-                              <stage>(18 delegatov proti. )</stage> Kdo se vzdrži? <stage>(30
-                              delegatov vzdržanih.)</stage></p>
+                        <p>Kdo je za prosim? <stage type="vote">(19 delegatov glasuje za.)</stage>
+                           Kdo je proti? <stage type="vote">(18 delegatov proti. )</stage> Kdo se
+                           vzdrži? <stage type="vote">(30 delegatov vzdržanih.)</stage>
+                        </p>
                         <p>Ugotavljam, da z 19 za, 18 proti in 13 vzdržanimi predlog sklep ni
                            izglasovan.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="1">
+                  <div xml:id="div.1.1.2.14" ana="#PAR.TDR" n="1" corresp="#toc.2.11">
                      <sp who="#sp.ToplakLudvik">
                         <p>S tem zaključujemo tudi to četrto točko, torej predlog za izdajo zakona o
-                           denacionalizaciji z osnutkom zakona in prehajamo na</p>
-                        <p>
-                           <title>1. TOČKO DNEVNEGA REDA</title>.</p>
+                           denacionalizaciji z osnutkom zakona in prehajamo na <title>1. TOČKO
+                              DNEVNEGA REDA</title>.</p>
                         <p>Medtem so prišli pomisleki iz dvorane, ali naj prvo točko preložimo na
                            jutri, pa se do jutri pripravijo amandmaji glede na to, da je bil pri nas
                            sprejet predlog in glede na to, da obravnavamo v obliki predloga, pride v
@@ -4295,19 +4367,17 @@
                         <p>Hvala lepa. Se s tem strinjamo? Potem nadaljujemo z delom.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="5">
+                  <div xml:id="div.1.1.2.15" ana="#PAR.TDR" n="5" corresp="#toc.2.12">
                      <sp who="#sp.ToplakLudvik">
-                        <p>Prehajamo na</p>
-                        <p>
-                           <title>5. TOČKO DNEVNEGA REDA</title>,</p>
-                        <p>t.j.</p>
-                        <p>PREDLOG ZA IZDAJO ZAKONA O JAVNIH GLASILIH.</p>
+                        <p>Prehajamo na <title>5. TOČKO DNEVNEGA REDA</title>, t.j. PREDLOG ZA
+                           IZDAJO ZAKONA O JAVNIH GLASILIH.</p>
                         <p>Predlog za izdajo zakona je predložil v obravnavo Izvršni svet Skupščine
                            R Slovenije. Obravnavali so ga Komisija za informiranje kot matično
                            delovno telo, Odbor za kulturo in varstvo kulturne dediščine na ravni
                            Skupščine R Slovenije, Komisija za notranjo politiko in
                            Zakonodajno-pravna komisija. Predstavnik IS na seji k tej točki je g.
-                           minister Stane Stanič. Želi besedo? <stage>(Da.)</stage> Prosim.</p>
+                           minister Stane Stanič. Želi besedo? <stage type="debate">(Da.)</stage>
+                           Prosim.</p>
                      </sp>
                      <sp who="#sp.StaničStane">
                         <speaker>STANE STANIČ:</speaker>
@@ -4680,7 +4750,7 @@
                               20/3-1991 ob 10.15 uri</time>.)</stage>
                      </sp>
                   </div>
-                  <div ana="#PAR.Prisot">
+                  <div xml:id="div.1.1.2.16" ana="#PAR.Prisot" corresp="#toc.2.13">
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDNIK DR. LUDVIK TOPLAK:</speaker>
                         <p>Spoštovane poslanke in poslanci, gospe in gospodje, spoštovani gostje. Na
@@ -4700,7 +4770,7 @@
                            objave v Uradnem listu.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.17" ana="#PAR.TDR" corresp="#toc.2.14">
                      <sp who="#sp.ToplakLudvik">
                         <p>Pri zakonu o spremembah in dopolnitvah zakona o sodnih taksah,</p>
                         <p>ki nadaljevanje iz 13. oz. <title>14. seje zbora</title>, bomo opravili
@@ -4739,16 +4809,17 @@
                            glasovanje. Kdo je za umik amandmaja Janeza Kopača, k 2. členu, ki se
                            glasi: "črta se 2. člen. Členi 3. do 17.  postanejo  členi od 2.do
                            16.</p>
-                        <p>Še enkrat ugotovimo navzočnost prosim pritisnite na sivo tipko?
-                              <stage>(49 je prisotnih.)</stage></p>
-                        <p>Kdo je za umik tega amandmaja? <stage>(16 je za)</stage>. Proti?
-                              <stage>(21 je proti)</stage>. Kdo se vzdrži? <stage>(11
+                        <p>Še enkrat ugotovimo navzočnost prosim pritisnite na sivo tipko? <stage
+                              type="quorum">(49 je prisotnih.)</stage>
+                        </p>
+                        <p>Kdo je za umik tega amandmaja? <stage type="vote">(16 je za)</stage>. Proti?
+                              <stage type="vote">(21 je proti)</stage>. Kdo se vzdrži? <stage type="vote">(11
                               vzdržani)</stage>.</p>
                         <p>Ugotavljam, da s 16 za, 21 proti in 11 vzdržani predlog ni sprejet, to
                            pomeni, da vztrajamo pri amandmaju zakona o sodnih taksah.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="5">
+                  <div xml:id="div.1.1.2.18" ana="#PAR.TDR" n="5" corresp="#toc.2.15">
                      <sp who="#sp.ToplakLudvik">
                         <p>Prehajamo na <title>nadaljevanje zakona o javnih glasilih</title>.</p>
                         <p>Prisoten je predstavnik IS. Včeraj so bili še 2-3 prijavljeni, evidence
@@ -5394,10 +5465,11 @@
                         <p>1. Zbor sprejema predlog za izdajo zakona o javni glasilih.</p>
                         <p>2. Zbor nalaga predlagatelju, da ob upoštevanju razprave na zboru in
                            delovnih telesih pripravi osnutek zakona. Želi o predlogu tega sklepa
-                            kdo razpravljati? <stage>(Ne.)</stage> Če ne, predlagam, da ugotovimo
-                           prisotnost. <stage>(48 prisotnih.)</stage></p>
-                        <p>Kdo je za, naj prosim pritisne na sivo tipko. <stage>(29 je za)</stage>.
-                           Proti? <stage>(12 je proti)</stage>. Vzdržani? <stage>(8
+                            kdo razpravljati? <stage type="debate">(Ne.)</stage> Če ne, predlagam,
+                           da ugotovimo prisotnost. <stage type="quorum">(48 prisotnih.)</stage>
+                        </p>
+                        <p>Kdo je za, naj prosim pritisne na sivo tipko. <stage type="vote">(29 je za)</stage>.
+                           Proti? <stage type="vote">(12 je proti)</stage>. Vzdržani? <stage type="vote">(8
                               vzdržanih)</stage>.</p>
                         <p>Ugotavljam, da je sklep kakor sem ga prebral sprejet z večino glasov.</p>
                         <p>S tem smo to točko končali. Predlagam, da zdaj imamo pavzo tričetrt ure.
@@ -5407,14 +5479,14 @@
                            >prekinjena ob 12.40 uri</time>. in se je <time
                            from="1991-03-20T13:45:00" xml:id="stage.t.9">nadaljevala ob 13.45
                            uri</time>.)</stage>
+                  </div>
+                  <div xml:id="div.1.1.2.18a" ana="#PAR.TDR" n="5" corresp="#toc.2.16">
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDNIK DR. LUDVIK TOPLAK:</speaker>
                         <p>Nadaljujemo z delom 15. seje Družbenopolitičnega zbora. Na željo
-                           predstavnikov Izvršnega sveta bi začel s</p>
-                        <p>
-                           <title>1. TOČKO DNEVNEGA REDA</title>,</p>
-                        <p>ki smo jo včeraj preskočili, to je</p>
-                        <p>ZAKON O ZADRUGAH.</p>
+                           predstavnikov Izvršnega sveta bi začel s <title>1. TOČKO DNEVNEGA
+                              REDA</title>, ki smo jo včeraj preskočili, to je <title>ZAKON O
+                              ZADRUGAH</title>.</p>
                         <p>Predlog Zakona o zadrugah je predložil v obravnavo Izvršni svet Skupščine
                            Republike Slovenije, obravnavali so ga: Komisija za preobrazbo družbene
                            in zadružne lastnine kot matično delovno telo, Komisija za
@@ -5483,8 +5555,8 @@
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDNIK DR. LUDVIK TOPLAK:</speaker>
                         <p>Hvala lepa gospodu Ostercu. Želijo besedo poročevalci delovnih teles?
-                              <stage>(Ne.)</stage> Če ne, odpiram razpravo. Prosim lepo, Tone
-                           Peršak.</p>
+                              <stage type="debate">(Ne.)</stage> Če ne, odpiram razpravo. Prosim
+                           lepo, Tone Peršak.</p>
                      </sp>
                      <sp who="#sp.PeršakAnton">
                         <speaker>ANTON PERŠAK:</speaker>
@@ -6151,8 +6223,8 @@
                      </sp>
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDNIK DR. LUDVIK TOPLAK:</speaker>
-                        <p>Hvala lepa. Želi še kdo razpravljati? <stage>(Da.)</stage> Prosim, gospod
-                           Potočnik.</p>
+                        <p>Hvala lepa. Želi še kdo razpravljati? <stage type="debate">(Da.)</stage>
+                           Prosim, gospod Potočnik.</p>
                      </sp>
                      <sp who="#sp.PotočnikFranc">
                         <speaker>FRANC POTOČNIK:</speaker>
@@ -6184,30 +6256,28 @@
                         <speaker>PREDSEDNIK DR. LUDVIK TOPLAK:</speaker>
                         <p>Hvala lepa. Če ni, novih razpravljalcev, zaključujem razpravo. Se
                            strinjamo s predlogom sklepa gospoda Potočnika? Predlog dajem na
-                           glasovanje. Ugotovimo prisotnost. <stage>(41 delegatov je
+                           glasovanje. Ugotovimo prisotnost. <stage type="quorum">(41 delegatov je
                               prisotnih.)</stage> Po evidenci nas je več kot 41.</p>
-                        <p>Kdor je za, naj prosim glasuje! <stage>(35 delegatov glasuje za.)</stage>
-                           Je kdo proti? <stage>(En delegat glasuje proti.)</stage> Se je kdo
-                           vzdržal? <stage>(6 delegatov.)</stage></p>
+                        <p>Kdor je za, naj prosim glasuje! <stage type="vote">(35 delegatov glasuje
+                              za.)</stage> Je kdo proti? <stage type="vote">(En delegat glasuje
+                              proti.)</stage> Se je kdo vzdržal? <stage type="vote">(6
+                              delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlog sklepa sprejet.</p>
                         <p>S tem zaključujem,</p>
                         <p>1. TOČKO DNEVNEGA REDA 15. SEJE.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.19" ana="#PAR.TDR" corresp="#toc.2.17">
                      <sp who="#sp.ToplakLudvik">
                         <p>Mi smo včeraj prešli ostale točke, to je zakon o privatizaciji, agenciji,
                            o skladu, o denacionalizaciji, o javnih glasilih danes. Ostala nam je še
-                           točka</p>
-                        <p>
-                           <title>POBUDE PREDLOGI IN VPRAŠANJA DELEGATOV</title>
-                        </p>
-                        <p>s te 15. seje. Obenem je ostalo odprto vprašanje s 13. seje, točka
-                           dnevnega reda</p>
-                        <p>STANOVANJSKI ZAKON.</p>
+                           točka <title>POBUDE PREDLOGI IN VPRAŠANJA DELEGATOV</title> s te 15.
+                           seje. Obenem je ostalo odprto vprašanje s 13. seje, točka dnevnega reda
+                           STANOVANJSKI ZAKON.</p>
                         <p>Ali se strinjamo, da se povrnemo na 13 sejo, na stanovanjski zakon, pa
                            vprašanja pobude in predlogi na koncu za obe seji skupaj.
-                              <stage>(Da?)</stage> Hvala lepa.</p>
+                              <stage type="debate">(Da?)</stage> Hvala lepa.</p>
                      </sp>
                      <stage type="time">(Seja je bila <time to="1991-03-20T15:00:00"
                            xml:id="stage.t.10">prekinjena ob 15.00 uri</time> in se je <time
@@ -6235,14 +6305,14 @@
                         <p>4. Ob nesklepčnosti zbora mora biti ugotovljena prisotnost delegatov in
                            zapisniško ugotovljena poimenska odsotnost.</p>
                         <p>To je predlog, ki je bil oblikovan na pobudo gospoda Jožeta Smoleta. Želi
-                           mogoče o predlogu sklepa kdo razpravljat? <stage>(Ne.)</stage> Če ne,
-                           prosim, da glasujemo.</p>
-                        <p>Najprej ugotavljamo prisotnost. <stage>(39 prisotnih delegatov.)</stage>
-                           Ugotavljam, da sklep, ki naj bi sankcioniral nesklepčnost ne more biti
-                           sprejet, ker je zbor nesklepčen. Vendar predlagam, da še enkrat poskusimo
-                           z ugotavljanjem prisotnost ker površen pogled na dvorano kaže, da bi
-                           morali biti sklepčni. Prosim, da vsi delegati, ki so prisotni pritisnejo
-                           na sivo tipko.</p>
+                           mogoče o predlogu sklepa kdo razpravljat? <stage type="debate"
+                              >(Ne.)</stage> Če ne, prosim, da glasujemo.</p>
+                        <p>Najprej ugotavljamo prisotnost. <stage type="quorum">(39 prisotnih
+                              delegatov.)</stage> Ugotavljam, da sklep, ki naj bi sankcioniral
+                           nesklepčnost ne more biti sprejet, ker je zbor nesklepčen. Vendar
+                           predlagam, da še enkrat poskusimo z ugotavljanjem prisotnost ker površen
+                           pogled na dvorano kaže, da bi morali biti sklepčni. Prosim, da vsi
+                           delegati, ki so prisotni pritisnejo na sivo tipko.</p>
                      </sp>
                      <sp who="#sp.LavtižarBeblerDarja">
                         <speaker>DARJA LAVTIŽAR-BEBLER:</speaker>
@@ -6289,19 +6359,20 @@
                         <p>Bom zelo kratek. Rad bi samo povedal, da bom glasoval proti temu sklepu
                            zaradi tega, ker samo negativno kaznovalno deluje na nas poslance, ni pa
                            v tem sklepu nobenih motivacij za tiste, ki vztrajajo do konca. Hvala
-                           lepa. <stage>(SMEH)</stage></p>
+                           lepa. <stage type="vocal">(SMEH)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.PeršakAnton">
                         <speaker>PODPREDSEDNIK ANTON PERŠAK:</speaker>
                         <p>Hvala. Ponovno povem samo to, da so sklepi predlagani na pobudo in z
                            enako vsebino, kot jih je predlagal delegat gospod Smole. Želi še kdo
                            razpravljati o tem predlogu sklepov ali pojasniti, kako in zakaj bo tako
-                           glasoval? <stage>(Ne.)</stage> Če ne, dajem ta predlog na glasovanje.
-                           Ugotovili smo, da je 41 prisotnih.</p>
-                        <p>Kdor je za ta sklep, naj prosim glasuje. <stage>(15 delegatov je
-                              za.)</stage> Kdo je proti, naj pritisne sivo tipko. <stage>(10
-                              delegatov je proti.)</stage> Kdor se vzdrži, naj prosim pritisne sivo
-                           tipko. <stage>(17)</stage>.</p>
+                           glasoval? <stage type="debate">(Ne.)</stage> Če ne, dajem ta predlog na
+                           glasovanje. Ugotovili smo, da je 41 prisotnih.</p>
+                        <p>Kdor je za ta sklep, naj prosim glasuje. <stage type="vote">(15 delegatov
+                              je za.)</stage> Kdo je proti, naj pritisne sivo tipko. <stage
+                              type="vote">(10 delegatov je proti.)</stage> Kdor se vzdrži, naj
+                           prosim pritisne sivo tipko. <stage type="vote">(17)</stage>.</p>
                         <p>Ugotavljam, da sklepi, kot jih je predlagal gospod Smole, niso bili
                            sprejeti. S tem ta predlog ni bil sprejet.</p>
                         <p>Prosim, nadaljujemo s točko:</p>

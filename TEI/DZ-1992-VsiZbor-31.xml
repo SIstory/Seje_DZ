@@ -31,8 +31,7 @@
             <pubPlace>https://github.com/SIstory/Seje_DZ/tree/master/</pubPlace>
             <availability status="free">
                <licence>http://creativecommons.org/licenses/by/4.0/</licence>
-               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/"
-                     >Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
+               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
                </p>
             </availability>
             <date when="2016-03-30+02:00"/>
@@ -53,9 +52,7 @@
                      <date>(19. februar 1992)</date>
                   </imprint>
                </monogr>
-               <ref
-                  target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=5D5DB4E1D7A97E32C1257C9E00239100"
-                     >(<date>2016-03-09</date>)</ref>
+               <ref target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=5D5DB4E1D7A97E32C1257C9E00239100">(<date>2016-03-09</date>)</ref>
             </biblStruct>
             <biblFull>
                <titleStmt>
@@ -67,10 +64,10 @@
                   <publisher>Državni zbor Republike Slovenije</publisher>
                   <availability status="free">
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="slv">Avtorske pravice so potekle, delo je v javni
+                              xml:lang="slv">Avtorske pravice so potekle, delo je v javni
                         domeni.</licence>
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="eng">Public Domain Mark 1.0</licence>
+                              xml:lang="eng">Public Domain Mark 1.0</licence>
                   </availability>
                </publicationStmt>
             </biblFull>
@@ -82,7 +79,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -93,6 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2017-01-19+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2017-01-19+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-03-30+02:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -125,9 +134,8 @@
                <item>
                   <list rend="ordered">
                      <head>PRED DNEVNIM REDOM:                                       STRAN</head>
-                     <item n="1">Ugotavljanje prisotnosti poslancev ....................... 1</item>
-                     <item n="2">Določitev dnevnega reda .................................. 1<list
-                           rend="simple">
+                     <item n="1" xml:id="toc.1.1">Ugotavljanje prisotnosti poslancev ....................... 1</item>
+                     <item n="2" xml:id="toc.1.2">Določitev dnevnega reda .................................. 1<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>Gradišar Franc ........................................... 1</item>
                         </list>
@@ -136,8 +144,7 @@
                </item>
                <item>
                   <list rend="ordered">
-                     <item n="3">Volitve predsednika Vlade Republike Slovenije ............ 2<list
-                           rend="simple">
+                     <item n="3" xml:id="toc.2.3">Volitve predsednika Vlade Republike Slovenije ............ 2<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>mag. Marko Voljč ......................................... 2</item>
                            <item>Vitomir Gros ............................................. 9</item>
@@ -198,8 +205,8 @@
                            <item>mag. Marko Voljč ........................................ 85</item>
                         </list>
                      </item>
-                     <item n="4">Seznam govornikov ....................................... II</item>
-                     <item n="5">Priloga: Zapisnik 31. skupne seje vseh zborov Skupščine Republike
+                     <item n="4" xml:id="toc.2.4">Seznam govornikov ....................................... II</item>
+                     <item n="5" xml:id="toc.2.5">Priloga: Zapisnik 31. skupne seje vseh zborov Skupščine Republike
                         Slovenije .................................... III </item>
                   </list>
                </item>
@@ -332,6 +339,8 @@
                   <actor xml:id="sp.TomšičFrance">Tomšič France</actor>
                   .............................................. 43</castItem>
                <castItem>
+                  <actor xml:id="sp.unknown"></actor></castItem>
+               <castItem>
                   <actor xml:id="sp.UrbančičMiloš">Urbančič Miloš</actor>
                   ............................................. 38</castItem>
                <castItem>
@@ -356,21 +365,27 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.VsiZbor">
+         <div xml:id="div.1" ana="#PAR.VsiZbor">
             <head>SKUPNA SEJA VSEH ZBOROV SKUPŠČINE REPUBLIKE SLOVENIJE</head>
-            <div ana="#PAR.Seja" n="31">
+            <div xml:id="div.1.1" ana="#PAR.Seja" n="31">
                <head>31. seja</head>
                <docDate>(<date when="1992-02-19">19. februar 1992</date>)</docDate>
                <timeline origin="#TL.1" unit="s">
                   <when synch="#stage.t.1" xml:id="TL.1" absolute="1992-02-19T10:08:00"/>
-                  <when synch="#stage.t.2" since="#TL.1" absolute="1992-02-19T13:15:00"
-                     interval="11220"/>
+                  <when synch="#stage.t.2"
+                        since="#TL.1"
+                        absolute="1992-02-19T13:15:00"
+                        interval="11220"/>
                   <when synch="#stage.t.3" xml:id="TL.2" absolute="1992-02-19T15:08:00"/>
-                  <when synch="#stage.t.4" since="#TL.2" absolute="1992-02-19T17:55:00"
-                     interval="10020"/>
+                  <when synch="#stage.t.4"
+                        since="#TL.2"
+                        absolute="1992-02-19T17:55:00"
+                        interval="10020"/>
                   <when synch="#stage.t.5" xml:id="TL.3" absolute="1992-02-19T18:45:00"/>
-                  <when synch="#stage.t.6" since="#TL.3" absolute="1992-02-19T18:48:00"
-                     interval="180"/>
+                  <when synch="#stage.t.6"
+                        since="#TL.3"
+                        absolute="1992-02-19T18:48:00"
+                        interval="180"/>
                </timeline>
                <castList>
                   <castItem>
@@ -379,25 +394,25 @@
                         Skupščine Republike Slovenije</role>
                   </castItem>
                </castList>
-               <stage type="time"> Seja se je <time from="1992-02-19T10:08:00" xml:id="stage.t.1"
-                     >pričela ob 10.08 uri</time>.</stage>
-               <div ana="#PAR.PredDnevRed">
-                  <div ana="#PAR.Prisot">
+               <stage type="time"> Seja se je <time from="1992-02-19T10:08:00" xml:id="stage.t.1">pričela ob 10.08 uri</time>.</stage>
+               <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.Prisot" corresp="#toc.1.1">
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
                         <p>Spoštovane poslanke in poslanci! Začenjam 31. skupno sejo vseh zborov
                            Skupščine Republike Slovenije, ki je sklicana na podlagi 116. člena
                            ustave in 134. člena poslovnika Skupščine Republike Slovenije.</p>
                         <p>Najprej ugotavljamo sklepčnost. Prosim poslance Družbenopolitičnega
-                           zbora, da potrdijo svojo navzočnost. <stage>(52 navzočih
-                              poslancev.)</stage> Zbor občin. <stage>(47 navzočih
-                              poslancev.)</stage> Zbor združenega dela. <stage>(55 navzočih
-                              poslancev.)</stage></p>
+                           zbora, da potrdijo svojo navzočnost. <stage type="vote">(52 navzočih
+                              poslancev.)</stage> Zbor občin. <stage type="vote">(47 navzočih
+                              poslancev.)</stage> Zbor združenega dela. <stage type="vote">(55 navzočih
+                              poslancev.)</stage>
+                        </p>
                         <p>Vizualno izgleda, da je ta rezultat bistveno skromnejši, ampak
                            zadostuje.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.DolDnevRed">
+                  <div xml:id="div.1.1.1.2" ana="#PAR.DolDnevRed" corresp="#toc.1.2">
                      <sp who="#sp.BučarFrance">
                         <p>Dnevni red današnje seje je določen že z ustavnimi določili. Na podlagi
                            116. člena ustave in na podlagi predloga poslancev, ki vam je bil
@@ -410,8 +425,8 @@
                      </sp>
                   </div>
                </div>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR">
+               <div xml:id="div.1.1.2" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.2.1" ana="#PAR.TDR" corresp="#toc.2.3">
                      <sp who="#sp.GradišarFranc">
                         <speaker>FRANC GRADIŠAR:</speaker>
                         <p>Spoštovane poslanke in poslanci, predsedstvo skupščine, novinarji in
@@ -826,7 +841,7 @@
                            je predmet današnje seje izključno samo razprava, po 116. členu, o novem
                            mandatarju. Nobene replike ne bo? Preberem vam 112. člen, ki je popolnoma
                            jasen. Vam preberem člen in izrekam opomin. Opomin se izreče delegatu v
-                           zboru <stage>(ploskanje)</stage>, ki govori, čeprav mu predsednik zbora
+                           zboru <stage type="vocal">(ploskanje)</stage>, ki govori, čeprav mu predsednik zbora
                            ni dal besede, ki seže govorniku v besedo - kar ste storil tukaj
                            predlaganemu mandatarju - ali na kakšen drug način krši red na seji in
                            določbe poslovnika. Se pravi, da za enkrat vam izrekam opomin, nadaljnje
@@ -867,14 +882,16 @@
                            izigravanje.</p>
                         <p>Ali sprejmemo ta predlog na dnevni red, predlog, ki sem ga jaz postavil,
                            se pravi glasovanje po 116. členu?</p>
-                        <p>Ugotovimo najprej sklepčnost! Družbenopolitični zbor <stage>(58 navzočih
-                              poslancev.)</stage> Zbor občin. <stage>(60 navzočih
-                              poslancev.)</stage> Zbor združenega dela. <stage>(70 navzočih
+                        <p>Ugotovimo najprej sklepčnost! Družbenopolitični zbor <stage type="vote">(58 navzočih
+                              poslancev.)</stage> Zbor občin. <stage type="vote">(60 navzočih
+                              poslancev.)</stage> Zbor združenega dela. <stage type="vote">(70 navzočih
                               poslancev.)</stage> Zbor je sklepčen.</p>
                         <p>Kdor je za obravnavo dnevnega reda po 116. členu ustave, naj, prosim
-                           glasuje! <stage>(149 poslancev glasuje za.)</stage></p>
-                        <p>Je kdo za razširitev dnevnega reda? <stage>(67 delegatov glasuje
-                              za.)</stage></p>
+                           glasuje! <stage type="vote">(149 poslancev glasuje za.)</stage>
+                        </p>
+                        <p>Je kdo za razširitev dnevnega reda? <stage type="vote">(67 delegatov glasuje
+                              za.)</stage>
+                        </p>
                         <p>Sprejet je predlog, da se postopa po 116. členu. Gospod Zagožen.</p>
                      </sp>
                      <sp who="#sp.ZagoženFranc">
@@ -954,8 +971,13 @@
                            ustavi. Tu je dejansko nastal problem. Predlagam, da se o tem dobi
                            strokovno mnenje oziroma mislim, da ustavna komisija lahko poda svoje
                            mnenje, ampak tu bi morala Komisija za poslovnik povedati svoje stališče.
-                           Kajti v resnici smo v težkem položaju; <stage>(glas iz klopi: Težkem pa
-                              res.)</stage> in ta položaj je težek predvsem zaradi tega, ker ustava
+                           Kajti v resnici smo v težkem položaju; 
+                           </p></sp><sp who="#sp.unknown">
+                           <speaker>(glas iz klopi:</speaker>  
+                              <ab>Težkem pa
+                              res.)</ab>
+                              </sp><sp who="#sp.PregeljŽarko"><p>
+                              in ta položaj je težek predvsem zaradi tega, ker ustava
                            je narejena za državni zbor, mi pa še nismo državni zbor.</p>
                         <p>V resnici lahko vsebinsko razpravo o zaupnici ali ne zaupnici vladi
                            opravimo najprej v zborih. Tako da predlagam, da dobimo odgovor na to
@@ -1103,7 +1125,7 @@
                            to kršitev poslovnega reda, ker moti dnevni red, ki je določen na seji.
                            Absolutno tega ne bom dal na glasovanje, ker pomeni izključno samo poskus
                            zavlačevanja in onemogočanja dnevnega reda te seje.
-                              <stage>(Ploskanje.)</stage> To bo vse protokolirano, brez skrbi, se
+                              <stage type="vocal">(Ploskanje.)</stage> To bo vse protokolirano, brez skrbi, se
                            vodi zapisnik.</p>
                         <p>Torej, če ni več proceduralnih vprašanj, prosim gospod Školč, imate
                            besedo.</p>
@@ -1800,7 +1822,8 @@
                            ciljev, ne pa blokade njenega in parlamentarnega dela.</p>
                         <p>In še, za božjo voljo, ne zamenjujte kometa s soncem, zakaj sonce daje
                            življenje in rast, komet pa samo sveti in še to kratek čas. Hvala lepa.
-                              <stage>(Ploskanje.)</stage></p>
+                              <stage type="vocal">(Ploskanje.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
@@ -2154,7 +2177,7 @@
                            stranke in da so ga podprli "neodvisni" poslanci, katerih imena bi želel,
                            da se objavijo, ker mene marsikakšen volivec kliče, če sem tudi jaz eden
                            izmed podpisnikov. V moji volilni enoti me namreč štejejo, da sem
-                           neodvisen Demosov poslanec <stage>(smeh v klopeh)</stage>, neodvisen
+                           neodvisen Demosov poslanec <stage type="vocal">(smeh v klopeh)</stage>, neodvisen
                            Demosov poslanec. Zavzemam se in se bom vedno zavzemal za ljudskega
                            poslanca in temu modelu sledi tudi nova ustava.</p>
                         <p>Zato sem danes izjemno zadovoljen, da vam lahko sporočim, da je vseh šest
@@ -2210,7 +2233,8 @@
                            ministrstva."</p>
                         <p>Pozivam vse ministre, ki se ne strinjajo z vlado in jo ne podpirajo in ne
                            soodgovarjajo za njo, naj odstopijo. In prosim, da obrazložijo zakaj že
-                           niso odstopili. Hvala lepa. <stage>(Aplavz.)</stage></p>
+                           niso odstopili. Hvala lepa. <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
@@ -2962,9 +2986,7 @@
                            prijavljenih diskutantov, ura je dve, torej jaz bi predlagal eno uro
                            odmora, če ste za to? Ura odmora.</p>
                      </sp>
-                     <stage type="time">(Seja je bila <time to="1992-02-19T13:15:00"
-                           xml:id="stage.t.2">prekinjena ob 13.55 uri</time> in se je <time
-                           from="1992-02-19T15:08:00" xml:id="stage.t.3">nadaljevala ob 15.08
+                     <stage type="time">(Seja je bila <time to="1992-02-19T13:15:00" xml:id="stage.t.2">prekinjena ob 13.55 uri</time> in se je <time from="1992-02-19T15:08:00" xml:id="stage.t.3">nadaljevala ob 15.08
                            uri</time>.)</stage>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
@@ -3194,7 +3216,7 @@
                            zanj. Žena mi je rekla, da je geograf, ona je tudi geografinja in sem se
                            zanesel in videl sem, da je gospoda Malešiča iz Maribora izbral za
                            svojega podpredsednika in sem bil kar zadovoljen in sem takrat glasoval
-                           "za" <stage>(smeh)</stage>, čeprav ga nisem poznal. Zato ne vem torej,
+                           "za" <stage type="vocal">(smeh)</stage>, čeprav ga nisem poznal. Zato ne vem torej,
                            kdo je večja ali manjša neznanka.</p>
                         <p>Da pa se, ker je bilo danes nekajkrat povedano, gredo velike zasluge tej
                            vladi na nekaterih področjih, na nekaterih pa ne. Jaz se za gotovo
@@ -3608,7 +3630,8 @@
                            stran takih in podobnih sporočil. Navedena so tudi imena, lahko si pa
                            posamezni poslanci v kabinetu ogledajo to.</p>
                         <p>Dalje ima besedo tovariš Šinkovec. Saj je socialdemokrat.
-                              <stage>(Smeh.)</stage></p>
+                              <stage type="vocal">(Smeh.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.ŠinkovecMatjaž">
                         <speaker>MATJAŽ ŠINKOVEC:</speaker>
@@ -3684,7 +3707,8 @@
                            po mojem tole: mož in žena imata kopico otrok. Naenkrat se razideta in
                            sta neodvisna, otroci so pa socialni problem. In jaz se bojim, da ne bi
                            Slovenci postali socialni problem. Hvala lepa.
-                              <stage>(Ploskanje.)</stage></p>
+                              <stage type="vocal">(Ploskanje.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
@@ -3836,10 +3860,11 @@
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
-                        <p>Hvala. Besedo ima Andrej Šter. <stage>(Oglasi se iz dvorane, da se
+                        <p>Hvala. Besedo ima Andrej Šter. <stage type="comment">(Oglasi se iz dvorane, da se
                               razpravi odpoveduje.)</stage> Hvala.</p>
                         <p>Besedo ima Lojze Peterle, predsednik vlade.
-                           <stage>(Ploskanje.)</stage></p>
+                           <stage type="vocal">(Ploskanje.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.PeterleAlojz">
                         <speaker>ALOJZ PETERLE:</speaker>
@@ -3848,7 +3873,7 @@
                         <p>Veliko vetra ste mi vzeli iz jader že s temi razpravami doslej, tako da
                            bom skušal maksimalno skrajšati svoj nastop.</p>
                         <p>Začel pa bi vendar takole: "Če bo okroglo, bo lopata, če bo špičasto,
-                           bodo pa vile!" <stage>(V dialektu.)</stage> Tako se spominjam Frana
+                           bodo pa vile!" <stage type="comment">(V dialektu.)</stage> Tako se spominjam Frana
                            Miličinskega z njegovimi Butalci. In če si mora predsednik vlade pomagati
                            s takim virom slovenskega humorja, mislim, da je stvar precej resna.
                            Resna je zato, ker se ponuja tukaj enak model, kakor ga poznamo iz naše,
@@ -4095,7 +4120,8 @@
                            tukaj postavila. Predpostavljam, da bodo ta izhodišča upoštevali tudi
                            poslanci, ko se bodo odločali o tem predlogu.</p>
                         <p>Jaz ne pozivam na vest, ne pozivam na prijateljstvo, na koalicije,
-                           pozivam na zdravo pamet. Hvala za pozornost. <stage>(Aplavz.)</stage></p>
+                           pozivam na zdravo pamet. Hvala za pozornost. <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
@@ -4807,15 +4833,16 @@
                         <p>Stranke so pokrite in sicer Krščanski demokrati na eni strani, SDP na
                            drugi strani in Zeleni v sredi. Približno tako.</p>
                         <p>Preden glasujemo o tem predlogu, ugotovimo navzočnost.</p>
-                        <p>Družbenopolitični zbor prosim <stage>(70 prisotnih)</stage>; Zbor občin
-                              <stage>(65 prisotnih)</stage> in Zbor združenega dela <stage>(65
+                        <p>Družbenopolitični zbor prosim <stage type="quorum">(70 prisotnih)</stage>; Zbor občin
+                              <stage type="quorum">(65 prisotnih)</stage> in Zbor združenega dela <stage type="quorum">(65
                               prisotnih)</stage>.</p>
                         <p>Ugotavljam, da je zbor sklepčen in prosim, da glasujemo o tem predlogu,
                            da se za volilno komisijo imenuje Ciril Kolešnik, Vlasta Sagadin in Peter
                            Starc.</p>
-                        <p>Kdo je prosim za to, naj pritisne na tipko! <stage>(165
-                              poslancev.)</stage> Kdo je proti? <stage>(8 poslancev.)</stage>
-                           Vzdržani? <stage>(15 poslancev.)</stage></p>
+                        <p>Kdo je prosim za to, naj pritisne na tipko! <stage type="vote">(165
+                              poslancev.)</stage> Kdo je proti? <stage type="vote">(8 poslancev.)</stage>
+                           Vzdržani? <stage type="vote">(15 poslancev.)</stage>
+                        </p>
                         <p>Ugotavljam, da je ta predlog izglasovan.</p>
                         <p>Torej glasovali bomo že po ustaljenem načinu. Generalni sekretar bo
                            poskrbel, da bodo na razpolago glasovnice, javljali se boste pri zborih -
@@ -4823,9 +4850,7 @@
                            občrta.</p>
                         <p>Torej komisijo pa prosim, ki smo jo izvoli, da gre v sobo 103.      </p>
                      </sp>
-                     <stage type="time">(Seja je bila <time to="1992-02-19T17:55:00"
-                           xml:id="stage.t.4">prekinjena ob 17.55 uri</time> in se je <time
-                           from="1992-02-19T18:45:00" xml:id="stage.t.5">nadaljevala ob 18.45
+                     <stage type="time">(Seja je bila <time to="1992-02-19T17:55:00" xml:id="stage.t.4">prekinjena ob 17.55 uri</time> in se je <time from="1992-02-19T18:45:00" xml:id="stage.t.5">nadaljevala ob 18.45
                            uri</time>.)</stage>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
@@ -4840,8 +4865,7 @@
                            člena Ustave Republike Slovenije.</p>
                         <p>S tem zaključujem sejo.</p>
                      </sp>
-                     <stage type="time">(Seja je bila <time to="1992-02-19T18:48:00"
-                           xml:id="stage.t.6">zaključena ob 18.48 uri</time>.)</stage>
+                     <stage type="time">(Seja je bila <time to="1992-02-19T18:48:00" xml:id="stage.t.6">zaključena ob 18.48 uri</time>.)</stage>
                      <sp who="#sp.BučarFrance">
                         <speaker>DR. FRANCE BUČAR:</speaker>
                         <p>Jaz sem sejo zaključil, zdaj pa, če so poslanci še voljni poslušati,
@@ -4855,7 +4879,8 @@
                            delovni in uspešni čimprej, ker je marsikaj v zamudi, ker smo v sklepčnem
                            številu in ker ne vidim nobenih ovir, da ne bi sprejeli pokojninskega
                            zakona v prid naših ljudi, predlagam, da opravimo še to.
-                              <stage>(Aplavz.)</stage></p>
+                              <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.BizjakIvan">
                         <speaker>IVAN BIZJAK:</speaker>

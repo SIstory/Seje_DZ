@@ -31,8 +31,7 @@
             <pubPlace>https://github.com/SIstory/Seje_DZ/tree/master/</pubPlace>
             <availability status="free">
                <licence>http://creativecommons.org/licenses/by/4.0/</licence>
-               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/"
-                     >Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
+               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
                </p>
             </availability>
             <date when="2016-03-29+02:00"/>
@@ -53,9 +52,7 @@
                      <date>(24. in 25. junija 1991)</date>
                   </imprint>
                </monogr>
-               <ref
-                  target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=6437C294E73FAF4FC1257C9B00244D85"
-                     >(<date>2016-03-10</date>)</ref>
+               <ref target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=6437C294E73FAF4FC1257C9B00244D85">(<date>2016-03-10</date>)</ref>
             </biblStruct>
             <biblFull>
                <titleStmt>
@@ -67,10 +64,10 @@
                   <publisher>Državni zbor Republike Slovenije</publisher>
                   <availability status="free">
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="slv">Avtorske pravice so potekle, delo je v javni
+                              xml:lang="slv">Avtorske pravice so potekle, delo je v javni
                         domeni.</licence>
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="eng">Public Domain Mark 1.0</licence>
+                              xml:lang="eng">Public Domain Mark 1.0</licence>
                   </availability>
                </publicationStmt>
             </biblFull>
@@ -82,7 +79,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -93,6 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2017-01-16+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2017-01-16+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-03-29+02:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -125,9 +134,8 @@
                <item>
                   <list rend="ordered">
                      <head>PRED DNEVNIM REDOM:                                       STRAN</head>
-                     <item n="1">Ugotavljanje prisotnosti delegatov .................... 1</item>
-                     <item n="2">Določitev dnevnega reda ............................... 1<list
-                           rend="simple">
+                     <item n="1" xml:id="toc.1.1">Ugotavljanje prisotnosti delegatov .................... 1</item>
+                     <item n="2" xml:id="toc.1.2">Določitev dnevnega reda ............................... 1<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>dr. Lev Kreft ......................................... 1</item>
                            <item>Jože Smole ............................................ 2</item>
@@ -139,7 +147,7 @@
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED:</head>
-                     <item n="1">Obrazložitev k ustavnemu aktu o samostojnosti in neodvisnosti
+                     <item n="1" xml:id="toc.2.1">Obrazložitev k ustavnemu aktu o samostojnosti in neodvisnosti
                         Republike Slovenije in k ustavnemu akonu za izvedbo ustavnega akta o
                         samostojnosti in neodvisnosti Republike Slovenije ......................
                            4<list rend="simple">
@@ -147,13 +155,12 @@
                            <item>dr. France Bučar ...................................... 4</item>
                         </list>
                      </item>
-                     <item n="2">Obrazložitev deklaracije ob neodvisnosti .............. 5<list
-                           rend="simple">
+                     <item n="2" xml:id="toc.2.2">Obrazložitev deklaracije ob neodvisnosti .............. 5<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>Miran Potrč ........................................... 5</item>
                         </list>
                      </item>
-                     <item n="3">Razprava o ustavnem aktu o samostojnosti in neodvisnosti Republike
+                     <item n="3" xml:id="toc.2.3">Razprava o ustavnem aktu o samostojnosti in neodvisnosti Republike
                         Slovenije ...................... 7<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Peter Bekeš ........................................... 7</item>
@@ -163,7 +170,7 @@
                            <item>Milan Aksentijević .................................... 9</item>
                         </list>
                      </item>
-                     <item n="4">Razprava o ustavnem zakonu o izvedbi ustavnega akta o samostojnosti
+                     <item n="4" xml:id="toc.2.4">Razprava o ustavnem zakonu o izvedbi ustavnega akta o samostojnosti
                         in neodvisnosti Republike Slovenije
                         ............................................ 10<list rend="simple">
                            <head>GOVORNIKI:</head>
@@ -174,8 +181,7 @@
                            <item>Marjan Krajnc ........................................ 16</item>
                         </list>
                      </item>
-                     <item n="5">Razprava o deklaraciji ob neodvisnosti ............... 17<list
-                           rend="simple">
+                     <item n="5" xml:id="toc.2.5">Razprava o deklaraciji ob neodvisnosti ............... 17<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>mag. Matjaž Šinkovec ................................. 17</item>
                            <item>Jožef Školč .......................................... 18</item>
@@ -183,19 +189,18 @@
                         </list>
                      </item>
                      <note>NADALJEVANJE SEJE 25. JUNIJA 1991</note>
-                     <item n="6">Ekspoze predsednika Predsedstva Republike Slovenije .. 22<list
-                           rend="simple">
+                     <item n="6" xml:id="toc.2.6">Ekspoze predsednika Predsedstva Republike Slovenije .. 22<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>Milan Kučan .......................................... 22</item>
                         </list>
                      </item>
-                     <item n="7">Ekspoze predsednika Izvršnega sveta Skupščine Republike Slovenije
+                     <item n="7" xml:id="toc.2.7">Ekspoze predsednika Izvršnega sveta Skupščine Republike Slovenije
                         .................................. 32<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>Alojz Peterle ........................................ 32</item>
                         </list>
                      </item>
-                     <item n="8">Nadaljevanje obravnave ustavnega akta o samostojnosti in
+                     <item n="8" xml:id="toc.2.8">Nadaljevanje obravnave ustavnega akta o samostojnosti in
                         neodvisnosti Republike Slovenije .... 39<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Vitodrag Pukl ........................................ 39</item>
@@ -203,9 +208,9 @@
                            <item>Peter Bekeš .......................................... 42</item>
                         </list>
                      </item>
-                     <item n="9">Ugotavljanje prisotnosti delegatov ................... 41</item>
-                     <item n="10">Razširitev dnevnega reda ............................. 42</item>
-                     <item n="11">Nadaljevanje obravnave ustavnega zakona za izvedbo temeljne
+                     <item n="9" xml:id="toc.2.9">Ugotavljanje prisotnosti delegatov ................... 41</item>
+                     <item n="10" xml:id="toc.2.10">Razširitev dnevnega reda ............................. 42</item>
+                     <item n="11" xml:id="toc.2.11">Nadaljevanje obravnave ustavnega zakona za izvedbo temeljne
                         ustavne listine o samostojnosti in neodvisnosti Republike Slovenije
                         .................. 42<list rend="simple">
                            <head>GOVORNIKI:</head>
@@ -218,7 +223,7 @@
                            <item>dr. Ciril Ribičič .................................... 50</item>
                         </list>
                      </item>
-                     <item n="12">Nadaljevanje obravnave predloga deklaracije ob neodvisnosti
+                     <item n="12" xml:id="toc.2.12">Nadaljevanje obravnave predloga deklaracije ob neodvisnosti
                         ...................................... 50<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Anton Peršak ......................................... 50</item>
@@ -230,20 +235,20 @@
                            <item>Miran Potrč .......................................... 56</item>
                         </list>
                      </item>
-                     <item n="13">Glasovanje o odloku o razglasitvi temeljne ustavne listine o
+                     <item n="13" xml:id="toc.2.13">Glasovanje o odloku o razglasitvi temeljne ustavne listine o
                         samostojnosti in neodvisnosti Republike Slovenije
                         ............................................ 57</item>
-                     <item n="14">Glasovanje o odloku o razglasitvi ustavnega zakona za izvedbo
+                     <item n="14" xml:id="toc.2.14">Glasovanje o odloku o razglasitvi ustavnega zakona za izvedbo
                         temeljne ustavne listine o samostojnosti in neodvisnosti Republike Slovenije
                         .................. 57</item>
-                     <item n="15">Glasovanje o odloku o razglasitvi ustavnega amandmaja k Ustavi
+                     <item n="15" xml:id="toc.2.15">Glasovanje o odloku o razglasitvi ustavnega amandmaja k Ustavi
                         Republike Slovenije ............... 58<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>dr. France Bučar ..................................... 58</item>
                         </list>
                      </item>
-                     <item n="16">Seznam  govornikov ................................... II</item>
-                     <item n="17">Priloga: Zapisnik seje .............................. III</item>
+                     <item n="16" xml:id="toc.2.16">Seznam  govornikov ................................... II</item>
+                     <item n="17" xml:id="toc.2.17">Priloga: Zapisnik seje .............................. III</item>
                   </list>
                </item>
             </list>
@@ -308,19 +313,23 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.VsiZbor">
+         <div xml:id="div.1" ana="#PAR.VsiZbor">
             <head>SKUPNA SEJA VSEH ZBOROV SKUPŠČINE REPUBLIKE SLOVENIJE</head>
-            <div ana="#PAR.Seja" n="21">
+            <div xml:id="div.1.1" ana="#PAR.Seja" n="21">
                <head>21. seja</head>
                <docDate>(<date when="1991-06-24">24.</date> in <date when="1991-06-25">25. junija
                      1991</date>)</docDate>
                <timeline origin="#TL.1" unit="s">
                   <when synch="#stage.t.1" xml:id="TL.1" absolute="1991-06-24T18:12:00"/>
-                  <when synch="#stage.t.2" since="#TL.1" absolute="1991-06-24T19:55:00"
-                     interval="6180"/>
+                  <when synch="#stage.t.2"
+                        since="#TL.1"
+                        absolute="1991-06-24T19:55:00"
+                        interval="6180"/>
                   <when synch="#stage.t.3" xml:id="TL.2" absolute="1991-06-25T18:00:00"/>
-                  <when synch="#stage.t.4" since="#TL.2" absolute="1991-06-25T20:54:00"
-                     interval="10440"/>
+                  <when synch="#stage.t.4"
+                        since="#TL.2"
+                        absolute="1991-06-25T20:54:00"
+                        interval="10440"/>
                </timeline>
                <castList>
                   <castItem>
@@ -328,25 +337,27 @@
                         Bučar</actor>, <role>predsednik Skupščine Republike
                      Slovenije</role>.</castItem>
                </castList>
-               <stage type="time">Seja se je <time from="1991-06-24T18:12:00" xml:id="stage.t.1"
-                     >pričela ob 18,12 uri</time>.</stage>
-               <div ana="#PAR.PredDnevRed">
-                  <div ana="#PAR.Prisot">
+               <stage type="time">Seja se je <time from="1991-06-24T18:12:00" xml:id="stage.t.1">pričela ob 18,12 uri</time>.</stage>
+               <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.Prisot" corresp="#toc.1.1">
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
                         <p>Začenjam 21. skupno sejo vseh zborov Skupščine Republike Slovenije, ki je
                            sklicana na podlagi 364. člena ustave, 134. člena poslovnika, predvsem pa
                            349. člena ustave, ki govori o pristojnosti skupne seje vseh zborov.
                            Najprej bomo, prosim, ugotovili sklepčnost.</p>
-                        <p>Prosim, delegate Družbenopolitičnega zbora ! <stage>(65 prisotnih
-                              delegatov.)</stage></p>
-                        <p>Zbor občin ! <stage>(66 prisotnih delegatov.)</stage></p>
-                        <p>Zbor združenega dela. <stage>(70 prisotnih delegatov.)</stage></p>
+                        <p>Prosim, delegate Družbenopolitičnega zbora ! <stage type="quorum">(65 prisotnih
+                              delegatov.)</stage>
+                        </p>
+                        <p>Zbor občin ! <stage type="quorum">(66 prisotnih delegatov.)</stage>
+                        </p>
+                        <p>Zbor združenega dela. <stage type="quorum">(70 prisotnih delegatov.)</stage>
+                        </p>
                         <p>Skupno je navzočih 202 delegatov. Ker je navzoč potrebni kvorum, lahko
                            začnemo s sejo.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.DolDnevRed">
+                  <div xml:id="div.1.1.1.2" ana="#PAR.DolDnevRed" corresp="#toc.1.2">
                      <sp who="#sp.BučarFrance">
                         <p>Predlagam naslednji dnevni red:</p>
                         <p>1. Obravnava ustavnega akta o samostojnosti in neodvisnosti Republike
@@ -357,7 +368,7 @@
                         <p>In eventualno tudi izvolitev delegacije Skupščine Republike Slovenije za
                            pogajanja s Skupščino SFRJ. Gradiva ste že prejeli. po prvem odstavku 24.
                            člena Pravilnika o ravnanju z gradivi zaupne narave se smejo gradiva, ki
-                           so državna tajnost, obravnavati na sejah zborov ali <stage>(nemir v
+                           so državna tajnost, obravnavati na sejah zborov ali <stage type="incident">(nemir v
                               dvorani)</stage>. po prvem odstavku 24. člena Pravilnika  o ravnanju z
                            gradivi zaupne narave se smejo gradiva, ki so državna tajnost,
                            obravnavati na sejah zborov ali na sejah delovnih teles samo brez
@@ -475,9 +486,10 @@
                            tako, če pa smatrate, da je že sedaj potrebno, da  že sedaj startamo z
                            javno sejo, jaz seveda osebno nimam nič proti, dajem predlog na
                            glasovanje.</p>
-                        <p>Kdo je za to, da je seja javna, prosim? <stage>(126 delegatov.)</stage>
-                           Kdo je prosim proti? <stage>(29 delegatov.)</stage>, vzdržanih?
-                              <stage>(57 delegatov.)</stage>.<stage>( Aplavz.)</stage></p>
+                        <p>Kdo je za to, da je seja javna, prosim? <stage type="vote">(126 delegatov.)</stage>
+                           Kdo je prosim proti? <stage type="vote">(29 delegatov.)</stage>, vzdržanih?
+                              <stage type="vote">(57 delegatov.)</stage>.<stage type="vocal">( Aplavz.)</stage>
+                        </p>
                         <p>Predlog je sprejet. Gradivo seveda, mislim, stvar je javna, seja je javna
                            in gradivo izgubi to oznako. Mislim, da je treba brez ploskanja, brez
                            emocionalnih izlivov.</p>
@@ -490,13 +502,15 @@
                             slovensko - hrvaški meji,  kar se posebej nanaša na postavljanje
                            kontrolnih točk na meji med slovensko in hrvaško Istro.</p>
                         <p>Prosim, da o tem predlogu glasujemo. Kdor je, prosim, za to razširitev?
-                              <stage>(86 delegatov.)</stage> Kdo je prosim proti? <stage>(102
-                              delegata.)</stage> Vzdržani? <stage>(28 delegatov.)</stage></p>
+                              <stage type="vote">(86 delegatov.)</stage> Kdo je prosim proti? <stage type="vote">(102
+                              delegata.)</stage> Vzdržani? <stage type="vote">(28 delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da predlog ni dobil potrebne podpore.</p>
                         <p>Potem dajem tako postavljeni dnevni red na glasovanje.</p>
-                        <p>Kdo je, prosim, za tak dnevni red ? <stage>(205 delegatov.)</stage> Kdo
-                           je proti ? <stage>(3 delegati.)</stage> Vzdržani ? <stage>(10
-                              delegatov.)</stage></p>
+                        <p>Kdo je, prosim, za tak dnevni red ? <stage type="vote">(205 delegatov.)</stage> Kdo
+                           je proti ? <stage type="vote">(3 delegati.)</stage> Vzdržani ? <stage type="vote">(10
+                              delegatov.)</stage>
+                        </p>
                         <p>Torej smatram, čeprav nisem dal posebej na glasovanje, da bi v današnjem
                            delu seje opravili najprej obravnavo in jo tudi po možnosti zaključili,
                            jutri bi pa prišli samo na sprejemanje in poleg tega bi se po dogovorih s
@@ -511,16 +525,15 @@
                      </sp>
                   </div>
                </div>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR">
+               <div xml:id="div.1.1.2" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.2.1" ana="#PAR.TDR" corresp="#toc.2.1">
                      <sp who="#sp.BučarFrance">
                         <p>Mislim, da se  s tem strinjamo! Hvala lepa. Potem bi najprej jaz mogoče
                            kot predsednik Ustavne komisije, ki je predlagatelj dveh aktov, se</p>
                         <p>PRAVI <title>AKTA O SAMOSTOJNOSTI IN NEODVISNOSTI REPUBLIKE SLOVENIJE IN
                               USTAVNEGA ZAKONA ZA IZVEDBO USTAVNEGA AKTA O SAMOSTOJNOSTI IN
                               NEODVISNOSTI REPUBLIKE SLOVENIJE</title>
-                        </p>
-                        <p>podal kratko obrazložitev kot uvod v razpravo.</p>
+                           podal kratko obrazložitev kot uvod v razpravo.</p>
                         <p>Torej prvi akt, se pravi ustavni akt o samostojnosti in neodvisnosti
                            Republike Slovenije v bistvu predstavlja tisti temeljni akt, s katerim mi
                            uveljavimo svojo osamosvojitev, na podlagi česar postane Republika
@@ -541,7 +554,7 @@
                            izključno za izvedbeni akt.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.2" ana="#PAR.TDR" corresp="#toc.2.2">
                      <sp who="#sp.BučarFrance">
                         <p>Opozarjam na to, da je ta akt v bistvu v pravni obliki statuirana vsebina
                            tistega, kar je vsebovano v deklaraciji, ki jo sprejemamo ob proglasitvi
@@ -554,10 +567,9 @@
                            presojo tega, kar je v tem zakonu. Za sestavo deklaracije, ki jo formalno
                            ne predlaga Ustavna komisija, pač pa klubi poslancev, je bila oblikovana
                            posebna komisija in bi jaz prosil, da bi mogoče gospod Potrč, ki je v tej
-                           komisiji sodeloval, obrazložil glavna izhodišča</p>
-                        <p>
-                           <title>DEKLARACIJE OB NEODVISNOSTI</title>,</p>
-                        <p>preden bi razpravljali o teh dveh aktih, ker mislim, da je to vendarle
+                           komisiji sodeloval, obrazložil glavna izhodišča
+                           <title>DEKLARACIJE OB NEODVISNOSTI</title>,
+                           preden bi razpravljali o teh dveh aktih, ker mislim, da je to vendarle
                            politična osnova za to pravno formulacijo, če se g. Potrč s tem
                            strinja.</p>
                      </sp>
@@ -673,17 +685,16 @@
                            pripravil boljše. Hvala.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.3" ana="#PAR.TDR" corresp="#toc.2.3">
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
                         <p>Hvala lepa. Mislim, da je bilo kar v redu. Na podlagi tega zdaj lahko
                            preidemo na samo razpravo in kar odpiram razpravo. Najprej o prvem aktu,
-                           to se pravi razpravo</p>
-                        <p>
+                           to se pravi razpravo
                            <title>O USTAVNEM AKTU O SAMOSTOJNOSTI IN NEODVISNOSTI REPUBLIKE
                               SLOVENIJE</title>.</p>
                         <p>Tukaj je že prijavljen diskutant Mile Šetinc. Ali želi o tem
-                              <stage>(.......)</stage> Prosim? Dobro, potem zdaj odpiram najprej
+                              <stage type="gap">(.......)</stage> Prosim? Dobro, potem zdaj odpiram najprej
                            razpravo o ustavnem aktivu, se pravi temeljnem, zahteva pravzaprav samo
                            odločitev za ali proti. Vse ostalo je pravzaprav pravno-tehnična
                            izpeljava tega osnovnega dejstva. Prosim, gospod Bekeš.</p>
@@ -830,12 +841,12 @@
                            Hvala.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.4" ana="#PAR.TDR" corresp="#toc.2.4">
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
                         <p>Hvala lepa. Želi še kdo razpravljati o tem prvem aktu ? V kolikor ne
-                           želi, potem razpravo o tem  aktu zaključujem in prehajamo</p>
-                        <p>NA <title>RAZPRAVO O IZVEDBENEM ZAKONU, TO SE PRAVI NA USTAVNI ZAKON ZA
+                           želi, potem razpravo o tem  aktu zaključujem in prehajamo
+                           <title>NA RAZPRAVO O IZVEDBENEM ZAKONU, TO SE PRAVI NA USTAVNI ZAKON ZA
                               IZVEDBO USTAVNEGA AKTA O SAMOSTOJNOSTI IN NEODVISNOSTI REPUBLIKE
                               SLOVENIJE</title>.</p>
                         <p>K tej temi se je že prijavil poslanec Mile Šetinc.</p>
@@ -1126,11 +1137,11 @@
                            nekakšen mandat, da sodeluje v delu Predsedstva SFRJ. Jaz se tudi
                            strinjam z njim, da pri njem postopamo enako, kot v prvih treh odstavkih
                            in da tudi njemu vzamemo mandat. Torej sva tukaj približno enakega
-                           mišljenja. <stage>(Smeh iz dvorane)</stage>. Ne strinjam pa se z g.
+                           mišljenja. <stage type="vocal">(Smeh iz dvorane)</stage>. Ne strinjam pa se z g.
                            Smoletom glede prvega odstavka 3. člena in glede 5. člena, ko pravi, da
                            mednarodna javnost ne bo priznala Republiške uprave za zračno plovbo.
                            Seveda jo bo morala priznati, sicer bodo morali avioni daleč okoli
-                           voziti, ne pa preko Slovenije. <stage>(Smeh iz dvorane)</stage>. Pri 5.
+                           voziti, ne pa preko Slovenije. <stage type="vocal">(Smeh iz dvorane)</stage>. Pri 5.
                            členu bi še predlagal, da bi, ko naštevamo te: republiško, carinsko
                            upravo itn, da bi navedli na koncu še, in ostale službe, kajti nismo
                            navedli vseh služb, ki bodo udarjene s tem členom. Ne strinjam se tudi z
@@ -1185,12 +1196,12 @@
                            kontrolo, torej tisto v Mariboru, Ljubljani in Portorožu. Hvala lepa.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.5" ana="#PAR.TDR" corresp="#toc.2.5">
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
                         <p>Hvala lepa. V kolikor ni več prijavljenih razpravljalcev, zaključujem
-                           razpravo in prehajamo</p>
-                        <p>NA <title>RAZPRAVO O DEKLARACIJI K 3. TOČKI</title>.</p>
+                           razpravo in prehajamo
+                           <title>NA RAZPRAVO O DEKLARACIJI K 3. TOČKI</title>.</p>
                         <p>Prvi diskutant je Matjaž Šinkovec. Prosim.</p>
                      </sp>
                      <sp who="#sp.ŠinkovecMatjaž">
@@ -1437,9 +1448,7 @@
                            kolikor se strinjate.</p>
                      </sp>
 
-                     <stage type="time">(SEJA JE BILA <time to="1991-06-24T19:55:00"
-                           xml:id="stage.t.2">PREKINJENA OB 19,55 URI</time> IN SE JE <time
-                           from="1991-06-25T18:00:00" xml:id="stage.t.3">NADALJEVALA 25. JUNIJA 1991
+                     <stage type="time">(SEJA JE BILA <time to="1991-06-24T19:55:00" xml:id="stage.t.2">PREKINJENA OB 19,55 URI</time> IN SE JE <time from="1991-06-25T18:00:00" xml:id="stage.t.3">NADALJEVALA 25. JUNIJA 1991
                            OB 18,00 URI</time>.)</stage>
 
                      <sp who="#sp.BučarFrance">
@@ -1448,7 +1457,7 @@
                            Predsedstva, gospoda Kučana, in ostale člane Predsedstva.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.6" ana="#PAR.TDR" corresp="#toc.2.6">
                      <sp who="#sp.BučarFrance">
                         <p>Nadaljujemo z včeraj prekinjeno sejo, kjer smo opravili razpravo o
                            predmetih, ki so bili na dnevnem redu, tako da smo si danes pustili čas
@@ -1671,7 +1680,8 @@
                            podlagi odloči tudi glede oblike in vsebine morebitnega prihodnjega
                            skupnega življenja. S tem predlogom nismo želeli nikomur ničesar ne
                            zapovedovati in ne prepovedovati. Ne želimo pa pristati na to, da bi zdaj
-                           kdo to počel z nami. <stage>(Ploskanje.)</stage></p>
+                           kdo to počel z nami. <stage type="vocal">(Ploskanje.)</stage>
+                        </p>
                         <p>Spoštovane poslanke in poslanci!</p>
                         <p>Danes izolirano ne more živeti nobena država. Perspektiva slehernega
                            naroda in države je v procesih prostovoljnega povezovanja in sodelovanja.
@@ -1768,7 +1778,8 @@
                            okolja;</p>
                         <p>- da te države članice skupnosti lahko sklenejo zvezo tudi z drugimi
                            državami Evrope in imajo pravico sklepati bilateralne in multilateralne
-                           sporazume. <stage>(Aplavz.)</stage></p>
+                           sporazume. <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                         <p>Spoštovane poslanke in poslanci!</p>
                         <p>Na podlagi teh načel in na temelju ugotovljenih interesov za politično in
                            gospodarsko sodelovanje ter sodelovanje na področju obrambe in
@@ -1804,7 +1815,8 @@
                            da že danes Skupščina Republike Slovenije prizna samostojno in suvereno
                            Republiko Hrvaško, ki prav tako, na današnjem zasedanju Sabora,
                            predvideva priznanje samostojne, neodvisne in suverene države Republike
-                           Slovenije. <stage>(Aplavz.)</stage></p>
+                           Slovenije. <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                         <p>Spoštovane poslanke in poslanci!</p>
                         <p>Iz načel mednarodnega prava in še posebej Helsinškega dokumenta sledi
                            naša zaveza, da smo pripravljeni na pogajanja in sporazumno ureditev
@@ -1916,15 +1928,17 @@
                            včasih je potreben tudi izjemen pogum. Dvignite zato s to zavestjo,
                            spoštovane poslanke in poslanci, roko za predlagane odločitve in
                            prevzemite čast in odgovornost, ki vam jo je naložila zgodovina. Hvala
-                           lepa. <stage>(Aplavz.)</stage></p>
+                           lepa. <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.7" ana="#PAR.TDR" corresp="#toc.2.7">
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
                         <p>Hvala lepa, gospod predsednik. Besedo dajem gospodu Peterletu,
                               <title>predsedniku Izvršnega sveta</title>. Prosim.
-                              <stage>(Ploskanje.)</stage></p>
+                              <stage type="vocal">(Ploskanje.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.PeterleAlojz">
                         <speaker>LOJZE PETERLE:</speaker>
@@ -2237,7 +2251,8 @@
                         <p>Spoštovane poslanke, spoštovani poslanci, cenjeni gostje.</p>
                         <p>Danes potrjujemo v slovenski skupščini plebiscitarno voljo državljanov
                            Slovenije z rojstvom suverene države Republike Slovenije.
-                              <stage>(Aplavz.)</stage></p>
+                              <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                         <p>To počnemo dostojanstveno, pokončno, demokratično, odločno in
                            prijateljsko do vseh, ki jih vodijo dobri nameni. Odločamo se za več
                            svobode, za tako ureditev in status te države, da v prihodnje nikomur ne
@@ -2245,17 +2260,18 @@
                            absolutna vrednota, je pa za nas nujen okvir za normalno ustvarjanje v
                            družbi evropskih narodov.</p>
                         <p>Nikamor se ne bomo preselili in nikomur ne bomo prodali duše.
-                              <stage>(Aplavz.)</stage> Prebivali bomo naprej na tem izrednem kosu
+                              <stage type="vocal">(Aplavz.)</stage> Prebivali bomo naprej na tem izrednem kosu
                            Evrope, zvesti svoji resnici, vrednotam in izkušnjam, ki jih zaznamuje
                            tudi naša lega, recimo poenostavljeno - med vzhodom in zahodom. Ne silimo
                            v Evropo, ampak smo za to, da se z manjkajočimi prvinami Evropa vrne k
                            nam, ki smo po geografiji, zgodovini in kulturi evropski pojem.
-                              <stage>(Aplavz.)</stage> Naš status se v tem času spreminja. Naš
+                              <stage type="vocal">(Aplavz.)</stage> Naš status se v tem času spreminja. Naš
                            obrobni položaj v nekdanji realsocialistični puščavi pridobiva enega od
                            osrednjih evropskih pomenov na križišču kulturnih, človeških, blagovnih
                            in drugih tokov med pomembnimi evropskimi pokrajinami.</p>
                         <p>Zavedamo se, da z današnjim dejanjem opravljamo samo en, vendar bistven
-                           korak. Sedaj imamo rojstni list. <stage>(Aplavz.)</stage></p>
+                           korak. Sedaj imamo rojstni list. <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                         <p>Slovenska vlada se v okviru svojih pristojnosti pripravlja na delov novem
                            statusu, pri čemer bo njena glavna skrb posvečena gospodarski in socialni
                            problematiki, ki nas čaka pri prehajanju v nov družbeni in gospodarski
@@ -2267,7 +2283,8 @@
                            življenje. Za te dokaze me ni strah, ko se srečujem z razvijajočo se
                            podjetnostjo na vseh področjih in z voljo naših ljudi, da bi sproščeno
                            ustvarjali, čeprav motijo to sliko tudi kakšni prodajalci črnine. Pot
-                           drži samo naprej. <stage>(Aplavz.)</stage></p>
+                           drži samo naprej. <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                         <p>Spoštovani zbrani! Dovolite ob koncu še besedo zahvale vsem, ki so
                            pomagali, da je lahko vlada v sorazmerno kratkem času ponudila v
                            odločanje Skupščini vse, za osamosvajanje bistvene odločitve. Ko smo se
@@ -2275,10 +2292,10 @@
                            osamosvojitev Slovenije samo kot skupno podjetje. Rad bi ugotovil, da smo
                            bili uspešni. Dobro bi bilo, če bi na tak način mlada slovenska država
                            storila tudi svoje prve korake.</p>
-                        <p>NAJ ŽIVI SVOBODNA DRŽAVA SLOVENIJA. <stage>(Aplavz.)</stage>.</p>
+                        <p>NAJ ŽIVI SVOBODNA DRŽAVA SLOVENIJA. <stage type="vocal">(Aplavz.)</stage>.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.8" ana="#PAR.TDR" corresp="#toc.2.8">
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
                         <p>Spoštovani poslanci! Včeraj smo na skupni seji, ki je bila namenjena
@@ -2406,12 +2423,12 @@
                            sprememb, ki niso tako bistvene, so bile vse sprejete po temeljiti
                            razpravi na ustavni komisiji, zato mislim, da ni nobene potrebe za
                            kakršnokoli prekinjanje te seje, niti ni nikakršne potrebe, da v
-                           čemerkoli spreminjamo predlagani vozni red. <stage>(Ploskanje.)</stage>
+                           čemerkoli spreminjamo predlagani vozni red. <stage type="vocal">(Ploskanje.)</stage>
                            Lahko pa, če zbor želi oz. če predlagatelj želi, dam to stvar na
                            glasovanje in da zbor, če se s tem strinja, to sprejme.</p>
                         <p>Dobro. Najprej sedaj ugotovimo navzočnost!</p>
-                        <p>Družbenopolitični zbor? <stage>(68)</stage> Zbor občin?
-                              <stage>(62)</stage> Zbor združenega dela? <stage>(64)</stage>.</p>
+                        <p>Družbenopolitični zbor? <stage type="quorum">(68)</stage> Zbor občin?
+                              <stage type="quorum">(62)</stage> Zbor združenega dela? <stage type="quorum">(64)</stage>.</p>
                         <p>Ugotavljam, da je podana sklepčnost in dajem najprej na glasovanje ta
                            predlog, da spremenimo dnevni red, kot je predlagal gospod Bekeš.
                            Dobro.</p>
@@ -2429,18 +2446,19 @@
                            konstitutivna odločitev.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.9" ana="#PAR.TDR" corresp="#toc.2.9">
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
                         <p>Hvala lepa. Torej, dajem predlog za spremembo dnevnega reda na
                            glasovanje.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.10" ana="#PAR.TDR" corresp="#toc.2.10">
                      <sp who="#sp.BučarFrance">
-                        <p>Kdo je prosim za predlog gospoda Bekeša? <stage>(43 delegatov.)</stage>
-                           Proti? <stage>(126 delegatov.)</stage> Vzdržani? <stage>(28
-                              delegatov.)</stage></p>
+                        <p>Kdo je prosim za predlog gospoda Bekeša? <stage type="vote">(43 delegatov.)</stage>
+                           Proti? <stage type="vote">(126 delegatov.)</stage> Vzdržani? <stage type="vote">(28
+                              delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da predlog ni dobil potrebne večine, zato ni sprejet.</p>
                         <p>Torej, potem prehajamo na glasovanje o tem aktu, ki se imenuje temeljna
                            ustavna listina o, ja prosim. Ne morete se javiti za besedo, ker vi boste
@@ -2448,19 +2466,22 @@
                            ste dali amandmaje k ustavnemu izvedbenemu zakonu, k temu niste dali
                            amandmajev. Gremo na glasovanje prosim.</p>
                         <p>Torej glasujemo o predlogu tega ustavnega akta.</p>
-                        <p>Kdo je prosim za? <stage>(180 delegatov.)</stage></p>
-                        <p><stage>(Ploskanje)</stage>.</p>
-                        <p>Proti? <stage>(2 delegata.)</stage> Vzdržani? <stage>(12
-                              delegatov.)</stage></p>
+                        <p>Kdo je prosim za? <stage type="vote">(180 delegatov.)</stage>
+                        </p>
+                        <p>
+                           <stage type="vocal">(Ploskanje)</stage>.</p>
+                        <p>Proti? <stage type="vote">(2 delegata.)</stage> Vzdržani? <stage type="vote">(12
+                              delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Temeljna ustavna listina o samostojnosti neodvisnosti
                            Republike Slovenije sprejeta s potrebno 2/3 večino glasov.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.11" ana="#PAR.TDR" corresp="#toc.2.11">
                      <sp who="#sp.BučarFrance">
                         <p>Zdaj bi prosil gospoda Pukla, da da obrazložitev glede stališč Ustavne
-                           komisije</p>
-                        <p>O <title>IZVEDBENEM AKTU, TO JE USTAVNEGA ZAKONA ZA IZVEDBO TEMELJNE
+                           komisije
+                            <title>O IZVEDBENEM AKTU, TO JE USTAVNEGA ZAKONA ZA IZVEDBO TEMELJNE
                               USTAVNE LISTINE O SAMOSTOJNOSTI IN NEODVISNOSTI REPUBLIKE
                               SLOVENIJE</title>.</p>
                      </sp>
@@ -2613,8 +2634,8 @@
                            glasovanje. Se pravi, najprej gre za glasovanje o novi dikciji 7. člena,
                            kot ga je prebral gospod Smole.</p>
                         <p>Kdo je za ta amandma, ja prosim? Imajo, imajo. Kdo je za ta amandma?
-                              <stage>(29 delegatov.)</stage> Proti? <stage>(126 delegatov.)</stage>
-                           Vzdržani? <stage>(32 delegatov.)</stage>.</p>
+                              <stage type="vote">(29 delegatov.)</stage> Proti? <stage type="vote">(126 delegatov.)</stage>
+                           Vzdržani? <stage type="vote">(32 delegatov.)</stage>.</p>
                         <p>Ugotavljam, da predlog ni bil sprejet. Potem gre za vaš predlog, ki je v
                            vašem pismu naveden na prvi strani pod točko 3. se pravi, da se Republika
                            zavzema za oblikovanje skupnosti suverenih držav Jugoslavije. Izraža
@@ -2625,23 +2646,24 @@
                            Dajem ta amandma gospoda Smoleta na glasovanje.</p>
                         <p>Prosim? Ne, vi ga lahko obrazložite k celotnemu aktu. Tam boste imeli
                            priliko.</p>
-                        <p>Prosim, kdo je za? <stage>(33 delegatov.)</stage> Proti? <stage>(126
-                              delegatov.)</stage> Vzdržani? <stage>(31 delegatov.)</stage>.</p>
+                        <p>Prosim, kdo je za? <stage type="vote">(33 delegatov.)</stage> Proti? <stage type="vote">(126
+                              delegatov.)</stage> Vzdržani? <stage type="vote">(31 delegatov.)</stage>.</p>
                         <p>Tudi ta predlog ni bil sprejet.</p>
                         <p>Predlog pod točko 4. Doda se nov člen: "Republika Slovenija ne bo
                            vzpostavila klasične državne meje s sosednjo Republiko Hrvaško. Ta meja
                            bo samo administrativna in bo zagotovljen svoboden neomejen prehod ljudi
                            in blaga. Dajem ta amandma na glasovanje.</p>
-                        <p>Kdo je za prosim? <stage>(50 delegatov.)</stage> Proti? <stage>(115
-                              delegatov.)</stage> Vzdržani? <stage>(33 delegatov.)</stage>.</p>
+                        <p>Kdo je za prosim? <stage type="vote">(50 delegatov.)</stage> Proti? <stage type="vote">(115
+                              delegatov.)</stage> Vzdržani? <stage type="vote">(33 delegatov.)</stage>.</p>
                         <p>Ugotavljam, da tudi ta predlog ni dobil potrebne večine.</p>
                         <p>Glasujemo še o amandmaju k 19. členu, ki pravi: " v prehodnem obdobju bo
                            Republika Slovenija sklenila dogovor z Narodno banko Jugoslavije glede
                            jamstva, za hranilne vloge in sredstva tekočih računov občanov, kakor
                            tudi za devize na deviznih računih in deviznih hranilnih knjižicah".
                            Dajem ta predlog na glasovanje.</p>
-                        <p>Kdo je prosim za? <stage>(45 delegatov.)</stage> Proti? <stage>(122
-                              delegatov.)</stage> Vzdržanih? <stage>(29 delegatov.)</stage></p>
+                        <p>Kdo je prosim za? <stage type="vote">(45 delegatov.)</stage> Proti? <stage type="vote">(122
+                              delegatov.)</stage> Vzdržanih? <stage type="vote">(29 delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da tudi ta predlog ni bil sprejet.</p>
                         <p>Zdaj bi vprašal gospoda Šetinca, če vztraja pri svojih amandmajih oz.,
                            koliko se strinja s poročilom oz. stališčem Ustavne  komisije?</p>
@@ -2666,18 +2688,19 @@
                            upravljanje poveljstva, enote in zavodi Teritorialne obrambe Republike
                            Slovenije.</p>
                         <p>Torej, to je predlog, pri katerem predlagatelj vztraja in ga moram zato
-                           dati na glasovanje. Da se to črta, kajne. <stage>(Iz klopi ima nekdo
-                              pripombo!)</stage> Obrazložitev bo k aktu kot celoti. <stage>(Iz klopi
+                           dati na glasovanje. Da se to črta, kajne. <stage type="gap">(Iz klopi ima nekdo
+                              pripombo!)</stage> Obrazložitev bo k aktu kot celoti. <stage type="gap">(Iz klopi
                               zopet nekdo nekaj sprašuje.)</stage> Prosim! Ne morete prepričevati
                            poslancev, razumete! Vi lahko samo svoje stališče poveste..... Namreč, ta
                            namen obrazložitve ni zato, da bi poslance prepričal.</p>
-                        <p><stage>(Še vedno pripomba iz klopi.)</stage> Nič ne bom govoril, prosim,
+                        <p>
+                           <stage type="gap">(Še vedno pripomba iz klopi.)</stage> Nič ne bom govoril, prosim,
                            oglejte si poslovnik, ga morate kot poslanec poznati in tam notri je
                            napisano, kar je potrebno.</p>
                         <p>Prosim, kdo je za ta amandma, da se zadnji odstavek 9. člena briše,
                            prosim, da glasuje.</p>
-                        <p>Kdo je prosim za? <stage>(65 delegatov.)</stage> Proti? <stage>(113
-                              delegatov.)</stage> Vzdržani? <stage>(18 delegatov.)</stage>.</p>
+                        <p>Kdo je prosim za? <stage type="vote">(65 delegatov.)</stage> Proti? <stage type="vote">(113
+                              delegatov.)</stage> Vzdržani? <stage type="vote">(18 delegatov.)</stage>.</p>
                         <p>Tudi ta predlog ni dobil potrebne večine.</p>
                         <p>Sedaj dajem na glasovanje predlog zakona kot celoto in ima najprej
                            možnost gospod Aksentijević, ker je rekel, da želi obrazložiti svoj
@@ -2848,7 +2871,8 @@
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
-                        <p><stage>(Aplavz.)</stage> Dobro, v redu, hvala lepa. Prosim, še gospod
+                        <p>
+                           <stage type="vocal">(Aplavz.)</stage> Dobro, v redu, hvala lepa. Prosim, še gospod
                            Ribičič.</p>
                      </sp>
                      <sp who="#sp.RibičičCiril">
@@ -2868,15 +2892,16 @@
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
                         <p>Hvala lepa. Če ni več prijavljenih, potem dajem ta zakonski predlog na
                            glasovanje.</p>
-                        <p>Kdo je za to, da se sprejme ta zakona v predlaganem besedilu? <stage>(187
-                              delegatov.)</stage> Je kdo proti? <stage>(3 delegati.)</stage>
-                           Vzdržani? <stage>(13 delegatov.)</stage></p>
+                        <p>Kdo je za to, da se sprejme ta zakona v predlaganem besedilu? <stage type="vote">(187
+                              delegatov.)</stage> Je kdo proti? <stage type="vote">(3 delegati.)</stage>
+                           Vzdržani? <stage type="vote">(13 delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je ustavni zakon za izvedbo temeljne ustavne listine o
                            samostojnosti in neodvisnosti Republike Slovenije sprejet s potrebno
                            dvotretjinsko večino glasov.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.12" ana="#PAR.TDR" corresp="#toc.2.12">
                      <sp who="#sp.BučarFrance">
                         <p>PREHAJAMO NA <title>GLASOVANJE O PREDLOGU DEKLARACIJE OB
                               NEODVISNOSTI</title>.</p>
@@ -3072,20 +3097,23 @@
                            naravnega prava, iz načel mednarodnega prava, osnovnega dokumenta o
                            evropski varnosti in sodelovanju in iz ustave Republike Slovenije." To
                            naj bi bilo besedilo s strani gospoda Smoleta predlagani amandma.</p>
-                        <p>Kdo je prosim za predlagani amandma? <stage>(37 delegatov.)</stage>
-                           Proti? <stage>(115 delegatov.)</stage> In vzdržani? <stage>(41
-                              delegatov.)</stage></p>
+                        <p>Kdo je prosim za predlagani amandma? <stage type="vote">(37 delegatov.)</stage>
+                           Proti? <stage type="vote">(115 delegatov.)</stage> In vzdržani? <stage type="vote">(41
+                              delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da ta predlog ni dobil potrebne večine.</p>
                         <p>Sedaj glasujemo še o naslednjem amandmaju, in sicer, da se v petem
                            poglavju na 7. strani na ustrezno mesto doda "pravica do dela".</p>
-                        <p>Kdo je za ta amandma? <stage>(36 delegatov.)</stage> Proti? <stage>(106
-                              delegatov.)</stage> In vzdržani? <stage>(51 delegatov.)</stage></p>
+                        <p>Kdo je za ta amandma? <stage type="vote">(36 delegatov.)</stage> Proti? <stage type="vote">(106
+                              delegatov.)</stage> In vzdržani? <stage type="vote">(51 delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da tudi ta predlog ni dobil potrebne večine.</p>
                         <p>Sedaj dajem predlog te deklaracije kot celoto v sprejem oziroma na
                            glasovanje.</p>
-                        <p>Kdo je za? <stage>(187 delegatov.)</stage>
-                           <stage>(Aplavz.)</stage> Kdo je proti? <stage>(1.)</stage> Vzdržani?
-                              <stage>(5 delegatov.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(187 delegatov.)</stage>
+                           <stage type="vocal">(Aplavz.)</stage> Kdo je proti? <stage type="vote">(1.)</stage> Vzdržani?
+                              <stage type="vote">(5 delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Deklaracija ob neodvisnosti sprejeta s potrebno večino
                            glasov.</p>
                         <p>Kot je bilo že omenjeno v razlagah predstavnikov kluba delegatov Stranke
@@ -3101,9 +3129,10 @@
                            Komisijo za ustavna vprašanja in druge organe Skupščine, da stori vse, da
                            bi bila nova ustava Republike Slovenije sprejeta najkasneje do konca
                            oktobra 1991."</p>
-                        <p>Kdo je za ta predlog, prosim? <stage>(92 delegatov.)</stage> Kdo je
-                           proti? <stage>(54 delegatov.)</stage> Vzdržani? <stage>(38
-                              delegatov.)</stage></p>
+                        <p>Kdo je za ta predlog, prosim? <stage type="vote">(92 delegatov.)</stage> Kdo je
+                           proti? <stage type="vote">(54 delegatov.)</stage> Vzdržani? <stage type="vote">(38
+                              delegatov.)</stage>
+                        </p>
                         <p>Prosim, gospod Ribičič.</p>
                      </sp>
                      <sp who="#sp.RibičičCiril">
@@ -3207,7 +3236,7 @@
                         <p>Hvala lepa. Torej, jaz prosim moram s svoje strani izjaviti kot
                            predsednik Ustavne komisije, da bom jaz, ne glede na izid glasovanja o
                            tem sklepu, naredil vse, da se čimbolj pospeši delo na sprejemu nove
-                           ustave. <stage>(Aplavz.)</stage> Torej, v vsakem primeru, moram pa seveda
+                           ustave. <stage type="vocal">(Aplavz.)</stage> Torej, v vsakem primeru, moram pa seveda
                            reči v obrambo Ustavne komisije, da je ustavna komisija ne more sama
                            zagotoviti potrebnega soglasja strank, pri čemer bo Ustavna komisija
                            naredila vse, kar je v njeni moči. Mislim, da to lahko v imenu članov
@@ -3220,7 +3249,7 @@
                            bo, ker niso po poslovniku možne.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.13" ana="#PAR.TDR" corresp="#toc.2.13">
                      <sp who="#sp.BučarFrance">
                         <p>Spoštovani zbor, ker smo s potrebno večino glasov sprejeli temeljno
                            ustavno listino o samostojnosti in neodvisnosti Republike Slovenije in
@@ -3237,20 +3266,21 @@
                            SLOVENIJE, ki ga je sprejela Skupščina Republike Slovenije na skupni seji
                            vseh zborov dne 25. junija 1991.</p>
                         <p>Kdor se, prosim, strinja s predlaganim odlokom, naj prosim glasuje? Kdo
-                           je prosim za? <stage>(195 delegatov.)</stage> Kdo je proti? <stage>(1
-                              delegat.)</stage> Se je kdo vzdržal? <stage>(6 delegatov.)</stage>
-                           <stage>(Aplavz.)</stage></p>
+                           je prosim za? <stage type="vote">(195 delegatov.)</stage> Kdo je proti? <stage type="vote">(1
+                              delegat.)</stage> Se je kdo vzdržal? <stage type="vote">(6 delegatov.)</stage>
+                           <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                         <p>NA PODLAGI IZIDA GLASOVANJA  UGOTAVLJAM, DA JE SKUPŠČINA REPUBLIKE
                            SLOVENIJE NA SKUPNI SEJI VSEH ZBOROV, DNE 25. JUNIJA 1991, SPREJELA
                             ODLOK  O RAZGLASITVI TEMELJNE USTAVNE LISTINE O SAMOSTOJNOSTI IN
                            NEODVISNOSTI REPUBLIKE SLOVENIJE IN S TEM RAZGLASILA TO LISTINO.
-                              <stage>(Aplavz.)</stage></p>
+                              <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.14" ana="#PAR.TDR" corresp="#toc.2.14">
                      <sp who="#sp.BučarFrance">
-                        <p>Dovolite mi, da preberem še akt o</p>
-                        <p>
+                        <p>Dovolite mi, da preberem še akt o
                            <title>RAZGLASITVI USTAVNEGA ZAKONA ZA IZVEDBO TEMELJNE USTAVNE LISTINE O
                               SAMOSTOJNOSTI IN NEODVISNOSTI REPUBLIKE SLOVENIJE</title>.</p>
                         <p>Ker je izpolnjen pogoj iz 3. točke ustavnega amandmaja 98 k Ustavi
@@ -3262,8 +3292,9 @@
                            SLOVENIJE, KI GA JE SPREJELA SKUPŠČINA REPUBLIKE SLOVENIJE NA SKUPNI SEJI
                            VSEH ZBOROV DNE 25. JUNIJA 1991.</p>
                         <p>Kdor se prosim strinja s predlaganim odlokom, naj prosim glasuje?
-                              <stage>(193 delegatov.)</stage> Proti? <stage>(Nihče.)</stage>
-                           Vzdržani? <stage>(5 delegatov.)</stage></p>
+                              <stage type="vote">(193 delegatov.)</stage> Proti? <stage type="vote">(Nihče.)</stage>
+                           Vzdržani? <stage type="vote">(5 delegatov.)</stage>
+                        </p>
                         <p>Na podlagi izida glasovanja  UGOTAVLJAM, DA JE SKUPŠČINA REPUBLIKE
                            SLOVENIJE NA SKUPNI SEJI VSEH ZBOROV, DNE 25. JUNIJA 1991, SPREJELA  
                            ODLOK   O RAZGLASITVI USTAVNEGA ZAKONA ZA IZVEDBO TEMELJNE USTAVNE
@@ -3279,7 +3310,7 @@
                            Dovolite mi, da preberem akt o razglasitvi tega ustavnega amandmaja.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.15" ana="#PAR.TDR" corresp="#toc.2.15">
                      <sp who="#sp.BučarFrance">
                         <p>Ker je izpolnjen pogoj po 3. odstavku 438. člena Ustave Republike
                            Slovenije v zvezi s 5. točko ustavnega amandmaja 88 k Ustavi Republike
@@ -3292,12 +3323,14 @@
                            Slovenije sprejeli Družbenopolitični zbor, Zbor občin in Zbor združenega
                            dela na skupni seji dne 24. junija 1991.</p>
                         <p>Kdor se s predlaganim predlogom strinja, naj, prosim glasuje? Kdo je za?
-                              <stage>(187 delegatov.)</stage> Kdo je proti? <stage>(3
-                              delegati.)</stage> Vzdržani? <stage>(8 delegatov.)</stage></p>
+                              <stage type="vote">(187 delegatov.)</stage> Kdo je proti? <stage type="vote">(3
+                              delegati.)</stage> Vzdržani? <stage type="vote">(8 delegatov.)</stage>
+                        </p>
                         <p>Na podlagi izida glasovanja ugotavljam, da je Skupščina Republike
                            Slovenije na skupni seji vseh zborov dne 25. junija 1991 sprejela ODLOK O
                            RAZGLASITVI USTAVNEGA AMANDMAJA 100 K USTAVI REPUBLIKE SLOVENIJE IN S TEM
-                           RAZGLASILA TA USTAVNI AMANDMA. <stage>(Aplavz.)</stage></p>
+                           RAZGLASILA TA USTAVNI AMANDMA. <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>DR. FRANCE BUČAR:</speaker>
@@ -3307,13 +3340,14 @@
                         <p>Skupščina je sprejela ustavni akt o samostojnosti in neodvisnosti
                            Republike Slovenije ter s tem izpolnila mandat, ki ji je bil naložen s
                            plebiscitom. Ustvarila je samostojno in neodvisno državo, Republiko
-                           Slovenijo. <stage>(Aplavz.)</stage> Gre za enega najpomembnejših dogodkov
+                           Slovenijo. <stage type="vocal">(Aplavz.)</stage> Gre za enega najpomembnejših dogodkov
                            v naši zgodovini. Če gledamo naj samo z državno-pravnega vidika, tedaj ta
                            akt gotovo pomeni kulminacijo v stoletnih prizadevanjih slovenskega
                            naroda, da si ustvari svoj lastni dom. Vendar s tem ni ne konec in ne
                            začetek naše zgodovine. Pomeni pa tisto prelomno točko v našem narodnem
                            življenju, ko smo prišli v položaj, da lahko samostojno odločamo o svoji
-                           lastni usodi. <stage>(Aplavz.)</stage></p>
+                           lastni usodi. <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                         <p>Tudi samostojnost je seveda relativna kategorija, saj se vedno gibljemo v
                            okviru zunanjih okoliščin, ki delujejo neodvisno od nas in se jim lahko
                            samo prilagajamo. Bistvo svobode naroda je v možnosti, da se zavestno
@@ -3374,7 +3408,8 @@
                            s tem pa tudi njena lastna negacija. Zato take Jugoslavije ni možno
                            preoblikovati v življenja sposobno tvorbo, ni sposobna reforme, ker ima v
                            sebi genetično vgrajene proti elemente razkroja.
-                              <stage>(Ploskanje.)</stage></p>
+                              <stage type="vocal">(Ploskanje.)</stage>
+                        </p>
                         <p>Ponovni in ponovni poskusi in ponudbe Slovenije o preoblikovanju družbene
                            skupnosti na območju dosedanje Jugoslavije so zato nujno naleteli na
                            apriorno odklanjanje. To ni slučaj. Taka Jugoslavija, kot je danes, tudi
@@ -3385,7 +3420,8 @@
                            številu in omejenosti nacionalnega prostora, pospešeno nadaljeval. Če smo
                            lahko ponosni na ta veliki zgodovinski korak, nam skromnost narekuje tudi
                            delno drugačno, treznejšo presojo. Nimamo namreč nobene druge izbire.
-                              <stage>(Ploskanje.)</stage></p>
+                              <stage type="vocal">(Ploskanje.)</stage>
+                        </p>
                         <p>Z vidika novih evropskih procesov, ki jih med drugim označuje predvsem
                            odpravljanje fizičnega nasilja kot sredstva za urejanje medsebojnih
                            odnosov, prost pretok blaga, idej in informacij, ki naj rezultira v
@@ -3411,7 +3447,8 @@
                            povezanost potreben tudi drugačen integracijski okvir. Taka Jugoslavija,
                            kot je danes, je sposobna nadaljevati samo procese poenotenja, ni pa
                            sposobna opravljati funkcije integratorja različnosti na višji stopnji
-                           sistemske povezanosti. <stage>(Aplavz.)</stage></p>
+                           sistemske povezanosti. <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                         <p>S tega stališča je naš odgovor zelo jasen. Nismo proti sožitju z
                            ljudstvi, ki živijo na tem prostoru, saj ga ne moremo ne spremeniti in ne
                            zamenjati. Sodelovanje je v našem lastnem interesu. To sodelovanje pa
@@ -3426,7 +3463,7 @@
                            ravni, v mnogih na regionalni in celo na povsem lokalni. S takimi
                            razmerami se moramo soočiti in se jim podrediti. V nobenem primeru pa se
                            ne moremo odpovedati pravici, da o svojih lastnih zadevah samostojno
-                           odločamo, ob lastnem spoznanju danih okoliščin. <stage>(Aplavz.)</stage>
+                           odločamo, ob lastnem spoznanju danih okoliščin. <stage type="vocal">(Aplavz.)</stage>
                            Sredstvo za to nam je slovenska država, ki jo z današnjim dnem
                            ustvarjamo. Če poudarjam "sredstvo", tedaj to pomeni tudi jasno zavest,
                            da s tem samim še v ničemer nismo spremenili razmer v našem stvarnem
@@ -3437,16 +3474,17 @@
                            mogli samostojno delovati. Prav zato naša nova slovenska država ni konec
                            naših prizadevanj, ampak šele izhodišče za novo življenje v sožitju z
                            drugimi narodi. Naj živi samostojna in neodvisna Slovenija!
-                              <stage>(Aplavz.)</stage></p>
+                              <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                         <p>Spoštovani zbor! Še eno obvestilo. Iz Republiškega sekretariata za
                            informiranje so sporočili: Sabor Republike Hrvatske je nekaj minut pred
                            20. uro razglasil samostojno in neodvisno Republiko
-                              Hrvatsko.<stage>(Aplavz.)</stage></p>
+                              Hrvatsko.<stage type="vocal">(Aplavz.)</stage>
+                        </p>
                         <p>Spoštovane poslanke in poslanci! S tem zaključujem to pomembno sejo in
                            vas vabim v preddverje.</p>
                      </sp>
-                     <stage type="time">(Skupna seja je bila <time to="1991-06-25T20:54:00"
-                           xml:id="stage.t.4">končana ob 20. uri in 54 minut</time>.)</stage>
+                     <stage type="time">(Skupna seja je bila <time to="1991-06-25T20:54:00" xml:id="stage.t.4">končana ob 20. uri in 54 minut</time>.)</stage>
                   </div>
                </div>
             </div>

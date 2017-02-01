@@ -31,8 +31,7 @@
             <pubPlace>https://github.com/SIstory/Seje_DZ/tree/master/</pubPlace>
             <availability status="free">
                <licence>http://creativecommons.org/licenses/by/4.0/</licence>
-               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/"
-                     >Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
+               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
                </p>
             </availability>
             <date when="2016-05-11+02:00"/>
@@ -53,9 +52,7 @@
                      <date>(23. december 1991)</date>
                   </imprint>
                </monogr>
-               <ref
-                  target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=8E054C3014DE6000C1257C240023D8AF"
-                     >(<date>2016-04-12</date>)</ref>
+               <ref target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=8E054C3014DE6000C1257C240023D8AF">(<date>2016-04-12</date>)</ref>
             </biblStruct>
             <biblFull>
                <titleStmt>
@@ -67,10 +64,10 @@
                   <publisher>Državni zbor Republike Slovenije</publisher>
                   <availability status="free">
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="slv">Avtorske pravice so potekle, delo je v javni
+                              xml:lang="slv">Avtorske pravice so potekle, delo je v javni
                         domeni.</licence>
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="eng">Public Domain Mark 1.0</licence>
+                              xml:lang="eng">Public Domain Mark 1.0</licence>
                   </availability>
                </publicationStmt>
             </biblFull>
@@ -82,7 +79,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -93,6 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2017-01-16+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2017-01-16+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-05-11+02:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -125,9 +134,8 @@
                <item>
                   <list rend="ordered">
                      <head>PRED DNEVNIM REDOM:                                      STRAN</head>
-                     <item n="1">Ugotavljanje prisotnosti delegatov ...................... 1</item>
-                     <item n="2">Določitev dnevnega reda ................................. 1<list
-                           rend="simple">
+                     <item n="1" xml:id="toc.1.1">Ugotavljanje prisotnosti delegatov ...................... 1</item>
+                     <item n="2" xml:id="toc.1.2">Določitev dnevnega reda ................................. 1<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>Ignac Polajnar .......................................... 1</item>
                         </list>
@@ -137,8 +145,7 @@
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED:</head>
-                     <item n="1">Predlog Ustave Republike Slovenije ...................... 2<list
-                           rend="simple">
+                     <item n="1" xml:id="toc.2.1">Predlog Ustave Republike Slovenije ...................... 2<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Jožef Školč ............................................. 3</item>
                            <item>dr. Ciril Ribičič ....................................... 3</item>
@@ -162,9 +169,8 @@
                            <item>Peter Reberc ........................................... 25</item>
                         </list>
                      </item>
-                     <item n="2">Predlog ustavnega zakona za izvedbo Ustave RS .......... 25</item>
-                     <item n="3">Nadaljevanje obravnave predloga Ustave RS .............. 26<list
-                           rend="simple">
+                     <item n="2" xml:id="toc.2.2">Predlog ustavnega zakona za izvedbo Ustave RS .......... 25</item>
+                     <item n="3" xml:id="toc.2.3">Nadaljevanje obravnave predloga Ustave RS .............. 26<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Ignac Polajnar ......................................... 26</item>
                            <item>dr. France Bučar ....................................... 26</item>
@@ -179,10 +185,10 @@
                            <item>dr. France Bučar ....................................... 31</item>
                         </list>
                      </item>
-                     <item n="4">Nadaljevanje obravnave predloga ustavnega zakona za izvedbo Ustave
+                     <item n="4" xml:id="toc.2.4">Nadaljevanje obravnave predloga ustavnega zakona za izvedbo Ustave
                         RS ...................................... 31</item>
-                     <item n="5">Seznam govornikov ...................................... II</item>
-                     <item n="6">Priloga: zapisnik zbora ............................... III</item>
+                     <item n="5" xml:id="toc.2.5">Seznam govornikov ...................................... II</item>
+                     <item n="6" xml:id="toc.2.6">Priloga: zapisnik zbora ............................... III</item>
                   </list>
                </item>
             </list>
@@ -265,18 +271,22 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.DruzPolZb">
+         <div xml:id="div.1" ana="#PAR.DruzPolZb">
             <head>DRUŽBENOPOLITIČNI ZBOR</head>
-            <div ana="#PAR.Seja" n="31">
+            <div xml:id="div.1.1" ana="#PAR.Seja" n="31">
                <head>31. seja</head>
                <docDate>(<date when="1991-12-23">23. december 1991</date>)</docDate>
                <timeline origin="#TL.1" unit="s">
                   <when synch="#stage.t.1" xml:id="TL.1" absolute="1991-12-23T10:10:00"/>
-                  <when synch="#stage.t.2" since="#TL.1" absolute="1991-12-23T10:17:00"
-                     interval="420"/>
+                  <when synch="#stage.t.2"
+                        since="#TL.1"
+                        absolute="1991-12-23T10:17:00"
+                        interval="420"/>
                   <when synch="#stage.t.3" xml:id="TL.2" absolute="1991-12-23T11:20:00"/>
-                  <when synch="#stage.t.4" since="#TL.2" absolute="1991-12-23T13:10:00"
-                     interval="6600"/>
+                  <when synch="#stage.t.4"
+                        since="#TL.2"
+                        absolute="1991-12-23T13:10:00"
+                        interval="6600"/>
                   <when synch="#stage.t.5" xml:id="TL.3" absolute="1991-12-23T16:52:00"/>
                   <when synch="#stage.t.6" since="#TL.3" absolute="1991-12-23T16:15:00"/>
                </timeline>
@@ -286,11 +296,10 @@
                         TOPLAK</actor>, <role>predsednik Družbenopolitičnega zbora</role>
                   </castItem>
                </castList>
-               <stage type="time">Seja se je <time from="1991-12-23T10:10:00" xml:id="stage.t.1"
-                     >začela ob 10.10. uri</time>
+               <stage type="time">Seja se je <time from="1991-12-23T10:10:00" xml:id="stage.t.1">začela ob 10.10. uri</time>
                </stage>
-               <div ana="#PAR.PredDnevRed">
-                  <div ana="#PAR.Prisot">
+               <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.Prisot" change="#toc.1.1">
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDNIK DR. LUDVIK TOPLAK:</speaker>
                         <p>Spoštovani poslanci, cenjeni gostje, spoštovani predstavniki sredstev
@@ -313,7 +322,7 @@
                         <p>Glede na potek dela vseh zborov boste o pavzi obveščeni pozneje.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.DolDnevRed">
+                  <div xml:id="div.1.1.1.2" ana="#PAR.DolDnevRed" change="#toc.1.2">
                      <sp who="#sp.ToplakLudvik">
                         <p>Zboru predlagam naslednji <title>dnevni red</title>:</p>
                         <p>1. Predlog Ustave Republike Slovenije</p>
@@ -328,9 +337,10 @@
                            gospod Kociper. Prosim, če se presedete. Ponovno prosim samo gospoda
                            Kocipra.)</p>
                         <p>Ponovno ugotovimo navzočnost vsi: 64.</p>
-                        <p>Kdo je dnevni red, kakor smo ga predlagali? <stage>(60 delegatov
-                              za.)</stage> Kdo je proti? <stage>(Nihče.)</stage> Vzdržani? <stage>(2
-                              vzdržana.)</stage></p>
+                        <p>Kdo je dnevni red, kakor smo ga predlagali? <stage type="vote">(60 delegatov
+                              za.)</stage> Kdo je proti? <stage type="vote">(Nihče.)</stage> Vzdržani? <stage type="vote">(2
+                              vzdržana.)</stage>
+                        </p>
                         <p>Ugotavljam: s 60 za in 2 vzdržanimi je dnevni red potrjen.</p>
                         <p>Gospod Polajnar želi besedo.</p>
                      </sp>
@@ -343,21 +353,20 @@
                      </sp>
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDNIK DR. LUDVIK TOPLAK:</speaker>
-                        <p>To bo ostalo sporno in če mislimo tako delati bo sporno vse <stage>(iz
+                        <p>To bo ostalo sporno in če mislimo tako delati bo sporno vse <stage type="gap">(iz
                               klopi nekdo govori, se ne sliši ...)</stage> Izvolite, izvolite, za to
                            so tehnične službe dolžne to opraviti že prej.</p>
                         <p>Ponovno, v četrtič, predlagam: samo gospod Kociper naj pritisne na isti
                            gumb. Sedaj prosim, samo gospod Kociper.</p>
                         <p>S tem prekinjam sejo do 10. ure in 30 minut.</p>
                      </sp>
-                     <stage type="time">(Seja je bila <time to="1991-12-23T10:17:00"
-                           xml:id="stage.t.2">prekinjena ob 10. uri in 17 minut</time> in se      
+                     <stage type="time">(Seja je bila <time to="1991-12-23T10:17:00" xml:id="stage.t.2">prekinjena ob 10. uri in 17 minut</time> in se      
                          je <time from="1991-12-23T11:20:00" xml:id="stage.t.3">nadaljevala ob 11.
                            20 uri</time>.)</stage>
                   </div>
                </div>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR" n="1">
+               <div xml:id="div.1.1.2" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.2.1" ana="#PAR.TDR" n="1" change="#toc.2.1">
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDNIK DR. LUDVIK TOPLAK:</speaker>
                         <p>Poslance prosim, da ostanejo v dvorani, delo nadaljujemo takoj.</p>
@@ -1174,7 +1183,7 @@
                      </sp>
                      <sp who="#sp.BattelliRoberto">
                         <speaker>ROBERTO BATTELLI:</speaker>
-                        <p>Senior vicepresidente, gentili college e collegi! <stage>(glas
+                        <p>Senior vicepresidente, gentili college e collegi! <stage type="comment">(glas
                               prevajalke)</stage>: Gospod podpredsednik, spoštovane kolegice in
                            kolegi! Ko smo se znotraj  okvira, ki ga predstavljajo določila o varstvu
                            in uresničevanju temeljnih človekovih pravic in svoboščin, lotili
@@ -1415,7 +1424,8 @@
                      </sp>
                      <sp who="#sp.PozsonecMaria">
                         <speaker>MARIA POZSONEC:</speaker>
-                        <p><stage>(Govori v madžarskem jeziku.)</stage> Spoštovano predsedstvo,
+                        <p>
+                           <stage type="comment">(Govori v madžarskem jeziku.)</stage> Spoštovano predsedstvo,
                            spoštovani poslanci! Tudi madžarska narodna skupnost podpira novo ustavo
                            in pričakuje od nje, da bo ustvarila takšne gospodarske, politične in
                            družbene pogoje, ki bodo omogočali obstoj in razvoj narodnosti. Da bo
@@ -1548,17 +1558,16 @@
                      <sp who="#sp.PeršakAnton">
                         <speaker>PODPREDSEDNIK ANTON PERŠAK:</speaker>
                         <p>Prosim za pismeni predlog. S tem je lista tistih, ki ste se prijavili po
-                           regularni poti, izčrpana. Želi še kdo razpravljati? <stage>(Ne.)</stage>
+                           regularni poti, izčrpana. Želi še kdo razpravljati? <stage type="debate">(Ne.)</stage>
                            Hvala.</p>
                         <p>S tem smo zaključili razpravo v zvezi s 1. točko dnevnega reda. Glede na
                            to, da imamo nekaj pisnih predlogov za Ustavno komisijo, prekinjam to
                            točko dnevnega reda. Odločali bomo po seji Ustavne komisije.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="2">
+                  <div xml:id="div.1.1.2.2" ana="#PAR.TDR" n="2" change="#toc.2.2">
                      <sp who="#sp.PeršakAnton">
-                        <p>Prehajamo na</p>
-                        <p>
+                        <p>Prehajamo na
                            <title>2. TOČKO DNEVNEGA REDA, to je PREDLOG USTAVNEGA ZAKONA ZA IZVEDBO
                               USTAVE REPUBLIKE SLOVENIJE</title>.</p>
                         <p>Predlog ustavnega zakona je predložila Komisija za ustavna vprašanja.
@@ -1573,7 +1582,7 @@
                            po zaključku seje ustavne komisije.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="1">
+                  <div xml:id="div.1.1.2.3" ana="#PAR.TDR" n="1" change="#toc.2.3">
                      <sp who="#sp.PeršakAnton">
                         <p>Prosim vse poslance, apeliram, da ne bi zapuščali skupščine, ker veste,
                            kakšna večina je potrebna za <title>sprejemanje ustave</title>. Prosim,
@@ -1656,8 +1665,7 @@
                            ponovno sestane. Še ponavljam apel: Ne zapuščajte skupščine. Odrejam
                            pavzo za ta čas.</p>
                      </sp>
-                     <stage type="time">(Seja je bila <time to="1991-12-23T13:10:00"
-                           xml:id="stage.t.4">prekinjena ob 13. uri  in 10 minut</time> in se je
+                     <stage type="time">(Seja je bila <time to="1991-12-23T13:10:00" xml:id="stage.t.4">prekinjena ob 13. uri  in 10 minut</time> in se je
                            <time from="1991-12-23T16:52:00" xml:id="stage.t.5">nadaljevala ob 16.52
                            uri</time>.)</stage>
                      <sp who="#sp.ToplakLudvik">
@@ -1687,7 +1695,7 @@
                            meseca? Med tem so še prišli in še prihajajo. Prosim, še enkrat ugotovimo
                            prisotnost: 62 prisotnih.</p>
                         <p>Zoper neformalno vprašanje: kdo od prisotnih lahko potrdi udeležbo za v
-                           petek, 27.12. na seji? <stage>(41 za.)</stage>Hvala. Potem bo sklepčnost
+                           petek, 27.12. na seji? <stage type="vote">(41 za.)</stage>Hvala. Potem bo sklepčnost
                            v petek zagotovljena.</p>
                         <p>Nadaljujemo</p>
                         <p>1. TOČKO DNEVNEGA REDA.</p>
@@ -1865,8 +1873,11 @@
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>DR. FRANCE BUČAR:</speaker>
-                        <p>Moram ugovarjati glede na....da bo stvar jasna. <stage>(Vmes dr. Toplak:
-                              Je že. Hvala, hvala.)</stage></p>
+                        <p>Moram ugovarjati glede na....da bo stvar jasna. 
+                           </p></sp><sp who="#sp.ToplakLudvik">
+                           <speaker>(Vmes dr. Toplak:</speaker>
+                           <ab>
+                              Je že. Hvala, hvala.)</ab>                      
                      </sp>
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDNIK DR. LUDVIK TOPLAK:</speaker>
@@ -1876,28 +1887,30 @@
                            sestavni del predloga ustave.</p>
                         <p>Glasujemo o predlogu ustave kakor smo jo prejeli z dopolnjenim 174.
                            členom.</p>
-                        <p>Ugotovimo navzočnost. <stage>(73 navzočih.)</stage></p>
-                        <p>Kdo je za predlog ustave z dopolnitvijo? <stage>(62 za.)</stage> Kdo je
-                           proti? <stage>(5 proti.)</stage> Kdo se vzdrži? <stage>(6
-                              vzdržanih.)</stage></p>
+                        <p>Ugotovimo navzočnost. <stage type="quorum">(73 navzočih.)</stage>
+                        </p>
+                        <p>Kdo je za predlog ustave z dopolnitvijo? <stage type="vote">(62 za.)</stage> Kdo je
+                           proti? <stage type="vote">(5 proti.)</stage> Kdo se vzdrži? <stage type="vote">(6
+                              vzdržanih.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlog ustave v zboru izglasovan z 62glasovi za, kar
-                           pomeni nad dve tretjine vseh poslancev zbora. <stage>(Ploskanje v
-                              dvorani.)</stage></p>
+                           pomeni nad dve tretjine vseh poslancev zbora. <stage type="vocal">(Ploskanje v
+                              dvorani.)</stage>
+                        </p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="2">
+                  <div xml:id="div.1.1.2.4" ana="#PAR.TDR" n="2" change="#toc.2.4">
                      <sp who="#sp.ToplakLudvik">
-                        <p>Prehajamo na</p>
-                        <p>
+                        <p>Prehajamo na
                            <title>2. TOČKO DNEVNEGA REDA: PREDLOG USTAVNEGA ZAKONA ZA IZVEDBO USTAVE
                               REPUBLIKE SLOVENIJE</title>.</p>
                         <p>Predlog ustavnega zakona je predložila komisija in prehajamo na
                            glasovanje glede druge točke z redakcijsko dopolnitvijo, kakor izhaja iz
                            poročila.</p>
-                        <p>Ponovno  ugotovimo navzočnost. <stage>(Navzočih je 73
+                        <p>Ponovno  ugotovimo navzočnost. <stage type="vote">(Navzočih je 73
                            delegatov.)</stage></p>
-                        <p>Kdo je za predlog ustavnega zakona? <stage>(69 za.)</stage> Kdo je proti?
-                              <stage>(2 proti.)</stage> Vzdržani? <stage>(2 vzdržana.)</stage></p>
+                        <p>Kdo je za predlog ustavnega zakona? <stage type="vote">(69 za.)</stage> Kdo je proti?
+                              <stage type="vote">(2 proti.)</stage> Vzdržani? <stage type="vote">(2 vzdržana.)</stage></p>
                         <p>Ugotavljam, da je z 69 glasovi za, z 2 proti in 2 vzdržanima ustavni
                            zakon izglasovan z več kot dvotretjinsko večino.</p>
                         <p>S tem zaključujem 31. sejo Družbenopolitičnega zbora Skupščine Republike
@@ -1908,8 +1921,7 @@
                            obveščam, da je zaprta tudi restavracija, zato prosim, da se poslužujete
                            restavracije v Tomšičevi.</p>
                      </sp>
-                     <stage type="time">(Seja je bila <time to="1991-12-23T16:15:00"
-                           xml:id="stage.t.6">končana ob l6. 15 uri</time>.)</stage>
+                     <stage type="time">(Seja je bila <time to="1991-12-23T16:15:00" xml:id="stage.t.6">končana ob l6. 15 uri</time>.)</stage>
                   </div>
                </div>
             </div>

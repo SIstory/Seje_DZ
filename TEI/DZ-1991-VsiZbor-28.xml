@@ -31,8 +31,7 @@
             <pubPlace>https://github.com/SIstory/Seje_DZ/tree/master/</pubPlace>
             <availability status="free">
                <licence>http://creativecommons.org/licenses/by/4.0/</licence>
-               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/"
-                     >Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
+               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
                </p>
             </availability>
             <date when="2016-04-01+02:00"/>
@@ -53,9 +52,7 @@
                      <date>(23. decembra 1991)</date>
                   </imprint>
                </monogr>
-               <ref
-                  target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=5692BDE73C150FF3C1257C9E00228B73"
-                     >(<date>2016-03-10</date>)</ref>
+               <ref target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=5692BDE73C150FF3C1257C9E00228B73">(<date>2016-03-10</date>)</ref>
             </biblStruct>
             <biblFull>
                <titleStmt>
@@ -67,10 +64,10 @@
                   <publisher>Državni zbor Republike Slovenije</publisher>
                   <availability status="free">
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="slv">Avtorske pravice so potekle, delo je v javni
+                              xml:lang="slv">Avtorske pravice so potekle, delo je v javni
                         domeni.</licence>
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="eng">Public Domain Mark 1.0</licence>
+                              xml:lang="eng">Public Domain Mark 1.0</licence>
                   </availability>
                </publicationStmt>
             </biblFull>
@@ -82,7 +79,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -93,6 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2017-01-16+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2017-01-16+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-04-01+02:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -125,9 +134,8 @@
                <item>
                   <list rend="ordered">
                      <head>PRED DNEVNIM REDOM:                                   STRAN</head>
-                     <item n="1">Ugotavljanje prisotnosti delegatov ............... 1</item>
-                     <item n="2">Določitev dnevnega reda .......................... 1<list
-                           rend="simple">
+                     <item n="1" xml:id="toc.1.1">Ugotavljanje prisotnosti delegatov ............... 1</item>
+                     <item n="2" xml:id="toc.1.2">Določitev dnevnega reda .......................... 1<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>dr. France Bučar ................................. 1</item>
                         </list>
@@ -137,17 +145,16 @@
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED:</head>
-                     <item n="1">Razglasitev Ustave Republike Slovenije ........... 4</item>
-                     <item n="2">Razglasitev ustavnega zakona za izvedbo Ustave Republike Slovenije
+                     <item n="1" xml:id="toc.2.1">Razglasitev Ustave Republike Slovenije ........... 4</item>
+                     <item n="2" xml:id="toc.2.2">Razglasitev ustavnega zakona za izvedbo Ustave Republike Slovenije
                         ....................... 5</item>
-                     <item n="3">Razno ............................................ 5<list
-                           rend="simple">
+                     <item n="3" xml:id="toc.2.3">Razno ............................................ 5<list rend="simple">
                            <head>GOVORNICA:</head>
                            <item>Anica Težak ...................................... 5</item>
                         </list>
                      </item>
-                     <item n="4">Seznam govornikov ............................. II/1</item>
-                     <item n="5">Priloga: zapisnik seje ........................  III</item>
+                     <item n="4" xml:id="toc.2.4">Seznam govornikov ............................. II/1</item>
+                     <item n="5" xml:id="toc.2.5">Priloga: zapisnik seje ........................  III</item>
                   </list>
                </item>
             </list>
@@ -168,15 +175,17 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.VsiZbor">
+         <div xml:id="div.1" ana="#PAR.VsiZbor">
             <head>SKUPNA SEJA VSEH ZBOROV SKUPŠČINE REPUBLIKE SLOVENIJE      </head>
-            <div ana="#PAR.Seja" n="28">
+            <div xml:id="div.1.1" ana="#PAR.Seja" n="28">
                <head>28. seja</head>
                <docDate>(<date when="1991-12-23">23. decembra 1991</date>)</docDate>
                <timeline origin="#TL.1" unit="s">
                   <when synch="#stage.t.1" xml:id="TL.1" absolute="1991-12-23T17:05:00"/>
-                  <when synch="#stage.t.2" since="#TL.1" absolute="1991-12-23T17:30:00"
-                     interval="1500"/>
+                  <when synch="#stage.t.2"
+                        since="#TL.1"
+                        absolute="1991-12-23T17:30:00"
+                        interval="1500"/>
                </timeline>
                <castList>
                   <castItem>
@@ -187,8 +196,8 @@
                <stage type="time">
                   <time from="1991-12-23T17:05:00" xml:id="stage.t.1">Začetek seje ob 17.05
                      uri</time>.</stage>
-               <div ana="#PAR.PredDnevRed">
-                  <div ana="#PAR.Prisot">
+               <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.Prisot" corresp="#toc.1.1">
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
                         <p>Začenjam 28. skupno sejo vseh zborov Skupščine Republike Slovenije, ki je
@@ -209,19 +218,20 @@
                            tudi skupna seja.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.DolDnevRed">
+                  <div xml:id="div.1.1.1.2" ana="#PAR.DolDnevRed" corresp="#toc.1.2">
                      <sp who="#sp.BučarFrance">
                         <p>Predlog dnevnega reda ste prejeli. Ali želi kdo podati kakšen
                            spreminjevalni predlog k dnevnemu redu? - Če ne, dajem predlog na
                            glasovanje.</p>
-                        <p>Kdo je za ta predlog? <stage>(202 za.)</stage>  Kdo je proti? <stage>(2
-                              proti.)</stage> In vzdržani? <stage>(1.)</stage></p>
+                        <p>Kdo je za ta predlog? <stage type="vote">(202 za.)</stage>  Kdo je proti? <stage type="vote">(2
+                           proti.)</stage> In vzdržani? <stage type="vote">(1.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlog dnevnega reda sprejet.</p>
                      </sp>
                   </div>
                </div>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR">
+               <div xml:id="div.1.1.2" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.2.1" ana="#PAR.TDR" corresp="#toc.2.1">
                      <sp who="#sp.BučarFrance">
                         <p>Preden bi nadaljevali, mi dovolite, da spregovorim nekaj besed glede na
                            to, da so med predsedniki zborov - Družbenopolitičnega zbora, Zbora
@@ -372,10 +382,11 @@
                            živeti v svetu, ki se tudi sam v temeljih spreminja? Podajamo se v svet,
                            kjer so vsa obzorja na široko odprta in kjer bo tudi vse drugače. Izzivi
                            so veliki, potrebni odgovori pa bodo morali biti povsem izvirni. - Hvala
-                           lepa.   <stage>(ploskanje)</stage></p>
+                           lepa.   <stage type="vocal">(ploskanje)</stage>
+                        </p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.2" ana="#PAR.TDR" corresp="#toc.2.1">
                      <sp who="#sp.BučarFrance">
                         <p>Glede na to, da je ustava bila sprejeta, mi dovolite, da preberem akt o
                            razglasitvi ustave.</p>
@@ -388,22 +399,24 @@
                            Zbora občin dne 23.decembra 1991 in na seji Zbora združenega dela dne
                            23.decembra 1991.</p>
                         <p>Kdor je za predlagani odlok, naj prosim, glasuje?</p>
-                        <p><stage>(207 za.)</stage> Kdo je proti? <stage>(6 proti.)</stage> In
-                           vzdržani? <stage>(7 vzdržanih.)</stage></p>
+                        <p>
+                           <stage type="vote">(207 za.)</stage> Kdo je proti? <stage type="vote">(6 proti.)</stage> In
+                           vzdržani? <stage type="vote">(7 vzdržanih.)</stage>
+                        </p>
                         <p>Na podlagi tega rezultata ugotavljam, da je Skupščina Republike Slovenije
                            na skupni seji vseh zborov dne 23. decembra 1991 sprejela odlok o
                            razglasitvi ustave Republike Slovenije in s tem razglasila ustavo
                            Republike Slovenije.</p>
-                        <p>Ta ustava začne s tem veljati!  <stage>(Ploskanje.)</stage></p>
+                        <p>Ta ustava začne s tem veljati!  <stage type="vocal">(Ploskanje.)</stage>
+                        </p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.3" ana="#PAR.TDR" corresp="#toc.2.2">
                      <sp who="#sp.BučarFrance">
-                        <p>Torej prehajamo še na</p>
-                        <p>
-                           <title>2. TOČKO DNEVNEGA REDA</title>,</p>
-                        <p>to je</p>
-                        <p>RAZGLASITEV USTAVNEGA ZAKONA ZA IZVEDBO USTAVE REPUBLIKE SLOVENIJE.</p>
+                        <p>Torej prehajamo še na
+                           <title>2. TOČKO DNEVNEGA REDA</title>,
+                           to je
+                           RAZGLASITEV USTAVNEGA ZAKONA ZA IZVEDBO USTAVE REPUBLIKE SLOVENIJE.</p>
                         <p>Predsedniki zborov so me obvestili, da so zbori sprejeli tudi predlog
                            ustavnega zakona za izvedbo ustave Republike Slovenije z dvema tretjinama
                             glasov vseh poslancev vsakega zbora, kot to določa 174. člen ustave
@@ -420,9 +433,10 @@
                            seji Družbenopolitičnega zbora dne 23. decembra 1991, na seji Zbora občin
                            dne 23. decembra 1991 in na seji Zbora združenega dela dne 23. decembra
                            1991".</p>
-                        <p>Kdo je za predlagani odlok prosim, da glasuje? <stage>(206 za.)</stage>
-                           Kdo je prosim proti? <stage>(5 proti.)</stage> Vzdržani? <stage>(6
-                              vzdržanih.)</stage></p>
+                        <p>Kdo je za predlagani odlok prosim, da glasuje? <stage type="vote">(206 za.)</stage>
+                           Kdo je prosim proti? <stage type="vote">(5 proti.)</stage> Vzdržani? <stage type="vote">(6
+                              vzdržanih.)</stage>
+                        </p>
                         <p>Na podlagi tega glasovalnega rezultata ugotavljam, da je Skupščina
                            Republike Slovenije na skupni seji vseh zborov dne 23. decembra 1991
                            sprejela odlok o razglasitvi ustavnega zakona za izvedbo ustave Republike
@@ -434,7 +448,7 @@
                            Slovenije. Hvala lepa.</p>
                         <p>Obveščen sem, dragi poslanci, da želi še gospa iz Društva vinogradnikov
                            spregovoriti nekaj besed in ji lahko damo besedo po zaključku seje.</p>
-                     </sp>
+                     </sp></div><div xml:id="div.1.1.2.4" ana="#PAR.TDR" corresp="#toc.2.3">
                      <sp who="#sp.TežakAnica">
                         <speaker>ANICA TEŽAK:</speaker>
                         <p>Sem Anica Težak, letošnja princesa Društva vinogradnikov iz Prekmurskih
@@ -459,10 +473,10 @@
                         <p>Naj sklenem s starim ljudskim pregovorom: slovenski zemlji prvi kozarec
                            ta veljaj in zvesti ji služiti prisezimo sedaj, in z  vzklikom: telko
                            kapljic, kelko let, bog nam daj na svet živet.
-                              <stage>(Ploskanje.)</stage></p>
+                              <stage type="vocal">(Ploskanje.)</stage>
+                        </p>
                      </sp>
-                     <stage type="time">(Skupna seja je bila <time to="1991-12-23T17:30:00"
-                           xml:id="stage.t.2">končana ob 17.30. uri</time>.)</stage>
+                     <stage type="time">(Skupna seja je bila <time to="1991-12-23T17:30:00" xml:id="stage.t.2">končana ob 17.30. uri</time>.)</stage>
                   </div>
                </div>
             </div>

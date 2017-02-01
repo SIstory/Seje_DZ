@@ -31,8 +31,7 @@
             <pubPlace>https://github.com/SIstory/Seje_DZ/tree/master/</pubPlace>
             <availability status="free">
                <licence>http://creativecommons.org/licenses/by/4.0/</licence>
-               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/"
-                     >Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
+               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
                </p>
             </availability>
             <date when="2016-07-26+02:00"/>
@@ -53,9 +52,7 @@
                      <date>(12. junij 1991)</date>
                   </imprint>
                </monogr>
-               <ref
-                  target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=A776EB1C53910F82C1257C8D00255AD4"
-                     >(<date>2016-04-12</date>)</ref>
+               <ref target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=A776EB1C53910F82C1257C8D00255AD4">(<date>2016-04-12</date>)</ref>
             </biblStruct>
             <biblFull>
                <titleStmt>
@@ -67,10 +64,10 @@
                   <publisher>Državni zbor Republike Slovenije</publisher>
                   <availability status="free">
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="slv">Avtorske pravice so potekle, delo je v javni
+                              xml:lang="slv">Avtorske pravice so potekle, delo je v javni
                         domeni.</licence>
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="eng">Public Domain Mark 1.0</licence>
+                              xml:lang="eng">Public Domain Mark 1.0</licence>
                   </availability>
                </publicationStmt>
             </biblFull>
@@ -82,7 +79,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -93,6 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2017-01-16+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2017-01-16+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-07-26+02:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -125,14 +134,14 @@
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED:                                              STRAN</head>
-                     <item n="1">Informacija o aktivnostih v procesu osamosvajanja Slovenije in o
+                     <item n="1" xml:id="toc.1.1">Informacija o aktivnostih v procesu osamosvajanja Slovenije in o
                         nekaterih aktualnih vprašanjih v zvezi s tem
                         ............................................ 1<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Alojz Peterle .......................................... 1</item>
                            <item>Ante Marković .......................................... 8</item>
                            <item>dr. Andrej Ocvirk ..................................... 16</item>
-                           <item n="2">Seznam govornikov ...................................
+                           <item n="2" xml:id="toc.1.2">Seznam govornikov ...................................
                               II/1</item>
                         </list>
                      </item>
@@ -158,15 +167,17 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.VsiZbor">
+         <div xml:id="div.1" ana="#PAR.VsiZbor">
             <head>SKUPNO ZASEDANJE VSEH ZBOROV SKUPŠČINE REPUBLIKE SLOVENIJE</head>
-            <div ana="#PAR.Zasedanje" n="15">
+            <div xml:id="div.1.1" ana="#PAR.Zasedanje" n="15">
                <head>15. zasedanje</head>
                <docDate>(<date when="1991-06-12">12. junij 1991</date>)</docDate>
                <timeline origin="#TL.1" unit="s">
                   <when synch="#stage.t.1" xml:id="TL.1" absolute="1991-06-12T16:15:00"/>
-                  <when synch="#stage.t.2" since="#TL.1" absolute="1991-06-12T17:40:00"
-                     interval="5100"/>
+                  <when synch="#stage.t.2"
+                        since="#TL.1"
+                        absolute="1991-06-12T17:40:00"
+                        interval="5100"/>
                </timeline>
                <castList>
                   <castItem>
@@ -174,10 +185,9 @@
                      <actor xml:id="sp.ToplakLudvik">dr. Ludvik Toplak</actor>, <role>predsednik
                         Družbenopolitičnega zbora</role>.</castItem>
                </castList>
-               <stage type="time">Seja se je <time from="1991-06-12T16:15:00" xml:id="stage.t.1"
-                     >pričela ob 16.15 uri</time>.</stage>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR">
+               <stage type="time">Seja se je <time from="1991-06-12T16:15:00" xml:id="stage.t.1">pričela ob 16.15 uri</time>.</stage>
+               <div xml:id="div.1.1.1" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.TDR" corresp="#toc.1.1">
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDUJOČI DR. LUDVIK TOPLAK:</speaker>
                         <p>Spoštovane poslanke, spoštovani poslanci, gospe in gospodje, cenjeni
@@ -201,7 +211,8 @@
                            tudi vsem navzočim govori v slovenskem jeziku v srbohrvaščino, na prvem
                            kanalu. Na voljo imate slušalke, s pomočjo katerih lahko spremljate
                            informacije. Besedo ima gospod Lojze Peterle.
-                           <stage>(ploskanje)</stage></p>
+                           <stage type="vocal">(ploskanje)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.PeterleLojze">
                         <speaker>ALOJZ PETERLE:</speaker>
@@ -514,16 +525,18 @@
                            predvideti, segajo tudi na področje, kjer vsega ni moč predvideti in vseh
                            odločitev ni mogoče natančno preveriti. Tudi to dejstvo upoštevamo pri
                            prevzemanju odgovornosti za prihodnost Slovenije. Vsem prav lepa hvala za
-                           pozornost. <stage>(Ploskanje.)</stage></p>
+                           pozornost. <stage type="vocal">(Ploskanje.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDUJOČI DR. LUDVIK TOPLAK:</speaker>
                         <p> Hvala lepa gospodu Lojzetu Peterletu. Besedo ima gospod Ante Marković,
-                           predsednik ZIS. <stage>(ploskanje)</stage>.</p>
+                           predsednik ZIS. <stage type="vocal">(ploskanje)</stage>.</p>
                      </sp>
                      <sp who="#sp.MarkovićAnte">
                         <speaker>ANTE MARKOVIĆ:</speaker>
-                        <p><stage>(Prevod)</stage> Spoštovane poslanke, spoštovani poslanci!
+                        <p>
+                           <stage type="comment">(Prevod)</stage> Spoštovane poslanke, spoštovani poslanci!
                            Dovolite mi, da se na vas obrnem v imenu Zveznega izvršnega sveta in v
                            svojem lastnem imenu in da vam izrazim svoje zadovoljstvo, ker imam
                            priložnost, da govorim v Skupščini Republike Slovenije.</p>
@@ -893,7 +906,8 @@
                         <p>Upam, iskreno upam, da bo Skupščina Slovenije, v interesu slovenskega
                            naroda in vseh drugih narodov v naši državi, dala pozitiven odgovor na
                            vprašanje, ki ga pred njo postavlja zgodovina. Hvala.
-                              <stage>(ploskanje)</stage></p>
+                              <stage type="vocal">(ploskanje)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDUJOČI DR. LUDVIK TOPLAK:</speaker>
@@ -1009,7 +1023,8 @@
                            podpira tiste federalne enote, ki se pod plaščem zavzemanja za močno
                            federacijo, prizadevajo ohraniti planso tržni način gospodarjenja in
                            neučinkovito gospodarsko strukturo z močno porazdelitveno funkcijo
-                           federacije - seveda v njihovo korist. <stage>(aplavz)</stage></p>
+                           federacije - seveda v njihovo korist. <stage type="vocal">(aplavz)</stage>
+                        </p>
                         <p>V letu 1991 sprejeti ukrepi, zlasti na kreditno-monetarnem področju,
                            kažejo očitno popuščanje ZIS tovrstnim pritiskom in odpovedovanjem
                            njegovim lastnim konceptualnim opredelitvam in programa
@@ -1028,15 +1043,16 @@
                            na razpolago, uskladiti maksimalno kar se bo dalo, vendar moram priznati,
                            to ni  samo naša stvar, ampak to zavisi tudi od dobre volje Zveznega
                            izvršnega sveta. Hvala lepa.</p>
-                        <p><stage>(Ploskanje)</stage></p>
+                        <p>
+                           <stage type="vocal">(Ploskanje)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDUJOČI DR. LUDVIK TOPLAK:</speaker>
                         <p> Hvala lepa. Po programu zaključujemo skupno zasedanje vseh treh zborov;
                            nadaljevanje bo v ločenih zborih, na  ločenih zborih. Hvala.</p>
                      </sp>
-                     <stage type="time">(Seja je bila <time to="1991-06-12T17:40:00"
-                           xml:id="stage.t.2">končana 12.junija 1991 ob 17.40 uri</time>.)</stage>
+                     <stage type="time">(Seja je bila <time to="1991-06-12T17:40:00" xml:id="stage.t.2">končana 12.junija 1991 ob 17.40 uri</time>.)</stage>
                   </div>
                </div>
             </div>

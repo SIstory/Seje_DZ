@@ -31,8 +31,7 @@
             <pubPlace>https://github.com/SIstory/Seje_DZ/tree/master/</pubPlace>
             <availability status="free">
                <licence>http://creativecommons.org/licenses/by/4.0/</licence>
-               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/"
-                     >Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
+               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
                </p>
             </availability>
             <date when="2016-03-29+02:00"/>
@@ -53,9 +52,7 @@
                      <date>(19. junij in 17. julij 1991)</date>
                   </imprint>
                </monogr>
-               <ref
-                  target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=54E6D7CFFE42D38CC1257C9B00240285"
-                     >(<date>2016-03-10</date>)</ref>
+               <ref target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=54E6D7CFFE42D38CC1257C9B00240285">(<date>2016-03-10</date>)</ref>
             </biblStruct>
             <biblFull>
                <titleStmt>
@@ -67,10 +64,10 @@
                   <publisher>Državni zbor Republike Slovenije</publisher>
                   <availability status="free">
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="slv">Avtorske pravice so potekle, delo je v javni
+                              xml:lang="slv">Avtorske pravice so potekle, delo je v javni
                         domeni.</licence>
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="eng">Public Domain Mark 1.0</licence>
+                              xml:lang="eng">Public Domain Mark 1.0</licence>
                   </availability>
                </publicationStmt>
             </biblFull>
@@ -82,7 +79,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -93,6 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2017-01-16+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2017-01-16+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-03-29+02:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -125,11 +134,10 @@
                <item>
                   <list rend="ordered">
                      <head>PRED DNEVNIM REDOM:                                       STRAN</head>
-                     <item n="1">Ugotavljanje prisotnosti delegatov .................... 1</item>
+                     <item n="1" xml:id="toc.1.1">Ugotavljanje prisotnosti delegatov .................... 1</item>
                      <note>Nadaljevanje seje 17.7.1991</note>
-                     <item n="2">Ponovno ugotavljanje prisotnosti delegatov ............ 1</item>
-                     <item n="3">Določitev dnevnega reda ............................... 1<list
-                           rend="simple">
+                     <item n="2" xml:id="toc.1.2">Ponovno ugotavljanje prisotnosti delegatov ............ 1</item>
+                     <item n="3" xml:id="toc.1.3">Določitev dnevnega reda ............................... 1<list rend="simple">
                            <head>GOVORNIKA:</head>
                            <item>dr. Ciril Ribičič ..................................... 1</item>
                            <item>Franc Golija .......................................... 2</item>
@@ -140,14 +148,13 @@
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED:</head>
-                     <item n="1">Odobritev zapisnika skupne seje ....................... 3</item>
-                     <item n="2">Volitve in imenovanja ................................. 3<list
-                           rend="ordered">
-                           <item n="a">razrešitev dolžnosti namestnika ministra za planiranje
+                     <item n="1" xml:id="toc.2.1">Odobritev zapisnika skupne seje ....................... 3</item>
+                     <item n="2" xml:id="toc.2.2">Volitve in imenovanja ................................. 3<list rend="ordered">
+                           <item n="a" xml:id="toc.2.a">razrešitev dolžnosti namestnika ministra za planiranje
                               ........................................ 3</item>
-                           <item n="b">razrešitev dolžnosti namestnika ministra za informiranje
+                           <item n="b" xml:id="toc.2.b">razrešitev dolžnosti namestnika ministra za informiranje
                               ...................................... 4</item>
-                           <item n="c">izvolitev sodnikov Vrhovnega sodišča Republike Slovenije,
+                           <item n="c" xml:id="toc.2.c">izvolitev sodnikov Vrhovnega sodišča Republike Slovenije,
                               višjih in temeljnih sodišč ................ 4<list rend="simple">
                                  <head>GOVORNIKI:</head>
                                  <item>Danijel Starman .......................................
@@ -168,22 +175,22 @@
                                     9</item>
                               </list>
                            </item>
-                           <item n="d">imenovanje namestnika javnega tožilca  Temeljnega javnega
+                           <item n="d" xml:id="toc.2.d">imenovanje namestnika javnega tožilca  Temeljnega javnega
                               tožilstva ........................ 11</item>
-                           <item n="e">nadomestna izvolitev članov Komisije Skupščine  Republike
+                           <item n="e" xml:id="toc.2.e">nadomestna izvolitev članov Komisije Skupščine  Republike
                               Slovenije za ustavna vprašanja ............ 12</item>
-                           <item n="f">nadomestna izvolitev člana Komisije Skupščine  Republike
+                           <item n="f" xml:id="toc.2.f">nadomestna izvolitev člana Komisije Skupščine  Republike
                               Slovenije za človekove pravice in  državljanske svoboščine
                               ............................. 12</item>
-                           <item n="g">imenovanje viceguvernerja  Narodne banke Slovenije
+                           <item n="g" xml:id="toc.2.g">imenovanje viceguvernerja  Narodne banke Slovenije
                               .............................. 13</item>
-                           <item n="h">imenovanje vršilcev dolžnosti direktorja<list rend="ordered">
-                                 <item n="-">Prirodoslovnega muzeja Slovenije,</item>
-                                 <item n="-">Zavoda za raziskavo materiala in konstrukcij v
+                           <item n="h" xml:id="toc.2.h">imenovanje vršilcev dolžnosti direktorja<list rend="ordered">
+                                 <item n="-" xml:id="toc.2.-">Prirodoslovnega muzeja Slovenije,</item>
+                                 <item n="-" xml:id="toc.2.i">Zavoda za raziskavo materiala in konstrukcij v
                                     Ljubljani,</item>
-                                 <item n="-">Zavoda za usposabljanje invalidne mladine v
+                                 <item n="-" xml:id="toc.2.j">Zavoda za usposabljanje invalidne mladine v
                                     Kamniku,</item>
-                                 <item n="-">Slovenskega narodnega gledališča Ljubljana .........
+                                 <item n="-" xml:id="toc.2.k">Slovenskega narodnega gledališča Ljubljana .........
                                        13<list rend="simple">
                                        <head>GOVORNIKI:</head>
                                        <item>Mile Šetinc ...........................................
@@ -198,12 +205,14 @@
                                           16</item>
                                     </list>
                                  </item>
-                              </list></item>
-                        </list></item>
-                     <item n="3">Predlog sklepa o naročilu Javnemu tožilcu Republike Slovenije
+                              </list>
+                           </item>
+                        </list>
+                     </item>
+                     <item n="3" xml:id="toc.2.3">Predlog sklepa o naročilu Javnemu tožilcu Republike Slovenije
                         ................................... 16</item>
-                     <item n="4">Seznam govornikov ..................................... II</item>
-                     <item n="5">Priloga: Zapisnik seje ............................... III</item>
+                     <item n="4" xml:id="toc.2.4">Seznam govornikov ..................................... II</item>
+                     <item n="5" xml:id="toc.2.5">Priloga: Zapisnik seje ............................... III</item>
                   </list>
                </item>
             </list>
@@ -253,22 +262,28 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.VsiZbor">
+         <div xml:id="div.1" ana="#PAR.VsiZbor">
             <head>SKUPNA SEJA VSEH ZBOROV SKUPŠČINE REPUBLIKE SLOVENIJE</head>
-            <div ana="#PAR.Seja" n="20">
+            <div xml:id="div.1.1" ana="#PAR.Seja" n="20">
                <head>20. seja</head>
                <docDate>(<date when="1991-06-19">19. junij</date> in <date when="1991-07-17">17.
                      julij 1991</date>)</docDate>
                <timeline origin="#TL.1" unit="s">
                   <when synch="#stage.t.1" xml:id="TL.1" absolute="1991-06-19T20:04:00"/>
-                  <when synch="#stage.t.2" since="#TL.1" absolute="1991-06-19T20:06:00"
-                     interval="120"/>
+                  <when synch="#stage.t.2"
+                        since="#TL.1"
+                        absolute="1991-06-19T20:06:00"
+                        interval="120"/>
                   <when synch="#stage.t.3" xml:id="TL.2" absolute="1991-07-17T10:55:00"/>
-                  <when synch="#stage.t.4" since="#TL.2" absolute="1991-07-17T12:00:00"
-                     interval="3900"/>
+                  <when synch="#stage.t.4"
+                        since="#TL.2"
+                        absolute="1991-07-17T12:00:00"
+                        interval="3900"/>
                   <when synch="#stage.t.5" xml:id="TL.3" absolute="1991-07-17T12:25:00"/>
-                  <when synch="#stage.t.6" since="#TL.3" absolute="1991-07-17T12:30:00"
-                     interval="300"/>
+                  <when synch="#stage.t.6"
+                        since="#TL.3"
+                        absolute="1991-07-17T12:30:00"
+                        interval="300"/>
                </timeline>
                <castList>
                   <castItem>
@@ -278,32 +293,30 @@
                         Skupščine Republike Slovenije</role>
                   </castItem>
                </castList>
-               <stage type="time">Seja se je <time from="1991-06-19T20:04:00" xml:id="stage.t.1"
-                     >začela ob 20.04 uri</time>.</stage>
-               <div ana="#PAR.PredDnevRed">
-                  <div ana="#PAR.Prisot">
+               <stage type="time">Seja se je <time from="1991-06-19T20:04:00" xml:id="stage.t.1">začela ob 20.04 uri</time>.</stage>
+               <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.Prisot" corresp="#toc.1.1">
                      <sp who="#BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
                         <p>Od skupne seje, ki je seveda malo drugačno, kot je predvideno, nam je
                            ostala pravzaprav samo naloga, da opravimo volitve vrste sodnikov, zato
                            bi jaz to sejo začel najprej s poskusom ugotovitve sklepčnosti. Najprej
-                           Družbenopolitični zbor, prosim. <stage>(34 prisotnih.)</stage> To ni
+                           Družbenopolitični zbor, prosim. <stage type="quorum">(34 prisotnih.)</stage> To ni
                            sklepčnost, ker je potrebna navadna večina - nekvalificirana. Dajmo še
                            enkrat poskusimo. Delegati Družbenopolitičnega zbora,prosim, da
-                           pritisnete na tipko! <stage>(35 prisotnih.)</stage> Zbor občin?
-                              <stage>(34 prisotnih.)</stage> Zbor združenega dela? <stage>(47
+                           pritisnete na tipko! <stage type="quorum">(35 prisotnih.)</stage> Zbor občin?
+                              <stage type="quorum">(34 prisotnih.)</stage> Zbor združenega dela? <stage type="quorum">(47
                               prisotnih.)</stage> Se pravi samo en zbor je sklepčen. Poglejmo, če se
-                           je stanje kaj spremenilo. Družbenopolitični zbor? <stage>(35
-                              delegatov.)</stage> Zbor občin? <stage>(35 delegatov.)</stage></p>
+                           je stanje kaj spremenilo. Družbenopolitični zbor? <stage type="vote">(35
+                              delegatov.)</stage> Zbor občin? <stage type="vote">(35 delegatov.)</stage>
+                        </p>
                         <p>Torej, ker sklepčnosti ne moremo zagotoviti, bomo to sejo poskusili
                            opraviti drugič. Hvala lepa.</p>
                      </sp>
-                     <stage type="time">(SEJA JE BILA <time to="1991-06-19T20:06:00"
-                           xml:id="stage.t.2">PREKINJENA OB 20.06 URI</time> IN  SE JE <time
-                           from="1991-07-17T10:55:00" xml:id="stage.t.3">NADALJEVALA 17.7. 1991 OB
+                     <stage type="time">(SEJA JE BILA <time to="1991-06-19T20:06:00" xml:id="stage.t.2">PREKINJENA OB 20.06 URI</time> IN  SE JE <time from="1991-07-17T10:55:00" xml:id="stage.t.3">NADALJEVALA 17.7. 1991 OB
                            10.55 URI</time>.)</stage>
                   </div>
-                  <div ana="#PAR.Prisot">
+                  <div xml:id="div.1.1.1.2" ana="#PAR.Prisot" corresp="#toc.1.2">
                      <sp who="#PuklVitodrag">
                         <speaker>PREDSEDUJOČI VITODRAG PUKL:</speaker>
                         <p>Spoštovane delegatke in delegati. Pričenjam 20. skupno sejo vseh zborov
@@ -315,7 +328,7 @@
                            Zbor občin: 53; Zbor združenega dela: 51.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.DolDnevRed">
+                  <div xml:id="div.1.1.1.3" ana="#PAR.DolDnevRed" corresp="#toc.1.3">
                      <sp who="#PuklVitodrag">
                         <p>Ugotavljam, da je na seji navzoča večina delegatov vsakega zbora, kar
                            pomeni, da je skupna seja na podlagi 2. točke 72. ustavnega amandmaja k
@@ -387,75 +400,78 @@
                         <speaker>PREDSEDUJOČI VITODRAG PUKL:</speaker>
                         <p>Hvala lepa. Tu je predlog za razširitev dnevnega reda, za sprejetje
                            sklepa, ki je bil pravkar prebran in obrazložen.</p>
-                        <p>Bi želel kdo o tem razpravljati? <stage>(Ne.)</stage> Če ne želi nihče
+                        <p>Bi želel kdo o tem razpravljati? <stage type="debate">(Ne.)</stage> Če ne želi nihče
                            razpravljati, dajem predlog za razširitev dnevnega reda, da se obravnava
                            ta sklep, na glasovanje.</p>
-                        <p>Kdo je prosim za? <stage>(84 je za.)</stage> Je kdo proti? <stage>(27
-                              proti.)</stage> Vzdržani? <stage>(42 vzdržanih.)</stage></p>
+                        <p>Kdo je prosim za? <stage type="vote">(84 je za.)</stage> Je kdo proti? <stage type="vote">(27
+                              proti.)</stage> Vzdržani? <stage type="vote">(42 vzdržanih.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlog za razširitev dnevnega reda za obravnavanje
                            predloženega sklepa sprejet.</p>
-                        <p>Še kdo želi razpravljati o dnevnem redu? <stage>(Ne.)</stage> Sicer dajem
+                        <p>Še kdo želi razpravljati o dnevnem redu? <stage type="debate">(Ne.)</stage> Sicer dajem
                            dnevni red na glasovanje v celoti, s to razširitvijo.</p>
-                        <p>Kdo je za? <stage>(127 delegatov je za.)</stage> Je kdo proti?
-                              <stage>(Štirje delegati so proti.)</stage> Vzdržani? <stage>(21
-                              delegatov je vzdržanih.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(127 delegatov je za.)</stage> Je kdo proti?
+                              <stage type="vote">(Štirje delegati so proti.)</stage> Vzdržani? <stage type="vote">(21
+                              delegatov je vzdržanih.)</stage>
+                        </p>
                      </sp>
                   </div>
                </div>
 
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR" n="1">
+               <div xml:id="div.1.1.2" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.2.1" ana="#PAR.TDR" n="1" corresp="#toc.2.1">
                      <sp who="#PuklVitodrag">
                         <p>Ugotavljam, da je dnevni red sprejet, in sicer:</p>
                         <p>1. odobritev zapisnika 19. skupne seje;</p>
                         <p>2. volitve in imenovanja;</p>
                         <p>3. obravnava sklepa, za katerega je bila pravkar sprejeta razširitev.</p>
-                        <p>Prehajamo na</p>
-                        <p>
-                           <title>1. TOČKO DNEVNEGA REDA</title>,</p>
-                        <p>to je</p>
-                        <p>
+                        <p>Prehajamo na
+                           <title>1. TOČKO DNEVNEGA REDA</title>,
+                           to je
                            <title>ODOBRITEV ZAPISNIKA 19. SKUPNE SEJE</title>.</p>
                         <p>Osnutek zakona ste prejeli. Ali želi kdo razpravljati o zapisniku?
-                              <stage>(Ne.)</stage> Če ne želi nihče, dajem na glasovanje sprejem
+                              <stage type="debate">(Ne.)</stage> Če ne želi nihče, dajem na glasovanje sprejem
                            zapisnika 19. skupne seje.</p>
-                        <p>Kdo je za? <stage>(140 delegatov je za.)</stage> Kdo je proti?
-                              <stage>(Eden delegat je proti.)</stage> Kdo je vzdržan? <stage>(5
-                              delegatov je vzdržanih.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(140 delegatov je za.)</stage> Kdo je proti?
+                              <stage type="vote">(Eden delegat je proti.)</stage> Kdo je vzdržan? <stage type="vote">(5
+                              delegatov je vzdržanih.)</stage>
+                        </p>
                         <p>Ugotavljam, da je zapisnik odobren.</p>
                         <p>Preden bi šli na 2. točko dnevnega reda, bi ponovno ugotovili navzočnost.
-                           Družbenopolitični zbor, prosim! <stage>(57 delegatov je
-                              navzočih.)</stage> Zbor občin! <stage>(53 delegatov je
-                              navzočih.)</stage> Zbor združenega dela. <stage>(50 delegatov je
-                              navzočih.)</stage></p>
+                           Družbenopolitični zbor, prosim! <stage type="vote">(57 delegatov je
+                              navzočih.)</stage> Zbor občin! <stage type="vote">(53 delegatov je
+                              navzočih.)</stage> Zbor združenega dela. <stage type="vote">(50 delegatov je
+                              navzočih.)</stage>
+                        </p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="2">
+                  <div xml:id="div.1.1.2.2" ana="#PAR.TDR" n="2" corresp="#toc.2.2">
                      <sp who="#PuklVitodrag">
-                        <p>Prehajamo na</p>
-                        <p>
+                        <p>Prehajamo na
                            <title>2. TOČKO DNEVNEGA REDA: VOLITVE IN IMENOVANJA</title>.</p>
                         <p>Predsednik Izvršnega sveta Skupščine Republike Slovenije predlaga, da
                            Skupščina razreši Andreja Briškega dolžnosti namestnika ministra za
                            planiranje. Prejeli ste predlog, prejeli ste mnenje Komisije za volitve
                            in imenovanja ter administrativne zadeve. Ali želi besedo predlagatelj?
-                              <stage>(Ne.)</stage> Poročevalec Komisije? <stage>(Ne.)</stage> Ali
-                           želi kdo o predlogu razpravljati? <stage>(Ne.)</stage> Če ne želi nihče
+                              <stage type="debate">(Ne.)</stage> Poročevalec Komisije? <stage type="debate">(Ne.)</stage> Ali
+                           želi kdo o predlogu razpravljati? <stage type="debate">(Ne.)</stage> Če ne želi nihče
                            razpravljati, dajem predlog na glasovanje.</p>
-                        <p>Kdo je za razrešitev? <stage>(148 delegatov je za.)</stage> Kdo je proti?
-                              <stage>(Dva delegata sta proti.)</stage> Kdo je vzdržan? <stage>(10
-                              delegatov je vzdržanih.)</stage></p>
+                        <p>Kdo je za razrešitev? <stage type="vote">(148 delegatov je za.)</stage> Kdo je proti?
+                              <stage type="vote">(Dva delegata sta proti.)</stage> Kdo je vzdržan? <stage type="vote">(10
+                              delegatov je vzdržanih.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Andrej Briški razrešen dolžnosti namestnika ministra za
                            planiranje.</p>
                         <p>Predsednik Izvršnega sveta predlaga, da Skupščina razreši mag. Janeza
                            Šantovca dolžnosti namestnika ministra za informiranje. Predlog ste
                            prejeli, z obrazložitvijo Komisije. Ali želi besedo zastopnik
-                           predlagatelja ? Želi morda zastopnik komisije? <stage>(Ne.)</stage> Ali
-                           želi o predlogu kdo razpravljati? <stage>(Ne.)</stage> Če ne, dajem
+                           predlagatelja ? Želi morda zastopnik komisije? <stage type="debate">(Ne.)</stage> Ali
+                           želi o predlogu kdo razpravljati? <stage type="debate">(Ne.)</stage> Če ne, dajem
                            predlog na glasovanje.</p>
-                        <p>Kdo je za razrešitev? <stage>(142 delegatov je za.)</stage> Kdo je proti?
-                              <stage>(En delegat je proti.)</stage> Vzdržani? <stage>(12 delegatov
-                              je vzdržanih.)</stage></p>
+                        <p>Kdo je za razrešitev? <stage type="vote">(142 delegatov je za.)</stage> Kdo je proti?
+                              <stage type="vote">(En delegat je proti.)</stage> Vzdržani? <stage type="vote">(12 delegatov
+                              je vzdržanih.)</stage>
+                        </p>
                         <p>Ugotavljam, da je mag. Jože Šantovec razrešen dolžnosti namestnika
                            ministra za informiranje.</p>
                         <p>Sodni svet Republike Slovenije predlaga, da Skupščina izvoli dr. Janeza
@@ -485,69 +501,78 @@
                            sodnika Temeljnega sodišča v Celju z 31.12., Barico Zidar dolžnosti
                            sodnice Temeljnega sodišča v Celju s 17.7.1991.</p>
                         <p>Predlog Sodnega sveta ste prejeli, prejeli ste tudi mnenje Komisije. Ali
-                           želi besedo predstavnik Sodnega sveta? <stage>(Ne.)</stage> Komisije?
-                              <stage>(Ne.)</stage> Ali želi o predlogu kdo razpravljati?
-                              <stage>(Ne.)</stage> Če ne, prehajamo na glasovanje.</p>
+                           želi besedo predstavnik Sodnega sveta? <stage type="debate">(Ne.)</stage> Komisije?
+                              <stage type="debate">(Ne.)</stage> Ali želi o predlogu kdo razpravljati?
+                              <stage type="debate">(Ne.)</stage> Če ne, prehajamo na glasovanje.</p>
                         <p>Na glasovanje dajem predlog za izvolitev dr. Janeza Novaka za sodnika
                            Vrhovnega sodišča Republike Slovenije.</p>
-                        <p>Kdo je za? <stage>(150 delegatov je za.)</stage> Je kdo proti? <stage>(En
-                              delegat je proti.)</stage> Vzdržani? <stage>(5 delegatov je
-                              vzdržanih.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(150 delegatov je za.)</stage> Je kdo proti? <stage type="vote">(En
+                              delegat je proti.)</stage> Vzdržani? <stage type="vote">(5 delegatov je
+                              vzdržanih.)</stage>
+                        </p>
                         <p>Ugotavljam, da je dr. Janez Novak izvoljen za sodnika Vrhovnega sodišča
                            Republike Slovenije.</p>
                         <p>Na glasovanje dajem predlog za izvolitev Jožeta Petriča za sodnika
                            Vrhovnega sodišča Republike Slovenije.</p>
-                        <p>Kdo je za? <stage>(138 delegatov je za.)</stage> Je kdo proti?
-                              <stage>(Eden.)</stage> Se je kdo vzdržal? <stage>(10
-                              delegatov.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(138 delegatov je za.)</stage> Je kdo proti?
+                              <stage type="vote">(Eden.)</stage> Se je kdo vzdržal? <stage type="vote">(10
+                              delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je dr. Jože Petrič izvoljen za sodnika Vrhovnega sodišča
                            Republike Slovenije.</p>
                         <p>Na glasovanje dajem predlog za izvolitev Zdenka Vavdo za sodnika Višjega
                            sodišča v Mariboru.</p>
-                        <p>Kdo je za? <stage>(141 delegatov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(8
-                              delegatov.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(141 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(8
+                              delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Zdenko Vauda izvoljen za sodnika Višjega sodišča v
                            Mariboru.</p>
                         <p>Na glasovanje dajem predlog za izvolitev Dragomire Pirih za sodnico
                            Višjega sodišča v Ljubljani.</p>
-                        <p>Kdo je za? <stage>(134 delegatov je za.)</stage> Je kdo proti? <stage>(2
-                              delegata.)</stage> Se je kdo vzdržal? <stage>(12
-                           delegatov.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(134 delegatov je za.)</stage> Je kdo proti? <stage type="vote">(2
+                              delegata.)</stage> Se je kdo vzdržal? <stage type="vote">(12
+                           delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Dragomira Pirih izvoljena za sodnico Višjega sodišča v
                            Ljubljani.</p>
                         <p>Na glasovanje dajem predlog za izvolitev Tjaše Potparič Janežič za
                            sodnico Temeljnega sodišča v Ljubljani.</p>
-                        <p>Kdo je za? <stage>(139 delegatov.)</stage> Je kdo proti? <stage>(2
-                              delegata.)</stage> Se je kdo vzdržal? <stage>(9
-                           delegatov.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(139 delegatov.)</stage> Je kdo proti? <stage type="vote">(2
+                              delegata.)</stage> Se je kdo vzdržal? <stage type="vote">(9
+                           delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Tjaša Potparič Janežič izvoljena za sodnico Temeljnega
                            sodišča v Ljubljani.</p>
                         <p>Na glasovanje dajem predlog za izvolitev Barbare Kurner - Čad za sodnico
                            Temeljnega sodišča v Ljubljani.</p>
-                        <p>Kdo je za? <stage>(142 delegatov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(7
-                              delegatov.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(142 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(7
+                              delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Barbara Kurner-Čad izvoljena za sodnico Temeljnega
                            sodišča v Ljubljani.</p>
                         <p>Na glasovanje dajem predlog za izvolitev Marije Bele za sodnico
                            Temeljnega sodišča v Ljubljani.</p>
-                        <p>Kdo je za? <stage>(141 delegatov.)</stage> Je kdo proti? <stage>(1
-                              delegat.)</stage> Se je kdo vzdržal? <stage>(8 delegatov.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(141 delegatov.)</stage> Je kdo proti? <stage type="vote">(1
+                              delegat.)</stage> Se je kdo vzdržal? <stage type="vote">(8 delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Marija Bele izvoljena za sodnico Temeljnega sodišča v
                            Ljubljani.</p>
                         <p>Na glasovanje dajem predlog za izvolitev Romana Petka za sodnika
                            Temeljnega sodišča v Murski Soboti.</p>
-                        <p>Kdo je za? <stage>(130 delegatov.)</stage> Je kdo proti? <stage>(1
-                              delegat.)</stage> Se je kdo vzdržal? <stage>(10
-                           delegatov.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(130 delegatov.)</stage> Je kdo proti? <stage type="vote">(1
+                              delegat.)</stage> Se je kdo vzdržal? <stage type="vote">(10
+                           delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Roman Petek izvoljen za sodnika Temeljnega sodišča v
                            Murski Soboti.</p>
                         <p>Na glasovanje dajem predlog za izvolitev Jasne Vedenik za sodnico
                            Temeljnega sodišča v Murski Soboti.</p>
-                        <p>Kdo je za? <stage>(127 delegatov.)</stage> Je kdo proti? <stage>(2
-                              delegata.)</stage> Se je kdo vzdržal? <stage>(10
-                           delegatov.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(127 delegatov.)</stage> Je kdo proti? <stage type="vote">(2
+                              delegata.)</stage> Se je kdo vzdržal? <stage type="vote">(10
+                           delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Jasna Vedenik izvoljena za sodnico Temeljnega sodišča v
                            Murski Soboti.</p>
                         <p>Na glasovanje dajem predlog za izvolitev Ane Rener za sodnico Temeljnega
@@ -600,7 +625,7 @@
                      <sp who="#PuklVitodrag">
                         <speaker>PREDSEDUJOČI VITODRAG PUKL:</speaker>
                         <p>Hvala lepa. Replika gospoda Starmana, samo na kratko. Prosim.
-                              <stage>(Glas iz klopi.)</stage> Gospoda Bekeša prosim, naj pove, ali
+                              <stage type="gap">(Glas iz klopi.)</stage> Gospoda Bekeša prosim, naj pove, ali
                            bo glasoval proti ali za.</p>
                      </sp>
                      <sp who="#sp.BekešPeter">
@@ -659,7 +684,7 @@
                      </sp>
                      <sp who="#PuklVitodrag">
                         <speaker>PREDSEDUJOČI VITODRAG PUKL:</speaker>
-                        <p>Ponovno opozarjam, skrajšate repliko. <stage>(Vmes vzklik iz
+                        <p>Ponovno opozarjam, skrajšate repliko. <stage type="gap">(Vmes vzklik iz
                               klopi.)</stage> Gospod Zlobec, prosim. Predstavnika Sodnega sveta ni
                            tu. Bi še kdo želel razpravljati, sicer bi dal to normalno na glasovanje,
                            pa bomo potem to videli.</p>
@@ -795,175 +820,201 @@
                            nikakršna razprava.</p>
                         <p>Na glasovanje dajem predlog za izvolitev Ane Rener za sodnico Temeljnega
                            sodišča v Kopru.</p>
-                        <p>Kdo je za? <stage>(100 delegatov.)</stage> Proti? <stage>(19
-                              delegatov.)</stage> Vzdržani? <stage>(41 delegatov.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(100 delegatov.)</stage> Proti? <stage type="vote">(19
+                              delegatov.)</stage> Vzdržani? <stage type="vote">(41 delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Ana Rener izvoljena za sodnico Temeljnega sodišča v
                            Kopru.</p>
                         <p>Na glasovanje dajem predlog za izvolitev Renate Horvat za sodnico
                            Temeljnega sodišča v Kranju.</p>
-                        <p>Kdo je za? <stage>(149 delegatov.)</stage> Proti? <stage>(1
-                              delegat.)</stage> Vzdržani? <stage>(6 delegatov.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(149 delegatov.)</stage> Proti? <stage type="vote">(1
+                              delegat.)</stage> Vzdržani? <stage type="vote">(6 delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Renata Horvat izvoljena za sodnico Temeljnega sodišča v
                            Kranju.</p>
                         <p>Na glasovanje dajem predlog za izvolitev Marjana Pogačnika za sodnika
                            Temeljnega sodišča v Kranju.</p>
-                        <p>Kdo je za? <stage>(145 delegatov.)</stage> Proti? <stage>(Nihče.)</stage>
-                           Vzdržani? <stage>(6 delegatov.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(145 delegatov.)</stage> Proti? <stage type="vote">(Nihče.)</stage>
+                           Vzdržani? <stage type="vote">(6 delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Marjan Pogačnik izvoljen za sodnika Temeljnega sodišča
                            v Kranju.</p>
                         <p>Na glasovanje dajem predlog za izvolitev Mihaela Savnika za sodnika
                            Temeljnega sodišča v Kranju.</p>
-                        <p>Kdo je za? <stage>(145 delegatov.)</stage> Proti? <stage>(1
-                              delegat.)</stage> Vzdržani? <stage>(3 delegati.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(145 delegatov.)</stage> Proti? <stage type="vote">(1
+                              delegat.)</stage> Vzdržani? <stage type="vote">(3 delegati.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Mihael Savnik izvoljen za sodnika Temeljnega sodišča v
                            Kranju.</p>
                         <p>Na glasovanje dajem predlog za izvolitev Bojana Ficka za sodnika
                            Temeljnega sodišča v Novem mestu.</p>
-                        <p>Kdo je za? <stage>(141 delegatov.)</stage> Proti? <stage>(1
-                              delegat.)</stage> Vzdržani? <stage>(5 delegatov.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(141 delegatov.)</stage> Proti? <stage type="vote">(1
+                              delegat.)</stage> Vzdržani? <stage type="vote">(5 delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Bojan Ficko izvoljen za sodnika Temeljnega sodišča v
                            Novem mestu.</p>
                         <p>Na glasovanje dajem predlog za izvolitev Jasne Šavelj - Franetovič za
                            sodnico Temeljnega sodišča v Novem mestu.</p>
-                        <p>Kdo je za? <stage>(141 delegatov.)</stage> Proti? <stage>(3
-                              delegati.)</stage> Vzdržani? <stage>(4 delegati.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(141 delegatov.)</stage> Proti? <stage type="vote">(3
+                              delegati.)</stage> Vzdržani? <stage type="vote">(4 delegati.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Jasna Šavelj-Franetovič izvoljena za sodnico Temeljnega
                            sodišča v Novem mestu.</p>
                         <p>Na glasovanje dajem predlog za ponovno izvolitev Janeza Kaučiča za
                            sodnika Temeljnega sodišča v Murski Soboti.</p>
-                        <p>Kdo je za? <stage>(142 delegatov.)</stage> Proti? <stage>(Nihče.)</stage>
-                           Vzdržani? <stage>(3 delegati.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(142 delegatov.)</stage> Proti? <stage type="vote">(Nihče.)</stage>
+                           Vzdržani? <stage type="vote">(3 delegati.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Janez Kaučič ponovno izvoljen za sodnika Temeljnega
                            sodišča v Murski Soboti.</p>
                         <p>Na glasovanje dajem predlog za razrešitev Jelke Fink dolžnosti Temeljnega
                            sodišča v Celju z 31.7.1991.</p>
-                        <p>Kdo je za? <stage>(142 je za.)</stage> Proti? <stage>(Nihče.)</stage>
-                           Vzdržani? <stage>(3 vzdržani.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(142 je za.)</stage> Proti? <stage type="vote">(Nihče.)</stage>
+                           Vzdržani? <stage type="vote">(3 vzdržani.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Jelka Fink razrešena dolžnosti sodnice Temeljnega
                            sodišča v Celju z 31.7.1991.</p>
                         <p>Na glasovanje dajem predlog za razrešitev Bojana Šrota dolžnosti sodnika
                            Temeljnega sodišča v celju.</p>
-                        <p>Kdo je za? <stage>(140 je za.)</stage> Proti? <stage>(2 proti.)</stage>
-                           Vzdržani? <stage>(3 vzdržani.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(140 je za.)</stage> Proti? <stage type="vote">(2 proti.)</stage>
+                           Vzdržani? <stage type="vote">(3 vzdržani.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Bojan Šrot razrešen dolžnosti sodnika Temeljnega
                            sodišča v Celju z 31.8.</p>
                         <p>Na glasovanje dajem predlog za razrešitev Emilije Gujt dolžnosti sodnice
                            Temeljnega sodišča v Mariboru.</p>
-                        <p>Kdo je za? <stage>(134 je za.)</stage> Proti? <stage>(1 proti.)</stage>
-                           Vzdržani? <stage>(5 vzdržanih.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(134 je za.)</stage> Proti? <stage type="vote">(1 proti.)</stage>
+                           Vzdržani? <stage type="vote">(5 vzdržanih.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Emilija Gujt razrešena dolžnosti sodnice Temeljnega
                            sodišča v Mariboru z 31.8.1991.</p>
                         <p>Na glasovanje dajem predlog za razrešitev mag. Toneta Jagodiča dolžnosti
                            sodnika Temeljnega sodišča v Ljubljani.</p>
-                        <p>Kdo je za? <stage>(139 je za.)</stage> Proti? <stage>(Dva proti.)</stage>
-                           Vzdržani? <stage>(5 vzdržanih.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(139 je za.)</stage> Proti? <stage type="vote">(Dva proti.)</stage>
+                           Vzdržani? <stage type="vote">(5 vzdržanih.)</stage>
+                        </p>
                         <p>Ugotavljam, da je mag. Tone Jagodič razrešen dolžnosti sodnika Temeljnega
                            sodišča v Ljubljani.</p>
                         <p>Na glasovanje dajem predlog za razrešitev Hinka Janull dolžnosti sodnika
                            Temeljnega sodišča v Ljubljani.</p>
-                        <p>Kdo je za? <stage>(138 je za.)</stage> Proti? <stage>(2 proti.)</stage>
-                           Vzdržani? <stage>(2 vzdržana.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(138 je za.)</stage> Proti? <stage type="vote">(2 proti.)</stage>
+                           Vzdržani? <stage type="vote">(2 vzdržana.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Hinko Janull razrešen dolžnosti sodnika temeljnega
                            sodišča v Ljubljani z 31.8.</p>
                         <p>Na glasovanje dajem predlog za razrešitev Vasilija Novaka dolžnosti
                            predsednika Temeljnega sodišča v Kranju.</p>
-                        <p>Kdo je za? <stage>(138 je za.)</stage> Proti? <stage>(1 proti.)</stage>
-                           Vzdržani? <stage>(3 vzdržani.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(138 je za.)</stage> Proti? <stage type="vote">(1 proti.)</stage>
+                           Vzdržani? <stage type="vote">(3 vzdržani.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Vasilij Novak razrešen dolžnosti predsednika Temeljnega
                            sodišča v Kranju z 31.7.</p>
                         <p>Na glasovanje dajem predlog za razrešitev Franca Križmana dolžnosti
                            sodnika Višjega sodišča v Mariboru.</p>
-                        <p>Kdo je za? <stage>(129 je za.)</stage> Proti? <stage>(3 proti.)</stage>
-                           Vzdržani? <stage>(7 vzdržanih.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(129 je za.)</stage> Proti? <stage type="vote">(3 proti.)</stage>
+                           Vzdržani? <stage type="vote">(7 vzdržanih.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Franc Križman razrešen dolžnosti sodnika Višjega
                            sodišča v Mariboru z 31.7.</p>
                         <p>Na glasovanje dajem predlog za razrešitev Milana Krstiča sodnika
                            Temeljnega sodišča v Ljubljani.</p>
-                        <p>Kdo je za? <stage>(129 je za.)</stage> Proti? <stage>(2 proti.)</stage>
-                           Vzdržani? <stage>(6 vzdržanih.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(129 je za.)</stage> Proti? <stage type="vote">(2 proti.)</stage>
+                           Vzdržani? <stage type="vote">(6 vzdržanih.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Milan Krstič razrešen dolžnosti sodnika Temeljnega
                            sodišča v Ljubljani z 31.8.</p>
                         <p>Na glasovanje dajem predlog za razrešitev Janka Jermana dolžnosti sodnika
                            Temeljnega sodišča v Mariboru.</p>
-                        <p>Kdo je za? <stage>(138 je za.)</stage> Proti? <stage>(1 proti.)</stage>
-                           Vzdržani? <stage>(5 vzdržanih.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(138 je za.)</stage> Proti? <stage type="vote">(1 proti.)</stage>
+                           Vzdržani? <stage type="vote">(5 vzdržanih.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Janko Jerman razrešen dolžnosti sodnika Temeljnega
                            sodišča v Mariboru.</p>
                         <p>Na glasovanje dajem predlog za razrešitev Vinka Žagarja dolžnosti sodnika
                            Temeljnega sodišča v Celju.</p>
-                        <p>Kdo je za? <stage>(132 je za.)</stage> Proti? <stage>(Eden
-                              proti.)</stage> Vzdržani? <stage>(4 vzdržani.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(132 je za.)</stage> Proti? <stage type="vote">(Eden
+                           proti.)</stage> Vzdržani? <stage type="vote">(4 vzdržani.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Vinko Žagar razrešen dolžnosti sodnika Temeljnega
                            sodišča v Celju z 31.12.</p>
                         <p>Na glasovanje dajem predlog za razrešitev Barice Zidar dolžnosti sodnice
                            Temeljnega sodišča v Celju.</p>
-                        <p>Kdo je za? <stage>(131 za.)</stage> Proti? <stage>(2 proti.)</stage>
-                           Vzdržani? <stage>(4 vzdržani.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(131 za.)</stage> Proti? <stage type="vote">(2 proti.)</stage>
+                           Vzdržani? <stage type="vote">(4 vzdržani.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Barica Zidar razrešena dolžnosti sodnice Temeljnega
                            sodišča v Celju z 17.7.</p>
                         <p>Javni tožilec Republike Slovenije predlaga, da Skupščina imenuje Borisa
                            Marčiča za namestnika javnega tožilca Temeljnega javnega tožilstva v
                            Mariboru. Predlog ste prejeli, sprejeli ste tudi mnenje Komisije za
                            volitve in imenovanja.</p>
-                        <p>Želi besedo zastopnik predlagatelja komisije? <stage>(Ne.)</stage> Želi
+                        <p>Želi besedo zastopnik predlagatelja komisije? <stage type="debate">(Ne.)</stage> Želi
                            kdo razpravljati o predlogu, sicer dajem predlog na glasovanje.</p>
-                        <p>Kdo je za? <stage>(127 je za.)</stage> Proti? <stage>(3 proti.)</stage>
-                           Vzdržani? <stage>(10 vzdržanih.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(127 je za.)</stage> Proti? <stage type="vote">(3 proti.)</stage>
+                           Vzdržani? <stage type="vote">(10 vzdržanih.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Boris Marčič imenovan za namestnika javnega tožilca
                            Temeljnega javnega tožilstva v Mariboru.</p>
                         <p>Komisija za volitve, imenovanja in administrativne zadeve predlaga, da se
                            v Komisiji Skupščine Republike Slovenije za ustavna vprašanja razrešita
                            Danilo Bašin in Franco Juri dolžnosti članov komisije in izvolita Borut
                            Pahor in Mile Šetinc za člana komisije. Predlog komisije ste prejeli.
-                           Želi predstavnik komisije obrazložiti svoj predlog? <stage>(Ne.)</stage>
-                           Želi kdo o predlogu razpravljati? <stage>(Ne.)</stage> Če ne, da dajem na
+                           Želi predstavnik komisije obrazložiti svoj predlog? <stage type="debate">(Ne.)</stage>
+                           Želi kdo o predlogu razpravljati? <stage type="debate">(Ne.)</stage> Če ne, da dajem na
                            glasovanje, in sicer, prvič, predlog za razrešitev Danila Bašina.</p>
-                        <p>Kdo je za? <stage>(139 je za.)</stage> Proti? <stage>(Nihče.)</stage>
-                           Vzdržani? <stage>(4 vzdržani.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(139 je za.)</stage> Proti? <stage type="vote">(Nihče.)</stage>
+                           Vzdržani? <stage type="vote">(4 vzdržani.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Danilo Bašin razrešen dolžnosti člana Komisije za
                            ustavna vprašanja.</p>
                         <p>Na glasovanje dajem predlog za razrešitev Franca Jurija dolžnosti člana
                            Komisije za ustavna vprašanja.</p>
-                        <p>Kdo je za? <stage>(122 je za.)</stage> Proti? <stage>(12 proti.)</stage>
-                           Vzdržani? <stage>(7 vzdržanih.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(122 je za.)</stage> Proti? <stage type="vote">(12 proti.)</stage>
+                           Vzdržani? <stage type="vote">(7 vzdržanih.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Franco Juri razrešen dolžnosti člana Komisije za
                            ustavna vprašanja.</p>
                         <p>Na glasovanje dajem predlog, da se Borut Pahor izvoli za člana Komisije
                            za ustavna vprašanja.</p>
-                        <p>Kdo je za? <stage>(116 je za.)</stage> Proti? <stage>(12 proti.)</stage>
-                           Vzdržani? <stage>(14 vzdržanih.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(116 je za.)</stage> Proti? <stage type="vote">(12 proti.)</stage>
+                           Vzdržani? <stage type="vote">(14 vzdržanih.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Borut Pahor izvoljen za člana Komisije za ustavna
                            vprašanja.</p>
                         <p>Na glasovanje dajem predlog za izvolitev Mileta Šetinca za člana Komisije
                            za ustavna vprašanja.</p>
-                        <p>Kdo je za? <stage>(99 je za.)</stage> Proti? <stage>(29 proti.)</stage>
-                           Vzdržani? <stage>(17 vzdržanih.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(99 je za.)</stage> Proti? <stage type="vote">(29 proti.)</stage>
+                           Vzdržani? <stage type="vote">(17 vzdržanih.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Mile Šetinc izvoljen za člana Komisije za ustavna
                            vprašanja.</p>
                         <p>Komisija za volitve, imenovanja in administrativne zadeve predlaga, da se
                            v Komisiji Skupščine Republike Slovenije za človekove pravice in za
                            državljanske svoboščine razreši dr. Avguštin Alojzij Mencinger dolžnosti
                            člana te komisije ter se izvoli Marjan Dvornik za člana komisije. Predlog
-                           ste prejeli. Želi kdo o predlogu razpravljati? <stage>(Ne.)</stage> Če
+                           ste prejeli. Želi kdo o predlogu razpravljati? <stage type="debate">(Ne.)</stage> Če
                            ne, dajem na glasovanje: prvič predlog za razrešitev dr. Avguština
                            Alojzija Mencingerja dolžnosti člana te komisije.</p>
-                        <p>Kdo je za? <stage>(134 je za.)</stage> Proti? <stage>(3 proti.)</stage>
-                           Vzdržani? <stage>(3 vzdržani.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(134 je za.)</stage> Proti? <stage type="vote">(3 proti.)</stage>
+                           Vzdržani? <stage type="vote">(3 vzdržani.)</stage>
+                        </p>
                         <p>Ugotavljam, da je dr. Avguštin Alojzij Mencinger razrešen dolžnosti člana
                            Komisije za človekove pravice in državljanske svoboščine.</p>
                         <p>Na glasovanje dajem predlog za izvolitev Marjana Dvornika za člana te
                            komisije.</p>
-                        <p>Kdo je za? <stage>(118 je za.)</stage> Proti? <stage>(10 proti.)</stage>
-                           Vzdržani? <stage>(12 vzdržanih.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(118 je za.)</stage> Proti? <stage type="vote">(10 proti.)</stage>
+                           Vzdržani? <stage type="vote">(12 vzdržanih.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Marjan Dvornik izvoljen za člana Komisije za človekove
                            pravice in državljanske svoboščine.</p>
                         <p>Komisija za volitve, imenovanja in administrativne zadeve predlaga, da
                            Skupščina imenuje mag. Janeza Košaka za  viceguvernerja Narodne banke
                            Slovenije. Predlog ste prejeli. Želi predlagatelj obrazložiti svoj
-                           predlog? <stage>(Ne.)</stage> Komisija? <stage>(Ne.)</stage> Želi o
+                           predlog? <stage type="debate">(Ne.)</stage> Komisija? <stage type="debate">(Ne.)</stage> Želi o
                            predlogu kdo razpravljati, sicer preidemo na glasovanje.</p>
-                        <p>Kdo je za? <stage>(129 je za.)</stage> Proti? <stage>(Nihče.)</stage>
-                           Vzdržani? <stage>(6 vzdržanih.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(129 je za.)</stage> Proti? <stage type="vote">(Nihče.)</stage>
+                           Vzdržani? <stage type="vote">(6 vzdržanih.)</stage>
+                        </p>
                         <p>Ugotavljam, da je mag. Janez Košak imenovan za viceguvernerja Narodne
                            banke Slovenije.</p>
                         <p>Komisija za volitve, imenovanja in administrativne zadeve predlaga, da
@@ -978,8 +1029,8 @@
                            dolžnosti direktorja Slovenskega narodnega gledališča v Ljubljani v
                            prehodnem obdobju do reorganizacije tega zavoda, vendar najdalj za eno
                            leto. Predlog komisije ste prejeli. Želi komisija obrazložiti svoj
-                           predlog? <stage>(Ne.)</stage> Želi o predlogih kdo razpravljati?
-                              <stage>(Da.)</stage> Gospod Šetinc, prosim.</p>
+                           predlog? <stage type="debate">(Ne.)</stage> Želi o predlogih kdo razpravljati?
+                              <stage type="debate">(Da.)</stage> Gospod Šetinc, prosim.</p>
                      </sp>
                      <sp who="#sp.ŠetincMile">
                         <speaker>MILE ŠETINC:</speaker>
@@ -1096,33 +1147,37 @@
                            nadaljnje postopke oziroma ustrezno formulirane sklepe.</p>
                         <p>Prešel bi takoj na glasovanje o tej 8. točki, ki jo imate pred seboj. Tu
                            gre za predlog, da se imenuje doktor Ignac Sivec.</p>
-                        <p>Kdo je za? <stage>(125 delegatov.)</stage> Proti? <stage>(Nihče.)</stage>
-                           Vzdržani? <stage>(7 delegatov.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(125 delegatov.)</stage> Proti? <stage type="vote">(Nihče.)</stage>
+                           Vzdržani? <stage type="vote">(7 delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je dr. Ignac Sivec imenovan za vršilca dolžnosti
                            direktorja Prirodoslovenga muzeja Slovenije do imenovanja direktorja,
                            vendar najdalj za eno leto.</p>
                         <p>Na glasovanje dajem predlog za imenovanje Boruta Gostiča.</p>
-                        <p>Kdo je za? <stage>(121 delegatov.)</stage> Proti? <stage>(1
-                              delegat.)</stage> Vzdržani? <stage>(7 delegatov.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(121 delegatov.)</stage> Proti? <stage type="vote">(1
+                              delegat.)</stage> Vzdržani? <stage type="vote">(7 delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Borut Gostič imenovan za vršilca dolžnosti direktorja
                            Zavoda za raziskavo materiala  in konstrukcij v Ljubljani do
                            reorganizacije tega zavoda, vendar najdalj za eno leto.</p>
                         <p>Na glasovanje dajem predlog za imenovanje Davorja Dominkuša.</p>
-                        <p>Kdo je za? <stage>(119 delegatov.)</stage> Proti? <stage>(3
-                              delegati.)</stage> Vzdržani? <stage>(7 delegatov.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(119 delegatov.)</stage> Proti? <stage type="vote">(3
+                              delegati.)</stage> Vzdržani? <stage type="vote">(7 delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Davor Dominkuš imenovan za vršilca dolžnosti direktorja
                            Zavoda za usposabljanje invalidne mladine v Kamniku do imenovanja
                            direktorja, vendar najdalj za eno leto.</p>
                         <p>Na glasovanje dajem predlog za imenovanje Štefana Balažica.</p>
-                        <p>Kdo je za? <stage>(116 delegatov.)</stage> Proti? <stage>(Nihče.)</stage>
-                           Vzdržani? <stage>(7 delegatov.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(116 delegatov.)</stage> Proti? <stage type="vote">(Nihče.)</stage>
+                           Vzdržani? <stage type="vote">(7 delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je Štefan Balažic imenovan za vršilca dolžnosti direktorja
                            Slovenskega narodnega gledališča v Ljubljani v prehodnem obdobju do
                            reorganizacije tega zavoda, vendar najdalj za eno leto.</p>
                         <p>S tem smo to točko dnevnega reda izčrpali in bi po začetnem sklepu o
                            razširitvi dnevnega reda prešli k obravnavanju predloženega sklepa
                            Liberalne stranke. Sedaj pa ne vem, ali ste dobili morda, gospe in
-                           gospodje, ta sklep na klop. <stage>(Niso dobili.)</stage> Morali bi ga
+                           gospodje, ta sklep na klop. <stage type="comment">(Niso dobili.)</stage> Morali bi ga
                            prebrati. Gospod Potrč, prosim imate besedo.</p>
                      </sp>
                      <sp who="#sp.PotrčMiran">
@@ -1145,7 +1200,7 @@
                            - in potem nadaljujemo z razpravo. Hvala.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="3">
+                  <div xml:id="div.1.1.2.3" ana="#PAR.TDR" n="3" corresp="#toc.2.3">
                      <sp who="#PuklVitodrag">
                         <speaker>PREDSEDUJOČI VITODRAG PUKL:</speaker>
                         <p>Hvala lepa.</p>
@@ -1162,16 +1217,15 @@
                         <p>Ali je potrebno, da se predlog sklepa delegata Franca Golija razmnoži, da
                            se ga razdeli vsem poslancem, naredimo za to odmor in se po odmoru
                            dobimo.</p>
-                        <p>Kdo meni, da je to potrebno, naj glasuje? <stage>(96 delegatov.)</stage>
-                           Kdo je proti? <stage>(Eden.)</stage> Kdo se vzdrži? <stage>(30
-                              vzdržanih.)</stage></p>
+                        <p>Kdo meni, da je to potrebno, naj glasuje? <stage type="vote">(96 delegatov.)</stage>
+                           Kdo je proti? <stage type="vote">(Eden.)</stage> Kdo se vzdrži? <stage type="vote">(30
+                              vzdržanih.)</stage>
+                        </p>
                         <p>Dobro po večinskem sklepu prekinjam sejo. Sejo prekinjam za 20 minut,
                            potem se bomo dobili, razdelili material in videli, kako naprej. Hvala
                            lepa. Prosim bodite točni.</p>
                      </sp>
-                     <stage type="time">(Seja je bila <time to="1991-07-17T12:00:00"
-                           xml:id="stage.t.4">prekinjena ob 12.00 uri</time> in se je <time
-                           from="1991-07-17T12:25:00" xml:id="stage.t.5">nadaljevala ob 12.25
+                     <stage type="time">(Seja je bila <time to="1991-07-17T12:00:00" xml:id="stage.t.4">prekinjena ob 12.00 uri</time> in se je <time from="1991-07-17T12:25:00" xml:id="stage.t.5">nadaljevala ob 12.25
                            uri</time>.)</stage>
                      <sp who="#PuklVitodrag">
                         <speaker>PREDSEDUJOČI VITODRAG PUKL:</speaker>
@@ -1181,8 +1235,7 @@
                            sklepčni. Zato prekinjam sejo.</p>
                         <p>Nadaljevanje bomo sporočili, ko bo to možno. Hvala lepa.</p>
                      </sp>
-                     <stage type="time">(Seja je bila <time to="1991-07-17T12:30:00"
-                           xml:id="stage.t.6">prekinjena ob 12.30 uri</time>.)</stage>
+                     <stage type="time">(Seja je bila <time to="1991-07-17T12:30:00" xml:id="stage.t.6">prekinjena ob 12.30 uri</time>.)</stage>
                   </div>
                </div>
             </div>

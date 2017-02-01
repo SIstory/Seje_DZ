@@ -31,8 +31,7 @@
             <pubPlace>https://github.com/SIstory/Seje_DZ/tree/master/</pubPlace>
             <availability status="free">
                <licence>http://creativecommons.org/licenses/by/4.0/</licence>
-               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/"
-                     >Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
+               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
                </p>
             </availability>
             <date when="2016-03-22+01:00"/>
@@ -53,9 +52,7 @@
                      <date>(23. januar 1991)</date>
                   </imprint>
                </monogr>
-               <ref
-                  target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=58F0DD85B498F071C1257C9A0026FAF8"
-                     >(<date>2016-03-14</date>)</ref>
+               <ref target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=58F0DD85B498F071C1257C9A0026FAF8">(<date>2016-03-14</date>)</ref>
             </biblStruct>
             <biblFull>
                <titleStmt>
@@ -67,10 +64,10 @@
                   <publisher>Državni zbor Republike Slovenije</publisher>
                   <availability status="free">
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="slv">Avtorske pravice so potekle, delo je v javni
+                              xml:lang="slv">Avtorske pravice so potekle, delo je v javni
                         domeni.</licence>
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="eng">Public Domain Mark 1.0</licence>
+                              xml:lang="eng">Public Domain Mark 1.0</licence>
                   </availability>
                </publicationStmt>
             </biblFull>
@@ -82,7 +79,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -93,6 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2017-01-16+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2017-01-16+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-03-23+01:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -125,9 +134,8 @@
                <item>
                   <list rend="ordered">
                      <head>PRED DNEVNIM REDOM:                                      STRAN</head>
-                     <item n="1">Ugotavljanje prisotnosti delegatov .................... 1</item>
-                     <item n="2">Določitev dnevnega reda ............................... 1<list
-                           rend="simple">
+                     <item n="1" xml:id="toc.1.1">Ugotavljanje prisotnosti delegatov .................... 1</item>
+                     <item n="2" xml:id="toc.1.2">Določitev dnevnega reda ............................... 1<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Jože Smole ............................................ 1</item>
                            <item>Jože Zupančič ......................................... 1</item>
@@ -144,7 +152,7 @@
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED:</head>
-                     <item n="1">Odobritev zapisnikov 12. slavnostne in 13 skupne seje (1. točka
+                     <item n="1" xml:id="toc.2.1">Odobritev zapisnikov 12. slavnostne in 13 skupne seje (1. točka
                         dnevnega reda) .............................. 4<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Franc Golija .......................................... 4</item>
@@ -155,14 +163,14 @@
                            <item>Marko Herman .......................................... 6</item>
                         </list>
                      </item>
-                     <item n="2">Predlog ustavnega zakona o spremembah in dopolnitvah ustavnega
+                     <item n="2" xml:id="toc.2.2">Predlog ustavnega zakona o spremembah in dopolnitvah ustavnega
                         zakona za izvedbo amandmaja XCVI k ustavi Republike Slovenije (2. točka
                         dnevnega reda) .............................. 7<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>Lojze Janko ........................................... 7</item>
                         </list>
                      </item>
-                     <item n="3">Ocena razmer po plebiscitu in program aktivnosti za izvedbo
+                     <item n="3" xml:id="toc.2.3">Ocena razmer po plebiscitu in program aktivnosti za izvedbo
                         plebiscitnih nalog (3. točka dnevnega reda) ..............................
                            9<list rend="simple">
                            <head>GOVORNIKI:</head>
@@ -176,7 +184,7 @@
                            <item>Lojze Janko .......................................... 15</item>
                         </list>
                      </item>
-                     <item n="4">Seznam govornikov .................................. II/1</item>
+                     <item n="4" xml:id="toc.2.4">Seznam govornikov .................................. II/1</item>
                   </list>
                </item>
             </list>
@@ -239,15 +247,17 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.VsiZbor">
+         <div xml:id="div.1" ana="#PAR.VsiZbor">
             <head>SKUPNA SEJA VSEH ZBOROV SKUPŠČINE REPUBLIKE SLOVENIJE</head>
-            <div ana="#PAR.Seja" n="14">
+            <div xml:id="div.1.1" ana="#PAR.Seja" n="14">
                <head>14. seja</head>
                <docDate>(<date when="1991-01-23">23. januar 1991</date>)</docDate>
                <timeline origin="#TL.1" unit="s">
                   <when synch="#stage.t.1" xml:id="TL.1" absolute="1991-01-23T16:30:00"/>
-                  <when synch="#stage.t.2" since="#TL.1" absolute="1991-01-23T17:40:00"
-                     interval="4200"/>
+                  <when synch="#stage.t.2"
+                        since="#TL.1"
+                        absolute="1991-01-23T17:40:00"
+                        interval="4200"/>
                </timeline>
                <castList>
                   <castItem>
@@ -255,25 +265,25 @@
                         Bučar</actor>, <role>predsednik Skupščine Republike
                      Slovenije</role>.</castItem>
                </castList>
-               <stage type="time">Seja se je <time from="1991-01-23T16:30:00" xml:id="stage.t.1"
-                     >začela ob 16.30 uri</time>.</stage>
-               <div ana="#PAR.PredDnevRed">
-                  <div ana="#PAR.Prisot">
+               <stage type="time">Seja se je <time from="1991-01-23T16:30:00" xml:id="stage.t.1">začela ob 16.30 uri</time>.</stage>
+               <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.Prisot" corresp="#toc.1.1">
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
                         <p>Začenjam 14. skupno sejo vseh zborov Skupščine Republike Slovenije,
                            sklicano na podlagi 374. člena ustave in 134. člena poslovnika. Začenjamo
                            z ugotavljanjem sklepčnosti in prosim najprej delegate
-                           Družbenopolitičnega zbora, da ugotovijo svojo navzočnost. <stage>(41
-                              delegatov je navzočih.)</stage> Zbor občin, prosim. <stage>(49
-                              delegatov.)</stage> Zbor združenega dela, prosim. <stage>(62
-                              delegatov.)</stage></p>
+                           Družbenopolitičnega zbora, da ugotovijo svojo navzočnost. <stage type="vote">(41
+                              delegatov je navzočih.)</stage> Zbor občin, prosim. <stage type="vote">(49
+                              delegatov.)</stage> Zbor združenega dela, prosim. <stage type="vote">(62
+                              delegatov.)</stage>
+                        </p>
                         <p>Torej ugotavljam, da je na seji večina vseh delegatov vsakega zbora, kar
                            pomeni, da je ta skupna seja sklepčna na podlagi 2. točke 72. amandmaja
                            Ustave Republike Slovenije in 135. člena poslovnika.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.DolDnevRed">
+                  <div xml:id="div.1.1.1.2" ana="#PAR.DolDnevRed" corresp="#toc.1.2">
                      <sp who="#sp.BučarFrance">
                         <p>Predlog dnevnega reda ste prejeli skupaj s sklicem seje in dajem predlog
                            dnevnega reda v obravnavo. Želi kdo besedo? Torej osebno moram obvestiti,
@@ -435,21 +445,21 @@
                      </sp>
                   </div>
                </div>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR" n="1">
+               <div xml:id="div.1.1.2" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.2.1" ana="#PAR.TDR" n="1" corresp="#toc.2.1">
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
                         <p>Hvala lepa. Želi še kdo razpravljati? Torej, v kolikor ne želi nihče
                            razpravljati, ugotavljam, da je sprejet predlagani dnevni red po
                            glasovanju, da gre eventualno, v kolikor se bodo zbori strinjali, pozneje
                            še vprašanje Zaliva itn. na skupno zasedanje.</p>
-                        <p>Kdo je za tak dnevni red? <stage>(152 delegatov.)</stage> Je kdo proti?
-                              <stage>(5 delegatov.)</stage> Se je kdo vzdržal? <stage>(17
-                              delegatov.)</stage></p>
+                        <p>Kdo je za tak dnevni red? <stage type="vote">(152 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(5 delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(17
+                              delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlog dnevnega reda sprejet.</p>
 
-                        <p>Potem gremo na</p>
-                        <p>
+                        <p>Potem gremo na
                            <title>1. TOČKO DNEVNEGA REDA - ODOBRITEV ZAPISNIKOV 12. SLAVNOSTNE  IN
                               13. SKUPNE SEJE</title>.</p>
                         <p>Osnutke zapisnikov ste prejeli. Želi kdo razpravljati najprej o zapisniku
@@ -494,7 +504,7 @@
                      <sp who="#sp.GolijaFranc">
                         <speaker>FRANC GOLIJA:</speaker>
                         <p>Naš predlog je, da je bila Skupščina seznanjena s programom predsednika
-                              <stage>(ni takoj vključen.)</stage> Naš predlog je v bistvu v tem, da
+                              <stage type="comment">(ni takoj vključen.)</stage> Naš predlog je v bistvu v tem, da
                            je bila Skupščina seznanjena s programom in izvajanjem predsednika
                            Kučana, ne pa da ta program sprejemamo.</p>
                      </sp>
@@ -527,9 +537,10 @@
                         <p>Hvala lepa! Želi še kdo razpravljati? Torej, če ne želi nihče več
                            razpravljati, dajem na glasovanje predlog poslanca Golije, da se zapisnik
                            popravi v smislu, kot je predlagal.</p>
-                        <p>Kdo je za ta predlog? <stage>(93 delegatov.)</stage> Je kdo proti?
-                              <stage>(61 delegatov.)</stage> Se je kdo vzdržal? <stage>(26
-                              delegatov.)</stage></p>
+                        <p>Kdo je za ta predlog? <stage type="vote">(93 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(61 delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(26
+                              delegatov.)</stage>
+                        </p>
                         <p>Torej predlog je dobil potrebno podporo. Hvala!</p>
                         <p>Dobro, želi kdo razpravljati o zapisniku? Prosim, ja.</p>
                      </sp>
@@ -542,7 +553,7 @@
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
-                        <p>Jaz se popolnoma strinjam z vašim predlogom. <stage>(Smeh.)</stage> Samo
+                        <p>Jaz se popolnoma strinjam z vašim predlogom. <stage type="vocal">(Smeh.)</stage> Samo
                            moram ugotoviti, da se moram pač podrediti volji zbora. Če je zbor tako
                            odločil, se bom pač podredil, čeprav smatram, da smatram, kot sem že
                            uvodoma rekel, da je napisano pravilno, da lahko naslovite kritiko na
@@ -590,9 +601,10 @@
                            teh zapisnikov pravilna, tako, kot sem jo prebral. Torej, želi še kdo
                            razpravljati o zapisniku 12. seje? Če nihče ne želi razpravljati, dajem
                            zapisnik na glasovanje. To je 12. seje!</p>
-                        <p>Kdo je za to, da se potrdi? <stage>(120 delegatov.)</stage> Je kdo proti?
-                              <stage>(22 delegatov.)</stage> Se je kdo vzdržal? <stage>(26
-                              delegatov.)</stage></p>
+                        <p>Kdo je za to, da se potrdi? <stage type="vote">(120 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(22 delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(26
+                              delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je zapisnik 12. seje odobren.</p>
                         <p>Prehajamo na razpravo. Če je potrebno in če želi še kdo razpravljati o
                            zapisniku slavnostne seje? Če ne želi, potem dajem najprej na glasovanje,
@@ -601,23 +613,24 @@
                            zaradi intervencije. V redu. Hvala! Potem smo sprejeli. Dobro.</p>
                         <p>Dajem na glasovanje celoten zapisnik.</p>
                         <p>Kdo je za zapisnik slavnostne seje, s tem vložkom, o katerem smo že
-                           glasovali? <stage>(105 delegatov.)</stage> Je kdo proti? <stage>(54
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(17
-                           delegatov.)</stage></p>
+                           glasovali? <stage type="vote">(105 delegatov.)</stage> Je kdo proti? <stage type="vote">(54
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(17
+                           delegatov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je zapisnik s tem vstavkom odobren.</p>
                         <p>Prehajamo na glasovanje, oziroma najprej odpiram razpravo o zapisniku 13.
                            seje. Želi kdo razpravljati? Ne želi? Če ne želi razpravljati, prehajamo
                            na glasovanje.</p>
-                        <p>Kdo je za to, da se odobri ta zapisnik? <stage>(169 delegatov.)</stage>
-                           Je kdo proti? <stage>(Nihče.)</stage> Seje kdo vzdržal?
-                              <stage>(Nihče.)</stage></p>
+                        <p>Kdo je za to, da se odobri ta zapisnik? <stage type="vote">(169 delegatov.)</stage>
+                           Je kdo proti? <stage type="vote">(Nihče.)</stage> Seje kdo vzdržal?
+                              <stage type="vote">(Nihče.)</stage>
+                        </p>
                         <p>Ugotavljam, da je zapisnik 13. seje soglasno sprejet.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="2">
+                  <div xml:id="div.1.1.2.2" ana="#PAR.TDR" n="2" corresp="#toc.2.2">
                      <sp who="#sp.BučarFrance">
-                        <p>Potem prehajamo na</p>
-                        <p>
+                        <p>Potem prehajamo na
                            <title>2. TOČKO DNEVNEGA REDA - PREDLOG O SPREMEMBAH IN DOPOLNITVAH
                               USTAVNEGA ZAKONA ZA IZVEDBO USTAVNEGA AMANDMAJA 96 K USTAVI REPUBLIKE
                               SLOVENIJE</title>.</p>
@@ -667,12 +680,13 @@
                         <p>Hvala lepa! Odpiram razpravo. Želi kdo besedo? Če ne želi besede nihče,
                            prehajamo na glasovanje. Ker gre za ustavni zakon, je potrebna
                            dvotretjinska večina vseh poslancev, zato bi še enkrat ugotovili
-                           navzočnost. Prosim delegate Družbenopolitičnega zbora. <stage>(66
-                              delegatov.)</stage> Zbor občin. <stage>(57 delegatov.)</stage> Zbor
-                           združenega dela. <stage>(60 delegatov.)</stage> 183, torej potreben
+                           navzočnost. Prosim delegate Družbenopolitičnega zbora. <stage type="vote">(66
+                              delegatov.)</stage> Zbor občin. <stage type="vote">(57 delegatov.)</stage> Zbor
+                           združenega dela. <stage type="vote">(60 delegatov.)</stage> 183, torej potreben
                            kvorum je podan in prosim, kdor je  za predlog zakona, naj glasuje.</p>
-                        <p>Kdo je za? <stage>(171 delegatov.)</stage> Je kdo proti? <stage>(3
-                              delegati.)</stage> Se je kdo vzdržal? <stage>(2 delegata.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(171 delegatov.)</stage> Je kdo proti? <stage type="vote">(3
+                              delegati.)</stage> Se je kdo vzdržal? <stage type="vote">(2 delegata.)</stage>
+                        </p>
                         <p>Na podlagi tega glasovalnega izida ugotavljam, da sta za predlog
                            ustavnega zakona glasovali dve tretjini vseh delegatov vseh zborov in da
                            je tako zakon sprejet. S tem so izpolnjeni pogoji za razglasitev tega
@@ -687,9 +701,10 @@
                            Slovenije na skupni seji vseh zborov dne 23. januarja 1991.</p>
                         <p>Kdo se, prosim, strinja s tako predlaganim odlokom, prosim da
                            glasuje.</p>
-                        <p>Kdo je za? <stage>(180 delegatov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal ? <stage>(4
-                              delegati.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(180 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal ? <stage type="vote">(4
+                              delegati.)</stage>
+                        </p>
                         <p>Na podlagi izida glasovanj ugotavljam, da je Skupščina Republike
                            Slovenije na skupni seji vseh zborov dne 23. januarja 1991 sprejela odlok
                            o razglasitvi ustavnega zakona o spremembah in dopolnitvah ustavnega
@@ -712,9 +727,10 @@
                            ustavnega zakona za izvedbo ustavnih amandmajev 9 do 89 k Ustavi
                            Republike Slovenije, ki ga je sprejela Skupščina Republike Slovenije na
                            skupni seji vseh zborov 23. januarja 1991.</p>
-                        <p>Prosim, kdo se strinja s predlaganim odlokom? <stage>(179
-                              delegatov.)</stage> Je kdo proti? <stage>(3 delegati.)</stage> Se je
-                           kdo vzdržal? <stage>(2 delegata.)</stage></p>
+                        <p>Prosim, kdo se strinja s predlaganim odlokom? <stage type="vote">(179
+                              delegatov.)</stage> Je kdo proti? <stage type="vote">(3 delegati.)</stage> Se je
+                           kdo vzdržal? <stage type="vote">(2 delegata.)</stage>
+                        </p>
                         <p>Na podlagi tega glasovalnega izida ugotavljam, da je Skupščina Republike
                            Slovenije na skupni seji 23. januarja 1991 sprejela odlok o razglasitvi
                            ustavnega zakona za izvedbo ustavnih amandmajev 9 do 89 k Ustavi
@@ -722,10 +738,9 @@
                         <p>S tem je ta točka dnevnega reda izčrpana.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="3">
+                  <div xml:id="div.1.1.2.3" ana="#PAR.TDR" n="3" corresp="#toc.2.3">
                      <sp who="#sp.BučarFrance">
-                        <p>Preidemo na naslednjo točko dnevnega reda, to je na</p>
-                        <p>
+                        <p>Preidemo na naslednjo točko dnevnega reda, to je na
                            <title>RAZPRAVO O OCENI RAZMER O PLEBISCITU IN PROGRAM AKTIVNOSTI ZA
                               IZVEDBO PLEBISCITNIH NALOG</title>.</p>
                         <p>Ali želi predstavnik Izvršnega sveta besedo? Želi kdo razpravljati?
@@ -1096,8 +1111,7 @@
                            pribaltskih držav, prosim da se predstavniki najprej sestanejo in hvala
                            lepa.</p>
                      </sp>
-                     <stage type="time">(Seja je bila <time to="1991-01-23T17:40:00"
-                           xml:id="stage.t.2">končana 23. januarja 1991 ob 17.40 uri</time>.</stage>
+                     <stage type="time">(Seja je bila <time to="1991-01-23T17:40:00" xml:id="stage.t.2">končana 23. januarja 1991 ob 17.40 uri</time>.</stage>
                   </div>
                </div>
             </div>
