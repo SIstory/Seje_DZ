@@ -31,8 +31,7 @@
             <pubPlace>https://github.com/SIstory/Seje_DZ/tree/master/</pubPlace>
             <availability status="free">
                <licence>http://creativecommons.org/licenses/by/4.0/</licence>
-               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/"
-                     >Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
+               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
                </p>
             </availability>
             <date when="2016-07-20+02:00"/>
@@ -53,9 +52,7 @@
                      <date>(18. in 27. december 1991, 15. in 22. januar 1992)</date>
                   </imprint>
                </monogr>
-               <ref
-                  target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=90962914D124225AC1257CA0003A95A3"
-                     >(<date>2016-04-12</date>)</ref>
+               <ref target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=90962914D124225AC1257CA0003A95A3">(<date>2016-04-12</date>)</ref>
             </biblStruct>
             <biblFull>
                <titleStmt>
@@ -67,10 +64,10 @@
                   <publisher>Državni zbor Republike Slovenije</publisher>
                   <availability status="free">
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="slv">Avtorske pravice so potekle, delo je v javni
+                              xml:lang="slv">Avtorske pravice so potekle, delo je v javni
                         domeni.</licence>
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="eng">Public Domain Mark 1.0</licence>
+                              xml:lang="eng">Public Domain Mark 1.0</licence>
                   </availability>
                </publicationStmt>
             </biblFull>
@@ -82,7 +79,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -93,6 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2016-11-21+01:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2016-11-21+01:00">
+            <name>Andrej Pančur</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-07-20+02:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -125,23 +134,21 @@
                <item>
                   <list rend="ordered">
                      <head>PRED DNEVNIM REDOM:                                      STRAN</head>
-                     <item n="1">Ugotavljanje prisotnosti delegatov .................... 1<list
-                           rend="simple">
+                     <item n="1" xml:id="toc.1.1">Ugotavljanje prisotnosti delegatov .................... 1<list rend="simple">
                            <head>GOVORNIKA:</head>
                            <item>dr. Stanko Buser ...................................... 1</item>
                            <item>Andrej Šter ........................................... 2</item>
                         </list>
                      </item>
                      <note>NADALJEVANJE 10. DELOVNE SKUPNE SEJE 27. DECEMBRA 1991</note>
-                     <item n="2">Ponovno ugotavljanje prisotnosti delegatov ............ 2</item>
+                     <item n="2" xml:id="toc.1.2">Ponovno ugotavljanje prisotnosti delegatov ............ 2</item>
                      <note>NADALJEVANJE 10. DELOVNE SKUPNE SEJE 15. JANUARJA 1992</note>
                   </list>
                </item>
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED:</head>
-                     <item n="1">Predlog zakona o zadrugah ............................. 2<list
-                           rend="simple">
+                     <item n="1" xml:id="toc.2.1">Predlog zakona o zadrugah ............................. 2<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>mag. Franc Avberšek ................................... 3</item>
                            <item>dr. Franc Zagožen ..................................... 3</item>
@@ -156,13 +163,12 @@
                         </list>
                      </item>
                      <note>NADALJEVANJE 10. DELOVNE SKUPNE SEJE 22. JANUARJA 1992</note>
-                     <item n="2">Ugotavljanje prisotnosti poslancev .................... 9<list
-                           rend="simple">
+                     <item n="2" xml:id="toc.2.2">Ugotavljanje prisotnosti poslancev .................... 9<list rend="simple">
                            <head>GOVORNIK:</head>
                            <item>Viljem  Mak ........................................... 9</item>
                         </list>
                      </item>
-                     <item n="3">Seznam govornikov .................................. II/1</item>
+                     <item n="3" xml:id="toc.2.3">Seznam govornikov .................................. II/1</item>
                   </list>
                </item>
             </list>
@@ -213,28 +219,36 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.VsiZbor">
+         <div xml:id="div.1" ana="#PAR.VsiZbor">
             <head>DELOVNA SKUPNA SEJA VSEH ZBOROV SKUPŠČINE REPUBLIKE SLOVENIJE</head>
-            <div ana="#PAR.Delovna" n="10">
+            <div xml:id="div.1.1" ana="#PAR.Delovna" n="10">
                <head>10. seja</head>
                <docDate>(<date when="1991-12-18">18.</date> in <date when="1991-12-27">27. december
                      1991</date>, <date when="1992-01-15">15.</date> in <date when="1992-01-22">22.
                      januar 1992</date>)</docDate>
                <timeline origin="#TL.1" unit="s">
                   <when synch="#stage.t.1" xml:id="TL.1" absolute="1991-12-18T14:25:00"/>
-                  <when synch="#stage.t.2" since="#TL.1" absolute="1991-12-18T15:40:00"
-                     interval="4500"/>
+                  <when synch="#stage.t.2"
+                        since="#TL.1"
+                        absolute="1991-12-18T15:40:00"
+                        interval="4500"/>
                   <when synch="#stage.t.3" xml:id="TL.2" absolute="1991-12-27T17:57:00"/>
-                  <when synch="#stage.t.4" since="#TL.2" absolute="1991-12-27T18:00:00"
-                     interval="180"/>
+                  <when synch="#stage.t.4"
+                        since="#TL.2"
+                        absolute="1991-12-27T18:00:00"
+                        interval="180"/>
                   <when synch="#stage.t.5" xml:id="TL.3" absolute="1992-01-15T18:00:00"/>
-                  <when synch="#stage.t.6" since="#TL.3" absolute="1992-01-15T18:23:00"
-                     interval="1380"/>
+                  <when synch="#stage.t.6"
+                        since="#TL.3"
+                        absolute="1992-01-15T18:23:00"
+                        interval="1380"/>
                   <when synch="#stage.t.7" xml:id="TL.4" absolute="1992-01-15T18:30:00"/>
                   <when synch="#stage.t.8" since="#TL.4" absolute="1992-01-15T18:30:00"/>
                   <when synch="#stage.t.9" xml:id="TL.5" absolute="1992-01-22T17:15:00"/>
-                  <when synch="#stage.t.10" since="#TL.5" absolute="1992-01-22T17:25:00"
-                     interval="600"/>
+                  <when synch="#stage.t.10"
+                        since="#TL.5"
+                        absolute="1992-01-22T17:25:00"
+                        interval="600"/>
                </timeline>
                <castList>
                   <castItem>
@@ -244,17 +258,16 @@
                         Zbora združenega dela</role>
                   </castItem>
                </castList>
-               <stage type="time">Seja se je <time from="1991-12-18T14:25:00" xml:id="stage.t.1"
-                     >začela ob 14.25 uri</time>
+               <stage type="time">Seja se je <time from="1991-12-18T14:25:00" xml:id="stage.t.1">začela ob 14.25 uri</time>
                </stage>
-               <div ana="#PAR.PredDnevRed">
-                  <div ana="#PAR.DolDnevRed">
+               <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.DolDnevRed">
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDUJOČI DR. LUDVIK TOPLAK:</speaker>
-                        <p>Spoštovani poslanci, gospe in gospodje, cenjeni gostje! Pričenjam 10.
+                        <p>Spoštovani poslanci, gospe in gospodje, cenjeni gostje! <title>Pričenjam 10.
                            skupno delovno sejo vseh treh zborov Skupščine Republike Slovenije kjer
                            bomo odločali o spornih vprašanjih v zvezi s predlogom zakona o
-                           zadrugah.</p>
+                           zadrugah</title>.</p>
                         <p>Ker ni bil sprejet sporazumni predlog skupne komisije vseh treh zborov
                            pri predlogu zakona o zadrugah, se na podlagi četrtega odstavka,
                            amandmaja 73, k Ustavi Republike Slovenije, o spornih vprašanjih v zvezi
@@ -265,12 +278,12 @@
                            zbor za sebe sklepčen.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.Prisot">
+                  <div xml:id="div.1.1.1.2" ana="#PAR.Prisot" corresp="#toc.1.1">
                      <sp who="#sp.ToplakLudvik">
                         <p>Najprej ugotavljamo <title>navzočnost</title> Družbenopolitičnega zbora.
-                              <stage>(40 prisotnih.)</stage> Torej ni sklepčen.</p>
-                        <p>Navzočnost v Zboru občin <stage>(50 prisotnih)</stage>. Je sklepčen.</p>
-                        <p>In še navzočnost Zbora združenega dela <stage>(27 prisotnih.)</stage> Med
+                              <stage type="quorum">(40 prisotnih.)</stage> Torej ni sklepčen.</p>
+                        <p>Navzočnost v Zboru občin <stage type="quorum">(50 prisotnih)</stage>. Je sklepčen.</p>
+                        <p>In še navzočnost Zbora združenega dela <stage type="quorum">(27 prisotnih.)</stage> Med
                            tem poslanci prihajajo, zato predlagam, da še malo počakamo.</p>
                         <p>Mi ugotavljamo prisotnost, vendar izkoristimo čas - prosim, gospod
                            Buser.</p>
@@ -286,16 +299,16 @@
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDUJOČI DR. LUDVIK TOPLAK:</speaker>
                         <p>Hvala lepa. Počakamo še minuto, dve, da ugotovimo navzočnost.</p>
-                        <p>Ugotovimo navzočnost: Družbenopolitični zbor <stage>(45
-                              prisotnih)</stage>. Je sklepčen. Zbor občin <stage>(51
-                              prisotnih.)</stage> Je tudi sklepčen. Zbor združenega dela <stage>(30
+                        <p>Ugotovimo navzočnost: Družbenopolitični zbor <stage type="quorum">(45
+                              prisotnih)</stage>. Je sklepčen. Zbor občin <stage type="quorum">(51
+                              prisotnih.)</stage> Je tudi sklepčen. Zbor združenega dela <stage type="quorum">(30
                               prisotnih.)</stage> Predlagam, da počakamo še 5 minut in vodje
                            poslanskih klubov lahko vidite, kdo manjka in zagotovite morebitno
                            sklepčnost za nadaljevanje dela.</p>
                         <p>Poslanke in poslanci! Ponovno ugotovimo navzočnost! Družbenopolitični
-                           zbor <stage>(42 prisotnih)</stage>. Preje je bilo 45. Poslanci Zbora
-                           občin <stage>(51 prisotnih)</stage>. Številka je konstantna. Poslanci
-                           Zbora združenega dela <stage>(29 prisotnih)</stage>.</p>
+                           zbor <stage type="quorum">(42 prisotnih)</stage>. Preje je bilo 45. Poslanci Zbora
+                           občin <stage type="quorum">(51 prisotnih)</stage>. Številka je konstantna. Poslanci
+                           Zbora združenega dela <stage type="quorum">(29 prisotnih)</stage>.</p>
                         <p>Skupna delovna seja po poslovniku ni sklepčna.</p>
                         <p>Gospod Šter želi besedo, čeprav razprave ni.</p>
                      </sp>
@@ -317,47 +330,44 @@
                            lepa.</p>
                      </sp>
 
-                     <stage type="time">(SEJA JE BILA <time to="1991-12-18T15:40:00"
-                           xml:id="stage.t.2">PREKINJENA 18. DECEMBRA 1991 OB 15.40 URI</time> IN SE
+                     <stage type="time">(SEJA JE BILA <time to="1991-12-18T15:40:00" xml:id="stage.t.2">PREKINJENA 18. DECEMBRA 1991 OB 15.40 URI</time> IN SE
                         JE <time from="1991-12-27T17:57:00" xml:id="stage.t.3">NADALJEVALA 27.
                            DECEMBRA 1991 OB 17.57 URI</time>.)</stage>
                   </div>
-                  <div ana="#PAR.Prisot">
+                  <div xml:id="div.1.1.1.3" ana="#PAR.Prisot" corresp="#toc.1.2">
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDUJOČI DR. LUDVIK TOPLAK:</speaker>
                         <p>Nadaljujemo z nedokončano 10. skupno delovno sejo vseh treh zborov
                            Skupščine Republike Slovenije.</p>
                         <p>Ugotovimo navzočnost. Prvo prosim ugotavljamo <title>navzočnost</title>:
-                           Družbenopolitičen zbor <stage>(40 prisotnih)</stage>; Zbor občin
-                              <stage>(36 prisotnih)</stage>; Zbor združenega dela <stage>(31
+                           Družbenopolitičen zbor <stage type="quorum">(40 prisotnih)</stage>; Zbor občin
+                              <stage type="quorum">(36 prisotnih)</stage>; Zbor združenega dela <stage type="quorum">(31
                               prisotnih)</stage>.</p>
                         <p>Ugotavljam, da 10. delovna skupna seja vseh treh zborov ni sklepčna.
                            Ponovno, dali smo znak, predlagam dve minutni odmor. Vodje poslanskih
                            klubov pozivam, da ugotovijo možnost nadaljevanja dela.</p>
                         <p>Nadaljujemo z delom. Ponovno ugotavljamo navzočnost. Poslance
                            Družbenopolitičnega zbora prosim. Ugotavljamo navzočnost. Poslanci
-                           Družbenopolitičnega zbora <stage>(41 prisotnih)</stage>; poslanci Zbora
-                           občin <stage>(39 prisotnih)</stage>; poslanci Zbora združenega dela
-                              <stage>(32 prisotnih)</stage>.</p>
+                           Družbenopolitičnega zbora <stage type="quorum">(41 prisotnih)</stage>; poslanci Zbora
+                           občin <stage type="quorum">(39 prisotnih)</stage>; poslanci Zbora združenega dela
+                              <stage type="quorum">(32 prisotnih)</stage>.</p>
                         <p>Ugotavljam, da je 10. delovna skupna seja vseh treh zborov Skupščine
                            Republike Slovenije nesklepčna.</p>
                         <p>Zato prekinjam 10. delovno sejo. Prekinjam 10. delovno sejo in predajem
                            predsedniku, delovnemu predsedniku 11. delovne seje, Jožetu
                            Zupančiču.</p>
                      </sp>
-                     <stage type="time">(SEJA JE BILA <time to="1991-12-27T18:00:00"
-                           xml:id="stage.t.4">PREKINJENA 27. DECEMBRA 1991 OB 18.00 URI</time> IN SE
+                     <stage type="time">(SEJA JE BILA <time to="1991-12-27T18:00:00" xml:id="stage.t.4">PREKINJENA 27. DECEMBRA 1991 OB 18.00 URI</time> IN SE
                         JE <time from="1992-01-15T18:00:00" xml:id="stage.t.5">NADALJEVALA 15.
                            JANUARJA 1992 OB 18.00 URI</time>.)</stage>
 
                   </div>
                </div>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR">
+               <div xml:id="div.1.1.2" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.2.1" ana="#PAR.TDR" corresp="#toc.2.1">
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDUJOČI JOŽE ZUPANČIČ:</speaker>
-                        <p>Pri 10. delovni seji vseh treh zborov nam je ostalo samo vprašanje</p>
-                        <p>
+                        <p>Pri 10. delovni seji vseh treh zborov nam je ostalo samo vprašanje
                            <title>ZAKONA O ZADRUGAH</title>.</p>
                         <p>Ker ni bil sprejet sporazumni predlog skupne komisije vseh treh zborov
                            pri predlogu zakona, se na podlagi 4. odstavka amandmaja 73 k Ustavi
@@ -657,37 +667,35 @@
                         <p>Ker ni v tem tekstu usklajevalne komisije nič kaj takega napisano, kar
                            tule predlagate. Saj imate besedilo. Če pa ga slučajno nimate zraven, pa
                            nisem kriv, ali pa sem mogoče kriv tudi za to.</p>
-                        <p>Ugotovimo vsaj prisotnost po zborih. Družbenopolitični zbor <stage>(35
-                              prisotnih)</stage>, Zbor občin <stage>(46 prisotnih)</stage>, Zbor
-                           združenega dela <stage>(31 prisotnih)</stage>.</p>
-                        <p>Ponovimo prosim. Družbenopolitični zbor <stage>(41 prisotnih)</stage>,
-                           Zbor občin <stage>(44 prisotnih)</stage>, Zbor združenega dela <stage>(34
+                        <p>Ugotovimo vsaj prisotnost po zborih. Družbenopolitični zbor <stage type="quorum">(35
+                              prisotnih)</stage>, Zbor občin <stage type="quorum">(46 prisotnih)</stage>, Zbor
+                           združenega dela <stage type="quorum">(31 prisotnih)</stage>.</p>
+                        <p>Ponovimo prosim. Družbenopolitični zbor <stage type="quorum">(41 prisotnih)</stage>,
+                           Zbor občin <stage type="quorum">(44 prisotnih)</stage>, Zbor združenega dela <stage type="quorum">(34
                               prisotnih)</stage>.</p>
                         <p>Ali lahko počakamo 5 minut? Ali lahko medtem sprejmemo pokojninski zakon?
                            Takoj sem dobil opomin. Ob 18.30 točno.</p>
                      </sp>
-                     <stage type="time">(Seja je bila <time to="1992-01-15T18:23:00"
-                           xml:id="stage.t.6">prekinjena ob 18.23 uri</time> in se je <time
-                           from="1992-01-15T18:30:00" xml:id="stage.t.7">nadaljevala ob 18.30
+                     <stage type="time">(Seja je bila <time to="1992-01-15T18:23:00" xml:id="stage.t.6">prekinjena ob 18.23 uri</time> in se je <time from="1992-01-15T18:30:00" xml:id="stage.t.7">nadaljevala ob 18.30
                            uri</time>.)</stage>
                      <sp who="#sp.ZupančičJože">
                         <speaker>PREDSEDUJOČI JOŽE ZUPANČIČ:</speaker>
                         <p>Ali ne bom preveč smešen, če bom pozval k glasovanju, da ugotovimo,
                            koliko nas je tu.</p>
                         <p>Moram vseeno vprašati, koliko poslancev in poslank Družbenopolitičnega
-                           zbora je v veliki dvorani Skupščine Republike Slovenije? <stage>(18
+                           zbora je v veliki dvorani Skupščine Republike Slovenije? <stage type="quorum">(18
                               prisotnih.)</stage> Koliko poslancev in poslank Zbora občin?
-                              <stage>(27 prisotnih.)</stage> Koliko poslancev in poslank Zbora
-                           združenega dela je prisotnih? <stage>(26 prisotnih.)</stage></p>
+                              <stage type="quorum">(27 prisotnih.)</stage> Koliko poslancev in poslank Zbora
+                           združenega dela je prisotnih? <stage type="quorum">(26 prisotnih.)</stage>
+                        </p>
                         <p>Jutri ob 10.00 uri nadaljujemo sejo vsi trije zbori, vsak v svojem
                            prostoru. Lahko noč in hvala.</p>
                      </sp>
-                     <stage type="time">(SEJA JE BILA <time to="1992-01-15T18:30:00"
-                           xml:id="stage.t.8">PREKINJENA 15. JANUARJA 1992 OB 18.31 URI</time> IN SE
+                     <stage type="time">(SEJA JE BILA <time to="1992-01-15T18:30:00" xml:id="stage.t.8">PREKINJENA 15. JANUARJA 1992 OB 18.31 URI</time> IN SE
                         JE <time from="1992-01-22T17:15:00" xml:id="stage.t.9">NADALJEVALA 22.
                            JANUARJA 1922 OB 17.15 URI</time>.)</stage>
                   </div>
-                  <div ana="#PAR.Prisot">
+                  <div xml:id="div.1.1.2.2" ana="#PAR.Prisot" corresp="#toc.2.2">
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDUJOČI DR. LUDVIK TOPLAK:</speaker>
                         <p>Spoštovani poslanci, gospe in gospodje, cenjeni gostje, predstavniki
@@ -709,9 +717,9 @@
                            seji, veljavno sklepajo z večino vseh delegatov vseh treh zborov.</p>
                         <p>Preden preidemo na odločanje, ugotovimo <title>navzočnost</title>. Prosim
                            najprej poslance Družbenopolitičnega zbora, da ugotovimo navzočnost.
-                           Poslanci Družbenopolitičnega zbora <stage>(36 prisotnih)</stage>.
-                           Poslanci Zbora občin <stage>(45 prisotnih)</stage>. Poslanci Zbora
-                           združenega dela <stage>(35 prisotnih)</stage>.</p>
+                           Poslanci Družbenopolitičnega zbora <stage type="quorum">(36 prisotnih)</stage>.
+                           Poslanci Zbora občin <stage type="quorum">(45 prisotnih)</stage>. Poslanci Zbora
+                           združenega dela <stage type="quorum">(35 prisotnih)</stage>.</p>
                         <p>Ugotavljam, da za delo nismo sklepčni. Gospod Mak želi besedo. Samo
                            prosim, če je proceduralno vprašanje? Razprave ni. Nismo sklepčni.
                            Proceduralno vprašanje. Gospod Mak, prosim.</p>
@@ -731,12 +739,11 @@
                         <p>Hvala lepa. Mi tukaj nismo sklepčni, zato prekinjam 10. skupno delovno
                            sejo.</p>
                         <p>Samo še informacija: Družbenopolitični zbor je danes tudi predlagal v
-                           nadaljevanju sklic 11. seje. Hvala.          </p>
+                           nadaljevanju sklic 11. seje. Hvala.</p>
                      </sp>
 
-                     <stage type="time">(10. SKUPNA DELOVNA SEJA JE BILA <time
-                           to="1992-01-22T17:25:00" xml:id="stage.t.10">PREKINJENA OB 17. URI IN 25
-                           MINUT TER</time> JE GLEDE NA NADALJNJE USKLAJEVANJE PREDLOGA ZAKONA O
+                     <stage type="time">(10. SKUPNA DELOVNA SEJA JE BILA <time to="1992-01-22T17:25:00" xml:id="stage.t.10">PREKINJENA OB 17. URI IN 25
+                        MINUT</time> TER JE GLEDE NA NADALJNJE USKLAJEVANJE PREDLOGA ZAKONA O
                         ZADRUGAH POSTALA BREZPREDMETNA IN S TEM KONČANA.)</stage>
                   </div>
                </div>
