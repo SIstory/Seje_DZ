@@ -80,7 +80,7 @@
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -91,6 +91,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2017-02-02+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2017-02-02+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-11-17+01:00">
             <name>Andrej Pančur</name>: kodiranje <list>
                <item>front/div[@type='contents']//item[@n]/@xml:id</item>
@@ -706,6 +718,8 @@
                   <actor sameAs="#sp.ToplakLudvik">Toplak dr. Ludvik</actor>
                   .................................... 28, 52</castItem>
                <castItem>
+                  <actor xml:id="sp.unknown"></actor></castItem>
+               <castItem>
                   <actor xml:id="sp.VaupotičBogomir">Vaupotič Bogomir</actor>
                   .................................... 22, 157</castItem>
                <castItem>
@@ -1081,7 +1095,7 @@
                            obravnava in sprejema predlog za izdajo zakona in zakonski osnutek pri
                            zakonu o spremembah in dopolnitvah zakona o osebnem imenu. Želi
                            predlagatelj podati obrazložitev? Predstavnik predlagatelja je prisoten?
-                              <stage>(Ni.)</stage> Želi o predlogu kdo razpravljati? Če ne,
+                              <stage type="comment">(Ni.)</stage> Želi o predlogu kdo razpravljati? Če ne,
                            prehajamo na glasovanje.</p>
                         <p>Kdo je za predlog združitve? <stage type="vote">(34 delegatov.)</stage> Je kdo proti?
                               <stage type="vote">(8 delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(9
@@ -2481,9 +2495,12 @@
                               delegat.)</stage> Se je kdo vzdržal? <stage type="vote">(1 delegat.)</stage>
                         </p>
                         <p>Ugotavljam, da je zbor z večino glasov sprejel predlog sklepa.</p>
-                        <p>Gospod Smole, imate kakšen dodaten predlog? <stage>(Smole: Ne,
-                              hvala.)</stage>
-                        </p>
+                        <p>Gospod Smole, imate kakšen dodaten predlog? 
+                           </p></sp><sp who="#sp.SmoleJože">
+                              <speaker>(Smole:</speaker>
+                                 <ab>Ne,
+                              hvala.)</ab>
+                              </sp><sp who="#sp.ToplakLudvik">
                         <p>S tem smo zaključili dosedanjo 5. točko dnevnega reda. Ob 14. uri imamo
                            skupno zasedanje vseh treh zborov. Prekinjam sejo.</p>
                      </sp>
@@ -2525,7 +2542,7 @@
                      <sp who="#sp.PintarEmilMilan">
                         <speaker>EMIL MILAN PINTAR:</speaker>
                         <p>
-                           <stage>(iz klopi)</stage> Kaj to pomeni?</p>
+                           <stage type="location">(iz klopi)</stage> Kaj to pomeni?</p>
                      </sp>
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDNIK DR. LUDVIK TOPLAK:</speaker>
@@ -3226,7 +3243,7 @@
                   <div xml:id="div.1.1.2.9" ana="#PAR.Prisot" corresp="#toc.2.7">
                      <sp who="#sp.ToplakLudvik">
                         <p>Nadaljujemo razpravo, ki smo jo včeraj prekinili. Prosim, da ugotovimo
-                              <title>prisotnost</title>, pritisnite vsi na sivo tipko. <stage>(Po
+                              <title>prisotnost</title>, pritisnite vsi na sivo tipko. <stage type="quorum">(Po
                               mojem štetju nas je 43, 44.)</stage> Hvala, z menoj vred. Prosim lepo,
                            gospod Viktor Žakelj.</p>
                      </sp>
@@ -6184,7 +6201,7 @@
                            Praktično in tudi usklajeno z drugimi zbori, predvsem z Zborom občin bi
                            bilo, da se sprejme samo predlog za izdajo zakona. Predlog za izdajo
                            zakona, dodatno pa imamo še tri dodatne sklepe. En dodatni sklep Emila
-                           Milana Pintarja. Prosim? Trifazni, redni postopek, da ...<stage>(Glasovi
+                           Milana Pintarja. Prosim? Trifazni, redni postopek, da ...<stage type="gap">(Glasovi
                               iz dvorane.)</stage>... Smo rekli: "Zbor nalaga Izvršnemu svetu
                            Skupščine Republike Slovenije, da ob upoštevanju razprave na zboru in
                            delovnih telesih pripravi nov osnutek zakona". To smo izglasovali. Sedaj
@@ -6260,7 +6277,7 @@
                      </sp>
                      <sp who="#sp.KopačJanez">
                         <speaker>JANEZ KOPAČ:</speaker>
-                        <p>...<stage>(iz klopi)</stage>... Kaj pa predlog? Je s tezami ali brez?</p>
+                        <p>...<stage type="location">(iz klopi)</stage>... Kaj pa predlog? Je s tezami ali brez?</p>
                      </sp>
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDNIK DR. LUDVIK TOPLAK:</speaker>
@@ -7324,7 +7341,7 @@
                      </sp>
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDNIK DR. LUDVIK TOPLAK:</speaker>
-                        <p>Pet jih je na usklajevalni komisiji. <stage>(govorjenje.)</stage> Nič, mi
+                        <p>Pet jih je na usklajevalni komisiji. <stage type="gap">(govorjenje.)</stage> Nič, mi
                            nadaljujemo z delom.</p>
                      </sp>
                   </div>
@@ -8061,7 +8078,7 @@
                      </sp>
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDNIK DR. LUDVIK TOPLAK:</speaker>
-                        <p>Hvala lepa. Gospa Beblerjeva ...<stage>(Govorjenje iz klopi.)</stage>...
+                        <p>Hvala lepa. Gospa Beblerjeva ...<stage type="gap">(Govorjenje iz klopi.)</stage>...
                            Želi še kdo razpravljati?</p>
                         <p>Če ni več razpravljalcev, prehajamo na glasovanje o sporazumnem predlogu
                            skupne komisije za usklajevanje, ki ga je prebral gospod Pintar. Da
@@ -8085,7 +8102,11 @@
                            de facto ne pomeni razrešitve teh članov Zakonodajno-pravne komisije in
                            sprašujem pod drugič to, ali je mogoče in dopustno glasovati o nečem, kar
                            poslovniško ni sprejemljivo. Samo to.</p>
-                        <p>...<stage>(Iz klopi: ali lahko preberete ta člen, prosim.)</stage>...</p>
+                        <p>...                          
+                           </p></sp><sp who="#sp.Lavtižar-BeblerDarja">
+                              <stage type="location">(Iz klopi:</stage>
+                                 <ab>ali lahko preberete ta člen, prosim.)...</ab>
+                           </sp><sp who="#sp.Lavtižar-BeblerDarja">
                         <p>Da, 160. člen, saj sem že prej povedala in imate tudi vi najbrž pri roki
                            (aha, nimate), govori o tem, da so člani komisije, vključno s
                            predsednikom, podpredsednikom, izvoljeni za 4 leta, kar pomeni, da je to
@@ -8461,7 +8482,7 @@
                      </sp>
                      <sp who="#sp.BuserStanko">
                         <speaker>DR. STANKO BUSER:</speaker>
-                        <p>...<stage>(Govori iz klopi)</stage>... Hotel bi le reči, da imamo to
+                        <p>...<stage type="location">(Govori iz klopi)</stage>... Hotel bi le reči, da imamo to
                            drugič na dnevnem redu in smo dobili v Poročevalcu jasno napisano. Ne bi
                            imel nič proti, če to danes obravnavamo. Hkrati pa bi hotel reči, da
                            gospod Školč izziva ta problem...</p>
@@ -8951,7 +8972,7 @@
                            <title>PREDLOG ODLOKA O SPREMEMBAH IN DOPOLNITVAH ODLOKA</title>
                            je predložila Komisija za volitve, imenovanja in administrativne zadeve.
                            Predstavnik Komisije za volitve, imenovanja gospod Lampret želi besedo?
-                           Je tukaj. Drug predstavnik komisije želi besedo? <stage>(Ni.)</stage>
+                           Je tukaj. Drug predstavnik komisije želi besedo? <stage type="debate">(Ni.)</stage>
                            Odpiramo razpravo. Želi kdo razpravljati?</p>
                         <p>Na glasovanje dajem <title>predlog odloka o spremembah in dopolnitvah odloka o
                            ustanovitvi, nalogah, sestavi in številu  članov Komisije Skupščine
@@ -8967,7 +8988,10 @@
                         <p>Ugotavljam, s 44 za in dvemi vzdržanimi je predlog odloka sprejet.</p>
                      </sp>
                   </div>
-                  <div xml:id="div.1.1.2.46" ana="#PAR.TDR" n="15, 14, 12, 4" corresp="#toc.2.45">
+                  <div xml:id="div.1.1.2.46"
+                       ana="#PAR.TDR"
+                       n="15, 14, 12, 4"
+                       corresp="#toc.2.45">
                      <sp who="#sp.ToplakLudvik">
                         <p>Sedaj prehajamo na USKLAJEVANJE.</p>
                         <p>
@@ -8990,8 +9014,8 @@
                            prvega dne meseca, v katerem so bili izpolnjeni pogoji za
                            uskladitev."</p>
                         <p>Najprej, prosim, pritisnite na gumb, kdo je za tak amandma.
-                              <stage>(Ugotovi iz klopi.)</stage> Mi moramo ponovno glasovati na
-                           predlog usklajevalne komisije. <stage>(govorjenje)</stage> Po 305. členu:
+                              <stage type="comment">(Ugotovi iz klopi.)</stage> Mi moramo ponovno glasovati na
+                           predlog usklajevalne komisije. <stage type="gap">(govorjenje)</stage> Po 305. členu:
                            "da bi se uskladilo besedilo zakona med zbori, znova glasujejo o spornih
                            vprašanjih". Prosim - druga dva zbora nista sprejela, mi vztrajamo pri
                            našem. Prosim.</p>
@@ -9054,7 +9078,7 @@
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDNIK DR. LUDVIK TOPLAK:</speaker>
                         <p>
-                           <stage>(govorjenje v dvorani in pri predsedniški mizi.)</stage> "Če se
+                           <stage type="gap">(govorjenje v dvorani in pri predsedniški mizi.)</stage> "Če se
                            zbori po dveh zaporednih obravnavah spornega vprašanja ne zedinijo glede
                            besedila predloga zakona ali drugega akta, ali če predlog zakona..." in
                            tako naprej.</p>
@@ -9081,7 +9105,7 @@
                         <speaker>PREDSEDNIK DR. LUDVIK TOPLAK:</speaker>
                         <p>Glejte: "Če se zbori po dveh zaporednih obravnavah spornega vprašanja ne
                            zedinijo glede besedila predloga..." - in smo sedaj pri drugi obravnavi.
-                           Potem se imenuje komisija. <stage>(govorjenje)</stage> Treba je prebrati
+                           Potem se imenuje komisija. <stage type="gap">(govorjenje)</stage> Treba je prebrati
                            ves odstavek, saj je jasno! "Če se zbori po dveh zaporednih obravnavah
                            spornega vprašanja ne zedinijo glede besedila predloga zakona ali drugega
                            akta, ali če predlog zakona ali drugega akta ni bil sprejet v enem ali v
@@ -9181,7 +9205,7 @@
                            zakon. Prej bi ga morali mi dvakrat v našem zboru obravnavati, potem šele
                            pride na dnevni red komisije. Zato bi ponovno dali na glasovanje
                            amandmaje k predlogu zakona o spremembah in dopolnitvah zakona o posebnem
-                           prometnem davku, ki smo jih prej... <stage>(govorjenje)</stage> Da se
+                           prometnem davku, ki smo jih prej... <stage type="gap">(govorjenje)</stage> Da se
                            sprejme, ne. Gre za proceduralno vprašanje. Vi ste obravnavali na
                            komisiji, preden bi smeli; ampak ste predložili in sedaj dajem jaz to
                            stvar na glasovanje. Vi bi smeli obravnavati šele po dvakratni obravnavi

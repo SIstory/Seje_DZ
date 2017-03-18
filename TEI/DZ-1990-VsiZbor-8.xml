@@ -31,8 +31,7 @@
             <pubPlace>https://github.com/SIstory/Seje_DZ/tree/master/</pubPlace>
             <availability status="free">
                <licence>http://creativecommons.org/licenses/by/4.0/</licence>
-               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/"
-                     >Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
+               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
                </p>
             </availability>
             <date when="2016-03-21+01:00"/>
@@ -53,9 +52,7 @@
                      <date>(4. oktober 1990)</date>
                   </imprint>
                </monogr>
-               <ref
-                  target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=04DC9C6618F0689BC1257C9A00251A66"
-                     >(<date>2016-03-14</date>)</ref>
+               <ref target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=04DC9C6618F0689BC1257C9A00251A66">(<date>2016-03-14</date>)</ref>
             </biblStruct>
             <biblFull>
                <titleStmt>
@@ -67,10 +64,10 @@
                   <publisher>Državni zbor Republike Slovenije</publisher>
                   <availability status="free">
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="slv">Avtorske pravice so potekle, delo je v javni
+                              xml:lang="slv">Avtorske pravice so potekle, delo je v javni
                         domeni.</licence>
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="eng">Public Domain Mark 1.0</licence>
+                              xml:lang="eng">Public Domain Mark 1.0</licence>
                   </availability>
                </publicationStmt>
             </biblFull>
@@ -82,7 +79,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -93,6 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2017-02-02+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2017-02-02+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-06-16+02:00">
             <name>Andrej Pančur</name>: kodiranje <list>
                <item>front/div[@type='contents']//item[@n]/@xml:id</item>
@@ -142,8 +151,7 @@
                   <list rend="ordered">
                      <head>DNEVNI RED:</head>
                      <item n="1" xml:id="toc.2.1">Predlog ustavnega zakona za izvedbo ustavnega
-                        amandmaja XCVI k Ustavi Republike Slovenije ..................... 2<list
-                           rend="simple">
+                        amandmaja XCVI k Ustavi Republike Slovenije ..................... 2<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Vitodrag Pukl ......................................... 2</item>
                            <item>Lojze Janko ........................................... 3</item>
@@ -223,8 +231,10 @@
                <docDate>(<date when="1990-10-04">4. oktober 1990</date>)</docDate>
                <timeline origin="#TL.1" unit="s">
                   <when synch="#stage.t.1" xml:id="TL.1" absolute="1990-10-04T13:15:00"/>
-                  <when synch="#stage.t.2" since="#TL.1" absolute="1990-10-04T14:10:00"
-                     interval="3300"/>
+                  <when synch="#stage.t.2"
+                        since="#TL.1"
+                        absolute="1990-10-04T14:10:00"
+                        interval="3300"/>
                </timeline>
                <castList>
                   <castItem>
@@ -258,10 +268,10 @@
                            razpravljala in je prišlo do določene modifikacije predloga. Zato torej
                            ne razpravljamo o starem predlogu, ampak o povsem novem predlogu zakona.
                            Torej najprej bi ugotovili sklepčnost seje in prosim delegate
-                           Družbenopolitičnega zbora, da izkažejo svojo prisotnost. <stage>(70
+                           Družbenopolitičnega zbora, da izkažejo svojo prisotnost. <stage type="quorum">(70
                               prisotnih.)</stage> Zbor občin. Bi ponovil, Zbor občin ponovimo
-                           glasovanje. Nimam ugotovljene navzočnosti <stage>(54 prisotnih)</stage>
-                           in Zbor združenega dela <stage>(68 prisotnih)</stage>.</p>
+                           glasovanje. Nimam ugotovljene navzočnosti <stage type="quorum">(54 prisotnih)</stage>
+                           in Zbor združenega dela <stage type="quorum">(68 prisotnih)</stage>.</p>
                         <p>Ugotavljam, da je na seji navzoča večina vseh delegatov vsakega zbora,
                            kar pomeni, da je skupna seja na podlagi druge točke 72. amandmaja ustave
                            Republike Slovenije in prvega odstavka 135. člena Poslovnika Skupščine
@@ -281,8 +291,8 @@
                            lahko to naredimo, da se s tem strinjamo.</p>
                         <p>Torej dam ta predlog dnevnega reda na razpravo. Želi kdo besedo? Če ne
                            želi nihče razpravljati, dajem predlog dnevnega reda na glasovanje.</p>
-                        <p>Kdo je prosim za? <stage>(168 prisotnih.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(Nihče.)</stage>
+                        <p>Kdo je prosim za? <stage type="quorum">(168 prisotnih.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(Nihče.)</stage>
                         </p>
                         <p>Torej ugotavljam, da je predloženi dnevni red sprejet.</p>
                      </sp>
@@ -749,19 +759,19 @@
                            ustavna komisija ni treba, da se posebej sestane. To se strinjamo, ker v
                            bistvu je o tem že zavzela stališče in to čisto definitivno. Sedaj dajem
                            ta predlog poslanca Schwarzbartla na glasovanje.</p>
-                        <p>Kdo je za? <stage>(70 delegatov.)</stage> Je kdo proti? <stage>(112
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(26 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(70 delegatov.)</stage> Je kdo proti? <stage type="vote">(112
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(26 delegatov.)</stage>
                         </p>
                         <p>Hvala lepa. Predlog ni sprejet.</p>
                         <p>S tem sedaj preidemo na glasovanje o zakonu v celoti. Bi mogoče še
                            enkrat, zaradi važnosti zadeve, še enkrat ugotovili navzočnost. Samo
-                           moment. Najprej Družbenopolitični zbor <stage>(74 prisotnih)</stage>;
-                           Zbor občin <stage>(73 prisotnih)</stage>; Zbor združenega dela <stage>(67
+                           moment. Najprej Družbenopolitični zbor <stage type="quorum">(74 prisotnih)</stage>;
+                           Zbor občin <stage type="quorum">(73 prisotnih)</stage>; Zbor združenega dela <stage type="quorum">(67
                               prisotnih)</stage>. Torej ugotavljam, da je zbor sklepčen. Dajem
                            zakon, ustavni zakon za izvedbo ustavnega amandmaja 96. k ustavi
                            Republike Slovenije na glasovanje.</p>
-                        <p>Kdo je za? <stage>(209 delegatov.)</stage> Je kdo proti? <stage>(2
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(1 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(209 delegatov.)</stage> Je kdo proti? <stage type="vote">(2
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(1 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je predlog zakona sprejet s potrebno 2/3 večino glasov
                            vseh delegatov vseh zborov, s čimer so izpolnjeni pogoji za razglasitev
@@ -776,8 +786,8 @@
                            Republike Slovenije, ki ga je sprejela Skupščina Republike Slovenije na
                            skupni seji dne 4. oktobra 1990.</p>
                         <p>Kdor se, prosim, strinja s predlaganim odlokom, prosim da se izjasni s
-                           sivo tipko. <stage>(212 delegatov)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(1 delegat.)</stage>
+                           sivo tipko. <stage type="vote">(212 delegatov)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(1 delegat.)</stage>
                         </p>
                         <p>Torej na podlagi izida glasovanja ugotavljam, da je Skupščina Republike
                            Slovenije na skupni seji vseh zborov, 4. oktobra 1990 sprejela odlok o
@@ -909,8 +919,7 @@
                            davku, kjer gre za potrebno uskladitev. Hvala lepa.</p>
                      </sp>
                      <sp>
-                        <stage type="time">(Seja je bila <time to="1990-10-04T14:10:00"
-                              xml:id="stage.t.2">končana 4. oktobra 1990 ob 14.10
+                        <stage type="time">(Seja je bila <time to="1990-10-04T14:10:00" xml:id="stage.t.2">končana 4. oktobra 1990 ob 14.10
                            uri</time>.)</stage>
                         <p/>
                      </sp>

@@ -79,7 +79,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -90,6 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2017-02-02+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2017-02-02+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-11-17+01:00">
             <name>Andrej Pančur</name>: kodiranje <list>
                <item>front/div[@type='contents']//item[@n]/@xml:id</item>
@@ -341,6 +353,8 @@
                <castItem>
                   <actor sameAs="#sp.ToplakLudvik">Toplak dr. Ludvik</actor>
                   ........................................ 49</castItem>
+               <castItem>
+                  <actor xml:id="unknown"></actor></castItem>
                <castItem>
                   <actor xml:id="sp.ZagoženFranc">Zagožen dr. Franc</actor>
                   ........................................ 36</castItem>
@@ -686,7 +700,7 @@
                            ne pa v kakršnem koli namenu, da bi omejevali razpravo ali pa da bi kogar
                            koli preglasovali ali da bi bili netolerantni. Hvala lepa.</p>
                         <p>
-                           <stage>(Predlog.)</stage> Tako kot sem že povedal. Mi smo predlagali, da
+                           <stage type="comment">(Predlog.)</stage> Tako kot sem že povedal. Mi smo predlagali, da
                            se glasuje o tem ali se razpravlja na način, da bi današnji predlogi bili
                            sprejeti v ta predloženi osnutek ustave ali pa, da se ti predlogi
                            obravnavajo kot prispevek k javni razpravi. Mi predlagamo, da se naj vsi
@@ -697,7 +711,7 @@
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDNIK DR. LUDVIK TOPLAK:</speaker>
                         <p>Predlog ustavne komisije, da se predloženi osnutek... Prosim, gospod
-                           Ribičič. <stage>(Glasovi iz dvorane.)</stage>
+                           Ribičič. <stage type="gap">(Glasovi iz dvorane.)</stage>
                         </p>
                      </sp>
                      <sp who="#sp.RibičičCiril">
@@ -1235,7 +1249,7 @@
                      <sp who="#sp.BattelliRoberto">
                         <speaker>ROBERTO BATTELLI:</speaker>
                         <p>
-                           <stage>(Govori v Italijanščini.)</stage> Gospod predsednik, spoštovane
+                           <stage type="comment">(Govori v Italijanščini.)</stage> Gospod predsednik, spoštovane
                            kolegice in kolegi! Italijanska in madžarska avtohtona narodna skupnost
                            ne moreta skrivati svoje globoke zaskrbljenosti ob dejstvu, da sta v
                            dosedanjih razpravah o temeljnem zakonu suverene Republike Slovenije
@@ -2513,10 +2527,10 @@
                         <speaker>PODPREDSEDNIK ANTON PERŠAK:</speaker>
                         <p>Predlog je nedvoumen. Zbor glasuje o tem, ali se predlagani tekst, ki ga
                            je predložila ustavna komisija, sprejeme kot osnutek ustave Republike
-                           Slovenije in se da v javno razpravo. <stage>(Glasovi iz dvorane.)</stage>
+                           Slovenije in se da v javno razpravo. <stage type="gap">(Glasovi iz dvorane.)</stage>
                            Predlog dveh poslancev je, da se glasuje o osnutku ustave in po
-                           poslovniku smo to dolžni. <stage>(Še glasovi iz dvorane.)</stage> Prosim,
-                           ugotavljamo sklepčnost. <stage>(Iz dvorane: rad bi repliko.)</stage>
+                           poslovniku smo to dolžni. <stage type="gap">(Še glasovi iz dvorane.)</stage> Prosim,
+                           ugotavljamo sklepčnost. <stage type="comment">(Iz dvorane: rad bi repliko.)</stage>
                         </p>
                         <p>Ne, smo v procesu glasovanja in ne moremo več razpravljati sredi
                            glasovanja. Ne morem, dokler predlagatelji ne odstopijo od svojega
@@ -2526,8 +2540,8 @@
                      <sp who="#sp.KolešnikCiril">
                         <speaker>CIRIL KOLEŠNIK:</speaker>
                         <p>
-                           <stage>(Iz klopi.)</stage> Predlagam, Tone, da odstopimo, ker bomo s tem
-                           pokazali, kaj ...<stage>(nerazločno)</stage>... Mislim, da je to
+                           <stage type="location">(Iz klopi.)</stage> Predlagam, Tone, da odstopimo, ker bomo s tem
+                           pokazali, kaj ...<stage type="gap">(nerazločno)</stage>... Mislim, da je to
                            neodgovorno.</p>
                      </sp>
                      <sp who="#sp.HribarSpomenka">
@@ -2543,10 +2557,10 @@
                         <speaker>MAG. SPOMENKA HRIBAR:</speaker>
                         <p>Dobro.</p>
                      </sp>
-                     <p>
-                        <stage>(Glas iz dvorane: naj se razprava konča in potem
-                        glasujemo.)</stage>
-                     </p>
+                     <p></p><sp who="#unknown">
+                        <speaker>(Glas iz dvorane:</speaker>
+                           <ab>naj se razprava konča in potem
+                        glasujemo.)</ab></sp>
                      <sp who="#sp.PeršakAnton">
                         <speaker>PODPREDSEDNIK ANTON PERŠAK:</speaker>
                         <p>Prosim, še enkrat preverjam prisotnost. Prosim, ugotavljamo sklepčnost.
@@ -2557,14 +2571,14 @@
                      </sp>
                      <sp who="#sp.ToplakLudvik">
                         <speaker>PREDSEDNIK DR. LUDVIK TOPLAK:</speaker>
-                        <p>Najprej pokliči. Razprava se nadaljuje. <stage>(Glasovi v
+                        <p>Najprej pokliči. Razprava se nadaljuje. <stage type="gap">(Glasovi v
                               dvorani.)</stage>
                         </p>
                      </sp>
                      <sp who="#sp.PeršakAnton">
                         <speaker>PODPREDSEDNIK ANTON PERŠAK:</speaker>
                         <p>Prosim, da spoštujete poslovnik, če ne, bova s predsednikom razpustil
-                           sejo. <stage>(Splošno govorjenje v dvorani.)</stage> Predlagam pet minut
+                           sejo. <stage type="incident">(Splošno govorjenje v dvorani.)</stage> Predlagam pet minut
                            pavze in se med tem člani frakcije med seboj zmenijo, ali so za
                            nadaljevanje seje ali niso.</p>
                         <p>Še enkrat moram ponoviti nekaj: če da nek poslanec predlog, da se o nečem
@@ -3128,7 +3142,7 @@
                      <sp who="#sp.KolešnikCiril">
                         <speaker>CIRIL KOLEŠNIK</speaker>
                         <p>
-                           <stage>(iz klopi)</stage>: To niso te pripombe Družbenopolitičnega zbora.
+                           <stage type="location">(iz klopi)</stage>: To niso te pripombe Družbenopolitičnega zbora.
                            Namreč, gre za to, ker eni smo potem v podrejenem položaju. Če lahko
                            rečem.</p>
                      </sp>
@@ -3171,7 +3185,7 @@
                      <sp who="#sp.ŽakeljViktor">
                         <speaker>MAG. VIKTOR ŽAKELJ <!--<stage>-->(iz klopi):</speaker>
                         <p>
-                           <stage>(Se ni vključil - nerazumljivo.)</stage> Poleg tega je še nekaj.
+                           <stage type="gap">(Se ni vključil - nerazumljivo.)</stage> Poleg tega je še nekaj.
                            To je dokaz, kako neorganiziran je bil nastop današnje razprave. In
                            dejansko, tričetrt ljudi danes ni povedalo tistega, kar so hoteli
                            povedati in tretma naj bo enakopraven. Jaz sem za to, da to sprejmemo,
@@ -3185,8 +3199,8 @@
                            pač povzame to, kar je bilo v Družbenopolitičnem zboru. prosim, namesto
                            Andreja Magajne, France Tomšič. Najbrž ni potrebno še enkrat brati vseh
                            imen.</p>
-                        <p>Kdo je za to, da ta skupina to naredi? <stage>(In to danes - ne danes -
-                              danes, danes, - oh, kje pa.)</stage> Hvala. <stage type="vote">(55
+                        <p>Kdo je za to, da ta skupina to naredi? (In to danes - ne danes -
+                              danes, danes, - oh, kje pa.) Hvala. <stage type="vote">(55
                               delegatov.)</stage> Je kdo proti? <stage type="vote">(2 delegata.)</stage> Se je
                            kdo vzdržal? <stage type="vote">(2 delegata.)</stage>
                         </p>

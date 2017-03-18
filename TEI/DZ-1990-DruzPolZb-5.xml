@@ -79,7 +79,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -90,6 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2017-02-02+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2017-02-02+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-11-17+01:00">
             <name>Andrej Pančur</name>: kodiranje <list>
                <item>front/div[@type='contents']//item[@n]/@xml:id</item>
@@ -242,12 +254,14 @@
                            <item>Anton Peršak ......................................... 32</item>
                         </list>
                      </item>
-                     <item xml:id="toc.2.9"><list>
-                        <item n="9 a" xml:id="toc.2.9a">Amandmaji XLIX do LXXIII k Ustavi SFRJ (4.a  točka dnevnega reda
+                     <item xml:id="toc.2.9">
+                        <list>
+                           <item n="9 a" xml:id="toc.2.9aa">Amandmaji XLIX do LXXIII k Ustavi SFRJ (4.a  točka dnevnega reda
                            - zavrnitev in sprejem sklepa) ................................... 32</item>
-                        <item n="9 b" xml:id="toc.2.9b">Ustavni zakon za izvedbo amandmajev XLIX do LXXIII k Ustavi SFRJ
+                           <item n="9 b" xml:id="toc.2.9bb">Ustavni zakon za izvedbo amandmajev XLIX do LXXIII k Ustavi SFRJ
                            (4.b točka dnevnega reda - brezpredmetno) ............ 32</item>
-                     </list></item>
+                        </list>
+                     </item>
                      <item n="10" xml:id="toc.2.10">Predlog zakona o amnestiji (5. točka dnevnega reda - sprejem)
                         ................... 33</item>
                      <item n="11" xml:id="toc.2.11">Predlog zakona o ustanovitvi Visoke pravne šole v Mariboru (6.
@@ -446,10 +460,10 @@
                      <item n="33" xml:id="toc.2.33">Poročilo delegacije Skupščine Republike Slovenije v Zboru republik
                         in pokrajin Skupščine SFRJ iz pristojnosti Zbora republik in pokrajin
                         (10. točka dnevnega reda) ............................ 98<list>
-                           <item n="-" xml:id="toc.2.33a">predlog stališča Komisije za ustavna vprašanja v zvezi z
+                           <item n="-" xml:id="toc.2.a">predlog stališča Komisije za ustavna vprašanja v zvezi z
                               delom in pooblastilo delegacije (k 10. točki dnevnega reda - sprejem
                               predloga stališča) ................................... 98</item>
-                           <item n="-" xml:id="toc.2.33b">predlog, da Družbenopolitični zbor umakne dopolnitev k 5. in
+                           <item n="-" xml:id="toc.2.b">predlog, da Družbenopolitični zbor umakne dopolnitev k 5. in
                               6. točki predloga dodatnega sklepa k osnutku zakona o spremembah in
                               dopolnitvah akona o kupnem obsegu odhodkov federacije za leto 1990 (k
                               10. točki dnevnega reda - se nadaljuje) ........... 98<list rend="simple">
@@ -2362,7 +2376,7 @@
                         <p>in predlog odlokov o ustanovitvi, nalogah, sestavi in številu članov
                            Komisije Skupščine Republike Slovenije za vprašanja invalidov.</p>
                         <p>Ali želi dati predstavnik Komisije za volitve in imenovanja pojasnilo?
-                           Gospod Lampret? <stage>(Ne!)</stage> Želi kdo drug? Če ne, dajem na
+                           Gospod Lampret? <stage type="debate">(Ne!)</stage> Želi kdo drug? Če ne, dajem na
                            glasovanje predlog odloka o ustanovitvi, nalogah, sestavi in številu
                            članov Komisije Skupščine Republike Slovenije za celovito preučitev
                            okoliščin in posledic sodnega procesa proti četverici v Ljubljani.</p>
@@ -2583,7 +2597,10 @@
                         <p>Ugotavljam, da je sklep soglasno sprejet.</p>
                      </sp>
                   </div>
-                  <div xml:id="div.1.1.2.9" ana="#PAR.TDR" n="4 a in b" corresp="#toc.2.9">
+                  <div xml:id="div.1.1.2.9"
+                       ana="#PAR.TDR"
+                       n="4 a in b"
+                       corresp="#toc.2.9">
                      <sp who="#sp.ToplakLudvik">
                         <p>Prehajamo na <title>4. TOČKO DNEVNEGA REDA - AMANDMAJI XLIX DO LXXIII K USTAVI
                            SFRJ, POD A9; IN POD B) USTAVNI ZAKON ZA IZVEDBO AMANDMAJEV XLIX DO
@@ -4898,7 +4915,7 @@
                            prejeli še poročilo Odbora za Splošno gospodarske zadeve na ravni
                            Skupščine Republike Slovenije in predlog odloka.</p>
                         <p>Predstavnik Izvršnega sveta je prisoten. Želi besedo?
-                              <stage>(Ne!)</stage> Hvala. Žele besedo poročevalci delovnih teles?
+                              <stage type="debate">(Ne!)</stage> Hvala. Žele besedo poročevalci delovnih teles?
                               <stage type="debate">(Ne.)</stage> Hvala. Odpiram razpravo. Želi kdo razpravljati?
                            Če ne, dajem na glasovanje predlog odloka o predlogu zakona o
                            ratifikaciji sklepov št. 3/89 in 4/89 sklepa za sodelovanje med SFRJ in
@@ -5087,7 +5104,7 @@
                            Odbora za proračun in javne finance na ravni Skupščine Republike
                            Slovenije in predlog sklepa. Predsednik delegacije Skupščine Republike
                            Slovenije v Zboru republik in pokrajin Skupščine SFRJ na seji je gospod
-                           Gerbec. Želite besedo? <stage>(Ne?)</stage> Hvala. Predstavnik Izvršnega
+                           Gerbec. Želite besedo? <stage type="debate">(Ne?)</stage> Hvala. Predstavnik Izvršnega
                            sveta želi morda besedo? Hvala. Želijo besedo poročevalci delovnih teles?
                               <stage type="debate">(Ne.)</stage> Hvala. Začenjam razpravo o tem predlogu zakona.
                            Če ne želi nihče razpravljati, dajem na glasovanje predlog sklepa k
@@ -5833,7 +5850,7 @@
                            meseca, vendar bi prej morali ugotoviti število zainteresiranih
                            delegatov. Prosim vas samo za orientacijo, da prisotni pritisnete na sivo
                            tipko, tisti, ki ste zainteresirani za ta ogled. Le orientacijsko.
-                              <stage>(35)</stage> Hvala lepa, s tem da vas še dodatno obveščam, da
+                              <stage type="vote">(35)</stage> Hvala lepa, s tem da vas še dodatno obveščam, da
                            bo po dvorani krožil poseben formular, da napišete svoje ime. Ta ogled bi
                            bil v soboto, na nedelovni dan. Hkrati pa naj obvestim, da dnevnic za ta
                            ogled ni.</p>
@@ -5866,7 +5883,7 @@
                         <p>Hvala lepa. Mislim, da je predlog zelo umesten. Jaz bi dal predlog
                            gospoda Tomšiča na glasovanje.</p>
                         <p>Kdo je za to, da se točka preloži na eno naslednjih sej dnevnega reda?
-                              <stage>(49 za.)</stage> Hvala lepa. Kdo je proti? Pardon, narobe so
+                              <stage type="vote">(49 za.)</stage> Hvala lepa. Kdo je proti? Pardon, narobe so
                            pritisnili. Prisotnih je 49 delegatov.</p>
                         <p>Kdo je za? <stage type="vote">(53 delegatov.)</stage> Je kdo proti?
                               <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(Nihče.)</stage>
@@ -6513,7 +6530,7 @@
                         <p>Če je mogoče gospod Kopač s tako opredelitvijo zadovoljen. V vsakem
                            primeru, čeprav se ne da - z upoštevanjem predloga sklepa, kakršen je dan
                            - doseči neke numerične točke vrednosti, se z upoštevanjem posameznih
-                           predlogov rebalans skrči <stage>(opomba: to je bilo "svede")</stage> na
+                           predlogov rebalans skrči <stage type="comment">(opomba: to je bilo "svede")</stage> na
                            10% diferenco od predlaganega oziroma v okviru 10% ali manj.</p>
                      </sp>
                      <sp who="#sp.ToplakLudvik">

@@ -31,8 +31,7 @@
             <pubPlace>https://github.com/SIstory/Seje_DZ/tree/master/</pubPlace>
             <availability status="free">
                <licence>http://creativecommons.org/licenses/by/4.0/</licence>
-               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/"
-                     >Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
+               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
                </p>
             </availability>
             <date when="2016-03-21+01:00"/>
@@ -53,9 +52,7 @@
                      <date>(21. in 27.  november 1990)</date>
                   </imprint>
                </monogr>
-               <ref
-                  target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=4B2AD1C649A1DF6DC1257C9A00259524"
-                     >(<date>2016-03-14</date>)</ref>
+               <ref target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=4B2AD1C649A1DF6DC1257C9A00259524">(<date>2016-03-14</date>)</ref>
             </biblStruct>
             <biblFull>
                <titleStmt>
@@ -67,10 +64,10 @@
                   <publisher>Državni zbor Republike Slovenije</publisher>
                   <availability status="free">
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="slv">Avtorske pravice so potekle, delo je v javni
+                              xml:lang="slv">Avtorske pravice so potekle, delo je v javni
                         domeni.</licence>
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="eng">Public Domain Mark 1.0</licence>
+                              xml:lang="eng">Public Domain Mark 1.0</licence>
                   </availability>
                </publicationStmt>
             </biblFull>
@@ -82,7 +79,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -93,6 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2017-02-02+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2017-02-02+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-06-16+02:00">
             <name>Andrej Pančur</name>: kodiranje <list>
                <item>front/div[@type='contents']//item[@n]/@xml:id</item>
@@ -438,11 +447,15 @@
                      1990</date>)</docDate>
                <timeline origin="#TL.1" unit="s">
                   <when synch="#stage.t.1" xml:id="TL.1" absolute="1990-11-21T15:15:00"/>
-                  <when synch="#stage.t.2" since="#TL.1" absolute="1990-11-21T21:35:00"
-                     interval="22800"/>
+                  <when synch="#stage.t.2"
+                        since="#TL.1"
+                        absolute="1990-11-21T21:35:00"
+                        interval="22800"/>
                   <when synch="#stage.t.3" xml:id="TL.2" absolute="1990-11-27T14:20:00"/>
-                  <when synch="#stage.t.4" since="#TL.2" absolute="1990-11-27T14:35:00"
-                     interval="900"/>
+                  <when synch="#stage.t.4"
+                        since="#TL.2"
+                        absolute="1990-11-27T14:35:00"
+                        interval="900"/>
                </timeline>
                <castList>
                   <castItem>
@@ -450,8 +463,7 @@
                      <actor xml:id="sp.BučarFrance">dr. France Bučar</actor>, <role>predsednik
                         skupščine</role>. </castItem>
                </castList>
-               <stage type="time">Seja se je <time from="1990-11-21T15:15:00" xml:id="stage.t.1"
-                     >pričala ob 15.15 uri</time>.</stage>
+               <stage type="time">Seja se je <time from="1990-11-21T15:15:00" xml:id="stage.t.1">pričala ob 15.15 uri</time>.</stage>
                <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
                   <div xml:id="div.1.1.1.1" ana="#PAR.Prisot" corresp="#toc.1.1">
                      <sp who="#sp.BučarFrance">
@@ -460,8 +472,8 @@
                            Skupščine Republike Slovenije, ki sem jo sklical na podlagi 364. člena
                            Ustave Republike Slovenije in 134. člena Poslovnika Skupščine Republike
                            Slovenije. Ugotovimo sklepčnost! Najprej prosim delegate
-                           Družbenopolitičnega zbora! <stage>(63 delegatov.)</stage>; Zbor občin!
-                              <stage>(68 delegatov.)</stage> Zbor združenega dela! <stage>(66
+                           Družbenopolitičnega zbora! <stage type="vote">(63 delegatov.)</stage>; Zbor občin!
+                              <stage type="vote">(68 delegatov.)</stage> Zbor združenega dela! <stage type="vote">(66
                               delegatov.)</stage>
                         </p>
                      </sp>
@@ -571,7 +583,7 @@
                            ali ne. Moj predlog je, da ne umikamo točke z dnevnega reda in da
                            poskušamo v razpravi o tej točki doseči potrebno stopnjo medsebojnega
                            zaupanja in enotno odločitev, da se v ta rizičen projekt spustimo. Hvala
-                           lepa. <stage>(Aplavz.)</stage>
+                           lepa. <stage type="vocal">(Aplavz.)</stage>
                         </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
@@ -586,7 +598,7 @@
                            zadnjih let. Vse drugo, kar je govoril gospod Balažic, je po moje ataka
                            na slovensko suvereno zavest.</p>
                         <p>Zato seveda predlagam, da absolutno ostane točka na dnevnem redu. Hvala
-                           lepa. <stage>(Aplavz.)</stage>
+                           lepa. <stage type="vocal">(Aplavz.)</stage>
                         </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
@@ -753,17 +765,17 @@
                            predlog je naslednji; Balažic predlaga, da se razprava, obravnava in
                            odločanje o pobudi za razpis referenduma, danes ne uvrsti na skupno
                            sejo.</p>
-                        <p>Kdo je za, da se ne uvrsti? <stage>(6 delegatov.)</stage> Je kdo proti?
-                              <stage>(128 delegatov.)</stage> Se je kdo vzdržal? <stage>(12
+                        <p>Kdo je za, da se ne uvrsti? <stage type="vote">(6 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(128 delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(12
                               delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je točka sprejeta na dnevni red.</p>
                         <p>Potem dajem na glasovanje predlog poslanca Smoleta, da se vodi razpravo o
                            incidentu, ki naj bi ga izzval predsednik te skupščine na včerajšnji
                            seji.</p>
-                        <p>Kdo je za tak predlog, da se to uvrsti na dnevni red? <stage>(11
-                              delegatov.)</stage> Je kdo proti? <stage>(126 delegatov.)</stage> Se
-                           je kdo vzdržal? <stage>(21 delegatov.)</stage>
+                        <p>Kdo je za tak predlog, da se to uvrsti na dnevni red? <stage type="vote">(11
+                              delegatov.)</stage> Je kdo proti? <stage type="vote">(126 delegatov.)</stage> Se
+                           je kdo vzdržal? <stage type="vote">(21 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da ta predlog ni dobil potrebne podpore in to ne more biti na
                            dnevnem redu.</p>
@@ -775,9 +787,9 @@
                            naravi med samo razpravo k drugi točki. Sicer pa, če menite, da je to kot
                            posebna točka, uvrstimo na dnevni red. Torej, dajem predlog na
                            glasovanje.</p>
-                        <p>Kdo je za, da se to obravnava kot posebna točka? <stage>(133
-                              delegatov.)</stage> Je kdo proti? <stage>(16 delegatov.)</stage> Se je
-                           kdo vzdržal? <stage>(42 delegatov.)</stage>
+                        <p>Kdo je za, da se to obravnava kot posebna točka? <stage type="vote">(133
+                              delegatov.)</stage> Je kdo proti? <stage type="vote">(16 delegatov.)</stage> Se je
+                           kdo vzdržal? <stage type="vote">(42 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je ta predlog sprejet in da se dnevni red razširi s to
                            točko.</p>
@@ -786,20 +798,20 @@
                            vprašanje samo po sebi ne sodi na to sejo. Po tem členu sodi kot
                            poslanska pobuda v posameznih zborih. Če skupni zbor meni, daje primerno
                            razpravljati o tem na tem zboru, dajem predlog na glasovanje.</p>
-                        <p>Kdo je za tak predlog? <stage>(72 delegatov.)</stage> Je kdo proti?
-                              <stage>(86 delegatov.)</stage> Se je kdo vzdržal? <stage>(41
+                        <p>Kdo je za tak predlog? <stage type="vote">(72 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(86 delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(41
                               delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da predlog ni dobil potrebne podpore in ga ne uvrstimo na
                            dnevni red.</p>
                         <p>Torej, je še Kreftov predlog, da se ustanovi posebna komisija, ki naj
-                           predlaga način poslovanja... <stage>(Glas iz dvorane.)</stage> - saj
+                           predlaga način poslovanja... <stage type="gap">(Glas iz dvorane.)</stage> - saj
                            prosim, to je predlog, ni potrebno, to je samo pobuda in mislim, da jo
                            lahko sprejmemo in bomo postopali v smislu tega predloga. Hvala lepa.</p>
                         <p>Na podlagi razprave in izida glasovanja ugotavljam, da je prejet
                            naslednji dnevni red. Glasujemo še o celoti.</p>
-                        <p>Kdo je za tak razširjen dnevni red? <stage>(191 delegatov.)</stage> Je
-                           kdo proti? <stage>(3 delegati.)</stage> Se je kdo vzdržal? <stage>(3
+                        <p>Kdo je za tak razširjen dnevni red? <stage type="vote">(191 delegatov.)</stage> Je
+                           kdo proti? <stage type="vote">(3 delegati.)</stage> Se je kdo vzdržal? <stage type="vote">(3
                               delegati.)</stage>
                         </p>
                         <p>Ugotavljam, da je predlog dnevnega reda:</p>
@@ -818,10 +830,10 @@
                         <p>Prehajamo na <title>1. TOČKO DNEVNEGA REDA - ODOBRITEV ZAPISNIKA 9.
                               SKUPNE SEJE</title>.</p>
                         <p>Osnutek zapisnika ste prejeli. Ali želi kdo o zapisniku razpravljati?
-                              <stage>(Ne želi.)</stage> Če ne želi nihče razpravljati, dajem osnutek
+                              <stage type="debate">(Ne želi.)</stage> Če ne želi nihče razpravljati, dajem osnutek
                            zapisnika na glasovanje.</p>
-                        <p>Kdo je za? <stage>(189 delegatov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(3
+                        <p>Kdo je za? <stage type="vote">(189 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(3
                               delegati.)</stage>
                         </p>
                         <p>Ugotavljam, da je zapisnik 9. skupne seje z večino glasov sprejet.</p>
@@ -1009,19 +1021,19 @@
                            sprejemljive za vse, vsaj v določeni meri, in ki naj bi bile kot posebna
                            stališča, ki bi jih ta skupščina sprejela ob zakonu oziroma po zakonu,
                            tudi posebej predložena temu zboru v sprejem. Hvala lepa.
-                              <stage>(Aplavz.)</stage>
+                              <stage type="vocal">(Aplavz.)</stage>
                         </p>
                         <p>PODPREDSEDNIK VANE GOŠNIK:</p>
                         <p>Predlagal bi, da pred splošno razpravo poslušamo še mnenje predstavnikov
                            Izvršnega sveta. Če bi se s tem strinjali, bi najprej prosil gospoda
                            Peterleta.</p>
                         <p>
-                           <stage>(Pozdravni aplavz.)</stage>
+                           <stage type="vocal">(Pozdravni aplavz.)</stage>
                         </p>
                      </sp>
                      <sp who="#sp.PeterleAlojz">
                         <speaker>ALOJZ PETERLE:</speaker>
-                        <p>Spoštovane poslanke in poslanci! <stage>(Pozdrav v madžarščini in v
+                        <p>Spoštovane poslanke in poslanci! <stage type="comment">(Pozdrav v madžarščini in v
                               italijanščini.)</stage> Politična volja Republike Slovenije je jasna.
                            Hočemo biti sami svoji gospodarji in gospodarji na svojem. Ta pravica
                            narodov je splošno priznana in brezprizivna. Ne bi se sklicevali nanjo,
@@ -1094,9 +1106,9 @@
                            če bo pravi trenutek za plebiscit zamujen.</p>
                         <p>Naj živi samostojna, svobodna in demokratična Slovenija kot ustvarjalen
                            in odgovoren del prihodnje združene Evrope.</p>
-                        <p>Hvala za pozornost. <stage>(Zahvala v madžarščini in
+                        <p>Hvala za pozornost. <stage type="comment">(Zahvala v madžarščini in
                               italijanščini.)</stage>
-                           <stage>(Velik aplavz.)</stage>
+                           <stage type="vocal">(Velik aplavz.)</stage>
                         </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
@@ -1418,7 +1430,7 @@
                            lahko kot odgovoren za to področje zagotovim, da imamo rezerve, ki nas
                            postavljajo v tako pozicijo, da nam vsaj za nekaj časa glede tega ni
                            potrebno skrbeti, čeprav bi se odvijala manj ugodna varianta
-                           osamosvajanja. Hvala lepa. <stage>(Aplavz.)</stage>
+                           osamosvajanja. Hvala lepa. <stage type="vocal">(Aplavz.)</stage>
                         </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
@@ -1520,7 +1532,7 @@
                            plebiscitu, pridemo do ugotovitve, da je plebiscit smiseln, če bo izveden
                            pravočasno. Prepričan sem, da mnogo po novem letu plebiscit ali ne bo več
                            potreben ali pa ne bo več možen. Na nas je, da se prav odločimo. Hvala.
-                              <stage>(Ploskanje.)</stage>
+                              <stage type="vocal">(Ploskanje.)</stage>
                         </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
@@ -1564,7 +1576,7 @@
                            demokratičen način uresničevanja pravic do samoodločbe naroda. Pobuda za
                            plebiscit je torej tehtna in v celoti utemeljena. Izvesti jo je mogoče
                            samo z visoko stopnjo narodove enotnosti in zavesti.
-                              <stage>(Ploskanje.)</stage>
+                              <stage type="vocal">(Ploskanje.)</stage>
                         </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
@@ -1734,10 +1746,10 @@
                            oktobra 1990 dokončno združeni.</p>
                         <p>In sedaj, kaj po plebiscitu. To vprašanje se je vseskozi pojavljalo ob
                            pobudi in ob razpravi, ki so sledile pobudo, pravzaprav ves čas po prvi
-                           objavi pobude v časniku Delo, 14.09.1990 <stage>(Rotar, Šuklje, Volk: čas
+                           objavi pobude v časniku Delo, 14.09.1990 <stage type="comment">(Rotar, Šuklje, Volk: čas
                               je za plebiscit)</stage>. Vladi smo že na nek način predlagali konec
                            septembra, mislim, da je bilo to na zasedanju konec septembra
-                              <stage>(27.09.1990 - skupna seja Skupščine RS)</stage>, ko je bil prvi
+                           <stage type="comment">(27.09.1990 - skupna seja Skupščine RS)</stage>, ko je bil prvi
                            govor o plebiscitu, naj sestavi večstrankarske skupine strokovnjakov, ki
                            bodo tehnično operacionalizirale vse vidike postopnega izstopanja iz
                            Jugoslavije. Današnji nastopi ministrov kažejo, da delo v tej smeri
@@ -1780,7 +1792,7 @@
                            trgovinska, carinska in še kakšna druga unija, kakršna je, denimo
                            Beneluks ali še bolj Evropska gospodarska skupnost. Za politično unijo
                            Balkan očitno še dolgo ne bo zrel. Zato predlagam, da sprejmemo razpis
-                           plebiscita in plebiscit izvedemo čimprej. Hvala <stage>(Aplavz.)</stage>
+                           plebiscita in plebiscit izvedemo čimprej. Hvala <stage type="vocal">(Aplavz.)</stage>
                         </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
@@ -1973,7 +1985,7 @@
                            prebivalcev Slovenije, ki čutijo povezanost s svojimi kmečkimi ali
                            nacionalnimi koreninami, kajti pri vsem tveganju, ki ga prinaša odločitev
                            za in mnogo večjem tveganju, ki ga prinaša odločitev proti, to je naša,
-                           slovenska odločitev. Hvala. <stage>(Ploskanje.)</stage>
+                           slovenska odločitev. Hvala. <stage type="vocal">(Ploskanje.)</stage>
                         </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
@@ -1981,7 +1993,7 @@
                         <p>Hvala. Ob tej priložnosti bi apeliral na poslance. Če smo se dogovorili
                            in smo se vsi strinjali s tem, da je vprašanje konsenza splošno
                            nacionalno vprašanje, bi apeliral na vas, da ne vnašamo polemike v
-                           stvari, ki niso nujno potrebne, <stage>(ploskanje)</stage> predvsem pa ne
+                           stvari, ki niso nujno potrebne, <stage type="vocal">(ploskanje)</stage> predvsem pa ne
                            nastopati s trditvami, ki so osnovane samo na domnevah. Prosim, da bi to
                            upoštevali. Repliko... Se je kdo prijavil, prosim, replicirati samo,
                            prosim. Ja, replika je kratka, smo si na jasnem.</p>
@@ -2015,7 +2027,7 @@
                            pa seveda on tudi govoril o problemu, o katerem sem jaz govoril, namreč o
                            problemu, ali je treba v tem trenutku cepiti sile ali ne. On jih očitno
                            želi cepiti, jaz pa mislim, da je to najslabši način, kako se bomo
-                           problema lotili. <stage>(Aplavz.)</stage>
+                           problema lotili. <stage type="vocal">(Aplavz.)</stage>
                         </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
@@ -2769,7 +2781,7 @@
                            ljudstvo čim prej vprašamo. Kajti ne bi hotel biti pred zgodovino član
                            skupščine, ki se niti ni mogla odločiti o tem, ali naj ljudstvo vpraša
                            ali je za samostojno Slovenijo ali ne in je tako zamudila neko priložnost
-                           za samostojnost slovenskega naroda. Hvala. <stage>(Ploskanje.)</stage>
+                           za samostojnost slovenskega naroda. Hvala. <stage type="vocal">(Ploskanje.)</stage>
                         </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
@@ -3278,7 +3290,7 @@
                            in spet ne tako, da vsak poslanec pride gor in reče: jaz pa tako mislim,
                            ampak da se tudi tukaj naredi en minimalen red, ki ga poslovnik morda
                            dopušča, in bi res prosil, da bi šlo to na glasovanje. Hvala.
-                              <stage>(Ploskanje.)</stage>
+                              <stage type="vocal">(Ploskanje.)</stage>
                         </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
@@ -3346,12 +3358,12 @@
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
                         <p>Hvala lepa. Po vrstnem redu je zdaj na vrsti kot 21 diskutant Franco
                            Juri, ki se odpoveduje svoji razpravi, zato je na vrsti
-                              <stage>(Aplavz.)</stage> 22. diskutant  Aurelio Juri.</p>
+                              <stage type="vocal">(Aplavz.)</stage> 22. diskutant  Aurelio Juri.</p>
                      </sp>
                      <sp who="#sp.JuriAurelio">
                         <speaker>AURELIO JURI:</speaker>
                         <p>
-                           <stage>(Splošen smeh.)</stage> Čisto slučajno. Tudi jaz se bom delno
+                           <stage type="vocal">(Splošen smeh.)</stage> Čisto slučajno. Tudi jaz se bom delno
                            odpovedal svoji razpravi, sledil bom priporočilu kolege Zlobca, zato se
                            bom opredelil zelo kratko za dvotretjinsko kvalificirano večino. Še nekaj
                            bi opozoril, na potrebo mednarodne politične in pravne verifikacije tega
@@ -3475,7 +3487,7 @@
                            Jugoslaviji pa mora biti hitro, vendar previdno, da ga ne bomo spustili
                            na prste in verjamem, da bomo na prste vsi dobro pazili. Res pa je, da
                            moramo pri tem spuščanju reči skupaj: zdaj. Hvala lepa.
-                              <stage>(Aplavz.)</stage>
+                              <stage type="vocal">(Aplavz.)</stage>
                         </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
@@ -3484,7 +3496,7 @@
                      </sp>
                      <sp who="#sp.BalažicMilan">
                         <speaker>MILAN BALAŽIC:</speaker>
-                        <p>...<stage>(Govori iz klopi nerazločno.)</stage>...</p>
+                        <p>...<stage type="gap">(Govori iz klopi nerazločno.)</stage>...</p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
@@ -3740,7 +3752,7 @@
                            te velike ideje o demokraciji, nekih poslovnih, poslovodnih bravurah ŕ la
                            Grubelič in take stvari, tega se moramo znebiti čim prej, se povrniti k
                            tradicionalnim slovenskim vrednotam, začeti delati in uveljavljati Evropo
-                           doma. <stage>(Aplavz.)</stage>
+                           doma. <stage type="vocal">(Aplavz.)</stage>
                         </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
@@ -3764,7 +3776,7 @@
                            denarja ni. Tuji partnerji nas opazujejo, zato ne izgubljajmo besed za
                            dokazovanje in prepričevanje, naredimo plebiscit takoj, postavimo svojo
                            valuto, svojo banko in zaščitimo svoje gospodarstvo, če bomo čakali na
-                           jutri,ne bomo imeli ničesar več. Hvala. <stage>(Aplavz.)</stage>
+                           jutri,ne bomo imeli ničesar več. Hvala. <stage type="vocal">(Aplavz.)</stage>
                         </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
@@ -3819,7 +3831,7 @@
                            pogajanje in tako dalje. Varianta k 4. členu in variantni dodatek 4.a in
                            4.b se izpustijo, v 5. členu se opredeli konkretni datum in to
                            23.121.1990 ne pa perioda. Črta se drugi stavek. Hvala lepa.
-                              <stage>(Aplavz.)</stage>
+                              <stage type="vocal">(Aplavz.)</stage>
                         </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
@@ -4259,7 +4271,7 @@
                            nekje piše prvi ali drugi. Ampak, kdor ne ve, kako bi se odločil, naj se
                            poskuša malo zamisliti, kaj bi nam svetovali duhovi, pa recimo, Primoža
                            Trubarja, Slomška, Prešerna, Levstika, Cankarja in če hočete, tudi
-                           generala Avšiča in Staneta Kavčiča. Hvala. <stage>(Aplavz.)</stage>
+                           generala Avšiča in Staneta Kavčiča. Hvala. <stage type="vocal">(Aplavz.)</stage>
                         </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
@@ -4347,8 +4359,8 @@
                            orientacijo, kakšno besedilo naj predloži.</p>
                         <p>Zato potrebujemo ugotovitev navzočnosti, če smo sposobni, da glasujemo in
                            razpravljamo. Ugotovimo sklepčnost! Najprej Družbenopolitični zbor!
-                              <stage>(59 prisotnih.)</stage> Zbor občin! <stage>(51
-                              prisotnih.)</stage> Zbor združenega dela! <stage>(52
+                              <stage type="quorum">(59 prisotnih.)</stage> Zbor občin! <stage type="quorum">(51
+                              prisotnih.)</stage> Zbor združenega dela! <stage type="quorum">(52
                               prisotnih.)</stage>
                         </p>
                         <p>Ugotavljam, da je podana sklepčnost.</p>
@@ -4382,8 +4394,8 @@
                            amandmajih ne bi posebej zdaj glasovali, ampak bi jih predložili Ustavni
                            komisiji, da jih eventualno upošteva, saj v tej fazi.</p>
                         <p>Potem glasujemo o tem predlogu. Dajem na glasovanje.</p>
-                        <p>Kdo je za? <stage>(126 delegatov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(4
+                        <p>Kdo je za? <stage type="vote">(126 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(4
                               delegati.)</stage>
                         </p>
                         <p>Ugotavljam, da je zakonski osnutek sprejet in s tem dobiva Ustavna
@@ -4395,8 +4407,8 @@
                            plebiscitu o neodvisnosti republike Slovenije dala meddržavni status."
                            Mislim, da ima skupščina možnost, mislim, da niti ni treba o tem posebej,
                            lahko pa glasujemo. To bo tako Izvršni svet proučil.</p>
-                        <p>Kdo je za? <stage>(107 delegatov.)</stage> Je kdo proti? <stage>(36
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(18 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(107 delegatov.)</stage> Je kdo proti? <stage type="vote">(36
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(18 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je ta predlog sprejet.</p>
                         <p>Ugotavljam, da je točka izčrpana. Tukaj je še vrsta drugih predlogov, ki
@@ -4491,7 +4503,7 @@
                            obveznosti na ozemlju Socialistične Republike Slovenije. In ta naziv
                            Socialistična Republika Slovenija se ponavlja skozi ves tekst odloka.
                            Tudi s tega stališča ta odlok za Republiko Slovenijo ne velja, ker ni več
-                           "socialistična". Hvala. <stage>(Ploskanje.)</stage>
+                           "socialistična". Hvala. <stage type="vocal">(Ploskanje.)</stage>
                         </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
@@ -4727,7 +4739,7 @@
                            bomo najprej storili vse, da se to ne zgodi. Če se bo pa to zgodilo, se
                            pa ne bo zgodilo samo to, ker samo to ni možno, bo pa to širši konflikt,
                            v katerem bomo pač reagirali na možnosti, ki jih imamo.
-                              <stage>(Aplavz.)</stage>
+                              <stage type="vocal">(Aplavz.)</stage>
                         </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
@@ -4749,7 +4761,7 @@
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
-                        <p>Dobro. <stage>(Aplavz.)</stage> Prosim, opozarjam, da to ni predmet
+                        <p>Dobro. <stage type="vocal">(Aplavz.)</stage> Prosim, opozarjam, da to ni predmet
                            razprave te točke in v tej smeri ne dovoljujem več razprave. Prosim.</p>
                      </sp>
                      <sp who="#sp.ŠkolčJožef">
@@ -4772,21 +4784,20 @@
                      <sp who="#sp.BučarFrance">
                         <p>Prehajamo na <title>4. TOČKO DNEVNEGA REDA - VOLITVE IN
                               IMENOVANJA</title>.</p>
-                        <p>Pred tem, moramo ugotoviti sklepčnost. Družbenopolitični zbor! <stage>(45
-                              prisotnih.)</stage> Zbor občin! <stage>(36 prisotnih.)</stage> Dobro,
-                           damo  še enkrat Zbor občin! <stage>(37 prisotnih.)</stage> Malo poglejte,
+                        <p>Pred tem, moramo ugotoviti sklepčnost. Družbenopolitični zbor! <stage type="quorum">(45
+                              prisotnih.)</stage> Zbor občin! <stage type="quorum">(36 prisotnih.)</stage> Dobro,
+                           damo  še enkrat Zbor občin! <stage type="quorum">(37 prisotnih.)</stage> Malo poglejte,
                            če je še kdo zunaj, tako da lahko dnevni red zaključimo, drugače pa nismo
                            sklepčni. Torej, ob takem prometu moramo celo za Družbenopolitični zbor
-                           še enkrat ugotoviti. <stage>(54 prisotnih.)</stage> Zbor občin!
-                              <stage>(37 prisotnih.)</stage> Ja moramo, je brezpredmetno, dobro. še
-                           enkrat poglejmo Zbor občin. <stage>(39 prisotnih.)</stage> Še Zbor
-                           združenega dela. <stage>(40 prisotnih.)</stage>
+                           še enkrat ugotoviti. <stage type="quorum">(54 prisotnih.)</stage> Zbor občin!
+                              <stage type="quorum">(37 prisotnih.)</stage> Ja moramo, je brezpredmetno, dobro. še
+                           enkrat poglejmo Zbor občin. <stage type="quorum">(39 prisotnih.)</stage> Še Zbor
+                           združenega dela. <stage type="quorum">(40 prisotnih.)</stage>
                         </p>
                         <p>Torej, nismo sklepčni. hvala lepa. Zaključujemo sejo. Opozarjam vas samo
                            še na tole, da je seja 27. tega meseca.</p>
                      </sp>
-                     <stage type="time">(SEJA JE BILA <time to="1990-11-21T21:35:00"
-                           xml:id="stage.t.2">PREKINJENA 21. NOVEMBRA 1990 OB 21.35 URI</time> IN SE
+                     <stage type="time">(SEJA JE BILA <time to="1990-11-21T21:35:00" xml:id="stage.t.2">PREKINJENA 21. NOVEMBRA 1990 OB 21.35 URI</time> IN SE
                         JE <time from="1990-11-27T14:20:00" xml:id="stage.t.3">NADALJEVALA 27.
                            NOVEMBRA 1990 OB 14.20 URI</time>.)</stage>
                   </div>
@@ -4798,15 +4809,15 @@
                            nesklepčnosti morali sejo prekiniti in bi danes nadaljevali, in sicer s
                            4. točko.</p>
                         <p>Najprej bi poskusili ugotoviti sklepčnost. Prosim delegate
-                           Družbenopolitičnega zbora! <stage>(44 prisotnih.)</stage> Zbor občin!
-                              <stage>(38 prisotnih.)</stage>
+                           Družbenopolitičnega zbora! <stage type="quorum">(44 prisotnih.)</stage> Zbor občin!
+                              <stage type="quorum">(38 prisotnih.)</stage>
                         </p>
                         <p>Potem še nismo sklepčni.</p>
                         <p>Bi še malo poskušali ugotoviti, če so še kje v bližini. Nekaj poslancev
                            sem videl, da so prišli. Ali poskusimo še enkrat. Zbor občin, prosim, če
-                           še enkrat ugotovite! <stage>(42 prisotnih.)</stage> Torej, Zbor občin je
-                           sklepčen. Zbor združenega dela! <stage>(51 prisotnih.)</stage> Za vsak
-                           primer, še enkrat ponovimo glasovanje: Družbenopolitični zbor! <stage>(48
+                           še enkrat ugotovite! <stage type="quorum">(42 prisotnih.)</stage> Torej, Zbor občin je
+                           sklepčen. Zbor združenega dela! <stage type="quorum">(51 prisotnih.)</stage> Za vsak
+                           primer, še enkrat ponovimo glasovanje: Družbenopolitični zbor! <stage type="quorum">(48
                               prisotnih.)</stage>
                         </p>
                         <p>Ugotavljam, da je skupna seja sklepčna.</p>
@@ -4823,33 +4834,33 @@
                            SODELOVANJE</title>.</p>
                         <p>Predloge ste prejeli, prav tako tudi mnenje Komisije za volitve,
                            imenovanja in administrativne zadeve. Ali želi besedo predstavnik
-                           predlagatelja? <stage>(Ne želi.)</stage> Tudi ne, kot vidim, predsednik
-                           komisije. Ali želi kdo o predlogu razpravljati? <stage>(Ne želi.)</stage>
+                           predlagatelja? <stage type="debate">(Ne želi.)</stage> Tudi ne, kot vidim, predsednik
+                           komisije. Ali želi kdo o predlogu razpravljati? <stage type="debate">(Ne želi.)</stage>
                            V skladu z drugim odstavkom 335. člena Poslovnika Skupščine Republike
                            Slovenije sprašujem, ali kdo predlaga tajno glasovanje? Če nihče ne
                            predlaga tajnega glasovanja, bomo glasovali javno. Najprej bomo glasovali
                            o predlogu za imenovanje PAVLA KORBUNA za namestnika republiškega
                            sekretarja za drobno gospodarstvo.</p>
-                        <p>Kdo je za? <stage>(145 delegatov.)</stage> Je kdo proti? <stage>(1
-                              delegat.)</stage> Se je kdo vzdržal? <stage>(2 delegata.)</stage>
+                        <p>Kdo je za? <stage type="vote">(145 delegatov.)</stage> Je kdo proti? <stage type="vote">(1
+                              delegat.)</stage> Se je kdo vzdržal? <stage type="vote">(2 delegata.)</stage>
                         </p>
                         <p>Ugotavljam, da je PAVEL KORBUN z večino glasov imenovan za namestnika
                            republiškega sekretarja za drobno gospodarstvo.</p>
                         <p>Sedaj dajem na glasovanje predlog za imenovanje VOJKE RAVBAR za
                            namestnico republiškega sekretarja za mednarodno sodelovanje.</p>
-                        <p>Kdo je za? <stage>(144 delegatov.)</stage> Je kdo proti? <stage>(1
-                              delegat.)</stage> Se je kdo vzdržal? <stage>(2 delegata.)</stage>
+                        <p>Kdo je za? <stage type="vote">(144 delegatov.)</stage> Je kdo proti? <stage type="vote">(1
+                              delegat.)</stage> Se je kdo vzdržal? <stage type="vote">(2 delegata.)</stage>
                         </p>
                         <p>Ugotavljam, da je VOJKA RAVBAR z večino glasov imenovana za namestnico
                            republiškega sekretarja za mednarodno sodelovanje.</p>
                         <p>Komisija za volitve, imenovanja in administrativne zadeve predlaga, da
                            skupščina razreši MARJETICO ŽIBERT dolžnosti NAMESTNICE TEMELJNEGA
                            JAVNEGA TOŽILCA v Novem mestu s 30.11. Predlog ste prejeli. Želi besedo
-                           predstavnik predlagatelja? <stage>(Ne želi.)</stage> Želi kdo
-                           razpravljati? <stage>(Tudi ne želi.)</stage> Potem dajem predlog na
+                           predstavnik predlagatelja? <stage type="debate">(Ne želi.)</stage> Želi kdo
+                           razpravljati? <stage type="debate">(Tudi ne želi.)</stage> Potem dajem predlog na
                            glasovanje.</p>
-                        <p>Kdo je za? <stage>(143 delegatov.)</stage> Je kdo proti? <stage>(2
-                              delegata.)</stage> Se je kdo vzdržal? <stage>(2 delegata.)</stage>
+                        <p>Kdo je za? <stage type="vote">(143 delegatov.)</stage> Je kdo proti? <stage type="vote">(2
+                              delegata.)</stage> Se je kdo vzdržal? <stage type="vote">(2 delegata.)</stage>
                         </p>
                         <p>Ugotavljam, da je MARJETICA ŽIBERT z večino glasov razrešena dolžnosti
                            Temeljnega javnega tožilstva v Novem mestu s 30.11.</p>
@@ -4857,10 +4868,10 @@
                            Skupščina Republike Slovenije izvoli JANEZA BOLHO ZA SODNIKA ZA PREKRŠKE
                            REPUBLIŠKEGA SENATA ZA PREKRŠKE V LJUBLJANI.</p>
                         <p>Predlog komisije ste že prejeli. Želi besedo predstavnik predlagatelja?
-                              <stage>(Ne želi.)</stage> Želi kdo razpravljati o predlogu? <stage>(Ne
+                              <stage type="debate">(Ne želi.)</stage> Želi kdo razpravljati o predlogu? <stage type="debate">(Ne
                               želi.)</stage> Potem dajem predlog na glasovanje.</p>
-                        <p>Kdo je za? <stage>(145 delegatov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(2
+                        <p>Kdo je za? <stage type="vote">(145 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(2
                               delegata.)</stage>
                         </p>
                         <p>Ugotavljam, da je JANEZ BOLHA z večino glasov izvoljen za sodnike za
@@ -4868,10 +4879,10 @@
                         <p>Komisija za volitve, imenovanja in administrativne zadeve predlaga, da
                            Skupščina imenuje predsednika in člane Loterijskega sveta Loterije
                            Slovenije. Predlog ste prejeli. Želi besedo predstavnik predlagatelja?
-                              <stage>(Ne želi.)</stage> Želi kdo razpravljati o predlogu?
-                              <stage>(Ne.)</stage> Potem dajem celoten predlog na glasovanje.</p>
-                        <p>Kdo je za? <stage>(146 delegatov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(2
+                              <stage type="debate">(Ne želi.)</stage> Želi kdo razpravljati o predlogu?
+                              <stage type="debate">(Ne.)</stage> Potem dajem celoten predlog na glasovanje.</p>
+                        <p>Kdo je za? <stage type="vote">(146 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(2
                               delegata.)</stage>
                         </p>
                         <p>Ugotavljam, da predlog z večino glasov sprejet.</p>
@@ -4888,34 +4899,34 @@
                         <p>V komisiji Skupščine Republike Slovenije za mirovno politiko razreši IVAN
                            MESIČEK DOLŽNOSTI PODPREDSEDNIKA KOMISIJE IN IZVOLI IVAN BIZJAK ZA
                            PODPREDSEDNIKA KOMISIJE.</p>
-                        <p>Predlog ste prejeli. Želi besedo predstavnik predlagatelja? <stage>(ne
-                              želi.)</stage> Želi kdo o predlogu razpravljati? <stage>(Tudi
+                        <p>Predlog ste prejeli. Želi besedo predstavnik predlagatelja? <stage type="debate">(ne
+                              želi.)</stage> Želi kdo o predlogu razpravljati? <stage type="debate">(Tudi
                               ne.)</stage> Potem dajem predlog na glasovanje.</p>
                         <p>Na glasovanje dajem predlog, da se IVAN MESIČEK razreši dolžnosti člana
                            Komisije za varstvo okolja in naravne dediščine.</p>
-                        <p>Kdo je za? <stage>(146 delegatov.)</stage> Je kdo proti? <stage>(1
-                              delegat.)</stage> Se je kdo vzdržal? <stage>(2 delegata.)</stage>
+                        <p>Kdo je za? <stage type="vote">(146 delegatov.)</stage> Je kdo proti? <stage type="vote">(1
+                              delegat.)</stage> Se je kdo vzdržal? <stage type="vote">(2 delegata.)</stage>
                         </p>
                         <p>Ugotavljam, da je IVAN MESIČEK z večino glasov razrešen dolžnosti člana
                            Komisije za varstvo okolja in naravne dediščine.</p>
                         <p>Na glasovanje dajem predlog, da se DR. AVGUŠTIN MENCINGER izvoli za člana
                            Komisije za varstvo okolja in naravne dediščine.</p>
-                        <p>Kdo je za? <stage>(146 delegatov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(Nihče.)</stage>
+                        <p>Kdo je za? <stage type="vote">(146 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(Nihče.)</stage>
                         </p>
                         <p>Ugotavljam, da je DR. AVGUŠTIN MENCINGER z večino glasov izvoljen za
                            člana Komisije za varstvo okolja in naravne dediščine.</p>
                         <p>Na glasovanje dajem predlog, da se IVAN MESIČEK razreši dolžnosti
                            podpredsednika Komisije za mirovno politiko.</p>
-                        <p>Kdo je za? <stage>(146 delegatov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(Nihče.)</stage>
+                        <p>Kdo je za? <stage type="vote">(146 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(Nihče.)</stage>
                         </p>
                         <p>Ugotavljam, da je IVAN MESIČEK soglasno razrešen dolžnosti podpredsednika
                            komisije za mirovno politiko.</p>
                         <p>Na glasovanje dajem predlog, da se IVAN BIZJAK izvoli za podpredsednika
                            Komisije za mirovno politiko.</p>
-                        <p>Kdo je za? <stage>(143 delegatov.)</stage> Je kdo proti? <stage>(4
-                              delegati.)</stage> Se je kdo vzdržal? <stage>(4 delegati.)</stage>
+                        <p>Kdo je za? <stage type="vote">(143 delegatov.)</stage> Je kdo proti? <stage type="vote">(4
+                              delegati.)</stage> Se je kdo vzdržal? <stage type="vote">(4 delegati.)</stage>
                         </p>
                         <p>Ugotavljam, da je IVAN BIZJAK z večino glasov izvoljen za podpredsednika
                            Komisije za mirovno politiko.</p>
@@ -4934,63 +4945,63 @@
                            MIROSLAVA RUPARŠIČA, pomočnika generalnega direktorja za pravne zadeve
                            Koteks-Tobus Ljubljana. Predlog Komisije za volitve, imenovanja in
                            administrativne zadeve ste danes prejeli. Ali želi predstavnik
-                           predlagatelja besedo? <stage>(Ne želi.)</stage> Želi kdo o predlogu
-                           razpravljati? <stage>(Ne želi.)</stage> Če ne želi nihče razpravljati,
+                           predlagatelja besedo? <stage type="debate">(Ne želi.)</stage> Želi kdo o predlogu
+                           razpravljati? <stage type="debate">(Ne želi.)</stage> Če ne želi nihče razpravljati,
                            prehajamo na glasovanje.</p>
                         <p>Na glasovanje dajem najprej predlog, da se EMIL TOMC razreši dolžnosti
                            predsednika Republiške volilne komisije v Ljubljani.</p>
-                        <p>Kdo je za? <stage>(146 delegatov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(1 delegat.)</stage>
+                        <p>Kdo je za? <stage type="vote">(146 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(1 delegat.)</stage>
                         </p>
                         <p>Ugotavljam, da je EMIL TOMC z večino glasov razrešen dolžnosti
                            predsednika Republiške volilne komisije v Ljubljani.</p>
                         <p>Na glasovanje dajem predlog, da se MARIA UDE-MARINČEK razreši dolžnosti
                            namestnice predsednika Republiške volilne komisije v Ljubljani.</p>
-                        <p>Kdo je za? <stage>(147 delegatov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(1 delegat.)</stage>
+                        <p>Kdo je za? <stage type="vote">(147 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(1 delegat.)</stage>
                         </p>
                         <p>Ugotavljam, da je MARIA UDE-MARINČEK z večino glasov razrešena dolžnosti
                            namestnice predsednika Republiške volilne komisije v Ljubljani.</p>
                         <p>Na glasovanje dajem predlog, da se DR. LOVRO ŠTURM razreši dolžnosti
                            člana Republiške volilne komisije.</p>
-                        <p>Kdo je za? <stage>(148 delegatov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(1 delegat.)</stage>
+                        <p>Kdo je za? <stage type="vote">(148 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(1 delegat.)</stage>
                         </p>
                         <p>Ugotavljam, da DR. LOVRO ŠTURM z večino glasov razrešen dolžnosti člana
                            Republiške volilne komisije.</p>
                         <p>Na glasovanje dajem predlog, da se MAG. MATEVŽ KRIVIC razreši dolžnosti
                            namestnika člana Republiške volilne komisije.</p>
-                        <p>Kdo je za? <stage>(148 delegatov.)</stage> Je kdo proti? <stage>(2
-                              delegata.)</stage> Se je kdo vzdržal? <stage>(Nihče.)</stage>
+                        <p>Kdo je za? <stage type="vote">(148 delegatov.)</stage> Je kdo proti? <stage type="vote">(2
+                              delegata.)</stage> Se je kdo vzdržal? <stage type="vote">(Nihče.)</stage>
                         </p>
                         <p>Ugotavljam, da je MAG. MATEVŽ KRIVIC razrešen z večino glasov z dolžnosti
                            namestnika člana Republiške volilne komisije.</p>
                         <p>Na glasovanje dajem predlog, da se MARIA UDE-MARINČEK imenuje za
                            predsednico Republiške volilne komisije v Ljubljani.</p>
-                        <p>Kdo je za? <stage>(139 delegatov.)</stage> Je kdo proti? <stage>(2
-                              delegata.)</stage> Se je kdo vzdržal? <stage>(4 delegati.)</stage>
+                        <p>Kdo je za? <stage type="vote">(139 delegatov.)</stage> Je kdo proti? <stage type="vote">(2
+                              delegata.)</stage> Se je kdo vzdržal? <stage type="vote">(4 delegati.)</stage>
                         </p>
                         <p>Ugotavljam, da je MARIA UDE-MARINČEK z večino glasov imenovana za
                            predsednico Republiške volilne komisije.</p>
                         <p>Na glasovanje dajem predlog, da se TONE FRANTAR imenuje za namestnika
                            predsednice Republiške volilne komisije.</p>
-                        <p>Kdo je za? <stage>(144 delegatov.)</stage> Je kdo proti? <stage>(1
-                              delegat.)</stage> Se je kdo vzdržal? <stage>(3 delegati.)</stage>
+                        <p>Kdo je za? <stage type="vote">(144 delegatov.)</stage> Je kdo proti? <stage type="vote">(1
+                              delegat.)</stage> Se je kdo vzdržal? <stage type="vote">(3 delegati.)</stage>
                         </p>
                         <p>Ugotavljam, da je TONE FRANTAR z večino glasov imenovan za namestnika
                            predsednice Republiške volilne komisije.</p>
                         <p>Na glasovanje dajem predlog, da se Franc Testen imenuje za člana
                            Republiške volilne komisije.</p>
-                        <p>Kdo je za? <stage>(142 delegatov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(6
+                        <p>Kdo je za? <stage type="vote">(142 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(6
                               delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je FRANC TESTEN z večino glasov imenovan za člana
                            Republiške volilne komisije.</p>
                         <p>Zdaj dajem na glasovanje predlog, da se MIROSLAV RUPARČIČ imenuje za
                            namestnika člana Republiške volilne komisije.</p>
-                        <p>Kdo je za? <stage>(142 delegatov.)</stage> Je kdo proti? <stage>(1
-                              delegat.)</stage> Se je kdo vzdržal? <stage>(4 delegati.)</stage>
+                        <p>Kdo je za? <stage type="vote">(142 delegatov.)</stage> Je kdo proti? <stage type="vote">(1
+                              delegat.)</stage> Se je kdo vzdržal? <stage type="vote">(4 delegati.)</stage>
                         </p>
                         <p>Ugotavljam, da je MIROSLAV RUPARČIČ imenovan za namestnika člana
                            Republiške volilne komisije.</p>
@@ -4999,8 +5010,7 @@
                         <p>S tem je dnevni red izčrpan. Zaključujem 10. sejo vseh zborov
                            skupščine.</p>
                      </sp>
-                     <stage type="time">(Seja je bila <time to="1990-11-27T14:35:00"
-                           xml:id="stage.t.4">končana 27. novembra 1990 ob 14.35
+                     <stage type="time">(Seja je bila <time to="1990-11-27T14:35:00" xml:id="stage.t.4">končana 27. novembra 1990 ob 14.35
                         uri</time>.)</stage>
                   </div>
                </div>

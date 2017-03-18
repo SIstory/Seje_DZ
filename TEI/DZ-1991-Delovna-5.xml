@@ -79,7 +79,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -90,6 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2017-02-02+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2017-02-02+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-11-19+01:00">
             <name>Andrej Pančur</name>: kodiranje <list>
                <item>front/div[@type='contents']//item[@n]/@xml:id</item>
@@ -199,6 +211,8 @@
                <castItem>
                   <actor xml:id="sp.PrelovecValentin">Prelovec Valentin</actor>
                   ......................................... 8</castItem>
+               <castItem>
+                  <actor xml:id="sp.RoginaBogo">Rogina Bogo</actor></castItem>
                <castItem>
                   <actor xml:id="sp.SmoleJože">Smole Jože</actor>
                   ................................................ 9</castItem>
@@ -317,7 +331,7 @@
                            razpravljali. Ne dovolim! Tudi ne bomo razširjali dnevnega reda. Naj to
                            predlaga zbor, ne more pa posameznik dati takega predloga. Danes ne bomo
                            razpravljali! Ne dovolim več, razen če je v zvezi z samo proceduro.
-                           Prosim? <stage>(Gros govori iz klopi.)</stage> Lahko. V redu. Gospod
+                           Prosim? <stage type="location">(Gros govori iz klopi.)</stage> Lahko. V redu. Gospod
                            Verlič je sedaj.</p>
                      </sp>
                      <sp who="#sp.VerličAndrej">
@@ -350,8 +364,8 @@
                            dvoje merodajnih stališč in predlogov. Prehajamo k našemu delu.</p>
                         <p>Če boste razpravljali o zakonu o proračunu, dajem besedo delegatu,
                            drugače pa ne dovolim. Ne razpravljamo, ker ni dnevnega reda. Gre samo za
-                           neusklajene stvari. <stage>(Nekdo govori iz klopi.)</stage> Ne, ne bomo!
-                           Bomo delali! <stage>(Ponovno se oglaša iz klopi.)</stage> Po vaše,
+                           neusklajene stvari. <stage type="gap">(Nekdo govori iz klopi.)</stage> Ne, ne bomo!
+                           Bomo delali! <stage type="gap">(Ponovno se oglaša iz klopi.)</stage> Po vaše,
                            verjetno pa drugi poslanci ne menijo tako. Ni kaj! Pobuda je tu in mi
                            moramo to nalogo opraviti.</p>
                         <p>Družbenopolitični zbor predlaga Zboru občin in Zboru združenega dela, da
@@ -402,7 +416,12 @@
                            združenega dela; najprej ugotovimo prisotnost. <stage type="vote">(48
                               delegatov.)</stage>
                         </p>
-                        <p>Kdo je za? <stage>(Bogo Rogina: Si ga prebral?)</stage> Vedo, točno vedo.
+                        <p>Kdo je za? 
+                           </p></sp><sp who="#sp.RoginaBogo">
+                           <speaker>(Bogo Rogina:</speaker>
+                              <ab>Si ga prebral?)</ab>
+                              </sp><sp who="#sp.ZupančičJože"><p>
+                              Vedo, točno vedo.
                            Saj je gospod Kopač točno povedal. Drugače je pa usklajeno v
                            Družbenpolitičnem zboru in Zboru občin. Tam je bilo sprejeto, samo mi ga
                            nismo sprejeli.</p>

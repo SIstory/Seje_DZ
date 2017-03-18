@@ -31,8 +31,7 @@
             <pubPlace>https://github.com/SIstory/Seje_DZ/tree/master/</pubPlace>
             <availability status="free">
                <licence>http://creativecommons.org/licenses/by/4.0/</licence>
-               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/"
-                     >Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
+               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
                </p>
             </availability>
             <date when="2016-03-21+01:00"/>
@@ -53,9 +52,7 @@
                      <date>(19. julij 1990)</date>
                   </imprint>
                </monogr>
-               <ref
-                  target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=884BB57E8588ABA6C1257C99004889DB"
-                     >(<date>2016-03-14</date>)</ref>
+               <ref target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=884BB57E8588ABA6C1257C99004889DB">(<date>2016-03-14</date>)</ref>
             </biblStruct>
             <biblFull>
                <titleStmt>
@@ -67,10 +64,10 @@
                   <publisher>Državni zbor Republike Slovenije</publisher>
                   <availability status="free">
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="slv">Avtorske pravice so potekle, delo je v javni
+                              xml:lang="slv">Avtorske pravice so potekle, delo je v javni
                         domeni.</licence>
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="eng">Public Domain Mark 1.0</licence>
+                              xml:lang="eng">Public Domain Mark 1.0</licence>
                   </availability>
                </publicationStmt>
             </biblFull>
@@ -82,7 +79,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -93,6 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2017-02-02+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2017-02-02+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-06-16+02:00">
             <name>Andrej Pančur</name>: kodiranje <list>
                <item>front/div[@type='contents']//item[@n]/@xml:id</item>
@@ -270,8 +279,10 @@
                <docDate>(<date when="1990-07-19">19. julij 1990</date>)</docDate>
                <timeline origin="#TL.1" unit="s">
                   <when synch="#stage.t.1" xml:id="TL.1" absolute="1990-07-19T10:15:00"/>
-                  <when synch="#stage.t.2" since="#TL.1" absolute="1990-07-19T13:30:00"
-                     interval="11700"/>
+                  <when synch="#stage.t.2"
+                        since="#TL.1"
+                        absolute="1990-07-19T13:30:00"
+                        interval="11700"/>
                </timeline>
                <castList>
                   <castItem>
@@ -279,8 +290,7 @@
                      <actor xml:id="sp.BučarFrance">dr. France Bučar</actor>, <role>predsednik
                         Skupščine Republike Slovenije</role>,</castItem>
                </castList>
-               <stage type="time">Seja se je <time from="1990-07-19T10:15:00" xml:id="stage.t.1"
-                     >pričela ob 10.15 uri</time>.</stage>
+               <stage type="time">Seja se je <time from="1990-07-19T10:15:00" xml:id="stage.t.1">pričela ob 10.15 uri</time>.</stage>
                <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
                   <div xml:id="div.1.1.1.1" ana="#PAR.Prisot" corresp="#toc.1.1">
                      <sp who="#sp.BučarFrance">
@@ -289,15 +299,15 @@
                            Slovenije, ki je sklicana na podlagi 364. člena ustave Republike
                            Slovenije in 134. člena Poslovnika Skupščine Republike Slovenije.</p>
                         <p>Najprej bomo ugotovili sklepčnost seje. Prosim delegate
-                           Družbenopolitičnega zbora, da pritisnejo tipko za navzočnost. <stage>(49
+                           Družbenopolitičnega zbora, da pritisnejo tipko za navzočnost. <stage type="quorum">(49
                               prisotnih.)</stage> Bi še enkrat poskusili, prosim, če ponovimo to
-                           glasovaje o navzočnosti Družbenopolitičnega zbora. <stage>(57
+                           glasovaje o navzočnosti Družbenopolitičnega zbora. <stage type="quorum">(57
                               prisotnih.)</stage>
                         </p>
-                        <p>Prosim delegate Zbora občin, da izkažejo navzočnost. <stage>(49
+                        <p>Prosim delegate Zbora občin, da izkažejo navzočnost. <stage type="quorum">(49
                               prisotnih.)</stage>
                         </p>
-                        <p>In prosim Zbor združenega dela, da pritisnejo to tipko <stage>(60
+                        <p>In prosim Zbor združenega dela, da pritisnejo to tipko <stage type="quorum">(60
                               prisotnih.)</stage>
                         </p>
                         <p>Ugotavljam, da so vsi trije zbori sklepčni.</p>
@@ -356,8 +366,8 @@
                         <p>Hvala lepa. Torej dajem najprej na glasovanje predlog, da gre resolucija
                            o narodni spravi na dnevni red. Kdo je za? Prosim, najprej
                            Družbenopolitični zbor, ali skupaj, pardon.</p>
-                        <p>Kdo je za ta predlog? <stage>(66 delegatov.)</stage> Je kdo proti?
-                              <stage>(100 delegatov.)</stage> Se je kdo vzdržal? <stage>(16
+                        <p>Kdo je za ta predlog? <stage type="vote">(66 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(100 delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(16
                               delegatov.)</stage>
                         </p>
                         <p>Torej, ugotavljam, da ta predlog za razširitev dnevnega reda ni
@@ -365,8 +375,8 @@
                         <p>Kar se tiče predloga Deklaracije o Kosovu, je ta del tega celotnega
                            predloga dnevnega reda in dajem predlog celotnega dnevnega reda na
                            glasovanje.    </p>
-                        <p>Kdo je, prosim za? <stage>(176 delegatov.)</stage> Je kdo proti?
-                              <stage>(5 delegatov.)</stage> Se je kdo vzdržal? <stage>(10
+                        <p>Kdo je, prosim za? <stage type="vote">(176 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(5 delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(10
                               delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je predlog dnevnega reda sprejet.</p>
@@ -414,8 +424,8 @@
                            že itak bil objavljen. Se s tem strinjate? Mislim, da ni potrebno
                            glasovanje. Torej, s tem dopolnilom, ali lahko s to dopolnitvijo dam
                            predlog na glasovanje?</p>
-                        <p>Kdo je za odobritev zapisnika? <stage>(168 delegatov.)</stage> Je kdo
-                           proti? <stage>(5 delegatov.)</stage> Se je kdo vzdržal? <stage>(6
+                        <p>Kdo je za odobritev zapisnika? <stage type="vote">(168 delegatov.)</stage> Je kdo
+                           proti? <stage type="vote">(5 delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(6
                               delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je zapisnik 4. seje s to dopolnitvijo odobren.</p>
@@ -427,8 +437,8 @@
                               KOSOVU</title>.</p>
                         <p>Predlog deklaracije ste prejeli, prav tako tudi mnenje Zakonodajno-pravne
                            komisije in Izvršnega sveta. Ali želi besedo predstavnik predlagatelja?
-                              <stage>(Ne želi.)</stage> Ali želi besedo predstavnik
-                           Zakonodajno-pravne komisije? <stage>(Ne želi.)</stage> Začenjam razpravo
+                              <stage type="debate">(Ne želi.)</stage> Ali želi besedo predstavnik
+                           Zakonodajno-pravne komisije? <stage type="debate">(Ne želi.)</stage> Začenjam razpravo
                            o tem predlogu. Želi kdo besedo? Ja, prosim.</p>
                      </sp>
                      <sp who="#sp.GlavičPeter">
@@ -623,15 +633,15 @@
                            državno  ureditev Jugoslavije" namesto "razdrli ustavno ureditev SFRJ".
                            To je razlika. Je možno glasovati? Dobro. Potem dajem predlog tega
                            amandmaja na glasovanje.</p>
-                        <p>Kdo je za? <stage>(61 delegatov.)</stage> Je kdo proti? <stage>(85
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(27 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(61 delegatov.)</stage> Je kdo proti? <stage type="vote">(85
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(27 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da amandma ni dobil potrebne večine.</p>
                         <p>Lahko upoštevamo vaš glas, torej 61 za, vendar to stvari ne spremeni.
                            Hvala lepa.</p>
                         <p>Dajem sedaj predlog resolucije kot celota na glasovanje.</p>
-                        <p>Kdo je za? <stage>(162 delegatov.)</stage> Je kdo proti? <stage>(6
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(6 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(162 delegatov.)</stage> Je kdo proti? <stage type="vote">(6
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(6 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je predlog deklaracije o Kosovu s pretežno večino glasov
                            sprejet.</p>
@@ -669,8 +679,8 @@
                            skupščine na srbsko skupščino, da se to stvar da pred Zvezno ustavno
                            sodišče. Želi kdo o tem razpravljati? Če ne želi, potem dajem ta predlog
                            na glasovanje.</p>
-                        <p>Kdo je za? <stage>(161 delegatov.)</stage> Je kdo proti? <stage>(2
-                              delegata.)</stage> Se je kdo vzdržal? <stage>(13 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(161 delegatov.)</stage> Je kdo proti? <stage type="vote">(2
+                              delegata.)</stage> Se je kdo vzdržal? <stage type="vote">(13 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je ta predlog sprejet.</p>
                      </sp>
@@ -724,7 +734,7 @@
                            volijo zbori Skupščine Republike Slovenije na skupni seji izmed
                            predsednikov odborov zborov. Zdaj vprašam ali želi besedo predstavnik
                            predlagatelj, to je komisija za volitve in imenovanja in administrativne
-                           zadeve? <stage>(Ne želi.)</stage> Dajem predloge kandidatur kandidatov v
+                           zadeve? <stage type="debate">(Ne želi.)</stage> Dajem predloge kandidatur kandidatov v
                            razpravo. Kdo želi besedo. Prosim, Ocvirk.</p>
                      </sp>
                      <sp who="#sp.OcvirkMojmir">
@@ -783,14 +793,14 @@
                            Republike Slovenije za notranjo politiko. Najprej glasujemo za
                            predsednika komisije. In sicer, predlagan je Milan Balažic. Najprej
                            glasujemo o tem.</p>
-                        <p>Kdo je za? <stage>(152 delegatov.)</stage> Je kdo proti? <stage>(7
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(9 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(152 delegatov.)</stage> Je kdo proti? <stage type="vote">(7
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(9 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je za predsednika Komisije Skupščine Republike Slovenije
                            za notranjo politiko izvoljen Milan Balažic.</p>
                         <p>Prehajamo na glasovanje za podpredsednika.</p>
-                        <p>Kdo je za? <stage>(171 delegatov.)</stage> Je kdo proti? <stage>(3
-                              delegati.)</stage> Se je kdo vzdržal? <stage>(4 delegati.)</stage>
+                        <p>Kdo je za? <stage type="vote">(171 delegatov.)</stage> Je kdo proti? <stage type="vote">(3
+                              delegati.)</stage> Se je kdo vzdržal? <stage type="vote">(4 delegati.)</stage>
                         </p>
                         <p>Ugotavljam, da je za predsednika te komisije izvoljen Marko Stadler.</p>
                         <p>Potem prehajamo še na volitve kandidatov za člane komisije, se pravi:
@@ -798,28 +808,28 @@
                            Zakonjšek, Andrej Muren, Ignac Polajnar, Franci Feltrin, Marjan Dvornik,
                            Franc Erce in Franček Rudolf.</p>
                         <p>Dajem to na glasovanje.</p>
-                        <p>Kdo je za? <stage>(157 delegatov.)</stage> Je kdo proti? <stage>(13
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(3 delegati.)</stage>
+                        <p>Kdo je za? <stage type="vote">(157 delegatov.)</stage> Je kdo proti? <stage type="vote">(13
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(3 delegati.)</stage>
                         </p>
                         <p>Ugotavljam, da je na podlagi tega v celoti izvoljena Komisija Skupščine
                            Republike Slovenije za notranjo politiko, in sicer z večino glasov.</p>
                         <p>Prehajamo na glasovanje o izvolitvi predsednika, podpredsednika in članov
                            Komisije Skupščine Republike Slovenije za denacionalizacijo. Za
                            predsednika je predlagan Ivan Pučnik in prosim, da glasujemo.</p>
-                        <p>Kdo je za? <stage>(166 delegatov.)</stage> Je kdo proti? <stage>(3
+                        <p>Kdo je za? <stage type="vote">(166 delegatov.)</stage> Je kdo proti? <stage type="vote">(3
                               delegati.)</stage> Se je kdo vzdržal? 9 delegatov.)</p>
                         <p>Ugotavljam, da je za predsednika te komisije izvoljen Ivan Pučnik.</p>
                         <p>Glasujemo vsi za podpredsednika. Predlagan je Leopold Drame.</p>
-                        <p>Kdo je za? <stage>(170 delegatov.)</stage> Je kdo proti? <stage>(2
-                              delegata.)</stage> Se je kdo vzdržal? <stage>(Nihče.)</stage>
+                        <p>Kdo je za? <stage type="vote">(170 delegatov.)</stage> Je kdo proti? <stage type="vote">(2
+                              delegata.)</stage> Se je kdo vzdržal? <stage type="vote">(Nihče.)</stage>
                         </p>
                         <p>Ugotavljam, da je komisija v predlagani sestavi z večino glasov
                            izvoljena.</p>
                         <p>Glasujemo še za člane: Leopold Frelih, Miloš Senčur, Sonja Lokar, Dejan
                            Murko, mag. Janez Jug, Nada Bolcar, dr. Anton Žunter, Marjan Vilfan,
                            Franc Erce, Vitomir Gros in dr. Ludvik Toplak.</p>
-                        <p>Kdo je za? <stage>(179 delegatov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(4
+                        <p>Kdo je za? <stage type="vote">(179 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(4
                               delegati.)</stage>
                         </p>
                         <p>Ugotavljam, da je Komisija Skupščine Republike Slovenije za
@@ -828,14 +838,14 @@
                            Komisije Skupščine Republike Slovenije za strategijo nacionalnega in
                            regionalnega razvoja. Glasujemo najprej o predlaganem kandidatu za
                            predsednika. To je Emil Milan Pintar.</p>
-                        <p>Kdo je za? <stage>(165 delegatov.)</stage> Je kdo proti? <stage>(8
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(6 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(165 delegatov.)</stage> Je kdo proti? <stage type="vote">(8
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(6 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je z večino glasov za predsednika te komisije izvoljen
                            Emil Milan Pintar.</p>
                         <p>Glasujemo o kandidatki za podpredsednico. To je Spomenka Hribar.</p>
-                        <p>Kdo je za? <stage>(162 delegatov.)</stage> Je kdo proti? <stage>(10
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(8 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(162 delegatov.)</stage> Je kdo proti? <stage type="vote">(10
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(8 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je za podpredsednico te komisije z večino glasov izvoljena
                            Spomenka Hribar.</p>
@@ -844,45 +854,45 @@
                            Vukovič, mag. Jože Protner, Janez Gajšek, Jože Studenčnik, Andrej Muren,
                            mag. Franc Kovač, dr. Božidar Voljč, dr. Franc Zagožen in mag. Rudi
                            Šeligo. Dajem to listo na glasovanje.</p>
-                        <p>Kdo je za? <stage>(176 delegatov.)</stage> Je kdo proti? <stage>(2
-                              delegata.)</stage> Se je kdo vzdržal? <stage>(1 delegat.)</stage>
+                        <p>Kdo je za? <stage type="vote">(176 delegatov.)</stage> Je kdo proti? <stage type="vote">(2
+                              delegata.)</stage> Se je kdo vzdržal? <stage type="vote">(1 delegat.)</stage>
                         </p>
                         <p>Ugotavljam, da je Komisija Skupščine Republike Slovenije za strategijo
                            nacionalnega in regionalnega razvoja z večino glasov izvoljena.</p>
                         <p>S tem prehajamo na volitve Komisije Skupščine Republike Slovenije za
                            urejanje skupnih interesov in odnosov v Jugoslaviji.</p>
                         <p>Kandidat za predsednika je Mile Šetinc.</p>
-                        <p>Kdo je za? <stage>(156 delegatov.)</stage> Je kdo proti? <stage>(15
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(6 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(156 delegatov.)</stage> Je kdo proti? <stage type="vote">(15
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(6 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je z večino glasov Mile Šetinc izvoljen za predsednika
                            komisije.</p>
                         <p>Prehajamo takoj na volitev podpredsednika komisije. Predlagan kandidat je
                            Anton Peršak.</p>
-                        <p>Kdo je za? <stage>(172 delegatov.)</stage> Je kdo proti? <stage>(6
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(4 delegati.)</stage>
+                        <p>Kdo je za? <stage type="vote">(172 delegatov.)</stage> Je kdo proti? <stage type="vote">(6
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(4 delegati.)</stage>
                         </p>
                         <p>Ugotavljam, da je za podpredsednika z večino glasov izvoljen Anton
                            Peršak.</p>
                         <p>Prehajamo še na glasovanje o listi; in sicer: Janez Lukač, mag. Janez
                            Kocijančič, Anton Slapernik, Albin Kac, dr. Ivan Vivod, Marko Stadler,
                            Marcel Štefančič, Janez Gajšek in Ivan Bizjak.</p>
-                        <p>Kdo je za? <stage>(167 delegatov.)</stage> Je kdo proti? <stage>(3
-                              delegati.)</stage> Se je kdo vzdržal? <stage>(4 delegati.)</stage>
+                        <p>Kdo je za? <stage type="vote">(167 delegatov.)</stage> Je kdo proti? <stage type="vote">(3
+                              delegati.)</stage> Se je kdo vzdržal? <stage type="vote">(4 delegati.)</stage>
                         </p>
                         <p>Ugotavljam, da je z večino glasov izvoljena Komisija Skupščine Republike
                            Slovenije za urejanje skupnih interesov in odnosov v Jugoslaviji.</p>
                         <p>Torej peta lista, to je Komisija Skupščine Republike Slovenije za
                            človekove pravice in državljanske svoboščine.</p>
                         <p>Kandidat za predsednika je dr. Lev Kreft.</p>
-                        <p>Kdo je za? <stage>(162 delegatov.)</stage> Je kdo proti? <stage>(10
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(7 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(162 delegatov.)</stage> Je kdo proti? <stage type="vote">(10
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(7 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je z večino glasov dr. Lev Kreft izvoljen za predsednika
                            te komisije.</p>
                         <p>Glasujemo o kandidatu za podpredsednika, to je dr. Jože Magdič.</p>
-                        <p>Kdo je za? <stage>(182 delegatov.)</stage> Je kdo proti? <stage>(1
-                              delegat.)</stage> Se je kdo vzdržal? <stage>(2 delegata.)</stage>
+                        <p>Kdo je za? <stage type="vote">(182 delegatov.)</stage> Je kdo proti? <stage type="vote">(1
+                              delegat.)</stage> Se je kdo vzdržal? <stage type="vote">(2 delegata.)</stage>
                         </p>
                         <p>Ugotavljam, da je dr. Jože Magdič z večino glasov izvoljen za
                            podpredsednika te komisije.</p>
@@ -890,8 +900,8 @@
                            Lavtižar-Bebler, Milan Balažic, Roman Jakič, Tone Kramarič, Miloš
                            Urbančič, dr. Irena Keber, Aleksandra Pretnar, dr. Avguštin Mencinger in
                            Majdica Slokan.</p>
-                        <p>Kdo je za? <stage>(178 delegatov.)</stage> Je kdo proti? <stage>(2
-                              delegata.)</stage> Se je kdo vzdržal? <stage>(2 delegata.)</stage>
+                        <p>Kdo je za? <stage type="vote">(178 delegatov.)</stage> Je kdo proti? <stage type="vote">(2
+                              delegata.)</stage> Se je kdo vzdržal? <stage type="vote">(2 delegata.)</stage>
                         </p>
                         <p>Ugotavljam, da je z večino glasov izvoljena Komisija Skupščine Republike
                            Slovenije za človekove pravice in državljanske svoboščine.</p>
@@ -902,121 +912,121 @@
                            Zamenjava je med predsednikom in podpredsednikom iz prvotnega predloga.
                            Torej, če lahko preidemo na glasovanje o predsedniku, to je Hubert
                            Požarnik, prosim, da pritisnete tipko.</p>
-                        <p>Kdo je za? <stage>(161 delegatov.)</stage> Je kdo proti? <stage>(12
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(10 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(161 delegatov.)</stage> Je kdo proti? <stage type="vote">(12
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(10 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je dr. Hubert Požarnik z večino glasov izvoljen za
                            predsednika  komisije.</p>
                         <p>Prehajamo na glasovanje o podpredsedniku.  </p>
-                        <p>Kdo je za? <stage>(177 delegatov.)</stage> Je kdo proti? <stage>(2
-                              delegata.)</stage> Se je kdo vzdržal? <stage>(4 delegati.)</stage>
+                        <p>Kdo je za? <stage type="vote">(177 delegatov.)</stage> Je kdo proti? <stage type="vote">(2
+                              delegata.)</stage> Se je kdo vzdržal? <stage type="vote">(4 delegati.)</stage>
                         </p>
                         <p>Ugotavljam, da je za podpredsednika izvoljen Vano Gošnik.</p>
                         <p>Prehajamo na glasovanje o listi: Franc Avberšek, Marija Pozsonec, dr.
                            Drago Plešivčnik, mag. Franc Perko, mag. Viktor Žakelj, Mihaela Bauman,
                            dr. Stanko Buser, Matjaž Jež, dr. Anton Žunter, Ivan Mesiček in Alojz
                            Metelko.</p>
-                        <p>Kdo je za? <stage>( 181 delegatov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(1 delegat.)</stage>
+                        <p>Kdo je za? <stage type="vote">( 181 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(1 delegat.)</stage>
                         </p>
                         <p>Ugotavljam, da je z večino glasov izvoljena Komisija Skupščine Republike
                            Slovenije za varstvo okolja in naravne dediščine.</p>
                         <p>Prehajamo na glasovanje o sedmi listi. To je Komisija Skupščine Republike
                            Slovenije za pomorstvo. Za predsednika je predlagan Danijel Starman.</p>
-                        <p>Kdo je za? <stage>(173 delegatov.)</stage> Je kdo proti? <stage>(3
-                              delegati.)</stage> Se je kdo vzdržal? <stage>(6 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(173 delegatov.)</stage> Je kdo proti? <stage type="vote">(3
+                              delegati.)</stage> Se je kdo vzdržal? <stage type="vote">(6 delegatov.)</stage>
                             </p>
                         <p>Ugotavljam, da je Danijel Starman izvoljen za predsednika te
                            komisije.</p>
                         <p>Prehajamo na glasovanje o podpredsedniku. Predlog je za Aurelia
                            Jurija.</p>
-                        <p>Kdo je za? <stage>(145 delegatov.)</stage> Je kdo proti? <stage>(28
+                        <p>Kdo je za? <stage type="vote">(145 delegatov.)</stage> Je kdo proti? <stage type="vote">(28
                               delegatov.)</stage> Se oproščam, moramo še enkrat glasovati. Torej,
-                           kdo je za? <stage>(146 delegatov.)</stage> Je kdo proti? <stage>(28
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(12 delegatov.)</stage>
+                           kdo je za? <stage type="vote">(146 delegatov.)</stage> Je kdo proti? <stage type="vote">(28
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(12 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je za podpredsednika komisije z večino glasov izvoljen
                            Aurelio Juri.</p>
                         <p>Prehajamo na glasovanje o listi. To je: Franco Juri, Marino Domio,
                            Danijel Božič, dr. Hubert Požarnik, Valentin Prelovec, Žarko Pregelj,
                            Marjan Starc, Dejan Peršolja in Jurij Pirš.</p>
-                        <p>Kdo je za? <stage>(173 delegatov.)</stage> Je kdo proti? <stage>(4
-                              delegati.)</stage> Se je kdo vzdržal? <stage>(4 delegati.)</stage>
+                        <p>Kdo je za? <stage type="vote">(173 delegatov.)</stage> Je kdo proti? <stage type="vote">(4
+                              delegati.)</stage> Se je kdo vzdržal? <stage type="vote">(4 delegati.)</stage>
                         </p>
                         <p>Ugotavljam, da je z večino glasov izvoljena Komisija Skupščine Republike
                            Slovenije za pomorstvo.</p>
                         <p>Prehajamo na naslednjo, to je 8. komisijo, to je Komisija Skupščine
                            Republike Slovenije za družino. Kandidat za predsednika komisije je Ignac
                            Polajnar.</p>
-                        <p>Kdo je za? <stage>(174 delegatov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(1 delegat.)</stage>
+                        <p>Kdo je za? <stage type="vote">(174 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(1 delegat.)</stage>
                         </p>
                         <p>Ugotavljam, da je za predsednika te komisije z večino glasov izvoljen
                            Ignac Polajnar.</p>
                         <p>Glasujemo o podpredsedniku: Franc Potočnik.</p>
-                        <p>Kdo je za? <stage>(181 delegatov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(1 delegat.)</stage>
+                        <p>Kdo je za? <stage type="vote">(181 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(1 delegat.)</stage>
                         </p>
                         <p>Ugotavljam, da je za podpredsednika te komisije izvoljen Franc Potočnik,
                            in sicer z večino glasov.</p>
                         <p>Prehajamo na glasovanje o članih, in sicer: mag. Dušan Semolič, Vojka
                            Štular, Zdenka Vidovič, Alojz Jamnik, Janez Lampret, dr. Janez Remškar in
                            Drago Štuc.</p>
-                        <p>Kdo je za? <stage>(180 delegatov.)</stage> Je kdo proti? <stage>(1
-                              delegat.)</stage> Se je kdo vzdržal? <stage>(3 delegati.)</stage>
+                        <p>Kdo je za? <stage type="vote">(180 delegatov.)</stage> Je kdo proti? <stage type="vote">(1
+                              delegat.)</stage> Se je kdo vzdržal? <stage type="vote">(3 delegati.)</stage>
                         </p>
                         <p>Ugotavljam, da je z večino glasov izvoljena Komisija Skupščine Republike
                            Slovenije za družino.</p>
                         <p>Prehajamo na 9. listo, to je Komisija Skupščine Republike Slovenije za
                            mirovno politiko. Za predsednico je predlagana Vika Potočnik.</p>
-                        <p>Kdo je za? <stage>(160 delegatov.)</stage> Je kdo proti? <stage>(15
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(7 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(160 delegatov.)</stage> Je kdo proti? <stage type="vote">(15
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(7 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je za predsednico te komisije izvoljena Vika Potočnik.</p>
                         <p>Prehajamo na glasovanje o podpredsedniku, to je Ivan Mesiček</p>
-                        <p>Kdo je za? <stage>(172 delegatov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(5
+                        <p>Kdo je za? <stage type="vote">(172 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(5
                               delegatov.)</stage>Ugotavljam, da je z večino glasov Ivan Mesiček
                            izvoljen za podpredsednika te komisije. Prehajamo na glasovanje o članih:
                            Borut Šuklje, Milan Balažic, Metka Mencin, Miloš Urbančič, dr. Janez
                            Remškar, Franc Ogris, dr. Primož Rode.</p>
-                        <p>Kdo je za? <stage>(175 delegatov.)</stage> Je kdo proti? <stage>(4
-                              delegati.)</stage> Se je kdo vzdržal? <stage>(4 delegati.)</stage>
+                        <p>Kdo je za? <stage type="vote">(175 delegatov.)</stage> Je kdo proti? <stage type="vote">(4
+                              delegati.)</stage> Se je kdo vzdržal? <stage type="vote">(4 delegati.)</stage>
                         </p>
                         <p>Ugotavljam, da je z večino glasov izvoljena komisija za mirovno
                            politiko.</p>
                         <p>Prehajam na glasovanje o Komisiji za informiranje. Kandidat za
                            predsednika je Franček Rudolf.</p>
-                        <p>Kdo je za? <stage>(179 delegatov.)</stage> Je kdo proti? <stage>(3
-                              delegati.)</stage> Se je kdo vzdržal? <stage>(5 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(179 delegatov.)</stage> Je kdo proti? <stage type="vote">(3
+                              delegati.)</stage> Se je kdo vzdržal? <stage type="vote">(5 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je z večino glasov za predsednika komisije izvoljen
                            Franček Rudolf.</p>
                         <p>Prehajam na glasovanje o podpredsedniku, to je Borut Pahor.</p>
-                        <p>Kdo je za? <stage>(153 delegatov.)</stage> Je kdo proti? <stage>(12
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(5 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(153 delegatov.)</stage> Je kdo proti? <stage type="vote">(12
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(5 delegatov.)</stage>
                             </p>
                         <p>Ugotavljam, da je z večino glasov za podpredsednika te komisije izvoljen
                            Borut Pahor.</p>
                         <p>Prehajamo na glasovanje o članih: to so: Maria Pozsonec, Jože Smole,
                            Roberto Battelli, Barbara Zupanc, Ignac Polajnar, Marcel Štefančič, dr.
                            Ivan Vivod, Zvone Žagar in mag. Matjaž Šinkovec.</p>
-                        <p>Kdo je za? <stage>(183 delegatov.)</stage> Je kdo proti? <stage>(1
-                              delegat.)</stage> Se je kdo vzdržal? <stage>(2 delegata.)</stage>
+                        <p>Kdo je za? <stage type="vote">(183 delegatov.)</stage> Je kdo proti? <stage type="vote">(1
+                              delegat.)</stage> Se je kdo vzdržal? <stage type="vote">(2 delegata.)</stage>
                         </p>
                         <p>Ugotavljam, da je z večino glasov izvoljena Komisija Skupščine Republike
                            Slovenije za informiranje.</p>
                         <p>Prehajamo na glasovanje o Komisiji Skupščine Republike Slovenije za
                            Svetovni slovenski kongres. Za predsednico je predlagana Spomenka
                            Hribar.</p>
-                        <p>Kdo je za? <stage>(142 delegatov.)</stage> Je kdo proti? <stage>(28
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(14 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(142 delegatov.)</stage> Je kdo proti? <stage type="vote">(28
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(14 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je z večino glasov Spomenka Hribar izvoljena za
                            predsednico te komisije.</p>
                         <p>Za podpredsednika je predlagan Borut Šuklje.</p>
-                        <p>Kdo je za? <stage>(164 delegatov.)</stage> Je kdo proti? <stage>(4
-                              delegati.)</stage> Se je kdo vzdržal? <stage>(9 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(164 delegatov.)</stage> Je kdo proti? <stage type="vote">(4
+                              delegati.)</stage> Se je kdo vzdržal? <stage type="vote">(9 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je z večino glasov Borut Šuklje izvoljen za podpredsednika
                            te komisije.</p>
@@ -1024,49 +1034,49 @@
                            Zupančič, dr. Lev Kreft, Jaša L. Zlobec, Peter Reberc, mag. Rudi Šeligo,
                            mag. Matjaž Šinkovec, Danijel Starman, Franček Rudolf, Franc Golja in dr.
                            Irena Keber.</p>
-                        <p>Kdo je za? <stage>(179 delegatov.)</stage> Je kdo proti? <stage>(5
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(4 delegati.)</stage>
+                        <p>Kdo je za? <stage type="vote">(179 delegatov.)</stage> Je kdo proti? <stage type="vote">(5
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(4 delegati.)</stage>
                         </p>
                         <p>Ugotavljam, da je z večino glasov izvoljena Komisija Skupščine Republike
                            Slovenije za Svetovni slovenski kongres.</p>
                         <p>Prehajamo na 12. listo, to je Komisija Skupščine Republike Slovenije za
                            obrambo. Kandidat za predsednika je Ivan Kuhar.</p>
-                        <p>Kdo je za? 166 delegatov.) Je kdo proti? <stage>(2 delegata.)</stage> Se
-                           je kdo vzdržal? <stage>(15 delegatov.)</stage>
+                        <p>Kdo je za? 166 delegatov.) Je kdo proti? <stage type="vote">(2 delegata.)</stage> Se
+                           je kdo vzdržal? <stage type="vote">(15 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je z večino glasov Ivan Kuhar izvoljen za predsednika te
                            komisije.</p>
                         <p>Kandidat za podpredsednika je Slavko Kmetič.</p>
-                        <p>Kdo je za? <stage>(169 delegatov.)</stage> Je kdo proti? <stage>(1
-                              delegat.)</stage> Se je kdo vzdržal? <stage>(7 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(169 delegatov.)</stage> Je kdo proti? <stage type="vote">(1
+                              delegat.)</stage> Se je kdo vzdržal? <stage type="vote">(7 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je Slavko Kmetič izvoljen za podpredsednika komisije.</p>
                         <p>Prehajamo na glasovanje o listi, in sicer: Milan Aksentijevi}, Milan
                            Balažic, Andrej Železnik, France Tomšič, Tone Kramarič, Marjan Vilfan,
                            mag. Ervin Anton Schwarzbartl, Slavko Dragovan, Ivan Tomše, dr. Primož
                            Rode in Andrej Verlič.</p>
-                        <p>Kdo je za? <stage>(160 delegatov.)</stage> Je kdo proti? <stage>(15
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(8 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(160 delegatov.)</stage> Je kdo proti? <stage type="vote">(15
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(8 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je z večino glasov izvoljena Komisija Skupščine Republike
                            Slovenije za obrambo.</p>
                         <p>13. lista je Komisija za žensko politiko. Za predsednico je predlagana
                            Metka Mencin.</p>
-                        <p>Kdo je za? <stage>(176 delegatov.)</stage> Je kdo proti? <stage>(2
-                              delegata.)</stage> Se je kdo vzdržal? <stage>(3 delegati.)</stage>
+                        <p>Kdo je za? <stage type="vote">(176 delegatov.)</stage> Je kdo proti? <stage type="vote">(2
+                              delegata.)</stage> Se je kdo vzdržal? <stage type="vote">(3 delegati.)</stage>
                         </p>
                         <p>Ugotavljam, da je z večino glasov Metka Mencin izvoljena za predsednico
                            komisije.</p>
                         <p>Glasujemo o predlogu za podpredsednico, in sicer je to Mihaela Logar.</p>
-                        <p>Kdo je za? 169 delegatov.) Je kdo proti? <stage>(2 delegata.)</stage> Se
-                           je kdo vzdržal? <stage>(4 delegati.)</stage>
+                        <p>Kdo je za? 169 delegatov.) Je kdo proti? <stage type="vote">(2 delegata.)</stage> Se
+                           je kdo vzdržal? <stage type="vote">(4 delegati.)</stage>
                         </p>
                         <p>Ugotavljam, da je Mihaela Logar izvoljena za podpredsednico komisije.</p>
                         <p>Prehajamo še na glasovanje o listi, in sicer: Darja Lavtižar-Bebler,
                            Vojka Štular, Aleksandra Pretnar, Nada Bolcer, Angelca Žerovnik, Marija
                            Markeš in Majdica Slokan.</p>
-                        <p>Kdo je za? <stage>(176 delegatov.)</stage> Je kdo proti? <stage>(2
-                              delegata.)</stage> Se je kdo vzdržal? <stage>(4 delegati.)</stage>
+                        <p>Kdo je za? <stage type="vote">(176 delegatov.)</stage> Je kdo proti? <stage type="vote">(2
+                              delegata.)</stage> Se je kdo vzdržal? <stage type="vote">(4 delegati.)</stage>
                         </p>
                         <p>Ugotavljam, da je z večino glasov izvoljena Komisija Skupščine Republike
                            Slovenije za žensko politiko.</p>
@@ -1076,8 +1086,8 @@
                            Janez Lukač, rojen 1931, diplomirani pravnik, podpredsednik Zbora občin
                            Skupščine Republike Slovenije, delegat v Zveznem zboru Skupščine SFRJ,
                            sedaj član te komisije, Socialistična stranka Slovenije.</p>
-                        <p>Kdo je za? <stage>(150 delegatov.)</stage> Je kdo proti? <stage>(20
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(13 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(150 delegatov.)</stage> Je kdo proti? <stage type="vote">(20
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(13 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je z večino glasov Janez Lukač izvoljen za podpredsednika
                            Komisije Skupščine Republike Slovenije za celovito proučitev okoliščin,
@@ -1086,8 +1096,8 @@
                            stanovanjska in komunalna vprašanja na ravni Skupščine Republike
                            Slovenije. Kandidat za predsednika odbora je Fedja Klavora, arhitekt,
                            rojen 1940, delegat v Zboru občin, Zeleni Slovenije.</p>
-                        <p>Kdo je za? <stage>(172 delegatov.)</stage> Je kdo proti? <stage>(4
-                              delegati.)</stage> Se je kdo vzdržal? <stage>(4 delegati.)</stage>
+                        <p>Kdo je za? <stage type="vote">(172 delegatov.)</stage> Je kdo proti? <stage type="vote">(4
+                              delegati.)</stage> Se je kdo vzdržal? <stage type="vote">(4 delegati.)</stage>
                         </p>
                         <p>Ugotavljam, da je z večino glasov Fedja Klavora izvoljen za predsednika
                            Odbora za urejanje prostora ter stanovanjska in komunalna vprašanja na
@@ -1098,8 +1108,8 @@
                            ravni Skupščine Republike Slovenije. Kandidat je dr. Božidar Voljč, rojen
                            1939, zdravnik, Zavod Republike Slovenije za  transfuzijo krvi,
                            Ljubljana, delegat v Družbenopolitičnem zboru, Zeleni Slovenije.</p>
-                        <p>Kdo je za? <stage>( 178 delegatov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal <stage>(3 delegati.)</stage>
+                        <p>Kdo je za? <stage type="vote">( 178 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal <stage type="vote">(3 delegati.)</stage>
                         </p>
                         <p>Ugotavljam, da je z večino glasov dr. Božidar Voljč izvoljen za
                            predsednika Odbora za varstvo na ravni Skupščine Republike Slovenije.</p>
@@ -1107,50 +1117,50 @@
                            telesno kulturo. Predlagani kandidat je Jože Zupančič, rojen 1936,
                            profesor geografije, predsednik Zbora združbene dela neodvisni
                            delegat.</p>
-                        <p>Kdo je za? <stage>(159 delegatov.)</stage> Je kdo proti? <stage>(7
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(6 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(159 delegatov.)</stage> Je kdo proti? <stage type="vote">(7
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(6 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je z večino glasov predlog sprejet.</p>
                         <p>Prehajamo na glasovanje o izvolitvi predsednika Odbora za raziskovalno
                            dejavnost in tehnologijo. Kandidat je Franci Pivec, rojen 1943. leta,
                            profesor filozofije in sociologije, delegat prenoviteljev, Maribor.</p>
-                        <p>Kdo je za? <stage>(150 delegatov.)</stage> Je kdo proti? <stage>(21
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(9 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(150 delegatov.)</stage> Je kdo proti? <stage type="vote">(21
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(9 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je z večino glasov Franci Pivec izvoljen.</p>
                         <p>Prehajamo na izvolitev predsednika odbora za kulturo in varstvo kulturne
                            dediščine. kandidat je mag. Rudi Šeligo, rojen leta 1935, magister
                            filozofije, Kranj, delegat v Družbenopolitčnem zboru, SDZ.</p>
-                        <p>Kdo je za? <stage>(163 delegatov.)</stage> Je kdo proti? <stage>(13
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(5 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(163 delegatov.)</stage> Je kdo proti? <stage type="vote">(13
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(5 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je z večino glasov mag. Rudi Šeligo izvoljen.</p>
                         <p>Prehajamo na glasovanje o predsednici Odbora za delo, zaposlovanje in
                            socialno politiko. kandidatka je Sonja Lokar, rojena 1948, profesorica,
                            delegatka v Družbenopolitičnem zboru, prenovitelji.</p>
-                        <p>Kdo je za? <stage>(127 delegatov.)</stage> Je kdo proti? <stage>(37
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(14 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(127 delegatov.)</stage> Je kdo proti? <stage type="vote">(37
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(14 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je z večino glasov Sonja Lokar izvoljena.</p>
                         <p>Prehajamo na glasovanje o izvolitvi predsednika Odbora za pravosodje in
                            upravo. Kandidat je Peter Reberc, rojen 1966, študent, delegat v
                            Družbenopolitičnem zboru. Slovenski krščanski demokrati.</p>
-                        <p>Kdo je za? <stage>(137 delegatov.)</stage> Je kdo proti? <stage>(34
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(9 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(137 delegatov.)</stage> Je kdo proti? <stage type="vote">(34
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(9 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je z večino glasov Peter Reberc izvoljen.</p>
                         <p>Prehajamo na glasovanje o izvolitvi predsednika odbora za varstvo
                            potrošnikov. In sicer je kandidat Borut Razdevšek, rojen 1961, ekonomist,
                            Slovenijales, delegat ZSMS - Liberalci.</p>
-                        <p>Kdo je za? <stage>(154 delegatov.)</stage> Je kdo proti? <stage>(5
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(16 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(154 delegatov.)</stage> Je kdo proti? <stage type="vote">(5
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(16 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je Borut Razdevšek izvoljen za predsednika.</p>
                         <p>Prehajamo na glasovanje o kandidatu za predsednika Odbora za mladinska
                            vprašanja. Kandidat je Borut Pahor, rojen 1963, diplomiran politolog,
                            delegat Družbenopolitičnega zbora, prenovitelji.</p>
-                        <p>Kdo je za? <stage>(135 delegatov.)</stage> Je kdo proti? <stage>(20
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(17 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(135 delegatov.)</stage> Je kdo proti? <stage type="vote">(20
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(17 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je za predsednika odbora za mladinska vprašanja izvoljen
                            Borut Pahor.</p>
@@ -1165,13 +1175,13 @@
                            Republiškega sekretarja za kmetijstvo, gozdarstvo in prehrano. Predlog
                            predsednika Izvršnega sveta ste prejeli. Prav tako tudi mnenje Komisije
                            za volitve, imenovanja in administrativne zadeve. Ali želi besedo
-                           predstavnik predlagatelja? <stage>(Ne želi.)</stage> Ali želi besedo
-                           predstavnik Komisije? <stage>(Tudi ne želi.)</stage> Želi kdo
+                           predstavnik predlagatelja? <stage type="debate">(Ne želi.)</stage> Ali želi besedo
+                           predstavnik Komisije? <stage type="debate">(Tudi ne želi.)</stage> Želi kdo
                            razpravljati? Če ne želi nihče razpravljati prehajamo na glasovanje.</p>
                         <p>Dajem na glasovanje predlog, da se imenuje Marija Markeš za namestnico
                            republiškega sekretarja za kmetijstvo, gozdarstvo in prehrano.</p>
-                        <p>Kdo je za? <stage>(160 delegatov.)</stage> Je kdo proti? <stage>(8
-                              delegatov.)</stage> Se je kdo vzdržal? <stage>(9 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(160 delegatov.)</stage> Je kdo proti? <stage type="vote">(8
+                              delegatov.)</stage> Se je kdo vzdržal? <stage type="vote">(9 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je Marija Markeš imenovana za namestnico republiškega
                            sekretarja za kmetijstvo, gozdarstvo in prehrano in sicer z večino
@@ -1187,8 +1197,8 @@
                            Republike Slovenije za volitve, imenovanja in administrativne zadeve, kot
                            je bilo pisno predloženo za skupno sejo zborov Skupščine Republike
                            Slovenije. Dajem ta predlog na glasovanje.</p>
-                        <p>Kdo je za? <stage>(159 delegatov.)</stage> Je kdo proti? <stage>(4
-                              delegati.)</stage> Se je kdo vzdržal? <stage>(8 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(159 delegatov.)</stage> Je kdo proti? <stage type="vote">(4
+                              delegati.)</stage> Se je kdo vzdržal? <stage type="vote">(8 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je Mitja Bricelj imenovan za namestnika republiškega
                            sekretarja za varstvo okolja in urejanje prostora.</p>
@@ -1323,20 +1333,20 @@
                         <p>Prosim vas torej, spoštovani poslanke in poslanci, da glasujete za
                            podpredsednika in za listo članov Sveta, kot sem jo predložil in tako
                            omogočite Svetu, da bo pričel z delom. Hvala lepa.
-                              <stage>(Ploskanje.)</stage>
+                              <stage type="vocal">(Ploskanje.)</stage>
                         </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
                         <speaker>PREDSEDNIK DR. FRANCE BUČAR:</speaker>
                         <p>Hvala lepa gospodu Bavconu. Ali želi besedo predstavnik komisije?
-                              <stage>(Ne želi.)</stage> Želi kdo od delegatov razpravljati o
+                              <stage type="debate">(Ne želi.)</stage> Želi kdo od delegatov razpravljati o
                            predlogu? Kot vidim tudi ne. Torej če ne želi nihče razpravljati
                            prehajamo na glasovanje in dajem na glasovanje predlog predsednika Sveta
                            za varstvo človekovih pravic in temeljnih svoboščin za izvolitev
                            podpredsednika in dela članov sveta. Predlog ste prejeli in prosim, kdo
                            je za predlog, prosim da glasuje.</p>
-                        <p>Kdo je za? <stage>(167 delegatov.)</stage> Je kdo proti? <stage>(2
-                              delegata.)</stage> Se je kdo vzdržal? <stage>(7 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(167 delegatov.)</stage> Je kdo proti? <stage type="vote">(2
+                              delegata.)</stage> Se je kdo vzdržal? <stage type="vote">(7 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je z večino glasov za podpredsednika Sveta  izvoljen dr.
                            Danilo Türk, za člane pa: dr. Peter Čeferin, mag. Drago Demšar, dr.
@@ -1360,7 +1370,7 @@
                         <p>Predloge Sodnega sveta ste prejeli, prav tako tudi mnenje Komisije za
                            volitve, imenovanja in administrativne zadeve.</p>
                         <p>Ali želi besedo predstavnik Sodnega sveta Republike Slovenije? Prosim.
-                           Ali želi besedo predstavnik komisije? <stage>(Ne želi.)</stage> Ali želi
+                           Ali želi besedo predstavnik komisije? <stage type="debate">(Ne želi.)</stage> Ali želi
                            kdo od delegatov razpravljati o tem predlogu? Prosim.</p>
                      </sp>
                      <sp who="#sp.ŠterAndrej">
@@ -1495,7 +1505,7 @@
                            enkrat. Ne bežimo pred svojo odgovornostjo, jaz ne morem glasovati za
                            takega kandidata, povedal sem svoje zadržke in seveda povedal sem jih z
                            namenom, da z njimi seznanim tudi vas. mislim, da je to moja dolžnost.
-                           Hvala. <stage>(Ploskanje.)</stage>
+                           Hvala. <stage type="vocal">(Ploskanje.)</stage>
                         </p>
                      </sp>
                      <sp who="#sp.BučarFrance">
@@ -1754,22 +1764,22 @@
                            glasovanje. Prosim? Ja, saj pridete na vrsto. Najprej dajem na glasovanje
                            predlog za ponovno izvolitev Maruše Primožič za sodnico Temeljnega
                            sodišča v Ljubljani.</p>
-                        <p>Kdo je za? <stage>(153 delegatov.)</stage> Je kdo proti? <stage>(1
-                              delegat.)</stage> Se je kdo vzdržal? <stage>(6 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(153 delegatov.)</stage> Je kdo proti? <stage type="vote">(1
+                              delegat.)</stage> Se je kdo vzdržal? <stage type="vote">(6 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je Maruša Primožič ponovno izvoljena za sodnico Temeljnega
                            sodišča v Ljubljani.</p>
                         <p>Dajem na glasovanje predlog za izvolitev Bogomirja Horvata za sodnika
                            Temeljnega sodišča v Kopru.</p>
-                        <p>Kdo je za? <stage>(145 delegatov.)</stage> Je kdo proti? <stage>(2
-                              delegata.)</stage> Se je kdo vzdržal? <stage>(8 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(145 delegatov.)</stage> Je kdo proti? <stage type="vote">(2
+                              delegata.)</stage> Se je kdo vzdržal? <stage type="vote">(8 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je Bogomir Horvat izvoljen za sodnika Temeljnega sodišča v
                            Kopru.</p>
                         <p>Dajem na glasovanje predlog za izvolitev Špele Prodan za sodnico
                            Temeljnega sodišča v Kopru.</p>
-                        <p>Kdo je za? <stage>(151 delegatov.)</stage> Je kdo proti? <stage>(1
-                              delegat.)</stage> Se je kdo vzdržal? <stage>(9 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(151 delegatov.)</stage> Je kdo proti? <stage type="vote">(1
+                              delegat.)</stage> Se je kdo vzdržal? <stage type="vote">(9 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je Špela Prodan izvoljena za sodnico Temeljnega sodišča v
                            Ljubljani.</p>
@@ -1848,139 +1858,139 @@
                         <p>Potem prehajamo na naslednje glasovanje o naslednjih kandidatih; to je
                            glasovanje za izvolitev Majde Urh za sodnico Temeljnega sodišča v
                            Kranju.</p>
-                        <p>Kdo je za? <stage>(157 delegatov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(10
+                        <p>Kdo je za? <stage type="vote">(157 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(10
                               delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je Majda Urh izvoljena za sodnico Temeljnega sodišča v
                            Kranju.</p>
                         <p>Dajem na glasovanje predlog za izvolitev Tončka Bevca za sodnika
                            Temeljnega sodišča v Ljubljani.</p>
-                        <p>Kdo je za? <stage>(155 delegatov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(8
+                        <p>Kdo je za? <stage type="vote">(155 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(8
                               delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je Tonček Bevc izvoljen za sodnika Temeljnega sodišča v
                            Ljubljani.</p>
                         <p>Dajem na glasovanje predlog za izvolitev Martina Breganta za sodnika
                            Temeljnega sodišča v Ljubljani.</p>
-                        <p>Kdo je za? <stage>(151 delegatov.)</stage> Je kdo proti? <stage>(4
-                              delegati.)</stage> Se je kdo vzdržal? <stage>(7 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(151 delegatov.)</stage> Je kdo proti? <stage type="vote">(4
+                              delegati.)</stage> Se je kdo vzdržal? <stage type="vote">(7 delegatov.)</stage>
                         </p>
                         <p>Potem zopet ugotavljam, da je Martin Bregant izvoljen za sodnika
                            Temeljnega sodišča v Ljubljani.</p>
                         <p>Glasujemo o izvolitvi Brigite Domjan za sodnico Temeljnega sodišča v
                            Ljubljani.</p>
-                        <p>Kdo je za? <stage>(150 delegatov.)</stage> Je kdo proti? <stage>(1
-                              delegat.)</stage> Se je kdo vzdržal? <stage>(4 delegati.)</stage>
+                        <p>Kdo je za? <stage type="vote">(150 delegatov.)</stage> Je kdo proti? <stage type="vote">(1
+                              delegat.)</stage> Se je kdo vzdržal? <stage type="vote">(4 delegati.)</stage>
                         </p>
                         <p>Ugotavljam, da je Brigita Domjan izvoljena za sodnico Temeljnega sodišča
                            v Ljubljani.</p>
                         <p>Dajem na glasovanje predlog za izvolitev Agate Jarec za sodnico
                            Temeljnega sodišča v Ljubljani.</p>
-                        <p>Kdo je za? <stage>(150 delegatov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(8
+                        <p>Kdo je za? <stage type="vote">(150 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(8
                               delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je Agata Jarec izvoljena za Sodnico Temeljnega sodišča v
                            Ljubljani.</p>
                         <p>Glasujemo o predlogu za izvolitev Jože Nikolič za sodnico Temeljnega
                            sodišča v Mariboru.</p>
-                        <p>Kdo je za? <stage>(142 delegatov.)</stage> Je kdo proti? <stage>(2
-                              delegata.)</stage> Se je kdo vzdržal? <stage>(13 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(142 delegatov.)</stage> Je kdo proti? <stage type="vote">(2
+                              delegata.)</stage> Se je kdo vzdržal? <stage type="vote">(13 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je Joža Nikolič izvoljena za sodnico Temeljnega sodišča v
                            Mariboru.</p>
                         <p>Glasujemo o predlogu za izvolitev Danila Obersnela za sodnika Temeljnega
                            sodišča v Mariboru.</p>
-                        <p>Kdo je za? <stage>(151 delegatov.)</stage> Je kdo proti? <stage>(1
-                              delegat.)</stage> Se je kdo vzdržal? <stage>(10 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(151 delegatov.)</stage> Je kdo proti? <stage type="vote">(1
+                              delegat.)</stage> Se je kdo vzdržal? <stage type="vote">(10 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je Danilo Obersnel izvoljen za sodnika Temeljnega sodišča
                            v Mariboru.</p>
                         <p>Zdaj glasujemo o izvolitvi Konrada Rebernika za sodnika Temeljnega
                            sodišča v Mariboru.</p>
-                        <p>Kdo je za? <stage>(148 delegatov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(10
+                        <p>Kdo je za? <stage type="vote">(148 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(10
                               delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je Konrad Rebernik izvoljen za sodnika Temeljnega sodišča
                            v Mariboru.</p>
                         <p>Sedaj glasujemo o izvolitvi Vanje Štiglic za sodnico Temeljnega sodišča v
                            Mariboru.</p>
-                        <p>Kdo je za? <stage>(149 delegatov.)</stage> Je kdo proti? <stage>(1
-                              delegat.)</stage> Se je kdo vzdržal? <stage>(8 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(149 delegatov.)</stage> Je kdo proti? <stage type="vote">(1
+                              delegat.)</stage> Se je kdo vzdržal? <stage type="vote">(8 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je Vanja Štiglic izvoljena za sodnico Temeljnega sodišča v
                            Mariboru.  </p>
                         <p>Glasujemo o izvolitvi Matjaža Štoka za sodnika Temeljnega sodišča v
                            Mariboru.</p>
-                        <p>Kdo je za? <stage>(148 delegatov.)</stage> Je kdo proti? <stage>(1
-                              delegat.)</stage> Se je kdo vzdržal? <stage>(11 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(148 delegatov.)</stage> Je kdo proti? <stage type="vote">(1
+                              delegat.)</stage> Se je kdo vzdržal? <stage type="vote">(11 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je Matjaž Štok izvoljen za sodnika Temeljnega sodišča v
                            Mariboru.</p>
                         <p>Glasujemo o izvolitvi Pavla Budina za sodnika Temeljnega sodišča v Novi
                            Gorici.</p>
-                        <p>Kdo je za? <stage>(144 delegatov.)</stage> Je kdo proti? <stage>(2
-                              delegata.)</stage> SE je kdo vzdržal? <stage>(13 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(144 delegatov.)</stage> Je kdo proti? <stage type="vote">(2
+                              delegata.)</stage> SE je kdo vzdržal? <stage type="vote">(13 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je Pavel Budin izvoljen za sodnika Temeljnega sodišča v
                            Novi Gorici.</p>
                         <p>Glasujemo o izvolitvi Vesne Štih za sodnico Temeljnega sodišča v Novi
                            Gorici.</p>
-                        <p>Kdo je za? <stage>(146 delegatov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(11
+                        <p>Kdo je za? <stage type="vote">(146 delegatov.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(11
                               delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je Vesna Štih izvoljena za sodnico Temeljnega sodišča v
                            Novi Gorici.</p>
                         <p>Glasujemo o izvolitvi Marije Grden za sodnico Temeljnega sodišča v Novem
                            mestu.</p>
-                        <p>Kdo je za? <stage>(148 delegatov.)</stage> Je kdo proti? <stage>(1
-                              delegat.)</stage> Se je kdo vzdržal? <stage>(13 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(148 delegatov.)</stage> Je kdo proti? <stage type="vote">(1
+                              delegat.)</stage> Se je kdo vzdržal? <stage type="vote">(13 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je Marija Grden izvoljena za sodnico Temeljnega sodišča v
                            Novem mestu.</p>
                         <p>Glasujemo o izvolitvi Janje Vrečič za sodnico Temeljnega sodišča v Novem
                            mestu.</p>
-                        <p>Kdo je za? <stage>(142 delegatov.)</stage> Je kdo proti? <stage>(2
-                              delegata.)</stage> Se je kdo vzdržal? <stage>(11 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(142 delegatov.)</stage> Je kdo proti? <stage type="vote">(2
+                              delegata.)</stage> Se je kdo vzdržal? <stage type="vote">(11 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je Janja Vrečič izvoljena za sodnico Temeljnega sodišča v
                            Novem mestu.</p>
                         <p>Zdaj glasujemo o izvolitvi Adolfa Zupana za sodnika Temeljnega sodišča v
                            Novem mestu.</p>
-                        <p>Kdo je za? <stage>(140 delegatov.)</stage> Je kdo proti? <stage>(2
-                              delegata.)</stage> Se je kdo vzdržal? <stage>(14 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(140 delegatov.)</stage> Je kdo proti? <stage type="vote">(2
+                              delegata.)</stage> Se je kdo vzdržal? <stage type="vote">(14 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je Adolf Zupan izvoljen za sodnika Temeljnega sodišča v
                            Novem mestu.</p>
                         <p>Glasujemo o razrešitvi mag. Dušana Dougana sodnika Temeljnega sodišča v
                            Mariboru z dnem 31.8.1990.</p>
-                        <p>Kdo je za? <stage>(149 delegatov.)</stage> Je kdo proti? <stage>(2
-                              delegata.)</stage> Se je kdo vzdržal? <stage>(6 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(149 delegatov.)</stage> Je kdo proti? <stage type="vote">(2
+                              delegata.)</stage> Se je kdo vzdržal? <stage type="vote">(6 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je mag. Dušan Dougan, sodnik Temeljnega sodišča v
                            Mariboru, razrešen z 31.8.1990.</p>
                         <p>Glasujemo o predlogu za razrešitev Gojmire Jelenc-Golob, sodnice
                            Temeljnega sodišča v Ljubljani z dne 31.10.1990.</p>
-                        <p>Kdo je za? <stage>(142 delegatov.)</stage> Je kdo proti? <stage>(3
-                              delegati.)</stage> Se je kdo vzdržal? <stage>(9 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(142 delegatov.)</stage> Je kdo proti? <stage type="vote">(3
+                              delegati.)</stage> Se je kdo vzdržal? <stage type="vote">(9 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je Gojmira Jelenc-Golob, sodnica Temeljnega sodišča v
                            Ljubljani, razrešena z 31.10.1990.</p>
                         <p>Glasujemo o predlogu za razrešitev. Aljoše Rupla, sodnika Temeljnega
                            sodišča v Ljubljani z dne 31.8.1990.</p>
-                        <p>Kdo je za? <stage>(148 delegatov.)</stage> Je kdo proti? <stage>(2
-                              delegat.)</stage> Se je kdo vzdržal? <stage>(6 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(148 delegatov.)</stage> Je kdo proti? <stage type="vote">(2
+                              delegat.)</stage> Se je kdo vzdržal? <stage type="vote">(6 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je Aljoša Rupel, sodnik Temeljnega sodišča v Ljubljani,
                            razrešen z 31.8.1990.</p>
                         <p>Glasujemo o razrešitvi Draga Ušena, sodnika Temeljnega sodišča v Mariboru
                            z dne 31.8.1990.</p>
-                        <p>Kdo je za? <stage>(147 delegatov.)</stage> Je kdo proti? <stage>(2
-                              delegata.)</stage> Se je kdo vzdržal? <stage>(6 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(147 delegatov.)</stage> Je kdo proti? <stage type="vote">(2
+                              delegata.)</stage> Se je kdo vzdržal? <stage type="vote">(6 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je Drago Ušen, sodnik Temeljnega sodišča v Mariboru,
                            razrešen z 31.8.1990.</p>
@@ -1989,11 +1999,11 @@
                            tožilstva v Kopru.</p>
                         <p>Predlog javnega tožilca ste prejeli, tako tudi mnenje Komisije za
                            volitve, imenovanja in administrativne zadeve. Ali želi besedo
-                           predstavnik komisije? <stage>(Ne želi.)</stage> Ali želi o predlogu
-                           razpravljati kdo od delegatov? <stage>(Ne.)</stage> če ne želi nihče
+                           predstavnik komisije? <stage type="debate">(Ne želi.)</stage> Ali želi o predlogu
+                           razpravljati kdo od delegatov? <stage type="debate">(Ne.)</stage> če ne želi nihče
                            razpravljati, dajem predlog na glasovanje.</p>
-                        <p>Kdo je za? <stage>(147 delegatov.)</stage> Je kdo proti? <stage>(1
-                              delegat.)</stage> Se je kdo vzdržal? <stage>(10 delegatov.)</stage>
+                        <p>Kdo je za? <stage type="vote">(147 delegatov.)</stage> Je kdo proti? <stage type="vote">(1
+                              delegat.)</stage> Se je kdo vzdržal? <stage type="vote">(10 delegatov.)</stage>
                         </p>
                         <p>Ugotavljam, da je Branko Gvozdič imenovan za namestnika Temeljnega
                            javnega tožilca v Kopru.</p>
@@ -2003,8 +2013,7 @@
                            vseh zborov Skupščine Republike Slovenije. Dnevni red je izčrpan.
                            Obžalujem.</p>
                      </sp>
-                     <stage type="time">(Seja je bila <time to="1990-07-19T13:30:00"
-                           xml:id="stage.t.2">končana 19. julija 1990 ob 13.30 uri</time>.)</stage>
+                     <stage type="time">(Seja je bila <time to="1990-07-19T13:30:00" xml:id="stage.t.2">končana 19. julija 1990 ob 13.30 uri</time>.)</stage>
                   </div>
                </div>
 

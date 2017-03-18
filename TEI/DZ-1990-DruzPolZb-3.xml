@@ -79,7 +79,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -90,6 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2017-02-01+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2017-02-01+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-11-16+01:00">
             <name>Andrej Pančur</name>: kodiranje <list>
                <item>front/div[@type='contents']//item[@n]/@xml:id</item>
@@ -306,9 +318,9 @@
                      <item n="16" xml:id="toc.2.16">Nadaljevanje obravnave celovite ocene posledic premostitve orožja
                         teritorialne obrambe v objekte JLA (ta del točke ima oznako strogo zaupno)
                         ................ 49</item>
-                     <item n="15" xml:id="toc.2.15-2">Imenovanje usklajevalne komisije .......................
+                     <item n="15" xml:id="toc.2.15a">Imenovanje usklajevalne komisije .......................
                         50</item>
-                     <item n="16" xml:id="toc.2.16-2">Nadaljevanje obravnave pobud in vprašanj delegatov ..... 50<list rend="simple">
+                     <item n="16" xml:id="toc.2.16a">Nadaljevanje obravnave pobud in vprašanj delegatov ..... 50<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Igor Bavčar ............................................ 50</item>
                            <item>dr. Jože Osterc ........................................ 51</item>
@@ -444,6 +456,8 @@
                <castItem>
                   <actor xml:id="sp.TomšičFrance">Tomšič France</actor>
                   .......................................... 18, 48</castItem>
+               <castItem>
+                  <actor xml:id="sp.unknown"></actor></castItem>
                <castItem>
                   <actor xml:id="sp.VaupotičMirko">Vaupotič Mirko</actor>
                   ............................................. 25</castItem>
@@ -1093,7 +1107,7 @@
                      <sp who="#sp.PozsonecMaria">
                         <speaker>MARIA POZSONEC:</speaker>
                         <p>
-                           <stage>(v madžarščini)</stage> Spoštovani poslanci! Sklenila sem, da bom
+                           <stage type="comment">(v madžarščini)</stage> Spoštovani poslanci! Sklenila sem, da bom
                            uporabila svojo pravico do materinega jezika in bom govorila v materinem
                            jeziku. Postavila bi dve vprašanji. Eno se nanaša na tisti črni lok pri
                            Lendavi oziroma na sestoj te črne jelše, ki je bistvena. Namreč, tu so
@@ -1375,7 +1389,7 @@
                            Predlagam, da najprej ugotovimo prisotnost. Prisotnih je 60
                            delegatov.</p>
                         <p>Kdo glasuje za? <stage type="vote">(59 delegatov.)</stage> Kdo je proti? <stage type="vote">(1
-                              delegat.)</stage> Vzdržan? <stage>(Nobeden)</stage>. Hala.</p>
+                              delegat.)</stage> Vzdržan? <stage type="vote">(Nobeden)</stage>. Hala.</p>
                         <p>Ugotavljam, da je zbor soglasno oz. z večino glasov sprejel oba predloga
                            odlokov.</p>
                         <p>Sedaj dajem na glasovanje vse štiri predloge odlokov o ustanovitvi,
@@ -1385,7 +1399,7 @@
                            glasovanje.</p>
                         <p>Kdo je za? <stage type="vote">(57 delegatov.)</stage> Kdo je proti? <stage type="vote">(2
                               delegata.)</stage> Kdo se glasovanja vzdrži?
-                           <stage>(Nobeden.)</stage>
+                           <stage type="vote">(Nobeden.)</stage>
                         </p>
                         <p>Ugotavljam, da je zbor z večino glasov sprejel vse štiri odloke.</p>
                         <p>Sedaj prehajamo na izvolitev predsednikov in članov odborov DPZ, ki smo
@@ -1492,7 +1506,7 @@
                            želi, dajem predlog amandmaja na glasovanje.</p>
                         <p>Najprej ugotovimo prisotnost. Prisotnih je 47 delegatov.</p>
                         <p>Kdo je za amandma? <stage type="vote">(40 delegatov.)</stage> Je kdo proti?
-                              <stage type="vote">(Nihče.)</stage> Se je kdo glasovanja vzdržal? <stage>(Pet
+                           <stage type="vote">(Nihče.)</stage> Se je kdo glasovanja vzdržal? <stage type="vote">(Pet
                               delegatov.)</stage> Hvala.</p>
                         <p>Ugotavljam, da je amandma sprejet z večino glasov.</p>
                         <p>Na glasovanje dajem celoten zakon z amandmajem.</p>
@@ -1588,7 +1602,7 @@
                            postopka v hitri postopek sprejemanje tega zakona.</p>
                         <p>Kdo je za? <stage type="vote">(53 delegatov.)</stage> Kdo je proti?
                               <stage type="vote">(Nihče.)</stage> Kdo se glasovanja vzdrži?
-                              <stage>(Eden.)</stage>
+                           <stage type="vote">(Eden.)</stage>
                         </p>
                         <p>Predlog dajem v razpravo. Želi kdo razpravljati? <stage type="debate">(Ne.)</stage> Če
                            ne želi, dajem zakon na glasovanje. Kdo je za? <stage type="vote">(51
@@ -2161,7 +2175,7 @@
                         <p>Kdo je za to, da imamo pavzo pol ure, da se delovna skupina uskladi? Ali
                            pa preidemo na 6. točko?</p>
                         <p>Kdo je za to, da gremo na 6. točko? <stage type="vote">(45 delegatov.)</stage> Kdo je
-                           proti? <stage>(1 proti.)</stage> Kdo se vzdrži? <stage>(1
+                           proti? <stage type="vote">(1 proti.)</stage> Kdo se vzdrži? <stage type="vote">(1
                               vzdržan.)</stage>
                         </p>
                      </sp>
@@ -2498,7 +2512,7 @@
                         <p>Zaključujem razpravo. Predlog dajem na glasovanje.</p>
                         <p>Kdo je za sklep, kot smo ga prebrali? <stage type="vote">(55 delegatov.)</stage> Kdo
                            je proti? <stage type="vote">(1 delegat.)</stage> Kdo se je vzdržal?
-                              <stage>(Nobeden.)</stage>
+                           <stage type="vote">(Nobeden.)</stage>
                         </p>
                         <p>Ugotavljam, da je zbor z večino glasov sprejel predlagani sklep.</p>
                      </sp>
@@ -2899,9 +2913,13 @@
                            hitrem postopku skupaj z amandmaji Izvršnega sveta, Zbor združenega dela
                            pa še razpravlja. Medtem je treba ugotoviti ali so tehnične službe
                            storile vse potrebo za zavarovanje pri 1.1 točki. Tehnične službe
-                           pripravljajo, ko bo ustrezno pripravljeno, bodo prinesli. <stage>(Glas iz
-                              dvorane: Glede moratorija, če so sprejeli v Zboru občin, očitno lahko
-                              tudi mi glasujemo.)</stage> Jaz bi predlagal, da mi glasujemo.</p>
+                           pripravljajo, ko bo ustrezno pripravljeno, bodo prinesli. 
+                           </p></sp><sp who="#sp.unknown">
+                              <speaker>(Glas iz dvorane:</speaker>
+                              <ab>Glede moratorija, če so sprejeli v Zboru občin, očitno lahko
+                              tudi mi glasujemo.)</ab> 
+                              </sp><sp who="#sp.ToplakLudvik"><p>
+                              Jaz bi predlagal, da mi glasujemo.</p>
                         <p>Vračamo se na</p>
                         <p>5. TOČKO</p>
                         <p>, na predlog, kakor smo ga sprejeli. Najprej glasujemo o amandmajih, ki
@@ -3210,8 +3228,8 @@
                         <speaker>PREDSEDNIK DR. LUDVIK TOPLAK:</speaker>
                         <p>Ali želi še kdo razpravljati? <stage type="debate">(Ne.)</stage> Če ne želi, imamo dva
                            predloga. Prvi predlog, ki ste ga pisno dobili na klop, je predlog Demosa
-                           in drugi predlog, ki se je tukaj izoblikoval na diskusiji <stage>(Potrč,
-                              Pukl in še kdo.)</stage>
+                           in drugi predlog, ki se je tukaj izoblikoval na diskusiji (Potrč,
+                              Pukl in še kdo.)
                         </p>
                         <p>Dajem na glasovanje prvi predlog, ki ste ga prejeli na klop.</p>
                         <p>Kdo je za predlog, kakor ste ga prejeli pisno na klop? <stage type="vote">(35
@@ -3269,7 +3287,10 @@
                            Hvala.</p>
                      </sp>
                   </div>
-                  <div xml:id="div.1.1.2.18" ana="#PAR.TDR" n="12" corresp="#toc.2.16-2">
+                  <div xml:id="div.1.1.2.18"
+                       ana="#PAR.TDR"
+                       n="12"
+                       corresp="#toc.2.16-2">
                      <sp who="#sp.Peršak.Anton">
                         <p>S tem smo dokončali 10. točko dnevnega reda in predlagam,
                            da gremo na <title>12. TOČKO DNEVNEGA REDA</title>,

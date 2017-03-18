@@ -79,7 +79,7 @@
                infrastrukturnega programa Inštituta za novejšo zgodovino</p>
          </projectDesc>
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -90,6 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2017-02-02+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2017-02-02+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-11-21+01:00">
             <name>Andrej Pančur</name>: kodiranje <list>
                <item>front/div[@type='contents']//item[@n]/@xml:id</item>
@@ -594,8 +606,8 @@
                         </p>
                         <p>Ugotavljam, da so vsi zbori sklepčni in zato zdaj glasujemo o tem.</p>
                         <p>Kdo je za to, da nadaljujemo najprej z 10. delovno skupno sejo vseh treh
-                           zborov. Kdo je za? <stage>(79 za.)</stage> Proti? <stage>(53
-                              proti.)</stage> In vzdržanih? <stage>(12 vzdržanih.)</stage>
+                           zborov. Kdo je za? <stage type="vote">(79 za.)</stage> Proti? <stage type="vote">(53
+                              proti.)</stage> In vzdržanih? <stage type="vote">(12 vzdržanih.)</stage>
                         </p>
                         <p>Ugotavljam, da smo sprejeli sklep, da nadaljujemo najprej z 10. delovno
                            skupno sejo vseh treh zborov.</p>
@@ -664,11 +676,11 @@
                            delovni seji, veljavno sklepajo z večino vseh poslancev vseh zborov na
                            seji. Prosil bi, da bi ugotovili prisotnost poslancev in poslank.</p>
                         <p>Najprej poslanke in poslanci Družbenopolitičnega zbora. Prosim, da
-                           potrdite navzočnost. <stage>(49 navzočih.)</stage>
+                           potrdite navzočnost. <stage type="quorum">(49 navzočih.)</stage>
                         </p>
-                        <p>Poslanke in poslanci Zbora občin. <stage>(44 navzočih.)</stage>
+                        <p>Poslanke in poslanci Zbora občin. <stage type="quorum">(44 navzočih.)</stage>
                         </p>
-                        <p>In še poslanke in poslanci Zbora združenega dela. <stage>(55
+                        <p>In še poslanke in poslanci Zbora združenega dela. <stage type="quorum">(55
                               navzočih.)</stage>
                         </p>
                         <p>Ugotavljam, da je navzoča večina vseh poslancev vsakega zbora in da je
@@ -807,11 +819,11 @@
                            sklepajo z večino vseh poslancev vseh zborov na seji.</p>
                         <p>Ugotovimo najprej koliko je <title>prisotnih</title> poslank in poslancev
                            Družbenopolitičnega zbora. Prosim poslanci in poslanke
-                           Družbenopolitičnega zbora. <stage>(45 navzočih.)</stage> Poslanke in
-                           poslanci Zbora občin. <stage>(48 navzočih.)</stage> In poslanci in
+                           Družbenopolitičnega zbora. <stage type="quorum">(45 navzočih.)</stage> Poslanke in
+                           poslanci Zbora občin. <stage type="quorum">(48 navzočih.)</stage> In poslanci in
                            poslanke Zbora združenega dela. <stage type="quorum">(40 prisotnih. )</stage> Malo
                            počakajmo. Je 41, ampak je šel eden ven. Prosim, Zbor združenega dela
-                           ste? <stage>(42)</stage> Ali je potrebno, da še enkrat pokličem oba
+                           ste? <stage type="quorum">(42)</stage> Ali je potrebno, da še enkrat pokličem oba
                            ostala zbora? Ni potrebno. Hvala.</p>
                         <p>Ugotavljam, da je navzoča večina vseh poslancev vsakega zbora in da je
                            podana sklepčnost skupne delovne seje.</p>
@@ -983,13 +995,19 @@
                            izhajati iz preprostega dejstva, da je statistika pokazala, da imamo
                            danes v slovenskem prostoru</p>
                         <p>
-                           <stage>(Vmes intervenca predsedujočega: Dajmo, no.)</stage> statistične
+                           </p></sp><sp who="#sp.ZupančičJože">
+                              <speaker>(Vmes intervenca predsedujočega:</speaker>  
+                                 <ab>Dajmo, no.)</ab>
+                              </sp><sp who="#sp.SchwarzbartlErvinAnton"><p>
+                              statistične
                            podatke,</p>
                         <p>
-                           <stage>(Vmes intervenca predsedujočega: Iskreno prosim vse poslance in
+                           </p></sp><sp who="#sp.ZupančičJože">
+                              <speaker>(Vmes intervenca predsedujočega:</speaker> 
+                                 <ab>Iskreno prosim vse poslance in
                               poslanke na korektnost enih in drugih in da opravimo to točko. Jaša
-                              Zlobec opominjam vas.)</stage>
-                        </p>
+                              Zlobec opominjam vas.)</ab>
+                        </sp><sp who="#sp.SchwarzbartlErvinAnton">
                         <p>ki kažejo na to, da imamo od 18% v preteklosti ljudi v tem prostoru, ki
                            niso bili v zakonu, kot se pravi, ali so bili samski ali v dvoje, kar ne
                            predstavlja družino in da je ta procent od 18% narasel že na 28%. S tem,
@@ -1050,9 +1068,12 @@
                            zaščito.</p>
                         <p>Da je to tako, mi dokazuje tudi nastop gospoda Schwarzbartla, ki je v tej
                            Skupščini že večkrat nastopal kot "bič božji" in ki je kot tak
-                              ...<stage>(vmes intervencija predsedujočega: Gre samo za obrazložitev
-                              glasu!)</stage>
-                        </p>
+                              ...
+                           </p></sp><sp who="#sp.ZupančičJože">
+                              <speaker>(vmes intervencija predsedujočega:</speaker> 
+                                 <ab>Gre samo za obrazložitev
+                              glasu!)</ab>
+                        </sp><sp who="#sp.ŠetincMile">
                         <p>Saj bom takoj končal. Iz tega razloga in z dodatnimi argumenti, ki jih je
                            dal gospod Schwarzbartl, bom glasoval proti temu amandmaju. Hvala.</p>
                      </sp>
@@ -1119,7 +1140,7 @@
                         <p>In še za konec, tudi gospod Jaša Zlobec: če lahko rečeš tistemu, ki se
                            zavzema za materinstvo fašist, potem bom desetkrat glasoval za ta
                            amandma. Materinstvo ni fašizem in gospod Jaša Zlobec moje matere in vse
-                           slovenske matere ne moreš nazivati ... poslance, ki se ... <stage>(nemir
+                           slovenske matere ne moreš nazivati ... poslance, ki se ... <stage type="incident">(nemir
                               v dvorani)</stage> ... oprostite, sem razburjen zaradi tega, ker to,
                            kar se je zgodilo sedaj v Skupščini, je najmanj pošteno do tistih, ki se
                            zavzemajo za materinstvo. Hvala lepa. <stage type="vocal">(rahlo
@@ -1229,9 +1250,9 @@
                            prisotnost. Prisotnost. Prosim, ugotovimo najprej prisotnost poslancev in
                            poslank družbenopolitičnega zbora.</p>
                         <p>Koliko vas je tu prisotnih v dvorani, poslanke in poslanci
-                           Družbenopolitičnega zbora? Ste? <stage>(53.)</stage> Poslanke in poslanci
-                           Zbora občin? Zbor občin? <stage>(55.)</stage> In poslanke in poslanci
-                           Zbora združenega dela? 37 - samo! SAj so tukaj. Zbor združenega dela ste
+                           Družbenopolitičnega zbora? Ste? <stage type="quorum">(53.)</stage> Poslanke in poslanci
+                           Zbora občin? Zbor občin? <stage type="quorum">(55.)</stage> In poslanke in poslanci
+                           Zbora združenega dela? 37 - samo! Saj so tukaj. Zbor združenega dela ste
                            sklepčni?</p>
                         <p>Prosim poslanke in poslanci Zbora združenega dela, koliko nas je v
                            dvorani? Prosim, prisotnost. Lepo prosim, mir v dvorani in prosim glede
@@ -1415,21 +1436,21 @@
                         <speaker>PREDSEDUJOČI JOŽE ZUPANČIČ:</speaker>
                         <p>Hvala, 19 poslancev je obrazložilo svoj glas. S tem je lista kandidatov
                            zaključena in predlagam, da še enkrat ugotovimo prisotnost po zborih:</p>
-                        <p>Družbenopolitični zbor <stage>(56)</stage>, Zbor občin
-                              <stage>(50)</stage>, Zbor združenega dela <stage>(42)</stage>.</p>
+                        <p>Družbenopolitični zbor <stage type="quorum">(56)</stage>, Zbor občin
+                           <stage type="quorum">(50)</stage>, Zbor združenega dela <stage type="quorum">(42)</stage>.</p>
                         <p>Prosim poslanke in poslance, da glasujete. Prepričan sem, da mi ni treba
                            še enkrat prebrati celotnega amandmaja, zaradi tega, ker točno veste, kaj
                            stoji v njem - in glasujemo.</p>
-                        <p>Kdo je za amandma Zbora občin k 51. členu? Kdo je za? <stage>(64
-                              za.)</stage> Kdo je proti? <stage>(85 proti.)</stage> In koliko
-                           vzdržanih? <stage>(10 vzdržanih.)</stage>
+                        <p>Kdo je za amandma Zbora občin k 51. členu? Kdo je za? <stage type="vote">(64
+                           za.)</stage> Kdo je proti? <stage type="vote">(85 proti.)</stage> In koliko
+                           vzdržanih? <stage type="vote">(10 vzdržanih.)</stage>
                         </p>
                         <p>Ugotavljam, da amandma k 51. členu, ki ga je predlagal Zbor občin, ni
                            sprejet.</p>
                         <p>In sedaj še glasujemo o predlogu zakona o pokojninskem in invalidskem
                            zavarovanju v celoti?</p>
-                        <p>Kdo je za zakon? <stage>(134)</stage> - <stage type="vocal">(Ploskanje.)</stage> -
-                           Koliko vas je proti? <stage>(12 proti)</stage> In vzdržani? <stage>(8
+                        <p>Kdo je za zakon? <stage type="vote">(134)</stage> - <stage type="vocal">(Ploskanje.)</stage> -
+                           Koliko vas je proti? <stage type="vote">(12 proti)</stage> In vzdržani? <stage type="vote">(8
                               vzdržanih.)</stage> Ugotavljam, da je predlog zakona o pokojninskem in
                             invalidskem zavarovanju v celoti sprejet, z večino glasov vseh poslancev
                            vseh zborov na seji.  </p>
