@@ -7,7 +7,9 @@
             <title>Skupščina Republike Slovenije</title>
             <title>Mandat: 5.5.1990 - 23.12.1992</title>
             <title>ZBOR OBČIN</title>
-            <title><stage>(6. seja - 12. oktober 1990)</stage></title>
+            <title>
+               (6. seja - 12. oktober 1990)
+            </title>
             <title>Elektronska izdaja</title>
             <editor>Državni zbor Republike Slovenije</editor>
             <respStmt>
@@ -31,8 +33,7 @@
             <pubPlace>https://github.com/SIstory/Seje_DZ/tree/master/</pubPlace>
             <availability status="free">
                <licence>http://creativecommons.org/licenses/by/4.0/</licence>
-               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/"
-                     >Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
+               <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Priznanje avtorstva 4.0 International licenco</ref>
                </p>
             </availability>
             <date when="2016-09-01+02:00"/>
@@ -53,9 +54,9 @@
                      <date>(12. oktober 1990)</date>
                   </imprint>
                </monogr>
-               <ref
-                  target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=EECD81181F145CF1C1257C3600244811"
-                        ><stage>(<date>2016-04-12</date>)</stage></ref>
+               <ref target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=EECD81181F145CF1C1257C3600244811">
+                  <date>2016-04-12</date>)
+               </ref>
             </biblStruct>
             <biblFull>
                <titleStmt>
@@ -67,10 +68,10 @@
                   <publisher>Državni zbor Republike Slovenije</publisher>
                   <availability status="free">
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="slv">Avtorske pravice so potekle, delo je v javni
+                              xml:lang="slv">Avtorske pravice so potekle, delo je v javni
                         domeni.</licence>
                      <licence target="http://creativecommons.org/publicdomain/mark/1.0/"
-                        xml:lang="eng">Public Domain Mark 1.0</licence>
+                              xml:lang="eng">Public Domain Mark 1.0</licence>
                   </availability>
                </publicationStmt>
             </biblFull>
@@ -84,7 +85,7 @@
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur --><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -95,6 +96,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2017-03-20+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2017-03-20+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-09-01+02:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -127,15 +140,14 @@
                <item>
                   <list rend="ordered">
                      <head>PRED DNEVNIM REDOM:                                      STRAN</head>
-                     <item n="1">Ugotavljanje prisotnosti delegatov .................... 1</item>
-                     <item n="2">Določitev dnevnega reda ............................... 1</item>
+                     <item n="1" xml:id="toc.1.1">Ugotavljanje prisotnosti delegatov .................... 1</item>
+                     <item n="2" xml:id="toc.1.2">Določitev dnevnega reda ............................... 1</item>
                   </list>
                </item>
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED:</head>
-                     <item n="1">Predlog osnutka ustave Republike Slovenije ............ 2<list
-                           rend="simple">
+                     <item n="1" xml:id="toc.2.1">Predlog osnutka ustave Republike Slovenije ............ 2<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>dr. Peter Glavič ...................................... 2</item>
                            <item>mag. Janez Jug ........................................ 2</item>
@@ -198,8 +210,8 @@
                            <item>mag. Janez Jug ....................................... 57</item>
                         </list>
                      </item>
-                     <item n="1">Seznam govornikov .................................... II</item>
-                     <item n="2">Priloge: Zapisnik seje............................... III</item>
+                     <item n="1" xml:id="toc.2.1a">Seznam govornikov .................................... II</item>
+                     <item n="2" xml:id="toc.2.2">Priloge: Zapisnik seje............................... III</item>
                   </list>
                </item>
             </list>
@@ -312,21 +324,27 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.ZbObc">
+         <div xml:id="div.1" ana="#PAR.ZbObc">
             <head>ZBOR OBČIN</head>
-            <div ana="#PAR.Seja" n="6">
+            <div xml:id="div.1.1" ana="#PAR.Seja" n="6">
                <head>(6. seja)</head>
                <docDate>(<date when="1990-10-12">12. oktober 1990</date>)</docDate>
                <timeline origin="#TL.1" unit="s">
                   <when synch="#stage.t.1" xml:id="TL.1" absolute="1990-10-12T10:10:00"/>
-                  <when synch="#stage.t.2" since="#TL.1" absolute="1990-10-12T10:20:00"
-                     interval="600"/>
+                  <when synch="#stage.t.2"
+                        since="#TL.1"
+                        absolute="1990-10-12T10:20:00"
+                        interval="600"/>
                   <when synch="#stage.t.3" xml:id="TL.2" absolute="1990-10-12T11:05:00"/>
-                  <when synch="#stage.t.4" since="#TL.2" absolute="1990-10-12T11:42:00"
-                     interval="2220"/>
+                  <when synch="#stage.t.4"
+                        since="#TL.2"
+                        absolute="1990-10-12T11:42:00"
+                        interval="2220"/>
                   <when synch="#stage.t.5" xml:id="TL.3" absolute="1990-10-12T12:45:00"/>
-                  <when synch="#stage.t.6" since="#TL.3" absolute="1990-10-12T16:40:00"
-                     interval="14100"/>
+                  <when synch="#stage.t.6"
+                        since="#TL.3"
+                        absolute="1990-10-12T16:40:00"
+                        interval="14100"/>
                </timeline>
                <castList>
                   <castItem>
@@ -334,10 +352,9 @@
                      <actor xml:id="sp.BizjakIvan">Ivan Bizjak</actor>, <role>predsednik
                         zbora</role>.</castItem>
                </castList>
-               <stage type="time">Seja se je <time from="1990-10-12T10:10:00" xml:id="stage.t.1"
-                     >pričela ob 10.10 uri</time>.</stage>
-               <div ana="#PAR.PredDnevRed">
-                  <div ana="#PAR.Prisot">
+               <stage type="time">Seja se je <time from="1990-10-12T10:10:00" xml:id="stage.t.1">pričela ob 10.10 uri</time>.</stage>
+               <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.Prisot" corresp="#toc.1.1">
                      <sp who="#sp.BizjakIvan">
                         <speaker>PREDSEDNIK IVAN BIZJAK:</speaker>
                         <p>Spoštovane delegatke, spoštovani delegati, pričenjam 6. sejo Zbora občin
@@ -351,7 +368,7 @@
                            pravnoveljavno razpravlja in sklepa.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.DolDnevRed">
+                  <div xml:id="div.1.1.1.2" ana="#PAR.DolDnevRed" corresp="#toc.1.2">
                      <sp who="#sp.BizjakIvan">
                         <p>Prehajamo na <title>določitev dnevnega reda</title> 6. seje zbora. Na
                            dnevnem redu imamo eno samo točko, to je, določitev osnutka ustave
@@ -361,10 +378,12 @@
                            vodji klubov, ki je bil v ponedeljek.</p>
                         <p>Želi o predlaganem dnevnem redu kdo razpravljati. Ugotavlja, da ne. Če je
                            tako, dajem predlagani dnevni red na glasovanje. Ugotovimo najprej
-                           prisotnost. <stage>(69 prisotnih delegatov.)</stage></p>
-                        <p>Kdo je za predlagani dnevni red? <stage>(67 delegatov glasuje
-                              za.)</stage> Je kdo proti? <stage>(Nihče.)</stage> Vzdržani? <stage>(1
-                              delegat je vzdržan.)</stage></p>
+                           prisotnost. <stage type="quorum">(69 prisotnih delegatov.)</stage>
+                        </p>
+                        <p>Kdo je za predlagani dnevni red? <stage type="vote">(67 delegatov glasuje
+                              za.)</stage> Je kdo proti? <stage type="vote">(Nihče.)</stage> Vzdržani? <stage type="vote">(1
+                              delegat je vzdržan.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlagani dnevni red z večino glasov sprejet.</p>
                         <p>Preden preidemo na obravnavo te točke, vas obveščam, da bomo z delegati
                            ZZD in DPZ na skupnem zasedanju poslušali uvodno besedo predsednika
@@ -382,14 +401,12 @@
                            10.30 v veliki dvorani v 1. nadstropju, po skupnem zasedanju pa takoj
                            nadaljujemo tukaj s sejo zbora. Hvala lepa.</p>
                      </sp>
-                     <stage type="time">(Seja je bila <time to="1990-10-12T10:20:00"
-                           xml:id="stage.t.2">prekinjena ob 10.20 uri</time> in se je  <time
-                           from="1990-10-12T11:05:00" xml:id="stage.t.3">nadaljevala ob 11.05
+                     <stage type="time">(Seja je bila <time to="1990-10-12T10:20:00" xml:id="stage.t.2">prekinjena ob 10.20 uri</time> in se je  <time from="1990-10-12T11:05:00" xml:id="stage.t.3">nadaljevala ob 11.05
                            uri</time>.)</stage>
                   </div>
                </div>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR">
+               <div xml:id="div.1.1.2" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.2.1" ana="#PAR.TDR" corresp="#toc.2.1">
                      <sp who="#sp.BizjakIvan">
                         <speaker>PREDSEDNIK IVAN BIZJAK:</speaker>
                         <p>Nadaljujemo z našo današnjo sejo. In prehajamo na obravnavo</p>
@@ -459,7 +476,7 @@
                      </sp>
                      <sp who="#sp.StarmanDanijel">
                         <speaker>DANIJEL STARMAN:</speaker>
-                        <p><stage>(DEMOS, Koper)</stage> Navezal  bi se na razpravo dr. Glaviča.
+                        <p>(DEMOS, Koper) Navezal  bi se na razpravo dr. Glaviča.
                            Čeprav je res, da skupščini ni mogoče vzeti pravice da formulira osnovna
                            izhodišča osnutka ustave, vendar je s pravnotehničnih, zlasti pa časovnih
                            razlogov tak predlog, da bi danes vsi zbori oblikovali neka taka
@@ -833,18 +850,21 @@
                            strani, verjetno ne bo več umesten, ker bo ustavna komisija tako in tako
                            morala ugotoviti, kaj tega bistvenega je res možno vključiti v ustavni
                            osnutek. Torej dajem najprej na glasovanje predlog dr. Glaviča. Poglejmo
-                           prisotnost. <stage>(67 prisotnih.)</stage></p>
-                        <p>Kdo je za ta predlog sklepa? <stage>(19 za.)</stage> Kdo je proti?
-                              <stage>(44 proti.)</stage> Se je kdo vzdržal? <stage>(4
-                              vzdržani.)</stage></p>
+                           prisotnost. <stage type="quorum">(67 prisotnih.)</stage>
+                        </p>
+                        <p>Kdo je za ta predlog sklepa? <stage type="vote">(19 za.)</stage> Kdo je proti?
+                           <stage type="vote">(44 proti.)</stage> Se je kdo vzdržal? <stage type="vote">(4
+                              vzdržani.)</stage>
+                        </p>
                         <p>Ugotavljam, da tak predlog sklepa ni sprejet.</p>
                         <p>V tem primeru lahko takoj glasujemo o predlogu, ki sem ga na osnovi
                            razprave oziroma uvodne besede dr. Bučarja najprej jaz podal. Ga je v tem
                            tudi gospod Stariha podprl in tudi gospod Lukač. Torej, da se vsa vsebina
                            razprave in sugestij šteje kot prispevek k javni razpravi o osnutku
                            ustave Republike Slovenije.</p>
-                        <p>Kdo je za tak predlog? <stage>(48 za.)</stage> Kdo je proti? <stage>(8
-                              proti.)</stage> Se je kdo vzdržal? <stage>(9 vzdržanih.)</stage></p>
+                        <p>Kdo je za tak predlog? <stage type="vote">(48 za.)</stage> Kdo je proti? <stage type="vote">(8
+                           proti.)</stage> Se je kdo vzdržal? <stage type="vote">(9 vzdržanih.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlog sklepa sprejet.</p>
                         <p>Torej s tem lahko začnemo razpravo o osnutku o predlogu osnutka Ustave
                            Republike Slovenije. Imamo že nekaj pisnih prijav. Prvi se je prijavil
@@ -866,9 +886,10 @@
                            Prosim, dajem na glasovanje predlog gospoda Juga, da se dnevni red
                            današnje seje dopolni s točko obravnava teh dogodkov v bližnji
                            preteklosti.</p>
-                        <p>Kdo je za tak predlog razširitve? <stage>(20 poslancev za.)</stage> Kdo
-                           je proti? <stage>(30 poslancev proti.)</stage> Se je kdo vzdržal?
-                              <stage>(16 poslancev vzdržanih.)</stage></p>
+                        <p>Kdo je za tak predlog razširitve? <stage type="vote">(20 poslancev za.)</stage> Kdo
+                           je proti? <stage type="vote">(30 poslancev proti.)</stage> Se je kdo vzdržal?
+                              <stage type="vote">(16 poslancev vzdržanih.)</stage>
+                        </p>
                         <p>Ugotavljam, da predlog razširitve dnevnega reda ni sprejet.</p>
                         <p>Torej zdaj pa takole, glede teh odmorov smo bili dogovorjeni, da gremo mi
                            na odmor drugi, ZZD je šel prvi in nekje ob 11.45 je naš čas za kosilo.
@@ -877,12 +898,10 @@
                            lahko nekoliko podpremo.</p>
                         <p>Nadaljujemo ob 12.30 uri in bi prosil za točnost.</p>
                      </sp>
-                     <stage type="time">(Seja je bila <time to="1990-10-12T11:42:00"
-                           xml:id="stage.t.4">prekinjena ob 11.42 uri</time> in se je <time
-                           from="1990-10-12T12:45:00" xml:id="stage.t.5">nadaljevala ob 12.45
+                     <stage type="time">(Seja je bila <time to="1990-10-12T11:42:00" xml:id="stage.t.4">prekinjena ob 11.42 uri</time> in se je <time from="1990-10-12T12:45:00" xml:id="stage.t.5">nadaljevala ob 12.45
                            uri</time>.)</stage>
                   </div>
-                  <div ana="#PAR.Prisot">
+                  <div xml:id="div.1.1.2.2" ana="#PAR.Prisot">
                      <sp who="#sp.LukačJanez">
                         <speaker>PODPREDSEDNIK JANEZ LUKAČ:</speaker>
                         <p>Nadaljujemo s sejo. Da ne bi bilo dvoma, če imamo potrebno večino vas
@@ -894,12 +913,12 @@
                            povečalo, da nadaljujemo s našo sejo.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.3" ana="#PAR.TDR" corresp="#toc.2.1">
                      <sp who="#sp.LukačJanez">
                         <p>Moram vas obvestiti, da je DPZ sprejel odločitev, da naj se v razpravi
                            dajejo predlogi in naj se sestane ustavna komisija in potem določi svoj
                            predlog osnutka, tako kot je pri nas predlagal gospod Glavič.
-                              <stage>(Aplavz.)</stage> Da ne bi bilo kasneje, ker bi morali
+                              <stage type="vocal">(Aplavz.)</stage> Da ne bi bilo kasneje, ker bi morali
                            usklajevati dnevni red, da ne bi prišlo do težav, predlagam, da se v
                            razpravi dajejo predlogi, pa bomo kasneje lahko tudi proceduralno to
                            dokončno uredili.</p>
@@ -1037,9 +1056,10 @@
                            predvidoma ustavna komisija: to je prvi del sklepa, drugi del pa, da bodo
                            pač v prvem delu razprave ti delegati imeli možnost te svoje predloge
                            obrazložiti. Tako bi se glasil sklep. Prisotnost? 58 prisotnih.</p>
-                        <p>Kdo je za tak sklep, prosim, da pritisne tipko? <stage>(30 je
-                              za.)</stage> Kdo je proti? <stage>(18 proti.)</stage> Se je kdo
-                           vzdržal? <stage>(11 vzdržanih.)</stage></p>
+                        <p>Kdo je za tak sklep, prosim, da pritisne tipko? <stage type="vote">(30 je
+                           za.)</stage> Kdo je proti? <stage type="vote">(18 proti.)</stage> Se je kdo
+                           vzdržal? <stage type="vote">(11 vzdržanih.)</stage>
+                        </p>
                         <p>Ugotavljam, da je z večino glasov ta predlog sklepa sprejet.</p>
                         <p>Zato bi zdaj prosil, da ne glede na to, da ste se že prijavljali, da se
                            pač najprej da besedo tistim, ki imajo tovrstne predloge o katerih smo
@@ -1770,7 +1790,9 @@
                            in bolj modro kot je živel do sedaj. Takrat lahko o teh stvareh govorimo,
                            da si ne bi zdaj govorili, da je to kako zgodovinskost minira ali kaj
                            takega. Hvala za potrpežljivost.</p>
-                        <p><stage>(Aplavz.)</stage></p>
+                        <p>
+                           <stage type="vocal">(Aplavz.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.LukačJanez">
                         <speaker>PODPREDSEDNIK JANEZ LUKAČ:</speaker>
@@ -2240,7 +2262,7 @@
                            da bi se preambula glasila tako: "Slovenci vsega sveta in staroselski
                            prebivalci Slovenije ... določamo pravila  medsebojnega sožitja z
                            naslednjo Ustavo" Prvi člen naj bi se  glasil: Republika Slovenija je
-                           država <stage>(suverena naj se črta)</stage> Slovencev vsega sveta in
+                           država (suverena naj se črta) Slovencev vsega sveta in
                            staroselskih prebivalcev na slovenskem ozemlju ter prebivalcev, ki
                            pridobe državljanstvo.</p>
                         <p>Drugi člen: V Republiki Sloveniji ima oblast ljudstvo. Ljudstvo izvaja
@@ -2292,8 +2314,9 @@
                            otroka." O rojstvu prav gotovo ne more odločati vsakdo sam. Najmanj
                            ustrezno bi bilo, da bo določala ženska sama, razen v primeru umetnega
                            spočetja, a še v tem primeru gre za vprašanje etike napram novemu bitju,
-                           če vse ostale udeležence v tem postopku odštejemo <stage>(moža, rodbino,
-                              družino ..)</stage></p>
+                           če vse ostale udeležence v tem postopku odštejemo (moža, rodbino,
+                              družino ..)
+                        </p>
                         <p>Nadalje bi predlagal, da se tretje poglavje "Ekonomska in socialna
                            razmerja"  razdeli na družbena razmerja in na gospodarska razmerja, ker
                            bi bila ta in taka rešitev za reševanje problematike lažja.</p>
@@ -2345,7 +2368,7 @@
                            menim, da je celoten zahodni sistem prekompliciran in se celo zahodnemu
                            življenju mnogokrat hudo maščuje. Za nas, za Slovence, bi bila drugačna,
                            enostavnejša rešitev popolnejša, sprejemljivejša in boljša.</p>
-                        <p>Nadalje bi predlagal, ne da bi posebej navajal <stage>(besedila
+                        <p>Nadalje bi predlagal, ne da bi posebej navajal <stage type="comment">(besedila
                               členov)</stage>, presojo vseh tistih določb, ki se nanašajo na
                            razpustitev državnega zbora. Kot je že omenil tovariš Božič, prihaja tu
                            do določenega nesmisla. Državni zbor je najvišja institucija in te ne
@@ -3104,15 +3127,17 @@
                         <p>Ob tem bi opozoril, da smo razpravo zaključili, ker ni bilo več
                            prijavljeni. Zdaj sem praktično že dal v obravnavo predlog sklepov, ki
                            naj bi jih sprejeli.</p>
-                        <p>Želi še kdo s tem v zvezi še kaj razpravljati?<stage>(Ne.)</stage>
+                        <p>Želi še kdo s tem v zvezi še kaj razpravljati?<stage type="debate">(Ne.)</stage>
                            Slišali smo dve mnenji, zato bi prešel na glasovanje. Torej najprej
                            glasujemo - no prisotnost bomo tako in tako ugotovili - ampak da najprej
                            povem o čem glasujemo. Glasujemo o predlogu osnutka Ustave Republike
                            Slovenije kot ga je predložila Ustavna komisija. Torej ugotovimo
-                           prisotnost? <stage>(57 prisotnih.)</stage></p>
-                        <p>Kdo je za predlog sklepa? <stage>(54 je za.)</stage> Kdo je proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(4
-                              vzdržani.)</stage></p>
+                           prisotnost? <stage type="quorum">(57 prisotnih.)</stage>
+                        </p>
+                        <p>Kdo je za predlog sklepa? <stage type="vote">(54 je za.)</stage> Kdo je proti?
+                           <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(4
+                              vzdržani.)</stage>
+                        </p>
                         <p>Ugotavljam, da je zbor z večino glasov sprejel predlog osnutka ustave
                            Republike Slovenije.</p>
                         <p>Hkrati ugotavljam, da je s tem zbor, v skladu s 438. členom ustave
@@ -3121,9 +3146,10 @@
                         <p>Drugo. Glasujemo o predlogu dodatnega sklepa, ki ste ga dobili v pisni
                            obliki v naslednjem besedilu: "v javno razpravo morajo biti dani hkrati z
                            osnutkom tudi predlogi iz javne razprave na seji Zbora občin."</p>
-                        <p>Kdo je za tak predlog sklepa? <stage>(43 je za.)</stage> Kdo je proti?
-                              <stage>(10 je proti.)</stage> Se je kdo vzdržal? <stage>(5
-                              vzdržanih.)</stage></p>
+                        <p>Kdo je za tak predlog sklepa? <stage type="vote">(43 je za.)</stage> Kdo je proti?
+                           <stage type="vote">(10 je proti.)</stage> Se je kdo vzdržal? <stage type="vote">(5
+                              vzdržanih.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlog dodatnega sklepa z večino glasov sprejet.</p>
                         <p>Nadalje. Dajem na glasovanje predlog sklepa, ki ste ga dobili z gradivom
                            in ki ga je predlagal koordinacijska skupina Ustavne komisije, s tem da
@@ -3132,9 +3158,10 @@
                            primeru spremenjenih okoliščin s posebnim sklepom Skupščine Republike
                            Slovenije tudi skrajša oziroma prekine." Dajem na glasovanje predlog tega
                            sklepa.</p>
-                        <p>Kdo je za? <stage>(56 je za.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(2
-                              vzdržana.)</stage></p>
+                        <p>Kdo je za? <stage type="vote">(56 je za.)</stage> Je kdo proti?
+                           <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote">(2
+                              vzdržana.)</stage>
+                        </p>
                         <p>Ugotavljam, da je zbor z večino glasov sprejel predlog sklepa.</p>
                         <p>Ostala sta nam še sklep, ki ga je predlagal gospod Starman v zvezi z
                            občinami, kot priporočilo Zbora občin. Ker je bil v razpravi v ustavi
@@ -3234,10 +3261,12 @@
                            strinjate, da preidemo na glasovanje. Vsak se lahko sam odloči, po mojem,
                            ali je tu tak poziv oziroma priporočilo v tem primeru umestno ali ni.
                            Tako da predlagam, ugotovimo prisotnost, ker so nekateri odšli.
-                              <stage>(48 prisotnih.)</stage></p>
-                        <p>Kdo je za tak predlog sklepa? <stage>(39 glasov za.)</stage> Kdo je
-                           proti? <stage>(4 proti.)</stage> Kdo se je vzdržal? <stage>(4
-                              vzdržani.)</stage></p>
+                              <stage type="quorum">(48 prisotnih.)</stage>
+                        </p>
+                        <p>Kdo je za tak predlog sklepa? <stage type="vote">(39 glasov za.)</stage> Kdo je
+                           proti? <stage type="vote">(4 proti.)</stage> Kdo se je vzdržal? <stage type="vote">(4
+                              vzdržani.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlog sklepa z večino glasov sprejet.</p>
                         <p>S tem smo to edino točko dnevnega reda izčrpali. Razprava v
                            družbenopolitičnem zboru še traja, tako, da vas ne moremo obvestiti, da
@@ -3261,8 +3290,7 @@
                         <p>S tem zaključujem to sejo, zahvaljujem se vam za udeležbo in
                            razpravo.</p>
                      </sp>
-                     <stage type="time">(SEJA JE BILA <time to="1990-10-12T16:40:00"
-                           xml:id="stage.t.6">KONČANA OB 16.40 URI</time>.)</stage>
+                     <stage type="time">(SEJA JE BILA <time to="1990-10-12T16:40:00" xml:id="stage.t.6">KONČANA OB 16.40 URI</time>.)</stage>
                   </div>
                </div>
             </div>

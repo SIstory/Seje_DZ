@@ -7,7 +7,7 @@
             <title>Skupščina Republike Slovenije</title>
             <title>Mandat: 5.5.1990 - 23.12.1992</title>
             <title>ZBOR OBČIN</title>
-            <title>21. seja <stage>(19. in 20. junij 1991)</stage></title>
+            <title>21. seja (19. in 20. junij 1991)</title>
             <title>Elektronska izdaja</title>
             <editor>Državni zbor Republike Slovenije</editor>
             <respStmt>
@@ -54,8 +54,9 @@
                   </imprint>
                </monogr>
                <ref
-                  target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=3FF3FC5CF2B9F85FC1257C3D0025FB42"
-                        ><stage>(<date>2016-04-12</date>)</stage></ref>
+                  target="https://www.dz-rs.si/wps/portal/Home/deloDZ/seje/evidenca?mandat=0&amp;type=sz&amp;uid=3FF3FC5CF2B9F85FC1257C3D0025FB42">
+                  <stage type="date">(<date>2016-04-12</date>)</stage>
+               </ref>
             </biblStruct>
             <biblFull>
                <titleStmt>
@@ -85,6 +86,8 @@
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
          <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
+         <!-- Taxonomy za Sejne zapiske sej Skupščine Socialistične republike Slovenije, V-1.1, 2014-12-18, Andrej Pančur -->
          <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../taxonomy.xml"/>
       </encodingDesc>
       <profileDesc>
@@ -96,6 +99,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2017-03-22+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>front/div[@type='contents']//item[@n]/@xml:id</item>
+               <item>body/div/div/div/div/@corresp</item>
+               <item>body//div/@xml:id</item>
+            </list>
+         </change>
+         <change when="2017-03-22+01:00">
+            <name>Mojca Šorn</name>: kodiranje <list>
+               <item>//p/stage/@type</item>
+            </list>
+         </change>
          <change when="2016-09-01+02:00">
             <name>Mojca Šorn</name>: kodiranje <list>
                <item>//stage[@type='time']</item>
@@ -128,9 +143,10 @@
                <item>
                   <list rend="ordered">
                      <head>PRED DNEVNIM REDOM:                                         STRAN</head>
-                     <item n="1">Ugotavljanje prisotnosti delegatov ....................... 1</item>
-                     <item n="2">Določitev dnevnega reda .................................. 1<list
-                           rend="simple">
+                     <item n="1" xml:id="toc.1.1">Ugotavljanje prisotnosti delegatov
+                        ....................... 1</item>
+                     <item n="2" xml:id="toc.1.2">Določitev dnevnega reda
+                           .................................. 1<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Vitomir Gros ............................................ 2</item>
                            <item>Jože Zakonjšek .......................................... 3</item>
@@ -145,8 +161,9 @@
                <item>
                   <list rend="ordered">
                      <head>DNEVNI RED:</head>
-                     <item n="1">Problematika graditve in financiranja cestne in železniške
-                        infrastrukture ............................... 5<list rend="simple">
+                     <item n="1" xml:id="toc.2.1">Problematika graditve in financiranja cestne in
+                        železniške infrastrukture ............................... 5<list
+                           rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Branko Novak ............................................  6</item>
                            <item>mag. Ervin Anton Schwarzbartl ...........................  7</item>
@@ -175,10 +192,10 @@
                            <item>Miha Jazbinšek .......................................... 35</item>
                         </list>
                      </item>
-                     <item n="2">Razširitev dnevnega reda .................................
-                        35</item>
-                     <item n="3">Predlog zakona o zagotovitvi sredstev za gradnjo odseka
-                        avtomobilskih cest Malence - Šmarje-Sap in Hrušica - Vrba
+                     <item n="2" xml:id="toc.2.2">Razširitev dnevnega reda
+                        ................................. 35</item>
+                     <item n="3" xml:id="toc.2.3">Predlog zakona o zagotovitvi sredstev za gradnjo
+                        odseka avtomobilskih cest Malence - Šmarje-Sap in Hrušica - Vrba
                         ............................. 36<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Anton Rojec ............................................. 36</item>
@@ -187,8 +204,8 @@
                            <item>Anton Rojec ............................................. 38</item>
                         </list>
                      </item>
-                     <item n="4">Osnutek stanovanjskega zakona ............................ 39<list
-                           rend="simple">
+                     <item n="4" xml:id="toc.2.4">Osnutek stanovanjskega zakona
+                        ............................ 39<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Miha Jazbinšek .......................................... 39</item>
                            <item>Miloš Senčur ............................................ 40</item>
@@ -208,8 +225,9 @@
                            <item>Miha Jazbinšek .......................................... 62</item>
                         </list>
                      </item>
-                     <item n="5">Sporazumni predlog k predlogu amandmaja 100 k Ustavi Republike
-                        Slovenije ..................................... 66<list rend="simple">
+                     <item n="5" xml:id="toc.2.5">Sporazumni predlog k predlogu amandmaja 100 k
+                        Ustavi Republike Slovenije ..................................... 66<list
+                           rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Danijel Starman ......................................... 66</item>
                            <item>mag. Ervin Anton Schwarzbartl ........................... 67</item>
@@ -224,8 +242,8 @@
                            <item>Ivan Bizjak ............................................. 70</item>
                         </list>
                      </item>
-                     <item n="6">Osnutek obrtnega zakona .................................. 70<list
-                           rend="simple">
+                     <item n="6" xml:id="toc.2.6">Osnutek obrtnega zakona
+                        .................................. 70<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Irena Tatalovič Dobravc ................................. 70</item>
                            <item>dr. Ivan Vivod .......................................... 72</item>
@@ -247,8 +265,9 @@
                            <item>Metod Šonc .............................................. 84</item>
                         </list>
                      </item>
-                     <item n="7">Predlog za izdajo zakona o registraciji dejavnosti zasebnikov z
-                        osnutkom zakona ............................. 85<list rend="simple">
+                     <item n="7" xml:id="toc.2.7">Predlog za izdajo zakona o registraciji dejavnosti
+                        zasebnikov z osnutkom zakona ............................. 85<list
+                           rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Irena Tatalovič Dobravc ................................. 85</item>
                            <item>mag. Ervin Anton Schwarzbartl ........................... 86</item>
@@ -258,10 +277,10 @@
                         </list>
                      </item>
                      <note>NADALJEVANJE SEJE 20.6.1991</note>
-                     <item n="8">Ugotavljanje prisotnosti delegatov .......................
-                        89</item>
-                     <item n="9">Osnutek zakona o razvoju malega gospodarstva ............. 90<list
-                           rend="simple">
+                     <item n="8" xml:id="toc.2.8">Ugotavljanje prisotnosti delegatov
+                        ....................... 89</item>
+                     <item n="9" xml:id="toc.2.9">Osnutek zakona o razvoju malega gospodarstva
+                        ............. 90<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Maja Šubic .............................................. 90</item>
                            <item>Jože Zakonjšek .......................................... 92</item>
@@ -275,8 +294,9 @@
                            <item>Danijel Starman ......................................... 95</item>
                         </list>
                      </item>
-                     <item n="10">Predlog za izdajo zakona o gostinski dejavnosti z osnutkom zakona
-                        ........................................ 95<list rend="simple">
+                     <item n="10" xml:id="toc.2.10">Predlog za izdajo zakona o gostinski dejavnosti
+                        z osnutkom zakona ........................................ 95<list
+                           rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Ingo Paš ................................................ 95</item>
                            <item>Ivan Kuhar .............................................. 96</item>
@@ -290,9 +310,10 @@
                            <item>Ingo Paš ................................................ 99</item>
                         </list>
                      </item>
-                     <item n="11">Predlog zakona o spremembi zakona o začasni prepovedi sečnje v
-                        gozdovih v družbeni lastnini in začasni prepovedi prometa z nepremičninami v
-                        družbeni lastnini ..................... 100<list rend="simple">
+                     <item n="11" xml:id="toc.2.11">Predlog zakona o spremembi zakona o začasni
+                        prepovedi sečnje v gozdovih v družbeni lastnini in začasni prepovedi prometa
+                        z nepremičninami v družbeni lastnini ..................... 100<list
+                           rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Jože Tratnik ........................................... 100</item>
                            <item>Alojz Metelko .......................................... 101</item>
@@ -308,9 +329,9 @@
                            <item>Jože Sedonja ........................................... 105</item>
                         </list>
                      </item>
-                     <item n="12">Obravnava predloga zakona o spremembi in dopolnitvi zakona o
-                        funkcionarjih v državnih organih in predloga zakona o spremembi in
-                        dopolnitvi zakona o delavcih v državnih organih
+                     <item n="12" xml:id="toc.2.12">Obravnava predloga zakona o spremembi in
+                        dopolnitvi zakona o funkcionarjih v državnih organih in predloga zakona o
+                        spremembi in dopolnitvi zakona o delavcih v državnih organih
                         ..................................... 105<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Jože Tratnik ........................................... 106</item>
@@ -323,10 +344,11 @@
                            <item>Ivan Rojc .............................................. 112</item>
                         </list>
                      </item>
-                     <item n="13">Stališča Skupščine Republike Slovenije do nekaterih zakonov iz
-                        pristojnosti Skupščine SFRJ .................. 113</item>
-                     <item n="14">Pobude, predlogi in vprašanja delegatov ................. 113<list
-                           rend="simple">
+                     <item n="13" xml:id="toc.2.13">Stališča Skupščine Republike Slovenije do
+                        nekaterih zakonov iz pristojnosti Skupščine SFRJ ..................
+                        113</item>
+                     <item n="14" xml:id="toc.2.14">Pobude, predlogi in vprašanja delegatov
+                        ................. 113<list rend="simple">
                            <head>GOVORNIKI:</head>
                            <item>Franci Feltrin ......................................... 113</item>
                            <item>Tone Kramarič .......................................... 114</item>
@@ -345,10 +367,10 @@
                            <item>dr. Ivan Vivod ......................................... 118</item>
                         </list>
                      </item>
-                     <item n="15">Seznam govornikov ........................................
-                        II</item>
-                     <item n="16">Priloga: Zapisnik .......................................
-                        III</item>
+                     <item n="15" xml:id="toc.2.15">Seznam govornikov
+                        ........................................ II</item>
+                     <item n="16" xml:id="toc.2.16">Priloga: Zapisnik
+                        ....................................... III</item>
                   </list>
                </item>
             </list>
@@ -491,6 +513,8 @@
                   <actor xml:id="sp.TratnikJože">Tratnik Jože</actor> ..............................
                   100, 102, 106, 111</castItem>
                <castItem>
+                  <actor xml:id="sp.unknown"/></castItem>
+               <castItem>
                   <actor xml:id="sp.UrbančičMiloš">Urbančič Miloš</actor>
                   ...................................... 116, 117</castItem>
                <castItem>
@@ -506,9 +530,9 @@
          </div>
       </front>
       <body>
-         <div ana="#PAR.ZbObc">
+         <div xml:id="div.1" ana="#PAR.ZbObc">
             <head>ZBOR OBČIN</head>
-            <div ana="#PAR.Seja" n="21">
+            <div xml:id="div.1.1" ana="#PAR.Seja" n="21">
                <head>21. seja</head>
                <docDate>(<date when="1991-06-19">19.</date> in <date when="1991-06-20">20. junij
                      1991</date>)</docDate>
@@ -530,8 +554,8 @@
                </castList>
                <stage type="time">Seja se je <time from="1991-06-19T10:10:00" xml:id="stage.t.1"
                      >začela ob 10.10. uri</time>.</stage>
-               <div ana="#PAR.PredDnevRed">
-                  <div ana="#PAR.Prisot">
+               <div xml:id="div.1.1.1" ana="#PAR.PredDnevRed">
+                  <div xml:id="div.1.1.1.1" ana="#PAR.Prisot" corresp="#toc.1.1">
                      <sp who="#sp.BizjakIvan">
                         <speaker>PREDSEDNIK IVAN BIZJAK:</speaker>
                         <p>Spoštovane delegatke in delegati, gospe in gospodje. Pričenjam 21. sejo
@@ -544,7 +568,7 @@
                            sklepčen in lahko pravnoveljavno razpravlja in sklepa.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.DolDnevRed">
+                  <div xml:id="div.1.1.1.2" ana="#PAR.DolDnevRed" corresp="#toc.1.2">
                      <sp who="#sp.BizjakIvan">
                         <p>Prehajamo na <title>določitev dnevnega reda</title> 21. seje. Predlog
                            dnevnega reda ste prejeli s sklicem seje, z dopisom z dne 13.6. pa ste
@@ -558,23 +582,26 @@
                            v okviru katere naj bi na predlog Izvršnega sveta Skupščine Republike
                            Slovenije sprejeli stališče do osnutka zakona o tarifi zveznih upravnih
                            taks.</p>
-                        <p>Ali želi o teh dveh razširitvah kdo razpravljati? <stage>(Ne.)</stage>
-                           Torej dajem ta predlog na glasovanje. Poglejmo še enkrat prisotnost! 51
-                           prisotnih. Glasujemo torej o predlogu, da uvrstimo na dnevni red te seje
-                           posebno točko, problematika graditve in financiranja cestne in železniške
-                           infrastrukture in pa predlog zakona o zagotovitvi sredstev za gradnjo
-                           odsekov avtomobilskih cest Malence - Šmarje Sap in Hrušica - Vrba.</p>
-                        <p>Kdor je za ta predlog, naj prosim glasuje! <stage>(48 glasov.)</stage> Je
-                           kdo proti? <stage>(2 glasova.)</stage> Se je kdo vzdržal? <stage>(2
-                              glasova.)</stage></p>
+                        <p>Ali želi o teh dveh razširitvah kdo razpravljati? <stage type="debate"
+                              >(Ne.)</stage> Torej dajem ta predlog na glasovanje. Poglejmo še
+                           enkrat prisotnost! 51 prisotnih. Glasujemo torej o predlogu, da uvrstimo
+                           na dnevni red te seje posebno točko, problematika graditve in
+                           financiranja cestne in železniške infrastrukture in pa predlog zakona o
+                           zagotovitvi sredstev za gradnjo odsekov avtomobilskih cest Malence -
+                           Šmarje Sap in Hrušica - Vrba.</p>
+                        <p>Kdor je za ta predlog, naj prosim glasuje! <stage type="vote">(48
+                              glasov.)</stage> Je kdo proti? <stage type="vote">(2 glasova.)</stage>
+                           Se je kdo vzdržal? <stage type="vote">(2 glasova.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlog z večino glasov sprejet.</p>
                         <p>Na glasovanje dajem še predlog, da razširimo predlog dnevnega reda s
                            točko stališča Skupščine Republike Slovenije do nekaterih zakonov iz
                            pristojnosti Skupščine SFRJ, v okviru katere bomo obravnavali osnutek
                            zakona o tarifi zveznih upravnih taks.</p>
-                        <p>Kdor je za to razširitev, naj prosim glasuje! <stage>(37 glasov.)</stage>
-                           Je kdo proti? <stage>(4 glasovi.)</stage> Je kdo vzdržan? <stage>(6
-                              vzdržanih glasov.)</stage></p>
+                        <p>Kdor je za to razširitev, naj prosim glasuje! <stage type="vote">(37
+                              glasov.)</stage> Je kdo proti? <stage type="vote">(4 glasovi.)</stage>
+                           Je kdo vzdržan? <stage type="vote">(6 vzdržanih glasov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlog z večino glasov sprejet.</p>
                         <p>Prav tako je Izvršni svet Skupščine Republike Slovenije danes predložil,
                            v skladu z več pobudami za podaljšanje moratorija, predlog zakona o
@@ -585,8 +612,10 @@
                            razpravljati? Nihče. Torej na glasovanje dajem predlog za razširitev
                            dnevnega reda s predlogom tega zakona in predlog za obravnavo po hitrem
                             postopku.</p>
-                        <p>Kdo je za ta predlog? <stage>(39 glasov.)</stage> Kdo je proti? <stage>(5
-                              glasov.)</stage> Se je kdo vzdržal? <stage>(6 vzdržanih.)</stage></p>
+                        <p>Kdo je za ta predlog? <stage type="vote">(39 glasov.)</stage> Kdo je
+                           proti? <stage type="vote">(5 glasov.)</stage> Se je kdo vzdržal? <stage
+                              type="vote">(6 vzdržanih.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlog za razširitev dnevnega reda s to točko in za
                            hitri postopek z večino glasov sprejet.</p>
                         <p>Izvršni svet Skupščine Republike Slovenije predlaga, da zbor obravnava
@@ -596,12 +625,14 @@
                            Republike Slovenije, to je na način, da se prva in druga faza
                            zakonodajnega postopka združita, oziroma da se hkrati obravnavata predlog
                            za izdajo in osnutek zakona. Želi v zvezi s tem predlogom besedo
-                           predstavnik Izvršnega sveta? <stage>(Ne.)</stage> Želi o tem predlogu kdo
-                           razpravljati? <stage>(Ne.)</stage> Dajem torej ta predlog Izvršnega sveta
-                           na glasovanje.</p>
+                           predstavnik Izvršnega sveta? <stage type="debate">(Ne.)</stage> Želi o
+                           tem predlogu kdo razpravljati? <stage type="debate">(Ne.)</stage> Dajem
+                           torej ta predlog Izvršnega sveta na glasovanje.</p>
                         <p>Kdor je za združitev prve in druge faze pri navedenih dveh zakonih, naj
-                           prosim glasuje! <stage>(41 glasov.)</stage> Je kdo proti? <stage>(3
-                              glasovi.)</stage> Se je kdo vzdržal? <stage>(3 glasovi.)</stage></p>
+                           prosim glasuje! <stage type="vote">(41 glasov.)</stage> Je kdo proti?
+                              <stage type="vote">(3 glasovi.)</stage> Se je kdo vzdržal? <stage
+                              type="vote">(3 glasovi.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlog z večino glasov sprejet.</p>
                         <p>Zakonodajno-pravna komisija in Odbor za podjetništvo in obrt v svojih
                            poročilih k predlogu zakona o razvoju malega gospodarstva predlagata, naj
@@ -673,10 +704,11 @@
                            pravi predlog je; skupina v sestavi: Pavšič, Starman, Rojec, Štular,
                            Atelšek. Še kak dopolnilni predlog? Ne. Potem glasujemo o taki
                            sestavi.</p>
-                        <p>Poglejmo najprej prisotnost. <stage>(51 prisotnih.)</stage> Kdo je za tak
-                           predlog, naj prosim glasuje! <stage>(47 glasov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(2
-                           glasova.)</stage></p>
+                        <p>Poglejmo najprej prisotnost. <stage type="quorum">(51 prisotnih.)</stage>
+                           Kdo je za tak predlog, naj prosim glasuje! <stage type="vote">(47
+                              glasov.)</stage> Je kdo proti? <stage type="vote">(Nihče.)</stage> Se
+                           je kdo vzdržal? <stage type="vote">(2 glasova.)</stage>
+                        </p>
                         <p>Ugotavljam, da je sestava usklajevalne komisije z večino glasov
                            potrjena.</p>
                         <p>Pri tem bi vas želel opozoriti še na naslednje: če bo usklajevalna
@@ -723,27 +755,30 @@
                            je bila dodeljena ustreznemu delovnemu telesu. Ima pa 24 strani. Torej,
                            možno jo je razdeliti tudi poslancem v teku seje, da pa je potrebno
                            premisliti, ali jo je možno ustrezno pregledati oziroma preštudirati.
-                           Želi kdo razpravljati? <stage>(Iz klopi nekdo govori.)</stage> Kaj pa
-                           želite razpravljati? Prosim.</p>
+                           Želi kdo razpravljati? <stage type="gap">(Iz klopi nekdo govori.)</stage>
+                           Kaj pa želite razpravljati? Prosim.</p>
                      </sp>
                      <sp who="#sp.PodrekarMarko">
                         <speaker>MARKO PODREKAR:</speaker>
-                        <p><stage>(Marko Podrekar, Sekretariat za turizem oziroma kot predstavnik
-                              Izvršnega sveta)</stage> Torej res je, tako, kot je povedal gospod
-                           predsednik, da je informacija pripravljena. Predlagamo pa, da se uvrsti
-                           na dnevni red po rednem postopku. Torej kot mi je znano, bo v petek
-                           obravnavana na Odboru za tržišče ZZD in predlagamo, da se torej tak
-                           postopek ohrani in da se predhodno ne obravnava, da bi se vsi delegati z
-                           njo lahko podrobneje seznanili. Hvala.</p>
+                        <p>
+                           <stage type="comment">(Marko Podrekar, Sekretariat za turizem oziroma kot
+                              predstavnik Izvršnega sveta)</stage> Torej res je, tako, kot je
+                           povedal gospod predsednik, da je informacija pripravljena. Predlagamo pa,
+                           da se uvrsti na dnevni red po rednem postopku. Torej kot mi je znano, bo
+                           v petek obravnavana na Odboru za tržišče ZZD in predlagamo, da se torej
+                           tak postopek ohrani in da se predhodno ne obravnava, da bi se vsi
+                           delegati z njo lahko podrobneje seznanili. Hvala.</p>
                      </sp>
                      <sp who="#sp.BizjakIvan">
                         <speaker>PREDSEDNIK IVAN BIZJAK:</speaker>
                         <p>Hvala. Želi v zvezi s predlogom gospoda Jurija še kdo razpravljati? Ne.
                            Tedaj dajem predlog gospoda Jurija, da to informacijo o položaju v
                            turizmu obravnavamo na tej seji.</p>
-                        <p>Ta predlog dajem na glasovanje. Kdor je za, naj prosim glasuje!
-                              <stage>(25 glasov.)</stage> Je kdo proti? <stage>(20 glasov.)</stage>
-                           Se je kdo vzdržal? <stage>(14 glasov.)</stage></p>
+                        <p>Ta predlog dajem na glasovanje. Kdor je za, naj prosim glasuje! <stage
+                              type="vote">(25 glasov.)</stage> Je kdo proti? <stage type="vote">(20
+                              glasov.)</stage> Se je kdo vzdržal? <stage type="vote">(14
+                              glasov.)</stage>
+                        </p>
                         <p>Ugotavljam, da predlog ni sprejet.</p>
                         <p>Jaz bi vas želel še vnaprej obvestiti o tem, da Izvršni svet menda
                            pripravlja še neka dva predloga: zakon o delavcih v državnih organih in o
@@ -753,7 +788,9 @@
                            predlog seveda prišel. Je pa to napovedano, vendar tukaj še nimamo
                            ustreznega predloga.</p>
                         <p>Kako je sedaj s Sekretariatom za drobno gospodarstvo? Je prisoten, ni
-                           prisoten? Očitno ni prisoten! <stage>(Nekdo govori iz klopi.)</stage></p>
+                           prisoten? Očitno ni prisoten! <stage type="gap">(Nekdo govori iz
+                              klopi.)</stage>
+                        </p>
                         <p>Dnevnega reda prej ne moremo sprejeti, predno ne zaključimo, ne odločimo
                            o načinu obravnave tega zakona.</p>
                         <p>Naj vas medtem obvestim, skupna seja, za katero ste dobili sklic, naj bi
@@ -769,8 +806,9 @@
                      </sp>
                      <sp who="#sp.ŠubicMaja">
                         <speaker>MAJA ŠUBIC:</speaker>
-                        <p><stage>(pomočnica republiškega sekretarja za drobno gospodarstvo)</stage>
-                           Izvršni svet se strinja s tem.</p>
+                        <p>
+                           <stage type="comment">(pomočnica republiškega sekretarja za drobno
+                              gospodarstvo)</stage> Izvršni svet se strinja s tem.</p>
                      </sp>
                      <sp who="#sp.BizjakIvan">
                         <speaker>PREDSEDNIK IVAN BIZJAK:</speaker>
@@ -783,27 +821,27 @@
                      <sp who="#sp.BizjakIvan">
                         <speaker>PREDSEDNIK IVAN BIZJAK:</speaker>
                         <p>Hvala. Dobro. Potem lahko o tem predlogu glasujemo. Kdor je za ta
-                           predlog, da se ta zakon obravnava kot osnutek, naj prosim glasuje!
-                              <stage>(43 glasov.)</stage> Je kdo proti? <stage>(5 glasov.)</stage>
-                            Se je kdo vzdržal? <stage>(9 glasov.)</stage></p>
+                           predlog, da se ta zakon obravnava kot osnutek, naj prosim glasuje! <stage
+                              type="vote">(43 glasov.)</stage> Je kdo proti? <stage type="vote">(5
+                              glasov.)</stage>  Se je kdo vzdržal? <stage type="vote">(9
+                              glasov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlog z večino glasov sprejet.</p>
                         <p>Na glasovanje dajem celoten predlog dnevnega reda, ki je takšen, kot ste
                            ga dobili na klop.</p>
-                        <p>Kdor je za, naj prosim glasuje!  <stage>(55 glasov.)</stage> Je kdo
-                           proti? <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(En
-                              glas.)</stage></p>
+                        <p>Kdor je za, naj prosim glasuje!  <stage type="vote">(55 glasov.)</stage>
+                           Je kdo proti? <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal?
+                              <stage type="vote">(En glas.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlagani dnevni red z večino glasov sprejet.</p>
                      </sp>
                   </div>
                </div>
-               <div ana="#PAR.DnevRed">
-                  <div ana="#PAR.TDR" n="1a">
+               <div xml:id="div.1.1.2" ana="#PAR.DnevRed">
+                  <div xml:id="div.1.1.2.1" ana="#PAR.TDR" n="1a" corresp="#toc.2.1">
                      <sp who="#sp.BizjakIvan">
-                        <p>Prehajamo na obravnavo</p>
-                        <p>
-                           <title>1. TOČKE DNEVNEGA REDA</title>,</p>
-                        <p>to je</p>
-                        <p>PROBLEMATIKA GRADITVE IN FINANCIRANJA CESTNE IN ŽELEZNIŠKE INFRASTRUKTURE
+                        <p>Prehajamo na obravnavo <title>1. TOČKE DNEVNEGA REDA</title>, to je
+                           PROBLEMATIKA GRADITVE IN FINANCIRANJA CESTNE IN ŽELEZNIŠKE INFRASTRUKTURE
                            POD A) IN POD B) PREDLOG ZAKONA O ZAGOTOVITVI SREDSTEV ZA GRADNJO ODSEKOV
                            AVTOMOBILSKIH CEST MALENCE - ŠMARJE - SAP IN HRUŠICA - VRBA.</p>
                         <p>Če dovolite, predno gremo na to točko, bi vas zaprosil še naslednje, da
@@ -812,24 +850,25 @@
                            predlog? Rojec je en predlog. Ali je še kakšen drugi predlog?</p>
                         <p>Potem dajem na glasovanje predlog, da se za pomoč pri vodenju seje izvoli
                            gospod Rojec.</p>
-                        <p>Kdo je za ta predlog, naj prosim glasuje! <stage>(42 glasov.)</stage> Je
-                           kdo proti? <stage>(En glas.)</stage> Se je kdo vzdržal? <stage>(En
-                              glas.)</stage></p>
+                        <p>Kdo je za ta predlog, naj prosim glasuje! <stage type="vote">(42
+                              glasov.)</stage> Je kdo proti? <stage type="vote">(En glas.)</stage>
+                           Se je kdo vzdržal? <stage type="vote">(En glas.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlog z večino glasov sprejet.</p>
                         <p>Prosil bi gospoda Rojca, da pride sem. Torej smo pri 1. točki dnevnega
                            reda. Opravičujem se za ta odstavek. Gradivo za obravnavo in predlog
                            zakona je predložil Izvršni svet Skupščine Republike Slovenije. Ali želi
-                           njegov predstavnik besedo? <stage>(Ne želi.)</stage> Informacijo
-                           Izvršnega sveta Skupščine Republike Slovenije o graditvi ter financiranju
-                           cestne in železniške infrastrukture in program porabe proračunskih
-                           sredstev za magistralne, regionalne in lokalne ceste v Republiki
-                           Sloveniji v letu l991 ste prejeli na seji zbora dne 12.6.l991. Delegati,
-                           ki se te seje niso udeležili, pa so gradiva prejeli po pošti. Informacijo
-                           Izvršnega sveta Skupščine Republike Slovenije ter program porabe
-                           proračunskih sredstev v letu l991 sta obravnavala Odbor za promet in
-                           zveze in Odbor za proračun in javne finance, ki sta zboru pisno poročala.
-                           Ali želi besedo kdo od poročevalcev navedenih delovnih teles? Prosim,
-                           gospod Novak.</p>
+                           njegov predstavnik besedo? <stage type="debate">(Ne želi.)</stage>
+                           Informacijo Izvršnega sveta Skupščine Republike Slovenije o graditvi ter
+                           financiranju cestne in železniške infrastrukture in program porabe
+                           proračunskih sredstev za magistralne, regionalne in lokalne ceste v
+                           Republiki Sloveniji v letu l991 ste prejeli na seji zbora dne 12.6.l991.
+                           Delegati, ki se te seje niso udeležili, pa so gradiva prejeli po pošti.
+                           Informacijo Izvršnega sveta Skupščine Republike Slovenije ter program
+                           porabe proračunskih sredstev v letu l991 sta obravnavala Odbor za promet
+                           in zveze in Odbor za proračun in javne finance, ki sta zboru pisno
+                           poročala. Ali želi besedo kdo od poročevalcev navedenih delovnih teles?
+                           Prosim, gospod Novak.</p>
                      </sp>
                      <sp who="#sp.NovakBranko">
                         <speaker>BRANKO NOVAK:</speaker>
@@ -2185,17 +2224,23 @@
                      <sp who="#sp.RežunJanez">
                         <speaker>JANEZ REŽUN:</speaker>
                         <p>Gospod predsednik! Mislim, da jaz prevečkrat ne govorim, tako da si to
-                           dovolim danes. <stage>(Bizjak: Ne, to je bilo splošno opozorilo,
-                              vsem)</stage>. Gospodu ministru bi rad povedal, da mislim, da poslanci
-                           med sabo nismo bili kontradiktorni. Ampak tako kot smo rekli, da se vsi
-                           skupaj zavzemamo za svoje vrtičke, mislim, da se iz te debate vidi,
-                           kakšna je kriza na tem področju. Ali najemati kredite, zaradi tega, da bo
-                           ta infrastruktura pomagala, da bomo lažje odplačevali in gradili ceste,
-                           je vprašanje, ki ga morate vi, kot ta minister za ta resor, skupaj z
-                           drugimi ministri, ki so tudi vezani na to infrastrukturo, ki pomaga
-                           drugim resorjem, ugotoviti. Mi smo samo pokazali, da so problemi in da
-                           kakorkoli, morali bomo pristopiti k reševanju teh problemov. Mislim, da
-                           nismo bili kontradiktorni.</p>
+                           dovolim danes. </p>
+                     </sp>
+                     <sp who="#sp.BizjakIvan">
+                        <speaker>(Bizjak:</speaker>
+                        <ab>Ne, to je bilo splošno opozorilo, vsem). </ab>
+                     </sp>
+                     <sp who="#sp.RežunJanez">
+                        <p> Gospodu ministru bi rad povedal, da mislim, da poslanci med sabo nismo
+                           bili kontradiktorni. Ampak tako kot smo rekli, da se vsi skupaj zavzemamo
+                           za svoje vrtičke, mislim, da se iz te debate vidi, kakšna je kriza na tem
+                           področju. Ali najemati kredite, zaradi tega, da bo ta infrastruktura
+                           pomagala, da bomo lažje odplačevali in gradili ceste, je vprašanje, ki ga
+                           morate vi, kot ta minister za ta resor, skupaj z drugimi ministri, ki so
+                           tudi vezani na to infrastrukturo, ki pomaga drugim resorjem, ugotoviti.
+                           Mi smo samo pokazali, da so problemi in da kakorkoli, morali bomo
+                           pristopiti k reševanju teh problemov. Mislim, da nismo bili
+                           kontradiktorni.</p>
                         <p>Še enkrat okoli tega. Jaz bi se opravičil, lažje razpravljam okoli tega,
                            zaradi tega, ker pri proračunu mislim, da nas je bilo nekaj takih, ki smo
                            bili bolj za ceste kot pa za konje.</p>
@@ -2291,32 +2336,35 @@
                            investicije v višini, ki bodo zagotovila realizacijo investicij po
                            pogodbi z Mednarodno banko za obnovo in razvoj."</p>
                         <p>Želi o tem predlogu sklepa kdo razpravljati? Prosim, gospod Atelšek!
-                              <stage>(Gospod Atelšek govori iz klopi. Je nerazumljivo.)</stage></p>
+                              <stage type="gap">(Gospod Atelšek govori iz klopi. Je
+                              nerazumljivo.)</stage>
+                        </p>
                         <p>Tukaj piše: ustrezno pripravi oziroma korigira srednjeročni načrt. Torej,
                            dikcija je taka. Zbor nalaga Izvršnemu svetu, da ustrezno pripravi in
                            korigira srednjeročni načrt. Mislim, sedaj ne vidim, v katero drugo smer
                            lahko sedaj ta stvar gre, kot pa v smeri te razprave. Tukaj se moramo
                            zavedati, ta srednjeročni plan sedaj ni bil v razpravi, se pravi, mi
-                           nalagamo nekaj kar ... <stage>(gospod Atelšek govori iz klopi)</stage>
-                           vem, pripravljal bo srednjeročni plan Izvršni svet, kar mu je tako ali
-                           tako naloga in ga bomo dobili v določenem času. Lahko dopolnimo to
-                           besedilo, ne vem natanko, kako. Morda, dobro, 1. alinea tako, da ob
-                           upoštevanju pripomb, predlogov in mnenj iz razprave pripravi oziroma
-                           korigira srednjeročni načrt izgradnje. Tako da bi to eksplicitno
+                           nalagamo nekaj kar ... <stage type="gap">(gospod Atelšek govori iz
+                              klopi)</stage> vem, pripravljal bo srednjeročni plan Izvršni svet, kar
+                           mu je tako ali tako naloga in ga bomo dobili v določenem času. Lahko
+                           dopolnimo to besedilo, ne vem natanko, kako. Morda, dobro, 1. alinea
+                           tako, da ob upoštevanju pripomb, predlogov in mnenj iz razprave pripravi
+                           oziroma korigira srednjeročni načrt izgradnje. Tako da bi to eksplicitno
                            povedali.</p>
                         <p>Še kdo želi razpravljati? Prosim gospod Jazbinšek.</p>
                      </sp>
                      <sp who="#sp.JazbinšekMiha">
                         <speaker>MIHA JAZBINŠEK:</speaker>
-                        <p><stage>(republiški sekretar za urejanje prostora)</stage>: Predlagam, da
-                           se da tudi sklep, seveda, da se pripravi tudi, bi rekel, element
-                           dolgoročnega plana Slovenije, prostorskega, se pravi element cestnega
-                           omrežja, ker je ta v dosedanjem družbenem planu seveda dolgoročno
-                           popolnoma neadekvatno narejen in je v nekem smislu ekonomičen. No, ampak
-                           jaz to vem, da imamo sami po sebi obvezo, ampak ob tej priliki, seveda
-                           brez te dolgoročne prometne mreže, se mi ne moremo v srednjeročnemu planu
-                           dogovarjati; paralelno cestno omrežje kot element prostorskega plana
-                           Slovenije.</p>
+                        <p>
+                           <stage type="comment">(republiški sekretar za urejanje prostora)</stage>:
+                           Predlagam, da se da tudi sklep, seveda, da se pripravi tudi, bi rekel,
+                           element dolgoročnega plana Slovenije, prostorskega, se pravi element
+                           cestnega omrežja, ker je ta v dosedanjem družbenem planu seveda
+                           dolgoročno popolnoma neadekvatno narejen in je v nekem smislu ekonomičen.
+                           No, ampak jaz to vem, da imamo sami po sebi obvezo, ampak ob tej priliki,
+                           seveda brez te dolgoročne prometne mreže, se mi ne moremo v
+                           srednjeročnemu planu dogovarjati; paralelno cestno omrežje kot element
+                           prostorskega plana Slovenije.</p>
                      </sp>
                      <sp who="#sp.BizjakIvan">
                         <speaker>PREDSEDNIK IVAN BIZJAK:</speaker>
@@ -2324,9 +2372,10 @@
                            vem, če bi bilo potrebno dopolnjevati sklep še s tem. Če ni nobene
                            razprave več, potem bi jaz dal ta sklep na glasovanje.</p>
                         <p>Najprej poglejmo prisotnost! 47 prisotnih.</p>
-                        <p>Kdo je za predlagani sklep? <stage>(41 glasov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(4
-                           glasovi.)</stage></p>
+                        <p>Kdo je za predlagani sklep? <stage type="vote">(41 glasov.)</stage> Je
+                           kdo proti? <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage
+                              type="vote">(4 glasovi.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlagani sklep z večino glasov sprejet.</p>
                         <p>Predno gremo na naslednjo podtočko dnevnega reda, najprej eno obvestilo:
                            predsednik Odbora za kreditno monetarni sistem sklicuje odbor danes ob
@@ -2336,36 +2385,36 @@
                            Sloveniji v pogojih oteženega plačevanja v tujino."</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.Procedural">
+                  <div xml:id="div.1.1.2.2" ana="#PAR.Procedural" corresp="#toc.2.2">
                      <sp who="#sp.BizjakIvan">
                         <p>Drugo kot ste dobili na klop: Izvršni svet predlaga, da <title>ZBOR
                               UVRSTI NA DNEVNI RED</title> IN OBRAVNAVA po hitrem postopku dva
-                           predloga zakonov, in sicer:</p>
-                        <p>PREDLOG ZAKONA O SPREMEMBI IN DOPOLNITVI ZAKONOV, IN SICER: PREDLOG
-                           ZAKONA O SPREMEMBI IN DOPOLNITVI ZAKONA O FUNKCIONARJIH V DRŽAVNIH
-                           ORGANIH IN PREDLOG ZAKONA O SPREMEMBI IN DOPOLNITVI ZAKONA O DELAVCIH V
-                           DRŽAVNIH ORGANIH.</p>
+                           predloga zakonov, in sicer: PREDLOG ZAKONA O SPREMEMBI IN DOPOLNITVI
+                           ZAKONOV, IN SICER: PREDLOG ZAKONA O SPREMEMBI IN DOPOLNITVI ZAKONA O
+                           FUNKCIONARJIH V DRŽAVNIH ORGANIH IN PREDLOG ZAKONA O SPREMEMBI IN
+                           DOPOLNITVI ZAKONA O DELAVCIH V DRŽAVNIH ORGANIH.</p>
                         <p>Glede na to, da imate to že nekaj časa pred seboj, predlagam, da se zbor
                            sedaj izjasni o uvrstitvi teh dveh točk na dnevni red, da bi lahko
                            kasneje opravili eventualno potrebno usklajevanje.</p>
                         <p>Želi o tem predlogu Izvršnega sveta za razširitev dnevnega reda kdo
-                           razpravljati? <stage>(Nihče.)</stage></p>
+                           razpravljati? <stage type="vote">(Nihče.)</stage>
+                        </p>
                         <p>Potem dajem predlog za uvrstitev teh dveh točk dnevnega reda in za
                            njihovo obravnavo po hitrem postopku na glasovanje. Poglejmo prisotnost!
                            48 prisotnih.</p>
-                        <p>Kdor je za ta predlog, naj prosim glasuje! <stage>(38 glasov.)</stage> Je
-                           kdo proti? <stage>(4 glasovi.)</stage> Se je kdo vzdržal? <stage>(5
-                              glasov.)</stage></p>
+                        <p>Kdor je za ta predlog, naj prosim glasuje! <stage type="vote">(38
+                              glasov.)</stage> Je kdo proti? <stage type="vote">(4 glasovi.)</stage>
+                           Se je kdo vzdržal? <stage type="vote">(5 glasov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlagana razširitev in predlog za obravnavo po hitrem
                            postopku z večino glasov sprejeta.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="1b">
+                  <div xml:id="div.1.1.2.3" ana="#PAR.TDR" n="1b" corresp="#toc.2.3">
                      <sp who="#sp.BizjakIvan">
-                        <p>Prehajamo na obravnavo</p>
-                        <p>PODTOČKE B., TO JE NA <title>PREDLOG ZAKONA O ZAGOTOVITVI SREDSTEV ZA
-                              GRADNJO ODSEKOV AVTOMOBILSKIH CEST: MALENCE - ŠMARJE-SAP IN HRUŠICA -
-                              VRBA</title>.</p>
+                        <p>Prehajamo na obravnavo PODTOČKE B., TO JE NA <title>PREDLOG ZAKONA O
+                              ZAGOTOVITVI SREDSTEV ZA GRADNJO ODSEKOV AVTOMOBILSKIH CEST: MALENCE -
+                              ŠMARJE-SAP IN HRUŠICA - VRBA</title>.</p>
                         <p>Izvršni svet je s predložitvijo tega zakona umaknil prvotni predlog
                            zakona o jamstvu Republike Slovenije za finančno posojilo za gradnjo
                            odsekov avtomobilskih cest Malence - Šmarje-Sap in Hrušica - Vrba.
@@ -2438,28 +2487,30 @@
                      </sp>
                      <sp who="#sp.KranjcMarjan">
                         <speaker>MARJAN KRANJC:</speaker>
-                        <p><stage>(republiški sekretar za promet in zveze)</stage>: Oprostite, ker
-                           se še enkrat javljam. Namreč jaz mislim, da sem dolžan gospodu Rojcu dati
-                           dodatno informacijo. Pogodba, ki je sklenjena med Slovenija-cestami in pa
-                           Inženiringom obvezuje Slovenija-ceste, da bodo izvršile pogodbena dela,
-                           naročnika pa da bo to plačeval. In gospod Rojec verjetno misli, da imamo
-                           mi denar, da ga pa nočemo plačati, Slovenija-ceste pa nočejo delati ali
-                           nekaj takega, ker jasno je, če jaz neko delo naročim, se moram držati
-                           pogodbenih obveznosti in moram plačati. Mi pa zdaj tega denarja nimamo,
-                           ta denar je bil predviden v proračunu našega sekretariata in je potem v
-                           proračunu izpadel. Jaz imam tukaj dopis, ki pravi sledeče: dne 14.5., ko
-                           smo mi videli, da ne bo več denarja smo vas obvestili, da bodo
-                           razpoložljiva sredstva porabljena v mesecu maju 1991 leta in da bomo
-                           prisiljeni, glede na vsebino vašega dopisa, dela v celoti ustaviti.
-                           Istočasno smo vas tudi seznanili o višini stroškov, ki bi jih povzročila
-                           ustavitev del, ta pa je okrog 800 milijonov dinarjev. In seveda jaz ne
-                           rečem, da je ta kredit ugoden, samo jaz drugega denarja nimam in
-                           Slovenija-ceste, sem se jaz na njih obrnil in sem rekel, ali lahko vi iz
-                           lastnih sredstev premostite ta denar, ki nam manjka, da bi ga nam
-                           posodili. So rekli, mi tega denarja nimamo, lahko pa se bomo pozanimali
-                           pri naših zunanjih partnerjih, če nam ga lahko, oni posodijo, in denar je
-                           takšen tukaj, kakršen je. Druga stvar pa je to, pogodbo o najetem kreditu
-                           bo sklenil republiški sekretar za finance. Hvala. Če jo bo?</p>
+                        <p>
+                           <stage type="comment">(republiški sekretar za promet in zveze)</stage>:
+                           Oprostite, ker se še enkrat javljam. Namreč jaz mislim, da sem dolžan
+                           gospodu Rojcu dati dodatno informacijo. Pogodba, ki je sklenjena med
+                           Slovenija-cestami in pa Inženiringom obvezuje Slovenija-ceste, da bodo
+                           izvršile pogodbena dela, naročnika pa da bo to plačeval. In gospod Rojec
+                           verjetno misli, da imamo mi denar, da ga pa nočemo plačati,
+                           Slovenija-ceste pa nočejo delati ali nekaj takega, ker jasno je, če jaz
+                           neko delo naročim, se moram držati pogodbenih obveznosti in moram
+                           plačati. Mi pa zdaj tega denarja nimamo, ta denar je bil predviden v
+                           proračunu našega sekretariata in je potem v proračunu izpadel. Jaz imam
+                           tukaj dopis, ki pravi sledeče: dne 14.5., ko smo mi videli, da ne bo več
+                           denarja smo vas obvestili, da bodo razpoložljiva sredstva porabljena v
+                           mesecu maju 1991 leta in da bomo prisiljeni, glede na vsebino vašega
+                           dopisa, dela v celoti ustaviti. Istočasno smo vas tudi seznanili o višini
+                           stroškov, ki bi jih povzročila ustavitev del, ta pa je okrog 800
+                           milijonov dinarjev. In seveda jaz ne rečem, da je ta kredit ugoden, samo
+                           jaz drugega denarja nimam in Slovenija-ceste, sem se jaz na njih obrnil
+                           in sem rekel, ali lahko vi iz lastnih sredstev premostite ta denar, ki
+                           nam manjka, da bi ga nam posodili. So rekli, mi tega denarja nimamo,
+                           lahko pa se bomo pozanimali pri naših zunanjih partnerjih, če nam ga
+                           lahko, oni posodijo, in denar je takšen tukaj, kakršen je. Druga stvar pa
+                           je to, pogodbo o najetem kreditu bo sklenil republiški sekretar za
+                           finance. Hvala. Če jo bo?</p>
                      </sp>
                      <sp who="#sp.BizjakIvan">
                         <speaker>PREDSEDNIK IVAN BIZJAK:</speaker>
@@ -2512,15 +2563,17 @@
                            amandmaja? Prosim. Ne nasprotujete. Dobro . 35 prisotnih, ja kaj ste pa
                            delali? Poglejmo še enkrat prisotnost. Smo vsi pritisnili? 41
                            prisotnih.</p>
-                        <p>Kdo je za ta amandma? <stage>(37 glasov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(4
-                              vzdržani.)</stage></p>
+                        <p>Kdo je za ta amandma? <stage type="vote">(37 glasov.)</stage> Je kdo
+                           proti? <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage
+                              type="vote">(4 vzdržani.)</stage>
+                        </p>
                         <p>Ostane nam še glasovanje o predlogu zakona v celoti, vključno seveda z
                            amandmajem Izvršnega sveta k drugemu členu, ki je sestavni del
                            predloga.</p>
-                        <p>Kdor je za predlog zakona, naj prosim glasuje! <stage>(32
-                              glasov.)</stage> Je kdo proti? <stage>(4 glasovi.)</stage> Se je kdo
-                           vzdržal? <stage>(6 glasov.)</stage></p>
+                        <p>Kdor je za predlog zakona, naj prosim glasuje! <stage type="vote">(32
+                              glasov.)</stage> Je kdo proti? <stage type="vote">(4 glasovi.)</stage>
+                           Se je kdo vzdržal? <stage type="vote">(6 glasov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlog zakona z večino glasov sprejet.</p>
                      </sp>
                      <sp who="#sp.BizjakIvan">
@@ -2528,12 +2581,10 @@
                         <p>S tem smo zaključili 1. točko dnevnega reda.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="2">
+                  <div xml:id="div.1.1.2.4" ana="#PAR.TDR" n="2" corresp="#toc.2.4">
                      <sp who="#sp.BizjakIvan">
-                        <p>Prehajamo na</p>
-                        <p>
-                           <title>2. TOČKO DNEVNEGA REDA, TO JE NA OSNUTEK STANOVANJSKEGA
-                              ZAKONA</title>.</p>
+                        <p>Prehajamo na <title>2. TOČKO DNEVNEGA REDA, TO JE NA OSNUTEK
+                              STANOVANJSKEGA ZAKONA</title>.</p>
                         <p>Osnutek zakona je predložil Izvršni svet Skupščine Republike Slovenije.
                            Želi njegov predstavnik besedo? Prosim gospod Miha Jazbinšek, republiški
                            sekretar za varstvo okolja in urejanje prostora.</p>
@@ -2590,8 +2641,9 @@
                            stanovanjska in komunalna vprašanja, Odbor za splošno gospodarske zadeve,
                            Odbor za delo, zaposlovanje in socialno politiko, Odbor za varstvo
                            potrošnikov in Odbor za lokalno samoupravo, ki so zboru predložili pisna
-                           poročila. Želi besedo kdo od poročevalcev teh delovnih teles?
-                              <stage>(Ne.)</stage></p>
+                           poročila. Želi besedo kdo od poročevalcev teh delovnih teles? <stage
+                              type="debate">(Ne.)</stage>
+                        </p>
                         <p>Pričenjam razpravo. K razpravi so že trije prijavljeni. Najprej ima
                            besedo gospod Senčur.</p>
                      </sp>
@@ -3905,21 +3957,23 @@
                            naj predlagatelj prouči in ustrezno upošteva pripombe, predloge in mnenja
                            delovnih teles Skupščine, pisne pripombe in pripombe iz razprave
                            delegatov na seji zbora.</p>
-                        <p>Ali želi o tem sklepu kdo razpravljati? <stage>(Ne želi.)</stage> Potem
-                           prehajamo na glasovanje. Poglejmo prisotnost! <stage>(54
-                              delegatov.)</stage></p>
-                        <p>Kdo je za predlagani sklep? <stage>(50 glasov.)</stage>. Ali je kdo
-                           proti? <stage>(En glas.)</stage> Se je kdo vzdržal? <stage>(4
-                              glasovi.)</stage></p>
+                        <p>Ali želi o tem sklepu kdo razpravljati? <stage type="debate">(Ne
+                              želi.)</stage> Potem prehajamo na glasovanje. Poglejmo prisotnost!
+                              <stage type="vote">(54 delegatov.)</stage>
+                        </p>
+                        <p>Kdo je za predlagani sklep? <stage type="vote">(50 glasov.)</stage>. Ali
+                           je kdo proti? <stage type="vote">(En glas.)</stage> Se je kdo vzdržal?
+                              <stage type="vote">(4 glasovi.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlagani sklep z večino glasov sprejet.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR">
+                  <div xml:id="div.1.1.2.5" ana="#PAR.TDR" corresp="#toc.2.5">
                      <sp who="#sp.BizjakIvan">
-                        <p>Kot sem povedal že prej, prehajamo zdaj</p>
-                        <p>NA PONOVNO OBRAVNAVO <title>PREDLOGA AMANDMAJA 100, K USTAVI RS NA OSNOVI
-                              SPORAZUMNEGA PREDLOGA, KI GA JE PREDLOŽILA USKLAJEVALNA KOMISIJA VSEH
-                              TREH ZBOROV</title>.</p>
+                        <p>Kot sem povedal že prej, prehajamo zdaj NA PONOVNO OBRAVNAVO
+                              <title>PREDLOGA AMANDMAJA 100, K USTAVI RS NA OSNOVI SPORAZUMNEGA
+                              PREDLOGA, KI GA JE PREDLOŽILA USKLAJEVALNA KOMISIJA VSEH TREH
+                              ZBOROV</title>.</p>
                         <p>To poročilo in sporazumni predlog ste v pisni obliki že pred nekaj časa
                            dobili na klop. Želi morda besedo poročevalec delovne skupine? Morda na
                            kratko. Gospod Starman.</p>
@@ -4076,12 +4130,12 @@
                            dikcijo, sicer bi bilo vse drugo seveda velika škoda, če ne bi bilo to
                            narejeno. Zato sem tega vesel in to podpiram. Kar zadeva ta nesrečni
                            stavek, mislim, da je popolnoma jasen in ne potrebuje nobenih dodatkov,
-                           kajti ta stavek je gramatično moč analiziran takole: Poglejte !
-                              <stage>(Smeh)</stage> Moram to povedati. "Zastava Republike Slovenije
-                           je belo-modro-rdeča slovenska narodna zastava." Pika. Ni pika, ampak
-                           lahko je tudi pika in je to jasno, da je slovenska nacionalna zastava
-                           belo-modro-rdeča, to je slovenska nacionalna zastava. Pika. Zdaj bi pa
-                           lahko tu bila tudi vejica: ki ima pa grb in da ne uporabljamo tega
+                           kajti ta stavek je gramatično moč analiziran takole: Poglejte ! <stage
+                              type="vocal">(Smeh)</stage> Moram to povedati. "Zastava Republike
+                           Slovenije je belo-modro-rdeča slovenska narodna zastava." Pika. Ni pika,
+                           ampak lahko je tudi pika in je to jasno, da je slovenska nacionalna
+                           zastava belo-modro-rdeča, to je slovenska nacionalna zastava. Pika. Zdaj
+                           bi pa lahko tu bila tudi vejica: ki ima pa grb in da ne uporabljamo tega
                            oziralnega stavka, ki ima tudi grb, je pač preprosto to rečeno s tem
                            dopolnilom "z grbom Republike Slovenije". To je jasno. In je škoda, da bi
                            zapravljali čas, predvsem pa mislim, da je škoda, da po nepotrebnem to
@@ -4108,8 +4162,9 @@
                            Republike Slovenije. Mislim, da je to vprašanje vendarle po dolgih mukah
                            rešeno in jaz pozdravljam to odločitev.  Mislim, da ne bo nihče več delal
                            težav. Lahko bo pa tudi sam delal grbe, ki niso komplicirani. Bomo pa
-                           lahko imeli narodno zastavo kjerkoli, tudi na paši.
-                              <stage>(Smeh.)</stage></p>
+                           lahko imeli narodno zastavo kjerkoli, tudi na paši. <stage type="vocal"
+                              >(Smeh.)</stage>
+                        </p>
                      </sp>
                      <sp who="#sp.BizjakIvan">
                         <speaker>PREDSEDNIK IVAN BIZJAK:</speaker>
@@ -4166,31 +4221,32 @@
                         <p>Glasujemo torej o sporazumnem predlogu usklajevalne komisije vseh treh
                            zborov za besedilo ustavnega amandmaja 100 k ustavi Republike
                            Slovenije.</p>
-                        <p>Kdo je za? Ste se vsi izrekli, ki ste za ta amandma? <stage>(55
-                              za.)</stage> Je kdo proti? <stage>(Nihče.)</stage> Se je kdo vzdržal?
-                              <stage>(Nihče.)</stage></p>
+                        <p>Kdo je za? Ste se vsi izrekli, ki ste za ta amandma? <stage type="vote"
+                              >(55 za.)</stage> Je kdo proti? <stage type="vote">(Nihče.)</stage> Se
+                           je kdo vzdržal? <stage type="vote">(Nihče.)</stage>
+                        </p>
                         <p>Ugotavljam, da je zbor soglasno sprejel besedilo amandmaja 100.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="3">
+                  <div xml:id="div.1.1.2.6" ana="#PAR.TDR" n="3" corresp="#toc.2.6">
                      <sp who="#sp.BizjakIvan">
-                        <p>Prehajamo na</p>
-                        <p>
-                           <title>3. TOČKO DNEVNEGA REDA, TO JE OSNUTEK OBRTNEGA ZAKONA</title>.</p>
+                        <p>Prehajamo na <title>3. TOČKO DNEVNEGA REDA, TO JE OSNUTEK OBRTNEGA
+                              ZAKONA</title>.</p>
                         <p>Osnutek zakona je predložil Izvršni svet Skupščine Republike Slovenije.
                            Želi njegov predstavnik besedo? Prosim.</p>
                      </sp>
                      <sp who="#sp.TatalovičIrenaDobravc">
                         <speaker>IRENA TATALOVIČ DOBRAVC:</speaker>
-                        <p><stage>(pomočnica republiškega sekretarja za drobno gospodarstvo)</stage>
-                           Spoštovani zbor. Na osnovi predloga za izdajo obrtnega zakona s tezami,
-                           ki je bil v celoti sprejet, kjer je bil potrjen osnovni princip novega,
-                           bodočega urejanja obrtne dejavnosti, smo pripravili zakonski osnutek.
-                           Torej temeljna izhodišča novega obrtnega zakona so celovito urejanje
-                           obrtne dejavnosti ter obrtnim podobne dejavnosti. V skladu s tem je v
-                           skupščinskem Poročevalcu tudi v razpravi napisan podzakonski akt, ki
-                           točno določa, katere dejavnosti so obrtne dejavnosti, katere dejavnosti
-                           so obrtem podobne dejavnosti.</p>
+                        <p>
+                           <stage type="comment">(pomočnica republiškega sekretarja za drobno
+                              gospodarstvo)</stage> Spoštovani zbor. Na osnovi predloga za izdajo
+                           obrtnega zakona s tezami, ki je bil v celoti sprejet, kjer je bil potrjen
+                           osnovni princip novega, bodočega urejanja obrtne dejavnosti, smo
+                           pripravili zakonski osnutek. Torej temeljna izhodišča novega obrtnega
+                           zakona so celovito urejanje obrtne dejavnosti ter obrtnim podobne
+                           dejavnosti. V skladu s tem je v skupščinskem Poročevalcu tudi v razpravi
+                           napisan podzakonski akt, ki točno določa, katere dejavnosti so obrtne
+                           dejavnosti, katere dejavnosti so obrtem podobne dejavnosti.</p>
                         <p>Temeljna razlika od sedaj veljavnega obrtnega zakona je v tem, da naj
                            novi obrtni zakon, podobno kot je to urejeno v tržno razvitih ekonomijah,
                            ureja celovito obrtno dejavnost, vse tiste dejavnosti, ki pa z vsebino
@@ -4262,9 +4318,9 @@
                      <sp who="#sp.TatalovičIrenaDobravc">
                         <speaker>IRENA TATALOVIČ DOBRAVC</speaker>
                         <p>
-                           <stage>(pomočnica republiškega sekretarja za drobno
-                           gospodarstvo)</stage>: Faza osnutka, da se sprejme, mora se pa počakati
-                           toliko časa, da so trije področni zakoni pripravljeni.</p>
+                           <stage type="comment">(pomočnica republiškega sekretarja za drobno
+                              gospodarstvo)</stage>: Faza osnutka, da se sprejme, mora se pa
+                           počakati toliko časa, da so trije področni zakoni pripravljeni.</p>
                      </sp>
                      <sp who="#sp.VivodIvan">
                         <speaker>DR. IVAN VIVOD:</speaker>
@@ -4841,10 +4897,13 @@
                            sprejme in da predlog pripravi Izvršni svet in da pri pripravi predloga
                            prouči in ustrezno upošteva pripombe in predloge ter mnenja delovnih
                            teles in tako kot to ponavadi sprejemamo.</p>
-                        <p>Najprej ta del sklepa. Poglejmo prisotnost. <stage>(52
-                              prisotnih.)</stage></p>
-                        <p>Kdo je za predlagani sklep? <stage>(52 glasov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(Nihče.)</stage></p>
+                        <p>Najprej ta del sklepa. Poglejmo prisotnost. <stage type="quorum">(52
+                              prisotnih.)</stage>
+                        </p>
+                        <p>Kdo je za predlagani sklep? <stage type="vote">(52 glasov.)</stage> Je
+                           kdo proti? <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage
+                              type="vote">(Nihče.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlog soglasno sprejet.</p>
                         <p>Glasujemo še o dodatnem sklepu, je potrebno da preberem besedilo.
                            Predlagal ga je Odbor za obrt in podjetništvo, kot ste že prej slišali.
@@ -4877,17 +4936,18 @@
                      </sp>
                      <sp who="#sp.GrosVitomir">
                         <speaker>VITOMIR GROS</speaker>
-                        <p><stage>(Liberalna stranka)</stage>: Kljub temu moram še enkrat priti
-                           obrazložiti svoj glas in bom povedal tako. Tega sklepa enostavno na
-                           Odboru za podjetništvo in obrt nismo sprejeli. Bili so predlogi, da se
-                           naj čimbolj sočasno ti zakoni sprejemajo, je pa to tudi paradoksalno. Ne
-                           moremo mi vseh zakonov naenkrat sprejeti. Kdo pa, gospod Šonc, vam
-                           garantira, recimo, če bo sekretariat pripravil 5 zakonov ali pa 10, da
-                           jih bomo tisti dan vse naenkrat sprejeli? Se lahko zgodi, da jih bomo 11
-                           speljali, 12-ega pa ne. Jaz mislim, da je ta sklep tako že  zapopaden v
-                           3. sklepu. Zakaj zdaj prvič, kar smo v tej skupščini, da se zgodi, da
-                           bomo sprejeli en dodaten sklep v tej smeri. To je nesmisel. To je,
-                           recimo, predlog Odbora za podjetništvo in obrt in kot takega smo ga
+                        <p>
+                           <stage type="comment">(Liberalna stranka)</stage>: Kljub temu moram še
+                           enkrat priti obrazložiti svoj glas in bom povedal tako. Tega sklepa
+                           enostavno na Odboru za podjetništvo in obrt nismo sprejeli. Bili so
+                           predlogi, da se naj čimbolj sočasno ti zakoni sprejemajo, je pa to tudi
+                           paradoksalno. Ne moremo mi vseh zakonov naenkrat sprejeti. Kdo pa, gospod
+                           Šonc, vam garantira, recimo, če bo sekretariat pripravil 5 zakonov ali pa
+                           10, da jih bomo tisti dan vse naenkrat sprejeli? Se lahko zgodi, da jih
+                           bomo 11 speljali, 12-ega pa ne. Jaz mislim, da je ta sklep tako že
+                            zapopaden v 3. sklepu. Zakaj zdaj prvič, kar smo v tej skupščini, da se
+                           zgodi, da bomo sprejeli en dodaten sklep v tej smeri. To je nesmisel. To
+                           je, recimo, predlog Odbora za podjetništvo in obrt in kot takega smo ga
                            zajeli v tretjem sklepu. Je nesmiselno, da to sprejemamo. Seveda spet z
                            dodatnimi komplikacijami. Tisti razlogi, kot ste jih pa vi povedali, pa
                            mislim, da ne spadajo v obrtni zakon.</p>
@@ -4940,18 +5000,18 @@
                      <sp who="#sp.BizjakIvan">
                         <speaker>PREDSEDNIK IVAN BIZJAK:</speaker>
                         <p>Glasujemo torej o tem dodatnem sklepu.</p>
-                        <p>Kdo je za dodatni sklep? <stage>(13 glasov.)</stage> Kdo je proti?
-                              <stage>(22 glasov.)</stage> Se je kdo vzdržal? <stage>(21
-                              glasov.)</stage></p>
+                        <p>Kdo je za dodatni sklep? <stage type="vote">(13 glasov.)</stage> Kdo je
+                           proti? <stage type="vote">(22 glasov.)</stage> Se je kdo vzdržal? <stage
+                              type="vote">(21 glasov.)</stage>
+                        </p>
                         <p>Ugotavljam, da predlagani sklep ni sprejet.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="4">
+                  <div xml:id="div.1.1.2.7" ana="#PAR.TDR" n="4" corresp="#toc.2.7">
                      <sp who="#sp.BizjakIvan">
-                        <p>Prehajamo na</p>
-                        <p>
-                           <title>4. TOČKO DNEVNEGA REDA, TO JE NA PREDLOG ZA IZDAJO ZAKONA O
-                              REGISTRACIJI DEJAVNOSTI ZASEBNIKOV Z OSNUTKOM ZAKONA</title>.</p>
+                        <p>Prehajamo na <title>4. TOČKO DNEVNEGA REDA, TO JE NA PREDLOG ZA IZDAJO
+                              ZAKONA O REGISTRACIJI DEJAVNOSTI ZASEBNIKOV Z OSNUTKOM
+                           ZAKONA</title>.</p>
                         <p>Predlog za izdajo zakona z osnutkom zakona je predložil Izvršni svet
                            Skupščine Republike Slovenije. Želi njegov predstavnik besedo? Prosim,
                            gospa Irena Tatalovič-Dobravc, pomočnica republiškega sekretarja.</p>
@@ -5002,7 +5062,9 @@
                         <p>Hvala lepa. Predlog za izdajo zakona z osnutkom zakona je bil objavljen v
                            Poročevalcu št. 15. Obravnavala sta ga Zakonodajno-pravna komisija in
                            Odbor za podjetništvo in obrt, ki sta zboru pisno poročala. Želi besedo
-                           kdo od poročevalcev teh dveh delovnih teles? <stage>(Ne.)</stage></p>
+                           kdo od poročevalcev teh dveh delovnih teles? <stage type="debate"
+                              >(Ne.)</stage>
+                        </p>
                         <p>Pričenjam razpravo. Kdo želi razpravljati? Prosim, gospod
                            Schwarzbartl.</p>
                      </sp>
@@ -5139,11 +5201,14 @@
                            sprejme. Predlog zakona pripravi Izvršni svet Skupščine Republike
                            Slovenije. Pri pripravi predloga naj predlagatelj prouči in ustrezno
                            upošteva predloge, pripombe iz razprave delegatov na seji zbora." Želi o
-                           predlaganem sklepu kdo razpravljati? <stage>(Ne.)</stage></p>
+                           predlaganem sklepu kdo razpravljati? <stage type="debate">(Ne.)</stage>
+                        </p>
                         <p>Torej dajem ta sklep na glasovanje. Poglejmo prisotnost! 43
                            prisotnih.</p>
-                        <p>Kdo je za ta sklep? <stage>(44 glasov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(Nihče.)</stage></p>
+                        <p>Kdo je za ta sklep? <stage type="vote">(44 glasov.)</stage> Je kdo proti?
+                              <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage
+                              type="vote">(Nihče.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlagani sklep soglasno sprejet.</p>
                         <p>Za ob 18. uri je napovedana skupna seja. Želel bi vas obvestiti, kar
                            nekateri že verjetno veste, da Družbenopolitični zbor amandmaja 100 ni
@@ -5167,7 +5232,7 @@
                            from="1991-06-20T12:32:00" xml:id="stage.t.5">NADALJEVALA 20.6.1991 OB
                            12.32 URI</time>.)</stage>
                   </div>
-                  <div ana="#PAR.Prisot">
+                  <div xml:id="div.1.1.2.8" ana="#PAR.Prisot" corresp="#toc.2.8">
                      <sp who="#sp.BizjakIvan">
                         <speaker>PREDSEDNIK IVAN BIZJAK:</speaker>
                         <p>Spoštovani delegati, gospe in gospodje, pričenjam nadaljevanje včeraj
@@ -5224,11 +5289,13 @@
                            so: Zakonjšek, Feltrin, Kramarič, Pavšič in Lukač. Še kak  spreminjevalen
                            predlog? Če ne, potem dajem tako sestavo usklajevalne komisije na
                            glasovanje.</p>
-                        <p>Kdor je za tako sestavo, naj prosim glasuje! <stage>(38 glasov.)</stage>
-                           Je kdo proti? <stage>(En glas.)</stage> Se je kdo vzdržal?
-                              <stage>(Nihče.)</stage> To je pa malo premalo glasov. Nekateri so
-                           medtem odšli ven. Poglejmo prisotnost. Prosim, da vsi pritisnete, če
-                           morda kdo prej ni uspel. <stage>(41 prisotnih.)</stage></p>
+                        <p>Kdor je za tako sestavo, naj prosim glasuje! <stage type="vote">(38
+                              glasov.)</stage> Je kdo proti? <stage type="vote">(En glas.)</stage>
+                           Se je kdo vzdržal? <stage type="vote">(Nihče.)</stage> To je pa malo
+                           premalo glasov. Nekateri so medtem odšli ven. Poglejmo prisotnost.
+                           Prosim, da vsi pritisnete, če morda kdo prej ni uspel. <stage
+                              type="quorum">(41 prisotnih.)</stage>
+                        </p>
                         <p>Torej smatram, da je ta delovna skupina oziroma komisija izvoljena, ker
                            je bil rezultat povsem nedvoumen.</p>
                         <p>Kdaj bo ta usklajevalna komisija pričela z delom vas bomo posebej
@@ -5236,12 +5303,10 @@
                            končal z delom in danes ne nadaljuje seje.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="5">
+                  <div xml:id="div.1.1.2.9" ana="#PAR.TDR" n="5" corresp="#toc.2.9">
                      <sp who="#sp.BizjakIvan">
-                        <p>Prehajamo na</p>
-                        <p>
-                           <title>5. TOČKO DNEVNEGA REDA, TO JE NA OSNUTEK ZAKONA O RAZVOJU MALEGA
-                              GOSPODARSTVA</title>,</p>
+                        <p>Prehajamo na <title>5. TOČKO DNEVNEGA REDA, TO JE NA OSNUTEK ZAKONA O
+                              RAZVOJU MALEGA GOSPODARSTVA</title>,</p>
                         <p>ob določanju dnevnega reda te seje smo na predlog Zakonodajno-pravne
                            komisije in Odbora za podjetništvo in obrt sklenili, da bomo predlog
                            zakona ponovno obravnavali kot osnutek zakona.</p>
@@ -5483,14 +5548,16 @@
                      </sp>
                      <sp who="#sp.ŠubicMaja">
                         <speaker>MAJA ŠUBIC:</speaker>
-                        <p><stage>(pomočnica republiškega sekretarja za drobno gospodarstvo)</stage>
-                           Žal je v tem zakonu prišlo do nekaj tehničnih napak. Na eno smo bili že
-                           opozorjeni pri kazenskih določbah, druga pa je tukaj v 2. členu. Morala
-                           bi biti posebna alinea, "obrtne zadruge" in posebna alinea "zasebniki so
-                           fizične osebe, ki opravljajo registrirano gospodarsko dejavnost" oziroma
-                           kot je, če ste prebrali zapisnike Zakonodajno-pravne komisije, se obrtne
-                           zadruge tako ali tako črtajo in ostanejo samo zasebniki, ki so fizične
-                           osebe, ki opravljajo registrirano gospodarsko dejavnost.</p>
+                        <p>
+                           <stage type="comment">(pomočnica republiškega sekretarja za drobno
+                              gospodarstvo)</stage> Žal je v tem zakonu prišlo do nekaj tehničnih
+                           napak. Na eno smo bili že opozorjeni pri kazenskih določbah, druga pa je
+                           tukaj v 2. členu. Morala bi biti posebna alinea, "obrtne zadruge" in
+                           posebna alinea "zasebniki so fizične osebe, ki opravljajo registrirano
+                           gospodarsko dejavnost" oziroma kot je, če ste prebrali zapisnike
+                           Zakonodajno-pravne komisije, se obrtne zadruge tako ali tako črtajo in
+                           ostanejo samo zasebniki, ki so fizične osebe, ki opravljajo registrirano
+                           gospodarsko dejavnost.</p>
                         <p>Pod materialno infrastrukturo je mišljeno to, kar je povedal gospod. To
                            je namreč, mislim, da je to napisano v obrazložitvi: to so inkubatorji,
                            predvsem inkubatorji, obrtne cone, podjetniške cone in pa proste carinske
@@ -5525,18 +5592,18 @@
                         <p>Želi o tem predlogu sklepa kdo razpravljati? Ne. Potem dajem predlagani
                            sklep na glasovanje.</p>
                         <p>Poglejmo najprej prisotnost. 42 prisotnih.</p>
-                        <p>Kdor je za predlagani sklep, naj prosim glasuje. <stage>(40
-                              glasov.)</stage> Kdo je proti? <stage>(Nihče.)</stage> Se je kdo
-                           vzdržal? <stage>(Nihče.)</stage></p>
+                        <p>Kdor je za predlagani sklep, naj prosim glasuje. <stage type="comment"
+                              >(40 glasov.)</stage> Kdo je proti? <stage type="vote"
+                              >(Nihče.)</stage> Se je kdo vzdržal? <stage type="vote"
+                              >(Nihče.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlagani sklep z večino glasov sprejet.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="6">
+                  <div xml:id="div.1.1.2.10" ana="#PAR.TDR" n="6" corresp="#toc.2.10">
                      <sp who="#sp.BizjakIvan">
-                        <p>Prehajamo na</p>
-                        <p>
-                           <title>6. TOČKO DNEVNEGA REDA, TO JE NA PREDLOG ZA IZDAJO ZAKONA O
-                              GOSTINSKI DEJAVNOSTI Z OSNUTKOM ZAKONA</title>.</p>
+                        <p>Prehajamo na <title>6. TOČKO DNEVNEGA REDA, TO JE NA PREDLOG ZA IZDAJO
+                              ZAKONA O GOSTINSKI DEJAVNOSTI Z OSNUTKOM ZAKONA</title>.</p>
                         <p>Predlog za izdajo zakona, z osnutkom zakona je predložil Izvršni svet
                            Skupščine Republike Slovenije. Želi njegov predstavnik besedo? Prosim
                            gospod Ingo Paš, republiški sekretar za turizem in gostinstvo.</p>
@@ -5640,13 +5707,14 @@
                      </sp>
                      <sp who="#sp.MencingerAvguštinAlojzij">
                         <speaker>DR. AVGUŠTIN ALOJZIJ MENCINGER:</speaker>
-                        <p><stage>(Mencinger, SDK Radovljica)</stage>: Spoštovani zbor. Pri tem
-                           zakonu bi imel eno vprašanje oziroma pripombo. Gre se za člen 5. Ta člen
-                           določa, da ima lahko nekdo v gostinski dejavnosti zaposlenih samo
-                           maksimalno 25 oseb. Po tem zakonu potem ne more imeti nihče privatnega
-                           hotela, kajti srednji hoteli, taki kot jih imamo na Bledu, v Kranjski
-                           Gori, imajo večinoma 60, 70, 80 zaposlenih. To je vse, kar bi vprašal.
-                           Hvala.</p>
+                        <p>
+                           <stage type="comment">(Mencinger, SDK Radovljica)</stage>: Spoštovani
+                           zbor. Pri tem zakonu bi imel eno vprašanje oziroma pripombo. Gre se za
+                           člen 5. Ta člen določa, da ima lahko nekdo v gostinski dejavnosti
+                           zaposlenih samo maksimalno 25 oseb. Po tem zakonu potem ne more imeti
+                           nihče privatnega hotela, kajti srednji hoteli, taki kot jih imamo na
+                           Bledu, v Kranjski Gori, imajo večinoma 60, 70, 80 zaposlenih. To je vse,
+                           kar bi vprašal. Hvala.</p>
                      </sp>
                      <sp who="#sp.BizjakIvan">
                         <speaker>PREDSEDNIK IVAN BIZJAK:</speaker>
@@ -5769,14 +5837,16 @@
                      </sp>
                      <sp who="#sp.PašIngo">
                         <speaker>INGO PAŠ</speaker>
-                        <p><stage>(republiški sekretar za turizem in gostinstvo)</stage>: Kar zadeva
-                           vprašanja, ki se nanašajo na izpolnjevanje minimalnih tehničnih pogojev
-                           in v primeru, če je bil lokal zapečaten, pa ga je potem lastnik oziroma
-                           obratovalec, nosilec obrti ponovno odpečatil, to so dejansko zadeve, ki
-                           so popolnoma inšpekcijske narave, kazensko upravne narave in v takem
-                           primeru, če gre za odpečatenje takega lokala, bi se našla tudi pravna
-                           kvalifikacija kaznivega dejanja. To so zadeve, ki najbrž v neposredno
-                           urejanje s tem zakonom ne spadajo.</p>
+                        <p>
+                           <stage type="comment">(republiški sekretar za turizem in
+                              gostinstvo)</stage>: Kar zadeva vprašanja, ki se nanašajo na
+                           izpolnjevanje minimalnih tehničnih pogojev in v primeru, če je bil lokal
+                           zapečaten, pa ga je potem lastnik oziroma obratovalec, nosilec obrti
+                           ponovno odpečatil, to so dejansko zadeve, ki so popolnoma inšpekcijske
+                           narave, kazensko upravne narave in v takem primeru, če gre za odpečatenje
+                           takega lokala, bi se našla tudi pravna kvalifikacija kaznivega dejanja.
+                           To so zadeve, ki najbrž v neposredno urejanje s tem zakonom ne
+                           spadajo.</p>
                         <p>Kar zadeva parkirišča, počivališča, opozarjam, da smo tudi v tem zakonu
                            predvideli poostren režim, tako da se lahko posebej predpiše, kako morajo
                            biti urejeni gostinski objekti, sicer pa spada ta problematika v širšem
@@ -5800,22 +5870,23 @@
                            Slovenije. Pri pripravi predloga zakona naj predlagatelj prouči in
                            ustrezno upošteva pripombe, predloge in mnenja delovnih teles Skupščine,
                            pisne pripombe in pripombe iz razprave delegatov na seji zbora."</p>
-                        <p>Želi o tem predlogu sklepa kdo razpravljati? <stage>(Ne.)</stage></p>
+                        <p>Želi o tem predlogu sklepa kdo razpravljati? <stage type="debate"
+                              >(Ne.)</stage>
+                        </p>
                         <p>Prehajamo torej na glasovanje o predlogu sklepa. Poglejmo prisotnost. 44
                            prisotnih.</p>
-                        <p>Kdo je za predlagani sklep? <stage>(39 glasov.)</stage> Je kdo proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(5
-                              vzdržanih)</stage>.</p>
+                        <p>Kdo je za predlagani sklep? <stage type="vote">(39 glasov.)</stage> Je
+                           kdo proti? <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal? <stage
+                              type="vote">(5 vzdržanih)</stage>.</p>
                         <p>Ugotavljam, da je predlagani sklep z večino glasov sprejet.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="7">
+                  <div xml:id="div.1.1.2.11" ana="#PAR.TDR" n="7" corresp="#toc.2.11">
                      <sp who="#sp.BizjakIvan">
-                        <p>Prehajamo na</p>
-                        <p>
-                           <title>7. TOČKO DNEVNEGA REDA, TO JE NA PREDLOG ZAKONA O SPREMEMBI ZAKONA
-                              O ZAČASNI PREPOVEDI SEČNJE V GOZDOVIH V DRUŽBENI LASTNINI IN ZAČASNI
-                              PREPOVEDI PROMETA Z NEPREMIČNINAMI V DRUŽBENI LASTNINI</title>.</p>
+                        <p>Prehajamo na <title>7. TOČKO DNEVNEGA REDA, TO JE NA PREDLOG ZAKONA O
+                              SPREMEMBI ZAKONA O ZAČASNI PREPOVEDI SEČNJE V GOZDOVIH V DRUŽBENI
+                              LASTNINI IN ZAČASNI PREPOVEDI PROMETA Z NEPREMIČNINAMI V DRUŽBENI
+                              LASTNINI</title>.</p>
                         <p>Predlog zakona je v obravnavo predložil Izvršni svet. Želi njegov
                            predstavnik besedo? Gospod Tratnik, namestnik republiškega sekretarja za
                            pravosodje in upravo.</p>
@@ -5998,15 +6069,16 @@
                      </sp>
                      <sp who="#sp.SedonjaJože">
                         <speaker>JOŽE SEDONJA</speaker>
-                        <p><stage>(svetovalec IS v Republiškem sekretariatu za pravosodje in
-                              upravo)</stage>: Spoštovani gospod predsednik, spoštovani zbor. Jaz
-                           sicer sedajle nisem dobro slišal mojega predhodnika, ki je postavil
-                           določeno vprašanje. Zgolj domnevam, za kaj gre v njegovem vprašanju.
-                           Verjetno, da se nanaša vprašanje na to, kako je varovan v zakonu o
-                           spremembi zakona o kmetijskih zemljiščih ta pravni promet, s katerimi
-                           upravljajo, torej kako je varovan pravni promet oziroma kako so varovana
-                           kmetijska in gozdna zemljišča, s katerimi upravljajo družbenopolitične
-                           skupnosti. Ne vem, ali sem prav razumel?</p>
+                        <p>
+                           <stage type="comment">(svetovalec IS v Republiškem sekretariatu za
+                              pravosodje in upravo)</stage>: Spoštovani gospod predsednik,
+                           spoštovani zbor. Jaz sicer sedajle nisem dobro slišal mojega predhodnika,
+                           ki je postavil določeno vprašanje. Zgolj domnevam, za kaj gre v njegovem
+                           vprašanju. Verjetno, da se nanaša vprašanje na to, kako je varovan v
+                           zakonu o spremembi zakona o kmetijskih zemljiščih ta pravni promet, s
+                           katerimi upravljajo, torej kako je varovan pravni promet oziroma kako so
+                           varovana kmetijska in gozdna zemljišča, s katerimi upravljajo
+                           družbenopolitične skupnosti. Ne vem, ali sem prav razumel?</p>
                      </sp>
                      <sp who="#sp.BizjakIvan">
                         <speaker>PREDSEDNIK IVAN BIZJAK:</speaker>
@@ -6027,21 +6099,22 @@
                      </sp>
                      <sp who="#sp.SedonjaJože">
                         <speaker>JOŽE SEDONJA</speaker>
-                        <p><stage>(svetovalec IS v Republiškem sekretariatu za pravosodje in
-                              upravo)</stage>: Torej, če dovolite, se še enkrat povrnem na to
-                           zadevo. V 2. členu zakona o spremembah zakona o kmetijskih zemljiščih je
-                           določeno naslednje: torej v 2. členu, ki se nanaša na spremembo 30. člena
-                           zakona o kmetijskih zemljiščih, je tja do četrtega odstavka govora o
-                           kmetijskih organizacijah, ki so upravljale s kmetijskimi zemljišči. V
-                           petem odstavku tega 2. člena, ki se nanaša na spremembo 30. člena
-                           osnovnega besedila zakona o kmetijskih zemljiščih, pa je določeno:
-                           "privatizacija kmetijskih zemljišč in gozdov ter kmetijskih in gozdarskih
-                           organizacij ni mogoča, dokler ni to urejeno s posebnimi predpisi."  Torej
-                           ta zadnji odstavek se nanaša na vsa kmetijska zemljišča in gozdove, s
-                           katerimi upravljajo družbene pravne osebe, ne samo kmetijske
-                           organizacije. In družbene pravne osebe so tudi vse družbenopolitične
-                           skupnosti, tako občine, republike, posebne družbenopolitične skupnosti
-                           kot tudi federacija.</p>
+                        <p>
+                           <stage type="comment">(svetovalec IS v Republiškem sekretariatu za
+                              pravosodje in upravo)</stage>: Torej, če dovolite, se še enkrat
+                           povrnem na to zadevo. V 2. členu zakona o spremembah zakona o kmetijskih
+                           zemljiščih je določeno naslednje: torej v 2. členu, ki se nanaša na
+                           spremembo 30. člena zakona o kmetijskih zemljiščih, je tja do četrtega
+                           odstavka govora o kmetijskih organizacijah, ki so upravljale s
+                           kmetijskimi zemljišči. V petem odstavku tega 2. člena, ki se nanaša na
+                           spremembo 30. člena osnovnega besedila zakona o kmetijskih zemljiščih, pa
+                           je določeno: "privatizacija kmetijskih zemljišč in gozdov ter kmetijskih
+                           in gozdarskih organizacij ni mogoča, dokler ni to urejeno s posebnimi
+                           predpisi."  Torej ta zadnji odstavek se nanaša na vsa kmetijska zemljišča
+                           in gozdove, s katerimi upravljajo družbene pravne osebe, ne samo
+                           kmetijske organizacije. In družbene pravne osebe so tudi vse
+                           družbenopolitične skupnosti, tako občine, republike, posebne
+                           družbenopolitične skupnosti kot tudi federacija.</p>
                         <p>In glede tistega amandmaja, o katerem je bilo prej govora, bi pojasnil še
                            to. V drugem odstavku 1.člena je bilo  govora namreč  tako, torej takrat,
                            ko se je zakon sprejemal v osnovnem besedilu zakona o moratoriju, da
@@ -6101,32 +6174,33 @@
                            zakona o spremembi zakona o začasni prepovedi in tako naprej in ta
                            amandma se glasi: v 1. členu se pika nadomesti z vejico in doda besedilo
                            "ter črta beseda drugimi".</p>
-                        <p>Kdor je za ta amandma, naj prosim glasuje. <stage>(5 glasov.)</stage> Je
-                           kdo proti? <stage>(16 glasov.)</stage> Se je kdo vzdržal?</p>
+                        <p>Kdor je za ta amandma, naj prosim glasuje. <stage type="vote">(5
+                              glasov.)</stage> Je kdo proti? <stage type="vote">(16 glasov.)</stage>
+                           Se je kdo vzdržal?</p>
                         <p>Ugotavljam, da amandma ni sprejet.</p>
                         <p>Glasovati moramo še o predlogu zakona o spremembi zakona o začasni
                            prepovedi sečnje v gozdovih v družbeni lastnini v celoti.</p>
-                        <p>Kdo je za predlog zakona v celoti, naj prosim glasuje. <stage>(39
-                              glasov.)</stage> Je kdo proti? <stage>(En glas.)</stage> Se je kdo
-                           vzdržal? <stage>(Trije glasovi.)</stage></p>
+                        <p>Kdo je za predlog zakona v celoti, naj prosim glasuje. <stage type="vote"
+                              >(39 glasov.)</stage> Je kdo proti? <stage type="vote">(En
+                              glas.)</stage> Se je kdo vzdržal? <stage type="vote">(Trije
+                              glasovi.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlog zakona z večino glasov sprejet.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="8">
+                  <div xml:id="div.1.1.2.12" ana="#PAR.TDR" n="8" corresp="#toc.2.12">
                      <sp who="#sp.BizjakIvan">
-                        <p>Prehajamo na</p>
-                        <p>8. TOČKO DNEVNEGA REDA,</p>
-                        <p>to je</p>
-                        <p>
-                           <title>NA OBRAVNAVO PREDLOGA ZAKONA O SPREMEMBI IN DOPOLNITVI ZAKONA O
-                              FUNKCIONARJIH V DRŽAVNIH ORGANIH IN PREDLOGA ZAKONA O SPREMEMBI IN
-                              DOPOLNITVI ZAKONA O DELAVCIH V DRŽAVNIH ORGANIH</title>.</p>
+                        <p>Prehajamo na 8. TOČKO DNEVNEGA REDA, to je <title>NA OBRAVNAVO PREDLOGA
+                              ZAKONA O SPREMEMBI IN DOPOLNITVI ZAKONA O FUNKCIONARJIH V DRŽAVNIH
+                              ORGANIH IN PREDLOGA ZAKONA O SPREMEMBI IN DOPOLNITVI ZAKONA O DELAVCIH
+                              V DRŽAVNIH ORGANIH</title>.</p>
                         <p>Oba akta je predložil Izvršni svet Skupščine Republike Slovenije. Želi
                            njegov predstavnik besedo? Besedo ima gospod Tratnik.</p>
                      </sp>
                      <sp who="#sp.TratnikJože">
                         <speaker>JOŽE TRATNIK:</speaker>
-                        <p><stage>(namestnik republiškega sekretarja za pravosodje in
+                        <p>
+                           <stage type="comment">(namestnik republiškega sekretarja za pravosodje in
                               upravo)</stage> Spoštovani poslanke in poslanci. Ponovno se vračamo k
                            obema zakonoma, katere smo, mislim skoraj vsak mesec obravnavali v tej
                            skupščini. Če se spominjate smo nazadnje sprejeli zamrznitev osebnih
@@ -6402,7 +6476,8 @@
                      </sp>
                      <sp who="#sp.TratnikJože">
                         <speaker>JOŽE TRATNIK</speaker>
-                        <p><stage>(namestnik republiškega sekretarja za pravosodje in
+                        <p>
+                           <stage type="comment">(namestnik republiškega sekretarja za pravosodje in
                               upravo)</stage>: Spoštovani! Na nekaj vprašanj bom lahko odgovoril, na
                            nekaj vprašanj bom pa prosil spoštovanega gospoda direktorja Republiške
                            uprave za družbene prihodke, kar se tiče davkov. Glede komisije Izvršnega
@@ -6472,15 +6547,18 @@
                         <p>Torej gremo na glasovanje. Najprej o zakonu o spremembi in dopolnitvi
                            zakona o funkcionarjih v državnih organih. Poglejmo prisotnost. 43
                            prisotnih.</p>
-                        <p>Kdo je za predlog zakona? <stage>(28 glasov.)</stage> Kdo je proti?
-                              <stage>(4 glasovi.)</stage> Se je kdo vzdržal? <stage>(11
-                              glasov.)</stage></p>
+                        <p>Kdo je za predlog zakona? <stage type="vote">(28 glasov.)</stage> Kdo je
+                           proti? <stage type="vote">(4 glasovi.)</stage> Se je kdo vzdržal? <stage
+                              type="vote">(11 glasov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlog zakona z večino glasov sprejet.</p>
                         <p>Na glasovanje dajem še predlog zakona o spremembi in dopolnitvi zakona o
                            delavcih v državnih organih.</p>
-                        <p>Kdor je za predlog zakona, naj prosim glasuje. <stage>(34
-                              glasov.)</stage> Je kdo proti? <stage>(Trije glasovi.)</stage> Se je
-                           kdo vzdržal? <stage>(6 glasov.)</stage></p>
+                        <p>Kdor je za predlog zakona, naj prosim glasuje. <stage type="vote">(34
+                              glasov.)</stage> Je kdo proti? <stage type="vote">(Trije
+                              glasovi.)</stage> Se je kdo vzdržal? <stage type="vote">(6
+                              glasov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlog zakona z večino glasov sprejet.</p>
                         <p>Komisija za volitve, imenovanja ter administrativne zadeve je, kot ste
                            videli v njenem poročilu, predlagala tudi dodatni sklep. Predlog sklepa
@@ -6492,19 +6570,18 @@
                            potem prosim za ... dobro, hvala.</p>
                         <p>Želi o predlaganem sklepu kdo razpravljati? Nihče. Potem prehajamo na
                            glasovanje o tem dodatnem sklepu.</p>
-                        <p>Kdor je za, naj prosim glasuje. <stage>(40 glasov.)</stage> Kdo je proti?
-                              <stage>(Nihče.)</stage> Se je kdo vzdržal? <stage>(Trije
-                              glasovi.)</stage></p>
+                        <p>Kdor je za, naj prosim glasuje. <stage type="vote">(40 glasov.)</stage>
+                           Kdo je proti? <stage type="vote">(Nihče.)</stage> Se je kdo vzdržal?
+                              <stage type="vote">(Trije glasovi.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlagani sklep z večino glasov sprejet.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="9">
+                  <div xml:id="div.1.1.2.13" ana="#PAR.TDR" n="9" corresp="#toc.2.13">
                      <sp who="#sp.BizjakIvan">
-                        <p>Prehajamo na</p>
-                        <p>
-                           <title>9. TOČKO DNEVNEGA REDA, TO JE STALIŠČA SKUPŠČINE REPUBLIKE
-                              SLOVENIJE DO NEKATERIH ZAKONOV IZ PRISTOJNOSTI SKUPŠČINE
-                           SFRJ</title>.</p>
+                        <p>Prehajamo na <title>9. TOČKO DNEVNEGA REDA, TO JE STALIŠČA SKUPŠČINE
+                              REPUBLIKE SLOVENIJE DO NEKATERIH ZAKONOV IZ PRISTOJNOSTI SKUPŠČINE
+                              SFRJ</title>.</p>
                         <p>V okviru te točke naj bi zbor sprejel stališča do osnutka zakona o tarifi
                            zveznih upravnih taks. Obravnavo tega akta je predlagal Izvršni svet
                            Skupščine Republike Slovenije, ki je predložil svoje mnenje, v katerem
@@ -6522,18 +6599,17 @@
                            Zboru republik in pokrajin Skupščine SFRJ, da da soglasje k osnutku tega
                            zakona.</p>
                         <p>Poglejmo prisotnost. 43 prisotnih.</p>
-                        <p>Kdor je za predlagani sklep, naj glasuje. <stage>(27 glasov.)</stage> Je
-                           kdo proti? <stage>(4 glasovi.)</stage> Se je kdo vzdržal? <stage>(7
-                              glasov.)</stage></p>
+                        <p>Kdor je za predlagani sklep, naj glasuje. <stage type="vote">(27
+                              glasov.)</stage> Je kdo proti? <stage type="vote">(4 glasovi.)</stage>
+                           Se je kdo vzdržal? <stage type="vote">(7 glasov.)</stage>
+                        </p>
                         <p>Ugotavljam, da je predlagani sklep z večino glasov sprejet.</p>
                      </sp>
                   </div>
-                  <div ana="#PAR.TDR" n="10">
+                  <div xml:id="div.1.1.2.14" ana="#PAR.TDR" n="10" corresp="#toc.2.14">
                      <sp who="#sp.BizjakIvan">
-                        <p>Prehajamo na</p>
-                        <p>
-                           <title>10. TOČKO DNEVNEGA REDA, TO SO POBUDE, PREDLOGI IN VPRAŠANJA
-                              DELEGATOV</title>.</p>
+                        <p>Prehajamo na <title>10. TOČKO DNEVNEGA REDA, TO SO POBUDE, PREDLOGI IN
+                              VPRAŠANJA DELEGATOV</title>.</p>
                         <p>Včeraj je delegatsko vprašanje v zvezi s postavljenim obvestilnim
                            prometnim znakom z napisom Republika Hrvatska na slovenski strani reke
                            Dragonje postavil gospod Danijel Starman in prosil za odgovor na tej
@@ -6704,10 +6780,16 @@
                         <speaker>PREDSEDNIK IVAN BIZJAK:</speaker>
                         <p>Jaz bi takole povedal tole, da je najmanj teden dni že, kar sem odgovor,
                            tako s strani RTV, kot s strani generalnega sekretarja Skupščine imel na
-                           mizi. Sedaj ne vem, kakšna je bila nadaljnja usoda? <stage>(Iz klopi: v
-                              glavni pisarni se zdi, da se je zataknilo.)</stage> Zdi se, da samo
-                           pošiljanje, da je zastalo. Skratka, odgovor je pripravljen, je pa z obeh
-                           strani dan odgovor, tako da upam, da bo dovolj izčrpen.</p>
+                           mizi. Sedaj ne vem, kakšna je bila nadaljnja usoda? </p>
+                     </sp>
+                     <sp who="#sp.unknown">
+                        <stage type="location">(Iz klopi:</stage>
+                        <ab>v glavni pisarni se zdi, da se je zataknilo.)</ab>
+                     </sp>
+                     <sp who="#sp.BizjakIvan">
+                        <p> Zdi se, da samo pošiljanje, da je zastalo. Skratka, odgovor je
+                           pripravljen, je pa z obeh strani dan odgovor, tako da upam, da bo dovolj
+                           izčrpen.</p>
                         <p>Gospod Stadler je naslednji govornik.</p>
                      </sp>
                      <sp who="#sp.StadlerMarko">
